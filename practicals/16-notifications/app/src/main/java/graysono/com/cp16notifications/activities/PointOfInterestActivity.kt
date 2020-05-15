@@ -1,6 +1,8 @@
 package graysono.com.cp16notifications.activities
 
 import android.Manifest
+import android.app.NotificationChannel
+import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
@@ -8,6 +10,7 @@ import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
+import android.os.Build
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.provider.Settings
@@ -51,6 +54,22 @@ class PointOfInterestActivity : BaseActivity(), OnMapReadyCallback {
         locCallback = LocationCallback()
         customToast = CustomToast(this@PointOfInterestActivity)
         getLastLocation()
+        createNotificationChannel()
+    }
+
+    private fun createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val name = "cp16notifications"
+            val descriptionText = "Notifications"
+            val importance: Int = NotificationManager.IMPORTANCE_DEFAULT
+            val channel: NotificationChannel =
+                NotificationChannel(CHANNEL_ID, name, importance).apply {
+                    description = descriptionText
+                }
+            val notificationManager: NotificationManager =
+                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager.createNotificationChannel(channel)
+        }
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
@@ -58,7 +77,7 @@ class PointOfInterestActivity : BaseActivity(), OnMapReadyCallback {
         pois = arrayListOf(
             PointsOfInterest("Burger King", LatLng(-45.8937627, 170.5035882)),
             PointsOfInterest("Cash Converters", LatLng(-45.8939491, 170.4990944))
-            // Add four more points of interest. Make sure they are within 500km of your current location
+            // Add four more points of interest. Make sure they are within 500m of your current location
         )
 
         clusterManager = ClusterManager(this@PointOfInterestActivity, map)
@@ -82,7 +101,7 @@ class PointOfInterestActivity : BaseActivity(), OnMapReadyCallback {
     private fun getPOIsCount(userLocLat: Double, userLocLng: Double, data: ArrayList<PointsOfInterest>): Int {
         // Declare an integer variable called count. Give it a default value of 0
         // Loop through each PointsOfInterest in the ArrayList of PointsOfInterest
-            // Check if the marker's distance is less than 500km. Call the getDistance method in MakerCluster
+            // Check if the marker's distance is less than 500m. Call the getDistance method in MakerCluster
                 // Increment the count by 1
         // Return the count
     }
@@ -163,7 +182,7 @@ class PointOfInterestActivity : BaseActivity(), OnMapReadyCallback {
             // * setContentText - display the number of pois in your area
             // * setPriority - pass in NotificationCompat.PRIORITY_DEFAULT
             // * setAutoCancel - pass in true
-            // Show the notification. If you get stuck, refer to this link -
+            // Show the notification. If you get stuck, refer to the links above
         // else
             // Display a custom toast with the following message: "There are no points of interest in your area."
     }
