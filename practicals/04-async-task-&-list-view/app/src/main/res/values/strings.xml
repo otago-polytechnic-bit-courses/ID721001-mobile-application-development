@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">04 AsyncTask &#x26; ListView</string>
-    <string name="rss_feed_url_free">http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topfreeapplications/limit=15/xml</string>
-    <string name="rss_feed_url_paid">http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/toppaidapplications/limit=15/xml</string>
-    <string name="top_free_apps">iTunes Store: Top Free Apps</string>
-    <string name="top_paid_apps">iTunes Store: Top Paid Apps</string>
-</resources>

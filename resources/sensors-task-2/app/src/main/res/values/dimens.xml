@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="margin_16">16dp</dimen>
-    <dimen name="txt_size">20sp</dimen>
-    <dimen name="img_view_width">200dp</dimen>
-    <dimen name="img_view_height">175dp</dimen>
-</resources>
