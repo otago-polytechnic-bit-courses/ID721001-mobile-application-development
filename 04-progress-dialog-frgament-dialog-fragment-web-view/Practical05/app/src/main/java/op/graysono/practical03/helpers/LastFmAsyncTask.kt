@@ -8,6 +8,10 @@ import java.util.*
 
 class LastFmAsyncTask(private val listener: IDataDownloadAvailable) :
     AsyncTask<String, Void, ArrayList<Album>>() {
+    override fun onPostExecute(result: ArrayList<Album>) {
+        super.onPostExecute(result)
+        listener.onDataAvailable(result)
+    }
 
     override fun doInBackground(vararg url: String): ArrayList<Album> {
         val albums = ArrayList<Album>()
@@ -33,10 +37,5 @@ class LastFmAsyncTask(private val listener: IDataDownloadAvailable) :
             listener.onError(e)
         }
         return albums
-    }
-
-    override fun onPostExecute(result: ArrayList<Album>) {
-        super.onPostExecute(result)
-        listener.onDataAvailable(result)
     }
 }
