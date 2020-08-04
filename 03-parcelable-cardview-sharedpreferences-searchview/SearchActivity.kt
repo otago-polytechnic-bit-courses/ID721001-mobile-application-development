@@ -1,4 +1,4 @@
-package op.graysono.practical03.activities
+package op.graysono.practical03
 
 import android.app.SearchManager
 import android.app.SearchableInfo
