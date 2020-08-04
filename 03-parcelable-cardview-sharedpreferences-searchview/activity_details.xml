@@ -29,7 +29,6 @@
                 android:layout_marginStart="@dimen/margin_4"
                 android:layout_marginLeft="@dimen/margin_4"
                 android:layout_marginTop="@dimen/margin_4"
-                android:contentDescription="@string/album_image"
                 android:padding="@dimen/padding_8"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
