@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MainActivity">
+
+    <item
+        android:id="@+id/action_main"
+        android:icon="@drawable/ic_search_white_24"
+        android:title="@string/action_main"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_rate_us"
+        android:icon="@drawable/ic_star_white_24"
+        android:title="@string/action_rate_us"
+        app:showAsAction="ifRoom" />
+</menu>
