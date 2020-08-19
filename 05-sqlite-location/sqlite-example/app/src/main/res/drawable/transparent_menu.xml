@@ -5,5 +5,5 @@
             <solid android:color="@color/colorNull" />
         </shape>
     </item>
-    <item android:drawable="@drawable/ic_more_vert_black_24" />
+    <item android:drawable="@drawable/ic_more_vert_black_24dp" />
 </layer-list>

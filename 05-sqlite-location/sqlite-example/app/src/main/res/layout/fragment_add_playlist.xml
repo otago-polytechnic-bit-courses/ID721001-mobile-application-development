@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/add_playlist_text"
+    <TextView
+        android:id="@+id/txvAddPlaylist"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_16"
-        android:layout_marginTop="@dimen/margin_16"
-        android:layout_marginEnd="@dimen/margin_16"
-        android:textSize="@dimen/size_16"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/add_playlist_edit_text"
+        android:id="@+id/edtAddPlaylist"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="@dimen/margin_16"
-        android:layout_marginTop="@dimen/margin_16"
-        android:layout_marginEnd="@dimen/margin_16"
-        android:autofillHints="Playlist Name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@color/colorNull"
         android:gravity="start"
-        android:hint="@string/add_new_playlist_name"
-        android:inputType="text"
-        android:textSize="@dimen/size_16"
-        app:layout_constraintBottom_toTopOf="@+id/linear_layout"
+        android:hint="Add new playlist name..."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_playlist_text" />
+        app:layout_constraintTop_toBottomOf="@+id/txvAddPlaylist" />
 
     <LinearLayout
-        android:id="@+id/linear_layout"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_16"
-        android:layout_marginEnd="@dimen/margin_16"
-        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="2.5dp"
@@ -49,23 +48,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/add_playlist_btn"
+        <Button
+            android:id="@+id/btnAddPlaylist"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="2.5dp"
             android:layout_weight="1"
-            android:text="@string/add"
-            android:textSize="@dimen/size_16" />
+            android:text="Add"
+            android:textSize="18sp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/close_playlist_btn"
+        <Button
+            android:id="@+id/btnClosePlaylist"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="2.5dp"
             android:layout_weight="1"
-            android:text="@string/close"
-            android:textSize="@dimen/size_16" />
+            android:text="Close"
+            android:textSize="18sp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
