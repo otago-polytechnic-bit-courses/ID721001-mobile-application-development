@@ -45,18 +45,15 @@ The travelling application will help you sound like a local abroad \& help you a
 	                            
 	\hline
 	                                
-	\small Practicals                                                       & \small 10\%        & \small 1, 3, 4                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline
-	\small Kotlin Travelling App                                            & \small 35\%        & \small 1, 3, 4                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline
-	\small React Native Hacker News App                                     & \small 25\%        & \small 1, 3, 4                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline   
-	\small Kotlin Exam                                                      & \small 15\%        & \small 2, 3, 4                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline   
-	\small React Native Exam                                                & \small 15\%        & \small 2, 3, 4                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline   
+	\small Application Development                                          & \small 70\%        & \small 1, 3, 4                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline  
+	\small Exam                                                             & \small 30\%        & \small 2, 3, 4                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline 
 \end{tabular}
 
 \section*{Conditions of Assessment}
 You will complete this individual/group assessment outside timetabled class time, however, there will be availability during the teaching sessions to discuss the requirements and progress of this assessment. This assessment will need to be completed by Wednesday, 14 October 2020 at 5:00 PM. 
 
 \section*{Pass Criteria}
-This assessment is criterion-referenced with a cumulative pass mark of 50\%.
+This assessment is criterion-referenced with a cumulative pass mark of 50\% over all assessments in this course.
 
 \section*{Group Contribution}
 All git commit messages must identify which member(s) participated in the associated work session. Proportional contribution will be determined by inspection of the commit logs. If the commit logs show evidence of significantly uneven contribution proportion, the course lecturer may choose to adjust the mark of the lesser contributor downward by an amount derived from the individual contributions.
@@ -88,12 +85,15 @@ At the successful completion of this course, learners will be able to:
 \section*{Exemplars}
 A range of application exemplars are available in the Microsoft Teams course channel, under the Files tab.
 
+\section*{Post-Assessment Evaluation}
+As part of this assessment, you will be required to organise a meeting with the course lecturer to discuss your feedback. The meeting will be conducted after you receive your assessment result. This post-assessment evaluation will not be graded.
+
 \newpage
 
 \section*{Instructions} 
 For this assessment, you will need to submit an application \& documentation that meet the following requirements:
 
-\subsection*{Functionality \& Robustness - Learning Outcomes 1, 3, 4}
+\subsection*{Functionality \& Robustness - Learning Outcomes 1, 3, 4 (40\%)}
 \begin{itemize}
 	\item Application must open without file structure modification in Android Studio.
 	\item Application must run without code modification on multiple mobile devices. The mobile devices used to test your application will be:
@@ -125,7 +125,7 @@ For this assessment, you will need to submit an application \& documentation tha
 	      	\item At the end of each quiz, store the score in a SQLite database table. 
 	      	\item For each quiz, display the top three scores in either a recycler view or a text view widget.
 	      \end{itemize}
-	\item Localization support for at least two countries per continent. Select only one activity or fragment to localize.
+	\item Localization support for at least two countries per continent. Localize one activity or fragment only.
 	      \begin{itemize}
 	      	\item \textbf{Resource:} \footnotesize\href{https://developer.android.com/guide/topics/resources/localization/}{https://developer.android.com/guide/topics/resources/localization}
 	      \end{itemize}
@@ -182,12 +182,24 @@ For this assessment, you will need to submit an application \& documentation tha
 	      \end{itemize} 
 \end{itemize}
 
-\subsection*{Documentation \& Git Usage - Learning Outcomes 3, 4}
+\subsection*{Code Elegance - Learning Outcomes 1, 4 (45\%)}
+\begin{itemize}
+    \item Kotlin \& XML files contain no magic numbers/strings. Store the values in the appropriate XML files. For example, numbers should be stored in an integer or dimension file \& strings should be stored in a string file.
+    \item Use of intermediate variables. No method calls as arguments.
+    \item Idiomatic use of control flow, data structures \& other in-built functions.
+    \item Code adheres to various Object-Oriented design principles. For example, DRY \& SOLID.
+    \item Efficient algorithmic approach.
+\end{itemize}
+
+\subsection*{Documentation \& Git Usage - Learning Outcomes 3, 4 (15\%)}
 \begin{itemize}
 	\item Provide the following in the repository README file:
 	      \begin{itemize}
 	      	\item Privacy policy which discloses user information collected by the application. For example, does this application require storage access or internet? 
-	      	\item Sketched wireframes of the application. The wireframes can be hand-written or digitalised. This must be completed before you start coding.
+	      	\item Sketched wireframes of the application. The wireframes must be sketched/designed using online software. This must be completed before you start coding.
+	      	\begin{itemize}
+                  \item \textbf{Resource}: \footnotesize\href{https://moqups.com}{https://moqups.com}
+              \end{itemize}
 	      	\item Step-by-step user guide detailing each activity. The user guide must contain a screenshot of each activity in the application.
 	      	\item Commented code is documented using KDoc \& generated to \textbf{Markdown} using Dokka.
 	      	      \begin{itemize}
