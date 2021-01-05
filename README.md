@@ -2,9 +2,6 @@
 
 This repository contains all information relating to this course, i.e., course directive & assessment documents.
 
-## Wiki
-To view indicative content material, click the **Wiki** tab located above.
-
 ## Repositories
 Here are the following assessment submission repositories:
 
