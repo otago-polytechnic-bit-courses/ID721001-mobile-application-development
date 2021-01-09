@@ -1,9 +1,9 @@
 # **Kotlin**
 
-The following code snippets are available [here](https://github.com/Grayson-Orr/op-kotlin-basics).
+The following code snippets are available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/tree/master/01-kotlin/kotlin-samples).
 
 ### What is **Kotlin**?
-**Kotlin** is a statically typed programming language designed & developed by JetBrains. **Kotlin** targets the JVM (**Java** Virtual Machine), but can also compile to **Java**Script & native code via the LLVM (Low-Level Virtual Machine). **Kotlin** is designed to be concise, safe, pragmatic & interoperable. **Kotlin** can be used almost everywhere **Java** is used, i.e., server-side development, Android mobile development, etc. **Kotlin** works seamlessly with all existing **Java** libraries/frameworks & performs at the same level as **Java**.
+**Kotlin** is a statically typed programming language designed & developed by JetBrains. **Kotlin** targets the JVM (Java Virtual Machine), but can also compile to **Java**Script & native code via the LLVM (Low-Level Virtual Machine). **Kotlin** is designed to be concise, safe, pragmatic & interoperable. **Kotlin** can be used almost everywhere **Java** is used, i.e., server-side development, Android mobile development, etc. **Kotlin** works seamlessly with all existing **Java** libraries/frameworks & performs at the same level as **Java**.
 
 ### What is static type checking?
 Static type checking means the type of every expression in a program is known at compile time. Also, the compiler can validate that the properties & methods you are trying to access exist on the objects you are using. In contrast to **Java**, **Kotlin** does not require you to explicitly specify every type in a program. In most cases, the type can be determined using type inference, allowing the type declaration to be omitted.
@@ -17,10 +17,10 @@ Static type checking means the type of every expression in a program is known at
 In **Java**, a variable declaration starts with a type. In **Kotlin**, a variable declaration starts with a keyword & optionally a type after the variable name.
 
 ```kotlin
-// **Java**
+// Java
 String someString = "Hello, World!";
 
-// **Kotlin**
+// Kotlin
 var someString: String = "Hello, World!" // or
 var someString = "Hello, World!"
 ```
@@ -49,7 +49,7 @@ fun main() {
 **Kotlin** does not enforce immutability, but is recommended that `val` is used wherever possible.
 
 ### Null Safety
-**Kotlin** has attempted to achieve a higher level of safety than in **Java**. Running on the JVM already provides a lot of safety, i.e., memory safety, preventing buffer overflows & other problems caused by dynamically allocated memory. Also, **Kotlin** ensures the type safety of your programs meaning errors can be prevented by checks at compile time & not failing at runtime. **Kotlin**’s type system tracks nullable & non-nullable values & forbids operations that can lead to a `NullPointerException` at runtime. Nullable values are marked with a `?` after the type.
+**Kotlin** has attempted to achieve a higher level of safety than in **Java**. Running on the JVM already provides a lot of safety, i.e., memory safety, preventing buffer overflows & other problems caused by dynamically allocated memory. Also, **Kotlin** ensures the type safety of your programs meaning errors can be prevented by checks at compile time & not failing at runtime. The **Kotlin** type system tracks nullable & non-nullable values & forbids operations that can lead to a `NullPointerException` at runtime. Nullable values are marked with a `?` after the type.
 
 ```kotlin
 var notNullable: String = "Hello, World!"
@@ -59,7 +59,7 @@ var nullable: String? = "Hello, World!"
 nullable = null
 ```
 
-### Coding Exercise ✏️
+### Practice Coding Problem ✏️
 One a piece of A4 paper, write a program which declares & assigns the following values to their appropriate data types, i.e., `var age: Int = 25`:
 
 * "I <3 this course"
@@ -82,7 +82,7 @@ fun max(x: Int, y: Int): Int {
     return result
 }
 
-fun printMessage(message: String): Unit { // Unit is equivalent to void in **Java**
+fun printMessage(message: String): Unit { // Unit is equivalent to void in Java
     println(message)
 }
 
@@ -107,7 +107,7 @@ fun main() {
 **Note:** The ternary operator does not exist in **Kotlin**.
 
 ### For Loop
-The `for` loop is equivalent to **Java**'s `for-each` loop. The most common application of this loop is iterating over an array or collection.
+The `for` loop is equivalent to a **Java** `for-each` loop. The most common application of this loop is iterating over an array or collection.
 
 ```kotlin
 val countries = mutableListOf<String>("Australia", "Brazil", "Canada")
@@ -184,7 +184,7 @@ fun main() {
 }
 ```
 
-### Coding Exercise ✏️ 
+### Practice Coding Problem ✏️ 
 On a piece of paper, write a program which loops from 1 to 25. If the loop variable's value is less than 16, print out "I am legally not allowed to drive". If the loop variable's value is ≥ 16, print out "I am legally allowed to drive".
 
 ## Collections
@@ -193,7 +193,7 @@ On a piece of paper, write a program which loops from 1 to 25. If the loop varia
 In **Kotlin**, lists can be either mutable or read-only. For list creation, use the standard library functions `mutableListOf()` & `listOf()`. To prevent unwanted modifications, obtain read-only views of mutable lists by casting them to `List`.
 
 ```kotlin
-val progLangs: MutableList<String> = mutableListOf("C#", "Go", "**Java**")
+val progLangs: MutableList<String> = mutableListOf("C#", "Go", "Java")
 val readOnlyProgLangs: List<String> = progLangs
 
 fun addProgLang(progLang: String) {
@@ -210,7 +210,7 @@ fun main() {
     for (i in getProgLanguages()) {
         println(i) // C#
                    // Go
-                   // **Java**
+                   // Java
                    // MATLAB
     }
 }
@@ -422,7 +422,7 @@ fun main() {
 }
 ```
 
-### Coding Exercise ✏️ 
+### Practice Coding Problem ✏️ 
 On a piece of paper, write a program with a regular class called `MobilePhone` & three properties called `osName`, `brand` & `model`. Override its `toString` using the same format as the `Person` class example.
 
 In the `main` function, create two `MobilePhone` objects. For the first `MobilePhone` object, print the `osName` & for the second `MobilePhone` object, print its `toString` method. 
