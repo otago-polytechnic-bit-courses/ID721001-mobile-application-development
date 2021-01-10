@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".QuizPlayFragment">
+
+    <data>
+
+        <variable
+            name="quiz"
+            type="op.mobile.dev.quiz.QuizPlayFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/quiz_lose_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_view_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_32"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:gravity="center"
+            android:text="@{quiz.currQuestion.text}"
+            android:textSize="@dimen/text_size_25"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rdo_group_answers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_view_question">
+
+            <RadioButton
+                android:id="@+id/rdo_btn_answer_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{quiz.answers[0]}" />
+
+            <RadioButton
+                android:id="@+id/rdo_btn_answer_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{quiz.answers[1]}" />
+
+            <RadioButton
+                android:id="@+id/rdo_btn_answer_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{quiz.answers[2]}" />
+
+            <RadioButton
+                android:id="@+id/rdo_btn_answer_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{quiz.answers[3]}" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_submit_answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/submit_answer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rdo_group_answers" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

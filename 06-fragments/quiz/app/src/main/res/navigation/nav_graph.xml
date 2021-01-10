@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/quiz_home_frag">
+    <fragment
+        android:id="@+id/quiz_home_frag"
+        android:name="op.mobile.dev.quiz.QuizHomeFragment"
+        android:label="fragment_quiz_home"
+        tools:layout="@layout/fragment_quiz_home">
+        <action
+            android:id="@+id/action_quiz_home_to_quiz_play"
+            app:destination="@id/quiz_play_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz_play_frag"
+        android:name="op.mobile.dev.quiz.QuizPlayFragment"
+        android:label="fragment_quiz_play"
+        tools:layout="@layout/fragment_quiz_play">
+        <action
+            android:id="@+id/action_quiz_play_to_quiz_win"
+            app:destination="@id/quiz_win_frag" />
+        <action
+            android:id="@+id/action_quiz_play_to_quiz_lose"
+            app:destination="@id/quiz_lose_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz_win_frag"
+        android:name="op.mobile.dev.quiz.QuizWinFragment"
+        android:label="fragment_quiz_win"
+        tools:layout="@layout/fragment_quiz_win">
+        <action
+            android:id="@+id/action_quiz_win_to_quiz_play"
+            app:destination="@id/quiz_play_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz_lose_frag"
+        android:name="op.mobile.dev.quiz.QuizLoseFragment"
+        android:label="fragment_quiz_lose"
+        tools:layout="@layout/fragment_quiz_lose">
+        <action
+            android:id="@+id/action_quiz_lose_to_quiz_play"
+            app:destination="@id/quiz_play_frag" />
+    </fragment>
+</navigation>

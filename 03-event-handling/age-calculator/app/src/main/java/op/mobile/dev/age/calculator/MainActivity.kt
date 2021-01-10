@@ -24,13 +24,13 @@ class MainActivity : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        btnSelectDate = findViewById(R.id.btnSelectDate)
+        btnSelectDate = findViewById(R.id.btn_select_date)
         btnSelectDate.setOnClickListener {
             showDatePicker()
         }
 
-        txtViewSelectedDate = findViewById(R.id.txtViewSelectedDate)
-        txtViewMinutesDifference = findViewById(R.id.txtViewMinutesDifference)
+        txtViewSelectedDate = findViewById(R.id.txt_view_selected_date)
+        txtViewMinutesDifference = findViewById(R.id.txt_view_minutes_difference)
     }
 
     private fun showDatePicker() {
