@@ -6,20 +6,23 @@ class AnimalPlayViewModel : ViewModel() {
 
     var animalSoundList: MutableList<String> =
         mutableListOf("Baa", "Bow-Wow", "Buzz", "Moo", "Neigh", "Oink Oink", "Ribbit", "Quack")
-    var isEmpty = false
-    var animalSound = ""
-    var score = 0
+    var animalSound: String
+    var score: Int
+    var isEnd: Boolean
 
     init {
-//        animalSoundList.shuffle()
+        animalSoundList.shuffle()
+        animalSound = ""
+        score = 0
+        isEnd = false
         nextAnimalSound()
     }
 
     fun onSkip() {
         if (score != 0) {
             score--
-            nextAnimalSound()
         }
+        nextAnimalSound()
     }
 
     fun onCorrect() {
@@ -30,6 +33,10 @@ class AnimalPlayViewModel : ViewModel() {
     private fun nextAnimalSound() {
         if (animalSoundList.isNotEmpty()) {
             animalSound = animalSoundList.removeAt(0)
+        }
+
+        if (animalSoundList.isEmpty()) {
+            isEnd = true
         }
     }
 }
