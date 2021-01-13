@@ -7,4 +7,4 @@ Here are the following assessment submission repositories:
 
 * Practicals - https://classroom.github.com/a/VJIq7Ae0
 * Travelling Android application - https://classroom.github.com/a/FWk_XkTA
-* Wishlist Android application - https://classroom.github.com/a/oVx-YCLQ
+* Sensor Android application - https://classroom.github.com/a/oVx-YCLQ
