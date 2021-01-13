@@ -30,13 +30,16 @@ class AnimalResultFragment : Fragment() {
         viewModel = ViewModelProvider(this, viewModelFactory)
             .get(AnimalResultViewModel::class.java)
 
-        viewModel.score.observe(viewLifecycleOwner, Observer { _score ->
-            binding.txtViewScore.text = activity?.getString(R.string.you_scored, _score.toString())
-        })
+        binding.animalResultViewModel = viewModel
 
-        binding.btnPlayAgain.setOnClickListener {
-            findNavController().navigate(AnimalResultFragmentDirections.actionAnimalResultFragmentToAnimalPlayFragment())
-        }
+        binding.lifecycleOwner = viewLifecycleOwner
+
+        viewModel.isPlayAgain.observe(viewLifecycleOwner, Observer { _isPlayAgain ->
+            if (_isPlayAgain) {
+                findNavController().navigate(AnimalResultFragmentDirections.actionAnimalResultFragmentToAnimalPlayFragment())
+                viewModel.onPlayAgainComplete()
+            }
+        })
 
         return binding.root
     }

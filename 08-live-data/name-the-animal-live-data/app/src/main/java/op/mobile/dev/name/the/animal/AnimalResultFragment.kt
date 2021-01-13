@@ -34,9 +34,14 @@ class AnimalResultFragment : Fragment() {
             binding.txtViewScore.text = activity?.getString(R.string.you_scored, _score.toString())
         })
 
-        binding.btnPlayAgain.setOnClickListener {
-            findNavController().navigate(AnimalResultFragmentDirections.actionAnimalResultFragmentToAnimalPlayFragment())
-        }
+        binding.btnPlayAgain.setOnClickListener { viewModel.onPlayAgain() }
+
+        viewModel.isPlayAgain.observe(viewLifecycleOwner, Observer { _isPlayAgain ->
+            if (_isPlayAgain) {
+                findNavController().navigate(AnimalResultFragmentDirections.actionAnimalResultFragmentToAnimalPlayFragment())
+                viewModel.onPlayAgainComplete()
+            }
+        })
 
         return binding.root
     }

@@ -19,10 +19,9 @@ class AnimalPlayViewModel : ViewModel() {
     val isEnd: LiveData<Boolean> get() = _isEnd
 
     init {
-        animalSoundList.shuffle()
         _animalSound.value = ""
         _score.value = 0
-        _isEnd.value = false
+        animalSoundList.shuffle()
         nextAnimalSound()
     }
 
@@ -38,9 +37,17 @@ class AnimalPlayViewModel : ViewModel() {
         nextAnimalSound()
     }
 
+    fun onEnd() {
+        _isEnd.value = true
+    }
+
+    fun onEndComplete() {
+        _isEnd.value = false
+    }
+
     private fun nextAnimalSound() {
         if (animalSoundList.isEmpty()) {
-            _isEnd.value = true
+            onEnd()
         } else {
             _animalSound.value = animalSoundList.removeAt(0)
         }

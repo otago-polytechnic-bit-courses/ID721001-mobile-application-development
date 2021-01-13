@@ -26,30 +26,15 @@ class AnimalPlayFragment : Fragment() {
 
         viewModel = ViewModelProvider(this).get(AnimalPlayViewModel::class.java)
 
-        viewModel.animalSound.observe(viewLifecycleOwner, Observer { _animalSound ->
-            binding.txtViewAnimalSound.text =
-                activity?.getString(R.string.what_animal, _animalSound)
-        })
+        binding.animalPlayViewModel = viewModel
 
-        viewModel.score.observe(viewLifecycleOwner, Observer { _score ->
-            binding.txtViewScore.text =
-                activity?.getString(R.string.current_score, _score.toString())
-        })
+        binding.lifecycleOwner = viewLifecycleOwner
 
         viewModel.isEnd.observe(viewLifecycleOwner, Observer<Boolean> { _isEnd ->
-            if (_isEnd) disableButtons()
+            if (_isEnd) onEnd()
         })
 
-        binding.btnSkipAnimalSound.setOnClickListener { onSkip() }
-        binding.btnCorrectAnimalSound.setOnClickListener { onCorrect() }
-        binding.btnEndGame.setOnClickListener { onEnd() }
-
         return binding.root
-    }
-
-    private fun disableButtons() {
-        binding.btnSkipAnimalSound.isEnabled = false
-        binding.btnCorrectAnimalSound.isEnabled = false
     }
 
     private fun onSkip() {
@@ -64,5 +49,6 @@ class AnimalPlayFragment : Fragment() {
         val action = AnimalPlayFragmentDirections.actionAnimalPlayFragmentToAnimalResultFragment()
         action.score = viewModel.score.value ?: 0
         NavHostFragment.findNavController(this).navigate(action)
+        viewModel.onEndComplete()
     }
 }

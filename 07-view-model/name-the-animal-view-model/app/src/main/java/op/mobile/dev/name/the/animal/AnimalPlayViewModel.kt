@@ -11,10 +11,10 @@ class AnimalPlayViewModel : ViewModel() {
     var isEnd: Boolean
 
     init {
-        animalSoundList.shuffle()
         animalSound = ""
         score = 0
         isEnd = false
+        animalSoundList.shuffle()
         nextAnimalSound()
     }
 
@@ -30,13 +30,19 @@ class AnimalPlayViewModel : ViewModel() {
         nextAnimalSound()
     }
 
-    private fun nextAnimalSound() {
-        if (animalSoundList.isNotEmpty()) {
-            animalSound = animalSoundList.removeAt(0)
-        }
+    private fun onEnd() {
+        isEnd = true
+    }
 
+    fun onEndComplete() {
+        isEnd = false
+    }
+
+    private fun nextAnimalSound() {
         if (animalSoundList.isEmpty()) {
-            isEnd = true
+            onEnd()
+        } else {
+            animalSound = animalSoundList.removeAt(0)
         }
     }
 }

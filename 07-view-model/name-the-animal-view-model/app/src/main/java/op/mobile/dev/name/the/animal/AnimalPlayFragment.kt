@@ -34,13 +34,6 @@ class AnimalPlayFragment : Fragment() {
         return binding.root
     }
 
-    private fun disableButtons() {
-        if (viewModel.isEnd) {
-            binding.btnSkipAnimalSound.isEnabled = false
-            binding.btnCorrectAnimalSound.isEnabled = false
-        }
-    }
-
     private fun updateText() {
         binding.txtViewAnimalSound.text =
             activity?.getString(R.string.what_animal, viewModel.animalSound)
@@ -49,20 +42,21 @@ class AnimalPlayFragment : Fragment() {
     }
 
     private fun onSkip() {
-        disableButtons()
         viewModel.onSkip()
         updateText()
+        if (viewModel.isEnd) onEnd()
     }
 
     private fun onCorrect() {
-        disableButtons()
         viewModel.onCorrect()
         updateText()
+        if (viewModel.isEnd) onEnd()
     }
 
     private fun onEnd() {
         val action = AnimalPlayFragmentDirections.actionAnimalPlayFragmentToAnimalResultFragment()
         action.score = viewModel.score
         NavHostFragment.findNavController(this).navigate(action)
+        viewModel.onEndComplete()
     }
 }

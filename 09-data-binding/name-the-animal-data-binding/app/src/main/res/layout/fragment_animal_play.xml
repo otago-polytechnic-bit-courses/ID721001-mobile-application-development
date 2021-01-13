@@ -4,6 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".AnimalPlayFragment">
 
+    <data>
+
+        <variable
+            name="animalPlayViewModel"
+            type="op.mobile.dev.name.the.animal.AnimalPlayViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/animal_play_constraint_layout"
         android:layout_width="match_parent"
@@ -16,6 +23,7 @@
             android:layout_marginStart="@dimen/margin_32"
             android:layout_marginEnd="@dimen/margin_32"
             android:gravity="center"
+            android:text="@{@string/what_animal(animalPlayViewModel.animalSound)}"
             android:textSize="@dimen/text_size_25"
             app:layout_constraintBottom_toTopOf="@+id/btn_correct_animal_sound"
             app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +37,7 @@
             android:layout_marginStart="@dimen/margin_32"
             android:layout_marginEnd="@dimen/margin_32"
             android:layout_marginBottom="@dimen/margin_16"
+            android:text="@{@string/current_score(animalPlayViewModel.score)}"
             app:layout_constraintBottom_toTopOf="@+id/btn_correct_animal_sound"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -40,6 +49,7 @@
             android:layout_marginStart="@dimen/margin_32"
             android:layout_marginEnd="@dimen/margin_32"
             android:layout_marginBottom="@dimen/margin_16"
+            android:onClick="@{() -> animalPlayViewModel.onCorrect()}"
             android:text="@string/correct"
             android:textSize="@dimen/text_size_12"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -52,6 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_32"
             android:layout_marginBottom="@dimen/margin_16"
+            android:onClick="@{() -> animalPlayViewModel.onSkip()}"
             android:text="@string/skip"
             android:textSize="@dimen/text_size_12"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -63,6 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin_32"
             android:layout_marginBottom="@dimen/margin_16"
+            android:onClick="@{() -> animalPlayViewModel.onEnd()}"
             android:text="@string/end"
             android:textSize="@dimen/text_size_12"
             app:layout_constraintBottom_toBottomOf="parent"

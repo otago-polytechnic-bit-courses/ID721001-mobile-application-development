@@ -37,7 +37,7 @@ class AnimalPlayFragment : Fragment() {
         })
 
         viewModel.isEnd.observe(viewLifecycleOwner, Observer<Boolean> { _isEnd ->
-            if (_isEnd) disableButtons()
+            if (_isEnd) onEnd()
         })
 
         binding.btnSkipAnimalSound.setOnClickListener { onSkip() }
@@ -45,11 +45,6 @@ class AnimalPlayFragment : Fragment() {
         binding.btnEndGame.setOnClickListener { onEnd() }
 
         return binding.root
-    }
-
-    private fun disableButtons() {
-        binding.btnSkipAnimalSound.isEnabled = false
-        binding.btnCorrectAnimalSound.isEnabled = false
     }
 
     private fun onSkip() {
@@ -64,5 +59,6 @@ class AnimalPlayFragment : Fragment() {
         val action = AnimalPlayFragmentDirections.actionAnimalPlayFragmentToAnimalResultFragment()
         action.score = viewModel.score.value ?: 0
         NavHostFragment.findNavController(this).navigate(action)
+        viewModel.onEndComplete()
     }
 }
