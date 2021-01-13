@@ -1,4 +1,4 @@
-# View Model
+# **View Model**
 
 ## Practical
 The practical for this topic is available [here]().
