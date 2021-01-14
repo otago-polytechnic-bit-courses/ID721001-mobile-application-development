@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Name The Animal</string>
+    <string name="end">End</string>
+    <string name="correct">Correct</string>
+    <string name="skip">Skip</string>
+    <string name="play">Play</string>
+    <string name="play_again">Play Again</string>
+    <string name="you_scored">You Scored: %1$s</string>
+    <string name="what_animal">What Animal Makes The Sound %1$s?</string>
+    <string name="current_score">Current Score: %1$s</string>
+</resources>

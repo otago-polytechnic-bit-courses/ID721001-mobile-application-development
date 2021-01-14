@@ -4,8 +4,7 @@ import androidx.lifecycle.ViewModel
 
 class AnimalPlayViewModel : ViewModel() {
 
-    var animalSoundList: MutableList<String> =
-        mutableListOf("Baa", "Bow-Wow", "Buzz", "Moo", "Neigh", "Oink Oink", "Ribbit", "Quack")
+    private lateinit var animalSoundList: MutableList<String>
     var animalSound: String
     var score: Int
     var isEnd: Boolean
@@ -14,8 +13,21 @@ class AnimalPlayViewModel : ViewModel() {
         animalSound = ""
         score = 0
         isEnd = false
-        animalSoundList.shuffle()
+        resetAnimalSounds()
         nextAnimalSound()
+    }
+
+    private fun resetAnimalSounds() {
+        animalSoundList = mutableListOf("Baa", "Bow-Wow", "Buzz", "Moo", "Neigh", "Oink Oink", "Ribbit", "Quack")
+        animalSoundList.shuffle()
+    }
+
+    private fun nextAnimalSound() {
+        if (animalSoundList.isEmpty()) {
+            onEnd()
+        } else {
+            animalSound = animalSoundList.removeAt(0)
+        }
     }
 
     fun onSkip() {
@@ -36,13 +48,5 @@ class AnimalPlayViewModel : ViewModel() {
 
     fun onEndComplete() {
         isEnd = false
-    }
-
-    private fun nextAnimalSound() {
-        if (animalSoundList.isEmpty()) {
-            onEnd()
-        } else {
-            animalSound = animalSoundList.removeAt(0)
-        }
     }
 }
