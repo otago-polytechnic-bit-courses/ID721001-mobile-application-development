@@ -37,14 +37,6 @@ class AnimalPlayFragment : Fragment() {
         return binding.root
     }
 
-    private fun onSkip() {
-        viewModel.onSkip()
-    }
-
-    private fun onCorrect() {
-        viewModel.onCorrect()
-    }
-
     private fun onEnd() {
         val action = AnimalPlayFragmentDirections.actionAnimalPlayFragmentToAnimalResultFragment()
         action.score = viewModel.score.value ?: 0

@@ -5,7 +5,7 @@
     tools:context=".AnimalHomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/animal_result_constraint_layout"
+        android:id="@+id/animal_home_constraint_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
