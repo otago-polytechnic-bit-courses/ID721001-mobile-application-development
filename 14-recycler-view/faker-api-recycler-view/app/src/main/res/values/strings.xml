@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Faker API</string>
+    <string name="loading">Loading...</string>
+    <string name="connection_error">Connection Error :(</string>
+</resources>
