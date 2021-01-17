@@ -4,11 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import androidx.recyclerview.widget.RecyclerView
 import op.mobile.dev.faker.databinding.RecyclerViewItemBinding
 
 class APIServiceAdapter :
-    ListAdapter<APIServiceProperty, APIServiceAdapter.APIServicePropertyViewHolder>(DiffCallback) {
+    ListAdapter<APIServiceProperty, APIServicePropertyViewHolder>(DiffCallback) {
 
     companion object DiffCallback : DiffUtil.ItemCallback<APIServiceProperty>() {
         override fun areItemsTheSame(
@@ -22,15 +21,7 @@ class APIServiceAdapter :
             oldItem: APIServiceProperty,
             newItem: APIServiceProperty
         ): Boolean {
-            return oldItem.name == newItem.name
-        }
-    }
-
-    class APIServicePropertyViewHolder(private var binding: RecyclerViewItemBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-        fun bind(apiServiceProperty: APIServiceProperty) {
-            binding.apiServiceProperty = apiServiceProperty
-            binding.executePendingBindings()
+            return oldItem.id == newItem.id
         }
     }
 

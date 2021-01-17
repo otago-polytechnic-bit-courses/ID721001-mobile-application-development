@@ -11,8 +11,8 @@ class APIServiceViewModel : ViewModel() {
     private val _status = MutableLiveData<APIServiceStatus>()
     val status: LiveData<APIServiceStatus> get() = _status
 
-    private val _properties = MutableLiveData<APIServiceProperty>()
-    val properties: LiveData<APIServiceProperty> get() = _properties
+    private val _properties = MutableLiveData<List<APIServiceProperty>>()
+    val properties: LiveData<List<APIServiceProperty>> get() = _properties
 
     init {
         getAPIServiceProperties()
@@ -25,7 +25,7 @@ class APIServiceViewModel : ViewModel() {
                 _properties.value = retrofitService.getProperties()
                 _status.value = APIServiceStatus.COMPLETE
             } catch (e: Exception) {
-                _properties.value = null
+                _properties.value = ArrayList()
                 _status.value = APIServiceStatus.ERROR
             }
         }

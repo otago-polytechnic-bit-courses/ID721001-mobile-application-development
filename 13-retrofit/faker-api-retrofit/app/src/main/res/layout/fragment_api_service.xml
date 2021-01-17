@@ -41,7 +41,7 @@
             android:layout_marginEnd="@dimen/margin_32"
             android:layout_marginBottom="@dimen/margin_16"
             android:gravity="center"
-            android:text="@{apiServiceViewModel.properties.data[0].name}"
+            android:text="@{apiServiceViewModel.properties[0].title}"
             android:textSize="@dimen/text_size_25"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
