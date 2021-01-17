@@ -6,8 +6,6 @@
 
     <data>
 
-        <import type="android.view.View" />
-
         <variable
             name="apiServiceViewModel"
             type="op.mobile.dev.faker.APIServiceViewModel" />

@@ -27,6 +27,8 @@ class APIServiceFragment : Fragment() {
 
         binding.apiServiceViewModel = viewModel
 
+        binding.recyclerViewProperties.adapter = APIServiceAdapter()
+
         return binding.root
     }
 }

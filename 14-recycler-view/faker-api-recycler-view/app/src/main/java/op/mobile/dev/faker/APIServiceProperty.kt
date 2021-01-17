@@ -1,3 +1,3 @@
 package op.mobile.dev.faker
 
-data class APIServiceProperty(val data: List<APIServiceData>)
+data class APIServiceProperty(val name: String)
