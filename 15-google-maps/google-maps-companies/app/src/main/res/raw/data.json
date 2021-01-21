@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Adobe",
+    "city": "San Francisco",
+    "location": {
+      "latitude": 37.771206,
+      "longitude": -122.401662
+    }
+  },
+  {
+    "name": "Amazon",
+    "city": "East Palo Alto",
+    "location": {
+      "latitude": 37.459056,
+      "longitude": -122.142821
+    }
+  },
+  {
+    "name": "AMD",
+    "city": "Santa Clara",
+    "location": {
+      "latitude": 37.382925,
+      "longitude": -121.970384
+    }
+  },
+  {
+    "name": "Apple",
+    "city": "Cupertino",
+    "location": {
+      "latitude": 37.33182,
+      "longitude": -122.03118
+    }
+  },
+  {
+    "name": "BlueJeans",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.398873,
+      "longitude": -122.047364
+    }
+  },
+  {
+    "name": "Cisco",
+    "city": "San Jose",
+    "location": {
+      "latitude": 37.408175,
+      "longitude": -121.928128
+    }
+  },
+  {
+    "name": "Coursera",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.386873,
+      "longitude": -122.060787
+    }
+  },
+  {
+    "name": "eBay",
+    "city": "San Jose",
+    "location": {
+      "latitude": 37.295145,
+      "longitude": -121.926111
+    }
+  },
+  {
+    "name": "Electronic Arts",
+    "city": "Redwood City",
+    "location": {
+      "latitude": 37.52328,
+      "longitude": -122.254142
+    }
+  },
+  {
+    "name": "Evernote",
+    "city": "Redwood City",
+    "location": {
+      "latitude": 37.49209,
+      "longitude": -122.222378
+    }
+  },
+  {
+    "name": "Facebook",
+    "city": "Menlo Park",
+    "location": {
+      "latitude": 37.484377,
+      "longitude": -122.148304
+    }
+  },
+  {
+    "name": "GoFundMe",
+    "city": "Redwood City",
+    "location": {
+      "latitude": 37.485529,
+      "longitude": -122.227764
+    }
+  },
+  {
+    "name": "Groupon",
+    "city": "Santa Clara",
+    "location": {
+      "latitude": 37.382589,
+      "longitude": -121.96944
+    }
+  },
+  {
+    "name": "HackerRank",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.377584,
+      "longitude": -122.064086
+    }
+  },
+  {
+    "name": "Hewlett-Packard Enterprise",
+    "city": "San Jose",
+    "location": {
+      "latitude": 37.419235,
+      "longitude": -121.978859
+    }
+  },
+  {
+    "name": "IBM",
+    "city": "San Jose",
+    "location": {
+      "latitude": 37.195907,
+      "longitude": -121.748586
+    }
+  },
+  {
+    "name": "Informatica",
+    "city": "Redwood City",
+    "location": {
+      "latitude": 37.511302,
+      "longitude": -122.204801
+    }
+  },
+  {
+    "name": "Intel",
+    "city": "Santa Clara",
+    "location": {
+      "latitude": 37.387524,
+      "longitude": -121.96366
+    }
+  },
+  {
+    "name": "Intuit",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.431219,
+      "longitude": -122.097991
+    }
+  },
+  {
+    "name": "Jobvite",
+    "city": "San Mateo",
+    "location": {
+      "latitude": 37.554714,
+      "longitude": -122.317245
+    }
+  },
+  {
+    "name": "Khan Academy",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.421321,
+      "longitude": -122.088694
+    }
+  },
+  {
+    "name": "Leetcode",
+    "city": "Palo Alto",
+    "location": {
+      "latitude": 37.424205,
+      "longitude": -122.098878
+    }
+  },
+  {
+    "name": "Logitech",
+    "city": "Newark",
+    "location": {
+      "latitude": 37.539124,
+      "longitude": -122.06178
+    }
+  },
+  {
+    "name": "Mattermost",
+    "city": "Palo Alto",
+    "location": {
+      "latitude": 37.44934,
+      "longitude": -122.15997
+    }
+  },
+  {
+    "name": "McAfee",
+    "city": "Santa Clara",
+    "location": {
+      "latitude": 37.389291,
+      "longitude": -121.979214
+    }
+  },
+  {
+    "name": "MongoDB",
+    "city": "Palo Alto",
+    "location": {
+      "latitude": 37.442041,
+      "longitude": -122.161195
+    }
+  },
+  {
+    "name": "Netflix",
+    "city": "Los Gatos",
+    "location": {
+      "latitude": 37.259575,
+      "longitude": -121.962753
+    }
+  },
+  {
+    "name": "NVIDIA",
+    "city": "Santa Clara",
+    "location": {
+      "latitude": 37.370837,
+      "longitude": -121.964022
+    }
+  },
+  {
+    "name": "Oracle",
+    "city": "Redwood City",
+    "location": {
+      "latitude": 37.530705,
+      "longitude": -122.26242
+    }
+  },
+  {
+    "name": "Palantir",
+    "city": "Palo Alto",
+    "location": {
+      "latitude": 37.443844,
+      "longitude": -122.162189
+    }
+  },
+  {
+    "name": "PayPal",
+    "city": "San Jose",
+    "location": {
+      "latitude": 37.376851,
+      "longitude": -121.922733
+    }
+  },
+  {
+    "name": "Quora",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.387912,
+      "longitude": -122.083125
+    }
+  },
+  {
+    "name": "Robinhood",
+    "city": "Palo Alto",
+    "location": {
+      "latitude": 37.422211,
+      "longitude": -122.13708
+    }
+  },
+  {
+    "name": "SAP",
+    "city": "Palo Alto",
+    "location": {
+      "latitude": 37.398759,
+      "longitude": -122.146484
+    }
+  },
+  {
+    "name": "Sumo Logic",
+    "city": "Redwood City",
+    "location": {
+      "latitude": 37.492762,
+      "longitude": -122.227852
+    }
+  },
+  {
+    "name": "SurveyMonkey",
+    "city": "Palo Alto",
+    "location": {
+      "latitude": 37.444478,
+      "longitude": -122.165316
+    }
+  },
+  {
+    "name": "Symantec",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.397614,
+      "longitude": -122.053924
+    }
+  },
+  {
+    "name": "Tesla",
+    "city": "Palo Alto",
+    "location": {
+      "latitude": 37.394838,
+      "longitude": -122.150389
+    }
+  },
+  {
+    "name": "Udacity",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.399322,
+      "longitude": -122.107764
+    }
+  },
+  {
+    "name": "Visa",
+    "city": "Foster City",
+    "location": {
+      "latitude": 37.559665,
+      "longitude": -122.275934
+    }
+  },
+  {
+    "name": "VMWare",
+    "city": "Palo Alto",
+    "location": {
+      "latitude": 37.402086,
+      "longitude": -122.144617
+    }
+  },
+  {
+    "name": "WePay",
+    "city": "Redwood City",
+    "location": {
+      "latitude": 37.49396,
+      "longitude": -122.227933
+    }
+  },
+  {
+    "name": "WhatsApp",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.387999,
+      "longitude": -122.082985
+    }
+  },
+  {
+    "name": "Yahoo",
+    "city": "Sunnyvale",
+    "location": {
+      "latitude": 37.417181,
+      "longitude": -122.025012
+    }
+  },
+  {
+    "name": "YouTube",
+    "city": "San Bruno",
+    "location": {
+      "latitude": 37.628293,
+      "longitude": -122.426523
+    }
+  }
+]
