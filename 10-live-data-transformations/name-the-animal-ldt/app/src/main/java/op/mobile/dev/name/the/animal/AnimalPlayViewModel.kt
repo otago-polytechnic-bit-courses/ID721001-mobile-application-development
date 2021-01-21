@@ -15,16 +15,20 @@ class AnimalPlayViewModel : ViewModel() {
     private val timer: CountDownTimer
 
     private val _animalSound = MutableLiveData<String>()
-    val animalSound: LiveData<String> get() = _animalSound
+    val animalSound: LiveData<String>  
+        get() = _animalSound
 
     private val _score = MutableLiveData<Int>()
-    val score: LiveData<Int> get() = _score
+    val score: LiveData<Int> 
+        get() = _score
 
     private val _isEnd = MutableLiveData<Boolean>()
-    val isEnd: LiveData<Boolean> get() = _isEnd
+    val isEnd: LiveData<Boolean> 
+        get() = _isEnd
 
     private val _countdownTime = MutableLiveData<Long>()
-    private val countdownTime: LiveData<Long> get() = _countdownTime
+    private val countdownTime: LiveData<Long> 
+        get() = _countdownTime
 
     val countdownTimeString = Transformations.map(countdownTime) { time ->
         DateUtils.formatElapsedTime(time)

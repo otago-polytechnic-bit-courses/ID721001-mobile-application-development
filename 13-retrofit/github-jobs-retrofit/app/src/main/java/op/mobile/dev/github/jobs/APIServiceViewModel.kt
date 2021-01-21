@@ -9,10 +9,12 @@ import op.mobile.dev.github.jobs.APIService.retrofitService
 
 class APIServiceViewModel : ViewModel() {
     private val _status = MutableLiveData<APIServiceStatus>()
-    val status: LiveData<APIServiceStatus> get() = _status
+    val status: LiveData<APIServiceStatus> 
+        get() = _status
 
     private val _properties = MutableLiveData<List<APIServiceProperty>>()
-    val properties: LiveData<List<APIServiceProperty>> get() = _properties
+    val properties: LiveData<List<APIServiceProperty>> 
+        get() = _properties
 
     init {
         getAPIServiceProperties()
