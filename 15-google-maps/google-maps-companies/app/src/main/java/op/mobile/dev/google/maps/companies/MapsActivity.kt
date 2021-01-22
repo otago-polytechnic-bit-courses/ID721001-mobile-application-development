@@ -14,7 +14,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var toolbar: Toolbar
     private lateinit var map: GoogleMap
     private lateinit var clusterManager: ClusterManager<Company>
-    private lateinit var markerCluster: MarkerCluster
+    private lateinit var markerCluster: CompanyMarkerCluster
     private lateinit var companies: List<Company>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,10 +32,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         map = googleMap
         companies = CompanyJSONReader(this).read()
         clusterManager = ClusterManager(this, map)
-        markerCluster = MarkerCluster(this, map, clusterManager)
+        markerCluster = CompanyMarkerCluster(this, map, clusterManager)
         clusterManager.renderer = markerCluster
         clusterManager.addItems(companies)
         clusterManager.cluster()
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(companies[0].latLng, 10f))
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(companies[0].position, 10f))
     }
 }

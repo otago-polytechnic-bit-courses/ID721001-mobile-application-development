@@ -96,6 +96,14 @@
     }
   },
   {
+    "name": "Google",
+    "city": "Mountain View",
+    "location": {
+      "latitude": 37.386052,
+      "longitude": -122.083851
+    }
+  },
+  {
     "name": "Groupon",
     "city": "Santa Clara",
     "location": {
@@ -112,7 +120,7 @@
     }
   },
   {
-    "name": "Hewlett-Packard Enterprise",
+    "name": "Hewlett Packard Enterprise",
     "city": "San Jose",
     "location": {
       "latitude": 37.419235,
@@ -285,14 +293,6 @@
     "location": {
       "latitude": 37.444478,
       "longitude": -122.165316
-    }
-  },
-  {
-    "name": "Symantec",
-    "city": "Mountain View",
-    "location": {
-      "latitude": 37.397614,
-      "longitude": -122.053924
     }
   },
   {

@@ -20,7 +20,7 @@ import com.google.maps.android.clustering.ClusterManager.OnClusterClickListener
 import com.google.maps.android.clustering.view.DefaultClusterRenderer
 import com.google.maps.android.ui.IconGenerator
 
-class MarkerCluster(
+class CompanyMarkerCluster(
     ctx: Context,
     private val map: GoogleMap,
     clusterManager: ClusterManager<Company>
@@ -84,14 +84,17 @@ class MarkerCluster(
     override fun onInfoWindowClick(marker: Marker) {}
 
     inner class InfoWindowAdapter : GoogleMap.InfoWindowAdapter {
-        private val item: View = layoutInflater.inflate(R.layout.marker_info_window, null)
+        private val item: View = layoutInflater.inflate(R.layout.cluster_marker_info_window, null)
 
         override fun getInfoWindow(marker: Marker): View {
             val company: Company = marker.tag as Company
+            
             val txtViewName: TextView = item.findViewById(R.id.txt_view_name)
-            val txtViewCity: TextView = item.findViewById(R.id.txt_view_city)
             txtViewName.text = company.name
+
+            val txtViewCity: TextView = item.findViewById(R.id.txt_view_city)
             txtViewCity.text = company.city
+            
             return item
         }
 

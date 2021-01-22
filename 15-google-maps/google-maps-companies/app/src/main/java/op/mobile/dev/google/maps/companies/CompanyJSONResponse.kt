@@ -2,7 +2,7 @@ package op.mobile.dev.google.maps.companies
 
 import com.google.android.gms.maps.model.LatLng
 
-data class CompanyJSONResponse(val loc: Location, val name: String, val city: String) {
+data class CompanyJSONResponse(val name: String, val city: String, val location: Location) {
     data class Location(
         val latitude: Double,
         val longitude: Double
@@ -10,7 +10,7 @@ data class CompanyJSONResponse(val loc: Location, val name: String, val city: St
 }
 
 fun CompanyJSONResponse.toCompany() = Company(
-    latLng = LatLng(loc.latitude, loc.longitude),
     name = name,
-    city = city
+    city = city,
+    latLng = LatLng(location.latitude, location.longitude)
 )
