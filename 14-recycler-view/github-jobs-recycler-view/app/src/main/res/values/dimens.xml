@@ -2,6 +2,6 @@
     <dimen name="margin_8">8dp</dimen>
     <dimen name="margin_16">16dp</dimen>
     <dimen name="margin_32">32dp</dimen>
-    <dimen name="text_size_25">25sp</dimen>
     <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
 </resources>
