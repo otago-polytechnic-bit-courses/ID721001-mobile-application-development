@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tech Companies</string>
+    <string name="change_map_style">Change Map Style</string>
+    <string name="something_went_wrong">Something went wrong :(</string>
+    <string name="map_style_key">map_style</string>
+</resources>
