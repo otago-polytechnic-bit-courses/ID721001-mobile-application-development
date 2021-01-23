@@ -16,11 +16,11 @@ class AnimalPlayFragment : Fragment() {
     private lateinit var viewModel: AnimalPlayViewModel
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_animal_play, container, false
+                inflater, R.layout.fragment_animal_play, container, false
         )
 
         viewModel = ViewModelProvider(this).get(AnimalPlayViewModel::class.java)
@@ -36,9 +36,9 @@ class AnimalPlayFragment : Fragment() {
 
     private fun updateText() {
         binding.txtViewAnimalSound.text =
-            activity?.getString(R.string.what_animal, viewModel.animalSound)
+                activity?.getString(R.string.what_animal, viewModel.animalSound)
         binding.txtViewScore.text =
-            activity?.getString(R.string.current_score, viewModel.score.toString())
+                activity?.getString(R.string.current_score, viewModel.score.toString())
     }
 
     private fun onSkip() {

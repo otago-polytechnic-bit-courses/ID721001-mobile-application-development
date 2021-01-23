@@ -2,7 +2,6 @@ package op.mobile.dev.name.the.animal
 
 import android.os.CountDownTimer
 import android.text.format.DateUtils
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
@@ -15,19 +14,19 @@ class AnimalPlayViewModel : ViewModel() {
     private val timer: CountDownTimer
 
     private val _animalSound = MutableLiveData<String>()
-    val animalSound: LiveData<String>  
+    val animalSound: LiveData<String>
         get() = _animalSound
 
     private val _score = MutableLiveData<Int>()
-    val score: LiveData<Int> 
+    val score: LiveData<Int>
         get() = _score
 
     private val _isEnd = MutableLiveData<Boolean>()
-    val isEnd: LiveData<Boolean> 
+    val isEnd: LiveData<Boolean>
         get() = _isEnd
 
     private val _countdownTime = MutableLiveData<Long>()
-    private val countdownTime: LiveData<Long> 
+    private val countdownTime: LiveData<Long>
         get() = _countdownTime
 
     val countdownTimeString = Transformations.map(countdownTime) { time ->
@@ -59,7 +58,8 @@ class AnimalPlayViewModel : ViewModel() {
     }
 
     private fun resetAnimalSounds() {
-        animalSoundList = mutableListOf("Baa", "Bow-Wow", "Buzz", "Moo", "Neigh", "Oink Oink", "Ribbit", "Quack")
+        animalSoundList =
+            mutableListOf("Baa", "Bow-Wow", "Buzz", "Moo", "Neigh", "Oink Oink", "Ribbit", "Quack")
         animalSoundList.shuffle()
     }
 

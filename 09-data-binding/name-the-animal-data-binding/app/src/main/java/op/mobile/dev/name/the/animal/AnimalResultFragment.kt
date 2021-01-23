@@ -27,8 +27,7 @@ class AnimalResultFragment : Fragment() {
         viewModelFactory =
             AnimalResultViewModelFactory(AnimalResultFragmentArgs.fromBundle(requireArguments()).score)
 
-        viewModel = ViewModelProvider(this, viewModelFactory)
-            .get(AnimalResultViewModel::class.java)
+        viewModel = ViewModelProvider(this, viewModelFactory).get(AnimalResultViewModel::class.java)
 
         binding.animalResultViewModel = viewModel
 

@@ -12,25 +12,20 @@ import op.mobile.dev.name.the.animal.databinding.FragmentAnimalResultBinding
 
 class AnimalResultFragment : Fragment() {
 
-    private lateinit var viewModel: AnimalResultViewModel
-    private lateinit var viewModelFactory: AnimalResultViewModelFactory
-
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentAnimalResultBinding>(
-            inflater, R.layout.fragment_animal_result, container, false
+                inflater, R.layout.fragment_animal_result, container, false
         )
 
-        viewModelFactory =
-            AnimalResultViewModelFactory(AnimalResultFragmentArgs.fromBundle(requireArguments()).score)
+        val viewModelFactory =
+                AnimalResultViewModelFactory(AnimalResultFragmentArgs.fromBundle(requireArguments()).score)
 
-        viewModel = ViewModelProvider(this, viewModelFactory)
-            .get(AnimalResultViewModel::class.java)
+        val viewModel = ViewModelProvider(this, viewModelFactory).get(AnimalResultViewModel::class.java)
 
-        binding.txtViewScore.text =
-            activity?.getString(R.string.you_scored, viewModel.score.toString())
+        binding.txtViewScore.text = activity?.getString(R.string.you_scored, viewModel.score.toString())
 
         binding.btnPlayAgain.setOnClickListener {
             findNavController().navigate(AnimalResultFragmentDirections.actionAnimalResultFragmentToAnimalPlayFragment())

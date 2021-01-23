@@ -13,14 +13,13 @@ import op.mobile.dev.name.the.animal.databinding.FragmentAnimalPlayBinding
 
 class AnimalPlayFragment : Fragment() {
 
-    private lateinit var binding: FragmentAnimalPlayBinding
     private lateinit var viewModel: AnimalPlayViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(
+        val binding = DataBindingUtil.inflate<FragmentAnimalPlayBinding>(
             inflater, R.layout.fragment_animal_play, container, false
         )
 

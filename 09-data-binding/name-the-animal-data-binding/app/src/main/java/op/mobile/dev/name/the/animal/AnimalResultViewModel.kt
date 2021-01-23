@@ -7,11 +7,11 @@ import androidx.lifecycle.ViewModel
 class AnimalResultViewModel(finalScore: Int) : ViewModel() {
 
     private val _score = MutableLiveData<Int>()
-    val score: LiveData<Int> 
+    val score: LiveData<Int>
         get() = _score
 
     private val _isPlayAgain = MutableLiveData<Boolean>()
-    val isPlayAgain: LiveData<Boolean> 
+    val isPlayAgain: LiveData<Boolean>
         get() = _isPlayAgain
 
     init {

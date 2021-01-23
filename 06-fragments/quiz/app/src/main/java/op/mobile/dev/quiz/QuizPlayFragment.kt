@@ -27,8 +27,8 @@ class QuizPlayFragment : Fragment() {
         )
     )
     private var questionIdx = 0
-    private lateinit var currQuestion: Question
-    private lateinit var answers: MutableList<String>
+    lateinit var currQuestion: Question
+    lateinit var answers: MutableList<String>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

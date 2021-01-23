@@ -13,27 +13,26 @@ import op.mobile.dev.name.the.animal.databinding.FragmentAnimalPlayBinding
 
 class AnimalPlayFragment : Fragment() {
 
-    private lateinit var binding: FragmentAnimalPlayBinding
     private lateinit var viewModel: AnimalPlayViewModel
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_animal_play, container, false
+        val binding = DataBindingUtil.inflate<FragmentAnimalPlayBinding>(
+                inflater, R.layout.fragment_animal_play, container, false
         )
 
         viewModel = ViewModelProvider(this).get(AnimalPlayViewModel::class.java)
 
         viewModel.animalSound.observe(viewLifecycleOwner, Observer { _animalSound ->
             binding.txtViewAnimalSound.text =
-                activity?.getString(R.string.what_animal, _animalSound)
+                    activity?.getString(R.string.what_animal, _animalSound)
         })
 
         viewModel.score.observe(viewLifecycleOwner, Observer { _score ->
             binding.txtViewScore.text =
-                activity?.getString(R.string.current_score, _score.toString())
+                    activity?.getString(R.string.current_score, _score.toString())
         })
 
         viewModel.isEnd.observe(viewLifecycleOwner, Observer<Boolean> { _isEnd ->

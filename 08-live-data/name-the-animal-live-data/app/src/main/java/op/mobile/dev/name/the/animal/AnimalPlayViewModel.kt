@@ -9,15 +9,15 @@ class AnimalPlayViewModel : ViewModel() {
     private lateinit var animalSoundList: MutableList<String>
 
     private val _animalSound = MutableLiveData<String>()
-    val animalSound: LiveData<String> 
+    val animalSound: LiveData<String>
         get() = _animalSound
 
     private val _score = MutableLiveData<Int>()
-    val score: LiveData<Int> 
+    val score: LiveData<Int>
         get() = _score
 
     private val _isEnd = MutableLiveData<Boolean>()
-    val isEnd: LiveData<Boolean> 
+    val isEnd: LiveData<Boolean>
         get() = _isEnd
 
     init {

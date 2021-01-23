@@ -13,9 +13,6 @@ import op.mobile.dev.name.the.animal.databinding.FragmentAnimalResultBinding
 
 class AnimalResultFragment : Fragment() {
 
-    private lateinit var viewModel: AnimalResultViewModel
-    private lateinit var viewModelFactory: AnimalResultViewModelFactory
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,11 +21,11 @@ class AnimalResultFragment : Fragment() {
             inflater, R.layout.fragment_animal_result, container, false
         )
 
-        viewModelFactory =
+        val viewModelFactory =
             AnimalResultViewModelFactory(AnimalResultFragmentArgs.fromBundle(requireArguments()).score)
 
-        viewModel = ViewModelProvider(this, viewModelFactory)
-            .get(AnimalResultViewModel::class.java)
+        val viewModel =
+            ViewModelProvider(this, viewModelFactory).get(AnimalResultViewModel::class.java)
 
         binding.animalResultViewModel = viewModel
 
