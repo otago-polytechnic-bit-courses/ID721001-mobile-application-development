@@ -23,7 +23,7 @@ class APIServiceFragment : Fragment() {
 
         viewModel = ViewModelProvider(this).get(APIServiceViewModel::class.java)
 
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = viewLifecycleOwner
 
         binding.apiServiceViewModel = viewModel
 
