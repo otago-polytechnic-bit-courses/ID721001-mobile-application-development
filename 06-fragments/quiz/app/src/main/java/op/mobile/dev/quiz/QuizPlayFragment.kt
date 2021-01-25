@@ -27,6 +27,7 @@ class QuizPlayFragment : Fragment() {
         )
     )
     private var questionIdx = 0
+
     lateinit var currQuestion: Question
     lateinit var answers: MutableList<String>
 

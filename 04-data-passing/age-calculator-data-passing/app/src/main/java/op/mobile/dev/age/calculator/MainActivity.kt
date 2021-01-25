@@ -13,17 +13,14 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var toolbar: Toolbar
-    private lateinit var btnSelectDate: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        toolbar = findViewById(R.id.toolbar)
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        btnSelectDate = findViewById(R.id.btn_select_date)
+        val btnSelectDate: Button = findViewById(R.id.btn_select_date)
         btnSelectDate.setOnClickListener { showDatePicker() }
     }
 

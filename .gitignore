@@ -26,3 +26,10 @@ hs_err_pid*
 .idea
 
 local.properties
+
+# latex
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz

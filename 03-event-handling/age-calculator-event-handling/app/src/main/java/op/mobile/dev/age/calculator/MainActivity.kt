@@ -12,8 +12,6 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var toolbar: Toolbar
-    private lateinit var btnSelectDate: Button
     private lateinit var txtViewSelectedDate: TextView
     private lateinit var txtViewMinutesDifference: TextView
 
@@ -21,10 +19,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        toolbar = findViewById(R.id.toolbar)
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        btnSelectDate = findViewById(R.id.btn_select_date)
+        val btnSelectDate: Button = findViewById(R.id.btn_select_date)
         btnSelectDate.setOnClickListener { showDatePicker() }
 
         txtViewSelectedDate = findViewById(R.id.txt_view_selected_date)
@@ -46,21 +44,21 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity", "Selected date to minutes: $selectedDateToMinutes")
 
             val currentDate =
-                simpleDateFormat.parse(simpleDateFormat.format(currentTimeMillis))
+                    simpleDateFormat.parse(simpleDateFormat.format(currentTimeMillis))
             val currentDateToMinutes = currentDate!!.time / 60000
             Log.d("MainActivity", "Current date to minutes: $currentDateToMinutes")
 
             val differenceInMinutes = currentDateToMinutes - selectedDateToMinutes
             txtViewMinutesDifference.text =
-                getString(R.string.minutes_difference, differenceInMinutes.toString())
+                    getString(R.string.minutes_difference, differenceInMinutes.toString())
         }
 
         val datePickerDialog = DatePickerDialog(
-            this,
-            datePickerDialogListener,
-            calendar.get(Calendar.YEAR),
-            calendar.get(Calendar.MONTH),
-            calendar.get(Calendar.DAY_OF_MONTH)
+                this@MainActivity,
+                datePickerDialogListener,
+                calendar.get(Calendar.YEAR),
+                calendar.get(Calendar.MONTH),
+                calendar.get(Calendar.DAY_OF_MONTH)
         )
 
         datePickerDialog.datePicker.maxDate = currentTimeMillis
