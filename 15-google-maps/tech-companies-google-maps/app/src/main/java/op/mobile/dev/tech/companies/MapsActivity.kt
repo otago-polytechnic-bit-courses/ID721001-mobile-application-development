@@ -11,17 +11,11 @@ import com.google.maps.android.clustering.ClusterManager
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
-    private lateinit var toolbar: Toolbar
-    private lateinit var map: GoogleMap
-    private lateinit var clusterManager: ClusterManager<Company>
-    private lateinit var markerCluster: CompanyMarkerCluster
-    private lateinit var companies: List<Company>
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
 
-        toolbar = findViewById(R.id.toolbar)
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as? SupportMapFragment
@@ -29,13 +23,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
-        map = googleMap
-        companies = CompanyJSONReader(this).read()
-        clusterManager = ClusterManager(this, map)
-        markerCluster = CompanyMarkerCluster(this, map, clusterManager)
+        val companies = CompanyJSONReader(this).read()
+        val clusterManager: ClusterManager<Company> = ClusterManager(this, googleMap)
+        val markerCluster = CompanyMarkerCluster(this, googleMap, clusterManager)
         clusterManager.renderer = markerCluster
         clusterManager.addItems(companies)
         clusterManager.cluster()
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(companies[0].position, 10f))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(companies[0].position, 10f))
     }
 }

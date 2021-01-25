@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import java.text.SimpleDateFormat
@@ -46,7 +45,10 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, AgeDataActivity::class.java)
             intent.putExtra("selected_date", getString(R.string.selected_date, selectedDate))
-            intent.putExtra("difference_in_minutes", getString(R.string.minutes_difference, differenceInMinutes.toString()))
+            intent.putExtra(
+                "difference_in_minutes",
+                getString(R.string.minutes_difference, differenceInMinutes.toString())
+            )
             startActivity(intent)
         }
 

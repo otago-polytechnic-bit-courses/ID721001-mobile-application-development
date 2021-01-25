@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Sensors</string>
+    <string name="accelerometer_sensor_value">Accelerometer Sensor Value: X=%1$f, Y=%2$f &amp; Z=%3$f</string>
+    <string name="available_sensors">Available Sensors</string>
+    <string name="sensor_data">Sensor Data</string>
+</resources>

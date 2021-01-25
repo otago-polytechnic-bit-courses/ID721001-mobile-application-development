@@ -8,14 +8,13 @@ import java.io.InputStreamReader
 
 class CompanyJSONReader(private val ctx: Context) {
 
-    private val gson = Gson()
     private val inputStream: InputStream
         get() = ctx.resources.openRawResource(R.raw.data)
 
     fun read(): List<Company> {
         val itemType = object : TypeToken<List<CompanyJSONResponse>>() {}.type
         val reader = InputStreamReader(inputStream)
-        return gson.fromJson<List<CompanyJSONResponse>>(reader, itemType).map {
+        return Gson().fromJson<List<CompanyJSONResponse>>(reader, itemType).map {
             it.toCompany()
         }
     }

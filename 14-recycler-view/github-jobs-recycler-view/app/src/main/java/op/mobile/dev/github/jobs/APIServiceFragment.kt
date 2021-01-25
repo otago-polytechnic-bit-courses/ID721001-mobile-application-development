@@ -11,8 +11,6 @@ import op.mobile.dev.github.jobs.databinding.FragmentApiServiceBinding
 
 class APIServiceFragment : Fragment() {
 
-    private lateinit var viewModel: APIServiceViewModel
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -21,7 +19,7 @@ class APIServiceFragment : Fragment() {
             inflater, R.layout.fragment_api_service, container, false
         )
 
-        viewModel = ViewModelProvider(this).get(APIServiceViewModel::class.java)
+        val viewModel = ViewModelProvider(this).get(APIServiceViewModel::class.java)
 
         binding.lifecycleOwner = this
 
