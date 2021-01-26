@@ -14,7 +14,7 @@ class QuizWinFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = DataBindingUtil.inflate<FragmentQuizWinBinding>(
             inflater, R.layout.fragment_quiz_win, container, false
         )

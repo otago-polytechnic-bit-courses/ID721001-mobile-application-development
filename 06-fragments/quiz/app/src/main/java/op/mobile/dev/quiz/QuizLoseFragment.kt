@@ -14,7 +14,7 @@ class QuizLoseFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = DataBindingUtil.inflate<FragmentQuizLoseBinding>(
             inflater, R.layout.fragment_quiz_lose, container, false
         )

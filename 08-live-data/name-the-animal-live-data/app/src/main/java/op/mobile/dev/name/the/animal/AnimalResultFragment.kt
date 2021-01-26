@@ -16,7 +16,7 @@ class AnimalResultFragment : Fragment() {
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = DataBindingUtil.inflate<FragmentAnimalResultBinding>(
                 inflater, R.layout.fragment_animal_result, container, false
         )

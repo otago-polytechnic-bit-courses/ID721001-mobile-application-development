@@ -14,7 +14,7 @@ class APIServiceFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = DataBindingUtil.inflate<FragmentApiServiceBinding>(
             inflater, R.layout.fragment_api_service, container, false
         )
