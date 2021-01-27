@@ -22,13 +22,13 @@ class RestaurantTimeTrackerViewModel(private val dbDao: RestaurantDAO, applicati
     val isStopBtnVisible = Transformations.map(restaurant) { null != it }
     val isResetBtnVisible = Transformations.map(restaurantData) { it?.isNotEmpty() }
 
-    val restaurantString = Transformations.map(restaurantData) { data ->
+    val restaurantHistoryString = Transformations.map(restaurantData) { data ->
         formatRestaurantData(data, application.resources)
     }
 
     init {
         viewModelScope.launch {
-            restaurant.value = getRestaurantDataFromDatabase()
+            restaurant.value = getRestaurantHistoryFromDatabase()
         }
     }
 
@@ -40,18 +40,18 @@ class RestaurantTimeTrackerViewModel(private val dbDao: RestaurantDAO, applicati
         _navigateToRestaurantFeedback.value = null
     }
 
-    private suspend fun getRestaurantDataFromDatabase(): Restaurant? {
+    private suspend fun getRestaurantHistoryFromDatabase(): Restaurant? {
         var data = dbDao.getRestaurantData()
         if (data?.endTimeMilli != data?.startTimeMilli) data = null
         return data
     }
 
-    private suspend fun insert(night: Restaurant) {
-        dbDao.insert(night)
+    private suspend fun insert(restaurant: Restaurant) {
+        dbDao.insert(restaurant)
     }
 
-    private suspend fun update(night: Restaurant) {
-        dbDao.update(night)
+    private suspend fun update(restaurant: Restaurant) {
+        dbDao.update(restaurant)
     }
 
     private suspend fun clear() {
@@ -62,7 +62,7 @@ class RestaurantTimeTrackerViewModel(private val dbDao: RestaurantDAO, applicati
         viewModelScope.launch {
             val newRestaurantData = Restaurant()
             insert(newRestaurantData)
-            restaurant.value = getRestaurantDataFromDatabase()
+            restaurant.value = getRestaurantHistoryFromDatabase()
         }
     }
 
@@ -82,5 +82,4 @@ class RestaurantTimeTrackerViewModel(private val dbDao: RestaurantDAO, applicati
             _showSnackBar.value = true
         }
     }
-
 }

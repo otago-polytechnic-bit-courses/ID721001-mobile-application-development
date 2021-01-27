@@ -29,7 +29,7 @@ class AnimalPlayFragment : Fragment() {
 
         binding.lifecycleOwner = viewLifecycleOwner
 
-        viewModel.isEnd.observe(viewLifecycleOwner, Observer<Boolean> { _isEnd ->
+        viewModel.isEnd.observe(viewLifecycleOwner, { _isEnd ->
             if (_isEnd) onEnd()
         })
 

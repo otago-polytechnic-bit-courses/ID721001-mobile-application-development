@@ -15,15 +15,15 @@ interface RestaurantDAO {
     @Update
     suspend  fun update(restaurant: Restaurant)
 
-    @Query("SELECT * from restaurant_data_table WHERE restaurantEntryId = :key")
+    @Query("SELECT * from restaurant_history_table WHERE restaurantEntryId = :key")
     suspend fun get(key: Long): Restaurant?
 
-    @Query("DELETE FROM restaurant_data_table")
+    @Query("DELETE FROM restaurant_history_table")
     suspend fun clear()
 
-    @Query("SELECT * FROM restaurant_data_table ORDER BY restaurantEntryId DESC")
+    @Query("SELECT * FROM restaurant_history_table ORDER BY restaurantEntryId DESC")
     fun getAllRestaurantData(): LiveData<List<Restaurant>>
 
-    @Query("SELECT * FROM restaurant_data_table ORDER BY restaurantEntryId DESC LIMIT 1")
+    @Query("SELECT * FROM restaurant_history_table ORDER BY restaurantEntryId DESC LIMIT 1")
     suspend fun getRestaurantData(): Restaurant?
 }

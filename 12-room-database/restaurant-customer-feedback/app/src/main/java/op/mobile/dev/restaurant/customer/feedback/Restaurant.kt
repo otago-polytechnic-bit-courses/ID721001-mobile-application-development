@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "restaurant_data_table")
+@Entity(tableName = "restaurant_history_table")
 data class Restaurant(
         @PrimaryKey(autoGenerate = true)
         var restaurantEntryId: Long = 0L,

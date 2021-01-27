@@ -30,7 +30,7 @@ class AnimalResultFragment : Fragment() {
 
         binding.lifecycleOwner = viewLifecycleOwner
 
-        viewModel.isPlayAgain.observe(viewLifecycleOwner, Observer { _isPlayAgain ->
+        viewModel.isPlayAgain.observe(viewLifecycleOwner, { _isPlayAgain ->
             if (_isPlayAgain) {
                 findNavController().navigate(AnimalResultFragmentDirections.actionAnimalResultFragmentToAnimalPlayFragment())
                 viewModel.onPlayAgainComplete()
