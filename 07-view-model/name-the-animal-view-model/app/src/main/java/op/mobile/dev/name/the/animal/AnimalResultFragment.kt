@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import op.mobile.dev.name.the.animal.databinding.FragmentAnimalResultBinding
 
-class AnimalResultFragment : Fragment() {
+clasAnimalResultFragment : Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,

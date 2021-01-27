@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/restaurant_time_tracker_frag">
+
+    <fragment
+        android:id="@+id/restaurant_time_tracker_frag"
+        android:name="op.mobile.dev.restaurant.experience.tracker.RestaurantTimeTrackerFragment"
+        android:label="fragment_restaurant_time_tracker"
+        tools:layout="@layout/fragment_restaurant_time_tracker">
+        <action
+            android:id="@+id/action_restaurant_time_tracker_fragment_to_restaurant_feedback_fragment"
+            app:destination="@id/restaurant_feedback_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/restaurant_feedback_frag"
+        android:name="op.mobile.dev.restaurant.experience.tracker.RestaurantFeedbackFragment"
+        android:label="fragment_restaurant_feedback"
+        tools:layout="@layout/fragment_restaurant_feedback">
+        <argument
+            android:name="primaryKey"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_restaurant_feedback_fragment_fragment_to_restaurant_time_tracker_fragment"
+            app:destination="@id/restaurant_time_tracker_frag"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+</navigation>
