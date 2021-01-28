@@ -10,22 +10,24 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import op.mobile.dev.name.the.animal.databinding.FragmentAnimalResultBinding
 
-clasAnimalResultFragment : Fragment() {
+class AnimalResultFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View {
         val binding = DataBindingUtil.inflate<FragmentAnimalResultBinding>(
-                inflater, R.layout.fragment_animal_result, container, false
+            inflater, R.layout.fragment_animal_result, container, false
         )
 
         val viewModelFactory =
-                AnimalResultViewModelFactory(AnimalResultFragmentArgs.fromBundle(requireArguments()).score)
+            AnimalResultViewModelFactory(AnimalResultFragmentArgs.fromBundle(requireArguments()).score)
 
-        val viewModel = ViewModelProvider(this, viewModelFactory).get(AnimalResultViewModel::class.java)
+        val viewModel =
+            ViewModelProvider(this, viewModelFactory).get(AnimalResultViewModel::class.java)
 
-        binding.txtViewScore.text = activity?.getString(R.string.you_scored, viewModel.score.toString())
+        binding.txtViewScore.text =
+            activity?.getString(R.string.you_scored, viewModel.score.toString())
 
         binding.btnPlayAgain.setOnClickListener {
             findNavController().navigate(AnimalResultFragmentDirections.actionAnimalResultFragmentToAnimalPlayFragment())

@@ -12,11 +12,11 @@ import op.mobile.dev.name.the.animal.databinding.FragmentAnimalHomeBinding
 class AnimalHomeFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View {
         val binding = DataBindingUtil.inflate<FragmentAnimalHomeBinding>(
-                inflater, R.layout.fragment_animal_home, container, false
+            inflater, R.layout.fragment_animal_home, container, false
         )
 
         binding.btnPlay.setOnClickListener {

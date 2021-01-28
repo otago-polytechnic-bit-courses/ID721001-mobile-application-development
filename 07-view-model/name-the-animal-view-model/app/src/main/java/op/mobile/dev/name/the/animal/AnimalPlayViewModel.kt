@@ -18,7 +18,8 @@ class AnimalPlayViewModel : ViewModel() {
     }
 
     private fun resetAnimalSounds() {
-        animalSoundList = mutableListOf("Baa", "Woof", "Buzz", "Moo", "Neigh", "Oink", "Ribbit", "Quack")
+        animalSoundList =
+            mutableListOf("Baa", "Woof", "Buzz", "Moo", "Neigh", "Oink", "Ribbit", "Quack")
         animalSoundList.shuffle()
     }
 
