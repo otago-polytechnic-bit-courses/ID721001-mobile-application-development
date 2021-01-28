@@ -43,7 +43,7 @@ Many core **Android** system components & services are built from native code th
 The feature-set of the **Android** os is available through APIs written in **Java**. These APIs form the building blocks you need to create Android applications by simplifying the reuse of core, modular system components & services.
 
 #### System Apps
-Android comes with a set of core applications such as email, messaging, calendars, internet browsing, etc. Applications included with the platform have no special status among the applications the user chooses to install. This means that a third-party application can become the user's default messenger, web browser, etc.
+**Android** comes with a set of core applications such as email, messaging, calendars, internet browsing, etc. Applications included with the platform have no special status among the applications the user chooses to install. This means that a third-party application can become the user's default messenger, web browser, etc.
 
 The system applications function both as applications for users & to provide capabilities that developers can access from their own application.
 
