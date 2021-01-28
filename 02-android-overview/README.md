@@ -15,7 +15,22 @@ Research & answer the following:
 
 ### Software Stack
 
+The following image demonstrates the major components of the **Android** platform.
+
 <img src="https://developer.android.com/guide/platform/images/android-stack_2x.png" alt="Android Software Stack" width="350" height="500" />
+
+#### Linux Kernel
+The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime** or **ART** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It enables **Android** to take advantage of key security features & allows handset manufactrers to develop drivers for a well-know kernel.
+
+#### Hardware Abstraction Layer 
+
+#### Native C/C++ Libraries
+
+#### Android Runtime
+
+#### Java API Framework
+
+#### System Apps
 
 ### Market Share
 
