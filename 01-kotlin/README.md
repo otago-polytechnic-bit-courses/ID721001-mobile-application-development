@@ -3,7 +3,7 @@
 The following code snippets are available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/tree/master/01-kotlin/kotlin-samples).
 
 ### What is **Kotlin**?
-**Kotlin** is a statically typed programming language designed & developed by **JetBrains**. **Kotlin** targets the **JVM (Java Virtual Machine)**, but can also compile to **Java**Script & native code via the LLVM (Low-Level Virtual Machine). **Kotlin** is designed to be concise, safe, pragmatic & interoperable. **Kotlin** can be used almost everywhere **Java** is used, i.e., server-side development, Android mobile development, etc. **Kotlin** works seamlessly with all existing **Java** libraries/frameworks & performs at the same level as **Java**.
+**Kotlin** is a statically typed programming language designed & developed by **JetBrains**. **Kotlin** targets the **JVM (Java Virtual Machine)**, but can also compile to **JavaScript** & native code via the **LLVM (Low-Level Virtual Machine)**. **Kotlin** is designed to be concise, safe, pragmatic & interoperable. **Kotlin** can be used almost everywhere **Java** is used, i.e., server-side development, **Android** mobile development, etc. **Kotlin** works seamlessly with all existing **Java** libraries/frameworks & performs at the same level as **Java**.
 
 ### What is static type checking?
 Static type checking means the type of every expression in a program is known at compile time. Also, the compiler can validate that the properties & methods you are trying to access exist on the objects you are using. In contrast to **Java**, **Kotlin** does not require you to explicitly specify every type in a program. In most cases, the type can be determined using type inference, allowing the type declaration to be omitted.
