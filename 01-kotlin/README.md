@@ -49,7 +49,7 @@ fun main() {
 **Kotlin** does not enforce immutability, but is recommended that `val` is used wherever possible.
 
 ### Null Safety
-**Kotlin** has attempted to achieve a higher level of safety than in **Java**. Running on the JVM already provides a lot of safety, i.e., memory safety, preventing buffer overflows & other problems caused by dynamically allocated memory. Also, **Kotlin** ensures the type safety of your programs meaning errors can be prevented by checks at compile time & not failing at runtime. The **Kotlin** type system tracks nullable & non-nullable values & forbids operations that can lead to a `NullPointerException` at runtime. Nullable values are marked with a `?` after the type.
+**Kotlin** has attempted to achieve a higher level of safety than in **Java**. Running on the **JVM** already provides a lot of safety, i.e., memory safety, preventing buffer overflows & other problems caused by dynamically allocated memory. Also, **Kotlin** ensures the type safety of your programs meaning errors can be prevented by checks at compile time & not failing at runtime. The **Kotlin** type system tracks nullable & non-nullable values & forbids operations that can lead to a `NullPointerException` at runtime. Nullable values are marked with a `?` after the type.
 
 ```kotlin
 var notNullable: String = "Hello, World!"
