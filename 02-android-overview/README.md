@@ -61,7 +61,20 @@ According to StatCounter, Android has been the most popular mobile os since Augu
 
 ### How To Create A New Android Project
 To create a new Android project, follow these steps:
-1. Open Android Studio
+1. Open **Android Studio**.
+2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
+
+**PLACE IMAGE HERE**
+
+3. In the **Select a Project Template** window, select **Empty Activity** and click **Next**.
+4. In the **Configure Your Project** window, complete the following:
+- Enter **Calculator** in the **Name** field
+- Enter **op.mobileappdev.calculator** in the **Package** name field.
+- If you would like to place the project in a different folder, change its **Save** location.
+- Select **Kotlin** from the **Language** drop-down menu.
+- Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
+- If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
+5. Click **Finish**.
 
 ## Practical
 The practical for this topic is available [here]().
