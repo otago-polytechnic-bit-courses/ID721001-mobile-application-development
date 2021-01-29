@@ -7,13 +7,13 @@
 
         <variable
             name="restaurantTimeTrackerViewModel"
-            type="op.mobile.dev.restaurant.experience.tracker.RestaurantTimeTrackerViewModel" />
+            type="op.mobile.app.dev.restaurant.experience.tracker.RestaurantTimeTrackerViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RestaurantTimeTrackerFragment">
+        tools:context="op.mobile.app.dev.restaurant.experience.tracker.RestaurantTimeTrackerFragment">
 
         <TextView
             android:id="@+id/txt_view_restaurant_data_header"

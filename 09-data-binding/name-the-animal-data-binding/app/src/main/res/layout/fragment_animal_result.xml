@@ -8,7 +8,7 @@
 
         <variable
             name="animalResultViewModel"
-            type="op.mobile.dev.name.the.animal.AnimalResultViewModel" />
+            type="op.mobile.app.dev.name.the.animal.AnimalResultViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

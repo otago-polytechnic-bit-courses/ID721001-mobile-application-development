@@ -5,7 +5,7 @@
     app:startDestination="@id/animal_home_frag">
     <fragment
         android:id="@+id/animal_home_frag"
-        android:name="op.mobile.dev.name.the.animal.AnimalHomeFragment"
+        android:name="op.mobile.app.dev.name.the.animal.AnimalHomeFragment"
         android:label="fragment_animal_home"
         tools:layout="@layout/fragment_animal_home">
         <action
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/animal_play_frag"
-        android:name="op.mobile.dev.name.the.animal.AnimalPlayFragment"
+        android:name="op.mobile.app.dev.name.the.animal.AnimalPlayFragment"
         android:label="animal_play_fragment"
         tools:layout="@layout/fragment_animal_play">
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/animal_result_frag"
-        android:name="op.mobile.dev.name.the.animal.AnimalResultFragment"
+        android:name="op.mobile.app.dev.name.the.animal.AnimalResultFragment"
         android:label="animal_result_fragment"
         tools:layout="@layout/fragment_animal_result">
         <action

@@ -5,7 +5,7 @@
     app:startDestination="@id/quiz_home_frag">
     <fragment
         android:id="@+id/quiz_home_frag"
-        android:name="op.mobile.dev.quiz.QuizHomeFragment"
+        android:name="op.mobile.app.dev.quiz.QuizHomeFragment"
         android:label="fragment_quiz_home"
         tools:layout="@layout/fragment_quiz_home">
         <action
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/quiz_play_frag"
-        android:name="op.mobile.dev.quiz.QuizPlayFragment"
+        android:name="op.mobile.app.dev.quiz.QuizPlayFragment"
         android:label="fragment_quiz_play"
         tools:layout="@layout/fragment_quiz_play">
         <action
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/quiz_win_frag"
-        android:name="op.mobile.dev.quiz.QuizWinFragment"
+        android:name="op.mobile.app.dev.quiz.QuizWinFragment"
         android:label="fragment_quiz_win"
         tools:layout="@layout/fragment_quiz_win">
         <action
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/quiz_lose_frag"
-        android:name="op.mobile.dev.quiz.QuizLoseFragment"
+        android:name="op.mobile.app.dev.quiz.QuizLoseFragment"
         android:label="fragment_quiz_lose"
         tools:layout="@layout/fragment_quiz_lose">
         <action

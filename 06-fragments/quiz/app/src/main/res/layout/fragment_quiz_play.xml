@@ -8,7 +8,7 @@
 
         <variable
             name="quiz"
-            type="op.mobile.dev.quiz.QuizPlayFragment" />
+            type="op.mobile.app.dev.quiz.QuizPlayFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,27 +21,25 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_32"
-            android:layout_marginTop="@dimen/margin_16"
             android:layout_marginEnd="@dimen/margin_32"
-            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginBottom="16dp"
             android:gravity="center"
             android:text="@{quiz.currQuestion.text}"
             android:textSize="@dimen/text_size_25"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/rdo_group_answers"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <RadioGroup
             android:id="@+id/rdo_group_answers"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_32"
-            android:layout_marginTop="@dimen/margin_16"
             android:layout_marginEnd="@dimen/margin_32"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_submit_answer"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_view_question">
+            app:layout_constraintStart_toStartOf="parent">
 
             <RadioButton
                 android:id="@+id/rdo_btn_answer_one"
@@ -73,12 +71,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_32"
-            android:layout_marginTop="@dimen/margin_16"
             android:layout_marginEnd="@dimen/margin_32"
+            android:layout_marginBottom="16dp"
             android:text="@string/submit_answer"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rdo_group_answers" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

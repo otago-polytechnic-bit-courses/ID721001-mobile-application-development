@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/restaurant_time_tracker_frag"
-        android:name="op.mobile.dev.restaurant.experience.tracker.RestaurantTimeTrackerFragment"
+        android:name="op.mobile.app.dev.restaurant.experience.tracker.RestaurantTimeTrackerFragment"
         android:label="fragment_restaurant_time_tracker"
         tools:layout="@layout/fragment_restaurant_time_tracker">
         <action
@@ -16,7 +16,7 @@
 
     <fragment
         android:id="@+id/restaurant_feedback_frag"
-        android:name="op.mobile.dev.restaurant.experience.tracker.RestaurantFeedbackFragment"
+        android:name="op.mobile.app.dev.restaurant.experience.tracker.RestaurantFeedbackFragment"
         android:label="fragment_restaurant_feedback"
         tools:layout="@layout/fragment_restaurant_feedback">
         <argument

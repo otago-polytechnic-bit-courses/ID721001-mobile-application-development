@@ -8,7 +8,7 @@
 
         <variable
             name="animalPlayViewModel"
-            type="op.mobile.dev.name.the.animal.AnimalPlayViewModel" />
+            type="op.mobile.app.dev.name.the.animal.AnimalPlayViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

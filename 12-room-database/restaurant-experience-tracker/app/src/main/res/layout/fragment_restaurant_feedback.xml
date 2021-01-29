@@ -8,13 +8,13 @@
 
         <variable
             name="restaurantFeedbackViewModel"
-            type="op.mobile.dev.restaurant.experience.tracker.RestaurantFeedbackViewModel" />
+            type="op.mobile.app.dev.restaurant.experience.tracker.RestaurantFeedbackViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RestaurantFeedbackFragment">
+        tools:context="op.mobile.app.dev.restaurant.experience.tracker.RestaurantFeedbackFragment">
 
         <TextView
             android:id="@+id/txt_view_header"

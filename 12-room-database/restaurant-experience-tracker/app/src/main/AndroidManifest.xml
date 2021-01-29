@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="op.mobile.dev.restaurant.experience.tracker">
+    package="op.mobile.app.dev.restaurant.experience.tracker">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestaurantExperienceTracker">
         <activity
-            android:name=".MainActivity"
+            android:name="op.mobile.app.dev.restaurant.experience.tracker.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.RestaurantExperienceTracker.NoActionBar">
             <intent-filter>

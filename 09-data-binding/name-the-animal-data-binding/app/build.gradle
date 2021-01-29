@@ -9,7 +9,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
     defaultConfig {
-        applicationId "op.mobile.dev.name.the.animal"
+        applicationId "op.mobile.app.dev.name.the.animal"
         minSdkVersion 28
         targetSdkVersion 30
         versionCode 1
