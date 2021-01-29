@@ -19,7 +19,7 @@ Write your answers on the provided sticky note.
 
 The following image displays the major components of the **Android** platform.
 
-<img src="./resources/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
+<img src="./resources/readme/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
 
 #### Linux Kernel
 The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime** or **ART** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufactrers to develop drivers for a well-know kernel.
@@ -52,7 +52,7 @@ The system applications function both as applications for users & to provide cap
 ### Market Share
 According to StatCounter, Android has been the most popular mobile os since August 2013.
 
-<img src="./resources/mobile-os-market-share.png" alt="Mobile OS Market Share" width="750" height="450" />
+<img src="./resources/readme/mobile-os-market-share.png" alt="Mobile OS Market Share" width="750" height="450" />
 
 **Resource:** https://gs.statcounter.com/os-market-share/mobile/worldwide
 
@@ -68,12 +68,12 @@ To create a new Android project, follow these steps:
 
 3. In the **Select a Project Template** window, select **Empty Activity** and click **Next**.
 4. In the **Configure Your Project** window, complete the following:
-- Enter **Calculator** in the **Name** field
-- Enter **op.mobileappdev.calculator** in the **Package** name field.
-- If you would like to place the project in a different folder, change its **Save** location.
-- Select **Kotlin** from the **Language** drop-down menu.
-- Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
-- If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
+    - Enter **Calculator** in the **Name** field
+    - Enter **op.mobile.app.dev.age.calculator** in the **Package** name field.
+    - If you would like to place the project in a different folder, change its **Save** location.
+    - Select **Kotlin** from the **Language** drop-down menu.
+    - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
+    - If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
 5. Click **Finish**.
 
 ## Practical
