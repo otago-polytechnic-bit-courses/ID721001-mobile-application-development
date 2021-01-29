@@ -5,7 +5,7 @@ import androidx.lifecycle.*
 import kotlinx.coroutines.launch
 
 class RestaurantTimeTrackerViewModel(private val dbDao: RestaurantDAO, application: Application) :
-        AndroidViewModel(application) {
+    AndroidViewModel(application) {
 
     private var restaurant = MutableLiveData<Restaurant?>()
 

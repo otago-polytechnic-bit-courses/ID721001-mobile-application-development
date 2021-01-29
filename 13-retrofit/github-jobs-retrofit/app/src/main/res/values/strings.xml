@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">GitHub Jobs</string>
-    <string name="connection_error">Connection Error :(</string>
-    <string name="loading">Loading...</string>
-</resources>

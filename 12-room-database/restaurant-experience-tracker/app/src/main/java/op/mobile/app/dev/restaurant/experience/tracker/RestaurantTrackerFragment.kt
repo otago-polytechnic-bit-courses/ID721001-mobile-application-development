@@ -9,18 +9,17 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
-import op.mobile.dev.restaurant.experience.tracker.RestaurantTimeTrackerFragmentDirections
-import op.mobile.dev.restaurant.experience.tracker.databinding.FragmentRestaurantTimeTrackerBinding
+import op.mobile.app.dev.restaurant.experience.tracker.databinding.FragmentRestaurantTimeTrackerBinding
 
 class RestaurantTimeTrackerFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View {
 
         val binding = DataBindingUtil.inflate<FragmentRestaurantTimeTrackerBinding>(
-                inflater, R.layout.fragment_restaurant_time_tracker, container, false
+            inflater, R.layout.fragment_restaurant_time_tracker, container, false
         )
 
         val application = requireNotNull(activity).application
@@ -30,8 +29,8 @@ class RestaurantTimeTrackerFragment : Fragment() {
         val viewModelFactory = RestaurantTimeTrackerViewModelFactory(dataSource, application)
 
         val viewModel = ViewModelProvider(
-                this,
-                viewModelFactory
+            this,
+            viewModelFactory
         ).get(RestaurantTimeTrackerViewModel::class.java)
 
         binding.restaurantTimeTrackerViewModel = viewModel
@@ -41,9 +40,9 @@ class RestaurantTimeTrackerFragment : Fragment() {
         viewModel.showSnackBar.observe(viewLifecycleOwner, {
             if (it == true) {
                 Snackbar.make(
-                        requireActivity().findViewById(android.R.id.content),
-                        "Restaurant History Deleted.",
-                        Snackbar.LENGTH_SHORT
+                    requireActivity().findViewById(android.R.id.content),
+                    "Restaurant History Deleted.",
+                    Snackbar.LENGTH_SHORT
                 ).show()
                 viewModel.onShowSnackBarComplete()
             }
@@ -52,9 +51,9 @@ class RestaurantTimeTrackerFragment : Fragment() {
         viewModel.navigateToRestaurantFeedback.observe(viewLifecycleOwner, { data ->
             data?.let {
                 findNavController().navigate(
-                        RestaurantTimeTrackerFragmentDirections.actionRestaurantTimeTrackerFragmentToRestaurantFeedbackFragment(
-                                data.restaurantEntryId
-                        )
+                    RestaurantTimeTrackerFragmentDirections.actionRestaurantTimeTrackerFragmentToRestaurantFeedbackFragment(
+                        data.restaurantEntryId
+                    )
                 )
                 viewModel.onNavigateToRestaurantFeedbackComplete()
             }

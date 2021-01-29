@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestaurantExperienceTracker">
         <activity
-            android:name="op.mobile.app.dev.restaurant.experience.tracker.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.RestaurantExperienceTracker.NoActionBar">
             <intent-filter>

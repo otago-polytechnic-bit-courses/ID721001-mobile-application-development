@@ -35,11 +35,11 @@ fun formatRestaurantData(data: List<Restaurant>): Spanned {
                 append("<br>")
                 append("<b>Time Spent: </b>")
                 append(
-                        "${it.endTimeMilli.minus(it.startTimeMilli) / 1000 / 60 / 60} hours, ${
-                            it.endTimeMilli.minus(
-                                    it.startTimeMilli
-                            ) / 1000 / 60
-                        } minutes and ${it.endTimeMilli.minus(it.startTimeMilli) / 1000} seconds"
+                    "${it.endTimeMilli.minus(it.startTimeMilli) / 1000 / 60 / 60} hours, ${
+                        it.endTimeMilli.minus(
+                            it.startTimeMilli
+                        ) / 1000 / 60
+                    } minutes and ${it.endTimeMilli.minus(it.startTimeMilli) / 1000} seconds"
                 )
                 append("<br>")
                 append("<b>Rating: </b>")

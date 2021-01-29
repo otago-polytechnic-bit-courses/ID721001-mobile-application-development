@@ -9,7 +9,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
     defaultConfig {
-        applicationId "op.mobile.dev.restaurant.experience.tracker"
+        applicationId "op.mobile.app.dev.restaurant.experience.tracker"
         minSdkVersion 28
         targetSdkVersion 30
         versionCode 1

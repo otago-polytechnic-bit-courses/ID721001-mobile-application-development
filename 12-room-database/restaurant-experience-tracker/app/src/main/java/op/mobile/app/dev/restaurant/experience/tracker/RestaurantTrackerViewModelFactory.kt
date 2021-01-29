@@ -6,8 +6,8 @@ import androidx.lifecycle.ViewModelProvider
 
 @Suppress("UNCHECKED_CAST")
 class RestaurantTimeTrackerViewModelFactory(
-        private val dataSource: RestaurantDAO,
-        private val application: Application
+    private val dataSource: RestaurantDAO,
+    private val application: Application
 ) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {

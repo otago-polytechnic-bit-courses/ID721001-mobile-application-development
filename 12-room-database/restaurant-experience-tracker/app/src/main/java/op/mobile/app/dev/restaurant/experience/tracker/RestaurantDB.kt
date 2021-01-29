@@ -22,12 +22,12 @@ abstract class RestaurantDB : RoomDatabase() {
 
                 if (instance == null) {
                     instance = Room.databaseBuilder(
-                            ctx.applicationContext,
-                            RestaurantDB::class.java,
-                            "restaurant_history_database"
+                        ctx.applicationContext,
+                        RestaurantDB::class.java,
+                        "restaurant_history_database"
                     )
-                            .fallbackToDestructiveMigration()
-                            .build()
+                        .fallbackToDestructiveMigration()
+                        .build()
                     INSTANCE = instance
                 }
 

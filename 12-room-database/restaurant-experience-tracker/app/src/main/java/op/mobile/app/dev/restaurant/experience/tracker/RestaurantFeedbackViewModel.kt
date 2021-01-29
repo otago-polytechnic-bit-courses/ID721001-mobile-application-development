@@ -7,8 +7,8 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
 class RestaurantFeedbackViewModel(
-        private val primaryKey: Long = 0L,
-        private val db: RestaurantDAO
+    private val primaryKey: Long = 0L,
+    private val db: RestaurantDAO
 ) : ViewModel() {
 
     private val _navigateToRestaurantTracker = MutableLiveData<Boolean?>()
