@@ -17,9 +17,9 @@ Write your answers on the provided sticky note.
 
 ### Software Stack
 
-The following image demonstrates the major components of the **Android** platform.
+The following image displays the major components of the **Android** platform.
 
-<img src="https://developer.android.com/guide/platform/images/android-stack_2x.png" alt="Android Software Stack" width="350" height="500" />
+<img src="./resources/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
 
 #### Linux Kernel
 The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime** or **ART** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufactrers to develop drivers for a well-know kernel.
@@ -47,9 +47,21 @@ The feature-set of the **Android** os is available through APIs written in **Jav
 
 The system applications function both as applications for users & to provide capabilities that developers can access from their own application.
 
+**Resource:** https://developer.android.com/guide/platform
+
 ### Market Share
+According to StatCounter, Android has been the most popular mobile os since August 2013.
+
+<img src="./resources/mobile-os-market-share.png" alt="Mobile OS Market Share" width="750" height="450" />
+
+**Resource:** https://gs.statcounter.com/os-market-share/mobile/worldwide
 
 ## Android Studio
+**Android Studio** is a cross-platform integrated development environment or IDE for the **Android** os. **Android Studio** is built on **JetBrains' IntelliJ IDEA** & designed specifically for **Android** development.
+
+### How To Create A New Android Project
+To create a new Android project, follow these steps:
+1. Open Android Studio
 
 ## Practical
 The practical for this topic is available [here]().
