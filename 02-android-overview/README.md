@@ -64,11 +64,11 @@ To create a new Android project, follow these steps:
 1. Open **Android Studio**.
 2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
 
-<img src="./resources/readme/android-studio-home.png" alt="Mobile OS Market Share" width="550" height="400" />
+<img src="./resources/readme/android-studio-home.png" alt="Android Studio Home" width="575" height="400" />
 
 3. In the **Select a Project Template** window, select **Empty Activity** and click **Next**.
 
-**PLACE IMAGE HERE**
+<img src="./resources/readme/android-studio-template.png" alt="Android Studio Template" width="650" height="475" />
 
 4. In the **Configure Your Project** window, complete the following:
     - Enter **AgeCalculator** in the **Name** field
@@ -77,8 +77,8 @@ To create a new Android project, follow these steps:
     - Select **Kotlin** from the **Language** drop-down menu.
     - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
     - If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
-
-<img src="./resources/readme/android-studio-template.png" alt="Mobile OS Market Share" width="750" height="450" />
+    
+<img src="./resources/readme/android-studio-project.png" alt="Android Studio Project" width="650" height="475" />
 
 5. Click **Finish**.
 
