@@ -59,7 +59,7 @@ var nullable: String? = "Hello, World!"
 nullable = null
 ```
 
-### Coding Activity ✏️
+### Activity ✏️
 One a piece of A4 paper, write a program which declares & assigns the following values to their appropriate data types, i.e., `var age: Int = 25`:
 
 * "I <3 this course"
@@ -184,7 +184,7 @@ fun main() {
 }
 ```
 
-### Coding Activity ✏️
+### Activity ✏️
 On a piece of paper, write a program which loops from 1 to 25. If the loop variable's value is less than 16, print out "I am legally not allowed to drive". If the loop variable's value is ≥ 16, print out "I am legally allowed to drive".
 
 ## Collections
@@ -422,7 +422,7 @@ fun main() {
 }
 ```
 
-### Coding Activity ✏️
+### Activity ✏️
 On a piece of paper, write a program with a regular class called `MobilePhone` & three properties called `osName`, `brand` & `model`. Override its `toString` using the same format as the `Person` class example.
 
 In the `main` function, create two `MobilePhone` objects. For the first `MobilePhone` object, print the `osName` & for the second `MobilePhone` object, print its `toString` method. 
