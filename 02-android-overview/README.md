@@ -64,17 +64,39 @@ To create a new Android project, follow these steps:
 1. Open **Android Studio**.
 2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
 
-**PLACE IMAGE HERE**
+<img src="./resources/readme/android-studio-home.png" alt="Mobile OS Market Share" width="550" height="400" />
 
 3. In the **Select a Project Template** window, select **Empty Activity** and click **Next**.
+
+**PLACE IMAGE HERE**
+
 4. In the **Configure Your Project** window, complete the following:
-    - Enter **Calculator** in the **Name** field
+    - Enter **AgeCalculator** in the **Name** field
     - Enter **op.mobile.app.dev.age.calculator** in the **Package** name field.
     - If you would like to place the project in a different folder, change its **Save** location.
     - Select **Kotlin** from the **Language** drop-down menu.
     - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
     - If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
+
+<img src="./resources/readme/android-studio-template.png" alt="Mobile OS Market Share" width="750" height="450" />
+
 5. Click **Finish**.
+
+Now lets look at the most important files.
+
+**app > manifest > AndroidManifest.xml**
+
+**app > java > op.mobile.app.dev.age.calculator > MainActivity**
+
+**app > res > layout**
+
+**app > res > values**
+
+**Gradle Scripts > build.grade (Project: AgeCalculator)**
+
+**Gradle Scripts > build.grade (Module: AgeCalculator.app)**
+
+**Gradle Scripts > local.properties**
 
 ## Practical
 The practical for this topic is available [here]().
