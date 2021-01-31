@@ -82,13 +82,45 @@ To create a new Android project, follow these steps:
 
 5. Click **Finish**.
 
-Now lets look at the most important files.
+Lets look at some important application project files.
 
 **app > manifest > AndroidManifest.xml**
 
+Every application project must have an **AndroidManifest.xml** file in the root of the **app** directory. The **AndroidManifest.xml** file specifies important information about your application to the Android build tools, Android os & Google Play.
+
+**Resource:** https://developer.android.com/guide/topics/manifest/manifest-intro
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="op.mobile.app.dev.age.calculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AgeCalculator">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+```
+
 **app > java > op.mobile.app.dev.age.calculator > MainActivity**
 
+<img src="./resources/readme/android-studio-main-activity.png" alt="Android Studio Main Activity" width="750" height="500" />
+
 **app > res > layout**
+
+<img src="./resources/readme/android-studio-activity-main-xml.png" alt="Android Studio Activity Main XML" width="750" height="500" />
 
 **app > res > values**
 
