@@ -88,8 +88,6 @@ Lets look at some important application project files.
 
 Every application project must have an **AndroidManifest.xml** file in the root of the **app** directory. The **AndroidManifest.xml** file specifies important information about your application to the Android build tools, Android os & Google Play.
 
-**Resource:** https://developer.android.com/guide/topics/manifest/manifest-intro
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -114,15 +112,47 @@ Every application project must have an **AndroidManifest.xml** file in the root 
 </manifest>
 ```
 
+**Resource:** https://developer.android.com/guide/topics/manifest/manifest-intro
+
 **app > java > op.mobile.app.dev.age.calculator > MainActivity**
 
 <img src="./resources/readme/android-studio-main-activity.png" alt="Android Studio Main Activity" width="750" height="500" />
 
 **app > res > layout**
 
+A layout resource defines the architecture for the UI in an **Activity** or a **component** of a UI.
+
 <img src="./resources/readme/android-studio-activity-main-xml.png" alt="Android Studio Activity Main XML" width="750" height="500" />
 
+### Research Actvitiy ✏️
+Research & answer the following:
+
+
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
 **app > res > values**
+
+**Resource:** https://developer.android.com/guide/topics/resources/available-resources
 
 **Gradle Scripts > build.grade (Project: AgeCalculator)**
 
