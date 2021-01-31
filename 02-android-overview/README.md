@@ -8,9 +8,9 @@
 
 At **Google**, Rubin & his team developed a mobile device platform powered by the **Linux kernel**. **Google** marketed the platform to handset providers & carriers on the promise of providing a flexible, upgradeable system. In 2006, **Google's** plans to enter the mobile communications market continued. An early prototype closely resembled a **BlackBerry** phone which had a QWERTY keyboard & no touchscreen. With the unveiling of the **Apple iPhone** in 2007 meant **Android** had to go back to the drawing board. In 2008, both **Nokia** & **BlackBerry** announced touch-based smartphones that to rival the **iPhone 3G**. Subsequently, **Android** switch their focus to touchscreens. The first commercially available smartphone running **Android** was the **HTC Dream** which was announced in September 2008.
 
-### Research Actvitiy ✏️
+### Activity ✏️
 Research & answer the following:
-1. Carefully describe what members of the **OHA** do.
+1. Explain what members of the **OHA** do.
 2. Name 10 members of the **OHA**. Include a range of mobile operators, handset manufacturers & software companies.
 
 Write your answers on the provided sticky note.
@@ -30,9 +30,9 @@ The **hardware abstract layer (HAL)** provides standard interfaces that expose d
 #### Android Runtime
 For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Anroid Runtime include ahead-of-time/just-in-time compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
 
-### Research Actvitiy ✏️
-Research & answer the following question:
-1. What is the difference between ahead-of-time & just-in-time compilation?
+### Activity ✏️
+Research & answer the following:
+1. Explain difference between ahead-of-time & just-in-time compilation?
 
 Write your answer on the provided sticky note.
 
@@ -124,10 +124,7 @@ A layout resource defines the architecture for the UI in an **Activity** or a **
 
 <img src="./resources/readme/android-studio-activity-main-xml.png" alt="Android Studio Activity Main XML" width="750" height="500" />
 
-### Research Actvitiy ✏️
-Research & answer the following:
-
-
+Currently we are in **Design** view. Click **Code**. You should see the following **XML** code:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -150,9 +147,29 @@ Research & answer the following:
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
+### Activity ✏️
+Research & answer the following:
+1. Explain what a **ViewGroup** is & provide three examples of a **ViewGroup** object.
+2. Explain what a **View** is & provide three examples of a **View** object.
+
+**Resource:** https://developer.android.com/guide/topics/resources/layout-resource
+
+### ViewGroup & View Attributes
+
+**android:id** - A unique resource name for the element which you can use to obtain a reference to the **ViewGroup**/**View** from your application.
+**android:layout_height** - The height for the element as a dimension value/resource or a keyword (**match_parent** or **wrap_content**)
+**android:layout_width** - The width for the element as a dimension value/resource or a keyword (**match_parent** or **wrap_content**)
+
+### ConstraintLayout
+
+https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout
+
 **app > res > values**
 
-**Resource:** https://developer.android.com/guide/topics/resources/available-resources
+**Resources:** 
+- https://developer.android.com/guide/topics/resources/color-list-resource
+- https://developer.android.com/guide/topics/resources/string-resource
+- https://developer.android.com/guide/topics/resources/style-resource
 
 **Gradle Scripts > build.grade (Project: AgeCalculator)**
 
