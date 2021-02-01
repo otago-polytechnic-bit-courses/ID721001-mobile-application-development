@@ -72,7 +72,7 @@ To create a new Android project, follow these steps:
 1. Open **Android Studio**.
 2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
 
-<img src="./resources/readme/android-studio-home.png" alt="Android Studio Home" width="575" height="400" />
+<img src="./resources/readme/android-studio-home.png" alt="Android Studio Home" width="600" height="400" />
 
 3. In the **Select a Project Template** window, select **Empty Activity** and click **Next**.
 
@@ -188,15 +188,28 @@ Use the **AgeCalculator** project for this activity. In `activity_main.xml`,
 
 **app > res > values**
 
-- `colors.xml` - a colour is specified with an RGB value & alpha chanel. You can use a colour resource any place that accepts a hexadecimal colour value. Also, you can use a colour resource when a drawable resource is expected in **XML**, i.e., `android:drawable="@color/green"`.
-- `strings.xml`
+- `colors.xml` - a colour resource is specified with an RGB value & alpha chanel. You can use a colour resource any place that accepts a hexadecimal colour value. Also, you can use a colour resource when a drawable resource is expected in **XML**, i.e., `android:drawable="@color/green"`.
+- `strings.xml` - a string resource provides text strings for your application with optional styling & formatting. There are three types of string resources:
+    - String - **XML** resource that provides a single string.
+    - String Array - **XML** resource that provides an array of strings.
+    - Quantity Strings (Plurals) - **XML** resource that holds different strings for pluralization. 
 - `styles.xml`
 
-
 **Resources:** 
-- https://developer.android.com/guide/topics/resources/color-list-resource
+- https://developer.android.com/guide/topics/resources/more-resources#Color
 - https://developer.android.com/guide/topics/resources/string-resource
 - https://developer.android.com/guide/topics/resources/style-resource
+
+<hr />
+
+### Activity ✏️
+Use the **AgeCalculator** project for this activity. In `activity_main.xml`,
+
+<hr />
+
+## Practical
+The practical for this topic is available [here]().
+
 
 **Gradle Scripts > build.grade (Project: AgeCalculator)**
 
