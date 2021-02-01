@@ -71,8 +71,8 @@ To create a new Android project, follow these steps:
 <img src="./resources/readme/android-studio-template.png" alt="Android Studio Template" width="650" height="475" />
 
 4. In the **Configure Your Project** window, complete the following:
-    - Enter **AgeCalculator** in the **Name** field
-    - Enter **op.mobile.app.dev.age.calculator** in the **Package** name field.
+    - Enter **AgeCalculator** in the **Name** field.
+    - Enter `op.mobile.app.dev.age.calculator` in the **Package** name field.
     - If you would like to place the project in a different folder, change its **Save** location.
     - Select **Kotlin** from the **Language** drop-down menu.
     - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
@@ -86,7 +86,7 @@ Lets look at some important application project files.
 
 **app > manifest > AndroidManifest.xml**
 
-Every application project must have an **AndroidManifest.xml** file in the root of the **app** directory. The **AndroidManifest.xml** file specifies important information about your application to the Android build tools, Android os & Google Play.
+Every application project must have an `AndroidManifest.xml` file in the root of the **app** directory. The `AndroidManifest.xml` file specifies important information about your application to the Android build tools, Android os & Google Play.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -149,20 +149,27 @@ Currently we are in **Design** view. Click **Code**. You should see the followin
 
 ### Activity ✏️
 Research & answer the following:
-1. Explain what a **ViewGroup** is & provide three examples of a **ViewGroup** object.
-2. Explain what a **View** is & provide three examples of a **View** object.
+1. Explain what a `ViewGroup` is & provide three examples of a `ViewGroup` object.
+2. Explain what a `View` is & provide three examples of a `View` object.
 
 **Resource:** https://developer.android.com/guide/topics/resources/layout-resource
 
 ### ViewGroup & View Attributes
+- `android:id` - a unique resource name for the element which you can use to obtain a reference to the `ViewGroup`/`View` from your application.
+- `android:layout_height` - the height for the element as a dimension value/resource or a keyword (`match_parent` or `wrap_content`).
+- `android:layout_width` - the width for the element as a dimension value/resource or a keyword (`match_parent` or `wrap_content`).
 
-**android:id** - A unique resource name for the element which you can use to obtain a reference to the **ViewGroup**/**View** from your application.
-**android:layout_height** - The height for the element as a dimension value/resource or a keyword (**match_parent** or **wrap_content**)
-**android:layout_width** - The width for the element as a dimension value/resource or a keyword (**match_parent** or **wrap_content**)
+### What is match_parent & wrap_content?
+- `match_parent` - sets the dimension to match that the parent element.
+- `wrap_content` - sets the dimension only to the size required to fit the content of the element.
 
 ### ConstraintLayout
+A `ConstraintLayout` is a `ViewGroup` which allows you to position & size `Views` in a flexible way. 
 
-https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout
+**Resource:** https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout
+
+### Activity ✏️
+In `activity_main.xml`
 
 **app > res > values**
 
