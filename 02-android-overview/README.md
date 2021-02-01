@@ -94,7 +94,7 @@ Lets look at some important application project files.
 
 **app > manifest > AndroidManifest.xml**
 
-Every application project must have an **AndroidManifest.xml** file in the root of the **app** directory. The **AndroidManifest.xml** file specifies important information about your application to the Android build tools, Android os & Google Play.
+Every application project must have an **AndroidManifest.xml** file in the root of the **app** directory. The **AndroidManifest.xml** file specifies important information about your application to the **Android** build tools, **Android** os & **Google Play**.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
