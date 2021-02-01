@@ -90,11 +90,11 @@ To create a new Android project, follow these steps:
 
 5. Click **Finish**.
 
-Lets look at some important application project files.
+Lets look at some important project files.
 
 **app > manifest > AndroidManifest.xml**
 
-Every application project must have an **AndroidManifest.xml** file in the root of the **app** directory. The **AndroidManifest.xml** file specifies important information about your application to the **Android** build tools, **Android** os & **Google Play**.
+Every application must have an **AndroidManifest.xml** file in the root of the **app** directory. The **AndroidManifest.xml** file specifies important information about your application to the **Android** build tools, **Android** os & **Google Play**.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -225,7 +225,24 @@ The **build.grade (Module)** file allows you to configure build settings for the
 
 **Resource:** https://developer.android.com/studio/build#module-level
 
-### How to Run A Project
+### How to Run An Application
+With a few clicks you can deploy your application to the **Android Emulator** or a connected device. 
+
+### How To Run A Project With The Android Emulator
+
+To start the **Android Emulator** & run an application in your project:
+1. **Tools > AVD Manager > Create Virtual Device**
+2. In the **Select Hardware** window, choose a device definition & click **Next**.
+3. In the **System Image** window, select a system image & click **Next**. **Note:** the system image must be ≥ the **Minimum SDK** selected when you configured your project.
+4. In the **Android Virtual Device (AVD)** window, leave the default configuration as is & click **Finish**.
+5. In the toolbar, select the **Android Virtual Device** that you want to run your application on from the device drop-down menu.
+6. Click **Run** <img src="./resources/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="15" height="15" />
+
+**Resource:** https://developer.android.com/studio/run/emulator
+
+### How To Run An Application With A Connected Device
+
+**Resource:**  https://developer.android.com/studio/run/device
 
 ## Practical
 The practical for this topic is available [here]().
