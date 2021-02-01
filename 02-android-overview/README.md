@@ -190,7 +190,7 @@ Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add
     
 The UI should look like the following:
 
-IMAGE GOES HERE
+<img src="./resources/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="250" height="400" />
 
 - Why is the `text` attribute in both `Views` highlighted orange?
 - How do we fix this?
