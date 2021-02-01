@@ -13,7 +13,8 @@ Static type checking means the type of every expression in a program is known at
 * Reliability - the compiler verifies the correctness of a program meaning there are fewer chances of crashes at runtime.
 * Maintainability - easier to work with unfamiliar code as you know what kind of objects you are working with.
 
-## Variables
+## Variables<hr />
+
 In **Java**, a variable declaration starts with a type. In **Kotlin**, a variable declaration starts with a keyword & optionally a type after the variable name.
 
 ```kotlin
@@ -62,7 +63,7 @@ nullable = null
 <hr />
 
 ### Activity ✏️
-One a piece of A4 paper, write a program which declares & assigns the following values to their appropriate data types, i.e., `var age: Int = 25`:
+On the provided piece of A4 paper, write a program which declares & assigns the following values to their appropriate data types, i.e., `var age: Int = 25`:
 
 * "I <3 this course"
 * 13.37F
@@ -192,7 +193,7 @@ fun main() {
 <hr />
 
 ### Activity ✏️
-On a piece of paper, write a program which loops from 1 to 25. If the loop variable's value is less than 16, print out "I am legally not allowed to drive". If the loop variable's value is ≥ 16, print out "I am legally allowed to drive".
+On the provided piece of paper, write a program which loops from 1 to 25. If the loop variable's value is less than 16, print out "I am legally not allowed to drive". If the loop variable's value is ≥ 16, print out "I am legally allowed to drive".
 
 <hr />
 
@@ -433,7 +434,7 @@ fun main() {
 <hr />
 
 ### Activity ✏️
-On a piece of paper, write a program with a regular class called `MobilePhone` & three properties called `osName`, `brand` & `model`. Override its `toString` using the same format as the `Person` class example.
+On the provided piece of paper, write a program with a regular class called `MobilePhone` & three properties called `osName`, `brand` & `model`. Override its `toString` using the same format as the `Person` class example.
 
 In the `main` function, create two `MobilePhone` objects. For the first `MobilePhone` object, print the `osName` & for the second `MobilePhone` object, print its `toString` method. 
 
