@@ -34,11 +34,15 @@ The **hardware abstract layer (HAL)** provides standard interfaces that expose d
 #### Android Runtime
 For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Anroid Runtime include ahead-of-time/just-in-time compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
 
+<hr />
+
 ### Activity ✏️
 Research & answer the following:
 1. Explain difference between ahead-of-time & just-in-time compilation?
 
 Write your answer on the provided sticky note.
+
+<hr />
 
 #### Native C/C++ Libraries
 Many core **Android** system components & services are built from native code that require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework APIs to expose the functionality of these native libraries to applications.
@@ -150,11 +154,14 @@ Currently we are in **Design** view. Click **Code**. You should see the followin
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+<hr />
 
 ### Activity ✏️
 Research & answer the following:
 1. Explain what a `ViewGroup` is & provide three examples of a `ViewGroup` object.
 2. Explain what a `View` is & provide three examples of a `View` object.
+
+<hr />
 
 **Resource:** https://developer.android.com/guide/topics/resources/layout-resource
 
@@ -172,8 +179,12 @@ A `ConstraintLayout` is a `ViewGroup` which allows you to position & size `Views
 
 **Resource:** https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout
 
+<hr />
+
 ### Activity ✏️
 In `activity_main.xml`
+
+<hr />
 
 **app > res > values**
 
