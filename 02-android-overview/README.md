@@ -11,7 +11,7 @@ At **Google**, Rubin & his team developed a mobile device platform powered by th
 <hr />
 
 ### Activity ✏️
-Research & answer the following:
+On the provided piece of A4 paper, research & answer the following:
 1. Explain what members of the **OHA** do.
 2. Name 10 members of the **OHA**. Include a range of mobile operators, handset manufacturers & software companies.
 
@@ -37,8 +37,8 @@ For devices running **Android 5.0** or higher, each application runs in its own 
 <hr />
 
 ### Activity ✏️
-Research & answer the following:
-1. Explain difference between ahead-of-time & just-in-time compilation?
+On the provided piece of A4 paper, research & answer the following:
+- Explain difference between ahead-of-time & just-in-time compilation?
 
 Write your answer on the provided sticky note.
 
@@ -157,9 +157,9 @@ Currently we are in **Design** view. Click **Code**. You should see the followin
 <hr />
 
 ### Activity ✏️
-Research & answer the following:
-1. Explain what a `ViewGroup` is & provide three examples of a `ViewGroup` object.
-2. Explain what a `View` is & provide three examples of a `View` object.
+On the provided piece of A4 paper, research & answer the following:
+- Explain what a `ViewGroup` is & provide three examples of a `ViewGroup` object.
+- Explain what a `View` is & provide three examples of a `View` object.
 
 <hr />
 
@@ -182,11 +182,16 @@ A `ConstraintLayout` is a `ViewGroup` which allows you to position & size `Views
 <hr />
 
 ### Activity ✏️
-In `activity_main.xml`
+Use the **AgeCalculator** project for this activity. In `activity_main.xml`,
 
 <hr />
 
 **app > res > values**
+
+- `colors.xml` - a colour is specified with an RGB value & alpha chanel. You can use a colour resource any place that accepts a hexadecimal colour value. Also, you can use a colour resource when a drawable resource is expected in **XML**, i.e., `android:drawable="@color/green"`.
+- `strings.xml`
+- `styles.xml`
+
 
 **Resources:** 
 - https://developer.android.com/guide/topics/resources/color-list-resource
@@ -196,8 +201,6 @@ In `activity_main.xml`
 **Gradle Scripts > build.grade (Project: AgeCalculator)**
 
 **Gradle Scripts > build.grade (Module: AgeCalculator.app)**
-
-**Gradle Scripts > local.properties**
 
 ## Practical
 The practical for this topic is available [here]().
