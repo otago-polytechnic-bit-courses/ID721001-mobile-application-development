@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Age Calculator</string>
-    <string name="calculate_your_age">Calculate Your Age</string>
-    <string name="select_date">Select Date</string>
-    <string name="selected_date_placeholder_text">Selected Date Placeholder Text</string>
-    <string name="minutes_difference_placeholder_text">Minutes Difference Placeholder Text</string>
-</resources>
