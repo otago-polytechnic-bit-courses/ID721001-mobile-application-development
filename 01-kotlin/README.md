@@ -13,7 +13,7 @@ Static type checking means the type of every expression in a program is known at
 * Reliability - the compiler verifies the correctness of a program meaning there are fewer chances of crashes at runtime.
 * Maintainability - easier to work with unfamiliar code as you know what kind of objects you are working with.
 
-## Variables<hr />
+## Variables
 
 In **Java**, a variable declaration starts with a type. In **Kotlin**, a variable declaration starts with a keyword & optionally a type after the variable name.
 
