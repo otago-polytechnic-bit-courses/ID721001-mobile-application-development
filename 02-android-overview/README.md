@@ -25,13 +25,13 @@ The following image displays the major components of the **Android** platform.
 
 <img src="./resources/readme/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
 
-#### Linux Kernel
+### Linux Kernel
 The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime** or **ART** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufactrers to develop drivers for a well-know kernel.
 
-#### Hardware Abstraction Layer 
+### Hardware Abstraction Layer 
 The **hardware abstract layer (HAL)** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The HAL consists of multiple library modules which implement an interface for a specific type of hardware components, i.e., the audio, bluetooth, camera or sensor module. 
 
-#### Android Runtime
+### Android Runtime
 For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Anroid Runtime include ahead-of-time/just-in-time compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
 
 <hr />
@@ -44,13 +44,13 @@ Write your answer on the provided sticky note.
 
 <hr />
 
-#### Native C/C++ Libraries
+### Native C/C++ Libraries
 Many core **Android** system components & services are built from native code that require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework APIs to expose the functionality of these native libraries to applications.
 
-#### Java API Framework
+### Java API Framework
 The feature-set of the **Android** os is available through APIs written in **Java**. These APIs form the building blocks you need to create Android applications by simplifying the reuse of core, modular system components & services.
 
-#### System Apps
+### System Apps
 **Android** comes with a set of core applications such as email, messaging, calendars, internet browsing, etc. Applications included with the platform have no special status among the applications the user chooses to install. This means that a third-party application can become the user's default messenger, web browser, etc.
 
 The system applications function both as applications for users & to provide capabilities that developers can access from their own application.
@@ -94,7 +94,7 @@ Lets look at some important application project files.
 
 **app > manifest > AndroidManifest.xml**
 
-Every application project must have an `AndroidManifest.xml` file in the root of the **app** directory. The `AndroidManifest.xml` file specifies important information about your application to the Android build tools, Android os & Google Play.
+Every application project must have an **AndroidManifest.xml** file in the root of the **app** directory. The **AndroidManifest.xml** file specifies important information about your application to the Android build tools, Android os & Google Play.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,7 +190,7 @@ Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add
     
 The UI should look like the following:
 
-<img src="./resources/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="250" height="400" />
+<img src="./resources/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
 
 - Why is the `text` attribute in both `Views` highlighted orange?
 - How do we fix this?
@@ -211,16 +211,21 @@ The UI should look like the following:
 - https://developer.android.com/guide/topics/resources/string-resource
 - https://developer.android.com/guide/topics/ui/look-and-feel/themes
 
-<hr />
-
-### Activity ✏️
-Use the **AgeCalculator** project for this activity. In `activity_main.xml`, 
-
-<hr />
-
 **Gradle Scripts > build.grade (Project: AgeCalculator)**
 
+The **build.grade (Project)** file defines build configurations that apply to all modules in your project.
+
+**Resource:** https://developer.android.com/studio/build#top-level
+
 **Gradle Scripts > build.grade (Module: AgeCalculator.app)**
+
+The **build.grade (Project)** file
+
+The **build.grade (Module)** file allows you to configure build settings for the specific module it is located in.
+
+**Resource:** https://developer.android.com/studio/build#module-level
+
+### How to Run A Project
 
 ## Practical
 The practical for this topic is available [here]().
