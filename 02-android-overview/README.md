@@ -182,7 +182,18 @@ A `ConstraintLayout` is a `ViewGroup` which allows you to position & size `Views
 <hr />
 
 ### Activity ✏️
-Use the **AgeCalculator** project for this activity. In `activity_main.xml`,
+Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add the following `Views`:
+- `TextView` with the following attributes:
+    - id = `txt_view_header`, width = `0dp`, height = `wrap_content`, margin start = `32dp`, margin end = `32dp`, margin top = `16dp`, gravity = `center`, text = **Calculate Your Age** & text size = `25sp`.
+- `Button` with the following attributes:
+    - id = `btn_select_date`, width = `0dp`, height = `wrap_content`, margin start = `32dp`, margin end = `32dp`, margin top = `16dp` & text = **Select Date**.
+    
+The UI should look like the following:
+
+IMAGE GOES HERE
+
+- Why is the `text` attribute in both `Views` highlighted orange?
+- How do we fix this?
 
 <hr />
 
@@ -193,23 +204,19 @@ Use the **AgeCalculator** project for this activity. In `activity_main.xml`,
     - String - **XML** resource that provides a single string.
     - String Array - **XML** resource that provides an array of strings.
     - Quantity Strings (Plurals) - **XML** resource that holds different strings for pluralization. 
-- `styles.xml`
+- `themes.xml` - Styles/themes allow you to separate the details of your application design from the UI structure & behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, activity or view hierarchy. When applied, every `View` in the application or activity applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar & window background.
 
 **Resources:** 
 - https://developer.android.com/guide/topics/resources/more-resources#Color
 - https://developer.android.com/guide/topics/resources/string-resource
-- https://developer.android.com/guide/topics/resources/style-resource
+- https://developer.android.com/guide/topics/ui/look-and-feel/themes
 
 <hr />
 
 ### Activity ✏️
-Use the **AgeCalculator** project for this activity. In `activity_main.xml`,
+Use the **AgeCalculator** project for this activity. In `activity_main.xml`, 
 
 <hr />
-
-## Practical
-The practical for this topic is available [here]().
-
 
 **Gradle Scripts > build.grade (Project: AgeCalculator)**
 
