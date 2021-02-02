@@ -1,7 +1,7 @@
 # **Android Overview**
 
 ## Android Operating System
-**Android** is a mobile os based on a modified version of the **Linux kernel** & primarily designed for touchscreen devices such as phones, tablets & watches. **Android** is developed by a group of developers known as the **Open Handset Alliance** or **OHA** & commercially sponsored by **Google**. **Android** is free & open-source, & its source code is known as **Android Open Source Project** or **AOSP**, which is licensed under the **Apache License**. However, most **Android** devices are shipped with pre-installed proprietary software such as **Google Mobile Services**.
+**Android** is a mobile os based on a modified version of the **Linux kernel** & primarily designed for touchscreen devices such as phones, tablets & watches. **Android** is developed by a group of developers known as the **Open Handset Alliance (OHA)** & commercially sponsored by **Google**. **Android** is free & open-source, & its source code is known as **Android Open Source Project (AOSP)**, which is licensed under the **Apache License**. However, most **Android** devices are shipped with pre-installed proprietary software such as **Google Mobile Services (GMS)**.
 
 ### Brief History
 **Android Inc.** was founded in Palo Alto, CA, in October 2003 by Andy Rubin, Rich Miller, Nick Sears & Chris White. The early intentions of the company were to develop an advanced os for digital cameras. The company then decided that the market for digital cameras was not large enough. They later pivoted, & pitched **Android** to investors as a handset os that would compete against **Symbian** & **Windows Mobile** (both discontinued). In July 2005, **Google** acquired **Android Inc.** for around $50 million. Key employees, including Rubin, Miller, Sears & White, joined **Google** as part of the acquisition. 
@@ -26,10 +26,10 @@ The following image displays the major components of the **Android** platform.
 <img src="./resources/readme/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
 
 ### Linux Kernel
-The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime** or **ART** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufactrers to develop drivers for a well-know kernel.
+The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufactrers to develop drivers for a well-know kernel.
 
-### Hardware Abstraction Layer 
-The **hardware abstract layer (HAL)** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The HAL consists of multiple library modules which implement an interface for a specific type of hardware components, i.e., the audio, bluetooth, camera or sensor module. 
+### Hardware Abstraction Layer (HAL)
+The **hal** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The HAL consists of multiple library modules which implement an interface for a specific type of hardware components, i.e., the audio, bluetooth, camera or sensor module. 
 
 ### Android Runtime
 For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Anroid Runtime include ahead-of-time/just-in-time compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
@@ -225,9 +225,6 @@ The **build.grade (Module)** file allows you to configure build settings for the
 
 **Resource:** https://developer.android.com/studio/build#module-level
 
-### How to Run An Application
-With a few clicks you can deploy your application to the **Android Emulator** or a connected device. 
-
 ### How To Run A Project With The Android Emulator
 
 To start the **Android Emulator** & run an application in your project:
@@ -235,12 +232,19 @@ To start the **Android Emulator** & run an application in your project:
 2. In the **Select Hardware** window, choose a device definition & click **Next**.
 3. In the **System Image** window, select a system image & click **Next**. **Note:** the system image must be ≥ the **Minimum SDK** selected when you configured your project.
 4. In the **Android Virtual Device (AVD)** window, leave the default configuration as is & click **Finish**.
-5. In the toolbar, select the **Android Virtual Device** that you want to run your application on from the device drop-down menu.
-6. Click **Run** <img src="./resources/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="15" height="15" />
+5. In the toolbar, select the **AVD** that you want to run your application on from the device drop-down menu.
+6. Click **Run** <img src="./resources/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="13" height="13" />
 
 **Resource:** https://developer.android.com/studio/run/emulator
 
 ### How To Run An Application With A Connected Device
+
+Before you can run an application, there are a couple things you must do:
+
+1. On the device, open the **Settings** application, select **Developer** options & then enable **USB debugging**.
+2. Set up your system to detect your device. Refer to the resource below.
+
+Once you have set up & plugged in over USB, click **Run** <img src="./resources/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="13" height="13" />
 
 **Resource:**  https://developer.android.com/studio/run/device
 
