@@ -118,6 +118,9 @@ Every application must have an **AndroidManifest.xml** file in the root of the *
 
 <img src="./resources/readme/android-studio-main-activity.png" alt="Android Studio Main Activity" width="750" height="500" />
 
+**Resources:** 
+- https://developer.android.com/guide/components/activities/intro-activities
+
 **app > res > layout**
 
 A layout resource defines the architecture for the UI in an **Activity** or a **component** of a UI.
@@ -235,6 +238,10 @@ Before you can run an application, there are a couple things you must do:
 Once you have set up & plugged in over USB, click **Run** <img src="./resources/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="13" height="13" />
 
 **Resource:**  https://developer.android.com/studio/run/device
+
+## Homework
+- Required reading - https://developer.android.com/guide/components/activities/activity-lifecycle
+- Required viewing - https://www.youtube.com/watch?v=GxET0CYy1eg
 
 ## Practical
 The practical for this topic is available [here]().
