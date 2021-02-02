@@ -10,8 +10,8 @@ At **Google**, Rubin & his team developed a mobile device platform powered by th
 
 ## Activity ✏️
 On the provided piece of A4 paper, research & answer the following:
-1. Explain what members of the **OHA** do.
-2. Name 10 members of the **OHA**. Include a range of mobile operators, handset manufacturers & software companies.
+- Explain what members of the **OHA** do.
+- Name 10 members of the **OHA**. Include a range of mobile operators, handset manufacturers & software companies.
 
 ## Software Stack
 
