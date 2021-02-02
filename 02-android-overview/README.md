@@ -50,7 +50,7 @@ The system applications function both as applications for users & to provide cap
 **Resource:** https://developer.android.com/guide/platform
 
 ## Market Share
-According to StatCounter, Android has been the most popular mobile os since August 2013.
+According to **StatCounter**, **Android** has been the most popular mobile os since August 2013.
 
 <img src="./resources/readme/mobile-os-market-share.png" alt="Mobile OS Market Share" width="750" height="450" />
 
