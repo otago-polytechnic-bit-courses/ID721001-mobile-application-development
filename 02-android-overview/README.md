@@ -13,8 +13,6 @@ On the provided piece of A4 paper, research & answer the following:
 1. Explain what members of the **OHA** do.
 2. Name 10 members of the **OHA**. Include a range of mobile operators, handset manufacturers & software companies.
 
-Write your answers on the provided sticky note.
-
 ## Software Stack
 
 The following image displays the major components of the **Android** platform.
@@ -22,22 +20,22 @@ The following image displays the major components of the **Android** platform.
 <img src="./resources/readme/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
 
 ### Linux Kernel
-The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufactrers to develop drivers for a well-know kernel.
+The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufactrers to develop drivers for a well-known kernel.
 
 ### Hardware Abstraction Layer (HAL)
 The **HAL** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The **HAL** consists of multiple library modules which implement an interface for a specific type of hardware components, i.e., the audio, bluetooth, camera or sensor module. 
 
 ### Android Runtime
-For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Anroid Runtime include ahead-of-time/just-in-time compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
+For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Anroid Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
 
 ## Activity ✏️
 On the provided piece of A4 paper, research & answer the following:
-- Explain difference between ahead-of-time & just-in-time compilation?
-
-Write your answer on the provided sticky note.
+- Explain difference between **AOT** & **JIT** compilation?
+- Name five programming languages which implement **AOT** compilation.
+- Name five programming languages which implement **JIT** compilation.
 
 ### Native C/C++ Libraries
-Many core **Android** system components & services are built from native code that require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework APIs to expose the functionality of these native libraries to applications.
+Many core **Android** system components & services are built from native code & require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework APIs which exposes the functionality of these native libraries to applications.
 
 ### Java API Framework
 The feature-set of the **Android** os is available through APIs written in **Java**. These APIs form the building blocks you need to create Android applications by simplifying the reuse of core, modular system components & services.
