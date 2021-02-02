@@ -4,13 +4,11 @@
 
 
 ### MainActivity.kt
-<div style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;>
 ```kotlin
 class MainActivity : AppCompatActivity() {
     ...
 }
 ```
-            </div>
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -67,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
         val datePickerDialogListener = DatePickerDialog.OnDateSetListener { _, year, month, day ->
             val selectedDate = "$day/${month + 1}/$year"
-            txtViewSelectedDate.text = getString(R.string.selected_date, selectedDate)
+            txtViewSelectedDate.text = "Selected Date: $selecteDate"
 
             val simpleDateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
 
@@ -81,8 +79,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity", "Current date to minutes: $currentDateToMinutes")
 
             val differenceInMinutes = currentDateToMinutes - selectedDateToMinutes
-            txtViewMinutesDifference.text =
-                getString(R.string.minutes_difference, differenceInMinutes.toString())
+            txtViewMinutesDifference.text = "You are $differenceInMinutes minutes old
         }
 
         val datePickerDialog = DatePickerDialog(
