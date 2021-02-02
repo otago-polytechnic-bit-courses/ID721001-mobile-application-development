@@ -4,11 +4,13 @@
 
 
 ### MainActivity.kt
+<div style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;>
 ```kotlin
 class MainActivity : AppCompatActivity() {
     ...
 }
 ```
+            </div>
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
