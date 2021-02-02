@@ -25,7 +25,7 @@ The following image displays the major components of the **Android** platform.
 The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufactrers to develop drivers for a well-know kernel.
 
 ### Hardware Abstraction Layer (HAL)
-The **hal** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The HAL consists of multiple library modules which implement an interface for a specific type of hardware components, i.e., the audio, bluetooth, camera or sensor module. 
+The **HAL** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The **HAL** consists of multiple library modules which implement an interface for a specific type of hardware components, i.e., the audio, bluetooth, camera or sensor module. 
 
 ### Android Runtime
 For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Anroid Runtime include ahead-of-time/just-in-time compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
