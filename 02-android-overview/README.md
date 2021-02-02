@@ -236,10 +236,5 @@ Once you have set up & plugged in over USB, click **Run** <img src="./resources/
 
 **Resource:**  https://developer.android.com/studio/run/device
 
-## Required Readings:
-- https://developer.android.com/guide/components/activities/intro-activities
-- https://developer.android.com/guide/components/activities/activity-lifecycle
-- https://developer.android.com/guide/components/activities/state-changes
-
 ## Practical
 The practical for this topic is available [here]().
