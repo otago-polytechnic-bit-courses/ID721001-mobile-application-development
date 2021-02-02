@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity", "Current date to minutes: $currentDateToMinutes")
 
             val differenceInMinutes = currentDateToMinutes - selectedDateToMinutes
-            txtViewMinutesDifference.text = "You are $differenceInMinutes minutes old
+            txtViewMinutesDifference.text = "You are $differenceInMinutes minutes old"
         }
 
         val datePickerDialog = DatePickerDialog(
