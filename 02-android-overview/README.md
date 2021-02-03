@@ -218,7 +218,6 @@ Use the **AgeCalculator** project for this activity. In **activity_main.xml**, a
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
 
-    
 | Button Attribute        | Value           |
 | ------------- |:-------------:|
 | android:id      | "btn_select_date" |
@@ -264,6 +263,9 @@ Before you can run an application, there are a couple things you must do:
 Once you have set up & plugged in over USB, click **Run** <img src="./resources/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="13" height="13" />
 
 **Resource:**  https://developer.android.com/studio/run/device
+
+## Activity ✏️
+Use the **AgeCalculator** project for this activity. Run the project's application on either the **Android Emulator** or a connect device. You **MUST** show me your running application before you start the practical.
 
 ## Practical
 The practical for this topic is available [here]().
