@@ -116,6 +116,10 @@ Every application must have an **AndroidManifest.xml** file in the root of the *
 
 <img src="./resources/readme/android-studio-main-activity.png" alt="Android Studio Main Activity" width="750" height="500" />
 
+An activity is a single, focused thing that the user can do. Almost all activities interact with the user. The **Activity** class takes care of creating a window for you in which you can place your UI with `setContentView(View)`. There are two methods almost all subclasses of **Activity** will implement:
+- `onCreate(Bundle)` is where you initialise your activity. In this method, you usually call `setContentView(View)` with a layout resource defining your UI, & using `findViewById(int)` to retrieve the **Views** in that UI that you need to interact with programmatically.
+- `onPause()` is where you handle the user pausing active interaction with your activity. Any changes made by the user should at this point be committed. In this state the activity is still visible on screen.
+
 **Resources:** 
 - https://developer.android.com/guide/components/activities/intro-activities
 - https://developer.android.com/guide/components/activities/activity-lifecycle
