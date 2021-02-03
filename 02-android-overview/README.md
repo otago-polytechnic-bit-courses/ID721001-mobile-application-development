@@ -265,7 +265,7 @@ Once you have set up & plugged in over USB, click **Run** <img src="./resources/
 **Resource:**  https://developer.android.com/studio/run/device
 
 ## Activity ✏️
-Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** or a connect device. You **MUST** show me your running application before you start the practical.
+Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** & a connect device. You **MUST** show me your running application before you start the practical.
 
 ## Practical
 The practical for this topic is available [here]().
