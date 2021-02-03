@@ -182,7 +182,7 @@ A `ConstraintLayout` is a `ViewGroup` which allows you to position & size `Views
     - String - **XML** resource that provides a single string.
     - String Array - **XML** resource that provides an array of strings.
     - Quantity Strings (Plurals) - **XML** resource that holds different strings for pluralization. 
-- `themes.xml` - Styles/themes allow you to separate the details of your application design from the UI structure & behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, activity or view hierarchy. When applied, every `View` in the application or activity applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar & window background.
+- `themes.xml` - styles/themes allow you to separate the details of your application design from the UI structure & behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, activity or view hierarchy. When applied, every `View` in the application or activity applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar & window background.
 
 **Resources:** 
 - https://developer.android.com/guide/topics/resources/more-resources#Color
@@ -204,12 +204,36 @@ The **build.grade (Module)** file allows you to configure build settings for the
 **Resource:** https://developer.android.com/studio/build#module-level
 
 ## Activity ✏️
-Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add the following `Views`:
-- `TextView` with the following attributes:
-    - id = `txt_view_header`, width = `0dp`, height = `wrap_content`, margin start = `32dp`, margin end = `32dp`, margin top = `16dp`, gravity = `center`, text = **Calculate Your Age** & text size = `25sp`.
-- `Button` with the following attributes:
-    - id = `btn_select_date`, width = `0dp`, height = `wrap_content`, margin start = `32dp`, margin end = `32dp`, margin top = `16dp` & text = **Select Date**.
+Use the **AgeCalculator** project for this activity. In **activity_main.xml**, add the following `Views`:
+
+| TextView Attribute        | Value           |
+| ------------- |:-------------:|
+| android:id      | "txt_view_header" |
+| android:layout_width     | "0dp" |
+| android:layout_height    | "wrap_content" |
+| android:layout_marginStart      | "32dp" |
+| android:layout_marginTop     | "16dp" |
+| android:layout_marginEnd     | "32dp" |
+| android:gravity     | "center" |
+| android:text     | "Calculate Your Age" |
+| android:textSize     | "25sp" |
+| app:layout_constraintEnd_toEndOf     | "parent" |
+| app:layout_constraintStart_toStartOf     | "parent" |
+
     
+| Button Attribute        | Value           |
+| ------------- |:-------------:|
+| android:id      | "btn_select_date" |
+| android:layout_width     | "0dp" |
+| android:layout_height    | "wrap_content" |
+| android:layout_marginStart      | "32dp" |
+| android:layout_marginTop     | "16dp" |
+| android:layout_marginEnd     | "32dp" |
+| android:text     | "Select Date" |
+| app:layout_constraintEnd_toEndOf     | "parent" |
+| app:layout_constraintStart_toStartOf     | "parent" |
+|  app:layout_constraintTop_toBottomOf     | "@+id/txt_view_header |
+
 The UI should look like the following:
 
 <img src="./resources/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
