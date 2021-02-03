@@ -59,11 +59,13 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 ## Event Handlers
 If you are building a custom **View**, then you will be able to define several callback methods used as default event handlers. 
 
+## Activity ✏️
+
+On the provided piece of A4 paper, research & explain when the following callback methods are called:
+
 **Resources:** 
 - https://developer.android.com/guide/topics/ui/ui-events#EventHandlers
 - https://developer.android.com/guide/topics/ui/custom-components
-
-## https://developer.android.com/codelabs/android-training-input-controls#2
 
 ## Practical
 The practical for this topic is available [here]().
