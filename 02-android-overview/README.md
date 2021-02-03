@@ -62,7 +62,7 @@ To create a new Android project, follow these steps:
 1. Open **Android Studio**.
 2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
 
-<img src="./resources/readme/android-studio-home.png" alt="Android Studio Home" width="600" height="400" />
+<img src="./resources/readme/android-studio-home.png" alt="Android Studio Home" width="625" height="400" />
 
 3. In the **Select a Project Template** window, select **Empty Activity** and click **Next**.
 
