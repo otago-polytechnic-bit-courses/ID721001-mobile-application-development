@@ -197,8 +197,6 @@ The **build.grade (Project)** file defines build configurations that apply to al
 
 **Gradle Scripts > build.grade (Module: AgeCalculator.app)**
 
-The **build.grade (Project)** file
-
 The **build.grade (Module)** file allows you to configure build settings for the specific module it is located in.
 
 **Resource:** https://developer.android.com/studio/build#module-level
