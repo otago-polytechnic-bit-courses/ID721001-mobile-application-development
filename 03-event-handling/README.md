@@ -63,5 +63,7 @@ If you are building a custom **View**, then you will be able to define several c
 - https://developer.android.com/guide/topics/ui/ui-events#EventHandlers
 - https://developer.android.com/guide/topics/ui/custom-components
 
+## 
+
 ## Practical
 The practical for this topic is available [here]().
