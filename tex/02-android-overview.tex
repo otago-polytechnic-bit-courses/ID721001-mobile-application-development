@@ -25,8 +25,8 @@
 \begin{document}
 
 \begin{figure}
-    \centering
-    \includegraphics[width=50mm]{./img/logo.png}
+	\centering
+	\includegraphics[width=50mm]{./img/logo.png}
 \end{figure}
 
 \title{College of Engineering, Construction and Living Sciences\\Bachelor of Information Technology\\IN721: Mobile Application Development\\Level 7, Credits 15\\\textbf{Practical 02: Android Overview}}
@@ -37,27 +37,27 @@
 In this assessment, you will create a \textbf{Calculator} project \& user-interface in preparation for the next assessment. This assessment is worth \textbf{1\%} of the final mark in \textbf{IN721: Mobile Application Development}.
 
 \section*{Learning Outcomes}
-At the successful completion of this course, learners will be able to: 
+At the successful completion of this course, learners will be able to:
 \begin{enumerate}
 	\item Implement \& publish complete, non-trivial, industry-standard mobile applications following sound architectural \& code-quality standards.
 	\item Identify relevant use cases for a mobile computing scenario \& incorporate them into an effective user experience design.
 	\item Follow industry standard software engineering practice in the design of mobile applications.
-\end{enumerate} 
+\end{enumerate}
 
 \section*{Assessment Table}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|l|l|l|l|l|}
-	\hline      
-	\vtop{\hbox{\strut \textbf{Assessment}}\hbox{\strut \textbf{Activity}}} & \textbf{Weighting} & \vtop{\hbox{\strut \textbf{Learning}}\hbox{\strut \textbf{Outcomes}}} & \vtop{\hbox{\strut \textbf{Assessment}}\hbox{\strut \textbf{Grading Scheme}}} & \vtop{\hbox{\strut \textbf{Completion}}\hbox{\strut \textbf{Requirements}}} \\
-	                            
 	\hline
-	                                
-	\small Practical                                          & \small 20\%        & \small 2, 3                                                         & \small CRA                                                                    & \small Cumulative                                                           \\ \hline  
-	\small Project                                                             & \small 80\%        & \small 1, 2, 3                                                       & \small CRA                                                                    & \small Cumulative                                                           \\ \hline 
+	\vtop{\hbox{\strut \textbf{Assessment}}\hbox{\strut \textbf{Activity}}} & \textbf{Weighting} & \vtop{\hbox{\strut \textbf{Learning}}\hbox{\strut \textbf{Outcomes}}} & \vtop{\hbox{\strut \textbf{Assessment}}\hbox{\strut \textbf{Grading Scheme}}} & \vtop{\hbox{\strut \textbf{Completion}}\hbox{\strut \textbf{Requirements}}} \\
+
+	\hline
+
+	\small Practical                                                        & \small 20\%        & \small 2, 3                                                           & \small CRA                                                                    & \small Cumulative                                                           \\ \hline
+	\small Project                                                          & \small 80\%        & \small 1, 2, 3                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline
 \end{tabular}
 
 \section*{Conditions of Assessment}
-You will complete this assessment during your learner managed time, however, there will be availability during the teaching sessions to discuss the requirements \& your progress of this assessment. This assessment will need to be completed by \textbf{Tuesday, 9 March 2021 at 5:00 PM}. 
+You will complete this assessment during your learner managed time, however, there will be availability during the teaching sessions to discuss the requirements \& your progress of this assessment. This assessment will need to be completed by \textbf{Tuesday, 9 March 2021 at 5:00 PM}.
 
 \section*{Pass Criteria}
 This assessment is criterion-referenced (CRA) with a cumulative pass mark of \textbf{50\%} over all assessments in \textbf{IN721: Mobile Application Development}.
@@ -69,7 +69,7 @@ All parts of your submitted assessment must be completely your work \& any refer
 The school's process concerning submissions, extensions, resubmissions \& resits complies with \textbf{Otago Polytechnic} policies. Learners can view policies on the \textbf{Otago Polytechnic} website located at \href{https://www.op.ac.nz/about-us/governance-and-management/policies}{https://www.op.ac.nz/about-us/governance-and-management/policies}.
 
 \section*{Submissions}
-You must submit all program files via \textbf{GitHub Classroom}. Here is the link to the repository you will use for your submission – \href{https://classroom.github.com/a/VJIq7Ae0}{https://classroom.github.com/a/VJIq7Ae0}. Create a new branch from the \textbf{main} branch called \textbf{02-kotlin}. This branch will be your development branch for this assessment. Once you have completed this assessment, create a pull request \& assign the \textbf{GitHub} user \textbf{grayson-orr} to a reviewer. Please \textbf{do not} merge your own pull request. Late submissions will incur a \textbf{10\% penalty per day}, rolling over at \textbf{5:00 PM}.
+You must submit all program files via \textbf{GitHub Classroom}. Here is the link to the repository you will use for your submission – \href{https://classroom.github.com/a/VJIq7Ae0}{https://classroom.github.com/a/VJIq7Ae0}. Create a new branch from the \textbf{main} branch called \textbf{02-kotlin}. This branch will be your development branch for this assessment. Once you have completed this assessment, create a pull request \& assign the \textbf{GitHub} user \textbf{grayson-orr} to a reviewer. \textbf{Do not} merge your own pull request. Late submissions will incur a \textbf{10\% penalty per day}, rolling over at \textbf{5:00 PM}.
 
 \section*{Extensions}
 Familiarise yourself with the assessment due date. If you need an extension, contact the course lecturer before the due date. If you require more than a week's extension, a medical certificate or support letter from your manager may be needed.
@@ -82,19 +82,47 @@ Resits \& reassessments are not applicable in \textbf{IN721: Mobile Application 
 
 \section*{Instructions - Learning Outcomes 2, 3}
 
-\subsection{Task 1:} Create a new \textbf{Android} project with the following configurations:
+\subsection*{Task 1:} Create a new \textbf{Android} project with the following configurations:
 \begin{itemize}
 	\item Template - Empty activity
 	\item Name - Calculator
 	\item Package name - op.mobile.app.dev.calculator
-	\item Save location - /<YOUR GITHUB REPOSITORY>/02-calculator
+	\item Save location - /$<$YOUR GITHUB REPOSITORY$>$/02-calculator
 	\item Language - Kotlin
 	\item Minimum SDK - API 28: Android 9.0 (Pie)
 \end{itemize}
 
-\subsection{Task 2:} In its basic form, the \textbf{action bar} display the \textbf{title} for the activity on the right-hand side \& an overflow \textbf{menu} on the left-hand side. 
+\subsection*{Task 2:} In \textbf{activity.xml}, create a calculator layout. For example: \\
 
+\includegraphics[width=5cm, height=8cm]{./img/02-android-overview/calculator.png}  \\
 
-\subsection{Task 3:}
+Do \textbf{not} need to worry about the functionality of the calculator (we will look at this next assessment). Feel free to express your \textbf{creativity} in this assessment.
+
+\subsection*{Task 3:} In its basic form, the \textbf{action bar} displays the \textbf{title} for the activity on the right-hand side \& an overflow \textbf{menu} on the left-hand side. In preparation for the next assessment, you will create a \textbf{menu} resource directory. To do this, right-click \textbf{res $>$ Android Resource Directory}. In the \textbf{New Resource Directory} window, change the \textbf{Directory name} \& \textbf{Resource type} to \textbf{menu}. In the \textbf{res/menu/}, create a new file called \textbf{menu.xml}. Use the following resource to define a menu in \textbf{menu.xml}: \href{https://developer.android.com/guide/topics/ui/menus}{https://developer.android.com/guide/topics/ui/menus} \\
+
+To specify the options menu for an activity, override \textbf{onCreateOptionsMenu()}. In this method, you can inflate your menu resource (defined in \textbf{XML}) into the \textbf{Menu} provided in the callback. For example:
+
+\begin{verbatim}
+override fun onCreateOptionsMenu(menu: Menu): Boolean {
+    val inflater = menuInflater
+    inflater.inflate(R.menu.menu, menu)
+    return true
+}
+\end{verbatim}
+
+Run your application on the \textbf{Android Emulator} or \textbf{connect device}. You should see the following:
+
+\includegraphics[width=5cm, height=9cm]{./img/02-android-overview/calculator-with-menu.png}  \\
+
+\subsection*{Reflection:}
+At the bottom of \textbf{MainActivity.kt}, answer the following:
+\begin{enumerate}
+	\item The $<$item$>$ element supports several attributes, describe the following attributes:
+	      \begin{itemize}
+		      \item \textbf{android:title}
+		      \item \textbf{android:showAsAction}
+	      \end{itemize}
+	\item What are the \textbf{three} fundamental types of menus?
+\end{enumerate}
 
 \end{document}
