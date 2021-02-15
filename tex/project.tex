@@ -34,7 +34,7 @@
 \maketitle
 
 \section*{Assessment Overview}
-In this assessment, you will develop \& publish a travelling application using \textbf{Kotlin} in \textbf{Android Studio} \& \textbf{Google Play Store}. \textbf{Android} features such as \textbf{ViewModel}, \textbf{LiveData}, \textbf{Room Database} \& \textbf{Google Map} were formally covered in the teaching sessions. The main purpose of this assessment is not just to build a mobile application, rather to demonstrate your ability to effectively learn intermediate/advanced \textbf{Android} \& application development features independently. In addition, marks will be allocated for application robustness, code elegance, documentation \& \textbf{Git/GitHub} usage. \\
+In this assessment, you will develop \& publish a travelling application using \textbf{Kotlin} in \textbf{Android Studio} \& \textbf{Google Play Store}. \textbf{Android} features such as \textbf{ViewModel}, \textbf{LiveData}, \textbf{Room Database} \& \textbf{Google Map} were formally covered in the teaching sessions. The main purpose of this assessment is not just to build a mobile application, rather to demonstrate your ability to effectively learn intermediate/advanced \textbf{Android} \& application development features independently. In addition, marks will be allocated for code elegance, documentation \& \textbf{Git/GitHub} usage. \\
 
 The travelling application will help you sound like a local abroad \& help you adapt to a new culture. You will begin by selecting a \href{https://www.worldometers.info/geography/7-continents/}{continent} \& country tool. For example, if you were to travel to Spain, you would be provided with text translation \& text to speech support, a selection of key Spanish phrases, an interactive quiz to test your knowledge of Spanish culture \& a map containing locations of top-rated tourist Spanish attractions. A user of your travelling application must be able to select from at least two country tools per continent \textbf{excluding} Antarctica.
 
@@ -80,10 +80,7 @@ Familiarise yourself with the assessment due date. If you need an extension, con
 Learners may be requested to resubmit an assessment following a rework of part/s of the original assessment. Resubmissions are to be completed within a negotiable short time frame \& usually must be completed within the timing of the course to which the assessment relates. Resubmissions will be available to learners who have made a genuine attempt at the first assessment opportunity \& achieved a \textbf{D grade (40-49\%)}. The maximum grade awarded for resubmission will be \textbf{C-}.
 
 \section*{Resits}
-Resits \& reassessments are not applicable in \textbf{IN721: Mobile Application Development}.
-
-\section*{Exemplars}
-A range of application exemplars are available \href{}{here}.
+Resits \& reassessments are not applicable in \textbf{IN721: Mobile Application Development}. 
 
 \section*{Post-Assessment Evaluation}
 As part of this assessment, you will be required to organise a meeting with the course lecturer to discuss your feedback. The meeting will be conducted after you receive your assessment result. This post-assessment evaluation will \textbf{not} be graded.
@@ -93,7 +90,7 @@ As part of this assessment, you will be required to organise a meeting with the 
 \section*{Instructions}
 You will need to submit an application \& documentation that meet the following requirements:
 
-\subsection*{Functionality \& Robustness - Learning Outcomes 1, 3, 4 (40\%)}
+\subsection*{Functionality - Learning Outcomes 1, 2, 3 (40\%)}
 \begin{itemize}
 	\item Application must open without file structure modification in \textbf{Android Studio}.
 	\item Application must run without code modification on multiple mobile devices. The mobile devices used to test your application will be:
@@ -118,6 +115,7 @@ You will need to submit an application \& documentation that meet the following 
 	\item Selection of at least five key phrases. For example, "No worries, mate, she'll be right" is key phrase in Australia.
 	\item An interactive quiz for each country.
 	      \begin{itemize}
+		      \item Quiz data must be fetched from a \textbf{Spring Boot REST API} using \textbf{Retrofit}.
 		      \item Quiz topics may include animals, culture, food, drink, geography \& sport.
 		      \item Each quiz must have at least five questions.
 		      \item Questions are multi-choice \& true or false.
@@ -127,21 +125,18 @@ You will need to submit an application \& documentation that meet the following 
 		      \item Display appropriate feedback for correct \& incorrect answers with a custom \textbf{Toast} message. If a question is answered incorrectly, display the correct answer.
 		      \item At the end of each quiz, store the highest score in \textbf{SharedPreferences}.
 		      \item For each quiz, display the highest score in a \textbf{TextView}.
+		      \item \textbf{Resource:} \footnotesize\href{https://kotlinlang.org/docs/jvm-spring-boot-restful.html}{https://kotlinlang.org/docs/jvm-spring-boot-restful.html}
 	      \end{itemize}
 	\item Localization support for each country.
 	      \begin{itemize}
 		      \item \textbf{Resource:} \footnotesize\href{https://developer.android.com/guide/topics/resources/localization/}{https://developer.android.com/guide/topics/resources/localization}
 	      \end{itemize}
 	\item Application can be exited via a \textbf{DialogFragment}. The \textbf{DialogFragment} must prompt the user when the user double taps the mobile device's back button.
-	\item \textbf{Spring Boot REST API} containing top-rated tourist attraction data.
-	\begin{itemize}
-		\item Each object must contain the name, country and location (latitude \& longitude).
-		\item \item \textbf{Resource:} \footnotesize\href{https://kotlinlang.org/docs/jvm-spring-boot-restful.html}{https://kotlinlang.org/docs/jvm-spring-boot-restful.html}
-	\end{itemize} 
-	\item Google Map displaying top-rated tourist attraction data.
+	\item Google Map displaying top-rated tourist attractions.
 	      \begin{itemize}
-		      \item Use \textbf{Retrofit} \& the \textbf{Spring Boot REST API} to display a marker for each object on a \textbf{Google Map}.
-		      \item The marker's information window must display the attraction name \& coordinates.
+		      \item Top-rated tourist attraction data must be fetched from a \textbf{Spring Boot REST API} using \textbf{Retrofit}.
+		      \item Each data object will be represented by a marker on a \textbf{Google Map}.
+		      \item The marker's information window must display the attraction's name \& coordinates.
 		      \item \textbf{Resource:} \footnotesize\href{https://developers.google.com/maps/documentation/android-sdk/start}{https://developers.google.com/maps/documentation/android-sdk/start}
 	      \end{itemize}
 	\item \textbf{Switch} which toggles between light \& dark mode.
@@ -167,7 +162,7 @@ You will need to submit an application \& documentation that meet the following 
 	      \begin{itemize}
 		      \item \textbf{Resource:} \footnotesize\href{https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView}{https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView}
 	      \end{itemize}
-	\item Display the application's privacy policy in a \textbf{WebView}.
+	\item A clickable link to your application's privacy policy.
 	      \begin{itemize}
 		      \item \textbf{Resource:} \footnotesize\href{https://play.google.com/about/developer-content-policy}{https://play.google.com/about/developer-content-policy}
 	      \end{itemize}
@@ -175,14 +170,14 @@ You will need to submit an application \& documentation that meet the following 
 	\item Application is published to \textbf{Google Play Store}.
 	      \begin{itemize}
 		      \item To published to \textbf{Google Play Store}, you will need a \textbf{Google Play Console} account. The account's credentials are available in the \textbf{Microsoft Teams} course channel, under the \textbf{Files} tab. The account will be available to all learners in the course. Do not disable any applications published on this account.
-		      \item When you create the application, name the package appropriately. For example, \\ \textbf{op.mobile.app.dev.$<$username$>$.travelling}. \textbf{Note:} replace \textbf{username} with your \textbf{Otago Polytechnic} username.
+		      \item When you create your application, name the package appropriately. For example, \\ \textbf{op.mobile.app.dev.$<$username$>$.travelling}. \textbf{Note:} replace \textbf{username} with your \textbf{Otago Polytechnic} username.
 		      \item \textbf{Resources:}
 		            \begin{itemize}
 			            \item \footnotesize\href{https://support.google.com/googleplay/android-developer/answer/113469?hl=en}{https://support.google.com/googleplay/android-developer/answer/113469?hl=en}
 			            \item \footnotesize\href{https://developer.android.com/studio/publish/app-signing}{https://developer.android.com/studio/publish/app-signing}
 		            \end{itemize}
 	      \end{itemize}
-	\item Ability to download the application from \textbf{Google Play Store} on to multiple mobile devices. The mobile devices used to download your application will be:
+	\item Ability to download your application from \textbf{Google Play Store} on to multiple mobile devices. The mobile devices used to download your application will be:
 	      \begin{itemize}
 		      \item Pixel 2 - 5.0"
 		      \item Pixel XL - 5.5"
@@ -191,7 +186,7 @@ You will need to submit an application \& documentation that meet the following 
 	\item At least \textbf{15} user-interface tests which verify that the UI of your application is functioning correctly.
 \end{itemize}
 
-\subsection*{Code Elegance - Learning Outcomes 1, 4 (40\%)}
+\subsection*{Code Elegance - Learning Outcomes 1, 3 (40\%)}
 \begin{itemize}
 	\item \textbf{Kotlin} \& \textbf{XML} files contain no magic numbers/strings. Store the values in the appropriate \textbf{XML} files. For example, numbers must be stored in an integer or dimension file \& strings must be stored in a string file.
 	\item Use of intermediate variables. No method calls as arguments.
@@ -200,23 +195,24 @@ You will need to submit an application \& documentation that meet the following 
 	\item Efficient algorithmic approach.
 \end{itemize}
 
-\subsection*{Documentation \& Git/GitHub Usage - Learning Outcomes 3, 4 (20\%)}
+\subsection*{Documentation \& Git/GitHub Usage - Learning Outcomes 2, 3 (20\%)}
 \begin{itemize}
-	\item Provide the following in the repository \textbf{README} file:
+	\item Provide the following in your repository \textbf{README} file:
 	      \begin{itemize}
-		      \item Privacy policy which discloses user information collected by the application. For example, does this application require storage access or internet?
-		      \item Sketched wireframes of the application. The wireframes must be sketched/designed using online software. This must be completed before you start coding.
+		      \item Privacy policy which discloses user information collected by your application. For example, does this application require storage access or internet?
+		      \item Sketched wireframes of your application. The wireframes must be sketched/designed using online software. This must be completed before you start coding.
 		            \begin{itemize}
 			            \item \textbf{Resource}: \footnotesize\href{https://moqups.com}{https://moqups.com}
 		            \end{itemize}
-		      \item Step-by-step user guide detailing each screen. The user guide must contain a screenshot of each screen in the application.
+		      \item Step-by-step user guide detailing each screen. The user guide must contain a screenshot of each screen in your application.
 		      \item Commented code is documented using \textbf{KDoc} \& generated to \textbf{Markdown} using \textbf{Dokka}.
 		      \item \textbf{Resources:}
 		            \begin{itemize}
 			            \item \footnotesize\href{https://kotlinlang.org/docs/reference/kotlin-doc.html}{https://kotlinlang.org/docs/reference/kotlin-doc.html}
 			            \item \footnotesize\href{https://github.com/Kotlin/dokka}{https://github.com/Kotlin/dokka}
 		            \end{itemize}
-		      \item \textbf{Spring Boot REST API} endpoints.
+		      \item All \textbf{Spring Boot REST API GET} endpoints.
+		      \item URL to your application on \textbf{Google Play Store}.
 	      \end{itemize}
 	\item At least \textbf{10} feature branches excluding the \textbf{main} branch.
 	      \begin{itemize}
