@@ -20,13 +20,13 @@ The following image displays the major components of the **Android** platform.
 <img src="./resources/readme/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
 
 ### Linux Kernel
-The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufactrers to develop drivers for a well-known kernel.
+The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufacturers to develop drivers for a well-known kernel.
 
 ### Hardware Abstraction Layer (HAL)
 The **HAL** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The **HAL** consists of multiple library modules which implement an interface for a specific type of hardware components, i.e., the audio, bluetooth, camera or sensor module. 
 
 ### Android Runtime
-For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Anroid Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
+For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Android Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
 
 ## Activity ✏️
 On the provided piece of A4 paper, research & answer the following:
@@ -239,7 +239,7 @@ The UI should look like the following:
 - How do we fix this?
 
 ## Build & Run Your Application
-With a few clicks, you can deploy your application to the **Android Emulator** or a connect device.
+With a few clicks, you can deploy your application to the **Android Emulator** or a **connected device**.
 
 ### How To Run A Project With The Android Emulator
 
@@ -265,7 +265,7 @@ Once you have set up & plugged in over USB, click **Run** <img src="./resources/
 **Resource:**  https://developer.android.com/studio/run/device
 
 ## Activity ✏️
-Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** & a connect device. You **MUST** show me your running application before you start the practical.
+Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
 
 ## Practical
-The practical for this topic is available [here]().
+The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/raw/master/02-android-overview/02-android-overview.pdf).
