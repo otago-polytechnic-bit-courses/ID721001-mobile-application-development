@@ -217,6 +217,7 @@ Use the **AgeCalculator** project for this activity. In **activity_main.xml**, a
 | android:textSize     | "25sp" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
+| app:layout_constraintTop_toTopOf     | "parent" |
 
 | Button Attribute        | Value           |
 | ------------- |:-------------:|
