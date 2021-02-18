@@ -230,7 +230,7 @@ Use the **AgeCalculator** project for this activity. In **activity_main.xml**, a
 | android:text     | "Select Date" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
-|  app:layout_constraintTop_toBottomOf     | "@+id/txt_view_header |
+|  app:layout_constraintTop_toBottomOf     | "txt_view_header" |
 
 The UI should look like the following:
 
