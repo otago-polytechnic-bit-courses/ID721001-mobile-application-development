@@ -214,7 +214,7 @@ Use the **AgeCalculator** project for this activity. In **activity_main.xml**, a
 | android:layout_marginEnd     | "32dp" |
 | android:gravity     | "center" |
 | android:text     | "Calculate Your Age" |
-| android:textSize     | "25sp" |
+| android:textSize     | "24sp" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
 | app:layout_constraintTop_toTopOf     | "parent" |
