@@ -1,5 +1,4 @@
 # **Data Passing**
-
 ## Activity ✏️
 Create a new **Android** project with the following configurations:
 - Template: **Empty Activity**
@@ -53,6 +52,10 @@ In **activity_main.xml**, add the following `Views`:
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
 |  app:layout_constraintTop_toBottomOf     | "edt_text_password" |
+
+The UI should look like the following:
+
+<img src="./resources/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
 
 ## Practical
 The practical for this topic is available [here]().

@@ -18,9 +18,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-
         val btnSelectDate: Button = findViewById(R.id.btn_select_date)
         btnSelectDate.setOnClickListener {}
 
