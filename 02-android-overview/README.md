@@ -84,7 +84,7 @@ Lets look at some important project files.
 
 **app > manifest > AndroidManifest.xml**
 
-Every application must have an **AndroidManifest.xml** file in the root of the **app** directory. The **AndroidManifest.xml** file specifies important information about your application to the **Android** build tools, **Android** os & **Google Play**.
+Every application must have an `AndroidManifest.xml` file in the root of the `app` directory. The `AndroidManifest.xml` file specifies important information about your application to the **Android** build tools, **Android** os & **Google Play**.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -191,22 +191,22 @@ A `ConstraintLayout` is a `ViewGroup` which allows you to position & size `Views
 
 **Gradle Scripts > build.grade (Project: AgeCalculator)**
 
-The **build.grade (Project)** file defines build configurations that apply to all modules in your project.
+The `build.grade (Project)` file defines build configurations that apply to all modules in your project.
 
 **Resource:** https://developer.android.com/studio/build#top-level
 
 **Gradle Scripts > build.grade (Module: AgeCalculator.app)**
 
-The **build.grade (Module)** file allows you to configure build settings for the specific module it is located in.
+The `build.grade (Module)` file allows you to configure build settings for the specific module it is located in.
 
 **Resource:** https://developer.android.com/studio/build#module-level
 
 ## Activity ✏️
-Use the **AgeCalculator** project for this activity. In **activity_main.xml**, add the following `Views`:
+Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add the following `Views`:
 
 | TextView Attribute        | Value           |
 | ------------- |:-------------:|
-| android:id      | "txt_view_header" |
+| android:id      | "tv_header" |
 | android:layout_width     | "0dp" |
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
@@ -230,7 +230,7 @@ Use the **AgeCalculator** project for this activity. In **activity_main.xml**, a
 | android:text     | "Select Date" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
-|  app:layout_constraintTop_toBottomOf     | "txt_view_header" |
+|  app:layout_constraintTop_toBottomOf     | "tv_header" |
 
 The UI should look like the following:
 
@@ -269,4 +269,4 @@ Once you have set up & plugged in over USB, click **Run** <img src="./resources/
 Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
 
 ## Practical
-The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/raw/master/02-android-overview/02-android-overview.pdf).
+The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/raw/master/02-android-overview/practical-02-android-overview.pdf).

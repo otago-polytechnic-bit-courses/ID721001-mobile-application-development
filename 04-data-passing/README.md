@@ -12,7 +12,7 @@ In **activity_main.xml**, add the following `Views`:
 
 | EditText Attribute        | Value           |
 | ------------- |:-------------:|
-| android:id      | "edt_txt_email_address" |
+| android:id      | "et_email_address" |
 | android:layout_width     | "0dp" |
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
@@ -27,7 +27,7 @@ In **activity_main.xml**, add the following `Views`:
 
 | EditText Attribute        | Value           |
 | ------------- |:-------------:|
-| android:id      | "edt_txt_password" |
+| android:id      | "et_password" |
 | android:layout_width     | "0dp" |
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
@@ -38,12 +38,12 @@ In **activity_main.xml**, add the following `Views`:
 | android:inputType     | "textPassword" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
-| app:layout_constraintTop_toBottomOf     | "edt_text_email_address" |
+| app:layout_constraintTop_toBottomOf     | "et_text_email_address" |
 
 | Button Attribute        | Value           |
 | ------------- |:-------------:|
 | android:id      | "btn_login" |
-| android:layout_width     | "0dp" |
+| android:layout_width     | "0dp" |- 
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
 | android:layout_marginTop     | "16dp" |
@@ -51,19 +51,24 @@ In **activity_main.xml**, add the following `Views`:
 | android:text     | "Login" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
-|  app:layout_constraintTop_toBottomOf     | "edt_text_password" |
+|  app:layout_constraintTop_toBottomOf     | "et_text_password" |
 
 The UI should look like the following:
 
 <img src="./resources/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
 
 ## Intent
-An **Intent** is a messaging object you can use to request an action from another app component. There are three fundamental use cases which intents communicate between components:
-- Starting an activity - an **Activity** represents a single screen in an application. You can start a new instance of an **Activity** by passing an **Intent** to `startActivity()`. 
-- Starting a service - a **Service** performs operations in the background without a UI. With **API 21: Android 5.0 (Lollipop)** & later, you can start a service with **JobScheduler**.
-- Delivering a broadcast - a message that any application can receive. The system delivers various broadcasts for system events, i.e., when the system boots up or the device starts charging. You can deliver a broadcast to other applications by passing an **Intent** to `sendBroadcast()` or `sendOrderedBroadcast()`.
+An `Intent` is a messaging object you can use to request an action from another app component. There are three fundamental use cases which intents communicate between components:
+- Starting an activity - an `Activity` represents a single screen in an application. You can start a new instance of an `Activity` by passing an `Intent` to `startActivity()`. 
+- Starting a service - a `Service` performs operations in the background without a UI. With **API 21: Android 5.0 (Lollipop)** & later, you can start a service with `JobScheduler`.
+- Delivering a broadcast - a message that any application can receive. The system delivers various broadcasts for system events, i.e., when the system boots up or the device starts charging. You can deliver a broadcast to other applications by passing an `Intent` to `sendBroadcast()` or `sendOrderedBroadcast()`.
 
 <img src="./resources/readme/android-intents.png" alt="Android Intents" width="500" height="200" />
+
+### Intent Types
+There are two types of intents:
+- Explicit - specifies which application will satisfy the intent by either supplying application's package name or a component class name. You will use an explicit intent to start a component in your own application because you know the activity's name or service you want to start.
+- Implicit - do not name a specific component. Instead, declares a general action to perform, which allows a component from another application to handle it.-
 
 **Resources:**
 - https://developer.android.com/reference/android/content/Intent
@@ -72,16 +77,62 @@ An **Intent** is a messaging object you can use to request an action from anothe
 - https://developer.android.com/guide/components/broadcasts
 
 ## Activity ✏️
-In **MainActivity.kt**, create a `Button` on-click listener & when clicked, output both `EditText` values to a `Toast`.
+- Create a new `Activity` called `SecondActivity.kt`. To create a new `Activity`, right-click **package > New > Activity > New Activity**. When you create a new activity, **Android Studio** automatically does the following:
+   - Creates the `SecondActivity.kt` file.
+   - Creates the `activity_second.xml` layout file.
+   - Adds the required `<activity>` element in **AndroidManifest.xml**. 
+- In `activity_second.xml`, add a `TextView` with the id `tv_output`.
+- In `MainActivity.kt`, write the following:
+```kotlin
+const val EXTRA_EMAIL_ADDRESS = "op.mobile.app.dev.login.EMAIL_ADDRESS"
+const val EXTRA_PASSWORD = "op.mobile.app.dev.login.PASSWORD"
 
-### Intent Types
-There are two types of intents:
-- Explicit - specifies which application will satisfy the intent by either supplying application's package name or a component class name. You will use an explicit intent to start a component in your own application because you know the activity's name or service you want to start.
-- Implicit - do not name a specific component. Instead, declares a general action to perform, which allows a component from another application to handle it.
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-## Activity ✏️
-- Create a new `Activity` called **SecondActivity**. To generate a new `Activity` & **XML** layout, right-click **package > New > Activity > New Activity**. If you go to **AndroidManifest.xml**, you should see a new `activity` **XML** tag.
-- In **activity_second.xml**, add a `TextView` with the `android:id` `txt_view_output`.
+        val etEmailAddress: EditText = findViewById(R.id.et_email_address)
+        val etPassword: EditText = findViewById(R.id.et_password)
+
+        val btnLogin: Button = findViewById(R.id.btn_login)
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java).apply {
+                putExtra(EXTRA_EMAIL_ADDRESS, etEmailAddress.text.toString())
+                putExtra(EXTRA_PASSWORD, etPassword.text.toString())
+            }
+            startActivity(intent)
+        }
+    }
+}
+```
+- What is happening?
+  - An `Intent` takes two parameters, a `Context` & a `Class`.
+  - The `Context` parameter is used first because the `Activity` class is a subclass of `Context`. For example, `MainActivity` is the `Context`.
+  - The `Class` parameter of the application component to which the system delivers the `Intent`. For example, `SecondActivity` is the activity to start.
+  - The `putExtra()` method adds the value of `EditText` to the `Intent`. An `Intent` can carry data types as key-value pairs called extras. 
+  - `SecondActivity` will use `EXTRA_EMAIL_ADDRESS` & `EXTRA_PASSWORD` as keys to retrieve the values from `MainActivity`. It is good practice to define keys with your application's package name as a prefix. This ensures that the keys are unique, in case your application interacts with other applications.
+  - The `startActivity` method starts an instance of the `SecondActivity` that is specified by the `Intent`.
+
+- To retrieve the values from `MainActivity`, go to `SecondActivity` & write the following:
+```kotlin
+class SecondActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_second)
+
+        // Get the Intent that started SecondActivity & retrieve the value
+        val emailAddress = intent.getStringExtra(EXTRA_EMAIL_ADDRESS)
+        
+        // Set the retrieved value to the TextView
+        val tvOutput: TextView = findViewById(R.id.tv_output)
+        tvOutput.apply {
+          text = emailAddress
+        }
+    }
+}
+```
+- Run the project's application on either the **Android Emulator** & a **connected device**.
 
 ## Practical
 The practical for this topic is available [here]().

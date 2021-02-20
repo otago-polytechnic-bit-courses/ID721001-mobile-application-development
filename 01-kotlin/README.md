@@ -556,4 +556,4 @@ fun main() {
 ```
 
 ## Practical
-The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/blob/master/01-kotlin/01-kotlin.pdf).
+The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/blob/master/01-kotlin/practical-01-kotlin.pdf).
