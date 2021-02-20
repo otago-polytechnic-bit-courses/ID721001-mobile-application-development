@@ -58,10 +58,12 @@ The UI should look like the following:
 <img src="./resources/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
 
 ## Intent
-An **Intent** is a messaging object you can use to request an action from another app component. There are three fundamental use cases which intents facilitate communication between components:
+An **Intent** is a messaging object you can use to request an action from another app component. There are three fundamental use cases which intents communicate between components:
 - Starting an activity - an **Activity** represents a single screen in an application. You can start a new instance of an **Activity** by passing an **Intent** to `startActivity()`. 
 - Starting a service - a **Service** performs operations in the background without a UI. With **API 21: Android 5.0 (Lollipop)** & later, you can start a service with **JobScheduler**.
 - Delivering a broadcast - a message that any application can receive. The system delivers various broadcasts for system events, i.e., when the system boots up or the device starts charging. You can deliver a broadcast to other applications by passing an **Intent** to `sendBroadcast()` or `sendOrderedBroadcast()`.
+
+<img src="./resources/readme/android-intents.png" alt="Android Intents" width="500" height="200" />
 
 **Resources:**
 - https://developer.android.com/reference/android/content/Intent

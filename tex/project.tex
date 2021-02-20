@@ -71,7 +71,7 @@ All parts of your submitted assessment must be completely your work \& any refer
 The school's process concerning submissions, extensions, resubmissions \& resits complies with \textbf{Otago Polytechnic} policies. Learners can view policies on the \textbf{Otago Polytechnic} website located at \href{https://www.op.ac.nz/about-us/governance-and-management/policies}{https://www.op.ac.nz/about-us/governance-and-management/policies}.
 
 \section*{Submissions}
-You must submit all program files via \textbf{GitHub Classroom}. Here is the link to the repository you will use for your submission – \href{https://classroom.github.com/a/FWk\_XkTA}{https://classroom.github.com/a/FWk\_XkTA}. The latest program files in the \textbf{main} branch will be used to run your application. Late submissions will incur a \textbf{10\% penalty per day}, rolling over at \textbf{5:00 PM}.
+You must submit all program files via \textbf{GitHub Classroom}. Here is the URL to the repository you will use for your submission – \href{https://classroom.github.com/a/FWk\_XkTA}{https://classroom.github.com/a/FWk\_XkTA}. The latest program files in the \textbf{main} branch will be used to run your application. Late submissions will incur a \textbf{10\% penalty per day}, rolling over at \textbf{5:00 PM}.
 
 \section*{Extensions}
 Familiarise yourself with the assessment due date. If you need an extension, contact the course lecturer before the due date. If you require more than a week's extension, a medical certificate or support letter from your manager may be needed.
@@ -109,7 +109,7 @@ You will need to submit an application \& documentation that meet the following 
 	      \end{itemize}
 	\item Text to speech support.
 	      \begin{itemize}
-		      \item If a country is not supported, handle gracefully with a custom \textbf{Toast} message.
+		      \item If a country is not supported, handle gracefully with a custom \textbf{Toast}.
 		      \item \textbf{Resource:} \footnotesize\href{https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech}{https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech}
 	      \end{itemize}
 	\item Selection of at least five key phrases. For example, "No worries, mate, she'll be right" is key phrase in Australia.
@@ -122,17 +122,17 @@ You will need to submit an application \& documentation that meet the following 
 		      \item Multi-choice questions must have four answers.
 		      \item Each question must have an image.
 		      \item Each question must be answered within a \textbf{30 second} time limit.
-		      \item Display appropriate feedback for correct \& incorrect answers with a custom \textbf{Toast} message. If a question is answered incorrectly, display the correct answer.
+		      \item Display appropriate feedback for correct \& incorrect answers with a custom \textbf{Toast}. If a question is answered incorrectly, display the correct answer.
 		      \item At the end of each quiz, store the highest score in a \textbf{Room Database} table.
 		      \item For each quiz, display the highest score in a \textbf{TextView}.
 		      \item \textbf{Resource:} \footnotesize\href{https://kotlinlang.org/docs/jvm-spring-boot-restful.html}{https://kotlinlang.org/docs/jvm-spring-boot-restful.html}
 	      \end{itemize}
-	\item Localization support for each country.
+	\item \textbf{Localization} support for each country.
 	      \begin{itemize}
 		      \item \textbf{Resource:} \footnotesize\href{https://developer.android.com/guide/topics/resources/localization/}{https://developer.android.com/guide/topics/resources/localization}
 	      \end{itemize}
 	\item Application can be exited via a \textbf{DialogFragment}. The \textbf{DialogFragment} must prompt the user when the user double taps the mobile device's back button.
-	\item Google Map displaying top-rated tourist attractions.
+	\item \textbf{Google Map} displaying top-rated tourist attractions.
 	      \begin{itemize}
 		      \item Top-rated tourist attraction data must be fetched from a \textbf{Spring Boot REST API} using \textbf{Retrofit}.
 		      \item Each data object will be represented by a marker on a \textbf{Google Map}.
@@ -162,10 +162,6 @@ You will need to submit an application \& documentation that meet the following 
 	      \begin{itemize}
 		      \item \textbf{Resource:} \footnotesize\href{https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView}{https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView}
 	      \end{itemize}
-	\item A clickable link to your application's privacy policy.
-	      \begin{itemize}
-		      \item \textbf{Resource:} \footnotesize\href{https://play.google.com/about/developer-content-policy}{https://play.google.com/about/developer-content-policy}
-	      \end{itemize}
 	\item Visually attractive UI with a coherent graphical theme \& style using \textbf{Material Design}.
 	\item Application is published to \textbf{Google Play Store}.
 	      \begin{itemize}
@@ -186,34 +182,41 @@ You will need to submit an application \& documentation that meet the following 
 	\item At least \textbf{15} UI tests which verify that your application is functioning correctly.
 \end{itemize}
 
-\subsection*{Code Elegance - Learning Outcomes 1, 3 (40\%)}
+\subsection*{Code Elegance - Learning Outcomes 1, 3 (45\%)}
 \begin{itemize}
 	\item \textbf{Kotlin} \& \textbf{XML} files contain no magic numbers/strings. Store the values in the appropriate \textbf{XML} files. For example, numbers must be stored in an integer or dimension file \& strings must be stored in a string file.
 	\item Use of intermediate variables. No method calls as arguments.
 	\item Idiomatic use of control flow, data structures \& other in-built functions.
-	\item Code adheres to various object-oriented design principles. For example, \textbf{DRY} \& \textbf{SOLID}.
+	\item Code adheres to the \textbf{MVVM} architectural pattern \&, \textbf{SOLID} \& \textbf{DRY} design principles.
 	\item Efficient algorithmic approach.
 \end{itemize}
 
-\subsection*{Documentation \& Git/GitHub Usage - Learning Outcomes 2, 3 (20\%)}
+\subsection*{Documentation \& Git/GitHub Usage - Learning Outcomes 2, 3 (15\%)}
 \begin{itemize}
-	\item Provide the following in your repository \textbf{README Markdown} file:
+	\item Provide the following in your repository \textbf{README.md} file:
 	      \begin{itemize}
-		      \item Privacy policy which discloses user information collected by your application. For example, does this application require storage access or internet?
+		      \item URL to your application's privacy policy.
+		      \begin{itemize}
+						\item \textbf{Resource:} \footnotesize\href{https://play.google.com/about/developer-content-policy}{https://play.google.com/about/developer-content-policy}
+					\end{itemize} 
 		      \item Sketched wireframes of your application. The wireframes must be sketched/designed using online software. This must be completed before you start coding.
 		            \begin{itemize}
 			            \item \textbf{Resource}: \footnotesize\href{https://moqups.com}{https://moqups.com}
 		            \end{itemize}
 		      \item Step-by-step user guide detailing each screen. The user guide must contain a screenshot of each screen in your application.
 		      \item Commented code is documented using \textbf{KDoc} \& generated to \textbf{Markdown} using \textbf{Dokka}.
-		      \item \textbf{Resources:}
+		      \begin{itemize}
+						\item \textbf{Resources:}
 		            \begin{itemize}
 			            \item \footnotesize\href{https://kotlinlang.org/docs/reference/kotlin-doc.html}{https://kotlinlang.org/docs/reference/kotlin-doc.html}
 			            \item \footnotesize\href{https://github.com/Kotlin/dokka}{https://github.com/Kotlin/dokka}
 		            \end{itemize}
+					\end{itemize}
 		      \item \textbf{Spring Boot REST API} endpoints for quiz \& tourist-attraction features.
 		      \item URL to your application on \textbf{Google Play Store}.
 	      \end{itemize}
+			\end{itemize}
+			\begin{itemize}
 				\item Continuous integration using \textbf{GitHub Actions}.
 	      \begin{itemize}
 		      \item \textbf{YAML} file must be configured for UI tests and generating an APK.
@@ -224,9 +227,7 @@ You will need to submit an application \& documentation that meet the following 
 		      \item Your branches must be prefix with \textbf{feature}, for example, \textbf{feature-$<$name of functional requirement$>$}.
 		      \item Code in the branch must relate to the \textbf{feature}.
 		      \item Once you have completed a \textbf{feature}, create a pull request \& assign the \textbf{GitHub} user \textbf{grayson-orr} to a reviewer. \textbf{Do not} merge your own pull request.
-		      \item 
 	      \end{itemize}
-
 	\item Commit messages must reflect the context of each functional requirement change. \textbf{Do not} rewrite your \textbf{Git} history. It is important that the course lecturer can see how you worked on your assessment over time.
 	      \begin{itemize}
 		      \item \textbf{Resource:} \footnotesize\href{https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide}{https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide}

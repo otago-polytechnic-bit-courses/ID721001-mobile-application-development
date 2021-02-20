@@ -5,5 +5,5 @@ This repository contains all information relating to this course, i.e., course d
 ## Repositories
 Here are the following assessment submission repositories:
 
-* Practicals - https://classroom.github.com/a/VJIq7Ae0
-* Travelling Android application - https://classroom.github.com/a/FWk_XkTA
+* Practical - https://classroom.github.com/a/VJIq7Ae0
+* Project - https://classroom.github.com/a/FWk_XkTA
