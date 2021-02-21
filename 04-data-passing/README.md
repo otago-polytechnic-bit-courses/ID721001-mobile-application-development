@@ -1,5 +1,7 @@
 # **Data Passing**
-## Activity ✏️
+<hr />
+
+### Activity ✏️
 Create a new **Android** project with the following configurations:
 - Template: **Empty Activity**
 - Name: **Login**
@@ -8,7 +10,7 @@ Create a new **Android** project with the following configurations:
 - Language: **Kotlin**
 - Minimum SDK: **API 28: Android 9.0 (Pie)**
 
-In **activity_main.xml**, add the following `Views`:
+In `activity_main.xml`, add the following `Views`:
 
 | EditText Attribute        | Value           |
 | ------------- |:-------------:|
@@ -55,7 +57,9 @@ In **activity_main.xml**, add the following `Views`:
 
 The UI should look like the following:
 
-<img src="./resources/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
+<img src="../tex/img/04-data-passing/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
+
+<hr />
 
 ## Intent
 An `Intent` is a messaging object you can use to request an action from another app component. There are three fundamental use cases which intents communicate between components:
@@ -63,12 +67,12 @@ An `Intent` is a messaging object you can use to request an action from another 
 - Starting a service - a `Service` performs operations in the background without a UI. With **API 21: Android 5.0 (Lollipop)** & later, you can start a service with `JobScheduler`.
 - Delivering a broadcast - a message that any application can receive. The system delivers various broadcasts for system events, i.e., when the system boots up or the device starts charging. You can deliver a broadcast to other applications by passing an `Intent` to `sendBroadcast()` or `sendOrderedBroadcast()`.
 
-<img src="./resources/readme/android-intents.png" alt="Android Intents" width="500" height="200" />
+<img src="../tex/img/04-data-passing/readme/android-intents.png" alt="Android Intents" width="500" height="200" />
 
-### Intent Types
+## Intent Types
 There are two types of intents:
 - Explicit - specifies which application will satisfy the intent by either supplying application's package name or a component class name. You will use an explicit intent to start a component in your own application because you know the activity's name or service you want to start.
-- Implicit - do not name a specific component. Instead, declares a general action to perform, which allows a component from another application to handle it.-
+- Implicit - do not name a specific component. Instead, declares a general action to perform, which allows a component from another application to handle it.
 
 **Resources:**
 - https://developer.android.com/reference/android/content/Intent
@@ -76,11 +80,13 @@ There are two types of intents:
 - https://developer.android.com/reference/android/app/job/JobScheduler
 - https://developer.android.com/guide/components/broadcasts
 
-## Activity ✏️
+<hr />
+
+### Activity ✏️
 - Create a new `Activity` called `SecondActivity.kt`. To create a new `Activity`, right-click **package > New > Activity > New Activity**. When you create a new activity, **Android Studio** automatically does the following:
    - Creates the `SecondActivity.kt` file.
    - Creates the `activity_second.xml` layout file.
-   - Adds the required `<activity>` element in **AndroidManifest.xml**. 
+   - Adds the required `<activity>` element in `AndroidManifest.xml`. 
 - In `activity_second.xml`, add a `TextView` with the id `tv_output`.
 - In `MainActivity.kt`, write the following:
 ```kotlin
@@ -126,13 +132,42 @@ class SecondActivity : AppCompatActivity() {
         
         // Set the retrieved value to the TextView
         val tvOutput: TextView = findViewById(R.id.tv_output)
-        tvOutput.apply {
-          text = emailAddress
-        }
+        tvOutput.text = emailAddress
     }
 }
 ```
-- Run the project's application on either the **Android Emulator** & a **connected device**.
+
+Run the project's application on either the **Android Emulator** & a **connected device**. Enter a value in the email address & password `EditText`, then click the **Login** `Button`.
+
+PUT SOME IMAGE IN HERE
+
+What happens if you click the **Login** `Button` without entering a value in the email address &/or password `EditText`?
+
+<hr />
+
+## Upward Navigation
+Each screen in your application that is not the main entry point must provide some navigation that directs the user to a parent screen in the application's hierarchy. To do this, add an up arrow button in the **action bar**.
+
+<hr />
+
+### Activity ✏️
+To add an up arrow button, go to `AndroidManifest.xml`, find the `<activity>` element for `SecondActivity` & replace it with the following:
+
+```xml
+<activity android:name=".SecondActivity"
+    android:parentActivityName=".MainActivity">
+    <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".MainActivity" />
+</activity>
+```
+
+Again, run the project's application on either the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
+
+PUT SOME IMAGE IN HERE
+
+<hr />
 
 ## Practical
-The practical for this topic is available [here]().
+The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/blob/master/04-data-passing/practical-04-data-passing.pdf).
+

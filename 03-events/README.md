@@ -8,7 +8,9 @@ Lets take a look at the `View` class...within this class, you will notice severa
 ## Event Listeners
 An event listener is an interface in the `View` class that contains a single callback method. These methods are be called when a registered listener has been triggered by user interaction.
 
-## Activity ✏️
+<hr />
+
+### Activity ✏️
 
 On the provided piece of A4 paper, research & explain when the following callback methods are called:
 - `onClick()`
@@ -19,6 +21,8 @@ On the provided piece of A4 paper, research & explain when the following callbac
 - `onCreateContextMenu()`
 
 **Resource:** https://developer.android.com/guide/topics/ui/ui-events#EventListeners
+
+<hr />
 
 To define one of these methods & handle your events, implement the nested interface in your `Activity` or define it as an anonymous class. Then, pass an instance of your implementation to the method.
 
@@ -56,8 +60,12 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 }
 ```
 
-## Activity ✏️
-In the **03-events** directory, open **age-calculator** in **Android Studio**. Take a moment to understand what the code is doing. In the `Button` on-click listener, call the `onDatePicker()` method. Run the project's application on both the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
+<hr />
+
+### Activity ✏️
+In the `03-events` directory, open `age-calculator` in **Android Studio**. Take a moment to understand what the code is doing. In the `Button` on-click listener, call the `onDatePicker()` method. Run the project's application on both the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
+
+<hr />
 
 ## Practical
 The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/blob/master/03-events/practical-03-events.pdf).

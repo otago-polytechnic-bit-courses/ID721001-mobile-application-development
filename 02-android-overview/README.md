@@ -8,16 +8,20 @@
 
 At **Google**, Rubin & his team developed a mobile device platform powered by the **Linux kernel**. **Google** marketed the platform to handset providers & carriers on the promise of providing a flexible, upgradeable system. In 2006, **Google's** plans to enter the mobile communications market continued. An early prototype closely resembled a **BlackBerry** phone which had a QWERTY keyboard & no touchscreen. With the unveiling of the **Apple iPhone** in 2007 meant **Android** had to go back to the drawing board. In 2008, both **Nokia** & **BlackBerry** announced touch-based smartphones that to rival the **iPhone 3G**. Subsequently, **Android** switch their focus to touchscreens. The first commercially available smartphone running **Android** was the **HTC Dream** which was announced in September 2008.
 
-## Activity ✏️
+<hr />
+
+### Activity ✏️
 On the provided piece of A4 paper, research & answer the following:
 - Explain what members of the **OHA** do.
 - Name 10 members of the **OHA**. Include a range of mobile operators, handset manufacturers & software companies.
+
+<hr />
 
 ## Software Stack
 
 The following image displays the major components of the **Android** platform.
 
-<img src="./resources/readme/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
+<img src="../tex/img/02-android-overview/readme/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
 
 ### Linux Kernel
 The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufacturers to develop drivers for a well-known kernel.
@@ -28,11 +32,15 @@ The **HAL** provides standard interfaces that expose device hardware capabilitie
 ### Android Runtime
 For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Android Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. Note: if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
 
-## Activity ✏️
+<hr />
+
+### Activity ✏️
 On the provided piece of A4 paper, research & answer the following:
 - Explain difference between **AOT** & **JIT** compilation?
 - Name five programming languages which implement **AOT** compilation.
 - Name five programming languages which implement **JIT** compilation.
+
+<hr />
 
 ### Native C/C++ Libraries
 Many core **Android** system components & services are built from native code & require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework APIs which exposes the functionality of these native libraries to applications.
@@ -50,7 +58,7 @@ The system applications function both as applications for users & to provide cap
 ## Market Share
 According to **StatCounter**, **Android** has been the most popular mobile os since August 2013.
 
-<img src="./resources/readme/mobile-os-market-share.png" alt="Mobile OS Market Share" width="750" height="450" />
+<img src="../tex/img/02-android-overview/readme/mobile-os-market-share.png" alt="Mobile OS Market Share" width="750" height="450" />
 
 **Resource:** https://gs.statcounter.com/os-market-share/mobile/worldwide
 
@@ -62,11 +70,11 @@ To create a new Android project, follow these steps:
 1. Open **Android Studio**.
 2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
 
-<img src="./resources/readme/android-studio-home.png" alt="Android Studio Home" width="625" height="400" />
+<img src="../tex/img/02-android-overview/readme/android-studio-home.png" alt="Android Studio Home" width="625" height="400" />
 
 3. In the **Select a Project Template** window, select **Empty Activity** and click **Next**.
 
-<img src="./resources/readme/android-studio-template.png" alt="Android Studio Template" width="650" height="475" />
+<img src="../tex/img/02-android-overview/readme/android-studio-template.png" alt="Android Studio Template" width="650" height="475" />
 
 4. In the **Configure Your Project** window, complete the following:
     - Enter **AgeCalculator** in the **Name** field.
@@ -76,7 +84,7 @@ To create a new Android project, follow these steps:
     - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
     - If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
     
-<img src="./resources/readme/android-studio-project.png" alt="Android Studio Project" width="650" height="475" />
+<img src="../tex/img/02-android-overview/readme/android-studio-project.png" alt="Android Studio Project" width="650" height="475" />
 
 5. Click **Finish**.
 
@@ -114,7 +122,7 @@ Every application must have an `AndroidManifest.xml` file in the root of the `ap
 
 **app > java > op.mobile.app.dev.age.calculator > MainActivity**
 
-<img src="./resources/readme/android-studio-main-activity.png" alt="Android Studio Main Activity" width="750" height="500" />
+<img src="../tex/img/02-android-overview/readme/android-studio-main-activity.png" alt="Android Studio Main Activity" width="750" height="500" />
 
 An activity is a single, focused thing that the user can do. Almost all activities interact with the user. The `Activity` class takes care of creating a window for you in which you can place your UI with `setContentView(View)`. There are two methods almost all subclasses of `Activity` will implement:
 - `onCreate(Bundle)` is where you initialise your activity. In this method, you usually call `setContentView(View)` with a layout resource defining your UI, & using `findViewById(int)` to retrieve the `Views` in that UI that you need to interact with programmatically.
@@ -129,7 +137,7 @@ An activity is a single, focused thing that the user can do. Almost all activiti
 
 A layout resource defines the architecture for the UI in an `Activity` class or a **component** of a UI.
 
-<img src="./resources/readme/android-studio-activity-main-xml.png" alt="Android Studio Activity Main XML" width="750" height="500" />
+<img src="../tex/img/02-android-overview/readme/android-studio-activity-main-xml.png" alt="Android Studio Activity Main XML" width="750" height="500" />
 
 Currently we are in **Design** view. Click **Code**. You should see the following **XML** code:
 
@@ -154,12 +162,16 @@ Currently we are in **Design** view. Click **Code**. You should see the followin
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-## Activity ✏️
+<hr />
+
+### Activity ✏️
 On the provided piece of A4 paper, research & answer the following:
 - Explain what a `ViewGroup` is & provide three examples of a `ViewGroup` object.
 - Explain what a `View` is & provide three examples of a `View` object.
 
 **Resource:** https://developer.android.com/guide/topics/resources/layout-resource
+
+<hr />
 
 ### ViewGroup & View Attributes
 - `android:id` - a unique resource name for the element which you can use to obtain a reference to the `ViewGroup`/`View` from your application.
@@ -201,7 +213,9 @@ The `build.grade (Module)` file allows you to configure build settings for the s
 
 **Resource:** https://developer.android.com/studio/build#module-level
 
-## Activity ✏️
+<hr />
+
+### Activity ✏️
 Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add the following `Views`:
 
 | TextView Attribute        | Value           |
@@ -234,10 +248,12 @@ Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add
 
 The UI should look like the following:
 
-<img src="./resources/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
+<img src="../tex/img/02-android-overview/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
 
 - Why is the `text` attribute in both `Views` highlighted orange?
 - How do we fix this?
+
+<hr />
 
 ## Build & Run Your Application
 With a few clicks, you can deploy your application to the **Android Emulator** or a **connected device**.
@@ -250,7 +266,7 @@ To start the **Android Emulator** & run an application in your project:
 3. In the **System Image** window, select a system image & click **Next**. **Note:** the system image must be ≥ the **Minimum SDK** selected when you configured your project.
 4. In the **Android Virtual Device (AVD)** window, leave the default configuration as is & click **Finish**.
 5. In the toolbar, select the **AVD** that you want to run your application on from the device drop-down menu.
-6. Click **Run** <img src="./resources/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="13" height="13" />
+6. Click **Run** <img src="../tex/img/02-android-overview/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="13" height="13" />
 
 **Resource:** https://developer.android.com/studio/run/emulator
 
@@ -261,12 +277,16 @@ Before you can run an application, there are a couple things you must do:
 1. On the device, open the **Settings** application, select **Developer** options & then enable **USB debugging**.
 2. Set up your system to detect your device. Refer to the resource below.
 
-Once you have set up & plugged in over USB, click **Run** <img src="./resources/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="13" height="13" />
+Once you have set up & plugged in over USB, click **Run** <img src="../tex/img/02-android-overview/readme/android-studio-toolbar-run.png" alt="Android Studio Toolbar Run" width="13" height="13" />
 
 **Resource:**  https://developer.android.com/studio/run/device
 
-## Activity ✏️
+<hr />
+
+### Activity ✏️
 Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
+
+<hr />
 
 ## Practical
 The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/raw/master/02-android-overview/practical-02-android-overview.pdf).
