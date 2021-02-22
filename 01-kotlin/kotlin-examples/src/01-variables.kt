@@ -10,6 +10,6 @@ fun main() { // or
     val c = 3 // Ommitting the type
     println(c)
 
-    var d: Int 
-    println(d) // What happens when you execute this code? 
+    var d: Int
+    println(d) // What happens when you execute this code?
 }
