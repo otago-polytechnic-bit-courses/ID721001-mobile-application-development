@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Age Calculator</string>
+    <string name="calculate_your_age">Calculate Your Age</string>
+    <string name="select_date">Select Date</string>
+    <string name="selected_date">Selected date: %1$s</string>
+    <string name="minutes_difference">You are %1$s minutes old</string>
+</resources>
