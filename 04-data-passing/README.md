@@ -168,6 +168,3 @@ PUT SOME IMAGE IN HERE
 
 <hr />
 
-## Practical
-The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/blob/master/04-data-passing/practical-04-data-passing.pdf).
-

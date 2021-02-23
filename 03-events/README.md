@@ -66,6 +66,3 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 In the `03-events` directory, open `age-calculator` in **Android Studio**. Take a moment to understand what the code is doing. In the `Button` on-click listener, call the `onDatePicker()` method. Run the project's application on both the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
 
 <hr />
-
-## Practical
-The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/blob/master/03-events/practical-03-events.pdf).

@@ -287,6 +287,3 @@ Once you have set up & plugged in over USB, click **Run** <img src="../tex/img/0
 Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
 
 <hr />
-
-## Practical
-The practical for this topic is available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/raw/master/02-android-overview/practical-02-android-overview.pdf).
