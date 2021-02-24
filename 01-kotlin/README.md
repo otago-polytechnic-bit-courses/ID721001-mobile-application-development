@@ -2,7 +2,7 @@
 
 The following code snippets are available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/tree/master/01-kotlin/kotlin-samples).
 
-### What is **Kotlin**?
+## Overview
 **Kotlin** is a statically typed programming language designed & developed by **JetBrains**. **Kotlin** targets the **JVM (Java Virtual Machine)**, but can also compile to **JavaScript** & native code via the **LLVM (Low-Level Virtual Machine)**. **Kotlin** is designed to be concise, safe, pragmatic & interoperable. **Kotlin** can be used almost everywhere **Java** is used, i.e., server-side development, **Android** mobile development, etc. **Kotlin** works seamlessly with all existing **Java** libraries/frameworks & performs at the same level as **Java**.
 
 ### What is static type checking?

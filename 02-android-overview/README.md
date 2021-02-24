@@ -1,6 +1,6 @@
 # **Android Overview**
 
-## Android Operating System
+## Overview
 **Android** is a mobile os based on a modified version of the **Linux kernel** & primarily designed for touchscreen devices such as phones, tablets & watches. **Android** is developed by a group of developers known as the **Open Handset Alliance (OHA)** & commercially sponsored by **Google**. **Android** is free & open-source, & its source code is known as **Android Open Source Project (AOSP)**, which is licensed under the **Apache License**. However, most **Android** devices are shipped with pre-installed proprietary software such as **Google Mobile Services (GMS)**.
 
 ### Brief History
@@ -43,10 +43,10 @@ On the provided piece of A4 paper, research & answer the following:
 <hr />
 
 ### Native C/C++ Libraries
-Many core **Android** system components & services are built from native code & require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework APIs which exposes the functionality of these native libraries to applications.
+Many core **Android** system components & services are built from native code & require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework **APIs** which exposes the functionality of these native libraries to applications.
 
 ### Java API Framework
-The feature-set of the **Android** os is available through APIs written in **Java**. These APIs form the building blocks you need to create Android applications by simplifying the reuse of core, modular system components & services.
+The feature-set of the **Android** os is available through **APIs** written in **Java**. These **APIs** form the building blocks you need to create Android applications by simplifying the reuse of core, modular system components & services.
 
 ### System Apps
 **Android** comes with a set of core applications such as email, messaging, calendars, internet browsing, etc. Applications included with the platform have no special status among the applications the user chooses to install. This means that a third-party application can become the user's default messenger, web browser, etc.
