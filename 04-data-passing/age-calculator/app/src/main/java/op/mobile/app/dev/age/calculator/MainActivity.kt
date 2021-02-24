@@ -1,26 +1,23 @@
 package op.mobile.app.dev.age.calculator
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import java.text.SimpleDateFormat
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var tVSelectedDate: TextView
-    private lateinit var tVMinutesDifference: TextView
+const val EXTRA_SELECTED_DATE = "op.mobile.app.dev.age.calculator.SELECTED_DATE"
+const val EXTRA_MINUTES_DIFFERENCE = "op.mobile.app.dev.age.calculator.MINUTES_DIFFERENCE"
 
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val btnSelectDate: Button = findViewById(R.id.btn_select_date)
         btnSelectDate.setOnClickListener {}
-
-        tVSelectedDate = findViewById(R.id.tv_selected_date)
-        tVMinutesDifference = findViewById(R.id.tv_minutes_difference)
     }
 
     private fun onDatePicker() {
@@ -29,7 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         val datePickerDialogListener = DatePickerDialog.OnDateSetListener { _, year, month, day ->
             val selectedDate = "$day/${month + 1}/$year"
-            tVSelectedDate.text = getString(R.string.selected_date, selectedDate)
 
             val simpleDateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
 
@@ -41,8 +37,15 @@ class MainActivity : AppCompatActivity() {
             val currentDateToMinutes = currentDate!!.time / 60000
 
             val differenceInMinutes = currentDateToMinutes - selectedDateToMinutes
-            tVMinutesDifference.text =
-                getString(R.string.minutes_difference, differenceInMinutes.toString())
+
+            val intent = Intent(this, SecondActivity::class.java).apply {
+                putExtra(EXTRA_SELECTED_DATE, getString(R.string.selected_date, selectedDate))
+                putExtra(
+                    EXTRA_MINUTES_DIFFERENCE,
+                    getString(R.string.minutes_difference, differenceInMinutes.toString())
+                )
+            }
+            startActivity(intent)
         }
 
         val datePickerDialog = DatePickerDialog(
