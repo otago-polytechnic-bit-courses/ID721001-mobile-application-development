@@ -79,7 +79,7 @@ To create a new Android project, follow these steps:
 4. In the **Configure Your Project** window, complete the following:
     - Enter **AgeCalculator** in the **Name** field.
     - Enter `op.mobile.app.dev.age.calculator` in the **Package** name field.
-    - Save the project in `/<PATH TO GITHUB REPOSITORY>/02-age-calculator`
+    - Save the project in `/path to GitHub repository/02-age-calculator`
     - Select **Kotlin** from the **Language** drop-down menu.
     - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
     - If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
