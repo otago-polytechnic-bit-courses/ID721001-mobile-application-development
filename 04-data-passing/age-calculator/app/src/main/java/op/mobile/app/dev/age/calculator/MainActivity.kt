@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnSelectDate: Button = findViewById(R.id.btn_select_date)
-        btnSelectDate.setOnClickListener {}
+        btnSelectDate.setOnClickListener {
+            onDatePicker()
+        }
     }
 
     private fun onDatePicker() {
