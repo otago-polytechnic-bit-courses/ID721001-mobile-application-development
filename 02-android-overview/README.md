@@ -220,7 +220,7 @@ Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add
 
 | TextView Attribute        | Value           |
 | ------------- |:-------------:|
-| android:id      | "tv_header" |
+| android:id      | "@+id/tv_header" |
 | android:layout_width     | "0dp" |
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
@@ -235,7 +235,7 @@ Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add
 
 | Button Attribute        | Value           |
 | ------------- |:-------------:|
-| android:id      | "btn_select_date" |
+| android:id      | "@+id/btn_select_date" |
 | android:layout_width     | "0dp" |
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
