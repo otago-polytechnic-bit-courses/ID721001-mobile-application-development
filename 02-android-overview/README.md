@@ -244,7 +244,7 @@ Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add
 | android:text     | "Select Date" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
-|  app:layout_constraintTop_toBottomOf     | "tv_header" |
+|  app:layout_constraintTop_toBottomOf     | "@+id/tv_header" |
 
 The UI should look like the following:
 
