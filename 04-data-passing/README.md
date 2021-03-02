@@ -168,7 +168,7 @@ To add an up arrow button, go to `AndroidManifest.xml`, find the `<activity>` el
 
 Again, run the project's application on either the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
 
-PUT SOME IMAGE IN HERE
+<img src="../tex/img/04-data-passing/readme/login-back-button.png" alt="Login Back Button" width="250" height="450" />
 
 <hr />
 
