@@ -22,7 +22,7 @@ In `activity_main.xml`, add the following `Views`:
 
 | EditText Attribute        | Value           |
 | ------------- |:-------------:|
-| android:id      | "et_email_address" |
+| android:id      | "@+id/et_email_address" |
 | android:layout_width     | "0dp" |
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
@@ -37,7 +37,7 @@ In `activity_main.xml`, add the following `Views`:
 
 | EditText Attribute        | Value           |
 | ------------- |:-------------:|
-| android:id      | "et_password" |
+| android:id      | "@+id/et_password" |
 | android:layout_width     | "0dp" |
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
@@ -48,11 +48,11 @@ In `activity_main.xml`, add the following `Views`:
 | android:inputType     | "textPassword" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
-| app:layout_constraintTop_toBottomOf     | "et_text_email_address" |
+| app:layout_constraintTop_toBottomOf     | "@+id/et_text_email_address" |
 
 | Button Attribute        | Value           |
 | ------------- |:-------------:|
-| android:id      | "btn_login" |
+| android:id      | "@+id/btn_login" |
 | android:layout_width     | "0dp" |- 
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
