@@ -61,7 +61,7 @@ In `activity_main.xml`, add the following `Views`:
 | android:text     | "Login" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
-|  app:layout_constraintTop_toBottomOf     | "et_text_password" |
+|  app:layout_constraintTop_toBottomOf     | "@+id/et_text_password" |
 
 The UI should look like the following:
 
