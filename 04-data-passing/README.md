@@ -139,7 +139,7 @@ class SecondActivity : AppCompatActivity() {
 
 Run the project's application on either the **Android Emulator** & a **connected device**. Enter a value in the email address & password `EditText`, then click the **Login** `Button`.
 
-PUT SOME IMAGE IN HERE
+<img src="../tex/img/04-data-passing/readme/login-form.png" alt="Login Form" width="250" height="450" /><img src="../tex/img/04-data-passing/readme/login-output.png" alt="Login Output" width="250" height="450" />
 
 What happens if you click the **Login** `Button` without entering a value in the email address &/or password `EditText`?
 
