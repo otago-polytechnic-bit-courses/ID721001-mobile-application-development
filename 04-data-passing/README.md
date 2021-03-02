@@ -170,5 +170,7 @@ Again, run the project's application on either the **Android Emulator** & a **co
 
 <img src="../tex/img/04-data-passing/readme/login-back-button.png" alt="Login Back Button" width="250" height="450" />
 
+You should see a back arrow button in the **action bar**.
+
 <hr />
 
