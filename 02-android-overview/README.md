@@ -185,7 +185,9 @@ On the provided piece of A4 paper, research & answer the following:
 ### ConstraintLayout
 A `ConstraintLayout` is a `ViewGroup` which allows you to position & size `Views` in a flexible way. 
 
-**Resource:** https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout
+**Resources:** 
+- https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout
+- https://developer.android.com/training/constraint-layout
 
 **app > res > values**
 
