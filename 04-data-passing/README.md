@@ -14,7 +14,7 @@ Create a new **Android** project with the following configurations:
 - Template: **Empty Activity**
 - Name: **Login**
 - Package name: `op.mobile.app.dev.login`
-- Save location: `/path to GitHub repository/04-login`
+- Save location: `/path to GitHub repository/login`
 - Language: **Kotlin**
 - Minimum SDK: **API 28: Android 9.0 (Pie)**
 
