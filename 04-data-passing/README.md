@@ -112,6 +112,9 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
+
+**Note:** please avoid copy & paste. However, if you choose to do so, you will need add some import statements in order to make code work. 
+
 - What is happening?
   - An `Intent` takes two parameters, a `Context` & a `Class`.
   - The `Context` parameter is used first because the `Activity` class is a subclass of `Context`. For example, `MainActivity` is the `Context`.
@@ -173,4 +176,3 @@ Again, run the project's application on either the **Android Emulator** & a **co
 You should see a back arrow button in the **action bar**.
 
 <hr />
-
