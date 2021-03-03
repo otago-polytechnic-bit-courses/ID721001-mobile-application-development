@@ -136,7 +136,7 @@ class SecondActivity : AppCompatActivity() {
     }
 }
 ```
-**Note:** please avoid copy & paste. However, if you choose to do so, you will need add some import statements in order to make code work. 
+**Note:** please avoid copy & paste. However, if you choose to do so, you will need add some import statements in order to make the code work. 
 
 Run the project's application on either the **Android Emulator** & a **connected device**. Enter a value in the email address & password `EditText`, then click the **Login** `Button`.
 
