@@ -21,6 +21,10 @@ To create an Espresso test:
 3. If necessary, repeat step 1 & 2 to simulate a flow across multiple activities in the target application. 
 4. Use a `ViewAssertions` method to check your UI is behaving as expected after a user interactions has been performed.
 
+<hr />
+
+### Activity ✏️
+
 ```kotlin
 @RunWith(AndroidJUnit4::class)
 @LargeTest
@@ -50,3 +54,5 @@ class LoginBehaviourTest {
     }
 }
 ```
+
+<hr />
