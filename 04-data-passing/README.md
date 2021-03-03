@@ -142,7 +142,7 @@ Run the project's application on either the **Android Emulator** & a **connected
 
 <img src="../tex/img/04-data-passing/readme/login-form.png" alt="Login Form" width="250" height="450" />
 
-You should see the email address `EditText` value in the `TextView`.
+You should see the email address `EditText` value set to the `TextView`.
 
 <img src="../tex/img/04-data-passing/readme/login-output.png" alt="Login Output" width="250" height="450" />
 
