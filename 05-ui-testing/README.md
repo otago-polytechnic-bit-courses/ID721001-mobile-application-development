@@ -21,4 +21,32 @@ To create an Espresso test:
 3. If necessary, repeat step 1 & 2 to simulate a flow across multiple activities in the target application. 
 4. Use a `ViewAssertions` method to check your UI is behaving as expected after a user interactions has been performed.
 
-https://developer.android.com/training/testing/ui-testing/espresso-testing#accessing-ui-components
+```kotlin
+@RunWith(AndroidJUnit4::class)
+@LargeTest
+class LoginBehaviourTest {
+    private lateinit var emailAddressInput: String
+    private lateinit var passwordAddressInput: String
+
+    @get:Rule
+    var activityRule: ActivityScenarioRule<MainActivity>
+            = ActivityScenarioRule(MainActivity::class.java)
+
+    @Before
+    fun initValidString() {
+        emailAddressInput = "john.doe@gmail.com"
+        passwordAddressInput = "Passw0rd123"
+    }
+
+    @Test
+    fun check_login_output() {
+        onView(withId(R.id.et_email_address))
+            .perform(typeText(emailAddressInput), closeSoftKeyboard())
+        onView(withId(R.id.et_password))
+            .perform(typeText(passwordAddressInput), closeSoftKeyboard())
+        onView(withId(R.id.btn_login)).perform(click())
+        onView(withId(R.id.tv_output))
+            .check(matches(withText(emailAddressInput)))
+    }
+}
+```
