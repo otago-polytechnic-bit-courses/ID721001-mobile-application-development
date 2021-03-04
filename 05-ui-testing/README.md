@@ -5,13 +5,13 @@
 
 One approach to **UI testing** is to have a person perform a set of tasks on your application & verify that it is behaving correctly. However, **what is the problem with this approach?** This is a manual approach that can be time consuming, tedious & error-prone. So, **what is a more efficient approach?** Write your **UI tests** so that user actions are performed in an automated way. This approach allow you to run your tests quickly, reliably & repetitively. **Android Studio** provides the necessary setup for writing & running your **UI tests**.
 
-To automate **UI tests**, you write your test code in **app > java > package name (androidTest)**. The [Android Gradle plugin](https://developer.android.com/studio/releases/gradle-plugin) builds a test application based on your test code & loads the test application on the same device as the target application. In your test code, you can use UI testing frameworks such as **Espresso** to simulate user interactions on the target application.
+To automate **UI tests**, you write your test code in **app > java > package name (androidTest)**. The [Android Gradle plugin](https://developer.android.com/studio/releases/gradle-plugin) builds a test application based on your test code & loads the test application on the same device (**Emulator** or **connect device**) as the target application. In your test code, you can use UI testing frameworks such as **Espresso** to simulate user interactions on the target application.
 
 ## Set up Espresso
 Go to **build.gradle (Module)** & make sure you have the **Espresso** dependency:
 
 ```
-androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0
+androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 ```
 
 ## Create an Espresso Test Class
