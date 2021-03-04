@@ -73,11 +73,11 @@ To create a new Android project, follow these steps:
 1. Open **Android Studio**.
 2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
 
-<img src="../tex/img/02-android-overview/readme/android-studio-home.png" alt="Android Studio Home" width="625" height="400" />
+<img src="../tex/img/02-android-overview/readme/android-studio-home.JPG" alt="Android Studio Home" width="625" height="400" />
 
 3. In the **Select a Project Template** window, select **Empty Activity** and click **Next**.
 
-<img src="../tex/img/02-android-overview/readme/android-studio-template.png" alt="Android Studio Template" width="650" height="475" />
+<img src="../tex/img/02-android-overview/readme/android-studio-template.JPG" alt="Android Studio Template" width="650" height="475" />
 
 4. In the **Configure Your Project** window, complete the following:
     - Enter **Login** in the **Name** field.
@@ -88,7 +88,7 @@ To create a new Android project, follow these steps:
     - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
     - If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
     
-<img src="../tex/img/02-android-overview/readme/android-studio-project.png" alt="Android Studio Project" width="650" height="475" />
+<img src="../tex/img/02-android-overview/readme/android-studio-project.JPG" alt="Android Studio Project" width="650" height="475" />
 
 5. Click **Finish**.
 
@@ -126,7 +126,7 @@ Every application must have an `AndroidManifest.xml` file in the root of the `ap
 
 **app > java > op.mobile.app.dev.age.calculator > MainActivity**
 
-<img src="../tex/img/02-android-overview/readme/android-studio-main-activity.png" alt="Android Studio Main Activity" width="750" height="500" />
+<img src="../tex/img/02-android-overview/readme/android-studio-main-activity.JPG" alt="Android Studio Main Activity" width="750" height="500" />
 
 An activity is a single, focused thing that the user can do. Almost all activities interact with the user. The `Activity` class takes care of creating a window for you in which you can place your UI with `setContentView(View)`. There are two methods almost all subclasses of `Activity` will implement:
 - `onCreate(Bundle)` is where you initialise your activity. In this method, you usually call `setContentView(View)` with a layout resource defining your UI, & using `findViewById(int)` to retrieve the `Views` in that UI that you need to interact with programmatically.
@@ -141,7 +141,7 @@ An activity is a single, focused thing that the user can do. Almost all activiti
 
 A layout resource defines the architecture for the UI in an `Activity` class or a **component** of a UI.
 
-<img src="../tex/img/02-android-overview/readme/android-studio-activity-main-xml.png" alt="Android Studio Activity Main XML" width="750" height="500" />
+<img src="../tex/img/02-android-overview/readme/android-studio-activity-main-xml.JPG" alt="Android Studio Activity Main XML" width="750" height="500" />
 
 Currently we are in **Design** view. Click **Code**. You should see the following **XML** code:
 
@@ -284,7 +284,7 @@ Use the **Login** project for this activity. In `activity_main.xml`, add the fol
 
 The UI should look like the following:
 
-<img src="../tex/img/02-android-overview/readme/android-studio-activity-ui.png" alt="Android Studio Activity UI" width="275" height="400" />
+<img src="../tex/img/02-android-overview/readme/android-studio-activity-ui.JPG" alt="Android Studio Activity UI" width="275" height="400" />
 
 - Why is the `text` attribute in both `Views` highlighted orange?
 - How do we fix this?
