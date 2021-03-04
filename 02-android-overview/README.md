@@ -124,7 +124,7 @@ Every application must have an `AndroidManifest.xml` file in the root of the `ap
 
 **Resource:** https://developer.android.com/guide/topics/manifest/manifest-intro
 
-**app > java > op.mobile.app.dev.age.calculator > MainActivity**
+**app > java > op.mobile.app.dev.login > MainActivity**
 
 <img src="../tex/img/02-android-overview/readme/android-studio-main-activity.JPG" alt="Android Studio Main Activity" width="750" height="500" />
 
@@ -207,13 +207,13 @@ A `ConstraintLayout` is a `ViewGroup` which allows you to position & size `Views
 - https://developer.android.com/guide/topics/resources/string-resource
 - https://developer.android.com/guide/topics/ui/look-and-feel/themes
 
-**Gradle Scripts > build.grade (Project: AgeCalculator)**
+**Gradle Scripts > build.grade (Project: Login)**
 
 The `build.grade (Project)` file defines build configurations that apply to all modules in your project.
 
 **Resource:** https://developer.android.com/studio/build#top-level
 
-**Gradle Scripts > build.grade (Module: AgeCalculator.app)**
+**Gradle Scripts > build.grade (Module: Login.app)**
 
 The `build.grade (Module)` file allows you to configure build settings for the specific module it is located in.
 
