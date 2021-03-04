@@ -29,7 +29,7 @@ To create an **Espresso** test:
 
 ### Activity ✏️
 
-In this directory, open `login` in **Android Studio**. Go to **app > java > package name (androidTest)** & create a new file called `LoginTest.kt`. In `LoginTest.kt` add the following code:
+In this directory, open the `login` directory provided to you in **Android Studio**. Go to **app > java > package name (androidTest)** & create a new file called `LoginBehaviourTest.kt`. In this file, add the following code:
 
 ```kotlin
 @RunWith(AndroidJUnit4::class)
@@ -61,8 +61,8 @@ class LoginBehaviourTest {
 }
 ```
 
-**Note:** please avoid copy & paste. However, if you choose to do so, you will need add some import statements in order to make the code work.
+**Note:** please avoid copying & pasting. However, if you choose to do so, you will need add the appropriate import statements in order to make the code work. 
 
-To run the test class, 
+To run the `LoginBehaviourTest` class, right-click **LoginBehaviourTest > Run 'LoginBehaviourTest'**.
 
 <hr />

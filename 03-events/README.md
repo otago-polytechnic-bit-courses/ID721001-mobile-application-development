@@ -24,9 +24,9 @@ On the provided piece of A4 paper, research & explain when the following callbac
 
 <hr />
 
-To define one of these methods & handle your events, implement the nested interface in your `Activity` or define it as an anonymous class. Then, pass an instance of your implementation to the method.
+To define one of these methods & handle your events, implement the nested interface in your `Activity`. Then, pass an instance of your implementation to the method.
 
-The code snippet below shows how to register an on-click listener for a `Button`.
+The code snippet below shows how to register a `Button` on-click listener.
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -63,8 +63,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 <hr />
 
 ### Activity ✏️
-In this directory, open `age-calculator` in **Android Studio**. Take a moment to understand what the code is doing. In the `Button` on-click listener, call the `onDatePicker()` method. 
+In this directory, open the `age-calculator` directory provided to you in **Android Studio**. Take a moment to understand what the code is doing. In the `Button` on-click listener, call the `onDatePicker()` method. 
 
-Run the project's application on both the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
+Run the project's application on both the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-03-events**.
 
 <hr />

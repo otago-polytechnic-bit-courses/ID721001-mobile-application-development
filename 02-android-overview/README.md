@@ -24,7 +24,7 @@ The following image displays the major components of the **Android** platform.
 <img src="../tex/img/02-android-overview/readme/android-software-stack.png" alt="Android Software Stack" width="350" height="500" />
 
 ### Linux Kernel
-The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufacturers to develop drivers for a well-known kernel.
+The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufacturers to develop drivers.
 
 ### Hardware Abstraction Layer (HAL)
 The **HAL** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The **HAL** consists of multiple library modules which implement an interface for a specific type of hardware components, i.e., the audio, bluetooth, camera or sensor module. 
@@ -286,6 +286,6 @@ Once you have set up & plugged in over USB, click **Run** <img src="../tex/img/0
 <hr />
 
 ### Activity ✏️
-Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
+Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-02-android-overview**.
 
 <hr />
