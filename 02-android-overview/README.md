@@ -66,6 +66,9 @@ According to **StatCounter**, **Android** has been the most popular mobile os si
 **Android Studio** is a cross-platform integrated development environment or IDE for the **Android** os. **Android Studio** is built on **JetBrains' IntelliJ IDEA** & designed specifically for **Android** development.
 
 ### How To Create A New Android Project
+
+Before you start make sure you checkout to the `02-practical` branch in your GitHub repository.
+
 To create a new Android project, follow these steps:
 1. Open **Android Studio**.
 2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
@@ -77,9 +80,10 @@ To create a new Android project, follow these steps:
 <img src="../tex/img/02-android-overview/readme/android-studio-template.png" alt="Android Studio Template" width="650" height="475" />
 
 4. In the **Configure Your Project** window, complete the following:
-    - Enter **AgeCalculator** in the **Name** field.
-    - Enter `op.mobile.app.dev.age.calculator` in the **Package** name field.
-    - Save the project in `/path to GitHub repository/02-age-calculator`
+    - Enter **Login** in the **Name** field.
+    - Enter `op.mobile.app.dev.age.login` in the **Package** name field.
+    - Save the project in `/path to your GitHub repository/02-login`
+      - You will need to append `02-login` to the end of the path. This will automatically created a new directory. 
     - Select **Kotlin** from the **Language** drop-down menu.
     - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
     - If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
@@ -97,7 +101,7 @@ Every application must have an `AndroidManifest.xml` file in the root of the `ap
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="op.mobile.app.dev.age.calculator">
+    package="op.mobile.app.dev.login">
 
     <application
         android:allowBackup="true"
@@ -105,7 +109,7 @@ Every application must have an `AndroidManifest.xml` file in the root of the `ap
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AgeCalculator">
+        android:theme="@style/Theme.Login">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -218,7 +222,7 @@ The `build.grade (Module)` file allows you to configure build settings for the s
 <hr />
 
 ### Activity ✏️
-Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add the following `Views`:
+Use the **Login** project for this activity. In `activity_main.xml`, add the following `Views`:
 
 | TextView Attribute        | Value           |
 | ------------- |:-------------:|
@@ -229,24 +233,54 @@ Use the **AgeCalculator** project for this activity. In `activity_main.xml`, add
 | android:layout_marginTop     | "16dp" |
 | android:layout_marginEnd     | "32dp" |
 | android:gravity     | "center" |
-| android:text     | "Calculate Your Age" |
+| android:text     | "Login" |
 | android:textSize     | "24sp" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
 | app:layout_constraintTop_toTopOf     | "parent" |
 
-| Button Attribute        | Value           |
+| Email Address EditText Attribute        | Value           |
 | ------------- |:-------------:|
-| android:id      | "@+id/btn_select_date" |
+| android:id      | "@+id/et_email_address" |
 | android:layout_width     | "0dp" |
 | android:layout_height    | "wrap_content" |
 | android:layout_marginStart      | "32dp" |
 | android:layout_marginTop     | "16dp" |
 | android:layout_marginEnd     | "32dp" |
-| android:text     | "Select Date" |
+| android:ems     | "10" |
+| android:hint     | "Email Address" |
+| android:inputType     | "textPassword" |
 | app:layout_constraintEnd_toEndOf     | "parent" |
 | app:layout_constraintStart_toStartOf     | "parent" |
-|  app:layout_constraintTop_toBottomOf     | "@+id/tv_header" |
+| app:layout_constraintTop_toBottomOf     | "@+id/tv_header" |
+
+| Password EditText Attribute        | Value           |
+| ------------- |:-------------:|
+| android:id      | "@+id/et_password" |
+| android:layout_width     | "0dp" |
+| android:layout_height    | "wrap_content" |
+| android:layout_marginStart      | "32dp" |
+| android:layout_marginTop     | "16dp" |
+| android:layout_marginEnd     | "32dp" |
+| android:ems     | "10" |
+| android:hint     | "Password" |
+| android:inputType     | "textPassword" |
+| app:layout_constraintEnd_toEndOf     | "parent" |
+| app:layout_constraintStart_toStartOf     | "parent" |
+| app:layout_constraintTop_toBottomOf     | "@+id/et_email_address" |
+
+| Button Attribute        | Value           |
+| ------------- |:-------------:|
+| android:id      | "@+id/btn_login" |
+| android:layout_width     | "0dp" |
+| android:layout_height    | "wrap_content" |
+| android:layout_marginStart      | "32dp" |
+| android:layout_marginTop     | "16dp" |
+| android:layout_marginEnd     | "32dp" |
+| android:text     | "Login" |
+| app:layout_constraintEnd_toEndOf     | "parent" |
+| app:layout_constraintStart_toStartOf     | "parent" |
+|  app:layout_constraintTop_toBottomOf     | "@+id/et_password" |
 
 The UI should look like the following:
 
