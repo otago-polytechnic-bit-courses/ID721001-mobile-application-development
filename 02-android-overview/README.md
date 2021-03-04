@@ -320,6 +320,6 @@ Once you have set up & plugged in over USB, click **Run** <img src="../tex/img/0
 <hr />
 
 ### Activity ✏️
-Use the **AgeCalculator** project for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-02-android-overview**.
+Use the **Login** project for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-02-android-overview**.
 
 <hr />
