@@ -60,6 +60,16 @@ class LoginBehaviourTest {
     }
 }
 ```
+- What is happening?
+    - This is an example of how to create a new **Espresso** test in the **JUnit 4** style.
+    - `ActivityScenarioRule` is used to reduce the amount of boilerplate code.
+    - By using `ActivityScenarioRule`, the testing framework launches the activity, i.e., `MainActivity` under test before each method annotated with `@Before` & `@Test`.
+    - The activity is terminated after the test is completed & all methods annotated with `@After` are run.
+    - In the `check_login_output()` method:
+        - The `onView()` method is called & passed a view matcher, i.e., `withId(R.id)` which specifies the targeted `View`.
+        - A `ViewInteraction` object is returned which allows your test to interact with the targeted `View`. 
+        - The `perform()` method is called & passed a `ViewAction` method, i.e., `click()` which simulates a user interaction, i.e, clicking on the `View`.
+    
 
 **Note:** please avoid copying & pasting. However, if you choose to do so, you will need add the appropriate import statements in order to make the code work. 
 
