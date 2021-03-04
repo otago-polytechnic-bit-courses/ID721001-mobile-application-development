@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 <hr />
 
 ### Activity ✏️
-In this directory, open the `Login` project provided to you in **Android Studio**. In the `Button` on-click listener, display the email address & password `EditText` values in a `Toast`. 
+In this directory, open the `Login` project provided to you in **Android Studio**. In the `Button` on-click listener, display the email address & password `EditText` values in a `Toast`. You will need to use `findViewById(int)` to retrieve the `Views` from `activity_main.xml`.
 
 Run the project's application on both the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-03-events**.
 
