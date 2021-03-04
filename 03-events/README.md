@@ -24,7 +24,7 @@ On the provided piece of A4 paper, research & explain when the following callbac
 
 <hr />
 
-To define one of these methods & handle your events, implement the nested interface in your `Activity`. Then, pass an instance of your implementation to the method.
+To define one of these methods & handle your events, implement the nested interface in your activity. Then, pass an instance of your implementation to the method.
 
 The code snippet below shows how to register a `Button` on-click listener.
 
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-You may also find it more convenient to implement `OnClickListener` as a part of your `Activity`. For example:
+You may also find it more convenient to implement `OnClickListener` as a part of your activity. For example:
 
 ```kotlin
 class MainActivity : AppCompatActivity(), OnClickListener {
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 <hr />
 
 ### Activity ✏️
-In this directory, open the `age-calculator` directory provided to you in **Android Studio**. Take a moment to understand what the code is doing. In the `Button` on-click listener, call the `onDatePicker()` method. 
+In this directory, open the `Login` project provided to you in **Android Studio**. In the `Button` on-click listener, display the email address & password `EditText` values in a `Toast`. 
 
 Run the project's application on both the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-03-events**.
 
