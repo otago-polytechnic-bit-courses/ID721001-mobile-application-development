@@ -21,6 +21,7 @@ There are two types of intents:
 <hr />
 
 ### Activity ✏️
+- Open the `04-login` directory provided to you in **Android Studio**. 
 - Create a new `Activity` called `SecondActivity.kt`. To create a new `Activity`, right-click **package > New > Activity > New Activity**. When you create a new activity, **Android Studio** automatically does the following:
    - Creates the `SecondActivity.kt` file.
    - Creates the `activity_second.xml` layout file.
