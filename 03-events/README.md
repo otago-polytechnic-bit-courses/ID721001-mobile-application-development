@@ -67,4 +67,6 @@ Open the `03-login` directory provided to you in **Android Studio**. In the `But
 
 Run the project's application on both the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-03-events**.
 
+<img src="../tex/img/03-events/readme/login-toast.png" alt="Login Back Button" width="250" height="450" />
+
 <hr />
