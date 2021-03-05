@@ -110,6 +110,6 @@ Again, run the project's application on either the **Android Emulator** & a **co
 
 <img src="../tex/img/04-data-passing/readme/login-back-button.png" width="250" height="450" />
 
-You should see a back arrow button in the **action bar**.
+You should see a back arrow button in the **action bar**. Click on the back arrow button. It will navigate you back to the parent activity, i.e., `MainActivity`.
 
 <hr />
