@@ -5,7 +5,7 @@ An `Intent` is a messaging object you can use to request an action from another 
 - Starting a service - a `Service` performs operations in the background without a UI. With **API 21: Android 5.0 (Lollipop)** & later, you can start a service with `JobScheduler`.
 - Delivering a broadcast - a message that any application can receive. The system delivers various broadcasts for system events, i.e., when the system boots up or the device starts charging. You can deliver a broadcast to other applications by passing an `Intent` to `sendBroadcast()` or `sendOrderedBroadcast()`.
 
-<img src="../tex/img/04-data-passing/readme/android-intents.png" alt="Android Intents" width="500" height="200" />
+<img src="../tex/img/04-data-passing/readme/android-intents.png" width="500" height="200" />
 
 ## Intent Types
 There are two types of intents:
@@ -79,11 +79,11 @@ class SecondActivity : AppCompatActivity() {
 
 Run the project's application on either the **Android Emulator** & a **connected device**. Enter a value in the email address & password `EditText`, then click the **Login** `Button`.
 
-<img src="../tex/img/04-data-passing/readme/login-form.png" alt="Login Form" width="250" height="450" />
+<img src="../tex/img/04-data-passing/readme/login-form.png" width="250" height="450" />
 
 You should see the email address `EditText` value set to the `TextView`.
 
-<img src="../tex/img/04-data-passing/readme/login-output.png" alt="Login Output" width="250" height="450" />
+<img src="../tex/img/04-data-passing/readme/login-output.png" width="250" height="450" />
 
 What happens if you click the **Login** `Button` without entering a value in the email address &/or password `EditText`?
 
@@ -108,7 +108,7 @@ To add an up arrow button, go to `AndroidManifest.xml`, find the `<activity>` el
 
 Again, run the project's application on either the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
 
-<img src="../tex/img/04-data-passing/readme/login-back-button.png" alt="Login Back Button" width="250" height="450" />
+<img src="../tex/img/04-data-passing/readme/login-back-button.png" width="250" height="450" />
 
 You should see a back arrow button in the **action bar**.
 
