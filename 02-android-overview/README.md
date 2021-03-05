@@ -286,7 +286,7 @@ The UI should look like the following:
 
 <img src="../tex/img/02-android-overview/readme/android-studio-activity-ui.JPG" width="275" height="400" />
 
-- Why is the `text` attribute in both `Views` highlighted orange?
+- Why are the `View` attributes highlighted orange?
 - How do we fix this?
 
 <hr />
