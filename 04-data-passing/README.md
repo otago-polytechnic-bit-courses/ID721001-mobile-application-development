@@ -81,7 +81,7 @@ Run the project's application on either the **Android Emulator** & a **connected
 
 <img src="../tex/img/04-data-passing/readme/login-form.png" width="250" height="450" />
 
-You should see the email address `EditText` value set to the `TextView`.
+The `TextView` value is set to the `EXTRA_EMAIL_ADDRESS` value from the `Intent`.
 
 <img src="../tex/img/04-data-passing/readme/login-output.png" width="250" height="450" />
 
