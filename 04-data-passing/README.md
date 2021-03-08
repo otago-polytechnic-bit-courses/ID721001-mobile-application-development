@@ -106,7 +106,7 @@ To add an up arrow button, go to `AndroidManifest.xml`, find the `<activity>` el
 </activity>
 ```
 
-Again, run the project's application on either the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start the practical.
+Again, run the project's application on either the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you continue working on **practical-03-events**.
 
 <img src="../tex/img/04-data-passing/readme/login-back-button.png" width="250" height="450" />
 
