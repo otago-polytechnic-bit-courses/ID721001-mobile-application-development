@@ -9,7 +9,7 @@ An `Intent` is a messaging object you can use to request an action from another 
 
 ## Intent Types
 There are two types of intents:
-- Explicit - specifies which application will satisfy the intent by either supplying application's package name or a component class name. You will use an explicit intent to start a component in your own application because you know the activity's name or service you want to start.
+- Explicit - specifies which application will satisfy the intent by either supplying an application's package name or a component class name. You will use an explicit intent to start a component in your own application because you know the activity's name or service you want to start.
 - Implicit - do not name a specific component. Instead, declares a general action to perform, which allows a component from another application to handle it.
 
 **Resources:**
