@@ -36,7 +36,7 @@
 \section*{Assessment Overview}
 In this assessment, you will develop \& publish a travelling application using \textbf{Kotlin} in \textbf{Android Studio} \& \textbf{Google Play Store}. \textbf{Android} topics such as \textbf{ViewModel}, \textbf{LiveData}, \textbf{Room Database} \& \textbf{Google Map} were formally covered in the teaching sessions. The main purpose of this assessment is not just to build a mobile application, rather to demonstrate your ability to effectively learn intermediate/advanced \textbf{Android} features \& other application development topics independently. In addition, marks will be allocated for code elegance, documentation \& \textbf{Git/GitHub} usage. \\
 
-The travelling application will help you sound like a local \& adapt to a new culture. You will begin by selecting a country you wish to travel to. For example, if you wish to travel to Italy, you would be provided the necessary tools such as text translation \& text to speech support, selection of well-known phrases, an interactive quiz to test your knowledge \& a map containing location of top-rated tourist attractions. A user of your travelling application must be able to select from at least two country per \href{https://www.worldometers.info/geography/7-continents/}{continent} \textbf{excluding} Antarctica. 
+The travelling application will help you sound like a local \& adapt to a new culture. You will begin by selecting a country you wish to travel to. For example, if you wish to travel to Italy, you would be provided with all the necessary tools such as text translation \& text to speech support, a selection of well-known Italian phrases, an interactive quiz to test your knowledge of Italian culture \& a map containing locations of Italy's top-rated tourist attractions. A user of your travelling application must be able to select from at least two country per \href{https://www.worldometers.info/geography/7-continents/}{continent} \textbf{excluding} Antarctica. 
 
 \section*{Learning Outcomes}
 At the successful completion of this course, learners will be able to:
@@ -71,7 +71,7 @@ All parts of your submitted assessment must be completely your work \& any refer
 The school's process concerning submissions, extensions, resubmissions \& resits complies with \textbf{Otago Polytechnic} policies. Learners can view policies on the \textbf{Otago Polytechnic} website located at \href{https://www.op.ac.nz/about-us/governance-and-management/policies}{https://www.op.ac.nz/about-us/governance-and-management/policies}.
 
 \section*{Submissions}
-You must submit all program files via \textbf{GitHub Classroom}. Here is the URL to the repository you will use for your submission – \href{https://classroom.github.com/a/FWk\_XkTA}{https://classroom.github.com/a/FWk\_XkTA}. The latest program files in the \textbf{main} branch will be used to run your application. Late submissions will incur a \textbf{10\% penalty per day}, rolling over at \textbf{5:00 PM}.
+You must submit all program files via \textbf{GitHub Classroom}. Here is the URL to the repository you will use for your submission – \href{https://classroom.github.com/a/2KFNPhsK}{https://classroom.github.com/a/2KFNPhsK}. The latest program files in the \textbf{main} branch will be used to run your application. Late submissions will incur a \textbf{10\% penalty per day}, rolling over at \textbf{5:00 PM}.
 
 \section*{Extensions}
 Familiarise yourself with the assessment due date. If you need an extension, contact the course lecturer before the due date. If you require more than a week's extension, a medical certificate or support letter from your manager may be needed.
@@ -97,9 +97,9 @@ You will need to submit an application \& documentation that meet the following 
 		      \item Pixel 3a XL - 6.0"
 	      \end{itemize}
 	\item Application must run on \textbf{API 28: Android 9.0 (Pie)}.
-	\item Text translation support. If a country is multilingual (use of more than one language), choose only one language. For example, Canada's main languages are English \& French.
+	\item Text translation support. If a country is multilingual (use of more than one language), choose one language. For example, Canada's main languages are English \& French. You would choose either English or French.
 	      \begin{itemize}
-		      \item Use \textbf{Retrofit} \& the \textbf{Yandex Translate API} to translate text from one language to another. To use the \textbf{Yandex Translate API}, you will need an \textbf{API key}. A key is available in the \textbf{Microsoft Teams} course channel, under the \textbf{Files} tab. Ensure that the \textbf{API key} is not publicly exposed.
+		      \item Use \textbf{Retrofit} \& the \textbf{Yandex Translate API} to translate text from one language to another. To use the \textbf{Yandex Translate API}, you will need an \textbf{API key}. A key is available in the \textbf{Microsoft Teams} course channel, under the \textbf{Files} tab. Ensure that the \textbf{API key} is not publicly exposed in your program files.
 		      \item Display a custom \textbf{ProgressDialog} while the text is being translated.
 		      \item Handle incorrectly formatted input fields. For example, an \textbf{EditText} is blank or empty.
 		      \item \textbf{Resource:} \footnotesize\href{https://tech.yandex.com/translate}{https://tech.yandex.com/translate}
@@ -109,7 +109,7 @@ You will need to submit an application \& documentation that meet the following 
 		      \item If a country is not supported, handle gracefully with a \textbf{Toast}.
 		      \item \textbf{Resource:} \footnotesize\href{https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech}{https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech}
 	      \end{itemize}
-	\item Selection of at least five key phrases. For example, "No worries, mate, she'll be right" is key phrase in Australia.
+	\item Selection of at least five well-known phrases. For example, "No worries, mate, she'll be right" is well-known phrase in Australia.
 	\item An interactive quiz for each country.
 	      \begin{itemize}
 		      \item Quiz data must be fetched from a \textbf{JSON} file in the \textbf{raw} resource directory.
@@ -181,7 +181,7 @@ You will need to submit an application \& documentation that meet the following 
 
 \subsection*{Code Elegance - Learning Outcomes 1, 3 (45\%)}
 \begin{itemize}
-	\item \textbf{Kotlin} \& \textbf{XML} files contain no magic numbers/strings. Store the values in the appropriate \textbf{XML} files. For example, numbers must be stored in an integer or dimension file \& strings must be stored in a string file.
+	\item \textbf{Kotlin} \& \textbf{XML} files contain no magic numbers/strings. Store the values in the appropriate \textbf{XML} files. For example, numbers must be stored in an \textbf{integer.xml} or \textbf{dimens.xml} file \& strings must be stored in a \textbf{strings.xml}.
 	\item Use of intermediate variables. No method calls as arguments.
 	\item Idiomatic use of control flow, data structures \& other in-built functions.
 	\item Code adheres to \textbf{DRY}, \textbf{KISS} \& \textbf{SOLID} design principles.
@@ -194,13 +194,14 @@ You will need to submit an application \& documentation that meet the following 
 	\end{itemize}
 	\item Efficient algorithmic approach.
 	\item \textbf{Kotlin} \& \textbf{XML} files are code formatted.
+	\item No dead or unused code.
 \end{itemize}
 
 \subsection*{Documentation \& Git/GitHub Usage - Learning Outcomes 2, 3 (15\%)}
 \begin{itemize}
 	\item Provide the following in your repository \textbf{README.md} file:
 	      \begin{itemize}
-		      \item URL to your application's privacy policy.
+		      \item URL to your application's privacy policy. You will create a webpage which serves your privacy policy.
 		      \begin{itemize}
 						\item \textbf{Resource:} \footnotesize\href{https://play.google.com/about/developer-content-policy}{https://play.google.com/about/developer-content-policy}
 					\end{itemize} 
