@@ -128,9 +128,9 @@ Every application must have an `AndroidManifest.xml` file in the root of the `ap
 
 <img src="../tex/img/02-android-overview/readme/android-studio-main-activity.JPG" width="750" height="500" />
 
-An activity is a single, focused thing that the user can do. Almost all activities interact with the user. The `Activity` class takes care of creating a window for you in which you can place your UI with `setContentView(View)`. There are two methods almost all subclasses of `Activity` will implement:
-- `onCreate(Bundle)` is where you initialise your activity. In this method, you usually call `setContentView(View)` with a layout resource defining your UI, & using `findViewById(int)` to retrieve the `Views` in that UI that you need to interact with programmatically.
-- `onPause()` is where you handle the user pausing active interaction with your activity. Any changes made by the user should at this point be committed. In this state the activity is still visible on screen.
+An `Activity` is a single, focused thing that the user can do. Almost all activities interact with the user. The `Activity` class takes care of creating a window for you in which you can place your UI with `setContentView(View)`. There are two methods almost all subclasses of `Activity` will implement:
+- `onCreate(Bundle)` is where you initialise your `Activity`. In this method, you usually call `setContentView(View)` with a layout resource defining your UI, & using `findViewById(int)` to retrieve the `Views` in that UI that you need to interact with programmatically.
+- `onPause()` is where you handle the user pausing active interaction with your `Activity`. Any changes made by the user should at this point be committed. In this state the `Activity` is still visible on screen.
 
 **Resources:** 
 - https://developer.android.com/guide/components/activities/intro-activities
@@ -200,7 +200,7 @@ A `ConstraintLayout` is a `ViewGroup` which allows you to position & size `Views
     - String - **XML** resource that provides a single string.
     - String Array - **XML** resource that provides an array of strings.
     - Quantity Strings (Plurals) - **XML** resource that holds different strings for pluralization. 
-- `themes.xml` - styles/themes allow you to separate the details of your application design from the UI structure & behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, activity or view hierarchy. When applied, every `View` in the application or activity applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar & window background.
+- `themes.xml` - styles/themes allow you to separate the details of your application design from the UI structure & behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, `Activity` or view hierarchy. When applied, every `View` in the application or `Activity` applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar & window background.
 
 **Resources:** 
 - https://developer.android.com/guide/topics/resources/more-resources#Color
@@ -222,7 +222,7 @@ The `build.grade (Module)` file allows you to configure build settings for the s
 <hr />
 
 ### Activity ✏️
-Use the **Login** project for this activity. In `activity_main.xml`, add the following `Views`:
+Use the **Login** project for this `Activity`. In `activity_main.xml`, add the following `Views`:
 
 | TextView Attribute        | Value           |
 | ------------- |:-------------:|
@@ -320,6 +320,6 @@ Once you have set up & plugged in over USB, click **Run** <img src="../tex/img/0
 <hr />
 
 ### Activity ✏️
-Use the **Login** project for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-02-android-overview**.
+Use the **Login** project for this `Activity`. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-02-android-overview**.
 
 <hr />
