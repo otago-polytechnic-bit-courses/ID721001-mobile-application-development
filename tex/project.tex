@@ -34,9 +34,9 @@
 \maketitle
 
 \section*{Assessment Overview}
-In this assessment, you will develop \& publish a travelling application using \textbf{Kotlin} in \textbf{Android Studio} \& \textbf{Google Play Store}. \textbf{Android} features such as \textbf{ViewModel}, \textbf{LiveData}, \textbf{Room Database} \& \textbf{Google Map} were formally covered in the teaching sessions. The main purpose of this assessment is not just to build a mobile application, rather to demonstrate your ability to effectively learn intermediate/advanced \textbf{Android} \& application development features independently. In addition, marks will be allocated for code elegance, documentation \& \textbf{Git/GitHub} usage. \\
+In this assessment, you will develop \& publish a travelling application using \textbf{Kotlin} in \textbf{Android Studio} \& \textbf{Google Play Store}. \textbf{Android} topics such as \textbf{ViewModel}, \textbf{LiveData}, \textbf{Room Database} \& \textbf{Google Map} were formally covered in the teaching sessions. The main purpose of this assessment is not just to build a mobile application, rather to demonstrate your ability to effectively learn intermediate/advanced \textbf{Android} features \& other application development topics independently. In addition, marks will be allocated for code elegance, documentation \& \textbf{Git/GitHub} usage. \\
 
-The travelling application will help you sound like a local abroad \& help you adapt to a new culture. You will begin by selecting a \href{https://www.worldometers.info/geography/7-continents/}{continent} \& country tool. For example, if you were to travel to Spain, you would be provided with text translation \& text to speech support, a selection of key Spanish phrases, an interactive quiz to test your knowledge of Spanish culture \& a map containing locations of top-rated Spanish tourist attractions. A user of your travelling application must be able to select from at least two country tools per continent \textbf{excluding} Antarctica. 
+The travelling application will help you sound like a local \& adapt to a new culture. You will begin by selecting a country you wish to travel to. For example, if you wish to travel to Italy, you would be provided the necessary tools such as text translation \& text to speech support, selection of well-known phrases, an interactive quiz to test your knowledge \& a map containing location of top-rated tourist attractions. A user of your travelling application must be able to select from at least two country per \href{https://www.worldometers.info/geography/7-continents/}{continent} \textbf{excluding} Antarctica. 
 
 \section*{Learning Outcomes}
 At the successful completion of this course, learners will be able to:
@@ -99,7 +99,7 @@ You will need to submit an application \& documentation that meet the following 
 	\item Application must run on \textbf{API 28: Android 9.0 (Pie)}.
 	\item Text translation support. If a country is multilingual (use of more than one language), choose only one language. For example, Canada's main languages are English \& French.
 	      \begin{itemize}
-		      \item Use \textbf{Retrofit} \& the \textbf{Yandex Translate API} to translate text from one language to another. To use the \textbf{Yandex Translate API}, you will need an API key. A key is available in the \textbf{Microsoft Teams} course channel, under the \textbf{Files} tab.
+		      \item Use \textbf{Retrofit} \& the \textbf{Yandex Translate API} to translate text from one language to another. To use the \textbf{Yandex Translate API}, you will need an \textbf{API key}. A key is available in the \textbf{Microsoft Teams} course channel, under the \textbf{Files} tab. Ensure that the \textbf{API key} is not publicly exposed.
 		      \item Display a custom \textbf{ProgressDialog} while the text is being translated.
 		      \item Handle incorrectly formatted input fields. For example, an \textbf{EditText} is blank or empty.
 		      \item \textbf{Resource:} \footnotesize\href{https://tech.yandex.com/translate}{https://tech.yandex.com/translate}
@@ -112,7 +112,7 @@ You will need to submit an application \& documentation that meet the following 
 	\item Selection of at least five key phrases. For example, "No worries, mate, she'll be right" is key phrase in Australia.
 	\item An interactive quiz for each country.
 	      \begin{itemize}
-		      \item Quiz data must be fetched from a \textbf{Spring Boot REST API} using \textbf{Retrofit}.
+		      \item Quiz data must be fetched from a \textbf{JSON} file in the \textbf{raw} resource directory.
 		      \item Quiz topics may include animals, culture, food, drink, geography \& sport.
 		      \item Each quiz must have at least five questions.
 		      \item Questions are multi-choice \& true or false.
@@ -131,7 +131,7 @@ You will need to submit an application \& documentation that meet the following 
 	\item Application can be exited via a \textbf{DialogFragment}. The \textbf{DialogFragment} must prompt the user when the user double taps the mobile device's back button.
 	\item \textbf{Google Map} displaying top-rated tourist attractions.
 	      \begin{itemize}
-		      \item Top-rated tourist attraction data must be fetched from a \textbf{Spring Boot REST API} using \textbf{Retrofit}.
+		      \item Top-rated tourist attraction data must be fetched from a \textbf{JSON} file in the \textbf{raw} resource directory.
 		      \item Each data object will be represented by a marker on a \textbf{Google Map}.
 		      \item The marker's information window must display the attraction's name \& coordinates (latitude \& longitude).
 		      \item \textbf{Resource:} \footnotesize\href{https://developers.google.com/maps/documentation/android-sdk/start}{https://developers.google.com/maps/documentation/android-sdk/start}
@@ -166,8 +166,8 @@ You will need to submit an application \& documentation that meet the following 
 		      \item When you create your application, name the package appropriately. For example, \\ \textbf{op.mobile.app.dev.$<$username$>$.travelling}. \textbf{Note:} replace \textbf{username} with your \textbf{Otago Polytechnic} username.
 		      \item \textbf{Resources:}
 		            \begin{itemize}
+									\item \footnotesize\href{https://developer.android.com/studio/publish/app-signing}{https://developer.android.com/studio/publish/app-signing}
 			            \item \footnotesize\href{https://support.google.com/googleplay/android-developer/answer/113469?hl=en}{https://support.google.com/googleplay/android-developer/answer/113469?hl=en}
-			            \item \footnotesize\href{https://developer.android.com/studio/publish/app-signing}{https://developer.android.com/studio/publish/app-signing}
 		            \end{itemize}
 	      \end{itemize}
 	\item Ability to download your application from \textbf{Google Play Store} on to multiple mobile devices. The mobile devices used to download your application will be:
@@ -184,7 +184,14 @@ You will need to submit an application \& documentation that meet the following 
 	\item \textbf{Kotlin} \& \textbf{XML} files contain no magic numbers/strings. Store the values in the appropriate \textbf{XML} files. For example, numbers must be stored in an integer or dimension file \& strings must be stored in a string file.
 	\item Use of intermediate variables. No method calls as arguments.
 	\item Idiomatic use of control flow, data structures \& other in-built functions.
-	\item Code adheres to the \textbf{MVVM} architectural pattern \&, \textbf{SOLID} \& \textbf{DRY} design principles.
+	\item Code adheres to \textbf{DRY}, \textbf{KISS} \& \textbf{SOLID} design principles.
+	\begin{itemize}
+		\item \textbf{Resources:}
+		\begin{itemize}
+			\item \footnotesize\href{https://dzone.com/articles/software-design-principles-dry-and-kiss}{https://dzone.com/articles/software-design-principles-dry-and-kiss}
+			\item \footnotesize\href{https://digitalocean.com/community/conceptual\_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design}{https://digitalocean.com/community/conceptual\_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design}
+		\end{itemize}
+	\end{itemize}
 	\item Efficient algorithmic approach.
 	\item \textbf{Kotlin} \& \textbf{XML} files are code formatted.
 \end{itemize}
@@ -197,7 +204,7 @@ You will need to submit an application \& documentation that meet the following 
 		      \begin{itemize}
 						\item \textbf{Resource:} \footnotesize\href{https://play.google.com/about/developer-content-policy}{https://play.google.com/about/developer-content-policy}
 					\end{itemize} 
-		      \item Sketched wireframes of your application. The wireframes must be sketched/designed using online software. This must be completed before you start coding.
+		      \item Sketched wireframes of your application. The wireframes must be sketched/designed using online software. 
 		            \begin{itemize}
 			            \item \textbf{Resource}: \footnotesize\href{https://moqups.com}{https://moqups.com}
 		            \end{itemize}
@@ -206,11 +213,10 @@ You will need to submit an application \& documentation that meet the following 
 		      \begin{itemize}
 						\item \textbf{Resources:}
 		            \begin{itemize}
+									\item \footnotesize\href{https://github.com/Kotlin/dokka}{https://github.com/Kotlin/dokka}
 			            \item \footnotesize\href{https://kotlinlang.org/docs/reference/kotlin-doc.html}{https://kotlinlang.org/docs/reference/kotlin-doc.html}
-			            \item \footnotesize\href{https://github.com/Kotlin/dokka}{https://github.com/Kotlin/dokka}
 		            \end{itemize}
 					\end{itemize}
-		      \item \textbf{Spring Boot REST API} endpoints for the quiz \& tourist-attraction features.
 		      \item URL to your application on \textbf{Google Play Store}.
 	      \end{itemize}
 			\end{itemize}
@@ -218,7 +224,12 @@ You will need to submit an application \& documentation that meet the following 
 				\item Continuous integration using \textbf{GitHub Actions}.
 	      \begin{itemize}
 		      \item \textbf{YAML} file must be configured for UI tests and generating an APK.
-		      \item \textbf{Resource:} \footnotesize\href{https://wkrzywiec.medium.com/github-actions-for-android-first-approach-f616c24aa0f9}{https://wkrzywiec.medium.com/github-actions-for-android-first-approach-f616c24aa0f9}
+		      \item \textbf{Resources:}
+		      \begin{itemize}
+						\item \footnotesize\href{https://atlassian.com/continuous-delivery/continuous-integration}{https://atlassian.com/continuous-delivery/continuous-integration}
+						\item \footnotesize\href{https://docs.github.com/en/actions}{https://docs.github.com/en/actions}
+						\item \footnotesize\href{https://wkrzywiec.medium.com/github-actions-for-android-first-approach-f616c24aa0f9}{https://wkrzywiec.medium.com/github-actions-for-android-first-approach-f616c24aa0f9}
+					\end{itemize}
 	      \end{itemize}
 	\item At least \textbf{10} feature branches excluding the \textbf{main} branch.
 	      \begin{itemize}
@@ -228,7 +239,7 @@ You will need to submit an application \& documentation that meet the following 
 	      \end{itemize}
 	\item Commit messages must reflect the context of each functional requirement change. \textbf{Do not} rewrite your \textbf{Git} history. It is important that the course lecturer can see how you worked on your assessment over time.
 	      \begin{itemize}
-		      \item \textbf{Resource:} \footnotesize\href{https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide}{https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide}
+		      \item \textbf{Resource:} \footnotesize\href{https://freecodecamp.org/news/writing-good-commit-messages-a-practical-guide}{https://freecodecamp.org/news/writing-good-commit-messages-a-practical-guide}
 	      \end{itemize}
 \end{itemize}
 \end{document}
