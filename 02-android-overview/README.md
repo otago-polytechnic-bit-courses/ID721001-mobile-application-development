@@ -28,12 +28,6 @@ The **HAL** provides standard interfaces that expose device hardware capabilitie
 ### Android Runtime
 For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Android Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. **Note:** if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
 
-## Activity ✏️
-On the provided piece of A4 paper, research & answer the following:
-- Explain difference between **AOT** & **JIT** compilation?
-- Name five programming languages which implement **AOT** compilation.
-- Name five programming languages which implement **JIT** compilation.
-
 ### Native C/C++ Libraries
 Many core **Android** system components & services are built from native code & require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework **APIs** which exposes the functionality of these native libraries to applications.
 
@@ -46,6 +40,12 @@ The feature-set of the **Android** os is available through **APIs** written in *
 The system applications function both as applications for users & to provide capabilities that developers can access from their own application.
 
 **Resource:** https://developer.android.com/guide/platform
+
+## Activity ✏️
+On the provided piece of A4 paper, research & answer the following:
+- Explain difference between **AOT** & **JIT** compilation?
+- Name five programming languages which implement **AOT** compilation.
+- Name five programming languages which implement **JIT** compilation.
 
 ## Market Share
 According to **StatCounter**, **Android** has been the most popular mobile os since August 2013.
@@ -208,7 +208,7 @@ The `build.grade (Module)` file allows you to configure build settings for the s
 **Resource:** https://developer.android.com/studio/build#module-level
 
 ## Activity ✏️
-Use the **Login** project for this `Activity`. In `activity_main.xml`, add the following `Views`:
+Use the **Login** project you created earlier for this activity. In `activity_main.xml`, add the following `Views`:
 
 | TextView Attribute        | Value           |
 | ------------- |:-------------:|
