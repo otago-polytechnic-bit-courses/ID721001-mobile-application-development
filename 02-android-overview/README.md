@@ -302,4 +302,4 @@ Once you have set up & plugged in over USB, click **Run** <img src="../tex/img/0
 **Resource:**  https://developer.android.com/studio/run/device
 
 ## Activity ✏️
-Use the **Login** project for this `Activity`. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-02-android-overview**.
+Use the **Login** project you created earlier for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. 
