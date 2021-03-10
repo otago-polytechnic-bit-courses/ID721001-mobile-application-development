@@ -60,9 +60,7 @@ var nullable: String? = "Hello, World!"
 nullable = null
 ```
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 On the provided piece of A4 paper, write a program which declares & assigns the following values to their appropriate data types, i.e., `var age: Int = 25`:
 
 * "I <3 this course"
@@ -70,8 +68,6 @@ On the provided piece of A4 paper, write a program which declares & assigns the 
 * 3.14159265359
 * false
 * 'z'
-
-<hr />
 
 ## Functions
 A function declaration starts with the `fun` keyword, followed by the function name, followed by the parameter list in parentheses. Optionally, the parameter list is followed by the return type, separated by a colon. 
@@ -190,12 +186,8 @@ fun main() {
 }
 ```
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 On the provided piece of paper, write a program which loops from 1 to 25. If the loop variable's value is less than 16, print out "I am legally not allowed to drive". If the loop variable's value is ≥ 16, print out "I am legally allowed to drive".
-
-<hr />
 
 ## Collections
 
@@ -431,14 +423,11 @@ fun main() {
     println(Color.BLUE.containsGreen()) // false
 }
 ```
-<hr />
 
-### Activity ✏️
+## Activity ✏️
 On the provided piece of paper, write a program with a regular class called `MobilePhone` & three properties called `osName`, `brand` & `model`. Override its `toString` using the same format as the `Person` class example.
 
 In the `main` function, create two `MobilePhone` objects. For the first `MobilePhone` object, print the `osName` & for the second `MobilePhone` object, print its `toString` method. 
-
-<hr />
 
 ## Interface
 Interfaces are similar to those in **Java**, where they can contain definitions of abstract methods as well as implementations of non-abstract methods, but can not contain any state.
