@@ -8,14 +8,10 @@
 
 At **Google**, Rubin & his team developed a mobile device platform powered by the **Linux kernel**. **Google** marketed the platform to handset providers & carriers on the promise of providing a flexible, upgradeable system. In 2006, **Google's** plans to enter the mobile communications market continued. An early prototype closely resembled a **BlackBerry** phone which had a QWERTY keyboard & no touchscreen. With the unveiling of the **Apple iPhone** in 2007 meant **Android** had to go back to the drawing board. In 2008, both **Nokia** & **BlackBerry** announced touch-based smartphones that to rival the **iPhone 3G**. Subsequently, **Android** switch their focus to touchscreens. The first commercially available smartphone running **Android** was the **HTC Dream** which was announced in September 2008.
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 On the provided piece of A4 paper, research & answer the following:
 - Explain what members of the **OHA** do.
 - Name 10 members of the **OHA**. Include a range of mobile operators, handset manufacturers & software companies.
-
-<hr />
 
 ## Software Stack
 
@@ -32,15 +28,11 @@ The **HAL** provides standard interfaces that expose device hardware capabilitie
 ### Android Runtime
 For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Android Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. **Note:** if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 On the provided piece of A4 paper, research & answer the following:
 - Explain difference between **AOT** & **JIT** compilation?
 - Name five programming languages which implement **AOT** compilation.
 - Name five programming languages which implement **JIT** compilation.
-
-<hr />
 
 ### Native C/C++ Libraries
 Many core **Android** system components & services are built from native code & require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework **APIs** which exposes the functionality of these native libraries to applications.
@@ -166,16 +158,12 @@ Currently we are in **Design** view. Click **Code**. You should see the followin
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 On the provided piece of A4 paper, research & answer the following:
 - Explain what a `ViewGroup` is & provide three examples of a `ViewGroup` object.
 - Explain what a `View` is & provide three examples of a `View` object.
 
 **Resource:** https://developer.android.com/guide/topics/resources/layout-resource
-
-<hr />
 
 ### ViewGroup & View Attributes
 - `android:id` - a unique resource name for the element which you can use to obtain a reference to the `ViewGroup`/`View` from your application.
@@ -219,9 +207,7 @@ The `build.grade (Module)` file allows you to configure build settings for the s
 
 **Resource:** https://developer.android.com/studio/build#module-level
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 Use the **Login** project for this `Activity`. In `activity_main.xml`, add the following `Views`:
 
 | TextView Attribute        | Value           |
@@ -289,8 +275,6 @@ The UI should look like the following:
 - Why are the `View` attributes highlighted orange?
 - How do we fix this?
 
-<hr />
-
 ## Build & Run Your Application
 With a few clicks, you can deploy your application to the **Android Emulator** or a **connected device**.
 
@@ -317,9 +301,5 @@ Once you have set up & plugged in over USB, click **Run** <img src="../tex/img/0
 
 **Resource:**  https://developer.android.com/studio/run/device
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 Use the **Login** project for this `Activity`. Run the project's application on **both** the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-02-android-overview**.
-
-<hr />
