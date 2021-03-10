@@ -8,9 +8,7 @@ Lets take a look at the `View` class...within this class, you will notice severa
 ## Event Listeners
 An event listener is an interface in the `View` class that contains a single callback method. These methods are be called when a registered listener has been triggered by user interaction.
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 
 On the provided piece of A4 paper, research & explain when the following callback methods are called:
 - `onClick()`
@@ -22,7 +20,7 @@ On the provided piece of A4 paper, research & explain when the following callbac
 
 **Resource:** https://developer.android.com/guide/topics/ui/ui-events#EventListeners
 
-<hr />
+## How to Implement an Event Listener
 
 To define one of these methods & handle your events, implement the nested interface in your `Activity`. Then, pass an instance of your implementation to the method.
 
@@ -60,13 +58,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 }
 ```
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 Open the `03-login` directory provided to you in **Android Studio**. In the `Button` on-click listener, display the email address & password `EditText` values in a `Toast`. You will need to use `findViewById(int)` to retrieve the `Views` from `activity_main.xml`.
 
-Run the project's application on both the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you start **practical-03-events**.
+Run the project's application on both the **Android Emulator** & a **connected device**. 
 
 <img src="../tex/img/03-events/readme/login-toast.png" width="250" height="450" />
-
-<hr />
