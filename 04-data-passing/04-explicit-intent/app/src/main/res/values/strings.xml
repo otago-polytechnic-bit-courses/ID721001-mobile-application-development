@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Explicit Intent</string>
+    <string name="view_a_map">View a Map</string>
+    <string name="view_a_web_page">View a Web Page</string>
 </resources>
