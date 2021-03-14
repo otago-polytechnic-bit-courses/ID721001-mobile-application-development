@@ -1,9 +1,9 @@
 # **Data Passing**
 ## Overview
 An `Intent` is a messaging object you can use to request an action from another app component. There are three fundamental use cases which intents communicate between components:
-- Starting an activity - an `Activity` represents a single screen in an application. You can start a new instance of an `Activity` by passing an `Intent` to `startActivity()`. 
+- Starting an activity - an `Activity` represents a single screen in an application. You can start a new instance of an **activity** by passing an **intent** to `startActivity()`. 
 - Starting a service - a `Service` performs operations in the background without a UI. With **API 21: Android 5.0 (Lollipop)** & later, you can start a service with `JobScheduler`.
-- Delivering a broadcast - a message that any application can receive. The system delivers various broadcasts for system events, i.e., when the system boots up or the device starts charging. You can deliver a broadcast to other applications by passing an `Intent` to `sendBroadcast()` or `sendOrderedBroadcast()`.
+- Delivering a broadcast - a message that any application can receive. The system delivers various broadcasts for system events, i.e., when the system boots up or the device starts charging. You can deliver a broadcast to other applications by passing an **intent** to `sendBroadcast()` or `sendOrderedBroadcast()`.
 
 <img src="../tex/img/04-data-passing/readme/android-intents.png" width="500" height="200" />
 
@@ -20,7 +20,7 @@ There are two types of intents:
 
 ## Activity ✏️
 - Open the `04-login` directory provided to you in **Android Studio**. 
-- Create a new `Activity` called `SecondActivity.kt`. To create a new `Activity`, right-click **package > New > Activity > New Activity**. When you create a new activity, **Android Studio** automatically does the following:
+- Create a new **activity** called `SecondActivity.kt`. To create a new **activity**, right-click **package > New > Activity > New Activity**. When you create a new activity, **Android Studio** automatically does the following:
    - Creates the `SecondActivity.kt` file.
    - Creates the `activity_second.xml` layout file.
    - Adds the required `<activity>` element in `AndroidManifest.xml`. 
@@ -50,12 +50,12 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 - What is happening?
-  - An `Intent` takes two parameters, a `Context` & a `Class`.
-  - The `Context` parameter is used first because the `Activity` class is a subclass of `Context`. For example, `MainActivity` is the `Context`.
-  - The `Class` parameter of the application component to which the system delivers the `Intent`. For example, `SecondActivity` is the activity to start.
-  - The `putExtra()` method adds the value of `EditText` to the `Intent`. An `Intent` can carry data types as key-value pairs called extras. 
+  - An **intent** takes two parameters, a `Context` & a `Class`.
+  - The **context** parameter is used first because the **activity** class is a subclass of **context**. For example, `MainActivity` is the **context**.
+  - The **class** parameter of the application component to which the system delivers the **intent**. For example, `SecondActivity` is the activity to start.
+  - The `putExtra()` method adds the value of `EditText` to the **intent**. An **intent** can carry data types as key-value pairs called extras. 
   - `SecondActivity` will use `EXTRA_EMAIL_ADDRESS` & `EXTRA_PASSWORD` as keys to retrieve the values from `MainActivity`. It is good practice to define keys with your application's package name as a prefix. This ensures that the keys are unique, in case your application interacts with other applications.
-  - The `startActivity` method starts an instance of the `SecondActivity` that is specified by the `Intent`.
+  - The `startActivity` method starts an instance of the `SecondActivity` that is specified by the **intent**.
 
 - To retrieve the values from `MainActivity`, go to `SecondActivity` & write the following:
 ```kotlin
@@ -79,7 +79,7 @@ Run the project's application on either the **Android Emulator** & a **connected
 
 <img src="../tex/img/04-data-passing/readme/login-form.png" width="250" height="450" />
 
-The `TextView` value is set to the `EXTRA_EMAIL_ADDRESS` value from the `Intent`.
+The `TextView` value is set to the `EXTRA_EMAIL_ADDRESS` value from the **intent**.
 
 <img src="../tex/img/04-data-passing/readme/login-output.png" width="250" height="450" />
 
@@ -100,7 +100,7 @@ To add an up arrow button, go to `AndroidManifest.xml`, find the `<activity>` el
 </activity>
 ```
 
-Again, run the project's application on either the **Android Emulator** & a **connected device**. You **MUST** show me your running application before you continue working on **practical-03-events**.
+Again, run the project's application on either the **Android Emulator** & a **connected device**. 
 
 <img src="../tex/img/04-data-passing/readme/login-back-button.png" width="250" height="450" />
 

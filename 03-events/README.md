@@ -22,7 +22,7 @@ On the provided piece of A4 paper, research & explain when the following callbac
 
 ## How to Implement an Event Listener
 
-To define one of these methods & handle your events, implement the nested interface in your `Activity`. Then, pass an instance of your implementation to the method.
+To define one of these methods & handle your events, implement the nested interface in your **activity**. Then, pass an instance of your implementation to the method.
 
 The code snippet below shows how to register a `Button` on-click listener.
 
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-You may also find it more convenient to implement `OnClickListener` as a part of your `Activity`. For example:
+You may also find it more convenient to implement `OnClickListener` as a part of your **activity**. For example:
 
 ```kotlin
 class MainActivity : AppCompatActivity(), OnClickListener {

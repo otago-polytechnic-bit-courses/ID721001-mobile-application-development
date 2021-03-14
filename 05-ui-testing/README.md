@@ -69,9 +69,10 @@ class LoginBehaviourTest {
         - A `ViewInteraction` object is returned which allows your test to interact with the targeted `View`. 
         - The `perform()` method is called & passed a `ViewAction` method, i.e., `click()` which simulates a user interaction, i.e, clicking on the `View`.
     
-
 **Note:** please avoid copying & pasting. However, if you choose to do so, you will need add the appropriate import statements in order to make the code work. 
 
 To run the `LoginBehaviourTest` class, right-click **LoginBehaviourTest > Run 'LoginBehaviourTest'**. Alternatively, you can press **Ctrl + Shift + F10**.
 
-<img src="../tex/img/05-ui-testing/readme/test-passed-output.jpg" width="1000" height="200" />
+The **run** tab will output the results of your test(s).
+
+<img src="../tex/img/05-ui-testing/readme/test-passed-output.JPG" width="800" height="225" />
