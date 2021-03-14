@@ -18,9 +18,7 @@ There are two types of intents:
 - https://developer.android.com/reference/android/app/job/JobScheduler
 - https://developer.android.com/guide/components/broadcasts
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 - Open the `04-login` directory provided to you in **Android Studio**. 
 - Create a new `Activity` called `SecondActivity.kt`. To create a new `Activity`, right-click **package > New > Activity > New Activity**. When you create a new activity, **Android Studio** automatically does the following:
    - Creates the `SecondActivity.kt` file.
@@ -87,14 +85,10 @@ The `TextView` value is set to the `EXTRA_EMAIL_ADDRESS` value from the `Intent`
 
 What happens if you click the **Login** `Button` without entering a value in the email address &/or password `EditText`?
 
-<hr />
-
 ## Upward Navigation
 Each screen in your application that is not the main entry point must provide some navigation that directs the user to a parent screen in the application's hierarchy. To do this, add an up arrow button in the **action bar**.
 
-<hr />
-
-### Activity ✏️
+## Activity ✏️
 To add an up arrow button, go to `AndroidManifest.xml`, find the `<activity>` element for `SecondActivity` & replace it with the following:
 
 ```xml
@@ -110,6 +104,4 @@ Again, run the project's application on either the **Android Emulator** & a **co
 
 <img src="../tex/img/04-data-passing/readme/login-back-button.png" width="250" height="450" />
 
-You should see a back arrow button in the **action bar**. Click on the back arrow button. It will navigate you back to the parent activity, i.e., `MainActivity`.
-
-<hr />
+You should see a back arrow button in the **action bar**. If you click on the back arrow button, it will navigate you back to the parent activity, i.e., `MainActivity`.

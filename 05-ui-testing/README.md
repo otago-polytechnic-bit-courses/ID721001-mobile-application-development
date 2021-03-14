@@ -25,9 +25,8 @@ To create an **Espresso** test:
 - https://developer.android.com/training/testing/ui-testing
 - https://developer.android.com/training/testing/espresso
 
-<hr />
 
-### Activity ✏️
+## Activity ✏️
 
 In this directory, open the `login` directory provided to you in **Android Studio**. Go to **app > java > package name (androidTest)** & create a new file called `LoginBehaviourTest.kt`. In this file, add the following code:
 
@@ -73,6 +72,6 @@ class LoginBehaviourTest {
 
 **Note:** please avoid copying & pasting. However, if you choose to do so, you will need add the appropriate import statements in order to make the code work. 
 
-To run the `LoginBehaviourTest` class, right-click **LoginBehaviourTest > Run 'LoginBehaviourTest'**.
+To run the `LoginBehaviourTest` class, right-click **LoginBehaviourTest > Run 'LoginBehaviourTest'**. Alternatively, you can press **Ctrl + Shift + F10**.
 
-<hr />
+<img src="../tex/img/05-ui-testing/readme/test-passed-output.jpg" width="1000" height="200" />

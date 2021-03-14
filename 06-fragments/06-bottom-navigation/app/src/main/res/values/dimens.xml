@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+</resources>
