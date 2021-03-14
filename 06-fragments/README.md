@@ -186,7 +186,7 @@ The **navigation graph** is used to manage your application's navigation. A **na
 
 **Design view:**
 
-<img src="../tex/img/06-fragments/readme/navigation-design-graph.jpg" width="350" height="550" />
+<img src="../tex/img/06-fragments/readme/navigation-design-graph.JPG" width="350" height="550" />
 
 **Code view:**
 
@@ -221,8 +221,4 @@ The **navigation graph** is used to manage your application's navigation. A **na
 
 Run the project's application on both the **Android Emulator** & a **connected device**. 
 
-<img src="../tex/img/06-fragments/readme/fragment-home.png" width="250" height="450" />
-
-<img src="../tex/img/06-fragments/readme/fragment-dashboard.png" width="250" height="450" />
-
-<img src="../tex/img/06-fragments/readme/fragment-notifications.png" width="250" height="450" />
+<img src="../tex/img/06-fragments/readme/fragment-home.png" width="250" height="450" /><img src="../tex/img/06-fragments/readme/fragment-dashboard.png" width="250" height="450" /><img src="../tex/img/06-fragments/readme/fragment-notifications.png" width="250" height="450" />
