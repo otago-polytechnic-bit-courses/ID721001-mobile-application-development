@@ -75,4 +75,4 @@ To run the `LoginBehaviourTest` class, right-click **LoginBehaviourTest > Run 'L
 
 The **run** tab will output the results of your test(s).
 
-<img src="../tex/img/05-ui-testing/readme/test-passed-output.JPG" width="800" height="225" />
+<img src="../tex/img/05-ui-testing/readme/test-passed-output.JPG" width="1000" height="250" />
