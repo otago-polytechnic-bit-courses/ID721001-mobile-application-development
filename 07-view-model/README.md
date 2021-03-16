@@ -2,15 +2,13 @@
 
 ## Overview
 
-The Android framework manages the lifecycles of UI controllers, such as activities and fragments. The framework may decide to destroy or re-create a UI controller in response to certain user actions or device events that are completely out of your control.
+The **Android Framework** manages the lifecycle of a **UI controller**, i.e., **activity** or **fragment**. The **framework** may also decide to destroy or recreate a **UI controller** in response to certain user actions or device events that are out of your control.
 
-If the system destroys or re-creates a UI controller, any transient UI-related data you store in them is lost. For example, your app may include a list of users in one of its activities. When the activity is re-created for a configuration change, the new activity has to re-fetch the list of users. For simple data, the activity can use the onSaveInstanceState() method and restore its data from the bundle in onCreate(), but this approach is only suitable for small amounts of data that can be serialized then deserialized, not for potentially large amounts of data like a list of users or bitmaps.
+If the **system** destroys or recreates a **UI controller**, any transient UI-related data you store is lost. For example, your application has a list of students fetched from an **API** in a **UI controller**. When the **fragment** is recreated for a configuration changes, i.e., rotating your phone from portrait to landscape & vice-versa, the **UI controller** has to refetch the list of students. For small amounts of data, the **UI controller** can use the `onSaveInstanceState()` method to restore its data from the bundle in `onCreate()`. This is not a practical solution for large amounts of data, i.e., lists of students or bitmaps.
 
-Another problem is that UI controllers frequently need to make asynchronous calls that may take some time to return. The UI controller needs to manage these calls and ensure the system cleans them up after it's destroyed to avoid potential memory leaks. This management requires a lot of maintenance, and in the case where the object is re-created for a configuration change, it's a waste of resources since the object may have to reissue calls it has already made.
+**UI controllers** frequently need to make asynchronous calls which may take some time to return data, i.e., list of students. The **UI controller** needs to manage these calls & ensure the **system** cleans up after it is destroyed to avoid potential **memory leaks**. Unfortunately, this requires a lot of maintenance & it the case where the object is recreated for a configuration change, it is a waste of resources.
 
-UI controllers such as activities and fragments are primarily intended to display UI data, react to user actions, or handle operating system communication, such as permission requests. Requiring UI controllers to also be responsible for loading data from a database or network adds bloat to the class. Assigning excessive responsibility to UI controllers can result in a single class that tries to handle all of an app's work by itself, instead of delegating work to other classes. Assigning excessive responsibility to the UI controllers in this way also makes testing a lot harder.
-
-It's easier and more efficient to separate out view data ownership from UI controller logic.
+**UI controllers** are intended to display UI-related data, react to user actions or handle os communication. Relying on a **UI controller** to be responsible for fetching data from an **API** adds bloat to the class. Assigning excessive responsibility to **UI controller** results in a class handling all the work by itself where this work should be delegated to other classes . It is easier or more efficient to separate the UI-related data from the **UI controller** logic.
 
 ## Code Example
 Open the `07-bottom-navigation` directory provided to you in **Android Studio**. 
