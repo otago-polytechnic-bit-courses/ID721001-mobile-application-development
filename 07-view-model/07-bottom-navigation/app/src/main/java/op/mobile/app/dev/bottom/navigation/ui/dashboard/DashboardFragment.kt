@@ -25,7 +25,7 @@ class DashboardFragment : Fragment() {
         tvOutput.text = count.toString()
 
         btnPlusOne.setOnClickListener {
-            count ++
+            count++
             tvOutput.text = count.toString()
         }
 
