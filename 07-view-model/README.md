@@ -37,7 +37,7 @@ class DashboardViewModel : ViewModel() {
 ```
 
 ### DashboardFragment
-```
+```kotlin
 class DashboardFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -51,10 +51,12 @@ class DashboardFragment : Fragment() {
 
         val viewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
 
-       btnPlusOne.setOnClickListener {
-           viewModel.plusOne()
-           tvOutput.text = viewModel.count.toString()
-       }
+        tvOutput.text = viewModel.count.toString()
+
+        btnPlusOne.setOnClickListener {
+            viewModel.plusOne()
+            tvOutput.text = viewModel.count.toString()
+        }
 
         return view
     }
@@ -65,5 +67,7 @@ class DashboardFragment : Fragment() {
 `ViewModel` objects are scoped to the `Lifecycle` passed to the `ViewModelProvider` when getting the `ViewModel`. The `ViewModel` remains in memory until either an activity finishes or a fragment detaches.
 
 The following image demonstrates the various lifecycle states an **activity** when it undergoes a configuration change, then finishes. Also, this image demonstrates the lifetime of the `ViewModel` next to the **activity** lifecycle. 
+
+<img src="../tex/img/07-view-model/readme/view-model.png" width="350" height="550" />
 
 A `ViewModel` is usually requested the first time the **system** calls the `onCreate()` or `onCreateView()` method. The system may call these methods several times throughout the life of a **UI controller** such as rotation a device's screen. The `ViewModel` exists from when you first request a `ViewModel` until the activity is finished & destroyed.
