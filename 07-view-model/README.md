@@ -36,8 +36,8 @@ Without this dependencies, you can **not** use `ViewModel`.
 ```
 
 ## ViewModel Lifecycle
-ViewModel objects are scoped to the Lifecycle passed to the ViewModelProvider when getting the ViewModel. The ViewModel remains in memory until the Lifecycle it's scoped to goes away permanently: in the case of an activity, when it finishes, while in the case of a fragment, when it's detached.
+`ViewModel` objects are scoped to the `Lifecycle` passed to the `ViewModelProvider` when getting the `ViewModel`. The `ViewModel` remains in memory until either an activity finishes or a fragment detaches.
 
-Figure 1 illustrates the various lifecycle states of an activity as it undergoes a rotation and then is finished. The illustration also shows the lifetime of the ViewModel next to the associated activity lifecycle. This particular diagram illustrates the states of an activity. The same basic states apply to the lifecycle of a fragment.
+The following image demonstrates the various lifecycle states an **activity** when it undergoes a configuration change, then finishes. Also, this image demonstrates the lifetime of the `ViewModel` next to the **activity** lifecycle. 
 
-You usually request a ViewModel the first time the system calls an activity object's onCreate() method. The system may call onCreate() several times throughout the life of an activity, such as when a device screen is rotated. The ViewModel exists from when you first request a ViewModel until the activity is finished and destroyed.
+A `ViewModel` is usually requested the first time the **system** calls the `onCreate()` or `onCreateView()` method. The system may call these methods several times throughout the life of a **UI controller** such as rotation a device's screen. The `ViewModel` exists from when you first request a `ViewModel` until the activity is finished & destroyed.
