@@ -21,6 +21,8 @@ class DashboardFragment : Fragment() {
         val btnPlusOne: Button = view.findViewById(R.id.btn_plus_one)
 
         var count = 0
+        
+        tvOutput.text = count.toString()
 
         btnPlusOne.setOnClickListener {
             count ++
