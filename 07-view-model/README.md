@@ -26,13 +26,39 @@ implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
 Without this dependencies, you can **not** use `ViewModel`.
 
 ### DashboardViewModel
+```kotlin
+class DashboardViewModel : ViewModel() {
+    var count: Int = 0
+
+    fun plusOne() {
+        count++
+    }
+}
+```
 
 ### DashboardFragment
+```
+class DashboardFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val view: View = inflater.inflate(R.layout.fragment_dashboard, container, false)
 
-### MainActivity
+        val tvOutput: TextView = view.findViewById(R.id.tv_count)
+        val btnPlusOne: Button = view.findViewById(R.id.btn_plus_one)
 
-```kotlin
+        val viewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
 
+       btnPlusOne.setOnClickListener {
+           viewModel.plusOne()
+           tvOutput.text = viewModel.count.toString()
+       }
+
+        return view
+    }
+}
 ```
 
 ## ViewModel Lifecycle
