@@ -17,11 +17,11 @@ Run the project's application on either an **Android Emulator** or a **connected
 
 Go to **Dashboard** & click on the **plus one** `Button` five times, then rotate the **Android Emulator** or **connected device**.
 
-<img src="../tex/img/06-fragments/readme/mobile-example-1.JPG" width="250" height="450" />
+<img src="../tex/img/07-view-model/readme/mobile-example-1.png" width="250" height="450" />
 
 What has happened?
 
-<img src="../tex/img/06-fragments/readme/mobile-example-2.JPG" width="450" height="250" />
+<img src="../tex/img/07-view-model/readme/mobile-example-2.png" width="450" height="250" />
 
 ### build.grade
 
