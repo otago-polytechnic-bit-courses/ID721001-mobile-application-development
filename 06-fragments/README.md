@@ -13,7 +13,7 @@ Here is an example...consider an application that responds to various screen siz
 While your **activity** is in the `onStart` lifecycle state or higher, **fragments** can be added, replaced or removed from an **activity**.
 
 ## Code Example
-Open the `06-bottom-navigation` directory provided to you in **Android Studio**. 
+Open the `bottom-navigation-fragments` directory provided to you in **Android Studio**. 
 
 Lets take a look at what is happening...
 
