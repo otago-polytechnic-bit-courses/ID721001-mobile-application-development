@@ -4,14 +4,11 @@ import androidx.lifecycle.ViewModel
 
 class GameViewModel : ViewModel() {
     private lateinit var animalSoundList: MutableList<String>
-    var animalSound: String
-    var score: Int
-    var isEnd: Boolean
+    var animalSound: String = ""
+    var score: Int = 0
+    var isEnd: Boolean= false
 
     init {
-        animalSound = ""
-        score = 0
-        isEnd = false
         resetAnimalSounds()
         nextAnimalSound()
     }
