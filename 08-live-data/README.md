@@ -61,7 +61,7 @@ class DashboardViewModel : ViewModel() {
 
 ### DashboardFragment
 
-In a UI controller, i.e., activity to fragment, create an `Observer` object that defines the `onChange()` method. This controls what happens when the `LiveData` object's data changes. 
+In a **UI controller**, i.e., **activity** or **fragment**, create an `Observer` object that defines the `onChange()` method. This controls what happens when the `LiveData` object's data changes. 
 
 To attach the `Observer` object to the `LiveData` object, use the `observe()` method. The `observe()` method takes a `LifecycleOwner` object. This subscribes the `Observer` object to the `LiveData` object so that it is notified of changes.
 
@@ -101,4 +101,4 @@ class DashboardFragment : Fragment() {
 }
 ```
 
-In most cases, an application component's `onCreate()` method is the best place to start observing a LiveData object. This ensures the system does not make redundant calls from a **UI controller's** `onResume()` method. Also, ensures that the **UI controller** has data that it can display as soon as its state becomes active.
+In most cases, an application component's `onCreate()` method is the best place to start observing a `LiveData` object. This ensures the system does not make redundant calls from a **UI controller's** `onResume()` method. Also, ensures that the **UI controller** has data that it can display as soon as its state becomes active.
