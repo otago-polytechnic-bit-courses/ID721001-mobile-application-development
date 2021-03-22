@@ -23,7 +23,6 @@ class DashboardFragment : Fragment() {
         val btnPlusOne: Button = view.findViewById(R.id.btn_plus_one)
         val btnReset: Button = view.findViewById(R.id.btn_reset)
 
-<<<<<<< HEAD:08-live-data/bottom-navigation-live-data/app/src/main/java/op/mobile/app/dev/bottom/navigation/ui/dashboard/DashboardFragment.kt
         val viewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
 
         viewModel.count.observe(viewLifecycleOwner, Observer {
@@ -36,15 +35,6 @@ class DashboardFragment : Fragment() {
 
         btnReset.setOnClickListener {
             viewModel.reset()
-=======
-        var count = 0
-        
-        tvOutput.text = count.toString()
-
-        btnPlusOne.setOnClickListener {
-            count++
-            tvOutput.text = count.toString()
->>>>>>> d4d2c3841bf1a3e7d175fab4a0c9f6d79f2bf56e:07-view-model/07-bottom-navigation/app/src/main/java/op/mobile/app/dev/bottom/navigation/ui/dashboard/DashboardFragment.kt
         }
 
         return view
