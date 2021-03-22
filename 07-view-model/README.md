@@ -13,7 +13,15 @@ If the **system** destroys or recreates a **UI controller**, any transient UI-re
 ## Code Example
 Open the `bottom-navigation-view-model` directory provided to you in **Android Studio**. 
 
-Lets take a look at what is happening...
+Run the project's application on either an **Android Emulator** or a **connected device**. 
+
+Go to **Dashboard** & click on the **plus one** `Button` five times, then rotate the **Android Emulator** or **connected device**.
+
+<img src="../tex/img/07-view-model/readme/mobile-example-1.png" width="250" height="450" />
+
+What has happened?
+
+<img src="../tex/img/07-view-model/readme/mobile-example-2.png" width="450" height="250" />
 
 ### build.grade
 
@@ -78,6 +86,6 @@ class DashboardFragment : Fragment() {
 
 The following image demonstrates the various lifecycle states an **activity** when it undergoes a configuration change, then finishes. Also, this image demonstrates the lifetime of the `ViewModel` next to the **activity** lifecycle. 
 
-<img src="../tex/img/07-view-model/readme/view-model.png" width="350" height="550" />
+<img src="../tex/img/07-view-model/readme/view-model-lifecycle.png" width="375" height="550" />
 
 A `ViewModel` is usually requested the first time the **system** calls the `onCreate()` or `onCreateView()` method. The system may call these methods several times throughout the life of a **UI controller** such as rotation a device's screen. The `ViewModel` exists from when you first request a `ViewModel` until the activity is finished & destroyed.
