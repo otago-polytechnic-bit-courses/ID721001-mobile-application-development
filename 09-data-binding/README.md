@@ -113,9 +113,7 @@ class DashboardFragment : Fragment() {
 
         binding.lifecycleOwner = viewLifecycleOwner
 
-        return binding.root
+        return binding.root // Get a reference to the root view
     }
 }
 ```
-
-## Data Binding vs. View Binding
