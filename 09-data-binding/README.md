@@ -1,7 +1,7 @@
 # **Data Binding**
 
 ## Overview
-**Data binding** allows you to bind UI components in your layouts to data sources in your application using a declarative format.
+**Data binding** allows you to bind UI components in your **XML** layouts to data sources in your application using a declarative format.
 
 ## Code Example
 Open the `bottom-navigation-data-binding` directory provided to you in **Android Studio**. 
@@ -23,6 +23,8 @@ buildFeatures {
     dataBinding true
 }
 ```
+
+**Resource:** https://kotlinlang.org/docs/kapt.html
 
 ### DashboardFragment Layout
 
