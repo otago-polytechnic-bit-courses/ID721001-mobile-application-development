@@ -1,6 +1,7 @@
 # **Data Binding**
 
 ## Overview
+**Data binding** allows you to bind UI components in your layouts to data sources in your application using a declarative format.
 
 ## Code Example
 Open the `bottom-navigation-data-binding` directory provided to you in **Android Studio**. 
@@ -23,30 +24,13 @@ buildFeatures {
 }
 ```
 
-### DashboardFragment
-
-```kotlin
-class DashboardFragment : Fragment() {
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val binding: FragmentDashboardBinding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_dashboard, container, false)
-
-        val viewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
-
-        binding.dashboardViewModel = viewModel
-
-        binding.lifecycleOwner = viewLifecycleOwner
-
-        return binding.root
-    }
-}
-```
-
 ### DashboardFragment Layout
+
+The following demonstrates how to use **data binding** to assign `count` to a `TextView`, the `plusOne()` method to a `Button` & the `reset()` method to a `Button` directly in the layout **XML** file. This removes the need to call the code as seen in the last session. **Note:** pay particular attention to the use of `@{}` when assigning.
+
+The **data binding** library generates the classes required to bind the `Views` in the **XML** layout files with your data objects.
+
+Binding variables that can be used in expressions are defined in the `data` element. The `data` element is a sibling of the **XML** layout file's root element, i.e., `ConstraintLayout`. Both elements are wrapped in a `layout` element as shown in the following example:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -106,6 +90,32 @@ class DashboardFragment : Fragment() {
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
+```
+Binding components in your **XML** layout files lets you remove many UI framework calls in your **UI controllers**, making them easier to maintain. Also, this improves the performance of your application & prevent memory leaks.
+
+### DashboardFragment
+
+The **data binding** library provides classes & methods to easily observe data changes. You do not have to worry about refreshing the UI when a data source changes. You can make your variables or their properties **observable**. 
+
+```kotlin
+class DashboardFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val binding: FragmentDashboardBinding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_dashboard, container, false)
+
+        val viewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
+
+        binding.dashboardViewModel = viewModel
+
+        binding.lifecycleOwner = viewLifecycleOwner
+
+        return binding.root
+    }
+}
 ```
 
 ## Data Binding vs. View Binding
