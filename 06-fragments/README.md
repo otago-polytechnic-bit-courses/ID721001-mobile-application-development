@@ -19,7 +19,7 @@ Lets take a look at what is happening...
 
 ### build.grade
 
-Go to **Gradle Scripts > build.grade (Module: BottomNavigation.app)**. You should see the following in the **dependencies**:
+Go to **Gradle Scripts > build.grade (Module: BottomNavigation.app)**. You should see the following in the **dependencies** block:
 
 ```
 implementation 'androidx.navigation:navigation-fragment-ktx:2.3.4'

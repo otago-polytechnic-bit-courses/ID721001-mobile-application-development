@@ -1,54 +1,3 @@
-# **Data Binding**
-
-## Overview
-
-## Code Example
-Open the `bottom-navigation-data-binding` directory provided to you in **Android Studio**. 
-
-Lets take a look at what is happening...
-
-### build.grade
-
-Go to **Gradle Scripts > build.grade (Module: BottomNavigation.app)**. You should see the following in the **plugin** block:
-
-```
-id 'kotlin-kapt'
-```
-
-& the following in the **android** block:
-
-```
-buildFeatures {
-    dataBinding true
-}
-```
-
-### DashboardFragment
-
-```kotlin
-class DashboardFragment : Fragment() {
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val binding: FragmentDashboardBinding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_dashboard, container, false)
-
-        val viewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
-
-        binding.dashboardViewModel = viewModel
-
-        binding.lifecycleOwner = viewLifecycleOwner
-
-        return binding.root
-    }
-}
-```
-
-### DashboardFragment Layout
-
-```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -70,8 +19,8 @@ class DashboardFragment : Fragment() {
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginEnd="@dimen/margin_32"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -82,10 +31,10 @@ class DashboardFragment : Fragment() {
                 android:id="@+id/tv_count"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/margin_16"
                 android:text="@{dashboardViewModel.count.toString()}"
                 android:textAlignment="center"
-                android:textSize="24sp" />
+                android:textSize="@dimen/text_size_24" />
 
             <Button
                 android:id="@+id/btn_plus_one"
@@ -106,6 +55,3 @@ class DashboardFragment : Fragment() {
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
-```
-
-## Data Binding vs. View Binding
