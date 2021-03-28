@@ -1,4 +1,4 @@
-# **Data Binding**
+# **Binding**
 
 ## Overview
 **Data binding** allows you to bind UI components in your **XML** layouts to data sources in your application using a declarative format.
