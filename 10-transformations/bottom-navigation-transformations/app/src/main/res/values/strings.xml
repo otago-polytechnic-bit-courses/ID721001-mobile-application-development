@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Bottom Navigation</string>
-    <string name="home">Home</string>
-    <string name="dashboard">Dashboard</string>
-    <string name="notifications">Notifications</string>
-    <string name="plus_one">Plus One</string>
-    <string name="reset">Reset</string>
-</resources>

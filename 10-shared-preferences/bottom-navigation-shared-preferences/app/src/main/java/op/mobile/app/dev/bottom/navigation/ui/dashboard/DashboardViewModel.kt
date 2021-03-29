@@ -9,7 +9,7 @@ class DashboardViewModel : ViewModel() {
     val count: LiveData<Int> get() = _count
 
     init {
-        reset()
+        _count.value = 0
     }
 
     fun plusOne() {
