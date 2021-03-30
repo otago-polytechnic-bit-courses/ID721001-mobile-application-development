@@ -11,8 +11,8 @@ Lets take a look at what is happening...
 ### NotificationsFragment
 
 You can create a new **shared preferences** file or access an existing one by calling one of the following methods:
-- `getSharedPreferences()` - use if you need multiple shared preference files. You can call this from any `Context` in your application. 
-- `getPreferences()` - use if you only need one shared preference file for the **activity**. This retrieves a default **shared preferences** file that belongs to the **activity**. Also, you do not need to supply a name.
+- `getSharedPreferences()` - use if you need multiple **shared preferences** files. You can call this from any `Context` in your application. 
+- `getPreferences()` - use if you only need one **shared preferences** file for the **activity**. This retrieves a default **shared preferences** file that belongs to the **activity**. Also, you do not need to supply a name.
 
 ```kotlin
 class NotificationsFragment : Fragment() {
