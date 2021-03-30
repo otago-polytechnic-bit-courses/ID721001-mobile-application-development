@@ -1,0 +1,21 @@
+Content to remove:
+- SharedPreferences
+
+Content to add:
+- Hilt
+- Camera
+- Datastore
+- Paging
+- WorkManager
+- Benchmark
+- Swipe to refresh
+
+Features to add to project assessment:
+- Take images of tourist attraction sites. Save images to local storage
+- Caching data
+- Saving data to DataStore instead of SharedPreferences
+
+Practical assessments will be changed to formative assessments. The 20% will be allocated to web services.
+
+Resource:
+- https://developer.android.google.cn/jetpack?hl=en
