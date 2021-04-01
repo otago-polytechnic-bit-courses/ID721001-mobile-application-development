@@ -1,7 +1,5 @@
 # **Kotlin**
 
-The following code snippets are available [here](https://github.com/otago-polytechnic-bit-courses/IN721-mobile-app-dev/tree/master/01-kotlin/kotlin-samples).
-
 ## Overview
 **Kotlin** is a statically typed programming language designed & developed by **JetBrains**. **Kotlin** targets the **JVM (Java Virtual Machine)**, but can also compile to **JavaScript** & native code via the **LLVM (Low-Level Virtual Machine)**. **Kotlin** is designed to be concise, safe, pragmatic & interoperable. **Kotlin** can be used almost everywhere **Java** is used, i.e., server-side development, **Android** mobile development, etc. **Kotlin** works seamlessly with all existing **Java** libraries/frameworks & performs at the same level as **Java**.
 
@@ -28,8 +26,8 @@ var someString = "Hello, World!"
 
 ### What is var?
 In **Kotlin**, there are two keywords used when declaring a variable:
-* var - a mutable reference & can be reassigned after it has been initialised. It corresponds to a regular variable in **Java**.
-* val - an immutable reference & can not be reassigned after it has been initialised. It corresponds to a `final` variable in **Java**.
+- `var` - a mutable reference & can be reassigned after it has been initialised. It corresponds to a regular variable in **Java**.
+- `val` - an immutable reference & can not be reassigned after it has been initialised. It corresponds to a `final` variable in **Java**.
 
 ```kotlin
 fun main() {
@@ -61,7 +59,7 @@ nullable = null
 ```
 
 ## Activity ✏️
-On the provided piece of A4 paper, write a program which declares & assigns the following values to their appropriate data types, i.e., `var age: Int = 25`:
+On a piece of A4 paper, write a program which declares & assigns the following values to their appropriate data types, i.e., `var age: Int = 25`:
 
 * "I <3 this course"
 * 13.37F
@@ -70,7 +68,8 @@ On the provided piece of A4 paper, write a program which declares & assigns the 
 * 'z'
 
 ## Functions
-A function declaration starts with the `fun` keyword, followed by the function name, followed by the parameter list in parentheses. Optionally, the parameter list is followed by the return type, separated by a colon. 
+A function declaration starts with the `fun` keyword
+followed by the function name & parameter list in parentheses. Optionally, the parameter list is followed by the return type, separated by a colon. 
 
 ```kotlin
 fun max(x: Int, y: Int): Int {
@@ -95,7 +94,7 @@ fun main() {
 ## Control Structures
 
 ### What is the difference between a statement & expression?
-The difference is that a statement is a top-level element in its enclosing block & does not have its own value, whereas an expression has its own value which can be used as part of another expression. Most control structures in **Kotlin**, except for loops (for, while & do-while) are expressions.
+A statement is a top-level element in its enclosing block & does not have its own value, whereas an expression has its own value which can be used as part of another expression. Most control structures in **Kotlin**, except for loops (for, while & do-while) are can be expressions.
 
 ```kotlin
 // if expression
@@ -105,7 +104,7 @@ fun main() {
     println(max(50, 10)) // 50
 }
 ```
-**Note:** The ternary operator does not exist in **Kotlin**.
+**Note:** The ternary expression does not exist in **Kotlin**. However, the `?:` (elvis) operator does. 
 
 ### For Loop
 The `for` loop is equivalent to a **Java** `for-each` loop. The most common application of this loop is iterating over an array or collection.
@@ -167,7 +166,7 @@ println(steaksCooked) // 5
 ```
 
 ### When
-The `when` construct can be thought of as a replacement for the `switch` construct in **Java**.
+The `when` construct can be thought of as the `switch` construct in **Java**.
 
 ```kotlin
 // when expression
@@ -423,12 +422,6 @@ fun main() {
     println(Color.BLUE.containsGreen()) // false
 }
 ```
-
-## Activity ✏️
-On the provided piece of paper, write a program with a regular class called `MobilePhone` & three properties called `osName`, `brand` & `model`. Override its `toString` using the same format as the `Person` class example.
-
-In the `main` function, create two `MobilePhone` objects. For the first `MobilePhone` object, print the `osName` & for the second `MobilePhone` object, print its `toString` method. 
-
 ## Interface
 Interfaces are similar to those in **Java**, where they can contain definitions of abstract methods as well as implementations of non-abstract methods, but can not contain any state.
 
@@ -497,7 +490,7 @@ fun main() {
 }
 ```
 
-`region` in the declaration is neither a `var` nor `val` - it is a constructor argument, whose value is passed to the `region` property of the superclass.
+`region` is neither a `var` nor `val`, rather a constructor argument, whose value is passed to the `region` property of the superclass.
 
 ```kotlin
 class BengalTiger(region: String) : Tiger(region = region, sound = "roooaaar")
@@ -505,41 +498,5 @@ class BengalTiger(region: String) : Tiger(region = region, sound = "roooaaar")
 fun main() {
     val bengalTiger: Tiger = BengalTiger("Sundarbans")
     bengalTiger.sound() // A tiger from Sundarbans says roooaaar!
-}
-```
-
-## Generics
-In **Kotlin**, you can declare a generic class or interface by putting angle brackets after the class name & the type parameters in the angle brackets. You can use the type parameters in the body of the class just like any other types.
-
-```kotlin
-class Stack<T>(vararg items: T) { 
-    private val els = items.toMutableList()
-    fun push(el: T) = els.add(el)
-    fun peek(): T = els.last()
-    fun pop(): T = els.removeAt(els.size - 1)
-    fun isEmpty() = els.isEmpty()
-    fun size() = els.size
-    override fun toString() = "Stack[${els.joinToString()}]"
-}
-```
-
-A generic function has its own type parameters. These must be replaced with the specific type arguments on each function invocation.
-
-```kotlin
-fun <T> stackOf(vararg els: T) = Stack(*els)
-
-fun main() {
-    val stack = stackOf(2, 4, 6, 8)
-
-    stack.push(10)
-
-    println(stack) // Stack[2, 4, 6, 8, 10]
-    println("peek(): ${stack.peek()}") // 10
-    println(stack) // Stack[2, 4, 6, 8, 10]
-
-    for (i in 1..stack.size()) {
-        println("pop(): ${stack.pop()}")
-        println(stack)
-    }
 }
 ```
