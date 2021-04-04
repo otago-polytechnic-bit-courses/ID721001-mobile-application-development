@@ -72,12 +72,12 @@ Have a look at this [video](https://www.youtube.com/watch?v=BOHK_w09pVA&t=300s) 
 **Resource:** https://square.github.io/retrofit
 
 ### ServiceInstance
-`Retrofit.Builder()` - build a new `Retrofit`.
-`baseUrl(String baseUrl)` - set the **API** base URL.
-`addConverterFactory(Converter.Factory factory)` - converter factory for serializing & deserializing objects.
-`build()` - create the **Retrofit** instance using the configured values.
+- `Retrofit.Builder()` - build a new `Retrofit`.
+- `baseUrl(String baseUrl)` - set the **API** base URL.
+- `addConverterFactory(Converter.Factory factory)` - converter factory for serializing & deserializing objects.
+- `build()` - create the **Retrofit** instance using the configured values.
 
-**Note:** calling `baseUrl()` is required before calling `build()`. 
+**Note:** calling the `baseUrl()` method is required before calling `build()` method. 
 
 `Retrofit` class converts your **API** interface, i.e., `IGitHubJobs` into a callable object, i.e., `retrofitService`. 
 
@@ -113,7 +113,7 @@ enum class ServiceStatus {
 ```
 
 ### ServiceStatusBindingAdapter
-**Binding adapters** are responsible for making calls to set values. For example, setting value to a property by calling the `setText()` method or setting a click event listener by calling the `setOnClickListener()` method. Using **data binding** you can create an attribute for any setter, i.e., `apiServiceStatus`. You will see how to use `apiServiceStatus` later.
+**Binding adapters** are responsible for making calls to set values. For example, setting value to a `TextView` by calling the `setText()` method or setting a click event listener to a `Button` by calling the `setOnClickListener()` method. By using **data binding**, you can create an attribute for any setter, i.e., `apiServiceStatus`. You will see how to use `apiServiceStatus` later.
 
 ```kotlin
 @BindingAdapter("apiServiceStatus")
