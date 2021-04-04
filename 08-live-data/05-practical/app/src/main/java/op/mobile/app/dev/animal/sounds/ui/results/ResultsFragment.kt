@@ -17,12 +17,13 @@ class ResultsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view: View =  inflater.inflate(R.layout.fragment_results, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_results, container, false)
 
         val tvFinalScore: TextView = view.findViewById(R.id.tv_final_score)
         val btnPlayAgain: Button = view.findViewById(R.id.btn_play_again)
 
-        val viewModelFactory = ResultsViewModelFactory(ResultsFragmentArgs.fromBundle(requireArguments()).score)
+        val viewModelFactory =
+            ResultsViewModelFactory(ResultsFragmentArgs.fromBundle(requireArguments()).score)
         val viewModel = ViewModelProvider(this, viewModelFactory).get(ResultsViewModel::class.java)
 
         tvFinalScore.text = activity?.getString(R.string.final_score, viewModel.score.toString())

@@ -10,7 +10,7 @@ To automate **UI tests**, you write your test code in **app > java > package nam
 ## Set up Espresso
 Go to **build.gradle (Module)** & make sure you have the **Espresso** dependency:
 
-```
+```xml
 androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 ```
 

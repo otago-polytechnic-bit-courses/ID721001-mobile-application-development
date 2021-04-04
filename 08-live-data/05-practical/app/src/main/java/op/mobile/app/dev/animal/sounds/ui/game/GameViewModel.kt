@@ -6,7 +6,7 @@ class GameViewModel : ViewModel() {
     private lateinit var animalSoundList: MutableList<String>
     var animalSound: String = ""
     var score: Int = 0
-    var isEnd: Boolean= false
+    var isEnd: Boolean = false
 
     init {
         resetAnimalSounds()
@@ -14,7 +14,8 @@ class GameViewModel : ViewModel() {
     }
 
     private fun resetAnimalSounds() {
-        animalSoundList = mutableListOf("Baa", "Woof", "Buzz", "Moo", "Neigh", "Oink", "Ribbit", "Quack")
+        animalSoundList =
+            mutableListOf("Baa", "Woof", "Buzz", "Moo", "Neigh", "Oink", "Ribbit", "Quack")
         animalSoundList.shuffle()
     }
 

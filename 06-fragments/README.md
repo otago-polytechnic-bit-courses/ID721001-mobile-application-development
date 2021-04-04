@@ -21,7 +21,7 @@ Lets take a look at what is happening...
 
 Go to **Gradle Scripts > build.grade (Module: BottomNavigation.app)**. You should see the following in the **dependencies** block:
 
-```
+```xml
 implementation 'androidx.navigation:navigation-fragment-ktx:2.3.4'
 implementation 'androidx.navigation:navigation-ui-ktx:2.3.4'
 ```

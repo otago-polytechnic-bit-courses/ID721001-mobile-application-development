@@ -41,7 +41,8 @@ class GameFragment : Fragment() {
     }
 
     private fun updateText() {
-        tvSound.text = activity?.getString(R.string.what_animal_makes_the_sound, viewModel.animalSound)
+        tvSound.text =
+            activity?.getString(R.string.what_animal_makes_the_sound, viewModel.animalSound)
         tvScore.text = activity?.getString(R.string.current_score, viewModel.score.toString())
     }
 
