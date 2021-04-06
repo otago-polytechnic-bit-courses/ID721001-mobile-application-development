@@ -165,7 +165,7 @@ class GitHubJobsViewModel : ViewModel() {
 
 ### GitHubJobsFragment Layout
 
-Note how `apiServiceStatus` data binding adapter is being used. 
+Note how `apiServiceStatus` binding adapter is being used. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
