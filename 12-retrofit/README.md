@@ -1,7 +1,7 @@
 # **Retrofit**
 
 ## Overview
-**Retrofit** is a **REST** client for Java & Kotlin. It makes it easy to request data via a **REST** based **webservice**.
+**Retrofit** is a **REST** client for Java & Kotlin. It makes it easy to request data via a **REST** based **web service**.
 
 ## Code Example
 Open the `api-retrofit` directory provided to you in **Android Studio**. 

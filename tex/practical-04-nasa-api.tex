@@ -34,7 +34,7 @@
 \maketitle
 
 \section*{Assessment Overview}
-In this assessment, you will design, develop \& UI test an application which consumes the \textbf{NASA API}. This assessment contributes \textbf{3\%} towards your final mark in \textbf{IN721: Mobile Application Development}.
+In this assessment, you will design, develop \& UI test an application which requests data from the \textbf{NASA API} \& displays the data using a \textbf{RecyclerView}. This assessment contributes \textbf{3\%} towards your final mark in \textbf{IN721: Mobile Application Development}.
 
 \section*{Learning Outcomes}
 At the successful completion of this course, learners will be able to: 
@@ -81,7 +81,7 @@ Learners may be requested to resubmit an assessment following a rework of part/s
 Resits \& reassessments are not applicable in \textbf{IN721: Mobile Application Development}.
 
 \section*{Instructions - Learning Outcomes 2, 3}
-\subsection*{Task One (1\%):}
+\subsection*{Task One (2\%):}
 Create a new project with the following configurations:
 \begin{itemize}
 	\item Template - Empty activity
@@ -92,7 +92,25 @@ Create a new project with the following configurations:
 	\item Minimum SDK - API 28: Android 9.0 (Pie) 
 \end{itemize} 
 
+The application structure is similar to the code examples from the \textbf{13-recycler-view} teaching session. Instead, you will request data from the \textbf{NASA API}. \\
 
-\subsection*{Task Two (2\%):}
+To use the \textbf{NASA API}, you must generate an \textbf{API key}. To do this, go to \href{https://api.nasa.gov}{https://api.nasa.gov} \& sign up. This \textbf{API key} allows you to access \& use \textbf{web services} available on the \textbf{Data.gov} developer network. \\
+
+Familiarise yourself with the following \textbf{API} URL: \\
+
+\href{https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000\&page=1\&api\_key=DEMO\_KEY}{https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000\&page=1\&api\_key=DEMO\_KEY} \\
+
+\textbf{Note:} you will replace \textbf{DEMO\_KEY} with your generated \textbf{API key}. \\
+
+It is important that you \textbf{do not} expose your \textbf{API key} publicly, i.e., in a public GitHub repository. To store your \textbf{API key} safely, declare it in \textbf{local.properties}. \textbf{Note:} pay careful attention to the comments. \\
+
+In \textbf{recycler\_view\_item.xml}, add two \textbf{TextViews} \& an \textbf{ImageView}. This will display the camera's name \& full name as well as the image source. Set \textbf{recycler\_view\_item.xml} to the \textbf{RecyclerView's listitem} attribute in \textbf{fragment\_nasa.xml}. \\
+
+Run your application on either an \textbf{Android Emulator} or \textbf{connect device}. \\ 
+
+<ADD IMAGE HERE>
+
+\subsection*{Task Three (1\%):}
+Create a new test file called \textbf{NASATest}. To do this, right-click on \textbf{op.mobile.app.dev.nasa (androidTest) $>$ Kotlin Class/File}. In \textbf{NASATest.kt}, write three UI tests. To run your test file, right-click \textbf{NASATest.kt $>$ 'Run NASATest'}.
 
 \end{document}
