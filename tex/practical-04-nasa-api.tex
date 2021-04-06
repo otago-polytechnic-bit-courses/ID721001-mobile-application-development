@@ -19,7 +19,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{College of Engineering, Construction and Living Sciences\\Bachelor of Information Technology}
-\lfoot{Practical 04: NASA API\\Version 1, Semester One, 2020}
+\lfoot{Practical 04: Countries API\\Version 1, Semester One, 2020}
 \rfoot{\thepage}
 
 \begin{document}
@@ -29,12 +29,12 @@
     \includegraphics[width=50mm]{./img/logo.png}
 \end{figure}
 
-\title{College of Engineering, Construction and Living Sciences\\Bachelor of Information Technology\\IN721: Mobile Application Development\\Level 7, Credits 15\\\textbf{Practical 04: NASA API}}
+\title{College of Engineering, Construction and Living Sciences\\Bachelor of Information Technology\\IN721: Mobile Application Development\\Level 7, Credits 15\\\textbf{Practical 04: Countries API}}
 \date{}
 \maketitle
 
 \section*{Assessment Overview}
-In this assessment, you will design, develop \& UI test an application which requests data from the \textbf{NASA API} \& displays the data using a \textbf{RecyclerView}. This assessment contributes \textbf{3\%} towards your final mark in \textbf{IN721: Mobile Application Development}.
+In this assessment, you will design, develop \& UI test an application which requests data from the \textbf{Country API} hosted on \textbf{GitHub Gist} \& displays the data using a \textbf{RecyclerView}. This assessment contributes \textbf{3\%} towards your final mark in \textbf{IN721: Mobile Application Development}.
 
 \section*{Learning Outcomes}
 At the successful completion of this course, learners will be able to: 
@@ -85,32 +85,26 @@ Resits \& reassessments are not applicable in \textbf{IN721: Mobile Application 
 Create a new project with the following configurations:
 \begin{itemize}
 	\item Template - Empty activity
-	\item Name - NASA
-	\item Package name - op.mobile.app.dev.nasa
-	\item Save location - /path to your practical GitHub repository/04-nasa
+	\item Name - Country
+	\item Package name - op.mobile.app.dev.country
+	\item Save location - /path to your practical GitHub repository/04-country
 	\item Language - Kotlin
 	\item Minimum SDK - API 28: Android 9.0 (Pie) 
 \end{itemize} 
 
-The application structure is similar to the code examples from the \textbf{13-recycler-view} teaching session. Instead, you will request data from the \textbf{NASA API}. \\
+The application structure is similar to the code examples from the \textbf{13-recycler-view} teaching session. Instead, you will request data from the \textbf{Country API}. \\
 
-To use the \textbf{NASA API}, you must generate an \textbf{API key}. To do this, go to \href{https://api.nasa.gov}{https://api.nasa.gov} \& sign up. This \textbf{API key} allows you to access \& use \textbf{web services} available on the \textbf{Data.gov} developer network. \\
+To use the \textbf{Country API}, you must generate an \textbf{API key}. To do this, go to \href{https://api.nasa.gov}{https://api.nasa.gov} \& sign up. This \textbf{API key} allows you to access \& use \textbf{web services} available on the \textbf{Data.gov} developer network. \\
 
 Familiarise yourself with the following \textbf{API} URL: \\
 
-\href{https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000\&page=1\&api\_key=DEMO\_KEY}{https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000\&page=1\&api\_key=DEMO\_KEY} \\
+\href{https://gist.githubusercontent.com/Grayson-Orr/34991fb3b0192aaf636e56623cbdd9d3/raw/32c5a4773b9d1a9ad5a0685fdcf8bbda3b664550/countries.json}{https://gist.githubusercontent.com/Grayson-Orr/34991fb3b0192aaf636e56623cbdd9d3/raw/32c5a4773b9d1a9ad5a0685fdcf8bbda3b664550/countries.json} \\
 
-\textbf{Note:} you will replace \textbf{DEMO\_KEY} with your generated \textbf{API key}. \\
-
-It is important that you \textbf{do not} expose your \textbf{API key} publicly, i.e., in a public GitHub repository. To store your \textbf{API key} safely, declare it in \textbf{local.properties}. \textbf{Note:} pay careful attention to the comments. \\
-
-In \textbf{recycler\_view\_item.xml}, add two \textbf{TextViews} \& an \textbf{ImageView}. This will display the camera's name \& full name as well as the image source. Set \textbf{recycler\_view\_item.xml} to the \textbf{RecyclerView's listitem} attribute in \textbf{fragment\_nasa.xml}. \\
+In \textbf{recycler\_view\_item.xml}, add two \textbf{TextViews} \& an \textbf{ImageView}. Set \textbf{recycler\_view\_item.xml} to the \textbf{RecyclerView's listitem} attribute in \textbf{fragment\_country.xml}. \\
 
 Run your application on either an \textbf{Android Emulator} or \textbf{connect device}. \\ 
 
-<ADD IMAGE HERE>
-
 \subsection*{Task Three (1\%):}
-Create a new test file called \textbf{NASATest}. To do this, right-click on \textbf{op.mobile.app.dev.nasa (androidTest) $>$ Kotlin Class/File}. In \textbf{NASATest.kt}, write three UI tests. To run your test file, right-click \textbf{NASATest.kt $>$ 'Run NASATest'}.
+Create a new test file called \textbf{CountryTest}. To do this, right-click on \textbf{op.mobile.app.dev.country (androidTest) $>$ Kotlin Class/File}. In \textbf{CountryTest.kt}, write three UI tests. To run your test file, right-click \textbf{CountryTest.kt $>$ 'Run CountryTest'}.
 
 \end{document}
