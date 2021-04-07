@@ -164,7 +164,7 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<GitHubJobs>?) {
     android:layout_marginTop="16dp"
     android:layout_marginEnd="16dp"
     android:layout_marginBottom="16dp"
-    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
