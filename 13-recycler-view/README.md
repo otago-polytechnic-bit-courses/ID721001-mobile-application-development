@@ -89,20 +89,19 @@ class ServiceViewHolder(private var binding: RecyclerViewItemBinding) :
 
 class ServiceAdapter :
     ListAdapter<GitHubJobs, ServiceViewHolder>(DiffCallback) {
-
     companion object DiffCallback : DiffUtil.ItemCallback<GitHubJobs>() {
         override fun areItemsTheSame(
             oldItem: GitHubJobs,
             newItem: GitHubJobs
         ): Boolean {
-            return oldItem === newItem
+            return oldItem.id == newItem.id
         }
 
         override fun areContentsTheSame(
             oldItem: GitHubJobs,
             newItem: GitHubJobs
         ): Boolean {
-            return oldItem.id == newItem.id
+            return oldItem == newItem
         }
     }
 
