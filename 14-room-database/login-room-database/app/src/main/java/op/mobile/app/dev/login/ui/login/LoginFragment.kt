@@ -30,10 +30,16 @@ class LoginFragment : Fragment() {
 
         binding.loginViewModel = viewModel
 
-        binding.rvJobs.adapter = LoginAdapter()
+        binding.rvLoginDetails.adapter = LoginAdapter()
 
         binding.btnLogin.setOnClickListener {
-            viewModel.insert(Login("hello", "P@ssw0rd123"))
+            val username = binding.etUsername.text.toString().trim()
+            val password = binding.etPassword.text.toString().trim()
+            when {
+                username.isEmpty() -> binding.etUsername.error = "Please enter a username"
+                password.isEmpty() -> binding.etPassword.error = "Please enter a password"
+                else -> viewModel.insertLoginDetail(Login(username, password))
+            }
         }
 
         return binding.root

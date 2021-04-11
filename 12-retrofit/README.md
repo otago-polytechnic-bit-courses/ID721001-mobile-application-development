@@ -13,8 +13,10 @@ Lets take a look at what is happening...
 Go to **Gradle Scripts > build.grade (Module: API.app)**. You should see the following in the **dependencies** block:
 
 ```xml
+...
 implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+...
 ```
 
 Without this dependencies, you can **not** use **Retrofit**.
@@ -59,6 +61,8 @@ data class GitHubJobs(val id: String, val title: String)
 **Retrofit** converts your **API** into a **Kotlin** interface. Annotations on an interface method & its parameters indicate how a request will be handled. There are eight different annotations: `HTTP`, `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `OPTIONS` & `HEAD`. The **URL** of the resource is specified in the annotation. Also, you can specify query parameters in the **URL**.
 
 ```kotlin
+...
+
 interface IGitHubJobs {
     @GET("positions.json?description=kotlin&page=1")
     suspend fun getResponse(): List<GitHubJobs>
@@ -82,6 +86,8 @@ Have a look at this [video](https://www.youtube.com/watch?v=BOHK_w09pVA&t=300s) 
 `Retrofit` class converts your **API** interface, i.e., `IGitHubJobs` into a callable object, i.e., `retrofitService`. 
 
 ```kotlin
+...
+
 private const val BASE_URL = "https://jobs.github.com/"
 
 object ServiceInstance {
@@ -112,10 +118,12 @@ enum class ServiceStatus {
 }
 ```
 
-### ServiceStatusBindingAdapter
+### ServiceBindingAdapter
 **Binding adapters** are responsible for making calls to set values. For example, setting value to a `TextView` by calling the `setText()` method or setting a click event listener to a `Button` by calling the `setOnClickListener()` method. By using **data binding**, you can create an attribute for any setter, i.e., `apiServiceStatus`. You will see how to use `apiServiceStatus` later.
 
 ```kotlin
+...
+
 @BindingAdapter("apiServiceStatus")
 fun bindAPIServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
     when (status) {
@@ -139,6 +147,8 @@ fun bindAPIServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
 **Coroutines** provide an API that enables you to write asynchronous code. You can define a `CoroutineScope`, i.e., `viewModelScope.launch`, which manages when your **coroutines** should run. 
 
 ```kotlin
+...
+
 class GitHubJobsViewModel : ViewModel() {
     private val _status = MutableLiveData<ServiceStatus>()
     val status: LiveData<ServiceStatus> get() = _status
@@ -227,6 +237,8 @@ Note how `apiServiceStatus` binding adapter is being used.
 This is similar to previous code examples.
 
 ```kotlin
+...
+
 class GitHubJobsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

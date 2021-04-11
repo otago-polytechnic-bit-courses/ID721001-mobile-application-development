@@ -128,7 +128,7 @@ class ServiceAdapter :
 }
 ```
 
-### ServiceStatusBindingAdapter
+### ServiceBindingAdapter
 
 - `submitList()` - submit a list to be diffed & displayed.
 

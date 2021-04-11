@@ -8,10 +8,13 @@ import kotlinx.coroutines.flow.Flow
 import op.mobile.app.dev.login.model.Login
 
 @Dao
-interface LoginDao {
+interface ILoginDao {
+    @Query("SELECT * FROM login")
+    fun getAll(): Flow<List<Login>>
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(login: Login)
 
-    @Query("SELECT * FROM login ORDER BY username ASC")
-    fun getAllLoginDetails(): Flow<List<Login>>
+    @Query("DELETE FROM login")
+    suspend fun deleteAll()
 }
