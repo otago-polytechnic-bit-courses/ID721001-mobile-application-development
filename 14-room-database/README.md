@@ -2,8 +2,21 @@
 
 ## Overview
 
+Lets look at the following diagram & discuss how they work together:
+
+<img src="../tex/img/14-architecture-components.png" width="450" height="350" />
+
+- LiveData - a data holder class that can be observed. Always holds the latest version of data & notifies its observers when the data has changed.
+- ViewModel - acts as the bridge between the **Repository** & the **UI controller**. The **UI controller** no longer needs to worry about the origin of the data.
+- Repository - primarily used to manage multiple data sources.
+- Entity - an annotated class that describes a database table when working with **Room**.
+- Room database - serves as the access point to a **SQLite** database. This uses the **DAO** to issue queries to a **SQLite** database.
+- SQLite database - on device storage. **Room's** persistence library creates & maintains this database for you.
+- DAO - maps **SQL** queries to method calls.
+
 ## Code Example
-Open the `login-room-database` directory provided to you in **Android Studio**. 
+
+Open the `login-room-database` directory provided to you in **Android Studio**.
 
 Lets take a look at what is happening...
 
@@ -19,9 +32,12 @@ kapt 'androidx.room:room-compiler:2.2.6'
 ...
 ```
 
-Without this dependencies, you can **not** use **Retrofit**.
+Without this dependencies, you can **not** use **Room database**.
 
 ### Login
+
+To make the following **data** class meaningful to a **Room database**, you need to make the association between the class, i.e., `Login` & the database using **Kotlin** annotations.
+
 ```kotlin
 ...
 
@@ -40,6 +56,9 @@ data class Login(
 ```
 
 ### ILoginDao
+
+The compiler checks the **SQL** & generates queries from convenience annotations for common queries, i.e., `@Insert`. The **DAO** must be an interface or an abstract class. **Note:** all queries must be executed on a separate thread.
+
 ```kotlin
 ...
 
@@ -56,7 +75,73 @@ interface LoginDao {
 }
 ```
 
+A `Flow` can emit multiple values sequentially whereas `suspend` functions can only return a single value. For example, you can use `Flow` to receive live updates from a database.
+
+### LoginDb
+
+- Define a **singleton**, i.e., `LoginDb` to prevent having multiple instances of the database opened at the same time.
+- The database class must be `abstract` & extend `RoomDatabase`.
+- Annotate the database class with `@Database` & use the annotation parameters to declare the `entities`, `version` & `exportSchema`.
+- The database class exposes a **DAO** through an `abstract` getter method.
+- `getDatabase()` returns the **singleton**. It will create the database the first time it is accessed.
+
+```kotlin
+@Database(entities = [Login::class], version = 1, exportSchema = true)
+abstract class LoginDb : RoomDatabase() {
+    abstract fun loginDao(): ILoginDao
+
+    companion object {
+        @Volatile
+        private var INSTANCE: LoginDb? = null
+
+        fun getDatabase(
+            context: Context,
+            scope: CoroutineScope
+        ): LoginDb {
+            return INSTANCE ?: synchronized(this) {
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    LoginDb::class.java,
+                    "login_database"
+                )
+                    .addCallback(LoginDbCallback(scope))
+                    .build()
+                INSTANCE = instance
+                instance
+            }
+        }
+    }
+
+    private class LoginDbCallback(
+        private val scope: CoroutineScope
+    ) : RoomDatabase.Callback() {
+        override fun onCreate(db: SupportSQLiteDatabase) {
+            super.onCreate(db)
+            INSTANCE?.let { database ->
+                scope.launch(Dispatchers.IO) {
+                    populateDb(database.loginDao())
+                }
+            }
+        }
+
+        suspend fun populateDb(loginDao: ILoginDao) {
+            loginDao.deleteAll()
+            var login = Login("john.doe", "P@ssw0rd123")
+            loginDao.insert(login)
+            login = Login("jane.doe", "P@ssw0rd123")
+            loginDao.insert(login)
+        }
+    }
+}
+```
+
 ### LoginRepository
+
+A **repository** class abstracts access to multiple data sources. This is a suggested best practice for code separation & architecture.
+
+**Why use a repository class?**
+It manages your queries & allows multiple data sources, i.e., an API or database.
+
 ```kotlin
 ...
 
@@ -71,6 +156,7 @@ class LoginRepository (private val loginDao: ILoginDao) {
 ```
 
 ### LoginViewModel
+
 ```kotlin
 ...
 
@@ -99,6 +185,7 @@ class LoginModelFactory(private val repository: LoginRepository) : ViewModelProv
 ```
 
 ### LoginFragment
+
 ```kotlin
 ...
 
@@ -137,6 +224,7 @@ class LoginFragment : Fragment() {
 ```
 
 ### LoginApplication
+
 ```kotlin
 ...
 

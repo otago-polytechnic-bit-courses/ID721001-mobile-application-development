@@ -10,7 +10,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import op.mobile.app.dev.login.model.Login
 
-@Database(entities = [Login::class], version = 1, exportSchema = false)
+@Database(entities = [Login::class], version = 1, exportSchema = true)
 abstract class LoginDb : RoomDatabase() {
     abstract fun loginDao(): ILoginDao
 
@@ -26,7 +26,7 @@ abstract class LoginDb : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     LoginDb::class.java,
-                    "database"
+                    "login_database"
                 )
                     .addCallback(LoginDbCallback(scope))
                     .build()
