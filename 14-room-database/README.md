@@ -155,7 +155,14 @@ class LoginRepository (private val loginDao: ILoginDao) {
 }
 ```
 
+The **DAO** is passed into the **repository** constructor & not the entire database. The **repository** only needs access to the **DAO** because the the **DAO** contains the read/write methods for the database.
+
+The list of login details is a public property & initialised by getting the `Flow` list of login details from **Room**. **Room** executes all queries on a separate thread, but executes `suspend` queries off the main thread.
+
 ### LoginViewModel
+
+- Initialise `LiveData` with `allLoginDetails` `Flow` from the `LoginRepository` then convert the `Flow` to `LiveData` by calling `asLiveData()`.
+- Create a wrapper method called `insertLoginDetail()` that calls the `LoginRepository's` `insertLoginDetail()` method. This encapsulates the implementation of the wrapper method from the UI.
 
 ```kotlin
 ...
@@ -182,6 +189,48 @@ class LoginModelFactory(private val repository: LoginRepository) : ViewModelProv
         throw IllegalArgumentException("Unknown ViewModel class")
     }
 }
+```
+
+### LoginApplication
+You want to have one instance of the database & repository in your application. A way to achieve this is by creating them as members of an `Application` class. They will be retrieve when needed & not constructed every time.
+
+```kotlin
+...
+
+class LoginApplication : Application() {
+    private val applicationScope = CoroutineScope(SupervisorJob())
+    private val database by lazy { LoginDb.getDatabase(this, applicationScope) }
+    val repository by lazy { LoginRepository(database.loginDao()) }
+}
+```
+
+### AndroidManifest
+
+Set the `name` attribute in the `application` element to the `Application` class.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="op.mobile.app.dev.login">
+
+    <application
+        android:name=".login.LoginApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Login">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
 ```
 
 ### LoginFragment
@@ -223,41 +272,4 @@ class LoginFragment : Fragment() {
 }
 ```
 
-### LoginApplication
 
-```kotlin
-...
-
-class LoginApplication : Application() {
-    private val applicationScope = CoroutineScope(SupervisorJob())
-    private val database by lazy { LoginDb.getDatabase(this, applicationScope) }
-    val repository by lazy { LoginRepository(database.loginDao()) }
-}
-```
-
-### AndroidManifest
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="op.mobile.app.dev.login">
-
-    <application
-        android:name=".login.LoginApplication"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Login">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-
-</manifest>
-```
