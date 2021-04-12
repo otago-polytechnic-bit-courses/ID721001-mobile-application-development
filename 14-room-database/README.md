@@ -184,7 +184,7 @@ class LoginViewModel(private val repository: LoginRepository) : ViewModel() {
 ...
 
 @Suppress("UNCHECKED_CAST")
-class LoginModelFactory(private val repository: LoginRepository) : ViewModelProvider.Factory {
+class LoginViewModelFactory(private val repository: LoginRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(LoginViewModel::class.java))
             return LoginViewModel(repository) as T
@@ -250,7 +250,7 @@ class LoginFragment : Fragment() {
         )
 
         val viewModelFactory =
-            LoginModelFactory((activity?.applicationContext as LoginApplication).repository)
+            LoginViewModelFactory((activity?.applicationContext as LoginApplication).repository)
         val viewModel = ViewModelProvider(this, viewModelFactory).get(LoginViewModel::class.java)
 
         binding.lifecycleOwner = viewLifecycleOwner
