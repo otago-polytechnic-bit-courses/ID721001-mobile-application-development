@@ -117,9 +117,9 @@ In \textbf{ServiceStatusBindingAdapter.kt}, add the following \textbf{BindingAda
 
     @BindingAdapter("flagImage")
     fun bindFlagImage(imageView: ImageView, imageUrl: String) {
-        Glide.with(view.context)
+        Glide.with(imageView.context)
             .load(imageUrl).apply(RequestOptions().circleCrop())
-            .into(view)
+            .into(imageView)
     }
 \end{verbatim}
 
