@@ -23,7 +23,7 @@ class LoginFragment : Fragment() {
         )
 
         val viewModelFactory =
-            LoginModelFactory((activity?.applicationContext as LoginApplication).repository)
+            LoginViewModelFactory((activity?.applicationContext as LoginApplication).repository)
         val viewModel = ViewModelProvider(this, viewModelFactory).get(LoginViewModel::class.java)
 
         binding.lifecycleOwner = viewLifecycleOwner
@@ -33,12 +33,16 @@ class LoginFragment : Fragment() {
         binding.rvLoginDetails.adapter = LoginAdapter()
 
         binding.btnLogin.setOnClickListener {
-            val username = binding.etUsername.text.toString().trim()
-            val password = binding.etPassword.text.toString().trim()
+            val username = binding.etUsername
+            val password = binding.etPassword
             when {
-                username.isEmpty() -> binding.etUsername.error = "Please enter a username"
-                password.isEmpty() -> binding.etPassword.error = "Please enter a password"
-                else -> viewModel.insertLoginDetail(Login(username, password))
+                username.text.toString().trim().isEmpty() -> binding.etUsername.error = "Please enter a username"
+                password.text.toString().trim().isEmpty() -> binding.etPassword.error = "Please enter a password"
+                else -> {
+                    viewModel.insertLoginDetail(Login(username.text.toString().trim(),  password.text.toString().trim()))
+                    username.text.clear()
+                    password.text.clear()
+                }
             }
         }
 
