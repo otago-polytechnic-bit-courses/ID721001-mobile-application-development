@@ -1,7 +1,38 @@
 # **Google Maps**
 
-# **Google Maps**
+## Overview
 
+## Code Example
+
+Open the `companies-google-maps` directory provided to you in **Android Studio**.
+
+Lets take a look at what is happening...
+
+### build.grade
+
+Go to **Gradle Scripts > build.grade (Module: Companies.app)**. You should see the following in the **dependencies** block:
+
+```xml
+...
+implementation 'com.google.android.gms:play-services-maps:17.0.0'
+implementation 'com.google.code.gson:gson:2.8.6'
+implementation 'com.google.maps.android:android-maps-utils:0.5'
+...
+```
+
+Without this dependencies, you can **not** use **Google maps**.
+
+Also
+
+```xml
+def secretsProperties = new Properties()
+if (rootProject.file("local.properties").exists()) {
+    rootProject.file("local.properties")?.withInputStream {
+        secretsProperties.load(it)
+    }
+}
+resValue "string", "google_maps_key", (secretsProperties["GOOGLE_MAPS_KEY"] ?: "")
+```
 
 
 ```kotlin
