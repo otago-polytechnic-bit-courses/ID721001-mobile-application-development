@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="radius_8">8dp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+</resources>
