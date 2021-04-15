@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
          *  - In activity_main.xml, there is an AppBarLayout containing a Toolbar view
          */
         val toolbar: Toolbar = findViewById(R.id.toolbar)
-        toolbar.setTitleTextColor(Color.YELLOW) // You may use a <color> element declared in res > values > colors.xml. Use R.color.<name of color>
+        toolbar.setTitleTextColor(Color.YELLOW) // You may use a <color> element declared in res > values > colors.xml. To do this, use R.color.<name of color>
         setSupportActionBar(toolbar)
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
