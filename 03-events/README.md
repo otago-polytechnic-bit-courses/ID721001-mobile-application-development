@@ -63,4 +63,4 @@ Open the `03-login` directory provided to you in **Android Studio**. In the `But
 
 Run the project's application on both the **Android Emulator** & a **connected device**. 
 
-<img src="../tex/img/03-events/readme/login-toast.png" width="250" height="450" />
+<img src="../resources/img/03-events/readme/login-toast.png" width="250" height="450" />
