@@ -17,7 +17,7 @@ On the provided piece of A4 paper, research & answer the following:
 
 The following image displays the major components of the **Android** platform.
 
-<img src="../tex/img/02-android-overview/readme/android-software-stack.png" width="350" height="500" />
+<img src="../resources/img/02-android-overview/readme/android-software-stack.png" width="350" height="500" />
 
 ### Linux Kernel
 The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufacturers to develop drivers.
@@ -50,7 +50,7 @@ On the provided piece of A4 paper, research & answer the following:
 ## Market Share
 According to **StatCounter**, **Android** has been the most popular mobile os since August 2013.
 
-<img src="../tex/img/02-android-overview/readme/mobile-os-market-share.png" width="750" height="450" />
+<img src="../resources/img/02-android-overview/readme/mobile-os-market-share.png" width="750" height="450" />
 
 **Resource:** https://gs.statcounter.com/os-market-share/mobile/worldwide
 
@@ -65,11 +65,11 @@ To create a new Android project, follow these steps:
 1. Open **Android Studio**.
 2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
 
-<img src="../tex/img/02-android-overview/readme/android-studio-home.JPG" width="625" height="400" />
+<img src="../resources/img/02-android-overview/readme/android-studio-home.JPG" width="625" height="400" />
 
 3. In the **Select a Project Template** window, select **Empty Activity** and click **Next**.
 
-<img src="../tex/img/02-android-overview/readme/android-studio-template.JPG" width="650" height="475" />
+<img src="../resources/img/02-android-overview/readme/android-studio-template.JPG" width="650" height="475" />
 
 4. In the **Configure Your Project** window, complete the following:
     - Enter **Login** in the **Name** field.
@@ -80,7 +80,7 @@ To create a new Android project, follow these steps:
     - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
     - If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
     
-<img src="../tex/img/02-android-overview/readme/android-studio-project.JPG" width="650" height="475" />
+<img src="../resources/img/02-android-overview/readme/android-studio-project.JPG" width="650" height="475" />
 
 5. Click **Finish**.
 
@@ -118,7 +118,7 @@ Every application must have an `AndroidManifest.xml` file in the root of the `ap
 
 **app > java > op.mobile.app.dev.login > MainActivity**
 
-<img src="../tex/img/02-android-overview/readme/android-studio-main-activity.JPG" width="750" height="500" />
+<img src="../resources/img/02-android-overview/readme/android-studio-main-activity.JPG" width="750" height="500" />
 
 An `Activity` is a single, focused thing that the user can do. Almost all activities interact with the user. The **activity** class takes care of creating a window for you in which you can place your UI with `setContentView(View)`. There are two methods almost all subclasses of **activity** will implement:
 - `onCreate(Bundle)` is where you initialise your **activity**. In this method, you usually call `setContentView(View)` with a layout resource defining your UI, & using `findViewById(int)` to retrieve the `Views` in that UI that you need to interact with programmatically.
@@ -133,7 +133,7 @@ An `Activity` is a single, focused thing that the user can do. Almost all activi
 
 A layout resource defines the architecture for the UI in an **activity** class or a **component** of a UI.
 
-<img src="../tex/img/02-android-overview/readme/android-studio-activity-main-xml.JPG" width="750" height="500" />
+<img src="../resources/img/02-android-overview/readme/android-studio-activity-main-xml.JPG" width="750" height="500" />
 
 Currently we are in **Design** view. Click **Code**. You should see the following **XML** code:
 
@@ -270,7 +270,7 @@ Use the **Login** project you created earlier for this activity. In `activity_ma
 
 The UI should look like the following:
 
-<img src="../tex/img/02-android-overview/readme/android-studio-activity-ui.JPG" width="275" height="400" />
+<img src="../resources/img/02-android-overview/readme/android-studio-activity-ui.JPG" width="275" height="400" />
 
 - Why are the `View` attributes highlighted orange?
 - How do we fix this?
@@ -286,7 +286,7 @@ To start the **Android Emulator** & run an application in your project:
 3. In the **System Image** window, select a system image & click **Next**. **Note:** the system image must be ≥ the **Minimum SDK** selected when you configured your project.
 4. In the **Android Virtual Device (AVD)** window, leave the default configuration as is & click **Finish**.
 5. In the toolbar, select the **AVD** that you want to run your application on from the device drop-down menu.
-6. Click **Run** <img src="../tex/img/02-android-overview/readme/android-studio-toolbar-run.png" width="13" height="13" />
+6. Click **Run** <img src="../resources/img/02-android-overview/readme/android-studio-toolbar-run.png" width="13" height="13" />
 
 **Resource:** https://developer.android.com/studio/run/emulator
 
