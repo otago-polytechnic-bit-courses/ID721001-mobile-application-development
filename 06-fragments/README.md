@@ -8,7 +8,7 @@ A `Fragment` is a reusable portion of your application's UI. A **fragment** defi
 
 Here is an example...consider an application that responds to various screen sizes, i.e., a mobile and tablet device. On a tablet device, the application should display a static `NavigationDrawer` & a list in a `GridLayout`. On a mobile device, the application should display a `BottomNavigationView` & a list in a `LinearLayout`. Managing all the variations in the activity can be tedious...trust me. Separating navigation elements from the content can be much more manageable. The **activity** is responsible for displaying the correct UI navigation & the **fragment** is responsible for displaying the list in a layout.
 
-<img src="../tex/img/06-fragments/readme/fragment-large-small-screen.png" width="750" height="450" />
+<img src="../resources/img/06-fragments/readme/fragment-large-small-screen.png" width="750" height="450" />
 
 While your **activity** is in the `onStart` lifecycle state or higher, **fragments** can be added, replaced or removed from an **activity**.
 
@@ -186,7 +186,7 @@ The **navigation graph** is used to manage your application's navigation. A **na
 
 **Design view:**
 
-<img src="../tex/img/06-fragments/readme/navigation-design-graph.JPG" width="350" height="550" />
+<img src="../resources/img/06-fragments/readme/navigation-design-graph.JPG" width="350" height="550" />
 
 **Code view:**
 
@@ -221,4 +221,4 @@ The **navigation graph** is used to manage your application's navigation. A **na
 
 Run the project's application on either an **Android Emulator** or a **connected device**. 
 
-<img src="../tex/img/06-fragments/readme/fragment-home.png" width="250" height="450" /><img src="../tex/img/06-fragments/readme/fragment-dashboard.png" width="250" height="450" /><img src="../tex/img/06-fragments/readme/fragment-notifications.png" width="250" height="450" />
+<img src="../resources/img/06-fragments/readme/fragment-home.png" width="250" height="450" /><img src="../resources/img/06-fragments/readme/fragment-dashboard.png" width="250" height="450" /><img src="../resources/img/06-fragments/readme/fragment-notifications.png" width="250" height="450" />
