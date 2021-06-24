@@ -34,7 +34,7 @@
 \maketitle
 
 \section*{Assessment Overview}
-In this assessment, you will develop \& publish a travelling application using \textbf{Kotlin} in \textbf{Android Studio} \& \textbf{Google Play Store}. \textbf{Android} topics such as \textbf{ViewModel}, \textbf{LiveData}, \textbf{Room Database} \& \textbf{Google Map} were formally covered in the teaching sessions. The main purpose of this assessment is not just to build a mobile application, rather to demonstrate your ability to effectively learn intermediate/advanced \textbf{Android} features \& other application development topics independently. In addition, marks will be allocated for code elegance, documentation \& \textbf{Git/GitHub} usage. \\
+In this assessment, you will develop \& publish a travelling application using \textbf{Kotlin} in \textbf{Android Studio}. \textbf{Android} topics such as \textbf{ViewModel}, \textbf{LiveData}, \textbf{Room Database} \& \textbf{Google Map} were formally covered in the teaching sessions. The main purpose of this assessment is not just to build a mobile application, rather to demonstrate your ability to effectively learn intermediate/advanced \textbf{Android} features \& other application development topics independently. In addition, marks will be allocated for code elegance, documentation \& \textbf{Git/GitHub} usage. \\
 
 The travelling application will help you sound like a local \& adapt to a new culture. You will begin by selecting a country you wish to travel to. For example, if you wish to travel to Italy, you would be provided with all the necessary tools such as text translation \& text to speech support, a selection of well-known Italian phrases, an interactive quiz to test your knowledge of Italian culture \& a map containing locations of Italy's top-rated tourist attractions. A user of your travelling application must be able to select from at least two countries per \href{https://www.worldometers.info/geography/7-continents/}{continent} \textbf{excluding} Antarctica. 
 
@@ -99,7 +99,7 @@ You will need to submit an application \& documentation that meet the following 
 	\item Application must run on \textbf{API 28: Android 9.0 (Pie)}.
 	\item Text translation support. If a country is multilingual (use of more than one language), choose one language. For example, Canada's main languages are English \& French. You would choose either English or French.
 	      \begin{itemize}
-		      \item Use \textbf{Retrofit} \& the \textbf{Yandex Translate API} to translate text from one language to another. To use the \textbf{Yandex Translate API}, you will need an \textbf{API key}. A key is available in the \textbf{Microsoft Teams} course channel, under the \textbf{Files} tab. Ensure that the \textbf{API key} is not publicly exposed in your program files.
+		      \item Use \textbf{Retrofit} \& the \textbf{Yandex Translate API} to translate text from one language to another. To use the \textbf{Yandex Translate API}, you will need an \textbf{API key}. A key is available in the \textbf{Microsoft Teams} course channel, under the \textbf{Files} tab. Ensure that the \textbf{API key} is not publicly exposed in your program files. Alternatively, you can use the \textbf{Google Translate API}.
 		      \item Display a custom \textbf{ProgressDialog} while the text is being translated.
 		      \item Handle incorrectly formatted input fields. For example, an \textbf{EditText} is blank or empty.
 		      \item \textbf{Resource:} \footnotesize\href{https://tech.yandex.com/translate}{https://tech.yandex.com/translate}
@@ -112,7 +112,7 @@ You will need to submit an application \& documentation that meet the following 
 	\item Selection of at least five well-known phrases. For example, "No worries, mate, she'll be right" is a well-known Australian phrase.
 	\item An interactive quiz for each country.
 	      \begin{itemize}
-		      \item Quiz data must be fetched from a \textbf{JSON} file stored in the \textbf{raw} resource directory.
+		      \item Quiz data can be fetched from an API using \textbf{Retrofit} or a \textbf{JSON} file stored in the \textbf{raw} resource directory.
 		      \item Quiz topics may include animals, culture, food, drink, geography \& sport.
 		      \item Each quiz must have at least five questions.
 		      \item Questions are multi-choice \& true or false.
@@ -131,7 +131,7 @@ You will need to submit an application \& documentation that meet the following 
 	\item Application can be exited via a \textbf{DialogFragment}. The \textbf{DialogFragment} must prompt the user when the user double taps the mobile device's back button.
 	\item \textbf{Google Map} displaying top-rated tourist attractions.
 	      \begin{itemize}
-		      \item Top-rated tourist attraction data must be fetched from a \textbf{JSON} file stored in the \textbf{raw} resource directory.
+		      \item Top-rated tourist attraction data must be fetched from an API using \textbf{Retrofit} or a \textbf{JSON} file stored in the \textbf{raw} resource directory.
 		      \item Each data object will be represented with a marker on a \textbf{Google Map}.
 		      \item The marker's information window must display the attraction's name \& coordinates (latitude \& longitude).
 		      \item \textbf{Resource:} \footnotesize\href{https://developers.google.com/maps/documentation/android-sdk/start}{https://developers.google.com/maps/documentation/android-sdk/start}
@@ -159,22 +159,6 @@ You will need to submit an application \& documentation that meet the following 
 		      \item \textbf{Resource:} \footnotesize\href{https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView}{https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView}
 	      \end{itemize}
 	\item Visually attractive UI with a coherent graphical theme \& style using \textbf{Material Design}.
-	\item Application is published to \textbf{Google Play Store}.
-	      \begin{itemize}
-		      \item To published to \textbf{Google Play Store}, you will need a \textbf{Google Play Console} account. The account's credentials are available in the \textbf{Microsoft Teams} course channel, under the \textbf{Files} tab. The account will be available to all learners in the course. \textbf{Do not} disable any applications published on this account.
-		      \item When you create your application, name the package appropriately. For example, \\ \textbf{op.mobile.app.dev.$<$username$>$.travelling}. \textbf{Note:} replace \textbf{username} with your \textbf{Otago Polytechnic} username.
-		      \item \textbf{Resources:}
-		            \begin{itemize}
-									\item \footnotesize\href{https://developer.android.com/studio/publish/app-signing}{https://developer.android.com/studio/publish/app-signing}
-			            \item \footnotesize\href{https://support.google.com/googleplay/android-developer/answer/113469?hl=en}{https://support.google.com/googleplay/android-developer/answer/113469?hl=en}
-		            \end{itemize}
-	      \end{itemize}
-	\item Ability to download your application from \textbf{Google Play Store} on to multiple mobile devices. The mobile devices used to download your application will be:
-	      \begin{itemize}
-		      \item Pixel 2 - 5.0"
-		      \item Pixel XL - 5.5"
-		      \item Pixel 3a XL - 6.0"
-	      \end{itemize}
 	\item At least \textbf{15} UI tests which verify that your application is functioning correctly.
 \end{itemize}
 
@@ -217,7 +201,6 @@ You will need to submit an application \& documentation that meet the following 
 			            \item \footnotesize\href{https://kotlinlang.org/docs/reference/kotlin-doc.html}{https://kotlinlang.org/docs/reference/kotlin-doc.html}
 		            \end{itemize}
 					\end{itemize}
-		      \item URL to your application on \textbf{Google Play Store}.
 	      \end{itemize}
 			\end{itemize}
 			\begin{itemize}
