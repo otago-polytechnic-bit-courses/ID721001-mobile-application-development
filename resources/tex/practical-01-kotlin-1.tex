@@ -1,0 +1,293 @@
+% Author: Grayson Orr
+% Course: IN721: Mobile Application Development
+
+\documentclass{article}
+\author{}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage[margin = 2.25cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{fancyhdr}
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue
+}
+\setlength\parindent{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{College of Engineering, Construction \& Living Sciences\\Bachelor of Information Technology}
+\lfoot{Practical 01: Kotlin 1\\Version 1, Semester Two, 2021}
+\rfoot{\thepage}
+
+\begin{document}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=50mm]{../../resources/img/logo.png}
+\end{figure}
+
+\title{College of Engineering, Construction \& Living Sciences\\Bachelor of Information Technology\\IN721: Mobile Application Development\\Level 7, Credits 15\\\textbf{Practical 01: Kotlin 1}}
+\date{}
+\maketitle
+
+\section*{Assessment Overview}
+In this assessment, you will solve 10 coding problems using \textbf{Kotlin} in \textbf{IntelliJ IDEA}. This assessment contributes 5\% towards your final mark in \textbf{IN721: Mobile Application Development}.
+
+\section*{Learning Outcomes}
+At the successful completion of this course, learners will be able to: 
+\begin{enumerate}
+	\item Implement \& publish complete, non-trivial, industry-standard mobile applications following sound architectural \& code-quality standards.
+	\item Identify relevant use cases for a mobile computing scenario \& incorporate them into an effective user experience design.
+	\item Follow industry standard software engineering practice in the design of mobile applications.
+\end{enumerate} 
+
+\section*{Assessment Table}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|l|l|l|l|}
+	\hline
+	\vtop{\hbox{\strut \textbf{Assessment}}\hbox{\strut \textbf{Activity}}} & \textbf{Weighting} & \vtop{\hbox{\strut \textbf{Learning}}\hbox{\strut \textbf{Outcomes}}} & \vtop{\hbox{\strut \textbf{Assessment}}\hbox{\strut \textbf{Grading Scheme}}} & \vtop{\hbox{\strut \textbf{Completion}}\hbox{\strut \textbf{Requirements}}} \\
+	
+	\hline
+	
+	\small Practicals                                                        & \small 10\%        & \small 2, 3                                                           & \small CRA                                                                    & \small Cumulative                                                           \\ \hline
+	\small Project                                                          & \small 70\%        & \small 1, 2, 3                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline
+	\small Presentation                                                          & \small 20\%        & \small 2, 3                                                        & \small CRA                                                                    & \small Cumulative                                                           \\ \hline
+\end{tabular}
+
+\section*{Conditions of Assessment}
+You will complete this assessment during your learner managed time, however, there will be availability during the teaching sessions to discuss the requirements \& your progress of this assessment. This assessment will need to be completed by \textbf{Friday, 13 August 2021}. 
+
+\section*{Pass Criteria}
+This assessment is criterion-referenced (CRA) with a cumulative pass mark of \textbf{50\%} over all assessments in \textbf{IN721: Mobile Application Development}.
+
+\section*{Authenticity}
+All parts of your submitted assessment must be completely your work \& any references must be cited appropriately including, externally-sourced graphic elements. Provide your references in a \textbf{README.md} file. All media must be royalty free (or legally purchased) for educational use. Failure to do this will result in a mark of \textbf{zero} for this assessment.
+
+\section*{Policy on Submissions, Extensions, Resubmissions \& Resits}
+The school's process concerning submissions, extensions, resubmissions \& resits complies with \textbf{Otago Polytechnic} policies. Learners can view policies on the \textbf{Otago Polytechnic} website located at \href{https://www.op.ac.nz/about-us/governance-and-management/policies}{https://www.op.ac.nz/about-us/governance-and-management/policies}.
+
+\section*{Submissions}
+You must submit all program files via \textbf{GitHub Classroom}. Here is the URL to the repository you will use for your submission – \href{https://classroom.github.com/a/Bvbfy\_\_J}{https://classroom.github.com/a/Bvbfy\_\_J}. Create a new branch called  \textbf{01-kotlin-1} from the \textbf{main} branch by running the command - \textbf{git checkout -b 01-kotlin-1}. This branch will be your development branch for this assessment. Once you have completed this assessment, create a pull request \& assign the \textbf{GitHub} user \textbf{grayson-orr} to a reviewer. \textbf{Do not} merge your own pull request. Late submissions will incur a \textbf{10\% penalty per day}, rolling over at \textbf{5:00 PM}.
+
+\section*{Extensions}
+Familiarise yourself with the assessment due date. If you need an extension, contact the course lecturer before the due date. If you require more than a week's extension, a medical certificate or support letter from your manager may be needed.
+
+\section*{Resubmissions}
+Learners may be requested to resubmit an assessment following a rework of part/s of the original assessment. Resubmissions are to be completed within a negotiable short time frame \& usually must be completed within the timing of the course to which the assessment relates. Resubmissions will be available to learners who have made a genuine attempt at the first assessment opportunity \& achieved a \textbf{D grade (40-49\%)}. The maximum grade awarded for resubmission will be \textbf{C-}.
+
+\section*{Resits}
+Resits \& reassessments are not applicable in \textbf{IN721: Mobile Application Development}.
+
+\section*{Instructions - Learning Outcomes 2, 3}
+You have been provided a directory called \textbf{practical-01-kotlin-1} containing 10 \textbf{Kotlin} files. In these files, write your solutions to the 10 problems below. 
+
+\subsection*{Problem 1:} 
+Calculate the average of the given \textbf{double array} \& display the expected output.
+
+\begin{verbatim}
+  fun main() {
+      val nums = doubleArrayOf(45.3, 67.5, -45.6, 20.34, -33.0, 45.6)
+
+      // Write your solution here
+
+      // Expected output:
+      // Average: 16.69 
+  }
+\end{verbatim}
+
+\subsection*{Problem 2:}
+Write a function called \textbf{fizzBuzz} which accepts an \textbf{Int} parameter called \textbf{num}. If \textbf{num} is a multiple of three, return \textbf{Fizz}, if \textbf{num} is a multiple of five, return \textbf{Buzz} \& if \textbf{num} is a multiple of three \& five, return \textbf{FizzBuzz}. Call the \textbf{fizzBuzz} function in the \textbf{main} function to display the expected output.
+
+\begin{verbatim}
+  // Write your fizzBuzz function here
+  
+  fun main() {
+      for (i in 1..15 step 2) {
+        // Write your solution here
+      }
+
+      // Expected output:
+      // 1
+      // Fizz
+      // Buzz
+      // 7
+      // Fizz
+      // 11
+      // 13
+      // FizzBuzz
+  }
+\end{verbatim}
+
+\subsection*{Problem 3:} You have been given two \textbf{mutable lists} containing the lecturer's favourite programming languages. Use the following hints to display the expected output:
+\begin{itemize}
+  \item Add a specified element to the end of a list.
+  \item Add all elements of a specified collection to the end of a list.
+  \item If present, remove a specified element from a collection.
+  \item Capitalise the element in the 3rd index.
+\end{itemize}
+
+\begin{verbatim}
+  fun main() {
+      val progLangsOne: MutableList<String> = mutableListOf("C#", "JavaScript", "Kotlin", "OCaml")
+      val progLangsTwo: MutableList<String> = mutableListOf("C++", "Go", "Swift", "TypeScript")
+    
+      // Write your solution here
+    
+      // Expected output:
+      // [C#, JavaScript, Kotlin, OCAML, Prolog, C++, Swift]
+  }
+\end{verbatim}
+
+\subsection*{Problem 4:} You have been given a \textbf{mutable map} containing three soft drinks \& their prices. Use the following hints and \textbf{Kotlin} aggregate operations to display the expected output:
+\begin{itemize}
+  \item Change the price of Coca-Cola to 4.50.
+  \item Calculate the total price of all soft drinks.
+\end{itemize}
+
+\begin{verbatim}
+  fun main() {
+      val softDrinks: MutableMap<String, Double> 
+          = mutableMapOf("Coca-Cola" to 2.00, "Fanta" to 0.90, "Sprite" to 1.10)
+
+      // Write your solution here
+			
+      // Expected output:
+      // Total price: $6.50
+  }
+\end{verbatim}
+
+\subsection*{Problem 5:} You have been given two \textbf{mutable sets} containing two lecturer's course codes. Use the following hints to display the expected output:
+\begin{itemize}
+  \item Return a set containing all elements that are contained by both collections. 
+  \item Return a set containing all distinct elements from both collections.
+\end{itemize}
+
+\begin{verbatim}
+  fun main() {
+      val courseCodesOne: MutableSet<String> = mutableSetOf("IN607", "IN721", "IN728", "IN732")
+      val courseCodesTwo: MutableSet<String> = mutableSetOf("IN512", "IN607", "IN728", "IN732")
+      
+			// Write your solution here
+      
+			// Expected output:
+      // [IN607, IN728, IN732]
+      // [IN607, IN721, IN728, IN732, IN512] 
+  }
+\end{verbatim}
+
+\subsection*{Problem 6:}
+You have been given a 5x5 grid or a \textbf{2D array} of zeros. Use the appropriate construct(s)/range(s) to access the items in the grid, i.e., zeros \& replace them with Xs.
+
+\begin{verbatim}
+  fun main() {
+      var seating = arrayOf<Array<Any>>()
+      for (i in 0..4) {
+          var seat = arrayOf<Any>()
+          for (j in 0..4) {
+              seat += 0
+          }
+          seating += seat
+      }
+
+      // Write your solution here
+
+      for (seat in seating) {
+          for (value in seat) {
+              print("$value ")
+          }
+          println()
+      }
+
+      // Expected output:
+      // 0 0 0 0 X 
+      // 0 0 0 0 0 
+      // X X X 0 X 
+      // 0 0 0 0 0 
+      // 0 0 0 0 X
+  }
+\end{verbatim}
+
+\subsection*{Problem 7:}
+In the expected output below, the staircase is of size three. Its base \& height are both equal to \textbf{numOfSteps}. Also, it is drawn using the hash symbol. Write the logic in the \textbf{generateSteps} function in order to display the expected output.
+
+\begin{verbatim}
+  fun generateSteps(numOfSteps: Int): MutableList<String> {
+    	val stepSeq: MutableList<String> = mutableListOf()
+
+			// Write your solution here
+      
+			return stepSeq  
+  }
+
+  fun main() {
+      for (step in generateSteps(4)) {
+          // Expected output:
+          println(step) // #  
+                        // ## 
+                        // ###
+												// ####
+      }
+  }
+\end{verbatim}
+
+\subsection*{Problem 8:}
+You have been given a function called \textbf{defangAddress} which accepts a \textbf{String} parameter called \textbf{address}. This function returns a defanged version of \textbf{address}. A defanged address replaces every period \textbf{"."} with \textbf{"[.]"}. Write the logic in the \textbf{defangAddress} function in order to display the expected output.
+
+\begin{verbatim}
+  fun defangAddress(address: String): String {
+      var defangedAddr = ""
+      
+			// Write your solution here
+      
+			return defangedAddr
+  }
+
+  fun main() {
+      // Expected output:
+      println(defangAddress("255.100.50.0")) // 255[.]100[.]50[.]0
+  }
+\end{verbatim}
+
+\subsection*{Problem 9:}
+You have been given an incomplete function called \textbf{isPerfectNumber} which accepts an \textbf{Int} parameter called \textbf{num}. If \textbf{num} is a perfect number, return \textbf{true}, otherwise return \textbf{false}. A perfect num is a positive integer that is equal to the sum of its positive divisors excluding the number itself.
+
+\begin{verbatim}
+  // Example 1
+  Input: num = 6
+  Output: true
+
+  // Example 2
+  Input: num = 2
+  Output: false
+\end{verbatim}
+
+\begin{verbatim}
+  fun isPerfectNumber(num: Int): Boolean {
+      // Write your solution here
+  }
+
+  fun main() {
+      // Expected output:
+      println(isPerfectNumber(5)) // false
+      println(isPerfectNumber(6)) // true
+  }
+\end{verbatim}
+
+\subsection*{Problem 10:}
+You have been given an incomplete function called \textbf{removeDuplicates} which accepts an \textbf{IntArray} parameter called \textbf{nums}. Given a sorted \textbf{integer array,} remove the duplicates such that each element occurs only once \& return the new length of the \textbf{array}.
+
+\begin{verbatim}
+  fun removeDuplicates(nums: IntArray): Int {
+      // Write your solution here  
+  }
+
+  fun main() {
+      // Expected output:
+      println(removeDuplicates(intArrayOf(0, 0, 1, 1, 2, 2, 3, 3, 4))) // 5
+  }
+\end{verbatim}
+
+\end{document}

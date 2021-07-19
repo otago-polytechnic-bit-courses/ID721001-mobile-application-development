@@ -5,5 +5,5 @@ This repository contains all information relating to this course, i.e., course d
 ## Repositories
 Here are the following assessment submission repositories:
 
-* Practical - https://classroom.github.com/a/VJIq7Ae0
-* Project - https://classroom.github.com/a/2KFNPhsK
+* Practicals - https://classroom.github.com/a/Bvbfy__J
+* Project - https://classroom.github.com/a/YvRoxlAh
