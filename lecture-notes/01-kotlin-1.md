@@ -36,7 +36,7 @@ fun main() {
     var a: String = "Hello, World!"
     println(a) // Hello, World!
     
-    val b: Int = 1
+    val b: Int = 1 // Int => 32 bit
     println(b) // 1
     
     val c = 3 // Ommitting the type
