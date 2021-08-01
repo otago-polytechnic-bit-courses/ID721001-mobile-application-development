@@ -420,3 +420,5 @@ In `activity_main.xml`, add the following under the `Toolbar`:
 **Note:** notice the attribute `navGraph` and that its value is set to the **navigation** resource file - `mobile_navigation.xml`.
 
 ###
+
+        supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
