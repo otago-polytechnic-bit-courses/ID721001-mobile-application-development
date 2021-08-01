@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1627428546 "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.tex" "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.pdf" "course-directive" 1627428547
+["pdflatex"] 1627683663 "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.tex" "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.pdf" "course-directive" 1627683664
   "../../resources/img/logo.png" 1626698593 7995 1188e81c5778528c3e85f2ceca35945e ""
-  "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.aux" 1627428547 662 b2b94621371df8d9296b8bf5bec1b851 ""
-  "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.tex" 1627428545 9094 caaa4864158b51829bfc0b28a2c4b3ba ""
+  "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.aux" 1627683664 662 b2b94621371df8d9296b8bf5bec1b851 ""
+  "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.tex" 1627683663 9094 76b1a517e80f7818c56dd3095e4b7485 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -61,13 +61,13 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1532337256 4220280 e379364141033897a5f35a5715c9fbf5 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "course-directive.aux" 1627428547 662 b2b94621371df8d9296b8bf5bec1b851 ""
-  "course-directive.out" 1627428547 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "course-directive.tex" 1627428545 9094 caaa4864158b51829bfc0b28a2c4b3ba ""
+  "course-directive.aux" 1627683664 662 b2b94621371df8d9296b8bf5bec1b851 ""
+  "course-directive.out" 1627683664 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "course-directive.tex" 1627683663 9094 76b1a517e80f7818c56dd3095e4b7485 ""
   (generated)
   "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.log"
-  "course-directive.aux"
-  "course-directive.log"
-  "course-directive.pdf"
-  "course-directive.out"
   "/Users/graysonorr/Desktop/IN721-mobile-application-development/resources/tex/course-directive.pdf"
+  "course-directive.log"
+  "course-directive.out"
+  "course-directive.pdf"
+  "course-directive.aux"
