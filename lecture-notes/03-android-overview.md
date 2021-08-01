@@ -2,13 +2,13 @@
 
 ## Overview
 
-**Android** is a mobile os based on a modified version of the **Linux kernel** & primarily designed for touchscreen devices such as phones, tablets & watches. **Android** is developed by a group of developers known as the **Open Handset Alliance (OHA)** & commercially sponsored by **Google**. **Android** is free & open-source, & its source code is known as **Android Open Source Project (AOSP)**, which is licensed under the **Apache License**. However, most **Android** devices are shipped with pre-installed proprietary software such as **Google Mobile Services (GMS)**.
+**Android** is a mobile os based on a modified version of the **Linux kernel** and primarily designed for touchscreen devices such as phones, tablets and watches. **Android** is developed by a group of developers known as the **Open Handset Alliance (OHA)** and commercially sponsored by **Google**. **Android** is free and open-source, and its source code is known as **Android Open Source Project (AOSP)**, which is licensed under the **Apache License**. However, most **Android** devices are shipped with pre-installed proprietary software such as **Google Mobile Services (GMS)**.
 
 ### Brief History
 
-**Android Inc.** was founded in Palo Alto, CA, in October 2003 by Andy Rubin, Rich Miller, Nick Sears & Chris White. The early intentions of the company were to develop an advanced os for digital cameras. The company then decided that the market for digital cameras was not large enough. They later pivoted, & pitched **Android** to investors as a handset os that would compete against **Symbian** & **Windows Mobile** (both discontinued). In July 2005, **Google** acquired **Android Inc.** for around $50 million. Key employees, including Rubin, Miller, Sears & White, joined **Google** as part of the acquisition. 
+**Android Inc.** was founded in Palo Alto, CA, in October 2003 by Andy Rubin, Rich Miller, Nick Sears and Chris White. The early intentions of the company were to develop an advanced os for digital cameras. The company then decided that the market for digital cameras was not large enough. They later pivoted, and pitched **Android** to investors as a handset os that would compete against **Symbian** and **Windows Mobile** (both discontinued). In July 2005, **Google** acquired **Android Inc.** for around $50 million. Key employees, including Rubin, Miller, Sears and White, joined **Google** as part of the acquisition.
 
-At **Google**, Rubin & his team developed a mobile device platform powered by the **Linux kernel**. **Google** marketed the platform to handset providers & carriers on the promise of providing a flexible, upgradeable system. In 2006, **Google's** plans to enter the mobile communications market continued. An early prototype closely resembled a **BlackBerry** phone which had a QWERTY keyboard & no touchscreen. With the unveiling of the **Apple iPhone** in 2007 meant **Android** had to go back to the drawing board. In 2008, both **Nokia** & **BlackBerry** announced touch-based smartphones that to rival the **iPhone 3G**. Subsequently, **Android** switch their focus to touchscreens. The first commercially available smartphone running **Android** was the **HTC Dream** which was announced in September 2008.
+At **Google**, Rubin and his team developed a mobile device platform powered by the **Linux kernel**. **Google** marketed the platform to handset providers and carriers on the promise of providing a flexible, upgradeable system. In 2006, **Google's** plans to enter the mobile communications market continued. An early prototype closely resembled a **BlackBerry** phone which had a QWERTY keyboard and no touchscreen. With the unveiling of the **Apple iPhone** in 2007 meant **Android** had to go back to the drawing board. In 2008, both **Nokia** and **BlackBerry** announced touch-based smartphones that to rival the **iPhone 3G**. Subsequently, **Android** switch their focus to touchscreens. The first commercially available smartphone running **Android** was the **HTC Dream** which was announced in September 2008.
 
 ## Software Stack
 
@@ -18,7 +18,7 @@ The following image displays the major components of the **Android** platform.
 
 ### Linux Kernel
 
-The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading & memory management. It allows **Android** to take advantage of key security features & handset manufacturers to develop drivers.
+The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading and memory management. It allows **Android** to take advantage of key security features and handset manufacturers to develop drivers.
 
 ### Hardware Abstraction Layer (HAL)
 
@@ -26,21 +26,21 @@ The **HAL** provides standard interfaces that expose device hardware capabilitie
 
 ### Android Runtime
 
-For devices running **Android 5.0** or higher, each application runs in its own process & with its own instance of the **Android Runtime**. Major features of the Android Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation & optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. **Note:** if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
+For devices running **Android 5.0** or higher, each application runs in its own process and with its own instance of the **Android Runtime**. Major features of the Android Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation and optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. **Note:** if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
 
 ### Native C/C++ Libraries
 
-Many core **Android** system components & services are built from native code & require native libraries written in **C** & **C++**. The **Android** platform provides **Java** framework **APIs** which exposes the functionality of these native libraries to applications.
+Many core **Android** system components and services are built from native code and require native libraries written in **C** and **C++**. The **Android** platform provides **Java** framework **APIs** which exposes the functionality of these native libraries to applications.
 
 ### Java API Framework
 
-The feature-set of the **Android** os is available through **APIs** written in **Java**. These **APIs** form the building blocks you need to create Android applications by simplifying the reuse of core, modular system components & services.
+The feature-set of the **Android** os is available through **APIs** written in **Java**. These **APIs** form the building blocks you need to create Android applications by simplifying the reuse of core, modular system components and services.
 
 ### System Apps
 
 **Android** comes with a set of core applications such as email, messaging, calendars, internet browsing, etc. Applications included with the platform have no special status among the applications the user chooses to install. This means that a third-party application can become the user's default messenger, web browser, etc.
 
-The system applications function both as applications for users & to provide capabilities that developers can access from their own application.
+The system applications function both as applications for users and to provide capabilities that developers can access from their own application.
 
 ## Market Share
 
@@ -52,13 +52,14 @@ According to **StatCounter**, **Android** has been the most popular mobile os si
 
 ## Android Studio
 
-**Android Studio** is a cross-platform integrated development environment or IDE for the **Android** os. **Android Studio** is built on **JetBrains' IntelliJ IDEA** & designed specifically for **Android** development.
+**Android Studio** is a cross-platform integrated development environment or IDE for the **Android** os. **Android Studio** is built on **JetBrains' IntelliJ IDEA** and designed specifically for **Android** development.
 
 ### How To Create A New Android Project
 
-Before you start, make sure you create the **Project** repository here - https://classroom.github.com/a/YvRoxlAh. Create a branch called `feature-login`.
+Before you start, make sure you create the **Project** repository here - https://classroom.github.com/a/YvRoxlAh. Create a **README** file and **.gitignore**. Set the **.gitignore** template to **Android**. Go to the **terminal** or **command line** and clone your repository.
 
 To create a new Android project, follow these steps:
+
 1. Open **Android Studio**.
 2. In the **Welcome to Android Studio** window, click **Start a new Android Studio project**.
 
@@ -69,24 +70,26 @@ To create a new Android project, follow these steps:
 <img src="../resources/img/03-android-overview/android-studio-template.JPG" width="650" height="475" />
 
 4. In the **Configure Your Project** window, complete the following:
-    * Enter **Travelling** in the **Name** field.
-    * Enter `op.mobile.app.dev.<username>.travelling` in the **Package** name field. Change `<username>` to your **Otago Polytechnic** username.
-    * Save the project in your **Project** repository
-    * Select **Kotlin** from the **Language** drop-down menu.
-    * Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
-    * If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
+   - Enter **Travelling** in the **Name** field.
+   - Enter `op.mobile.app.dev.<username>.travelling` in the **Package** name field. Change `<username>` to your **Otago Polytechnic** username. **Note:** this is a requirement for the **Project** assessment.
+   - Save the project in your **Project** repository
+   - Select **Kotlin** from the **Language** drop-down menu.
+   - Select the lowest version of **Android** your application will support in the **Minimum SDK** field.
+   - If your application will require legacy library support, mark the **Use legacy android.support libraries** checkbox.
 
 <img src="../resources/img/03-android-overview/android-studio-project.JPG" width="650" height="475" />
 
 5. Click **Finish**.
 
-Lets look at some important project files.
+Once everything is setup, push your project to the remote repository on **GitHub**. Next, create/checkout a branch called `feature-login` using the command: `git checkout -b feature-login`. This will be your development branch for the login feature you are going to create later in the session.
+
+Before we get to that, lets look at some important project files.
 
 ### AndroidManifest.xml
 
 Go to **app > manifest > AndroidManifest.xml**
 
-Every application must have an `AndroidManifest.xml` file in the root of the `app` directory. The `AndroidManifest.xml` file specifies important information about your application to the **Android** build tools, **Android** os & **Google Play**.
+Every application must have an `AndroidManifest.xml` file in the root of the `app` directory. The `AndroidManifest.xml` file specifies important information about your application to the **Android** build tools, **Android** os and **Google Play**.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -119,8 +122,9 @@ Go to **app > java > op.mobile.app.dev.username.travelling > MainActivity**
 <img src="../resources/img/03-android-overview/android-studio-main-activity.JPG" width="750" height="500" />
 
 An `Activity` is a single, focused thing that the user can do. Almost all activities interact with the user. The **activity** class takes care of creating a window for you in which you can place your UI with `setContentView(View)`. There are two lifecycle methods almost all subclasses of **activity** will implement:
-* `onCreate(Bundle)` is where you initialise your **activity**. In this method, you usually call `setContentView(View)` with a layout resource defining your UI, & using `findViewById(int)` to retrieve the `Views` in that UI that you need to interact with programmatically.
-* `onPause()` is where you handle the user pausing active interaction with your **activity**. Any changes made by the user should at this point be committed. In this state the **activity** is still visible on screen.
+
+- `onCreate(Bundle)` is where you initialise your **activity**. In this method, you usually call `setContentView(View)` with a layout resource defining your UI, and using `findViewById(int)` to retrieve the `Views` in that UI that you need to interact with programmatically.
+- `onPause()` is where you handle the user pausing active interaction with your **activity**. Any changes made by the user should at this point be committed. In this state the **activity** is still visible on screen.
 
 Here is a resource to other lifecycle methods - https://developer.android.com/guide/components/activities/activity-lifecycle
 
@@ -154,7 +158,8 @@ Currently we are in **Design** view. Click **Code**. You should see the followin
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-### ViewGroup & View 
+
+### ViewGroup and View
 
 - `ViewGroup` - a special view that contains other views/child views, i.e., `ConstraintLayout`
 - `View` - represents the basic building block for UI components, i.e., `TextView`.
@@ -164,12 +169,12 @@ Currently we are in **Design** view. Click **Code**. You should see the followin
 
 **app > res > values**
 
-* `colors.xml` - a colour resource is specified with an RGB value & alpha chanel. You can use a colour resource any place that accepts a hexadecimal colour value. Also, you can use a colour resource when a drawable resource is expected in **XML**, i.e., `android:drawable="@color/green"`.
-* `strings.xml` - a string resource provides text strings for your application with optional styling & formatting. There are three types of string resources:
-    * String - **XML** resource that provides a single string.
-    * String Array - **XML** resource that provides an array of strings.
-    * Quantity Strings (Plurals) - **XML** resource that holds different strings for pluralization. 
-* `themes.xml` - styles/themes allow you to separate the details of your application design from the UI structure & behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, **activity** or view hierarchy. When applied, every `View` in the application or **activity** applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar & window background.
+- `colors.xml` - a colour resource is specified with an RGB value and alpha chanel. You can use a colour resource any place that accepts a hexadecimal colour value. Also, you can use a colour resource when a drawable resource is expected in **XML**, i.e., `android:drawable="@color/green"`.
+- `strings.xml` - a string resource provides text strings for your application with optional styling and formatting. There are three types of string resources:
+  - String - **XML** resource that provides a single string.
+  - String Array - **XML** resource that provides an array of strings.
+  - Quantity Strings (Plurals) - **XML** resource that holds different strings for pluralization.
+- `themes.xml` - styles/themes allow you to separate the details of your application design from the UI structure and behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, **activity** or view hierarchy. When applied, every `View` in the application or **activity** applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar and window background.
 
 **Gradle Scripts > build.grade (Project: Travelling)**
 
@@ -181,85 +186,83 @@ The `build.grade (Module)` file allows you to configure build settings for the s
 
 ## Activity ✏️
 
-Use the **Travelling** project you created earlier for this activity. In `activity_main.xml`, add the following `Views`:
+Use the **Travelling** project you created earlier for this activity. In `activity_main.xml`, replace the code with the following:
 
-| TextView Attribute        | Value           |
-| ------------- |:-------------:|
-| android:id      | "@+id/tv_header" |
-| android:layout_width     | "0dp" |
-| android:layout_height    | "wrap_content" |
-| android:layout_marginStart      | "32dp" |
-| android:layout_marginTop     | "16dp" |
-| android:layout_marginEnd     | "32dp" |
-| android:gravity     | "center" |
-| android:text     | "Login" |
-| android:textSize     | "24sp" |
-| app:layout_constraintEnd_toEndOf     | "parent" |
-| app:layout_constraintStart_toStartOf     | "parent" |
-| app:layout_constraintTop_toTopOf     | "parent" |
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-| Email Address EditText Attribute        | Value           |
-| ------------- |:-------------:|
-| android:id      | "@+id/et_email_address" |
-| android:layout_width     | "0dp" |
-| android:layout_height    | "wrap_content" |
-| android:layout_marginStart      | "32dp" |
-| android:layout_marginTop     | "16dp" |
-| android:layout_marginEnd     | "32dp" |
-| android:ems     | "10" |
-| android:hint     | "Email Address" |
-| android:inputType     | "textPassword" |
-| app:layout_constraintEnd_toEndOf     | "parent" |
-| app:layout_constraintStart_toStartOf     | "parent" |
-| app:layout_constraintTop_toBottomOf     | "@+id/tv_header" |
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-| Password EditText Attribute        | Value           |
-| ------------- |:-------------:|
-| android:id      | "@+id/et_password" |
-| android:layout_width     | "0dp" |
-| android:layout_height    | "wrap_content" |
-| android:layout_marginStart      | "32dp" |
-| android:layout_marginTop     | "16dp" |
-| android:layout_marginEnd     | "32dp" |
-| android:ems     | "10" |
-| android:hint     | "Password" |
-| android:inputType     | "textPassword" |
-| app:layout_constraintEnd_toEndOf     | "parent" |
-| app:layout_constraintStart_toStartOf     | "parent" |
-| app:layout_constraintTop_toBottomOf     | "@+id/et_email_address" |
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
 
-| Button Attribute        | Value           |
-| ------------- |:-------------:|
-| android:id      | "@+id/btn_login" |
-| android:layout_width     | "0dp" |
-| android:layout_height    | "wrap_content" |
-| android:layout_marginStart      | "32dp" |
-| android:layout_marginTop     | "16dp" |
-| android:layout_marginEnd     | "32dp" |
-| android:text     | "Login" |
-| app:layout_constraintEnd_toEndOf     | "parent" |
-| app:layout_constraintStart_toStartOf     | "parent" |
-|  app:layout_constraintTop_toBottomOf     | "@+id/et_password" |
+We have removed the `TextView` widget and added a `Toolbar` widget. Why? we may not want to show the `Toolbar` on specific screens, i.e., the login screen.
 
-The UI should look like the following:
+Go to `MainActivity.kt` and add the following code:
 
-<img src="../resources/img/03-android-overview/android-studio-activity-ui.JPG" width="275" height="400" />
+```kotlin
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        ...
 
-- Why is the `View` text attribute highlighted orange?
-- How do we fix this?
-- Also, the `Views` have hardcoded integer values for some of their attributes. How do fix this as well?
+        val toolbar: Toolbar = findViewById(R.id.toolbar) // Find the View in activity_main.xml with the id toolbar
+        setSupportActionBar(toolbar) // Set toolbar as the entire application's action bar
+    }
+}
+```
 
-## Build & Run Your Application
+In both `themes.xml`, add the following style:
+
+```xml
+<style name="Theme.Travelling.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+</style>
+```
+
+This `style` will remove the application's default action bar.
+
+We have not applied this `style` to our application yet...go to `AndroidManifest.xml` and replace:
+
+```xml
+<activity android:name=".MainActivity">
+```
+
+with
+
+```xml
+<activity
+    android:name=".MainActivity"
+    android:theme="@style/Theme.Travelling.NoActionBar">
+```
+
+## Build and Run Your Application
 
 With a few clicks, you can deploy your application to the **Android Emulator** or a **connected device**.
 
 ### How To Run A Project With The Android Emulator
 
-To start the **Android Emulator** & run an application in your project:
+To start the **Android Emulator** and run an application in your project:
+
 1. **Tools > AVD Manager > Create Virtual Device**
-2. In the **Select Hardware** window, choose a device definition & click **Next**.
-3. In the **System Image** window, select a system image & click **Next**. **Note:** the system image must be ≥ the **Minimum SDK** selected when you configured your project.
-4. In the **Android Virtual Device (AVD)** window, leave the default configuration as is & click **Finish**.
+2. In the **Select Hardware** window, choose a device definition and click **Next**.
+3. In the **System Image** window, select a system image and click **Next**. **Note:** the system image must be ≥ the **Minimum SDK** selected when you configured your project.
+4. In the **Android Virtual Device (AVD)** window, leave the default configuration as is and click **Finish**.
 5. In the toolbar, select the **AVD** that you want to run your application on from the device drop-down menu.
 6. Click **Run** <img src="../resources/img/03-android-overview/android-studio-toolbar-run.png" width="13" height="13" />
 
@@ -267,48 +270,153 @@ To start the **Android Emulator** & run an application in your project:
 
 Before you can run an application, there are a couple things you must do:
 
-1. On the device, open the **Settings** application, select **Developer** options & then enable **USB debugging**.
+1. On the device, open the **Settings** application, select **Developer** options and then enable **USB debugging**.
 2. Set up your system to detect your device. Refer to the resource below.
 
-Once you have set up & plugged in over USB, click **Run** <img src="../resources/img/03-android-overview/android-studio-toolbar-run.png" width="13" height="13" />
+Once you have set up and plugged in over USB, click **Run** <img src="../resources/img/03-android-overview/android-studio-toolbar-run.png" width="13" height="13" />
 
-## Activity ✏️
+You should have something that looks like this:
 
-Use the **Travelling** project you created earlier for this activity. Run the project's application on **both** the **Android Emulator** & a **connected device**. 
+<img src="../resources/img/03-android-overview/output-1.png" width="175" height="350" />
 
-## Events
+### Creating a Screen
 
-In **Android**, there is more than one way of intercepting events from a user's interaction with your application. When considering events within your UI, the approach is to capture the events from the specific `View` that the user interacts with, i.e., a `Button`.
-
-Lets take a look at the `View` class...within this class, you will notice several public callback methods specifically for UI events. These methods are called by the **Android framework** when a specific action occurs on that `View`. When a specific action occurs, i.e., a `View` is touched, the `onTouchEvent()` method is called on that `View`. In order to intercept, you must extend the class & override the method. However, extending every `View` in order to handle such event would not be practical. Thankfully, the `View` class contains a collection of interfaces (event listeners) with callbacks that you can easily define. 
-
-## Event Listeners
-
-An event listener is an interface in the `View` class that contains a single callback method. These methods are be called when a registered listener has been triggered by user interaction.
-## How to Implement an Event Listener
-
-To define one of these methods & handle your events, implement the nested interface in your **activity**. Then, pass an instance of your implementation to the method.
-
-The code snippet below shows how to register a `Button` on-click listener.
+We want to keep our file structure nice and tidy. Screens usually go in a package called ui. To create a new package, right-click on **java > op.mobile.app.dev.username.travelling > New > Package**. You will be presented with a popup window. Add **ui.login** to the end of the main package, i.e., **op.mobile.app.dev.username.travelling.ui.login**. We will be using **Fragments** as screens rather than **Activities**...more on this next week. To create a **Fragment**, right-click on **java > op.mobile.app.dev.username.travelling.ui.login > New > Kotlin Class/File**. Again, you will be You will be presented with a popup window. Call this new class **LoginFragment**, then hit the **Enter** key. Once created, add the following code:
 
 ```kotlin
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        val btnLogin: Button = findViewById(R.id.btn_login)
-        btnLogin.setOnClickListener {
-            // Do something
-        }
+class LoginFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        return inflater.inflate(R.layout.fragment_login, container, false)
     }
 }
 ```
 
-## Activity ✏️
+You will probably see a lot of red. Do you know why?
 
-Add the code snippet above to your `onCreate()` in `MainActivity`. In the `Button` on-click listener, display the email address `EditText` value in a `Toast`. 
+Also you will notice a layout file called `fragment_login`. We are yet to create this file. **Fragment** layout files are stored alongside **activity** layout files, i.e., `activity_main.xml`. The only difference is that they are prefix with **fragment** instead of **activity**. To create a new **fragment** layout file, right-click on **res > layout > New > Layout Resource File**. You will be presented with a popup window. We only need to give it a **File name** of `fragment_login`. Do not worry about the rest of the fields, i.e., **Root element**, **Source set**, **Directory name** and **Available qualifiers**. Once you have named it, click the **OK** button.
 
-Run the project's application on both the **Android Emulator** & a **connected device**. 
+In `fragment_login.xml`, add the following code:
 
-<img src="../resources/img/03-events/readme/login-toast.png" width="250" height="450" />
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_email_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_address" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+The login UI should look like the following:
+
+<img src="../resources/img/03-android-overview/android-studio-activity-ui.JPG" width="275" height="400" />
+
+- Why is the `View` text attribute highlighted orange?
+- How do we fix this?
+- Also, the `Views` have hardcoded integer values for some of their attributes. How do fix this as well?
+
+### Set a Start Destination
+
+Every application needs a start destination. In our case, it will be `LoginFragment`, but we could also start with a splash screen. We also need to consider the fact that we will be navigate to and from different screens. How do we do this? We need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. We are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource Directory** called `mobile_navigation.xml`. We are going to use this file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="op.mobile.app.dev.grayson.travelling.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+    </fragment>
+
+</navigation>
+```
+
+**Note:** our start destination is going to the the `LoginFragment`. We will talk more about navigation next week.
+
+### Creating a FragmentContainerView
+
+A `FragmentContainerView` is a custom layout designed specifically for dealing with `Fragments` and can reliably handle **Fragment transactions**.
+
+In `activity_main.xml`, add the following under the `Toolbar`:
+
+```xml
+<androidx.fragment.app.FragmentContainerView
+    android:id="@+id/nav_host_fragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:defaultNavHost="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+    app:navGraph="@navigation/mobile_navigation" />
+```
+
+**Note:** notice the attribute `navGraph` and that its value is set to the **navigation** resource file - `mobile_navigation.xml`.
+
+###

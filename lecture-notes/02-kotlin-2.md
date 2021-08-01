@@ -1,5 +1,7 @@
 # **Kotlin 2**
+
 ## Class
+
 In **Kotlin**, classes & interfaces differ from **Java**, i.e., interfaces in **Kotlin** can contain property declarations. Unlike in **Java**, declarations are `final` & `public` by default. For constructors, the shorthand syntax works for most cases, but the full syntax that allows you to declare a constructor with non-trivial initialisation logic. It also applies to properties, where you can easily define your own implementation for an accessor.
 
 ```java
@@ -16,11 +18,11 @@ public class Person {
 
     public Int getId() {
         return id;
-    } 
+    }
 
     public String getFirstName() {
         return name;
-    } 
+    }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -28,11 +30,11 @@ public class Person {
 
     public String getLastName() {
         return name;
-    } 
+    }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }  
+    }
 }
 ```
 
@@ -56,7 +58,7 @@ class Person constructor(_id: Int, _firstName: String, _lastName: String) { // N
         id = _id
         firstName = _firstName
         lastName = _lastName
-    } 
+    }
 }
 
 fun main() {
@@ -100,14 +102,16 @@ fun main() {
 The property `isSquare` does not need a field to store its value. It only needs a custom getter.
 
 ## Data Class
-If you want your class to be a useful holder for your data, you need to override the `toString`, `equals` & `hashCode` methods. In **Kotlin**, you can add the `data` modifier before a class so that these methods are automatically generated for you. 
+
+If you want your class to be a useful holder for your data, you need to override the `toString`, `equals` & `hashCode` methods. In **Kotlin**, you can add the `data` modifier before a class so that these methods are automatically generated for you.
 
 ```kotlin
 data class Person(val id: Int, var firstName: String, var lastName: String)
 ```
 
 ## Enum Class
-Much like **Java**, enums are not lists of values & you can declare properties & methods. 
+
+Much like **Java**, enums are not lists of values & you can declare properties & methods.
 
 ```kotlin
 enum class State {
@@ -128,7 +132,7 @@ fun main() {
 Enum constants use the same constructor & property declaration syntax as regular classes.
 
 ```kotlin
-enum class Color(val rgb: Int) { // Each value must pass an argument 
+enum class Color(val rgb: Int) { // Each value must pass an argument
     RED(0xFF0000),
     GREEN(0x00FF00),
     BLUE(0x0000FF);
@@ -145,6 +149,7 @@ fun main() {
 ```
 
 ## Interface
+
 Interfaces are similar to those in **Java**, where they can contain definitions of abstract methods as well as implementations of non-abstract methods, but can not contain any state.
 
 ```kotlin
@@ -154,7 +159,7 @@ interface BodyParts {
 }
 
 class Person : BodyParts {
-    override fun legCount() = 2 
+    override fun legCount() = 2
 }
 
 fun main() {
@@ -178,11 +183,11 @@ open class Dog {
 }
 ```
 
-The empty parentheses indicate an invocation of the superclass default constructor. 
+The empty parentheses indicate an invocation of the superclass default constructor.
 
 ```kotlin
 class Bulldog : Dog() {
-    override fun sound() { 
+    override fun sound() {
         println("woof woof woof!")
     }
 }
@@ -202,7 +207,7 @@ open class Tiger(val region: String, val sound: String) {
     }
 }
 
-class SiberianTiger : Tiger("Sikhote-Alin", "roooaaar")  
+class SiberianTiger : Tiger("Sikhote-Alin", "roooaaar")
 
 fun main() {
     val siberianTiger: Tiger = SiberianTiger()
