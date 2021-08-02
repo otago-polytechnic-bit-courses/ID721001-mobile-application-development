@@ -176,13 +176,13 @@ Currently we are in **Design** view. Click **Code**. You should see the followin
   - Quantity Strings (Plurals) - **XML** resource that holds different strings for pluralization.
 - `themes.xml` - styles/themes allow you to separate the details of your application design from the UI structure and behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, **activity** or view hierarchy. When applied, every `View` in the application or **activity** applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar and window background.
 
-**Gradle Scripts > build.grade (Project: Travelling)**
+**Gradle Scripts > build.gradle (Project: Travelling)**
 
-The `build.grade (Project)` file defines build configurations that apply to all modules in your project.
+The `build.gradle (Project)` file defines build configurations that apply to all modules in your project.
 
-**Gradle Scripts > build.grade (Module: Travelling.app)**
+**Gradle Scripts > build.gradle (Module: Travelling.app)**
 
-The `build.grade (Module)` file allows you to configure build settings for the specific module it is located in.
+The `build.gradle (Module)` file allows you to configure build settings for the specific module it is located in.
 
 ## Activity ✏️
 
@@ -377,7 +377,7 @@ The login UI should look like the following:
 
 ### Set a Start Destination
 
-Every application needs a start destination. In our case, it will be `LoginFragment`, but we could also start with a splash screen. We also need to consider the fact that we will be navigate to and from different screens. How do we do this? We need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. We are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource Directory** called `mobile_navigation.xml`. We are going to use this file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
+Every application needs a start destination. In our case, it will be `LoginFragment`, but we could also start with a splash screen. We also need to consider the fact that we will be navigate to and from different screens. How do we do this? We need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource File**. You will be presented with a popup window. We are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource Directory** called `mobile_navigation.xml`. We are going to use this file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
