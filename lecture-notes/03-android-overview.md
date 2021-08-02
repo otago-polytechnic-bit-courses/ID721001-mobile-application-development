@@ -1,4 +1,4 @@
-# **Android Overview**
+# **03: Android Overview**
 
 ## Overview
 
@@ -264,7 +264,7 @@ To start the **Android Emulator** and run an application in your project:
 3. In the **System Image** window, select a system image and click **Next**. **Note:** the system image must be ≥ the **Minimum SDK** selected when you configured your project.
 4. In the **Android Virtual Device (AVD)** window, leave the default configuration as is and click **Finish**.
 5. In the toolbar, select the **AVD** that you want to run your application on from the device drop-down menu.
-6. Click **Run** <img src="../resources/img/03-android-overview/android-studio-toolbar-run.png" width="13" height="13" />
+6. Click the **Run** <img src="../resources/img/03-android-overview/android-studio-toolbar-run.png" width="13" height="13" />
 
 ### How To Run An Application With A Connected Device
 
@@ -273,13 +273,13 @@ Before you can run an application, there are a couple things you must do:
 1. On the device, open the **Settings** application, select **Developer** options and then enable **USB debugging**.
 2. Set up your system to detect your device. Refer to the resource below.
 
-Once you have set up and plugged in over USB, click **Run** <img src="../resources/img/03-android-overview/android-studio-toolbar-run.png" width="13" height="13" />
+Once you have set up and plugged in over USB, click the **Run** <img src="../resources/img/03-android-overview/android-studio-toolbar-run.png" width="13" height="13" />
 
 You should have something that looks like this:
 
 <img src="../resources/img/03-android-overview/output-1.png" width="175" height="350" />
 
-### Creating a Screen
+### Create a Screen
 
 We want to keep our file structure nice and tidy. Screens usually go in a package called ui. To create a new package, right-click on **java > op.mobile.app.dev.username.travelling > New > Package**. You will be presented with a popup window. Add **ui.login** to the end of the main package, i.e., **op.mobile.app.dev.username.travelling.ui.login**. We will be using **Fragments** as screens rather than **Activities**...more on this next week. To create a **Fragment**, right-click on **java > op.mobile.app.dev.username.travelling.ui.login > New > Kotlin Class/File**. Again, you will be You will be presented with a popup window. Call this new class **LoginFragment**, then hit the **Enter** key. Once created, add the following code:
 
@@ -397,7 +397,7 @@ Every application needs a start destination. In our case, it will be `LoginFragm
 
 **Note:** our start destination is going to the the `LoginFragment`. We will talk more about navigation next week.
 
-### Creating a FragmentContainerView
+### Create a FragmentContainerView
 
 A `FragmentContainerView` is a custom layout designed specifically for dealing with `Fragments` and can reliably handle **Fragment transactions**.
 
@@ -419,6 +419,25 @@ In `activity_main.xml`, add the following under the `Toolbar`:
 
 **Note:** notice the attribute `navGraph` and that its value is set to the **navigation** resource file - `mobile_navigation.xml`.
 
-###
+### Set a FragmentManager
+
+Lastly, we need to set a `FragmentManager` which interacts with the **fragments** associated with `MainActivity`. To do this, in `MainActivity.kt`, add the following code:
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        ...
+
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
 
         supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+    }
+}
+```
+
+Once you have done, click the **Run** <img src="../resources/img/03-android-overview/android-studio-toolbar-run.png" width="13" height="13" />
+
+You should have something that looks like this:
+
+<img src="../resources/img/03-android-overview/output-2.png" width="175" height="350" />

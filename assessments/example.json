@@ -1,0 +1,131 @@
+[
+   {
+      "id": 1,
+      "name": "Australia",
+      "capital": "Canberra",
+      "langCode": "en",
+      "flagImg": "https://flagpedia.net/data/flags/h80/au.png",
+      "phrases": [
+         "What's the John Dory?",
+         "No worries, mate, she'll be right",
+         "Have a Captain Cook"
+      ],
+      "quiz": [
+         {
+            "question": "In 1856, the Australian government reformed the country's voting process, becoming the first nation to allow for what during elections?",
+            "answers": [
+               "Secret ballots",
+               "Write-in nominations",
+               "Recounting of votes",
+               "All of the above"
+            ],
+            "img": ""
+         },
+         {
+            "question": "Australia is home to the largest structure built by living organisms on the planet. What is it?",
+            "answers": [
+               "The Great Barrier Reef",
+               "A termite tower in the outback",
+               "Ayers Rock",
+               "A wombat burrow"
+            ],
+            "img": ""
+         },
+         {
+            "question": "Australian Prime Minister Harold Holt disappeared in December 1967 while doing what?",
+            "answers": [
+               "Swimming in the ocean",
+               "Running a marathon",
+               "Taking a helicopter tour",
+               "Hiking in the outback"
+            ],
+            "img": ""
+         },
+         {
+            "question": "Most British convicts who were sent to the penal colony of Australia had been found guilty of what type of crimes?",
+            "answers": [
+               "Petty theft",
+               "Treason",
+               "Murder",
+               "All the above"
+            ],
+            "img": ""
+         },
+         {
+            "question": "A traditional Easter treat in the U.S. is a chocolate bunny. What chocolate likeness is popular in Australia?",
+            "answers": [
+               "Bilby",
+               "Kangaroo",
+               "Koala",
+               "Boomerang"
+            ],
+            "img": ""
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "name": "Argentina",
+      "capital": "Buenos Aires",
+      "langCode": "es",
+      "flagImg": "https://flagpedia.net/data/flags/h80/ar.png",
+      "phrases": [],
+      "quiz": [
+
+      ]
+   },
+   {
+      "id": 3,
+      "name": "Belgium",
+      "capital": "Brussels",
+      "langCode": "nl",
+      "flagImg": "https://flagpedia.net/data/flags/h80/be.png",
+      "phrases": [],
+      "quiz": []
+   },
+   {
+      "id": 4,
+      "name": "China",
+      "capital": "Beijing",
+      "langCode": "zh",
+      "flagImg": "https://flagpedia.net/data/flags/h80/cn.png",
+      "phrases": [],
+      "quiz": []
+   },
+   {
+      "id": 5,
+      "name": "Mexico",
+      "capital": "Mexico City",
+      "langCode": "es",
+      "flagImg": "https://flagpedia.net/data/flags/h80/mx.png",
+      "phrases": [],
+      "quiz": []
+   },
+   {
+      "id": 6,
+      "name": "New Zealand",
+      "capital": "Wellington",
+      "langCode": "en",
+      "flagImg": "https://flagpedia.net/data/flags/h80/nz.png",
+      "phrases": [],
+      "quiz": []
+   },
+  {
+      "id": 7,
+      "name": "South Africa",
+      "capital": "Cape Town",
+      "langCode": "af",
+      "flagImg": "https://flagpedia.net/data/flags/h80/za.png",
+      "phrases": [],
+      "quiz": []
+   },
+   {
+      "id": 8,
+      "name": "United Kingdom",
+      "capital": "London",
+      "langCode": "en",
+      "flagImg": "https://flagpedia.net/data/flags/h80/gb.png",
+      "phrases": [],
+      "quiz": []
+   }
+]
