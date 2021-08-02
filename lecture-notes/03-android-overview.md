@@ -119,7 +119,7 @@ Every application must have an `AndroidManifest.xml` file in the root of the `ap
 
 Go to **app > java > op.mobile.app.dev.username.travelling > MainActivity**
 
-<img src="../resources/img/03-android-overview/android-studio-main-activity.JPG" width="750" height="500" />
+<img src="../resources/img/03-android-overview/android-studio-main-activity.JPG" width="800" height="500" />
 
 An `Activity` is a single, focused thing that the user can do. Almost all activities interact with the user. The **activity** class takes care of creating a window for you in which you can place your UI with `setContentView(View)`. There are two lifecycle methods almost all subclasses of **activity** will implement:
 
@@ -134,7 +134,7 @@ Go to **app > res > layout**
 
 A layout resource defines the architecture for the UI in an **activity** class or a **component** of a UI.
 
-<img src="../resources/img/03-android-overview/android-studio-activity-main-xml.JPG" width="750" height="500" />
+<img src="../resources/img/03-android-overview/android-studio-activity-main-xml.JPG" width="800" height="500" />
 
 Currently we are in **Design** view. Click **Code**. You should see the following **XML** code:
 
@@ -216,6 +216,7 @@ We have removed the `TextView` widget and added a `Toolbar` widget. Why? we may 
 Go to `MainActivity.kt` and add the following code:
 
 ```kotlin
+...
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         ...
@@ -284,6 +285,7 @@ You should have something that looks like this:
 We want to keep our file structure nice and tidy. Screens usually go in a package called ui. To create a new package, right-click on **java > op.mobile.app.dev.username.travelling > New > Package**. You will be presented with a popup window. Add **ui.login** to the end of the main package, i.e., **op.mobile.app.dev.username.travelling.ui.login**. We will be using **Fragments** as screens rather than **Activities**...more on this next week. To create a **Fragment**, right-click on **java > op.mobile.app.dev.username.travelling.ui.login > New > Kotlin Class/File**. Again, you will be You will be presented with a popup window. Call this new class **LoginFragment**, then hit the **Enter** key. Once created, add the following code:
 
 ```kotlin
+...
 class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -424,6 +426,7 @@ In `activity_main.xml`, add the following under the `Toolbar`:
 Lastly, we need to set a `FragmentManager` which interacts with the **fragments** associated with `MainActivity`. To do this, in `MainActivity.kt`, add the following code:
 
 ```kotlin
+...
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         ...
