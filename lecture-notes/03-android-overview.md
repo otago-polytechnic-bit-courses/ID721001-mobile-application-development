@@ -217,6 +217,10 @@ Go to `MainActivity.kt` and add the following code:
 
 ```kotlin
 ...
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import androidx.appcompat.widget.Toolbar
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         ...
@@ -286,6 +290,14 @@ We want to keep our file structure nice and tidy. Screens usually go in a packag
 
 ```kotlin
 ...
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import op.mobile.app.dev.username.travelling.R
+
 class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -296,8 +308,6 @@ class LoginFragment : Fragment() {
     }
 }
 ```
-
-You will probably see a lot of red. Do you know why?
 
 Also you will notice a layout file called `fragment_login`. We are yet to create this file. **Fragment** layout files are stored alongside **activity** layout files, i.e., `activity_main.xml`. The only difference is that they are prefix with **fragment** instead of **activity**. To create a new **fragment** layout file, right-click on **res > layout > New > Layout Resource File**. You will be presented with a popup window. We only need to give it a **File name** of `fragment_login`. Do not worry about the rest of the fields, i.e., **Root element**, **Source set**, **Directory name** and **Available qualifiers**. Once you have named it, click the **OK** button.
 
@@ -427,6 +437,8 @@ Lastly, we need to set a `FragmentManager` which interacts with the **fragments*
 
 ```kotlin
 ...
+import androidx.navigation.fragment.NavHostFragment
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         ...
