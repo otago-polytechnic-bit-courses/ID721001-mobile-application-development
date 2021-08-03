@@ -399,7 +399,7 @@ Every application needs a start destination. In our case, it will be `LoginFragm
 
     <fragment
         android:id="@+id/navigation_login"
-        android:name="op.mobile.app.dev.grayson.travelling.ui.login.LoginFragment"
+        android:name="op.mobile.app.dev.username.travelling.ui.login.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login">
     </fragment>
