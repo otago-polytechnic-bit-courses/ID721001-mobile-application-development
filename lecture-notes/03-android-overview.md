@@ -387,7 +387,7 @@ The login UI should look like the following:
 
 ### Set a Start Destination
 
-Every application needs a start destination. In our case, it will be `LoginFragment`, but we could also start with a splash screen. We also need to consider the fact that we will be navigate to and from different screens. How do we do this? We need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource File**. You will be presented with a popup window. We are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource Directory** called `mobile_navigation.xml`. We are going to use this file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
+Every application needs a start destination. In our case, it will be `LoginFragment`, but we could also start with a splash screen. We also need to consider the fact that we will be navigate to and from different screens. How do we do this? We need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. We are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource File** called `mobile_navigation.xml`. We are going to use this file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
