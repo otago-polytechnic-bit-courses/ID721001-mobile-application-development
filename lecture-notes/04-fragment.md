@@ -267,7 +267,7 @@ navController.addOnDestinationChangedListener { _, destination, _ ->
 }
 ```
 
-- Run your application again. What has happened?
+- Run your application. What happens?
 
 ## Self-Directed Task
 
@@ -277,14 +277,29 @@ The login screen is your start destination which is fine at the moment. However,
 - Set this `fragment` to the start destination.
 - In the `fragment` element, nest the following `action`:
 
-````xml
-    <action
-            android:id="@+id/action_splash_screen_fragment_to_login_fragment"
-            app:destination="@id/navigation_login" />
+```xml
+<action
+    android:id="@+id/action_splash_screen_fragment_to_login_fragment"
+    app:destination="@id/navigation_login" />
 ```
 
 You are saying, I want to navigate from the splash screen to the login screen. **Note:** you can hard code this in the `Fragment` class, but not a standard practice.
 
 - In `SplashScreenFragment.kt`, implement splash screen functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00
 
-If you are stuck on how to implement a splash screen, use this link - http://www.kotlincodes.com/kotlin/android-splash-screen-with-kotlin. Go to the **Create Splash Screen Activity Class** (you can ignore the first few sections) and refer to the code snippet provided.
+- If you are stuck on how to implement a splash screen, use this link - http://www.kotlincodes.com/kotlin/android-splash-screen-with-kotlin. Go to the **Create Splash Screen Activity Class** (you can ignore the first few sections) and refer to the code snippet provided.
+- Inside of the `Handler().postDelayed()` method remove:
+
+```kotlin
+startActivity(Intent(this, MainActivity::class.java))
+finish()
+```
+
+- Instead, add:
+```kotlin
+val action = SplashScreenFragmentDirections
+    .actionSplashScreenFragmentToLoginFragment()
+view?.findNavController()?.navigate(action) // Calling the navigation declared in mobile_navigation.xml
+```
+
+- Run your application. What happens?
