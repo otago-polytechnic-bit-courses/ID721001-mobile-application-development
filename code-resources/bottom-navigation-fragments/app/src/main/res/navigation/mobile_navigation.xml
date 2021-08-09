@@ -8,19 +8,19 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="op.mobile.app.dev.bottom.navigation.ui.home.HomeFragment"
-        android:label="@string/home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="op.mobile.app.dev.bottom.navigation.ui.dashboard.DashboardFragment"
-        android:label="@string/dashboard"
+        android:label="Dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="op.mobile.app.dev.bottom.navigation.ui.notifications.NotificationsFragment"
-        android:label="@string/notifications"
+        android:label="Notifications"
         tools:layout="@layout/fragment_notifications" />
 
 </navigation>

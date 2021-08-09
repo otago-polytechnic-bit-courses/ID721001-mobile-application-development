@@ -54,7 +54,7 @@ fun main() {
 }
 ```
 
-**Kotlin** does not enforce immutability, but is recommended that `val` is used wherever possible. Also, we will discuss other keywords when we start **Android** development.
+**Kotlin** does not enforce immutability, but is recommended that `val` is used wherever possible. Also, we will discuss other keywords when you start **Android** development.
 
 ### Null Safety
 

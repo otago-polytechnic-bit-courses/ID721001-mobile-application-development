@@ -83,7 +83,7 @@ To create a new Android project, follow these steps:
 
 Once everything is setup, push your project to the remote repository on **GitHub**. Next, create/checkout a branch called `feature-login` using the command: `git checkout -b feature-login`. This will be your development branch for the login feature you are going to create later in the session.
 
-Before we get to that, lets look at some important project files.
+Before you get to that, lets look at some important project files.
 
 ### AndroidManifest.xml
 
@@ -136,7 +136,7 @@ A layout resource defines the architecture for the UI in an **activity** class o
 
 <img src="../resources/img/03-android-overview/android-studio-activity-main-xml.JPG" width="800" height="500" />
 
-Currently we are in **Design** view. Click **Code**. You should see the following **XML** code:
+Currently, you are in **Design** view. Click **Code**. You should see the following **XML** code:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -211,7 +211,7 @@ Use the **Travelling** project you created earlier for this activity. In `activi
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-We have removed the `TextView` widget and added a `Toolbar` widget. Why? we may not want to show the `Toolbar` on specific screens, i.e., the login screen.
+You have removed the `TextView` widget and added a `Toolbar` widget. Why? you may not want to show the `Toolbar` on specific screens, i.e., the login screen.
 
 Go to `MainActivity.kt` and add the following code:
 
@@ -242,7 +242,7 @@ In both `themes.xml`, add the following style:
 
 This `style` will remove the application's default action bar.
 
-We have not applied this `style` to our application yet...go to `AndroidManifest.xml` and replace:
+You have not applied this `style` to our application yet...go to `AndroidManifest.xml` and replace:
 
 ```xml
 <activity android:name=".MainActivity">
@@ -286,7 +286,7 @@ You should have something that looks like this:
 
 ### Create a Screen
 
-We want to keep our file structure nice and tidy. Screens usually go in a package called ui. To create a new package, right-click on **java > op.mobile.app.dev.username.travelling > New > Package**. You will be presented with a popup window. Add **ui.login** to the end of the main package, i.e., **op.mobile.app.dev.username.travelling.ui.login**. We will be using **Fragments** as screens rather than **Activities**...more on this next week. To create a **Fragment**, right-click on **java > op.mobile.app.dev.username.travelling.ui.login > New > Kotlin Class/File**. Again, you will be You will be presented with a popup window. Call this new class **LoginFragment**, then hit the **Enter** key. Once created, add the following code:
+You want to keep our file structure nice and tidy. Screens usually go in a package called ui. To create a new package, right-click on **java > op.mobile.app.dev.username.travelling > New > Package**. You will be presented with a popup window. Add **ui.login** to the end of the main package, i.e., **op.mobile.app.dev.username.travelling.ui.login**. You will be using **Fragments** as screens rather than **Activities**...more on this next week. To create a **Fragment**, right-click on **java > op.mobile.app.dev.username.travelling.ui.login > New > Kotlin Class/File**. Again, you will be You will be presented with a popup window. Call this new class **LoginFragment**, then hit the **Enter** key. Once created, add the following code:
 
 ```kotlin
 ...
@@ -309,7 +309,7 @@ class LoginFragment : Fragment() {
 }
 ```
 
-Also you will notice a layout file called `fragment_login`. We are yet to create this file. **Fragment** layout files are stored alongside **activity** layout files, i.e., `activity_main.xml`. The only difference is that they are prefix with **fragment** instead of **activity**. To create a new **fragment** layout file, right-click on **res > layout > New > Layout Resource File**. You will be presented with a popup window. We only need to give it a **File name** of `fragment_login`. Do not worry about the rest of the fields, i.e., **Root element**, **Source set**, **Directory name** and **Available qualifiers**. Once you have named it, click the **OK** button.
+Also you will notice a layout file called `fragment_login`. You are yet to create this file. **Fragment** layout files are stored alongside **activity** layout files, i.e., `activity_main.xml`. The only difference is that they are prefix with **fragment** instead of **activity**. To create a new **fragment** layout file, right-click on **res > layout > New > Layout Resource File**. You will be presented with a popup window. You only need to give it a **File name** of `fragment_login`. Do not worry about the rest of the fields, i.e., **Root element**, **Source set**, **Directory name** and **Available qualifiers**. Once you have named it, click the **OK** button.
 
 In `fragment_login.xml`, add the following code:
 
@@ -318,7 +318,9 @@ In `fragment_login.xml`, add the following code:
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.login.LoginFragment">
 
     <TextView
         android:id="@+id/tv_header"
@@ -382,12 +384,12 @@ The login UI should look like the following:
 <img src="../resources/img/03-android-overview/android-studio-activity-ui.JPG" width="275" height="400" />
 
 - Why is the `View` text attribute highlighted orange?
-- How do we fix this?
+- How do you fix this?
 - Also, the `Views` have hardcoded integer values for some of their attributes. How do fix this as well?
 
 ### Set a Start Destination
 
-Every application needs a start destination. In our case, it will be `LoginFragment`, but we could also start with a splash screen. We also need to consider the fact that we will be navigate to and from different screens. How do we do this? We need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. We are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource File** called `mobile_navigation.xml`. We are going to use this file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
+Every application needs a start destination. In our case, it will be `LoginFragment`, but you could also start with a splash screen. You also need to consider the fact that you will be navigate to and from different screens. How do you do this? You need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. You are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource File** called `mobile_navigation.xml`. You are going to use this file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -433,7 +435,7 @@ In `activity_main.xml`, add the following under the `Toolbar`:
 
 ### Set a FragmentManager
 
-Lastly, we need to set a `FragmentManager` which interacts with the **fragments** associated with `MainActivity`. To do this, in `MainActivity.kt`, add the following code:
+Lastly, you need to set a `FragmentManager` which interacts with the **fragments** associated with `MainActivity`. To do this, in `MainActivity.kt`, add the following code:
 
 ```kotlin
 ...
