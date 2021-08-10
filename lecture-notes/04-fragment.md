@@ -66,9 +66,10 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val btmNavView: BottomNavigationView = findViewById(R.id.btm_nav_view)
+        val navController = navHostFragment.navController
         val navHostFragment =
                 supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        btmNavView.setupWithNavController(navHostFragment.navController)
+        btmNavView.setupWithNavController(navController)
     }
 }
 ```
