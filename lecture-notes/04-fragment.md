@@ -259,10 +259,10 @@ In your **Travelling** project, implement the following:
 ```kotlin
 navController.addOnDestinationChangedListener { _, destination, _ ->
     if (destination.id == R.id.navigation_login) {
-        btm_nav_view.visibility = View.GONE // Hiding the bottom nav view
+        btmNavView.visibility = View.GONE // Hiding the bottom nav view
         toolbar.visibility = View.GONE // Hiding the toolbar
     } else {
-        btm_nav_view.visibility = View.VISIBLE
+        btmNavView.visibility = View.VISIBLE
         toolbar.visibility = View.VISIBLE
     }
 }
