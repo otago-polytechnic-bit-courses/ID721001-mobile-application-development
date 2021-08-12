@@ -66,9 +66,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val btmNavView: BottomNavigationView = findViewById(R.id.btm_nav_view)
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
-        val navHostFragment =
-                supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         btmNavView.setupWithNavController(navController)
     }
 }
@@ -259,10 +258,10 @@ In your **Travelling** project, implement the following:
 ```kotlin
 navController.addOnDestinationChangedListener { _, destination, _ ->
     if (destination.id == R.id.navigation_login) {
-        btm_nav_view.visibility = View.GONE // Hiding the bottom nav view
+        btmNavView.visibility = View.GONE // Hiding the bottom nav view
         toolbar.visibility = View.GONE // Hiding the toolbar
     } else {
-        btm_nav_view.visibility = View.VISIBLE
+        btmNavView.visibility = View.VISIBLE
         toolbar.visibility = View.VISIBLE
     }
 }
@@ -286,6 +285,18 @@ The login screen is your start destination which is fine at the moment. However,
 
 You are saying, I want to navigate from the splash screen to the login screen. **Note:** you can hard code this in the `Fragment` class, but not a standard practice.
 
+- In your `build.gradle (Project)`, add the following in the `dependencies` block:
+
+```xml
+classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5" // Without this, you can not navigate between screens
+```
+
+- In your `build.gradle (Module)`, add the following in the `plugins` block:
+
+```xml
+id 'androidx.navigation.safeargs' // Like above, without this, you can not navigate between screens
+```
+
 - In `SplashScreenFragment.kt`, implement splash screen functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00
 
 - If you are stuck on how to implement a splash screen, use this link - <http://www.kotlincodes.com/kotlin/android-splash-screen-with-kotlin>. Go to the **Create Splash Screen Activity Class** (you can ignore the first few sections) and refer to the code snippet provided.
@@ -303,5 +314,7 @@ val action = SplashScreenFragmentDirections
     .actionSplashScreenFragmentToLoginFragment()
 view?.findNavController()?.navigate(action) // Calling the navigation action declared in mobile_navigation.xml
 ```
+
+- If you can not called `SplashScreenFragmentDirections`, then rebuild the project by clicking **Build > Rebuild Project**.
 
 - Run your application. What happens?
