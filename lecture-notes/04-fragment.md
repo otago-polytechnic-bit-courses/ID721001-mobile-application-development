@@ -303,6 +303,7 @@ id 'androidx.navigation.safeargs' // Like above, without this, you can not navig
 - Inside of the `Handler().postDelayed()` method remove:
 
 ```kotlin
+// This is only useful if you want to navigate between activities. We only want to navigate between fragments
 startActivity(Intent(this, MainActivity::class.java))
 finish()
 ```
