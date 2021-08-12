@@ -291,7 +291,7 @@ You are saying, I want to navigate from the splash screen to the login screen. *
 classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5" // Without this, you can not navigate between screens
 ```
 
-- In your `build.gradle (Module)`, add the following in the `dependencies` block:
+- In your `build.gradle (Module)`, add the following in the `plugins` block:
 
 ```xml
 id 'androidx.navigation.safeargs' // Like above, without this, you can not navigate between screens
