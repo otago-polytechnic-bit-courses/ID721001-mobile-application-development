@@ -302,4 +302,6 @@ val action = SplashScreenFragmentDirections
 view?.findNavController()?.navigate(action) // Calling the navigation declared in mobile_navigation.xml
 ```
 
+- If you can not called `SplashScreenFragmentDirections`, then rebuild the project by clicking **Build > Rebuild Project**.
+
 - Run your application. What happens?
