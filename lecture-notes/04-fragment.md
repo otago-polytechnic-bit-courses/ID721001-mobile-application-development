@@ -288,7 +288,7 @@ You are saying, I want to navigate from the splash screen to the login screen. *
 
 - In `SplashScreenFragment.kt`, implement splash screen functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00
 
-- If you are stuck on how to implement a splash screen, use this link - http://www.kotlincodes.com/kotlin/android-splash-screen-with-kotlin. Go to the **Create Splash Screen Activity Class** (you can ignore the first few sections) and refer to the code snippet provided.
+- If you are stuck on how to implement a splash screen, use this link - <http://www.kotlincodes.com/kotlin/android-splash-screen-with-kotlin>. Go to the **Create Splash Screen Activity Class** (you can ignore the first few sections) and refer to the code snippet provided.
 - Inside of the `Handler().postDelayed()` method remove:
 
 ```kotlin
@@ -297,10 +297,11 @@ finish()
 ```
 
 - Instead, add:
+
 ```kotlin
 val action = SplashScreenFragmentDirections
     .actionSplashScreenFragmentToLoginFragment()
-view?.findNavController()?.navigate(action) // Calling the navigation declared in mobile_navigation.xml
+view?.findNavController()?.navigate(action) // Calling the navigation action declared in mobile_navigation.xml
 ```
 
 - Run your application. What happens?
