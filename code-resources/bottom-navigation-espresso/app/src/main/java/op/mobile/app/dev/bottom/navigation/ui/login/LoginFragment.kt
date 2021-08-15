@@ -33,7 +33,6 @@ class LoginFragment : Fragment() {
                     .actionLoginFragmentToHomeFragment()
                 // Navigate from the login screen to the home screen
                 view?.findNavController()?.navigate(action)
-
             } else {
                 Toast.makeText(
                     // Get the host activity - MainActivity
@@ -41,7 +40,7 @@ class LoginFragment : Fragment() {
                     // The text you want to display
                     "Incorrect email address and/or password. Please try again",
                     // The time you want the toast to appear for
-                    Toast.LENGTH_LONG
+                    Toast.LENGTH_LONG // Toast.LENGTH_SHORT
                 // Remember to call the show() function
                 ).show()
             }
