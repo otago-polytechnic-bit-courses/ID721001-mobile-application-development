@@ -56,7 +56,7 @@ import org.junit.runner.RunWith
 @LargeTest
 class LoginFragmentInstrumentedTest {
 
-    // lateinit allows you initialise a value later
+    // lateinit allows you to initialise a variable later
     private lateinit var emailAddressToBeTyped: String
     private lateinit var passwordToBeTyped: String
 
@@ -66,7 +66,7 @@ class LoginFragmentInstrumentedTest {
 
     @Before
     fun initValidString() {
-        // Initialising those variable that are marked with the lateinit keyword above
+        // Initialising variables marked with the lateinit keyword
         emailAddressToBeTyped = "john.doe@email.com"
         passwordToBeTyped = "P@ssw0rd123"
     }
