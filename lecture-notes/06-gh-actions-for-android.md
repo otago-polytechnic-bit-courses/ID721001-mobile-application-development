@@ -6,11 +6,11 @@ A software practice that requires teams to commit code to a shared repository. C
 
 When you commit code, you can build and test the code to ensure that the commit does not introduce errors. Also, you can include code linters, security checks, code coverage, functional test, and other custom checks. **Note:** you will be required to do a few of these in the **Project** assessment.
 
-Building and testing the code requires a server. You can build and test the code locally before pushing it to your repository, or you can use a CI server that checks for new commits in your repository. We are going to do the latter.
+Building and testing the code requires a server. You can build and test the code locally before pushing it to your repository, or you can use a **CI** server that checks for new commits in your repository. We are going to do the latter.
 
 ## GitHub Actions
 
-CI using GH Actions offers various workflows to build the code in a repository and run the tests. Workflows can run on GH-hosted VMs or your own hosted machines.
+**CI** using **GH Actions** offers various workflows to build the code in a repository and run the tests. Workflows can run on GH-hosted VMs or your own hosted machines.
 
 You can configure your workflow to run when an event occurs, i.e., when new code is pushed to your repository. Also, you can schedule a workflow to run, i.e., every day at midday.
 
@@ -18,10 +18,21 @@ GH runs your tests and provides the results of each test in the pull request so 
 
 ## Try GitHub Actions for Android
 
-You will use GH Actions for instrumented testing/ UI testing with Espresso, generating an Android Package (APK), and code linting.
+You will use **GH Actions** for instrumented testing/ UI testing with **Espresso**, generating an **Android Package (APK)**, and code linting.
+
+Go to https://github.com/otago-polytechnic-bit-courses/mobile-app-dev-gh-actions-test and **fork** the repository.
 
 <img src="../resources/img/06-gh-actions-for-android/fork-repository.PNG" />
 
+Once you have forked the repository, click on the **Actions** tab.
+
+<img src="../resources/img/06-gh-actions-for-android/actions.PNG" />
+
+Once you are in the **Actions** tab, click the **Set up this workflow** button.
+
+<img src="../resources/img/06-gh-actions-for-android/setup-workflow.PNG" />
+
+Name the workflow `build_pull_request.yml`. **YML** or **YAML** stands for yet another markup langauge. It can be an alternative to **JSON**
 
 **Resources:** 
 - https://docs.github.com/en/actions/guides/about-continuous-integration
