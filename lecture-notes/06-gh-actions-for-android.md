@@ -20,6 +20,9 @@ GH runs your tests and provides the results of each test in the pull request so 
 
 You will use GH Actions for instrumented testing/ UI testing with Espresso, generating an Android Package (APK), and code linting.
 
+<img src="../resources/img/06-gh-actions-for-android/fork-repository.PNG" />
+
+
 **Resources:** 
 - https://docs.github.com/en/actions/guides/about-continuous-integration
 - https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/virtual-environments-for-github-hosted-runners
