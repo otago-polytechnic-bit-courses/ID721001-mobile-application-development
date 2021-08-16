@@ -82,7 +82,7 @@ Then click the **Start commit** button.
 
 Create a new branch from `main` called `feature-test-gh-actions`. Navigate to `LoginFragmentInstrumented.kt` and change `emailAddressToBeTyped` value to `jane.doe@email.com`. Commit the new change.
 
-<img src="../resources/img/06-gh-actions-for-android/update-login-fragment.PNG" />
+<img src="../resources/img/06-gh-actions-for-android/update-login-fragment-test.PNG" />
 
 Create a new pull request. Wait five seconds for the workflow to appear.
 
@@ -92,7 +92,13 @@ It will take a bit for the workflow to either pass or fail. You should expect th
 
 <img src="../resources/img/06-gh-actions-for-android/job-failed.PNG" />
 
- Navigate back to `LoginFragmentInstrumented.kt` and change `emailAddressToBeTyped` value to `john.doe@email.com`. **Note:** this is the value that matches in `LoginFragment.kt`.
+We can check the details to see why the workflow failed.
+
+<img src="../resources/img/06-gh-actions-for-android/job-failed-details.PNG" />
+
+Navigate back to `LoginFragmentInstrumented.kt` and change `emailAddressToBeTyped` value to `john.doe@email.com`. **Note:** this is the value that matches in `LoginFragment.kt`. Any new changes with trigger the workflow to automatically run again. 
+
+<img src="../resources/img/06-gh-actions-for-android/job-passed.PNG" />
 
 **Resources:** 
 - https://docs.github.com/en/actions/guides/about-continuous-integration
