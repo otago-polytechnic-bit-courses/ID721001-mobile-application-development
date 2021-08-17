@@ -20,11 +20,11 @@ You can configure your workflow to run when an event occurs, i.e., when new code
 
 You will use **GH Actions** for instrumented testing/ UI testing with **Espresso**, generating an **Android Package (APK)**, and code linting.
 
-Go to https://github.com/otago-polytechnic-bit-courses/mobile-app-dev-gh-actions-test and **fork** the repository.
+Go to https://github.com/otago-polytechnic-bit-courses/mobile-app-dev-gh-actions-test and **fork** the repository. Navigate to https://github.com/otago-polytechnic-bit-courses/mobile-app-dev-gh-actions-test/tree/main/app/src/androidTest/java/op/mobile/app/dev/bottom/navigation and create a new file called `LoginFragmentInstrumented.kt`. In `LoginFragmentInstrumented.kt`, add the test code from the last session. Commit the new changes.
 
 <img src="../resources/img/06-gh-actions-for-android/fork-repository.PNG" />
 
-Once you have forked the repository, click on the **Actions** tab.
+Once you have committed the new changes, click on the **Actions** tab.
 
 <img src="../resources/img/06-gh-actions-for-android/actions.PNG" />
 
