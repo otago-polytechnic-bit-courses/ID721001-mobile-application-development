@@ -6,7 +6,7 @@
 
 ## Code Example
 
-Unzip and open the `bottom-navigation-data-binding` directory provided to you in **Android Studio**. 
+Open the `bottom-navigation-data-binding` directory provided to you in **Android Studio**. The directory can be found in **code-resources**.
 
 Lets take a look at what is happening...
 
