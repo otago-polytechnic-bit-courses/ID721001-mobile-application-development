@@ -6,9 +6,7 @@
 
 ## Code Example
 
-Unzip and open the `api-retrofit` directory provided to you in **Android Studio**.
-
-Link to resource - 
+Open the `api-retrofit` directory provided to you in **Android Studio**. The directory can be found in **code-resources**.
 
 Lets take a look at what is happening...
 
