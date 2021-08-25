@@ -98,7 +98,7 @@ Binding variables that can be used in expressions are defined in the `data` elem
 
 Binding components in your **XML** layout files lets you remove many UI framework calls in your **UI controllers**, making them easier to maintain. Also, this improves the performance of your application & prevent memory leaks.
 
-### DashboardFragment
+### HomeFragment
 
 The **data binding** library provides classes & methods to easily observe data changes. You do not have to worry about refreshing the UI when a data source changes. You can make your variables or their properties **observable**. 
 
