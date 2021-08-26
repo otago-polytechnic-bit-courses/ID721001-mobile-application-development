@@ -5,8 +5,8 @@ import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import op.mobile.app.dev.api.R
 
-@BindingAdapter("apiServiceStatus")
-fun bindAPIServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
+@BindingAdapter("service_status")
+fun bindServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
     when (status) {
         ServiceStatus.LOADING -> {
             tvStatus.visibility = View.VISIBLE

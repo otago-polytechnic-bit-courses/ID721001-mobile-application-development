@@ -3,7 +3,7 @@ package op.mobile.app.dev.api.service
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-private const val BASE_URL = "https://jobs.github.com/"
+private const val BASE_URL = "https://gist.githubusercontent.com/Grayson-Orr/49223bcae755ef9479b3150182dc125e/"
 
 object ServiceInstance {
     private val retrofit by lazy {
@@ -13,7 +13,7 @@ object ServiceInstance {
             .build()
     }
 
-    val retrofitService: IGitHubJobs by lazy {
-        retrofit.create(IGitHubJobs::class.java)
+    val retrofitService: ICountry by lazy {
+        retrofit.create(ICountry::class.java)
     }
 }

@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/navigation_github_jobs"
-        android:name="op.mobile.app.dev.api.ui.github.GitHubJobsFragment"
+        android:name="op.mobile.app.dev.api.ui.home.HomeFragment"
         android:label="@string/github_jobs"
-        tools:layout="@layout/fragment_github_jobs" />
+        tools:layout="@layout/fragment_home" />
 
 </navigation>
