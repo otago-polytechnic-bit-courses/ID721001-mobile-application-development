@@ -195,7 +195,7 @@ Note how `service_status` binding adapter is being used.
 
         <variable
             name="homeViewModel"
-            type="op.mobile.app.dev.api.ui.github.HomeViewModel" />
+            type="op.mobile.app.dev.api.ui.home.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

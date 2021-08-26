@@ -14,7 +14,7 @@ Lets take a look at what is happening...
 
 ### RecyclerViewItem Layout
 
-So far, you have looked at how to bind `ViewModel` data to a layout. The following is an example on how to bind model data, i.e., `GitHubJobs` to a layout.
+So far, you have looked at how to bind `ViewModel` data to a layout. The following is an example on how to bind model data, i.e., `Country` to a layout.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -24,8 +24,8 @@ So far, you have looked at how to bind `ViewModel` data to a layout. The followi
     <data>
 
         <variable
-            name="githubJobs"
-            type="op.mobile.app.dev.api.model.GitHubJobs" />
+            name="country"
+            type="op.mobile.app.dev.api.model.Country" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -50,7 +50,7 @@ So far, you have looked at how to bind `ViewModel` data to a layout. The followi
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="@{githubJobs.title}"
+                android:text="@{country.name}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -72,8 +72,8 @@ So far, you have looked at how to bind `ViewModel` data to a layout. The followi
 
 class ServiceViewHolder(private var binding: RecyclerViewItemBinding) :
     RecyclerView.ViewHolder(binding.root) {
-    fun bind(githubJobs: GitHubJobs) {
-        binding.githubJobs = githubJobs
+    fun bind(country: Country) {
+        binding.country = country
         binding.executePendingBindings()
     }
 }
@@ -91,18 +91,18 @@ class ServiceViewHolder(private var binding: RecyclerViewItemBinding) :
 ...
 
 class ServiceAdapter :
-    ListAdapter<GitHubJobs, ServiceViewHolder>(DiffCallback) {
-    companion object DiffCallback : DiffUtil.ItemCallback<GitHubJobs>() {
+    ListAdapter<Country, ServiceViewHolder>(DiffCallback) {
+    companion object DiffCallback : DiffUtil.ItemCallback<Country>() {
         override fun areItemsTheSame(
-            oldItem: GitHubJobs,
-            newItem: GitHubJobs
+            oldItem: Country,
+            newItem: Country
         ): Boolean {
             return oldItem.id == newItem.id // There might be cases where you can not compare id, i.e., an object from your API data does not contain an id field
         }
 
         override fun areContentsTheSame(
-            oldItem: GitHubJobs,
-            newItem: GitHubJobs
+            oldItem: Country,
+            newItem: Country
         ): Boolean {
             return oldItem == newItem
         }
@@ -125,8 +125,8 @@ class ServiceAdapter :
         holder: ServiceViewHolder,
         position: Int
     ) {
-        val githubJob = getItem(position)
-        holder.bind(githubJob)
+        val country = getItem(position)
+        holder.bind(country)
     }
 }
 ```
@@ -135,13 +135,13 @@ class ServiceAdapter :
 
 - `submitList()` - submit a list to be diffed & displayed.
 
-This **BindingAdapter** will be used in `fragment_github_jobs.xml`.
+This **BindingAdapter** will be used in `fragment_home.xml`.
 
 ```kotlin
 ...
 
-@BindingAdapter("listData")
-fun bindRecyclerView(recyclerView: RecyclerView, data: List<GitHubJobs>?) {
+@BindingAdapter("list_data")
+fun bindListData(recyclerView: RecyclerView, data: List<Country>?) {
     val adapter = recyclerView.adapter as ServiceAdapter
     adapter.submitList(data)
 }
@@ -149,10 +149,10 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<GitHubJobs>?) {
 ...
 ```
 
-### GitHubFragment Layout
+### HomeFragment Layout
 
 - Declare a `RecyclerView` with a `LinearLayoutManager`. This is used for displaying items vertically or horizontally. 
-- Set `listData` attribute to `LiveData<List<GitHubJobs>>`.
+- Set `list_data` attribute to `LiveData<List<Country>>`.
 - Set the item's layout to `recycler_view_item.xml`.
 
 ```xml
@@ -171,29 +171,29 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<GitHubJobs>?) {
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:listData="@{githubJobsViewModel.response}"
+    app:list_data="@{homeViewModel.response}"
     tools:listitem="@layout/recycler_view_item" />
 
 ...
 ```
 
-### GitHubFragment
+### HomeFragment
 
 Bind the `RecyclerView` adapter to `ServiceAdapter`.
 
 ```kotlin
 ...
 
-class GitHubJobsFragment : Fragment() {
+class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding: FragmentGithubJobsBinding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_github_jobs, container, false
+        val binding: FragmentHomeBinding = DataBindingUtil.inflate(
+            inflater, R.layout.fragment_home_jobs, container, false
         )
 
-        val viewModel = ViewModelProvider(this).get(GitHubJobsViewModel::class.java)
+        val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
         binding.lifecycleOwner = viewLifecycleOwner
 
