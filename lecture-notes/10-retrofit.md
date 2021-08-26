@@ -54,22 +54,22 @@ To make a request to an **API**, you need declare the internet permission in `An
 </manifest>
 ```
 
-### GitHubJobs
+### Country
 
 ```kotlin
-data class GitHubJobs(val id: String, val title: String)
+data class Country(val id: String, val name: String)
 ```
 
-### IGitHubJobs
+### ICountry
 
 **Retrofit** converts your **API** into a **Kotlin** interface. Annotations on an interface method & its parameters indicate how a request will be handled. There are eight different annotations: `HTTP`, `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `OPTIONS` & `HEAD`. The **URL** of the resource is specified in the annotation. Also, you can specify query parameters in the **URL**.
 
 ```kotlin
 ...
 
-interface IGitHubJobs {
-    @GET("positions.json?description=kotlin&page=1")
-    suspend fun getResponse(): List<GitHubJobs>
+interface ICountry {
+    @GET("raw")
+    suspend fun getResponse(): List<Country>
 }
 ```
 
@@ -88,12 +88,12 @@ Have a look at this [video](https://www.youtube.com/watch?v=BOHK_w09pVA&t=300s) 
 
 **Note:** calling the `baseUrl()` method is required before calling `build()` method. 
 
-`Retrofit` class converts your **API** interface, i.e., `IGitHubJobs` into a callable object, i.e., `retrofitService`. 
+`Retrofit` class converts your **API** interface, i.e., `ICountry` into a callable object, i.e., `retrofitService`. 
 
 ```kotlin
 ...
 
-private const val BASE_URL = "https://jobs.github.com/"
+private const val BASE_URL = "https://gist.githubusercontent.com/Grayson-Orr/49223bcae755ef9479b3150182dc125e/"
 
 object ServiceInstance {
     private val retrofit by lazy {
@@ -103,8 +103,8 @@ object ServiceInstance {
             .build()
     }
 
-    val retrofitService: IGitHubJobs by lazy {
-        retrofit.create(IGitHubJobs::class.java)
+    val retrofitService: ICountry by lazy {
+        retrofit.create(ICountry::class.java)
     }
 }
 ```
@@ -131,8 +131,8 @@ enum class ServiceStatus {
 ```kotlin
 ...
 
-@BindingAdapter("apiServiceStatus")
-fun bindAPIServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
+@BindingAdapter("service_status")
+fun bindServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
     when (status) {
         ServiceStatus.LOADING -> {
             tvStatus.visibility = View.VISIBLE
@@ -149,19 +149,19 @@ fun bindAPIServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
 
 **Resource:** https://developer.android.com/topic/libraries/data-binding/binding-adapters
 
-### GitHubJobsViewModel
+### HomeViewModel
 
 **Coroutines** provide an API that enables you to write asynchronous code. You can define a `CoroutineScope`, i.e., `viewModelScope.launch`, which manages when your **coroutines** should run. 
 
 ```kotlin
 ...
 
-class GitHubJobsViewModel : ViewModel() {
+class HomeViewModel : ViewModel() {
     private val _status = MutableLiveData<ServiceStatus>()
     val status: LiveData<ServiceStatus> get() = _status
 
-    private val _response = MutableLiveData<List<GitHubJobs>>()
-    val response: LiveData<List<GitHubJobs>> get() = _response
+    private val _response = MutableLiveData<List<Country>>()
+    val response: LiveData<List<Country>> get() = _response
 
     init {
         viewModelScope.launch {
@@ -180,22 +180,22 @@ class GitHubJobsViewModel : ViewModel() {
 
 **Resource:** https://developer.android.com/topic/libraries/architecture/coroutines
 
-### GitHubJobsFragment Layout
+### Home Layout
 
-Note how `apiServiceStatus` binding adapter is being used. 
+Note how `service_status` binding adapter is being used. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.github.GitHubJobsFragment">
+    tools:context=".ui.home.HomeFragment">
 
     <data>
 
         <variable
-            name="githubJobsViewModel"
-            type="op.mobile.app.dev.api.ui.github.GitHubJobsViewModel" />
+            name="homeViewModel"
+            type="op.mobile.app.dev.api.ui.github.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -212,14 +212,14 @@ Note how `apiServiceStatus` binding adapter is being used.
             android:layout_marginBottom="16dp"
             android:gravity="center"
             android:textSize="24sp"
-            app:apiServiceStatus="@{githubJobsViewModel.status}"
+            app:service_status="@{homeViewModel.status}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_title"
+            android:id="@+id/tv_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -227,7 +227,7 @@ Note how `apiServiceStatus` binding adapter is being used.
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
             android:gravity="center"
-            android:text="@{githubJobsViewModel.response.get(0).title}"
+            android:text="@{homeViewModel.response.get(0).name}"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -239,27 +239,27 @@ Note how `apiServiceStatus` binding adapter is being used.
 </layout>
 ```
 
-### GitHubJobsFragment
+### HomeFragment
 
 This is similar to previous code examples.
 
 ```kotlin
 ...
 
-class GitHubJobsFragment : Fragment() {
+class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding: FragmentGithubJobsBinding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_github_jobs, container, false
+        val binding: FragmentHomeBinding = DataBindingUtil.inflate(
+            inflater, R.layout.fragment_home, container, false
         )
 
-        val viewModel = ViewModelProvider(this).get(GitHubJobsViewModel::class.java)
+        val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
         binding.lifecycleOwner = viewLifecycleOwner
 
-        binding.githubJobsViewModel = viewModel
+        binding.homeViewModel = viewModel
 
         return binding.root
     }
