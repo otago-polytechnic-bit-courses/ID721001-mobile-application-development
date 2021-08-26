@@ -5,8 +5,8 @@
     <data>
 
         <variable
-            name="githubJobs"
-            type="op.mobile.app.dev.api.model.GitHubJobs" />
+            name="country"
+            type="op.mobile.app.dev.api.model.Country" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -31,7 +31,7 @@
                 android:layout_marginStart="@dimen/margin_16"
                 android:layout_marginTop="@dimen/margin_16"
                 android:layout_marginBottom="@dimen/margin_16"
-                android:text="@{githubJobs.title}"
+                android:text="@{country.name}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
