@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.quiz.QuizFragment">
+
+    <data>
+
+        <variable
+            name="quizViewModel"
+            type="op.mobile.app.dev.graysono.travelling.ui.quiz.QuizViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_quiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:gravity="center"
+            android:text="@{@string/country_quiz(quizViewModel.country.name)}"
+            android:textSize="@dimen/text_size_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            app:cardCornerRadius="@dimen/radius_8"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_quiz">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_question"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_150"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:contentDescription="@{quizViewModel.answers[0]}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:square_image="@{quizViewModel.quiz.img}" />
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:gravity="center"
+                    android:text="@{quizViewModel.quiz.question}"
+                    android:textSize="@dimen/text_size_18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_question" />
+
+                <RadioGroup
+                    android:id="@+id/radio_btn_group_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_question">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_answer_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{quizViewModel.answers[0]}" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_answer_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{quizViewModel.answers[1]}" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_answer_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{quizViewModel.answers[2]}" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_answer_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{quizViewModel.answers[3]}" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:text="@string/submit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_btn_group_answers" />
+
+                <TextView
+                    android:id="@+id/tv_current_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:text="@{@string/score(quizViewModel.score)}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_current_score"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
+
+                <ImageView
+                    android:id="@+id/iv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:text="@{quizViewModel.timeString}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_time"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="op.mobile.app.dev.graysono.travelling.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_fragment_to_quiz_fragment"
+            app:destination="@id/navigation_quiz" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_quiz"
+        android:name="op.mobile.app.dev.graysono.travelling.ui.quiz.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz">
+        <argument
+            android:name="country"
+            app:argType="op.mobile.app.dev.graysono.travelling.model.Country" />
+        <action
+            android:id="@+id/action_quiz_fragment_to_quiz_results_fragment"
+            app:destination="@id/navigation_quiz_results" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_quiz_results"
+        android:name="op.mobile.app.dev.graysono.travelling.ui.quiz.results.QuizResultsFragment"
+        android:label="Results"
+        tools:layout="@layout/fragment_quiz_results">
+        <argument
+            android:name="score"
+            app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">API</string>
+    <string name="connection_error">Connection Error :(</string>
+    <string name="loading">Loading…</string>
+</resources>
