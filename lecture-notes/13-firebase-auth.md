@@ -1,10 +1,10 @@
 # **13: Firebase Auth**
 
-In this session, you are going to let your users authenticate with Firebase using their own Google accounts by integrating Google sign-in into your application.
+In this session, you are going to let your users authenticate with **Firebase** using their own **Google** accounts by integrating **Google** sign-in into your application.
 
 Firstly, open **bottom-navigation-auth** in **Android Studio**. Familarise yourself with the code.
 
-## How to Implement Authentication in your Application
+## How to Implement Firebase Authentication in your Application
 
 ### build.gradle (Module)
 
@@ -32,4 +32,152 @@ classpath 'com.google.gms:google-services:4.3.10' // Google Services plugin
 
 Also, make sure you have `google()` in both `repositories` blocks.
 
+### Create a Firebase Project
 
+Sign into the **Firebase Console** uisng your **Google account**. Link to the **Firebase Console** - https://console.firebase.google.com
+
+**Steps:**
+
+1. Click **Add Project**.
+2. Name your **Project** (I recommend **your Otago Polytechnic username-travelling**, for example, **graysono-travelling**)  and click **Continue**.
+3. Disable **Firebase Analytics** and click **Continue**.
+4. Wait while your **Project** being created. Once, it has been created, click **Continue**.
+
+You will presented with the following window:
+
+Click **Authentication** in the left-hand side panel, then click **Get Started**.
+
+Enable the following:
+- **Username/Password**. Ignore **Passwordless** option and click **Save**.
+- **Goggle**. Provide your **Google** account's email and click **Save**.
+
+### Add Firebase to your Android Application
+
+1. Click the **Android** icon.
+2. Register your application. Please make sure you provide information for both optional inputs.
+3. Download the configuration file and put it in your application's `app` directory.
+4. You should have added all required dependencies to use **Firebase Authentication** so you can skip this.
+
+### LoginFragment XML Layout
+
+Add the following:
+
+```xml
+<com.google.android.gms.common.SignInButton
+    android:id="@+id/btn_google_login"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="32dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+```
+
+A **Google** sign in button will be placed under the login button.
+
+### LoginFragment
+1. Declare two variables under the `LoginFragment` class declaration - `FirebaseAuth` and `GoogleSignInClient`.
+
+```kotlin
+private lateinit var auth: FirebaseAuth
+private lateinit var googleSignInClient: GoogleSignInClient
+```
+
+2. In `onCreateView()`, instantiate `FirebaseAuth` and `GoogleSignInClient`.
+
+```kotlin
+auth = FirebaseAuth.getInstance()
+
+val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+    .requestIdToken(getString(R.string.default_web_client_id))
+    .requestEmail() 
+    .build()
+googleSignInClient = GoogleSignIn.getClient(requireActivity(), gso)
+```
+
+3. In `onCreateView()`, find the **Google** sign in button by its id.
+
+```kotlin
+val btnGoogleLogin: SignInButton = view.findViewById(R.id.btn_google_login)
+```
+
+4. Under `onCreateView`, add the following:
+
+```kotlin
+    // Prompt the user to sign in using their Google account's email
+    private fun signIn() {
+        val signInIntent = googleSignInClient.signInIntent
+        startActivityForResult(signInIntent, RC_SIGN_IN)
+    }
+
+    // Once the user has chosen their Google account's email 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == RC_SIGN_IN) {
+            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            val exception = task.exception
+
+            // Authenticate with Firebase if Google sign in is successful
+            if (task.isSuccessful) {
+                try {
+                    val account = task.getResult(ApiException::class.java)!!
+                    firebaseAuthWithGoogle(account.idToken!!)
+                // Catch Google sign in issues
+                } catch (e: ApiException) {
+                    Toast.makeText(
+                        activity,
+                        "Failed to sign in with Google",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            // Display a message if there is Firebase Authentication issues
+            } else {
+                Toast.makeText(activity, exception.toString(), Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    /** 
+     * After a user successfully signs in, get an idToken from the GoogleSignInAccount 
+     * object, exchange it for a Firebase credential, and authenticate with Firebase
+     * using the Firebase credential
+     */ 
+    private fun firebaseAuthWithGoogle(idToken: String) {
+        val credential = GoogleAuthProvider.getCredential(idToken, null)
+        auth.signInWithCredential(credential)
+            .addOnCompleteListener(requireActivity()) {
+                // Navigate to HomeFragment
+                if (it.isSuccessful) {
+                    val action =
+                        LoginFragmentDirections
+                            .actionLoginFragmentToHomeFragment()
+                    view?.findNavController()?.navigate(action)
+                } else {
+                    Toast.makeText(
+                        activity,
+                        "Failed to authenticate with Google",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+    }
+
+    companion object {
+        const val RC_SIGN_IN = 9001
+    }
+```
+
+5. In `onCreateView()`, bind the `signIn()` method to `btnGoogleLogin`:
+
+```kotlin
+btnGoogleLogin.setOnClickListener {
+    signIn()
+}
+```
+
+## Resources
+- https://firebase.google.com/docs/android/setup
+- https://firebase.google.com/docs/auth/android/google-signin
