@@ -36,6 +36,8 @@ Also, make sure you have `google()` in both `repositories` blocks.
 
 Sign into the **Firebase Console** uisng your **Google account**. Link to the **Firebase Console** - https://console.firebase.google.com
 
+<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-1.png" width=800 height=500 />
+
 **Steps:**
 
 1. Click **Add Project**.
@@ -45,18 +47,27 @@ Sign into the **Firebase Console** uisng your **Google account**. Link to the **
 
 You will presented with the following window:
 
+<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-2.png" width=800 height=500 />
+
 Click **Authentication** in the left-hand side panel, then click **Get Started**.
 
 Enable the following:
 - **Username/Password**. Ignore **Passwordless** option and click **Save**.
 - **Goggle**. Provide your **Google** account's email and click **Save**.
 
+<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-3.png" width=800 height=500 />
+
 ### Add Firebase to your Android Application
 
-1. Click the **Android** icon.
+1. Got back to **Project Overview** and click the **Android** icon.
+
+<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-4.png" width=800 height=500 />
+
 2. Register your application. Please make sure you provide information for both optional inputs.
 3. Download the configuration file and put it in your application's `app` directory.
 4. You should have added all required dependencies to use **Firebase Authentication** so you can skip this.
+
+<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-5.png" width=800 height=500 />
 
 ### LoginFragment XML Layout
 
