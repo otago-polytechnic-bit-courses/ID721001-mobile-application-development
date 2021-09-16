@@ -12,7 +12,7 @@
 
 ## AndroidManifest.xml
 
-`android:icon` and `android:roundIcon` are declared when you create a new project.
+`android:icon` and `android:roundIcon` attributes allow you to specify your application's launcher icons.
 
 ```kotlin
 <?xml version="1.0" encoding="utf-8"?>
