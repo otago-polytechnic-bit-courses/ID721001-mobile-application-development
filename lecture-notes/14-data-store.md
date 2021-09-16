@@ -91,7 +91,6 @@ class SettingsManager(context: Context) {
 ```kotlin
 class SettingsFragment : Fragment() {
     private lateinit var swToggleDarkMode: SwitchCompat
-    private lateinit var settingsManager: SettingsManager
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -103,7 +102,7 @@ class SettingsFragment : Fragment() {
         swToggleDarkMode = view.findViewById(R.id.sw_toggle_dark_mode)
 
         // Instantiating SettingsManager - passing in a context. For Fragments, we use requireContext()...for Activities, we use this
-        settingsManager = SettingsManager(requireContext())
+        val settingsManager = SettingsManager(requireContext())
         
         // Observe changes to UIMode
         settingsManager.uiModeFlow.asLiveData().observe(viewLifecycleOwner) {
