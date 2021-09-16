@@ -127,11 +127,13 @@ class SettingsFragment : Fragment() {
     private fun setCheckedUIMode(uiMode: UIMode?) {
         when (uiMode) {
             UIMode.LIGHT -> {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO) // This changes the UI mode to light mode. It will use the default themes.xml
+                // This changes the UI mode to light mode. It will use the default themes.xml
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO) 
                 swToggleDarkMode.isChecked = false
             }
             UIMode.DARK -> {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES) // This changes the UI mode to light mode. It will use the night themes.xml
+                // This changes the UI mode to light mode. It will use the night themes.xml
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES) 
                 swToggleDarkMode.isChecked = true
             }
         }
