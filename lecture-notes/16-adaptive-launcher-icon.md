@@ -9,7 +9,7 @@ An icon can:
 
 ## Create and Adaptive Launcher Icon
 
-1. To create a new **adaptive launcher icon**, right-click on `res/mipmap` > New > Image Asset.
+1. To create a new **adaptive launcher icon**, right-click on `res/mipmap` **> New > Image Asset**.
 
 <img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-1.png" width="400" height="500" />
 
