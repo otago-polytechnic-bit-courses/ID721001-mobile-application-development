@@ -1,6 +1,20 @@
 # **16: Adaptive Launcher Icon**
 
+<img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-1.png" width="350" height="500" />
 
+<img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-2.png" width="500" height="350" />
+
+<img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-3.png" width="500" height="350" />
+
+<img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-4.png" width="500" height="350" />
+
+<img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-5.png" width="500" height="350" />
+
+## AndroidManifest.xml
+
+`android:icon` and `android:roundIcon` are declared when you create a new project.
+
+```kotlin
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="op.mobile.app.dev.bottom.navigation">
@@ -24,3 +38,4 @@
     </application>
 
 </manifest>
+```
