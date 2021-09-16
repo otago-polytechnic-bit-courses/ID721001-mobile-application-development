@@ -31,6 +31,10 @@ An icon can:
 
 **Resources:**
 - https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive
+- https://medium.com/google-design/understanding-android-adaptive-icons-cee8a9de93e2
+- https://medium.com/google-design/designing-adaptive-icons-515af294c783
+- https://medium.com/androiddevelopers/implementing-adaptive-icons-1e4d1795470e
+- https://developer.android.com/google-play/resources/icon-design-specifications
 - https://developer.android.com/studio/write/image-asset-studio
 
 ## AndroidManifest.xml
