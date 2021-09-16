@@ -14,7 +14,7 @@
 
 `android:icon` and `android:roundIcon` attributes allow you to specify your application's launcher icons.
 
-```md
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="op.mobile.app.dev.bottom.navigation">
