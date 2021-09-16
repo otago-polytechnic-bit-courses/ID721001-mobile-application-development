@@ -142,3 +142,10 @@ class SettingsFragment : Fragment() {
 
 **Resources:**
 - https://developer.android.com/topic/libraries/architecture/datastore
+
+## Self-Directed Task
+
+1. Implement dark mode into your application
+2. Kill your application, then open your application. What happens? Why is this happening?
+3. Go to the `SettingsFragment`. What happens?
+4. You need to apply dark mode to each screen in your application. The easiest way to do this is by getting the `is_dark_mode` and setting the UI mode in the `MainActivity`. Please think carefully about this. 
