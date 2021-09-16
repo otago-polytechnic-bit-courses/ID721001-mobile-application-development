@@ -102,12 +102,19 @@ class SettingsFragment : Fragment() {
         val view: View = inflater.inflate(R.layout.fragment_settings, container, false)
         swToggleDarkMode = view.findViewById(R.id.sw_toggle_dark_mode)
 
+        // Instantiating SettingsManager - passing in a context. For Fragments, we use requireContext()...for Activities, we use this
         settingsManager = SettingsManager(requireContext())
-        observeUIPreferences()
+        
+        // Observe changes to UIMode
+        settingsManager.uiModeFlow.asLiveData().observe(viewLifecycleOwner) {
+            setCheckedUIMode(it)
+        }
 
+        // OnCheckedChangeListener bound to the Switch widget
         swToggleDarkMode.setOnCheckedChangeListener { _, isChecked ->
             lifecycleScope.launch {
                 when (isChecked) {
+                    // If checked, set to dark mode, else, set to light mode
                     true -> settingsManager.setUIMode(UIMode.DARK)
                     false -> settingsManager.setUIMode(UIMode.LIGHT)
                 }
@@ -120,19 +127,13 @@ class SettingsFragment : Fragment() {
     private fun setCheckedUIMode(uiMode: UIMode?) {
         when (uiMode) {
             UIMode.LIGHT -> {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO) // This changes the UI mode to light mode. It will use the default themes.xml
                 swToggleDarkMode.isChecked = false
             }
             UIMode.DARK -> {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES) // This changes the UI mode to light mode. It will use the night themes.xml
                 swToggleDarkMode.isChecked = true
             }
-        }
-    }
-
-    private fun observeUIPreferences() {
-        settingsManager.uiModeFlow.asLiveData().observe(viewLifecycleOwner) {
-            setCheckedUIMode(it)
         }
     }
 }
