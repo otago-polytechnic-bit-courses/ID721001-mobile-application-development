@@ -37,6 +37,8 @@ An icon can:
 - https://developer.android.com/google-play/resources/icon-design-specifications
 - https://developer.android.com/studio/write/image-asset-studio
 
+**Note::** play around with the **Image Asset** studio. You will learn more if you try things out.
+
 ## AndroidManifest.xml
 
 `android:icon` and `android:roundIcon` attributes allow you to specify your application's launcher icons.
