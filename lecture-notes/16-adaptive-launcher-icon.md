@@ -7,21 +7,21 @@ An icon can:
 - Represent a shortcut to your application
 - Help users find your application on **Google Play Store**
 
-## Create and Adaptive Launcher Icon
+## Create an Adaptive Launcher Icon
 
 1. To create a new **adaptive launcher icon**, right-click on `res/mipmap` **> New > Image Asset**.
 
 <img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-1.png" width="400" height="500" />
 
-2. You will be presented with the follow window. **Note:** you will have a pre-exisiting **adaptive launcher icon**. 
+2. You will be presented with the following window. **Note:** you will have a pre-existing **adaptive launcher icon**. 
 
 <img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-2.png" width="500" height="350" />
 
-3. The **foreground** layer is the icon itself. You can use your own image, clip art or text.
+3. The **foreground** layer is the icon itself. You can use your image, clip art, or text.
 
 <img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-3.png" width="500" height="350" />
 
-4. The **background** layer is the background colour behind the icon, i.e., the red background colour.
+4. The **background** layer is the background color behind the icon, i.e., red.
 
 <img src="../resources/img/16-adaptive-launcher-icon/16-asset-studio-4.png" width="500" height="350" />
 
