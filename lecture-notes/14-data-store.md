@@ -12,7 +12,7 @@ You will use **Preferences DataStore**.
 
 ## Code Example
 
-Lets take a look at the code example. Make sure you have the following dependency in your `build.gradle (Module)`:
+Lets take a look at the code example. Open the `bottom-navigation-data-store` in **Android Studio**. Make sure you have the following dependency in your `build.gradle (Module)`:
 
 `implementation 'androidx.datastore:datastore-preferences:1.0.0-alpha02'`
 
