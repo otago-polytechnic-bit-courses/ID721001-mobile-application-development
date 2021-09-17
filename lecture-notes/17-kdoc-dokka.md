@@ -1,4 +1,4 @@
-# **17: KDoc Dokka**
+# **17: KDoc and Dokka**
 
 As part of the **assessment requirements**, you will need to document your application where **appropriate**. In **Kotlin**, you document you code using **KDoc** which is the equivalent to **JavaDocs**. 
 
