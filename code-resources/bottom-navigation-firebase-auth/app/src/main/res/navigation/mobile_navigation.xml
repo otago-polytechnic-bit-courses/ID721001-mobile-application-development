@@ -6,6 +6,16 @@
     app:startDestination="@+id/navigation_login">
 
     <fragment
+        android:id="@+id/navigation_register"
+        android:name="op.mobile.app.dev.bottom.navigation.ui.register.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_fragment_to_login_fragment"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+    <fragment
         android:id="@+id/navigation_login"
         android:name="op.mobile.app.dev.bottom.navigation.ui.login.LoginFragment"
         android:label="Login"
@@ -13,6 +23,9 @@
         <action
             android:id="@+id/action_login_fragment_to_home_fragment"
             app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_login_fragment_to_register_fragment"
+            app:destination="@id/navigation_register" />
     </fragment>
 
     <fragment

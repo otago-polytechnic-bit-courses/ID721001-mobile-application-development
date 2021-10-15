@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         btmNavView.setupWithNavController(navController)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.navigation_login) {
+            if (destination.id == R.id.navigation_login || destination.id == R.id.navigation_register) {
                 btmNavView.visibility = View.GONE // Hiding the bottom nav view
                 toolbar.visibility = View.GONE // Hiding the toolbar
             } else {
