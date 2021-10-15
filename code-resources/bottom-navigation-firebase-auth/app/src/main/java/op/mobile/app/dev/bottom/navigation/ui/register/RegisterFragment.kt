@@ -48,9 +48,6 @@ class RegisterFragment: Fragment() {
                     etConfirmPassword.error = "Passwords do not match."
                 else -> {
                     register(email, password)
-                    view?.findNavController()?.navigate(
-                        RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
-                    )
                 }
             }
         }
@@ -67,6 +64,9 @@ class RegisterFragment: Fragment() {
                         "User created.",
                         Toast.LENGTH_LONG
                     ).show()
+                    view?.findNavController()?.navigate(
+                        RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
+                    )
                 } else {
                     Toast.makeText(
                         activity,
