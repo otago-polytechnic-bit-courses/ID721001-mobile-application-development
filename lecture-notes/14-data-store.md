@@ -131,7 +131,7 @@ class SettingsFragment : Fragment() {
                 swToggleDarkMode.isChecked = false
             }
             UIMode.DARK -> {
-                // This changes the UI mode to light mode. It will use the night themes.xml
+                // This changes the UI mode to dark mode. It will use the night themes.xml
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES) 
                 swToggleDarkMode.isChecked = true
             }
