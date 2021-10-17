@@ -1,4 +1,4 @@
-# **13: Firebase Auth**
+# **13a: Firebase Auth - Google**
 
 In this session, you are going to let your users authenticate with **Firebase** using their own **Google** accounts by integrating **Google** sign-in into your application.
 
