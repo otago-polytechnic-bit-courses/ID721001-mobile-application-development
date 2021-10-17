@@ -193,6 +193,8 @@ The **Google** sign-in button has been removed for the purposes of this lecture.
 
 ## LoginFragment
 
+Import the necessary APIs.
+
 ```kotlin
 class LoginFragment : Fragment() {
     private lateinit var auth: FirebaseAuth
