@@ -131,7 +131,7 @@ class RegisterFragment: Fragment() {
                 password != confirmPassword ->
                     etConfirmPassword.error = "Passwords do not match."
                 else -> {
-                    register(email, password)
+                    register(email, password) // Call if validation rules pass
                 }
             }
         }
@@ -222,7 +222,7 @@ class LoginFragment : Fragment() {
                 password.isEmpty() ->
                     etPassword.error = "Password is required"
                 else -> {
-                    firebaseAuthSignInWithEmailAndPassword(email, password)
+                    firebaseAuthSignInWithEmailAndPassword(email, password) // Call if validation rules pass
                 }
             }
         }
@@ -270,5 +270,3 @@ class LoginFragment : Fragment() {
 ## Final Remarks
 
 It is important that you look at the navigation graph in the `mobile_navigation.xml`. You will need to declare a new fragment for `RegisterFragment` and the appropriate actions for navigating between the login and register screen.
-
-
