@@ -6,7 +6,7 @@ Firstly, open **bottom-navigation-auth** in **Android Studio**. Familarise yours
 
 ## How to implement Firebase email and password authentication in your application
 
-The initial setup process is the same as authenticating with **Google**. You do not need to add addition dependencies to use email and password authentication with **Firebase**.
+The initial setup process is the same as authenticating with **Google** except for you do not need a **debugging signing certificate SHA-1**. You do not need to add addition dependencies to use email and password authentication with **Firebase**.
 
 ## RegisterFragment XML Layout
 
