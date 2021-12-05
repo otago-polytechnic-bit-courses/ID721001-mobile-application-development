@@ -55,7 +55,7 @@ Enable the following:
 - **Username/Password**. Ignore **Passwordless** option and click **Save**.
 - **Goggle**. Provide your **Google** account's email and click **Save**.
 
-<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-3.png" width=800 height=500 />
+<img src="../resources/img/13-firebase-auth/13-firebase-auth-3.png" width=800 height=500 />
 
 ### Add Firebase to your Android Application
 
