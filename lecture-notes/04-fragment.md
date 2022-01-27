@@ -239,51 +239,45 @@ Run the project's application on either an **Android Emulator** or a **connected
 
 <img src="../resources/img/04-fragments/fragment-home.png" width="250" height="450" /><img src="../resources/img/04-fragments/fragment-dashboard.png" width="250" height="450" /><img src="../resources/img/04-fragments/fragment-notifications.png" width="250" height="450" />
 
-## Formative Assessment
+## Formative assessment
 
-In your **Travelling** project, implement the following:
+In this **in-class activity**, you will start developing your **Travelling** application for the **Project** assessment.
 
-- Create a new package called `home` in the `ui` package (in the same directory as the `login` package).
-- In the `home` package, create a new `Fragment` called `HomeFragment`.
-- In the `res` directory, create a new **Android Resource Directory** that has the **Resource type** menu.
-- In the **menu** directory, create a new **Menu Resource File** called `bottom_nav_menu.xml`. Your file structure should look like this:
+### Submission
 
-<img src="../resources/img/04-fragments/file-structure.JPG" width="400" height="450" />
+You must submit all program files via **GitHub Classroom**. Here is the URL to the repository you will use for this **in-class activity** – <https://classroom.github.com/a/IIlgqZV5>. If you wish to have your code reviewed, message the course lecturer on **Microsoft Teams**.
 
-- In `bottom_nav_menu.xml`, add a menu item for **home**. If you are confused, please check the code resource from today's lecture. Also, you will need to add the home icon as demonstrated in the lecture.
-- In `MainActivity.kt`, find the `BottomNavigationView` and set it up with the **NavController**.
-- In `mobile_navigation.xml`, add a new `fragment` element for the `HomeFragment`.
-- Run your application. You should see a `BottomNavigationView` on your login screen. However, you may want to remove the `BottomNavigationView` or any other `View`. To do this, you must access the `NavController` and add the following code in the `MainActivity.kt` `onCreate()` method:
+### Fragments
 
-```kotlin
-navController.addOnDestinationChangedListener { _, destination, _ ->
-    if (destination.id == R.id.navigation_login) {
-        btmNavView.visibility = View.GONE // Hiding the bottom nav view
-        toolbar.visibility = View.GONE // Hiding the toolbar
-    } else {
-        btmNavView.visibility = View.VISIBLE
-        toolbar.visibility = View.VISIBLE
-    }
-}
-```
+Using **Fragment**, create the following screens:
 
-- Run your application. What happens?
+- Splash
+- Login
+- Register
+- Home
+- Translator and text to speech
+- Quiz
+- Settings
 
-## Self-Directed Task
+### Creating the UI
 
-The login screen is your start destination which is fine at the moment. However, you want to add a splash screen. The process is much the same where you create a `Fragment` and its **XML** layout file. There are some extra things you will need to do such as navigating between `Fragments`, i.e., the splash screen and login screen. So, how do you do this?
+For most of these screens, you can start creating the UI. Feel free to copy my **Travelling** application example.
 
-- In `mobile_navigation.xml`, you will add a new `fragment` element for the `SplashScreenFragment`.
+### Splash Screen
+
+The start destination of your application should be the splash screen. The process is much the same where you create a `Fragment` and its **XML** layout file. There are some extra things you will need to do such as navigating between `Fragments`, i.e., the splash screen and login screen. So, how do you do this?
+
+- In `mobile_navigation.xml`, you will add a new `fragment` element for the `SplashFragment`.
 - Set this `fragment` to the start destination.
 - In the `fragment` element, nest the following `action`:
 
 ```xml
 <action
-    android:id="@+id/action_splash_screen_fragment_to_login_fragment"
+    android:id="@+id/action_splash_fragment_to_login_fragment"
     app:destination="@id/navigation_login" />
 ```
 
-You are saying, I want to navigate from the splash screen to the login screen. **Note:** you can hard code this in the `Fragment` class, but not a standard practice.
+You are saying, I want to navigate from the splash screen to the login screen. **Note:** you can hard code this in the `Fragment` class, but is not a standard practice.
 
 - In your `build.gradle (Project)`, add the following in the `dependencies` block:
 
@@ -297,10 +291,11 @@ classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5" // With
 id 'androidx.navigation.safeargs' // Like above, without this, you can not navigate between screens
 ```
 
-- In `SplashScreenFragment.kt`, implement splash screen functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00
+- In `SplashFragment.kt`, implement splash functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00
 
 - If you are stuck on how to implement a splash screen, use this link - <http://www.kotlincodes.com/kotlin/android-splash-screen-with-kotlin>. Go to the **Create Splash Screen Activity Class** (you can ignore the first few sections) and refer to the code snippet provided.
-- Inside of the `Handler().postDelayed()` method remove:
+- Replace `Handler().postDelayed()` with `Handler(Looper.getMainLooper()).postDelayed()`.
+- Inside of the `Handler(Looper.getMainLooper()).postDelayed()` method remove:
 
 ```kotlin
 // This is only useful if you want to navigate between activities. We only want to navigate between fragments
@@ -308,7 +303,7 @@ startActivity(Intent(this, MainActivity::class.java))
 finish()
 ```
 
-- Instead, add:
+- Replace with:
 
 ```kotlin
 val action = SplashScreenFragmentDirections

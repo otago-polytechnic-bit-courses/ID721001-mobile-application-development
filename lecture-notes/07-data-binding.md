@@ -122,3 +122,7 @@ class HomeFragment : Fragment() {
     }
 }
 ```
+
+## Formative Assessment
+
+No formative assessment today. However, I encourage you to try out the examples above.

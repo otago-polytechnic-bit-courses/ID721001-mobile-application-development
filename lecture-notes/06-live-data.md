@@ -102,3 +102,7 @@ class HomeFragment : Fragment() {
 ```
 
 In most cases, an application component's `onCreate()` method is the best place to start observing a `LiveData` object. This ensures the system does not make redundant calls from a **UI controller's** `onResume()` method. Also, ensures that the **UI controller** has data that it can display as soon as its state becomes active.
+
+## Formative Assessment
+
+No formative assessment today. However, I encourage you to try out the examples above.

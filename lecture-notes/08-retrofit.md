@@ -265,3 +265,10 @@ class HomeFragment : Fragment() {
     }
 }
 ```
+
+## Formative Assessment
+
+With this new knowledge, you can work on the following functionality:
+- Text translation support
+- Text to speech support
+- Selection of three well-known phrases

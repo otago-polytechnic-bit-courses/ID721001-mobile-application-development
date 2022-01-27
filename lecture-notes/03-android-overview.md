@@ -284,7 +284,7 @@ You should have something that looks like this:
 
 <img src="../resources/img/03-android-overview/output-1.png" width="175" height="350" />
 
-### Create a Screen
+### Create A Screen
 
 You want to keep our file structure nice and tidy. Screens usually go in a package called ui. To create a new package, right-click on **java > op.mobile.app.dev.username.travelling > New > Package**. You will be presented with a popup window. Add **ui.login** to the end of the main package, i.e., **op.mobile.app.dev.username.travelling.ui.login**. You will be using **Fragments** as screens rather than **Activities**...more on this next week. To create a **Fragment**, right-click on **java > op.mobile.app.dev.username.travelling.ui.login > New > Kotlin Class/File**. Again, you will be You will be presented with a popup window. Call this new class **LoginFragment**, then hit the **Enter** key. Once created, add the following code:
 
@@ -387,7 +387,7 @@ The login UI should look like the following:
 - How do you fix this?
 - Also, the `Views` have hardcoded integer values for some of their attributes. How do fix this as well?
 
-### Set a Start Destination
+### Set A Start Destination
 
 Every application needs a start destination. In our case, it will be `LoginFragment`, but you could also start with a splash screen. You also need to consider the fact that you will be navigate to and from different screens. How do you do this? You need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. You are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource File** called `mobile_navigation.xml`. You are going to use this file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
 
@@ -458,3 +458,7 @@ Once you have done, click the **Run** <img src="../resources/img/03-android-over
 You should have something that looks like this:
 
 <img src="../resources/img/03-android-overview/output-2.png" width="175" height="350" />
+
+## Formative Assessment
+
+No formative assessment today. However, I encourage you to try out the examples above.
