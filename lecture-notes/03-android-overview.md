@@ -461,4 +461,4 @@ You should have something that looks like this:
 
 ## Formative Assessment
 
-No formative assessment today. However, I encourage you to try out the examples above.
+In today's formative assessment, you will research and complete the given `data.json` file in the `assessment` directory. Feel free to add more countries but make sure you following the same shape of data. However, I have found six countries is more than enough.
