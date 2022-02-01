@@ -451,51 +451,21 @@ You have been given a class called \textbf{Stack} of type \textbf{Char} \& an in
 \end{verbatim}
 
 \subsection*{Problem 16 (5\%):}
-In this problem, you are going to build a \textbf{Guess the Word} game. \\
+In this problem, you are going to build a \textbf{Rock, Paper, Scissors} game. \\
 
-Here is a brief explanation of the rules:
+Create a function which simulates the \textbf{Rock, Paper, Scissors} game. The function takes the input of both players (rock, paper or scissors), first parameter from the first player, second from the second player. The function returns the result as such:
+
 \begin{itemize}
-  \item The game master (first player) thinks of a word, i.e., something simple like an animal, fruit, place, etc.
-  \item The word is displayed as Xs where the number of Xs is equal to the length of the word.
-  \item The guesser (second player) has to guess the word and is given a limited number of lives.
-  \item The guesser provides a letter, and if the word contains the letter, the guess is correct. The game master will display the letter in all the correct positions of the word to be guessed.
-  \item If the word does not contain the letter, the guesser loses a life.
-  \item Once the guesser has run out of lives, the game is over.
-  \item Once the guesser has guessed the word, display the number of guesses.
-  \item Keep track of all guessed letters so that the guesser does not provide a letter more than once.
+  \item First player wins
+  \item Second player wins
+  \item Draw
 \end{itemize}
 
 \begin{verbatim}
-  // Example
-  Enter a word:
-  apple
-
-  The word is:
-  XXXXX
-
-  Type your guess:
-  z
-
-  Sorry, the letter is not in the word.
-
-  The word is:
-  XXXXX
-
-  Letters used:
-  z
-
-  Type your guess:
-  p
-
-  The letter p is in the word. There are 2 occurrences.
-
-  The word is:
-  XppXX
-
-  // ...
-
-  You guessed the word apple. It took you 5 guesses.
-
+  // Examples
+  rockPaperScissor("paper", "rock") => "First player wins"
+  rockPaperScissor("rock", "paper") => "Second player wins"
+  rockPaperScissor("paper", "paper") => "Draw"
 \end{verbatim}
 
 \end{document}
