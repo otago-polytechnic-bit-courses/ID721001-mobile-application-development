@@ -261,7 +261,7 @@ Using **Fragment**, create the following screens:
 
 ### Creating the UI
 
-For most of these screens, you can start creating the UI. Feel free to copy my **Travelling** application example.
+For most of these screens, you can start creating the UI. These will most likely have no functionality.
 
 ### Splash Screen
 
