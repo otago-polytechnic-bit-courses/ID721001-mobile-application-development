@@ -90,7 +90,8 @@ You will need to submit an application \& documentation that meet the following 
 	\item Application \textbf{must} open without file structure modification in \textbf{Android Studio}.
 	\item Application \textbf{must} run without code modification on a mobile device.
 	\item Application \textbf{must} run on \textbf{API 28: Android 9.0 (Pie)}.
-	\item All country data must be fetched from a \textbf{GitHub Gist}. You have been provided an example called \textbf{example.json} in the \textbf{course materials repository $>$ assessments}.
+	\item All country data must be fetched using \textbf{Retrofit} from a \textbf{GitHub Gist}. You have been provided an example called \textbf{example.json} in the \textbf{course materials repository $>$ assessments}.
+	\item Display the list of countries in a \textbf{RecyclerView}. Each item needs to have the country's name \& flag.
 	\item \textbf{Independent Research:} Text translation support. If a country is multilingual (use of more than one language), choose one language. For example, Canada's main languages are English \& French. You would choose either English or French.
 	      \begin{itemize}
 		      \item Use \textbf{Retrofit} \& the \textbf{Yandex Translate API} to translate text from one language to another. To use the \textbf{Yandex Translate API}, you will need an \textbf{API key}. A key will be privately given to you on \textbf{Microsoft Teams}.
@@ -101,7 +102,7 @@ You will need to submit an application \& documentation that meet the following 
 	      \begin{itemize}
 		      \item Handle incorrectly formatted input fields. For example, an \textbf{EditText} is blank or empty, or the country is not supported.
 	      \end{itemize}
-	\item \textbf{Independent Research:} Selection of three well-known phrases. For example, "No worries, mate, she'll be right" is well-known phrase in Australia.
+	\item \textbf{Independent Research:} Selection of two well-known phrases. For example, "No worries, mate, she'll be right" is well-known phrase in Australia.
 	\item \textbf{Independent Research:} Register a new user on \textbf{Firebase}.
 	\item Log into the application with an \textbf{email} \& \textbf{password} using \textbf{Firebase}.
 	\item \textbf{Independent Research:} Logout of the application. The user \textbf{should} be navigated to the login screen.
@@ -111,8 +112,9 @@ You will need to submit an application \& documentation that meet the following 
 		      \item Each quiz \textbf{must} have at least three questions.
 		      \item Questions are multi-choice \& \textbf{must} have four answers.
 		      \item Display appropriate feedback in a \textbf{Toast} when a question is answered correctly or incorrectly. If an answer is incorrect, display the correct answer.
-		      \item At the end the quiz, store the user's \textbf{score} in a \textbf{Room Database} table.
-		      \item Display the user's score(s) in a \textbf{RecylerView}.
+		      \item At the end the quiz, store the user's \textbf{id}, \textbf{name} \& \textbf{score}, \& the country's \textbf{id} in a \textbf{Room Database} table.
+		      \item Display all scores in a \textbf{RecylerView}. Each item needs to have the user's \textbf{name} \& \textbf{score}.
+		      \item Delete \textbf{all} scores. You need to prompt the user to confirm deletion.
 	      \end{itemize}
 	\item \textbf{Switch} which toggles between light \& dark mode.
 	      \begin{itemize}
@@ -122,7 +124,7 @@ You will need to submit an application \& documentation that meet the following 
 	      \end{itemize}
 	\item \textbf{Independent Research:} \textbf{Google Map} displaying top-rated tourist attractions.
 	      \begin{itemize}
-		      \item Display \textbf{only} two tourist attractions per continent.
+		      \item Display two tourist attractions per continent.
 		      \item Each data object will represent a marker.
 		      \item The marker's information window \textbf{must} display the attraction's name \& city/town.
 		      \item If dark mode, set the map's style to a dark theme. If not, set the map's style to light theme.
@@ -132,6 +134,7 @@ You will need to submit an application \& documentation that meet the following 
 		      \item To use \textbf{Google Map}, you will need an \textbf{API key}. A key will be privately given to you on \textbf{Microsoft Teams}.
 	      \end{itemize}
 	\item Splash screen using a \textbf{Lottie} animation.
+	\item Like \& favourite a country. Store the user's \textbf{id}, country's \textbf{id} \& \textbf{type}, i.e., like or favourite in a \textbf{Room Database} table. 
 	\item Adaptive launcher icon which is displayed in a variety of shapes. The icon \textbf{must} be the same as the \textbf{Lottie} animation icon.
 	\item Visually attractive UI with a coherent graphical theme \& style using \textbf{Material Design}.
 	\item Application is published to \textbf{Google Play Store}.
@@ -175,7 +178,7 @@ You will need to submit an application \& documentation that meet the following 
 
 \subsection*{Additional Information}
 \begin{itemize}
-	\item You \textbf{must} commit at least \textbf{ten} times per week. By the end of this assessment, you should have at least \textbf{120} commits.
+	\item Attempt to commit at least \textbf{10} times per week.
 	\item \textbf{Do not} rewrite your \textbf{Git} history. It is important that the course lecturer can see how you worked on your assessment over time.
 \end{itemize}
 
