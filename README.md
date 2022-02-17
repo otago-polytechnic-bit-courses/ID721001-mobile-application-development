@@ -1,4 +1,4 @@
-# IN721: Mobile Application Development
+# ID721001: Mobile Application Development
 
 This repository contains all information relating to this course, i.e., course directive & assessment documents.
 
