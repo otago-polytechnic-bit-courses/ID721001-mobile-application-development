@@ -1,4 +1,4 @@
-# **10: Firebase Auth - Email and Password**
+# **09: Firebase Auth - Email and Password**
 
 In this session, you are going to let your users authenticate with **Firebase** using an email and password.
 

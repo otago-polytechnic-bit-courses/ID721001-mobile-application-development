@@ -1,4 +1,4 @@
-# **13: Data Store**
+# **12: Data Store**
 
 ## Overview
 

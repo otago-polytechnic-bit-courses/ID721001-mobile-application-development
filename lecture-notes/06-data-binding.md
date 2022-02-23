@@ -1,4 +1,4 @@
-# **07: Data Binding**
+# **06: Data Binding**
 
 ## Overview
 
