@@ -1,4 +1,4 @@
-# **01: Kotlin 1**
+# **01 & 02: Kotlin**
 
 ## Before We Begin
 
