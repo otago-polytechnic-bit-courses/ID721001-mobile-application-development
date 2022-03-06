@@ -56,7 +56,7 @@ According to **StatCounter**, **Android** has been the most popular mobile os si
 
 ### How To Create A New Android Project
 
-Before you start, make sure you create the **Project** repository here - https://classroom.github.com/a/YvRoxlAh. Create a **README** file and **.gitignore**. Set the **.gitignore** template to **Android**. Go to the **terminal** or **command line** and clone your repository.
+Before you start, make sure you create the **Project** repository here - https://classroom.github.com/a/IIlgqZV5. Create a **README** file and **.gitignore**. Set the **.gitignore** template to **Android**. Go to the **terminal** or **command line** and clone your repository.
 
 To create a new Android project, follow these steps:
 
