@@ -286,18 +286,23 @@ Once you have finished, run your application. Click on the login button. You sho
 The start destination of your application should be the splash screen. The process is much the same where you create a `Fragment` and its **XML** layout file. In `SplashFragment.kt`, implement splash functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00. In `SplashFragment.kt`, add the following code to the `onCreateView()` function:
 
 ```kt
-... 
+...
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val view = inflater.inflate(R.layout.fragment_splash, container, false)
 
-val view = inflater.inflate(R.layout.fragment_splash, container, false)
+        Handler(Looper.getMainLooper()).postDelayed(
+            {
+                // Navigate from the splash screen to the login screen, i.e., create an action in mobile_navigation.xml
+            },
+            3000
+        )
 
-Handler(Looper.getMainLooper()).postDelayed(
-    {
-        // Navigate from the splash screen to the login screen, i.e., create an action in mobile_navigation.xml
-    },
-    3000
-)
-
-return view
+        return view
+    }
 ```
 
 Once you have finished, run your application. You see the splash screen and after three seconds the login screen.
