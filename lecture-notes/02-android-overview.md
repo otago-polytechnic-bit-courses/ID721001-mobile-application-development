@@ -81,7 +81,7 @@ To create a new Android project, follow these steps:
 
 5. Click **Finish**.
 
-Once everything is setup, push your project to the remote repository on **GitHub**. Next, create/checkout a branch called `feature-login` using the command: `git checkout -b feature-login`. This will be your development branch for the login feature you are going to create later in the session.
+Once everything is setup, push your project to the remote repository on **GitHub**.
 
 Before you get to that, lets look at some important project files.
 
