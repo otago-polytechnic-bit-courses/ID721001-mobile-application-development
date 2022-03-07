@@ -245,7 +245,9 @@ This `style` will remove the application's default action bar.
 You have not applied this `style` to our application yet...go to `AndroidManifest.xml` and replace:
 
 ```xml
-<activity android:name=".MainActivity">
+<activity
+   android:name=".MainActivity"
+   android:exported="true">
 ```
 
 with
@@ -253,6 +255,7 @@ with
 ```xml
 <activity
     android:name=".MainActivity"
+    android:exported="true"
     android:theme="@style/Theme.Travelling.NoActionBar">
 ```
 
