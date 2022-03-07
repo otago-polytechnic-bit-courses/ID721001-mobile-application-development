@@ -16,26 +16,20 @@ While your **activity** is in the `onStart` lifecycle state or higher, **fragmen
 
 ## Code Example
 
-Open the `bottom-navigation-fragments` directory provided to you in **Android Studio**.
-
-Lets take a look at what is happening...
-
 ### build.grade
 
-Go to **Gradle Scripts > build.grade (Module: BottomNavigation.app)**. You should see the following in the **dependencies** block:
+Go to **Gradle Scripts > build.grade (Module: Travelling.app)**. You should see the following in the **dependencies** block:
 
 ```xml
 implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
 implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
 ```
 
-Without these dependencies, you can not use **fragments** with navigation.
+You installed these dependencies in the previous session. Without these dependencies, you can not use **fragments** with navigation.
 
-### HomeFragment, DashboardFragment & NotificationsFragment
+### HomeFragment
 
-- `Fragment()` - constructor used by the default `FragmentFactory`.
-- `onCreateView(LayoutInflater, ViewGroup?, Bundle?)` - the **fragment** instantiates its UI view. This is optional & non-graphical **fragments** can return **null**.
-- `inflate(int, ViewGroup, boolean)` - inflate a new view hierarchy from a specified **XML** resource.
+Create a new package by right-clicking on **java > op.mobile.app.dev.username.travelling > New > Package**. You will be presented with a popup window. Add **ui.home** to the end of the main package, i.e., **op.mobile.app.dev.username.travelling.ui.home**. Create a **Fragment** by right-clicking on **java > op.mobile.app.dev.username.travelling.ui.home > New > Kotlin Class/File**. Again, you will be You will be presented with a popup window. Call this new class **HomeFragment**, then hit the **Enter** key. Once created, add the following code:
 
 ```kotlin
 class HomeFragment : Fragment() {
@@ -49,61 +43,22 @@ class HomeFragment : Fragment() {
 }
 ```
 
+**Note:** Make sure you import the required APIs. Also, `fragment_home` will be red because you have not created the `fragment_home.xml` file.
+
+- `Fragment()` - constructor used by the default `FragmentFactory`.
+- `onCreateView(LayoutInflater, ViewGroup?, Bundle?)` - the **fragment** instantiates its UI view. This is optional & non-graphical **fragments** can return **null**.
+- `inflate(int, ViewGroup, boolean)` - inflate a new view hierarchy from a specified **XML** resource.
+
 **Resources:**
 
 - https://developer.android.com/reference/androidx/fragment/app/Fragment
 - https://developer.android.com/guide/fragments/lifecycle
 
-### MainActivity
-
-```kotlin
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-
-        val btmNavView: BottomNavigationView = findViewById(R.id.btm_nav_view)
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        val navController = navHostFragment.navController
-        btmNavView.setupWithNavController(navController)
-    }
-}
-```
-
-### Menu
-
-A **menu** resource file containing three items.
-
-You will use this file in `activity_main.xml` later.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home" />
-
-    <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="Dashboard" />
-
-    <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="Notifications" />
-
-</menu>
-```
-
 ### Fragment Layout
 
-A **fragment** layout file is very similar to an **activity** layout file.
+Create a new **fragment** layout file by right-clicking on **res > layout > New > Layout Resource File**. You will be presented with a popup window. You only need to give it a **File name** of `fragment_home`. Do not worry about the rest of the fields, i.e., **Root element**, **Source set**, **Directory name** and **Available qualifiers**. Once you have named it, click the **OK** button.
+
+In `fragment_home.xml`, add the following code:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -139,8 +94,6 @@ A `fragment` has two important attributes/values:
 - `app:navGraph="@navigation/mobile_navigation"`
 
 A **NavHostFragment** provides an area within your layout for self-contained navigation to occur. Each **NavHostFragment** has a `NavController` which defines the navigation within the navigation host. Also, this includes the **navigation graph** & navigation state.
-
-A `BottomNavigationView` is a standard bottom navigation bar for your application. It makes it easy for users to switch between different top-level destinations in a single tap. Its recommended that you use a `BottomNavigation` if your application has between three and five top-level destinations. One key attribute/value is `app:menu="@menu/bottom_nav_menu"` which populates the `BottomNavigationView` with the contents in a specified **menu** resource file, i.e., `bottom_nav_menu.xml`.
 
 **Resources:**
 
@@ -179,18 +132,6 @@ A `BottomNavigationView` is a standard bottom navigation bar for your applicatio
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:navGraph="@navigation/mobile_navigation" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/btm_nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
@@ -212,25 +153,19 @@ The **navigation graph** is used to manage your application's navigation. A **na
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_login">
 
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="op.mobile.app.dev.username.travelling.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+   
     <fragment
         android:id="@+id/navigation_home"
-        android:name="op.mobile.app.dev.bottom.navigation.ui.home.HomeFragment"
+        android:name="op.mobile.app.dev.username.ui.home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="op.mobile.app.dev.bottom.navigation.ui.dashboard.DashboardFragment"
-        android:label="Dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="op.mobile.app.dev.bottom.navigation.ui.notifications.NotificationsFragment"
-        android:label="Notifications"
-        tools:layout="@layout/fragment_notifications" />
 
 </navigation>
 ```
@@ -241,11 +176,7 @@ Run the project's application on either an **Android Emulator** or a **connected
 
 ## Formative assessment
 
-In this **in-class activity**, you will start developing your **Travelling** application for the **Project** assessment.
-
-### Submission
-
-You must submit all program files via **GitHub Classroom**. Here is the URL to the repository you will use for this **in-class activity** – <https://classroom.github.com/a/IIlgqZV5>. If you wish to have your code reviewed, message the course lecturer on **Microsoft Teams**.
+In this **in-class activity**, you will extend your **Travelling** application's functionality for the **Project** assessment.
 
 ### Fragments
 
@@ -263,54 +194,121 @@ Using **Fragment**, create the following screens:
 
 For most of these screens, you can start creating the UI. These will most likely have no functionality.
 
-### Splash Screen
+### Navigation
 
-The start destination of your application should be the splash screen. The process is much the same where you create a `Fragment` and its **XML** layout file. There are some extra things you will need to do such as navigating between `Fragments`, i.e., the splash screen and login screen. So, how do you do this?
+Here you will look into how to navigate between the login and home screens. The functionality is simple...when you click the login button on the login screen, you want to navigate to the home screen.
 
-- In `mobile_navigation.xml`, you will add a new `fragment` element for the `SplashFragment`.
-- Set this `fragment` to the start destination.
-- In the `fragment` element, nest the following `action`:
+In `mobile_navigation.xml`, `navigation_login` with:
 
 ```xml
-<action
-    android:id="@+id/action_splash_fragment_to_login_fragment"
-    app:destination="@id/navigation_login" />
+<fragment
+    android:id="@+id/navigation_login"
+    android:name="op.mobile.app.dev.grayson.travelling.ui.login.LoginFragment"
+    android:label="Login"
+    tools:layout="@layout/fragment_login">
+    <action
+        android:id="@+id/action_login_fragment_to_home_fragment"
+        app:destination="@id/navigation_home" />
+</fragment>
 ```
 
-You are saying, I want to navigate from the splash screen to the login screen. **Note:** you can hard code this in the `Fragment` class, but is not a standard practice.
+Here we are defining an action. Essentially saying that we want to navigate from the login screen to the home screen. We apply this action to the login button in `LoginFragment.kt`.
 
-- In your `build.gradle (Project)`, add the following in the `dependencies` block:
+In your `build.gradle (Project)`, add the following above the `plugins` block:
 
-```xml
-classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5" // Without this, you can not navigate between screens
+```md
+buildscript {
+    repositories {
+        google()
+    }
+    dependencies {
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1" // Without this, you can not navigate between screens
+    }
+}
 ```
 
-- In your `build.gradle (Module)`, add the following in the `plugins` block:
+`build.gradle (Project)` should now look something like this:
+
+```md
+buildscript {
+    repositories {
+        google()
+    }
+    dependencies {
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1"
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.1.1' apply false
+    id 'com.android.library' version '7.1.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.5.30' apply false
+}
+
+...
+```
+
+In your `build.gradle (Module)`, add the following in the `plugins` block:
 
 ```xml
 id 'androidx.navigation.safeargs' // Like above, without this, you can not navigate between screens
 ```
 
-- In `SplashFragment.kt`, implement splash functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00
+`build.gradle (Module)` should now look something like this:
 
-- If you are stuck on how to implement a splash screen, use this link - <http://www.kotlincodes.com/kotlin/android-splash-screen-with-kotlin>. Go to the **Create Splash Screen Activity Class** (you can ignore the first few sections) and refer to the code snippet provided.
-- Replace `Handler().postDelayed()` with `Handler(Looper.getMainLooper()).postDelayed()`.
-- Inside of the `Handler(Looper.getMainLooper()).postDelayed()` method remove:
+```md
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs'
+}
 
-```kotlin
-// This is only useful if you want to navigate between activities. We only want to navigate between fragments
-startActivity(Intent(this, MainActivity::class.java))
-finish()
+...
 ```
 
-- Replace with:
+In `LoginFragment.kt`, replace the `onCreateView()` function with:
 
 ```kotlin
-val action = SplashScreenFragmentDirections
-    .actionSplashScreenFragmentToLoginFragment()
-view?.findNavController()?.navigate(action) // Calling the navigation action declared in mobile_navigation.xml
+...
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val view = inflater.inflate(R.layout.fragment_login, container, false)
+
+        val btnLogin: Button = view.findViewById(R.id.btn_login) // Get a reference to button in fragment_login.xml
+
+        btnLogin.setOnClickListener { // Bind a click event listener to the button
+            val action = LoginFragmentDirections
+                .actionLoginFragmentToHomeFragment() // Get a reference to the action in Login fragment in mobile_navigation.xml
+            view?.findNavController()?.navigate(action) // Navigate based on the action, i.e., login to home
+        }
+
+        return view
+    }
+...
 ```
 
-- If you can not called `SplashScreenFragmentDirections`, then rebuild the project by clicking **Build > Rebuild Project**.
+Once you have finished, run your application. Click on the login button. You should be on the home screen.
 
-- Run your application. What happens?
+### Adding a Splash Screen
+
+The start destination of your application should be the splash screen. The process is much the same where you create a `Fragment` and its **XML** layout file. In `SplashFragment.kt`, implement splash functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00. In `SplashFragment.kt`, add the following code to the `onCreateView()` function:
+
+```kt
+... 
+
+val view = inflater.inflate(R.layout.fragment_splash, container, false)
+
+Handler(Looper.getMainLooper()).postDelayed(
+    {
+        // Navigate from the splash screen to the login screen, i.e., create an action in mobile_navigation.xml
+    },
+    3000
+)
+
+return view
+```
+
+Once you have finished, run your application. You see the splash screen and after three seconds the login screen.
