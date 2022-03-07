@@ -392,7 +392,14 @@ The login UI should look like the following:
 
 ### Set A Start Destination
 
-Every application needs a start destination. In our case, it will be `LoginFragment`, but you could also start with a splash screen. You also need to consider the fact that you will be navigate to and from different screens. How do you do this? You need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. You are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource File** called `mobile_navigation.xml`. You are going to use this file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
+Every application needs a start destination. In our case, it will be `LoginFragment`, but you could also start with a splash screen. You also need to consider the fact that you will be navigate to and from different screens. How do you do this? You need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. You are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource File** called `mobile_navigation.xml`. You will be prompt to install the following dependencies:
+
+```md
+implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
+```
+
+We will discuss these in the next session. You are going to use the `mobile_navigation.xml` file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
