@@ -413,8 +413,7 @@ We will discuss these in the next session. You are going to use the `mobile_navi
         android:id="@+id/navigation_login"
         android:name="op.mobile.app.dev.username.travelling.ui.login.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_login">
-    </fragment>
+        tools:layout="@layout/fragment_login" />
 
 </navigation>
 ```
