@@ -188,6 +188,7 @@
     "name": "Argentina",
     "langCode": "es",
     "flagImg": "https://flagpedia.net/data/flags/h80/ar.png",
+    "attractions": [],
     "phrases": [],
     "quiz": []
   },
@@ -197,6 +198,7 @@
     "name": "Belgium",
     "langCode": "nl",
     "flagImg": "https://flagpedia.net/data/flags/h80/be.png",
+    "attractions": [],
     "phrases": [],
     "quiz": []
   },
@@ -206,6 +208,7 @@
     "name": "China",
     "langCode": "zh",
     "flagImg": "https://flagpedia.net/data/flags/h80/cn.png",
+    "attractions": [],
     "phrases": [],
     "quiz": []
   },
@@ -215,6 +218,7 @@
     "name": "Mexico",
     "langCode": "es",
     "flagImg": "https://flagpedia.net/data/flags/h80/mx.png",
+    "attractions": [],
     "phrases": [],
     "quiz": []
   },
@@ -224,6 +228,7 @@
     "name": "New Zealand",
     "langCode": "en",
     "flagImg": "https://flagpedia.net/data/flags/h80/nz.png",
+    "attractions": [],
     "phrases": [],
     "quiz": []
   },
@@ -233,6 +238,7 @@
     "name": "South Africa",
     "langCode": "af",
     "flagImg": "https://flagpedia.net/data/flags/h80/za.png",
+    "attractions": [],
     "phrases": [],
     "quiz": []
   },
@@ -242,6 +248,7 @@
     "name": "United Kingdom",
     "langCode": "en",
     "flagImg": "https://flagpedia.net/data/flags/h80/gb.png",
+    "attractions": [],
     "phrases": [],
     "quiz": []
   }
