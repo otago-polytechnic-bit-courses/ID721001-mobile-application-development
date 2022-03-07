@@ -137,13 +137,7 @@ A **NavHostFragment** provides an area within your layout for self-contained nav
 
 ### Navigation
 
-The **navigation graph** is used to manage your application's navigation. A **navigation graph** is a resource file which contains all your application's destinations & actions that the user can take when navigating between destinations.
-
-**Note:** the example below does use actions.
-
-**Design view:**
-
-<img src="../resources/img/04-fragments/navigation-design-graph.JPG" width="350" height="550" />
+The **navigation graph** is used to manage your application's navigation. A **navigation graph** is a resource file which contains all your application's destinations & actions that the user can take when navigating between destinations. Have a look at the **Design view**.
 
 **Code view:**
 
@@ -169,10 +163,6 @@ The **navigation graph** is used to manage your application's navigation. A **na
 
 </navigation>
 ```
-
-Run the project's application on either an **Android Emulator** or a **connected device**.
-
-<img src="../resources/img/04-fragments/fragment-home.png" width="250" height="450" /><img src="../resources/img/04-fragments/fragment-dashboard.png" width="250" height="450" /><img src="../resources/img/04-fragments/fragment-notifications.png" width="250" height="450" />
 
 ## Formative assessment
 
