@@ -277,7 +277,6 @@ In `LoginFragment.kt`, replace the `onCreateView()` function with:
 
         return view
     }
-...
 ```
 
 Once you have finished, run your application. Click on the login button. You should be on the home screen.
