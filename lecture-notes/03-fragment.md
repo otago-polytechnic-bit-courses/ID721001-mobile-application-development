@@ -198,6 +198,8 @@ In `mobile_navigation.xml`, add the following under the `navigation_login`'s ope
      app:destination="@id/navigation_home" />
 ```
 
+`navigation_login` should look like this:
+
 ```xml
 <fragment
     android:id="@+id/navigation_login"
