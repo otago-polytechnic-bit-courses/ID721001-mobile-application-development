@@ -18,7 +18,7 @@ While your **activity** is in the `onStart` lifecycle state or higher, **fragmen
 
 ### build.grade
 
-Go to **Gradle Scripts > build.grade (Module: Travelling.app)**. You should see the following in the **dependencies** block:
+Go to **Gradle Scripts > build.gradle (Module: Travelling.app)**. You should see the following in the **dependencies** block:
 
 ```xml
 implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
@@ -29,7 +29,7 @@ You installed these dependencies in the previous session. Without these dependen
 
 ### HomeFragment
 
-Create a new package by right-clicking on **java > op.mobile.app.dev.username.travelling > New > Package**. You will be presented with a popup window. Add **ui.home** to the end of the main package, i.e., **op.mobile.app.dev.username.travelling.ui.home**. Create a **Fragment** by right-clicking on **java > op.mobile.app.dev.username.travelling.ui.home > New > Kotlin Class/File**. Again, you will be You will be presented with a popup window. Call this new class **HomeFragment**, then hit the **Enter** key. Once created, add the following code:
+Create a new package by right-clicking on **java > op.mobile.app.dev.username.travelling > New > Package**. You will be presented with a popup window. Add **ui.home** to the end of the main package, i.e., **op.mobile.app.dev.username.travelling.ui.home**. Create a **Fragment** by right-clicking on **java > op.mobile.app.dev.username.travelling.ui.home > New > Kotlin Class/File**. Again, you will be you will be presented with a popup window. Call this new class **HomeFragment**, then hit the **Enter** key. Once created, add the following code:
 
 ```kotlin
 class HomeFragment : Fragment() {
