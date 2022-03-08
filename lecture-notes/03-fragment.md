@@ -137,7 +137,7 @@ A **NavHostFragment** provides an area within your layout for self-contained nav
 
 ### Navigation
 
-The **navigation graph** is used to manage your application's navigation. A **navigation graph** is a resource file which contains all your application's destinations & actions that the user can take when navigating between destinations. Have a look at the **Design view**.
+The **navigation graph** is used to manage your application's navigation. A **navigation graph** is a resource file which contains all your application's destinations & actions that the user can take when navigating between destinations. 
 
 **Code view:**
 
@@ -163,6 +163,8 @@ The **navigation graph** is used to manage your application's navigation. A **na
 
 </navigation>
 ```
+
+Also, have a look at the **Design view**.
 
 ## Formative assessment
 
