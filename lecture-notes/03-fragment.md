@@ -172,7 +172,7 @@ In this **in-class activity**, you will extend your **Travelling** application's
 
 ### Fragments
 
-Using **Fragment**, create the following screens:
+Create the following screens uisng **Fragments**:
 
 - Splash
 - Login
@@ -190,7 +190,13 @@ For most of these screens, you can start creating the UI. These will most likely
 
 Here you will look into how to navigate between the login and home screens. The functionality is simple...when you click the login button on the login screen, you want to navigate to the home screen.
 
-In `mobile_navigation.xml`, `navigation_login` with:
+In `mobile_navigation.xml`, add the following under the `navigation_login`'s opening tag:
+
+```xml
+ <action
+     android:id="@+id/action_login_fragment_to_home_fragment"
+     app:destination="@id/navigation_home" />
+```
 
 ```xml
 <fragment
