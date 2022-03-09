@@ -157,7 +157,7 @@ The **navigation graph** is used to manage your application's navigation. A **na
    
     <fragment
         android:id="@+id/navigation_home"
-        android:name="op.mobile.app.dev.username.ui.home.HomeFragment"
+        android:name="op.mobile.app.dev.travelling.username.ui.home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
 
