@@ -10,16 +10,6 @@ If the **system** destroys or recreates a **UI controller**, any transient UI-re
 
 **UI controllers** are intended to display UI-related data, react to user actions or handle os communication. Relying on a **UI controller** to be responsible for fetching data from an **API** adds bloat to the class. Assigning excessive responsibility to **UI controller** results in a class handling all the work by itself where this work should be delegated to other classes. It is easier or more efficient to separate the UI-related data from the **UI controller** logic.
 
-### build.grade
-
-Go to **Gradle Scripts > build.gradle (Module: Travelling.app)**. You should see the following in the **dependencies** block:
-
-```xml
-implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
-```
-
-Without this dependencies, you can **not** use `ViewModel`.
-
 ### HomeViewModel
 
 Create a **ViewModel** by right-clicking on **java > op.mobile.app.dev.username.travelling.ui.home > New > Kotlin Class/File**. Again, you will be you will be presented with a popup window. Call this new class **HomeViewModel**, then hit the **Enter** key. Once created, add the following code:
