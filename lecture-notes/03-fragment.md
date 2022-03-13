@@ -2,13 +2,13 @@
 
 ## Overview
 
-A `Fragment` is a reusable portion of your application's UI. A **fragment** defines & manages its own layout, has its own lifecycle & can handle events. However, **fragments** cannot live on their own meaning they must be hosted by either an **activity** or another **fragment**. The **fragment's** view hierarchy attaches to the host's view hierarchy, i.e., an **activity's'** or another **fragment's** view hierarchy.
+A `Fragment` is a reusable portion of your application's UI. A **fragment** defines & manages its own layout, has its own lifecycle & can handle events. However, **fragments** cannot live on their own, meaning they must be hosted by either an **activity** or another **fragment**. The **fragment's** view hierarchy attaches to the host's view hierarchy, i.e., an **activity's'** or another **fragment's** view hierarchy.
 
 ## Modularity
 
-**Fragments** are extremely useful for modularity & reusability in your **activity's** UI & it does this by allowing you divide the UI into chunks. **Activities** are an ideal place to put global UI elements such as a **navigation**. **Fragments** are better suited to define & manage the UI of a single screen or portion of a screen.
+**Fragments** are extremely useful for modularity & reusability in your **activity's** UI & it does this by allowing you to divide the UI into chunks. **Activities** are ideal for putting global UI elements such as a **navigation**. **Fragments** are better suited to define & manage the UI of a single screen or portion of a screen.
 
-Here is an example...consider an application that responds to various screen sizes, i.e., a mobile and tablet device. On a tablet device, the application should display a static `NavigationDrawer` & a list in a `GridLayout`. On a mobile device, the application should display a `BottomNavigationView` & a list in a `LinearLayout`. Managing all the variations in the activity can be tedious...trust me. Separating navigation elements from the content can be much more manageable. The **activity** is responsible for displaying the correct UI navigation & the **fragment** is responsible for displaying the list in a layout.
+Here is an example. Consider an application that responds to various screen sizes, i.e., a mobile and tablet device. The application should display a static `NavigationDrawer` & a list in a `GridLayout` on a tablet device. The application should display a `BottomNavigationView` & a list in a `LinearLayout` on a mobile device. Managing all the variations in the activity can be tedious. Separating navigation elements from the content can be much more manageable. The **activity** is responsible for displaying the correct UI navigation & the **fragment** is responsible for displaying the list in a layout.
 
 <img src="../resources/img/04-fragments/fragment-large-small-screen.png" width="750" height="450" />
 
@@ -88,12 +88,12 @@ In `fragment_home.xml`, add the following code:
 
 ### MainActivity Layout
 
-A `fragment` has two important attributes/values:
+A `fragment` has two essential attributes/values:
 
 - `android:name="androidx.navigation.fragment.NavHostFragment"`
 - `app:navGraph="@navigation/mobile_navigation"`
 
-A **NavHostFragment** provides an area within your layout for self-contained navigation to occur. Each **NavHostFragment** has a `NavController` which defines the navigation within the navigation host. Also, this includes the **navigation graph** & navigation state.
+A **NavHostFragment** provides an area within your layout for self-contained navigation to occur. Each **NavHostFragment** has a `NavController`, which defines the navigation within the navigation host. Also, this includes the **navigation graph** & navigation state.
 
 **Resources:**
 
@@ -137,7 +137,7 @@ A **NavHostFragment** provides an area within your layout for self-contained nav
 
 ### Navigation
 
-The **navigation graph** is used to manage your application's navigation. A **navigation graph** is a resource file which contains all your application's destinations & actions that the user can take when navigating between destinations. 
+The **navigation graph** is used to manage your application's navigation. A **navigation graph** is a resource file that contains all your application's destinations & actions that the user can take when navigating between destinations. 
 
 **Code view:**
 
@@ -172,7 +172,7 @@ In this **in-class activity**, you will extend your **Travelling** application's
 
 ### Fragments
 
-Create the following screens uisng **Fragments**:
+Create the following screens using **Fragments**:
 
 - Splash
 - Login
@@ -188,7 +188,7 @@ For most of these screens, you can start creating the UI. These will most likely
 
 ### Navigation
 
-Here you will look into how to navigate between the login and home screens. The functionality is simple...when you click the login button on the login screen, you want to navigate to the home screen.
+Here you will look into navigating between the login and home screens. The functionality is simple. When you click the login button on the login screen, you want to navigate to the home screen.
 
 In `mobile_navigation.xml`, add the following under the `navigation_login`'s opening tag:
 
@@ -212,9 +212,9 @@ In `mobile_navigation.xml`, add the following under the `navigation_login`'s ope
 </fragment>
 ```
 
-Here we are defining an action. Essentially saying that we want to navigate from the login screen to the home screen. We apply this action to the login button in `LoginFragment.kt`.
+Here we define an action, essentially saying that we want to navigate from the login screen to the home screen. We apply this to the login button in `LoginFragment.kt`.
 
-In your `build.gradle (Project)`, add the following above the `plugins` block:
+In your `build.gradle (Project: Travelling)`, add the following above the `plugins` block:
 
 ```md
 buildscript {
@@ -227,7 +227,7 @@ buildscript {
 }
 ```
 
-`build.gradle (Project)` should now look something like this:
+`build.gradle (Project: Travelling)` should now look something like this:
 
 ```md
 buildscript {
@@ -248,13 +248,13 @@ plugins {
 ...
 ```
 
-In your `build.gradle (Module)`, add the following in the `plugins` block:
+In your `build.gradle (Module: Travelling.app)`, add the following in the `plugins` block:
 
 ```xml
 id 'androidx.navigation.safeargs' // Like above, without this, you can not navigate between screens
 ```
 
-`build.gradle (Module)` should now look something like this:
+`build.gradle (Module: Travelling.app)` should now look something like this:
 
 ```md
 plugins {
@@ -293,7 +293,7 @@ Once you have finished, run your application. Click on the login button. You sho
 
 ### Adding a Splash Screen
 
-The start destination of your application should be the splash screen. The process is much the same where you create a `Fragment` and its **XML** layout file. In `SplashFragment.kt`, implement splash functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00. In `SplashFragment.kt`, add the following code to the `onCreateView()` function:
+The start destination of your application should be the splash screen. The process is much the same as creating a `Fragment` and its **XML** layout file. In `SplashFragment.kt`, implement splash functionality using **Lottie** and this link - https://medium.com/learntocodewithragini/android-animations-using-lottie-kotlin-b4fe14dece00. In `SplashFragment.kt`, add the following code to the `onCreateView()` function:
 
 ```kt
 ...
@@ -315,4 +315,4 @@ The start destination of your application should be the splash screen. The proce
     }
 ```
 
-Once you have finished, run your application. You see the splash screen and after three seconds the login screen.
+Once you have finished, run your application. You see the splash screen and, after three seconds, the login screen.

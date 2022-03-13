@@ -2,31 +2,31 @@
 
 ## Overview
 
-**Android** is a mobile os based on a modified version of the **Linux kernel** and primarily designed for touchscreen devices such as phones, tablets and watches. **Android** is developed by a group of developers known as the **Open Handset Alliance (OHA)** and commercially sponsored by **Google**. **Android** is free and open-source, and its source code is known as **Android Open Source Project (AOSP)**, which is licensed under the **Apache License**. However, most **Android** devices are shipped with pre-installed proprietary software such as **Google Mobile Services (GMS)**.
+**Android** is a mobile os based on a modified version of the **Linux kernel** and primarily designed for touchscreen devices such as phones, tablets and watches. **Android** is developed by developers known as the **Open Handset Alliance (OHA)** and commercially sponsored by **Google**. **Android** is free and open-source, and its source code is known as **Android Open Source Project (AOSP)**, which is licensed under the **Apache License**. However, most **Android** devices are shipped with pre-installed proprietary software such as **Google Mobile Services (GMS)**.
 
 ### Brief History
 
-**Android Inc.** was founded in Palo Alto, CA, in October 2003 by Andy Rubin, Rich Miller, Nick Sears and Chris White. The early intentions of the company were to develop an advanced os for digital cameras. The company then decided that the market for digital cameras was not large enough. They later pivoted, and pitched **Android** to investors as a handset os that would compete against **Symbian** and **Windows Mobile** (both discontinued). In July 2005, **Google** acquired **Android Inc.** for around $50 million. Key employees, including Rubin, Miller, Sears and White, joined **Google** as part of the acquisition.
+**Android Inc.** was founded in Palo Alto, CA, in October 2003 by Andy Rubin, Rich Miller, Nick Sears and Chris White. The early intentions of the company were to develop an advanced os for digital cameras. The company then decided that the market for digital cameras was not large enough. They later pivoted and pitched **Android** to investors as a handset os that would compete against **Symbian** and **Windows Mobile** (both discontinued). In July 2005, **Google** acquired **Android Inc.** for around $50 million. Key employees, including Rubin, Miller, Sears and White, joined **Google** as part of the acquisition.
 
-At **Google**, Rubin and his team developed a mobile device platform powered by the **Linux kernel**. **Google** marketed the platform to handset providers and carriers on the promise of providing a flexible, upgradeable system. In 2006, **Google's** plans to enter the mobile communications market continued. An early prototype closely resembled a **BlackBerry** phone which had a QWERTY keyboard and no touchscreen. With the unveiling of the **Apple iPhone** in 2007 meant **Android** had to go back to the drawing board. In 2008, both **Nokia** and **BlackBerry** announced touch-based smartphones that to rival the **iPhone 3G**. Subsequently, **Android** switch their focus to touchscreens. The first commercially available smartphone running **Android** was the **HTC Dream** which was announced in September 2008.
+At **Google**, Rubin and his team developed a mobile device platform powered by the **Linux kernel**. **Google** marketed the platform to handset providers and carriers on the promise of providing a flexible, upgradeable system. In 2006, **Google's** plans to enter the mobile communications market continued. An early prototype closely resembled a **BlackBerry** phone which had a QWERTY keyboard and no touchscreen. The unveiling of the **Apple iPhone** in 2007 meant **Android** had to go back to the drawing board. In 2008, both **Nokia** and **BlackBerry** announced touch-based smartphones that to rival the **iPhone 3G**. Subsequently, **Android** switch its focus to touchscreens. The first commercially available smartphone running **Android** was the **HTC Dream**, which was announced in September 2008.
 
 ## Software Stack
 
-The following image displays the major components of the **Android** platform.
+The following image displays the significant components of the **Android** platform.
 
 <img src="../resources/img/03-android-overview/android-software-stack.png" width="350" height="500" />
 
 ### Linux Kernel
 
-The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading and memory management. It allows **Android** to take advantage of key security features and handset manufacturers to develop drivers.
+The **Linux kernel** is the foundation of the **Android** platform. The **Android runtime (ART)** relies on the **Linux kernel** for underlying functionalities such as threading and memory management. It allows **Android** to take advantage of crucial security features and handset manufacturers to develop drivers.
 
 ### Hardware Abstraction Layer (HAL)
 
-The **HAL** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The **HAL** consists of multiple library modules which implement an interface for a specific type of hardware components, i.e., the audio, bluetooth, camera or sensor module.
+The **HAL** provides standard interfaces that expose device hardware capabilities to the **Java API Framework**. The **HAL** consists of multiple library modules that implement an interface for specific hardware components, i.e., the audio, Bluetooth, camera or sensor module.
 
 ### Android Runtime
 
-For devices running **Android 5.0** or higher, each application runs in its own process and with its own instance of the **Android Runtime**. Major features of the Android Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation and optimised garbage collection. Prior to **Android 5.0**, **Dalvik** was the **Android Runtime**. **Note:** if your application runs well on the **Android Runtime**, then it run well on **Dalvik**.
+For devices running **Android 5.0** or higher, each application runs in its process and instance of the **Android Runtime**. Significant features of the Android Runtime include **ahead-of-time (AOT)**/**just-in-time (JIT)** compilation and optimised garbage collection. Before **Android 5.0**, **Dalvik** was the **Android Runtime**. **Note:** if your application runs well on the **Android Runtime**, it runs well on **Dalvik**.
 
 ### Native C/C++ Libraries
 
@@ -34,13 +34,13 @@ Many core **Android** system components and services are built from native code 
 
 ### Java API Framework
 
-The feature-set of the **Android** os is available through **APIs** written in **Java**. These **APIs** form the building blocks you need to create Android applications by simplifying the reuse of core, modular system components and services.
+The **Android** os feature-set is available through **APIs** written in **Java**. These **APIs** form the building blocks you need to create Android applications by simplifying the reuse of core, modular system components and services.
 
 ### System Apps
 
-**Android** comes with a set of core applications such as email, messaging, calendars, internet browsing, etc. Applications included with the platform have no special status among the applications the user chooses to install. This means that a third-party application can become the user's default messenger, web browser, etc.
+**Android** comes with a set of core applications such as email, messaging, calendars, internet browsing, etc. Applications included with the platform have no special status among the applications the user chooses to install. It means that a third-party application can become the user's default messenger, web browser, etc.
 
-The system applications function both as applications for users and to provide capabilities that developers can access from their own application.
+The system applications function as applications for users and provide capabilities that developers can access from their applications.
 
 ## Market Share
 
@@ -52,7 +52,7 @@ According to **StatCounter**, **Android** has been the most popular mobile os si
 
 ## Android Studio
 
-**Android Studio** is a cross-platform integrated development environment or IDE for the **Android** os. **Android Studio** is built on **JetBrains' IntelliJ IDEA** and designed specifically for **Android** development.
+**Android Studio** is a cross-platform integrated development environment or IDE for the **Android** os. **Android Studio** is built on **JetBrains' IntelliJ IDEA** and explicitly designed for **Android** development.
 
 ### How To Create A New Android Project
 
@@ -83,13 +83,13 @@ To create a new Android project, follow these steps:
 
 Once everything is setup, push your project to the remote repository on **GitHub**.
 
-Before you get to that, lets look at some important project files.
+Before you get to that, let us look at some vital project files.
 
 ### AndroidManifest.xml
 
 Go to **app > manifest > AndroidManifest.xml**
 
-Every application must have an `AndroidManifest.xml` file in the root of the `app` directory. The `AndroidManifest.xml` file specifies important information about your application to the **Android** build tools, **Android** os and **Google Play**.
+Every application must have an `AndroidManifest.xml` file in the root of the `app` directory. The `AndroidManifest.xml` file specifies essential information about your application to the **Android** build tools, **Android** os and **Google Play**.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -123,8 +123,8 @@ Go to **app > java > op.mobile.app.dev.username.travelling > MainActivity**
 
 An `Activity` is a single, focused thing that the user can do. Almost all activities interact with the user. The **activity** class takes care of creating a window for you in which you can place your UI with `setContentView(View)`. There are two lifecycle methods almost all subclasses of **activity** will implement:
 
-- `onCreate(Bundle)` is where you initialise your **activity**. In this method, you usually call `setContentView(View)` with a layout resource defining your UI, and using `findViewById(int)` to retrieve the `Views` in that UI that you need to interact with programmatically.
-- `onPause()` is where you handle the user pausing active interaction with your **activity**. Any changes made by the user should at this point be committed. In this state the **activity** is still visible on screen.
+- `onCreate(Bundle)` is where you initialise your **activity**. In this method, you usually call `setContentView(View)` with a layout resource defining your UI and using `findViewById(int)` to retrieve the `Views` in that UI you need to interact with programmatically.
+- `onPause()` is where you handle the user pausing active interaction with your **activity**. Any changes made by the user should, at this point, be committed. The **activity** is still visible on the screen in this state.
 
 Here is a resource to other lifecycle methods - https://developer.android.com/guide/components/activities/activity-lifecycle
 
@@ -163,26 +163,26 @@ Currently, you are in **Design** view. Click **Code**. You should see the follow
 
 - `ViewGroup` - a special view that contains other views/child views, i.e., `ConstraintLayout`
 - `View` - represents the basic building block for UI components, i.e., `TextView`.
-- `android:id` - a unique resource name for the element which you can use to obtain a reference to the `ViewGroup`/`View` from your application.
+- `android:id` - a unique resource name for the element you can use to obtain a reference to the `ViewGroup`/`View` from your application.
 
 ### Values
 
 **app > res > values**
 
-- `colors.xml` - a colour resource is specified with an RGB value and alpha chanel. You can use a colour resource any place that accepts a hexadecimal colour value. Also, you can use a colour resource when a drawable resource is expected in **XML**, i.e., `android:drawable="@color/green"`.
-- `strings.xml` - a string resource provides text strings for your application with optional styling and formatting. There are three types of string resources:
+- `colors.xml` - a colour resource is specified with an RGB value and alpha channel. You can use a colour resource at any place that accepts a hexadecimal colour value. Also, you can use a colour resource when a drawable resource is expected in **XML**, i.e., `android:drawable="@color/green"`.
+- `strings.xml` - a string resource that provides text strings for your application with optional styling and formatting. There are three types of string resources:
   - String - **XML** resource that provides a single string.
   - String Array - **XML** resource that provides an array of strings.
-  - Quantity Strings (Plurals) - **XML** resource that holds different strings for pluralization.
-- `themes.xml` - styles/themes allow you to separate the details of your application design from the UI structure and behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, **activity** or view hierarchy. When applied, every `View` in the application or **activity** applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar and window background.
+  - Quantity Strings (Plurals) - **XML** resource that holds different strings for pluralisation.
+- `themes.xml` - styles/themes allow you to separate the details of your application design from the UI structure and behaviour. A style resource specifies the appearance for a single `View`. A style can specify attributes such as font colour, font size, background colour, etc. A theme resource is a collection of attributes that are applied to an entire application, **activity** or view hierarchy. When used, every `View` in the application or **activity** applies each of the theme's attributes. Also, themes can apply styles to non-`View` elements such as the status bar and window background.
 
 **Gradle Scripts > build.gradle (Project: Travelling)**
 
-The `build.gradle (Project)` file defines build configurations that apply to all modules in your project.
+The `build.gradle (Project: Travelling)` file defines build configurations that apply to all modules in your project.
 
 **Gradle Scripts > build.gradle (Module: Travelling.app)**
 
-The `build.gradle (Module)` file allows you to configure build settings for the specific module it is located in.
+The `build.gradle (Module: Travelling)` file allows you to configure build settings for the specific module it is located in.
 
 ## Activity ✏️
 
@@ -211,7 +211,7 @@ Use the **Travelling** project you created earlier for this activity. In `activi
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-You have removed the `TextView` widget and added a `Toolbar` widget. Why? you may not want to show the `Toolbar` on specific screens, i.e., the login screen.
+You have removed the `TextView` widget and added a `Toolbar` widget. Why? You may not want to show the `Toolbar` on specific screens, i.e., the login screen.
 
 Go to `MainActivity.kt` and add the following code:
 
@@ -261,7 +261,7 @@ with
 
 ## Build and Run Your Application
 
-With a few clicks, you can deploy your application to the **Android Emulator** or a **connected device**.
+You can deploy your application to the **Android Emulator** or a **connected device**with a few clicks.
 
 ### How To Run A Project With The Android Emulator
 
@@ -271,12 +271,12 @@ To start the **Android Emulator** and run an application in your project:
 2. In the **Select Hardware** window, choose a device definition and click **Next**.
 3. In the **System Image** window, select a system image and click **Next**. **Note:** the system image must be ≥ the **Minimum SDK** selected when you configured your project.
 4. In the **Android Virtual Device (AVD)** window, leave the default configuration as is and click **Finish**.
-5. In the toolbar, select the **AVD** that you want to run your application on from the device drop-down menu.
+5. Select the **AVD** in the toolbar that you want to run your application on from the device drop-down menu.
 6. Click the **Run** <img src="../resources/img/03-android-overview/android-studio-toolbar-run.png" width="13" height="13" />
 
 ### How To Run An Application With A Connected Device
 
-Before you can run an application, there are a couple things you must do:
+Before you can run an application, there are a couple of things you must do:
 
 1. On the device, open the **Settings** application, select **Developer** options and then enable **USB debugging**.
 2. Set up your system to detect your device. Refer to the resource below.
@@ -312,7 +312,7 @@ class LoginFragment : Fragment() {
 }
 ```
 
-Also you will notice a layout file called `fragment_login`. You are yet to create this file. **Fragment** layout files are stored alongside **activity** layout files, i.e., `activity_main.xml`. The only difference is that they are prefix with **fragment** instead of **activity**. To create a new **fragment** layout file, right-click on **res > layout > New > Layout Resource File**. You will be presented with a popup window. You only need to give it a **File name** of `fragment_login`. Do not worry about the rest of the fields, i.e., **Root element**, **Source set**, **Directory name** and **Available qualifiers**. Once you have named it, click the **OK** button.
+Also, you will notice a layout file called `fragment_login`. You are yet to create this file. **Fragment** layout files are stored alongside **activity** layout files, i.e., `activity_main.xml`. The only difference is that they are prefixed with **fragment** instead of **activity**. To create a new **fragment** layout file, right-click on **res > layout > New > Layout Resource File**. You will be presented with a popup window. You only need to give it a **File name** of `fragment_login`. Do not worry about the rest of the fields, i.e., **Root element**, **Source set**, **Directory name** and **Available qualifiers**. Once you have named it, click the **OK** button.
 
 In `fragment_login.xml`, add the following code:
 
@@ -388,18 +388,18 @@ The login UI should look like the following:
 
 - Why is the `View` text attribute highlighted orange?
 - How do you fix this?
-- Also, the `Views` have hardcoded integer values for some of their attributes. How do fix this as well?
+- Also, the `Views` have hardcoded integer values for some of their attributes. How do we fix this as well?
 
 ### Set A Start Destination
 
-Every application needs a start destination. In our case, it will be `LoginFragment`, but you could also start with a splash screen. You also need to consider the fact that you will be navigate to and from different screens. How do you do this? You need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. You are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource File** called `mobile_navigation.xml`. You will be prompt to install the following dependencies:
+Every application needs a start destination. In our case, it will be `LoginFragment`, but you could also start with a splash screen. You also need to consider that you will be navigating to and from different screens. How do you do this? You need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. You are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource File** called `mobile_navigation.xml`. You will be prompt to install the following dependencies:
 
 ```md
 implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
 implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
 ```
 
-We will discuss these in the next session. You are going to use the `mobile_navigation.xml` file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
+We will discuss these in the next session. You will use the `mobile_navigation.xml` file to centralise all possible paths that a user can take through our application. In `mobile_navigation.xml`, add the following code:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -418,7 +418,7 @@ We will discuss these in the next session. You are going to use the `mobile_navi
 </navigation>
 ```
 
-**Note:** our start destination is going to the the `LoginFragment`. We will talk more about navigation next week.
+**Note:** our start destination is the `LoginFragment`. We will talk more about navigation next week.
 
 ### Create a FragmentContainerView
 
@@ -440,7 +440,7 @@ In `activity_main.xml`, add the following under the `Toolbar`:
     app:navGraph="@navigation/mobile_navigation" />
 ```
 
-**Note:** notice the attribute `navGraph` and that its value is set to the **navigation** resource file - `mobile_navigation.xml`.
+**Note:** notice the attribute `navGraph` and its value is set to the **navigation** resource file - `mobile_navigation.xml`.
 
 ### Set a FragmentManager
 
@@ -470,4 +470,4 @@ You should have something that looks like this:
 
 ## Formative Assessment
 
-In today's formative assessment, you will research and complete the given `data.json` file in the `assessment` directory. Feel free to add more countries but make sure you following the same shape of data. However, I have found six countries is more than enough.
+In today's formative assessment, you will research and complete the given `data.json` file in the `assessment` directory. Feel free to add more countries, but make sure you follow the same data shape. However, I have found six countries is more than enough.

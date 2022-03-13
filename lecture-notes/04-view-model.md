@@ -10,13 +10,9 @@ If the **system** destroys or recreates a **UI controller**, any transient UI-re
 
 **UI controllers** are intended to display UI-related data, react to user actions or handle os communication. Relying on a **UI controller** to be responsible for fetching data from an **API** adds bloat to the class. Assigning excessive responsibility to **UI controller** results in a class handling all the work by itself where this work should be delegated to other classes. It is easier or more efficient to separate the UI-related data from the **UI controller** logic.
 
-## Code Example
-
-Unzip the `bottom-navigation-view-model` project in the `code-resources` directory, then open it in **Android Studio**.
-
 ### build.grade
 
-Go to **Gradle Scripts > build.grade (Module: BottomNavigation.app)**. You should see the following in the **dependencies** block:
+Go to **Gradle Scripts > build.grade (Module: Travelling.app)**. You should see the following in the **dependencies** block:
 
 ```xml
 implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
@@ -26,9 +22,11 @@ Without this dependencies, you can **not** use `ViewModel`.
 
 ### HomeViewModel
 
-`HomeViewModel` extends from `ViewModel`.
+Create a **ViewModel** by right-clicking on **java > op.mobile.app.dev.username.travelling.ui.home > New > Kotlin Class/File**. Again, you will be you will be presented with a popup window. Call this new class **HomeViewModel**, then hit the **Enter** key. Once created, add the following code:
 
 ```kotlin
+...
+
 class HomeViewModel : ViewModel() {
     var count: Int = 0
 
@@ -42,9 +40,17 @@ class HomeViewModel : ViewModel() {
 }
 ```
 
+### HomeFragment Layout
+
+
+
 ### HomeFragment
 
+In `HomeFragment`, replace the code in the `onCreateView()` function block with the following:
+
 ```kotlin
+...
+
 class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -57,7 +63,7 @@ class HomeFragment : Fragment() {
         val btnPlusOne: Button = view.findViewById(R.id.btn_plus_one)
         val btnReset: Button = view.findViewById(R.id.btn_reset)
 
-        // Create ViewModels and retain it in a store of the
+        // Create ViewModel and retain it in a store of the
         // given ViewModelStoreOwner, i.e., HomeFragment
         val viewModel = ViewModelProvider(this)
             // Return HomeViewModel
