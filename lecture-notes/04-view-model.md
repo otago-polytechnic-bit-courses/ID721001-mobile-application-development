@@ -12,7 +12,7 @@ If the **system** destroys or recreates a **UI controller**, any transient UI-re
 
 ### build.grade
 
-Go to **Gradle Scripts > build.grade (Module: Travelling.app)**. You should see the following in the **dependencies** block:
+Go to **Gradle Scripts > build.gradle (Module: Travelling.app)**. You should see the following in the **dependencies** block:
 
 ```xml
 implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
@@ -140,7 +140,7 @@ The following image demonstrates the various lifecycle states an **activity** wh
 
 <img src="../resources/img/07-view-model/view-model-lifecycle.png" width="375" height="550" />
 
-A `ViewModel` is usually requested the first time the **system** calls the `onCreate()` or `onCreateView()` method. The system may call these methods several times throughout the life of a **UI controller** such as rotation a device's screen. The `ViewModel` exists from when you first request a `ViewModel` until the activity is finished & destroyed.
+A `ViewModel` is usually requested the first time the **system** calls the `onCreate()` or `onCreateView()` method. The system may call these methods several times throughout the life of a **UI controller** such as rotating a device's screen. The `ViewModel` exists from when you first request a `ViewModel` until the activity is finished & destroyed.
 
 ## Formative Assessment
 
