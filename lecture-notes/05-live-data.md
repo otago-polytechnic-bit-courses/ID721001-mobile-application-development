@@ -73,7 +73,7 @@ class HomeFragment : Fragment() {
 
         val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        viewModel.count.observe(viewLifecycleOwner, Observer { // Observe any changes to count in HomeViewModel
+        viewModel.count.observe(viewLifecycleOwner) { // Observe any changes to count in HomeViewModel
             tvOutput.text = it.toString() // Update tvOutput when there is a change in value
         })
 
