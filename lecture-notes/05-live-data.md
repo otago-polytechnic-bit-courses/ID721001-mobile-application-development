@@ -19,26 +19,13 @@ Here some advantages of using `LiveData`:
 - If a lifecycle becomes inactive, it receives the latest data upon becoming active again.
 - If a **UI controller** is recreated due to a configuration change, it immediately receives the latest available data.
 
-## Code Example
-Open the `bottom-navigation-live-data` directory provided to you in **Android Studio**. 
-
-Lets take a look at what is happening...
-
-### build.grade
-
-Go to **Gradle Scripts > build.grade (Module: BottomNavigation.app)**. You should see the following in the **dependencies** block:
-
-```xml
-implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
-```
-
-Without this dependencies, you can **not** use `LiveData`.
-
 ### HomeViewModel
 
-In the `ViewModel` class, create an instance of LiveData to hold a certain type of data.
+In the `ViewModel` class, create an instance of `LiveData` to hold a certain type of data.
 
 ```kotlin
+...
+
 class HomeViewModel : ViewModel() {
     private val _count = MutableLiveData<Int>()
     val count: LiveData<Int> get() = _count 
@@ -70,6 +57,8 @@ When you update the value stored in the `LiveData` object, it triggers all regis
 `LiveData` allows **UI controller** **observers** to subscribe to updates. When the data stored by the `LiveData` object changes, the UI automatically updates in response.
 
 ```kotlin
+...
+
 class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -84,7 +73,7 @@ class HomeFragment : Fragment() {
 
         val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        viewModel.count.observe(viewLifecycleOwner, Observer { // Observe any changes to count
+        viewModel.count.observe(viewLifecycleOwner, Observer { // Observe any changes to count in HomeViewModel
             tvOutput.text = it.toString() // Update tvOutput when there is a change in value
         })
 
