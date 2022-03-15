@@ -4,15 +4,9 @@
 
 **Retrofit** is a **REST** client for Java & Kotlin. It makes it easy to request data via a **REST** based **web service**.
 
-## Code Example
+### build.gradle
 
-Open the `api-retrofit` directory provided to you in **Android Studio**. The directory can be found in **code-resources**.
-
-Lets take a look at what is happening...
-
-### build.grade
-
-Go to **Gradle Scripts > build.grade (Module: API.app)**. You should see the following in the **dependencies** block:
+Go to **Gradle Scripts > build.gradle (Module: Travelling.app)**. You should see the following in the **dependencies** block:
 
 ```xml
 ...
@@ -30,7 +24,7 @@ To make a request to an **API**, you need declare the internet permission in `An
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="op.mobile.app.dev.api">
+    package="op.mobile.app.dev.grayson.travelling">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -40,9 +34,11 @@ To make a request to an **API**, you need declare the internet permission in `An
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.API">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.Travelling">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Travelling.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -114,35 +110,35 @@ An `object` does not have a constructor. The instance of the `object` will be cr
 - https://square.github.io/retrofit/2.x/retrofit
 - https://github.com/google/gson
 
-### ServiceStatus
+### APIServiceStatus
 
 ```kotlin
-enum class ServiceStatus {
+enum class APIServiceStatus {
     LOADING,
     ERROR,
     COMPLETE
 }
 ```
 
-### ServiceBindingAdapter
+### BindingAdapter
 
 **Binding adapters** are responsible for making calls to set values. For example, setting value to a `TextView` by calling the `setText()` method or setting a click event listener to a `Button` by calling the `setOnClickListener()` method. By using **data binding**, you can create an attribute for any setter, i.e., `apiServiceStatus`. You will see how to use `apiServiceStatus` later.
 
 ```kotlin
 ...
 
-@BindingAdapter("service_status")
-fun bindServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
+@BindingAdapter("api_service_status")
+fun bindAPIServiceStatus(tvStatus: TextView, status: APIServiceStatus?) {
     when (status) {
-        ServiceStatus.LOADING -> {
+        APIServiceStatus.LOADING -> {
             tvStatus.visibility = View.VISIBLE
-            tvStatus.text = tvStatus.context.getString(R.string.loading)
+            tvStatus.text = "Loading..."
         }
-        ServiceStatus.ERROR -> {
+        APIServiceStatus.ERROR -> {
             tvStatus.visibility = View.VISIBLE
-            tvStatus.text = tvStatus.context.getString(R.string.connection_error)
+            tvStatus.text = "Connection Error"
         }
-        ServiceStatus.COMPLETE -> tvStatus.visibility = View.GONE
+        APIServiceStatus.COMPLETE -> tvStatus.visibility = View.GONE
     }
 }
 ```
@@ -157,21 +153,21 @@ fun bindServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
 ...
 
 class HomeViewModel : ViewModel() {
-    private val _status = MutableLiveData<ServiceStatus>()
-    val status: LiveData<ServiceStatus> get() = _status
+    private val _status = MutableLiveData<APIServiceStatus>()
+    val status: LiveData<APIServiceStatus> get() = _status
 
     private val _response = MutableLiveData<List<Country>>()
     val response: LiveData<List<Country>> get() = _response
 
     init {
         viewModelScope.launch {
-            _status.value = ServiceStatus.LOADING
+            _status.value = APIServiceStatus.LOADING
             try {
                 _response.value = retrofitService.getResponse()
-                _status.value = ServiceStatus.COMPLETE
+                _status.value = APIServiceStatus.COMPLETE
             } catch (e: Exception) {
                 _response.value = ArrayList()
-                _status.value = ServiceStatus.ERROR
+                _status.value = APIServiceStatus.ERROR
             }
         }
     }
@@ -182,7 +178,7 @@ class HomeViewModel : ViewModel() {
 
 ### Home Layout
 
-Note how `service_status` binding adapter is being used. 
+Note how `api_service_status` binding adapter is being used. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -195,7 +191,7 @@ Note how `service_status` binding adapter is being used.
 
         <variable
             name="homeViewModel"
-            type="op.mobile.app.dev.api.ui.home.HomeViewModel" />
+            type="op.mobile.app.dev.grayson.travelling.ui.home.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
