@@ -4,21 +4,15 @@
 
 **Data binding** allows you to bind UI components in your **XML** layouts to data sources in your application using a declarative format.
 
-## Code Example
+### build.gradle
 
-Open the `bottom-navigation-data-binding` directory provided to you in **Android Studio**. The directory can be found in **code-resources**.
-
-Lets take a look at what is happening...
-
-### build.grade
-
-Go to **Gradle Scripts > build.grade (Module: BottomNavigation.app)**. You should see the following in the **plugin** block:
+Go to **Gradle Scripts > build.gradle (Module: Travelling.app)**. You should see the following in the **plugin** block:
 
 ```xml
 id 'kotlin-kapt'
 ```
 
-& the following in the **android** block:
+& the following in the **android** block under the **kotlinOptions** block:
 
 ```xml
 buildFeatures {
@@ -47,7 +41,7 @@ Binding variables that can be used in expressions are defined in the `data` elem
 
         <variable
             name="homeViewModel"
-            type="op.mobile.app.dev.bottom.navigation.ui.home.HomeViewModel" />
+            type="op.mobile.app.dev.grayson.travelling.ui.home.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -100,9 +94,11 @@ Binding components in your **XML** layout files lets you remove many UI framewor
 
 ### HomeFragment
 
-The **data binding** library provides classes & methods to easily observe data changes. You do not have to worry about refreshing the UI when a data source changes. You can make your variables or their properties **observable**. 
+The **data binding** library provides classes & methods to easily observe data changes. You do not have to worry about refreshing the UI when a data source changes. You can make your variables or their properties **observable**. **Note:** Make sure you import `FragmentHomeBinding` & `DataBindingUtil`.
 
 ```kotlin
+...
+
 class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -113,12 +109,12 @@ class HomeFragment : Fragment() {
             DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
 
         val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-
-        binding.homeViewModel = viewModel
-
-        binding.lifecycleOwner = viewLifecycleOwner
-
-        return binding.root // Get a reference to the root view
+        
+        binding.apply {
+            homeViewModel = viewModel
+            lifecycleOwner = viewLifecycleOwner
+            return root
+        }
     }
 }
 ```
