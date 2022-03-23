@@ -110,10 +110,10 @@ An `object` does not have a constructor. The instance of the `object` will be cr
 - https://square.github.io/retrofit/2.x/retrofit
 - https://github.com/google/gson
 
-### APIServiceStatus
+### ServiceStatus
 
 ```kotlin
-enum class APIServiceStatus {
+enum class ServiceStatus {
     LOADING,
     ERROR,
     COMPLETE
@@ -127,18 +127,18 @@ enum class APIServiceStatus {
 ```kotlin
 ...
 
-@BindingAdapter("api_service_status")
-fun bindAPIServiceStatus(tvStatus: TextView, status: APIServiceStatus?) {
+@BindingAdapter("service_status")
+fun bindServiceStatus(tvStatus: TextView, status: ServiceStatus?) {
     when (status) {
-        APIServiceStatus.LOADING -> {
+        ServiceStatus.LOADING -> {
             tvStatus.visibility = View.VISIBLE
             tvStatus.text = "Loading..."
         }
-        APIServiceStatus.ERROR -> {
+        ServiceStatus.ERROR -> {
             tvStatus.visibility = View.VISIBLE
             tvStatus.text = "Connection Error"
         }
-        APIServiceStatus.COMPLETE -> tvStatus.visibility = View.GONE
+        ServiceStatus.COMPLETE -> tvStatus.visibility = View.GONE
     }
 }
 ```
@@ -153,21 +153,21 @@ fun bindAPIServiceStatus(tvStatus: TextView, status: APIServiceStatus?) {
 ...
 
 class HomeViewModel : ViewModel() {
-    private val _status = MutableLiveData<APIServiceStatus>()
-    val status: LiveData<APIServiceStatus> get() = _status
+    private val _status = MutableLiveData<ServiceStatus>()
+    val status: LiveData<ServiceStatus> get() = _status
 
     private val _response = MutableLiveData<List<Country>>()
     val response: LiveData<List<Country>> get() = _response
 
     init {
         viewModelScope.launch {
-            _status.value = APIServiceStatus.LOADING
+            _status.value = ServiceStatus.LOADING
             try {
                 _response.value = retrofitService.getResponse()
-                _status.value = APIServiceStatus.COMPLETE
+                _status.value = ServiceStatus.COMPLETE
             } catch (e: Exception) {
                 _response.value = ArrayList()
-                _status.value = APIServiceStatus.ERROR
+                _status.value = ServiceStatus.ERROR
             }
         }
     }
@@ -178,7 +178,7 @@ class HomeViewModel : ViewModel() {
 
 ### Home Layout
 
-Note how `api_service_status` binding adapter is being used. 
+Note how `service_status` binding adapter is being used. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -252,12 +252,11 @@ class HomeFragment : Fragment() {
         )
 
         val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-
-        binding.lifecycleOwner = viewLifecycleOwner
-
-        binding.homeViewModel = viewModel
-
-        return binding.root
+        binding.apply {
+            lifecycleOwner = viewLifecycleOwner
+            homeViewModel = viewModel
+            return root
+        }
     }
 }
 ```
