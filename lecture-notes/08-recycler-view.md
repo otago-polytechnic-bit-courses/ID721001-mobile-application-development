@@ -6,12 +6,6 @@
 
 When an item scrolls off the screens, `RecyclerView` does not destroy its `View`. Instead, `RecyclerView` recycles the `View` for new item that has scrolled onto the screen. This improves performance, responsiveness & reduces power consumption.
 
-## Code Example
-
-Open the `api-recycler-view` directory provided to you in **Android Studio**. 
-
-Lets take a look at what is happening...
-
 ### RecyclerViewItem Layout
 
 So far, you have looked at how to bind `ViewModel` data to a layout. The following is an example on how to bind model data, i.e., `Country` to a layout.
