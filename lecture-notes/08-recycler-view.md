@@ -188,16 +188,15 @@ class HomeFragment : Fragment() {
         )
 
         val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-
-        binding.lifecycleOwner = viewLifecycleOwner
-
-        binding.rvJobs.adapter = ServiceAdapter()
-
-        return binding.root
+        binding.apply {
+            lifecycleOwner = viewLifecycleOwner
+            rvJobs.adapter = ServiceAdapter()
+            return root
+        }
     }
 }
 ```
 
 ## Formative Assessment
 
-In the `resources` directory, you have been provided an incomplete **Quiz** application. Carefully read the code and comments. Integrate this into your **Travelling** application.
+In the `resources` directory, you have been provided an incomplete application called **quiz-example**. Carefully read the code and comments. Integrate this into your **Travelling** application.
