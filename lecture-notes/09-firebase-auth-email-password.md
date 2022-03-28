@@ -2,8 +2,6 @@
 
 In this session, you are going to let your users authenticate with **Firebase** using an email and password.
 
-Firstly, open **bottom-navigation-auth** in **Android Studio**. Familarise yourself with the code.
-
 ## How to Implement Firebase Authentication in your Application
 
 ### build.gradle (Module)
