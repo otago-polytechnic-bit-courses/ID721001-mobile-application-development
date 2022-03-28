@@ -180,21 +180,7 @@ class RegisterFragment: Fragment() {
             val confirmPassword = etConfirmPassword.text.toString()
 
             // Set of validation rules
-            when {
-                email.isEmpty() ->
-                    etEmailAddress.error = "Email is required."
-                !Patterns.EMAIL_ADDRESS.matcher(email).matches() ->
-                    etEmailAddress.error = "Invalid email address format."
-                password.isEmpty() ->
-                    etPassword.error = "Password is required."
-                password.length < 8 ->
-                    etPassword.error = "Password needs to be at least eight characters."
-                password != confirmPassword ->
-                    etConfirmPassword.error = "Passwords do not match."
-                else -> {
-                    register(email, password) // Call if validation rules pass
-                }
-            }
+            // You will write some code here for your formative assessment
         }
 
         return view
@@ -333,3 +319,18 @@ class LoginFragment : Fragment() {
 ## Final Remarks
 
 It is important that you look at the navigation graph in the `mobile_navigation.xml`. You will need to declare a new fragment for `RegisterFragment` and the appropriate actions for navigating between the login and register screen.
+
+## Formative Assessment
+
+In this assessment, you will apply validation rules when registering a new user. Complete the following checks in the when statement below.
+
+```kt
+when {
+    // Check if email is empty
+    // Check if email is an invalid format
+    // Check if password is empty
+    // Check if password is at least eight characters
+    // Check if password and confirm password do not match
+    // If all above conditions are met, call the register function
+}
+```
