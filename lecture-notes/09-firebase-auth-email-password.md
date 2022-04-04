@@ -51,7 +51,6 @@ Click **Authentication** in the left-hand side panel, then click **Get Started**
 
 Enable the following:
 - **Username/Password**. Ignore **Passwordless** option and click **Save**.
-- **Goggle**. Provide your **Google** account's email and click **Save**.
 
 <img src="../resources/img/13-firebase-auth/13-firebase-auth-3.png" width=800 height=500 />
 
@@ -234,8 +233,6 @@ In `fragment_login.xml`, add the following:
       app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 ```
 
-The **Google** sign-in button has been removed for the purposes of this lecture. The `TextView` is constrained to the default login button.
-
 ## LoginFragment
 
 Import the necessary APIs.
@@ -269,7 +266,7 @@ class LoginFragment : Fragment() {
                 password.isEmpty() ->
                     etPassword.error = "Password is required"
                 else -> {
-                    firebaseAuthSignInWithEmailAndPassword(email, password) // Call if validation rules pass
+                    login(email, password) // Call if validation rules pass
                 }
             }
         }
@@ -292,7 +289,7 @@ class LoginFragment : Fragment() {
      * @param email the user's email address
      * @param password the user's password
      */
-    private fun firebaseAuthSignInWithEmailAndPassword(email: String, password: String) {
+    private fun login(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password) // In-built Firebase authentication function
             .addOnCompleteListener(requireActivity()) {
                 if (it.isSuccessful) {
@@ -329,6 +326,6 @@ when {
     // Check if password is empty
     // Check if password is at least eight characters
     // Check if password and confirm password do not match
-    // If all above conditions are met, call the register function
+    // If all above conditions are not met, call the register function
 }
 ```
