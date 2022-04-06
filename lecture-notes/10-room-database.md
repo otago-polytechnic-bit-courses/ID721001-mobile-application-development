@@ -20,9 +20,9 @@ Open the `login-room-database` directory provided to you in **Android Studio**.
 
 Lets take a look at what is happening...
 
-### build.grade
+### build.gradle
 
-Go to **Gradle Scripts > build.grade (Module: Login.app)**. You should see the following in the **dependencies** block:
+Go to **Gradle Scripts > build.gradle (Module: Login.app)**. You should see the following in the **dependencies** block:
 
 ```xml
 ...
@@ -178,7 +178,7 @@ class LoginViewModel(private val repository: LoginRepository) : ViewModel() {
 }
 ```
 
-### LoginFragmentFactory
+### LoginViewModelFactory
 
 ```kotlin
 ...
