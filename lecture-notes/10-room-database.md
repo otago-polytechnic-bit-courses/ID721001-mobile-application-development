@@ -16,7 +16,7 @@ Lets look at the following diagram & discuss how they work together:
 
 ## Code Example
 
-Open the `login-room-database` directory found [here](https://github.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/blob/master/code-resources/login-room-database.zip) in **Android Studio**.
+Download the `login-room-database.zip` found [here](https://github.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/blob/master/code-resources/login-room-databaseo.zip), then open the `login-room-database` in **Android Studio**.
 
 Lets take a look at what is happening...
 
