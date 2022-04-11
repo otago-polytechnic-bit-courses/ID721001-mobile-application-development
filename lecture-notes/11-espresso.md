@@ -8,6 +8,12 @@ One approach to **UI testing** is to have a person perform a set of tasks on you
 
 To automate **UI tests**, you write your test code in **app > java > package name (androidTest)**. The [Android Gradle plugin](https://developer.android.com/studio/releases/gradle-plugin) builds a test application based on your test code & loads the test application on the same device (**Emulator** or **connect device**) as the target application. In your test code, you can use UI testing frameworks such as **Espresso** to simulate user interactions on the target application.
 
+## Code Example
+
+Open the `bottom-navigation-espresso` directory found [here](https://github.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/blob/master/code-resources/bottom-navigation-espresso.zip) in **Android Studio**.
+
+Lets take a look at what is happening...
+
 ## Set up Espresso
 
 Go to **build.gradle (Module)** & make sure you have the **Espresso** dependency:
