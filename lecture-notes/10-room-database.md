@@ -75,7 +75,7 @@ interface LoginDao {
 }
 ```
 
-A `Flow` can emit multiple values sequentially whereas `suspend` functions can only return a single value. For example, you can use `Flow` to receive live updates from a database.
+A `Flow` can emit multiple values sequentially. For example, you can use `Flow` to receive live updates from a database.
 
 ### LoginDb
 
@@ -126,7 +126,7 @@ abstract class LoginDb : RoomDatabase() {
             }
         }
 
-        suspend fun populateDb(loginDao: ILoginDao) {
+        fun populateDb(loginDao: ILoginDao) {
             loginDao.deleteAll()
             var login = Login("john.doe", "P@ssw0rd123")
             loginDao.insert(login)
@@ -159,7 +159,7 @@ class LoginRepository (private val loginDao: ILoginDao) {
 
 The **DAO** is passed into the **repository** constructor & not the entire database. The **repository** only needs access to the **DAO** because the the **DAO** contains the read/write methods for the database.
 
-The list of login details is a public property & initialised by getting the `Flow` list of login details from **Room**. **Room** executes all queries on a separate thread, but executes `suspend` queries off the main thread.
+The list of login details is a public property & initialised by getting the `Flow` list of login details from **Room**. **Room** executes all queries on a separate thread. 
 
 ### LoginViewModel
 
