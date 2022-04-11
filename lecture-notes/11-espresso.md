@@ -10,7 +10,7 @@ To automate **UI tests**, you write your test code in **app > java > package nam
 
 ## Code Example
 
-Open the `bottom-navigation-espresso` directory found [here](https://github.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/blob/master/code-resources/bottom-navigation-espresso.zip) in **Android Studio**.
+Download the `bottom-navigation-espresso.zip` found [here](https://github.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/blob/master/code-resources/bottom-navigation-espresso.zip), then open the `bottom-navigation-espresso` in **Android Studio**.
 
 Lets take a look at what is happening...
 
