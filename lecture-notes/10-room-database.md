@@ -68,10 +68,10 @@ interface LoginDao {
     fun getAll(): Flow<List<Login>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(login: Login)
+    fun insert(login: Login)
 
     @Query("DELETE FROM login")
-    suspend fun deleteAll()
+    fun deleteAll()
 }
 ```
 
@@ -151,7 +151,7 @@ class LoginRepository (private val loginDao: ILoginDao) {
     val allLoginDetails: Flow<List<Login>> = loginDao.getAll()
 
     @WorkerThread
-    suspend fun insertLoginDetail(login: Login) {
+    fun insertLoginDetail(login: Login) {
         loginDao.insert(login)
     }
 }
@@ -172,11 +172,13 @@ The list of login details is a public property & initialised by getting the `Flo
 class LoginViewModel(private val repository: LoginRepository) : ViewModel() {
     val allLoginDetails: LiveData<List<Login>> = repository.allLoginDetails.asLiveData()
 
-    fun insertLoginDetail(login: Login) = viewModelScope.launch {
+    fun insertLoginDetail(login: Login) = CoroutineScope(Dispatchers.IO) {
         repository.insertLoginDetail(login)
     }
 }
 ```
+
+Make sure you import `kotlinx.coroutines.CoroutineScope` and `kotlinx.coroutines.Dispatchers`.
 
 ### LoginViewModelFactory
 
