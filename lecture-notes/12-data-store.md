@@ -42,7 +42,7 @@ import java.io.IOException
 // We need a reference to the context, i.e., SettingsFragment. Note: you can use this class with an Activity
 class SettingsManager(context: Context) {
 
-    // Create a new data store - it will store the mode as key/value pairs, i.e., is_light_mode: 0 or is_dark_mode: 1
+    // Create a new data store - it will store the mode as key/value pairs, i.e., is_dark_mode: 0 or is_dark_mode: 1
     private val dataStore: DataStore<Preferences> =
         context.applicationContext.createDataStore(DATA_STORE_NAME) // This constant is declared in a companion object at the bottom of this class
 
