@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "90050884971",
+    "firebase_url": "https://travelling-android-app-default-rtdb.firebaseio.com",
+    "project_id": "travelling-android-app",
+    "storage_bucket": "travelling-android-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90050884971:android:f739923363e483ebdd882e",
+        "android_client_info": {
+          "package_name": "op.mobile.app.dev.graysono.travelling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90050884971-unp0q881qoi5pp4hm107m6ed0cd1ikqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "op.mobile.app.dev.graysono.travelling",
+            "certificate_hash": "03926be8d519c38c81a0a6723f18de2f09861b16"
+          }
+        },
+        {
+          "client_id": "90050884971-q036bvcep4qf47ntt8t8uuv0n07iihj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEBIj5VkhYJtS6LWtAB-T2TGesZEf7kGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90050884971-q036bvcep4qf47ntt8t8uuv0n07iihj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/annabel/Desktop/google-maps-example/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recycler_view_country_item.xml",
+        "source": "/Users/annabel/Desktop/google-maps-example/app/src/main/res/layout/recycler_view_country_item.xml"
+    },
+    {
+        "merged": "/Users/annabel/Desktop/google-maps-example/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/marker_info_window.xml",
+        "source": "/Users/annabel/Desktop/google-maps-example/app/src/main/res/layout/marker_info_window.xml"
+    },
+    {
+        "merged": "/Users/annabel/Desktop/google-maps-example/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/Users/annabel/Desktop/google-maps-example/app/src/main/res/layout/fragment_home.xml"
+    }
+]

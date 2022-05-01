@@ -1,0 +1,326 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:1-29:12
+MERGED from [androidx.databinding:databinding-adapters:4.1.3] /Users/annabel/.gradle/caches/transforms-2/files-2.1/2f021ce101b310920a9271d644d2ca04/databinding-adapters-4.1.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:4.1.3] /Users/annabel/.gradle/caches/transforms-2/files-2.1/819b667d9d6966dc18facad7607084a0/databinding-runtime-4.1.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/13672ab0282cf4d1ddadc8de3044791e/navigation-fragment-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d6648626ac9d66172bff76e703205736/jetified-fragment-ktx-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/82745965835ff54132a843e008acb6a2/navigation-ui-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e6f665fee2116f8be6e82ddc9919d1af/navigation-runtime-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b082338b687c2fa0e9f420af38bb201c/navigation-common-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/4dc87de4ab62b3b8ed3580612468e32e/jetified-activity-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.6.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/65174407104ae62730d9cb7d9136621a/jetified-core-ktx-1.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/a4d7d7bbc641c0e3970408bb2bcc7296/jetified-lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/87aeed1db2e33f9492e4164ec4257c2e/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/056ed989aec5d6df1d4a576d19b8f21c/jetified-lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/791d3972c826dccb4176cd6561a1411b/jetified-lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5bc83b3920925fcf700f5052b359d7a7/navigation-ui-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.4.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e07822ddf2620959a9a5308dc57adc88/material-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5815140ee0502080d71dba874920e389/constraintlayout-2.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d1cfc97e658b82b33b7f9449b0fd7486/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/92770b58629403b7358363fd8eea4c0d/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f5b7212cebe063b58153936f75d8ff7d/jetified-android-maps-utils-0.5/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.databinding:viewbinding:4.1.3] /Users/annabel/.gradle/caches/transforms-2/files-2.1/89337fb6ed1ef0f35fd86159f865d124/jetified-viewbinding-4.1.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d860ca85e42d04da0cfeb4ac0c59c0b3/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/badf07ac9ffa983c76d0f4786679406c/navigation-fragment-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0bfbb431e6fe2685afaed6167151a503/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/8dc62d19c0cd42284d845c685fc836b3/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/439048ee23c06c5808a46a2695e50027/jetified-play-services-basement-18.0.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d63f4b9a950a0d7a3c4dab8690d990ff/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/c64063823258b9034d9100e6f3b372d4/navigation-runtime-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0b1a6b3e85d1dbdd79f5975e28a1ecf1/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e899124e91ec24e7fc7b2a384389e33a/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/15ce4f0c746571daf60dc6bd1b12e3db/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d4861ac5a45f822839c46c7423d42a13/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/dd1eaae04717cd1fb6cb7bc489b110b0/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/6092c56e5d4888d1faf9972c880f3a94/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/cfc513006bf4f5dba2ccd55afb379b8a/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/100e9fc0dfff4e4fd9cc862029130074/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/278b34dfd38e59e2e2ffcb6de35f795d/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/73fd3ca52e65141d1655382c5108bc84/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/7f72c51983b63b04e8951144e50964d7/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/674b034328dd3a6830d8f08e4b19e325/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/7b71357888ab7cbf305ac78d8ea7df73/transition-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b991a3cce2011ebb36bae87bfb89e5bf/navigation-common-2.3.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.6.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5ce2a1801183ae3c51a0380333e2f01c/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/70c10858d5449d9d677a52aa80682851/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e114f1782a0c40b37f7accaa79009c39/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/25afbe4ce093e073f300522c3b42c271/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f92e3556620d8c16087d0f84bb4de0b1/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/deb80b43e85f17db4a1666946eb7f63d/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/9f3cf962e2a64171289a4c7b106ab672/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/2422435c12f1df768306aa8d74f2205f/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/224254c2c2633f0f72dec6e04a917dde/jetified-gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f723555cbf7f57de1a64857d36e2c116/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b0a721715288fb83af43f1cd497d903a/lifecycle-livedata-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/445e3473f941947f8acbc159d4d4c700/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/edf7843545fb89840dedcf33478cc1b6/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/91add632627b1a9dab415f4f69fa55f0/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e477c6b39185c200228aff3afb0a0f1a/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b86af2440db641aab18d42ed803b6e97/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/75296f0f296d474a218b4983151e5b17/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/1b91ba55f9ddb2985caf3435c6f0ed64/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/feb626262030cac8bf1032cad9f1fbd6/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:3:5-52
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:1-29:12
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:1-29:12
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:7:5-27:19
+MERGED from [com.google.android.material:material:1.4.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e07822ddf2620959a9a5308dc57adc88/material-1.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e07822ddf2620959a9a5308dc57adc88/material-1.4.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5815140ee0502080d71dba874920e389/constraintlayout-2.1.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5815140ee0502080d71dba874920e389/constraintlayout-2.1.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/92770b58629403b7358363fd8eea4c0d/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/92770b58629403b7358363fd8eea4c0d/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f5b7212cebe063b58153936f75d8ff7d/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f5b7212cebe063b58153936f75d8ff7d/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0bfbb431e6fe2685afaed6167151a503/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0bfbb431e6fe2685afaed6167151a503/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/8dc62d19c0cd42284d845c685fc836b3/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/8dc62d19c0cd42284d845c685fc836b3/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/439048ee23c06c5808a46a2695e50027/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/439048ee23c06c5808a46a2695e50027/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.6.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5ce2a1801183ae3c51a0380333e2f01c/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5ce2a1801183ae3c51a0380333e2f01c/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e114f1782a0c40b37f7accaa79009c39/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e114f1782a0c40b37f7accaa79009c39/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/224254c2c2633f0f72dec6e04a917dde/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/224254c2c2633f0f72dec6e04a917dde/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5ce2a1801183ae3c51a0380333e2f01c/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:13:9-48
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:14:9-16:55
+	android:value
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:16:13-52
+	android:name
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:15:13-58
+activity#op.mobile.app.dev.graysono.travelling.MainActivity
+ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:17:9-26:20
+	android:label
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:19:13-45
+	android:theme
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:20:13-64
+	android:name
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:18:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml:24:27-74
+uses-sdk
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:4.1.3] /Users/annabel/.gradle/caches/transforms-2/files-2.1/2f021ce101b310920a9271d644d2ca04/databinding-adapters-4.1.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:4.1.3] /Users/annabel/.gradle/caches/transforms-2/files-2.1/2f021ce101b310920a9271d644d2ca04/databinding-adapters-4.1.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.1.3] /Users/annabel/.gradle/caches/transforms-2/files-2.1/819b667d9d6966dc18facad7607084a0/databinding-runtime-4.1.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.1.3] /Users/annabel/.gradle/caches/transforms-2/files-2.1/819b667d9d6966dc18facad7607084a0/databinding-runtime-4.1.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/13672ab0282cf4d1ddadc8de3044791e/navigation-fragment-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/13672ab0282cf4d1ddadc8de3044791e/navigation-fragment-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d6648626ac9d66172bff76e703205736/jetified-fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d6648626ac9d66172bff76e703205736/jetified-fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/82745965835ff54132a843e008acb6a2/navigation-ui-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/82745965835ff54132a843e008acb6a2/navigation-ui-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e6f665fee2116f8be6e82ddc9919d1af/navigation-runtime-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e6f665fee2116f8be6e82ddc9919d1af/navigation-runtime-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b082338b687c2fa0e9f420af38bb201c/navigation-common-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b082338b687c2fa0e9f420af38bb201c/navigation-common-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/4dc87de4ab62b3b8ed3580612468e32e/jetified-activity-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/4dc87de4ab62b3b8ed3580612468e32e/jetified-activity-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.6.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/65174407104ae62730d9cb7d9136621a/jetified-core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.6.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/65174407104ae62730d9cb7d9136621a/jetified-core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/a4d7d7bbc641c0e3970408bb2bcc7296/jetified-lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/a4d7d7bbc641c0e3970408bb2bcc7296/jetified-lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/87aeed1db2e33f9492e4164ec4257c2e/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/87aeed1db2e33f9492e4164ec4257c2e/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/056ed989aec5d6df1d4a576d19b8f21c/jetified-lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/056ed989aec5d6df1d4a576d19b8f21c/jetified-lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/791d3972c826dccb4176cd6561a1411b/jetified-lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/791d3972c826dccb4176cd6561a1411b/jetified-lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5bc83b3920925fcf700f5052b359d7a7/navigation-ui-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5bc83b3920925fcf700f5052b359d7a7/navigation-ui-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.4.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e07822ddf2620959a9a5308dc57adc88/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e07822ddf2620959a9a5308dc57adc88/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5815140ee0502080d71dba874920e389/constraintlayout-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5815140ee0502080d71dba874920e389/constraintlayout-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d1cfc97e658b82b33b7f9449b0fd7486/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d1cfc97e658b82b33b7f9449b0fd7486/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/92770b58629403b7358363fd8eea4c0d/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/92770b58629403b7358363fd8eea4c0d/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f5b7212cebe063b58153936f75d8ff7d/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f5b7212cebe063b58153936f75d8ff7d/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
+MERGED from [androidx.databinding:viewbinding:4.1.3] /Users/annabel/.gradle/caches/transforms-2/files-2.1/89337fb6ed1ef0f35fd86159f865d124/jetified-viewbinding-4.1.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.1.3] /Users/annabel/.gradle/caches/transforms-2/files-2.1/89337fb6ed1ef0f35fd86159f865d124/jetified-viewbinding-4.1.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d860ca85e42d04da0cfeb4ac0c59c0b3/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d860ca85e42d04da0cfeb4ac0c59c0b3/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/badf07ac9ffa983c76d0f4786679406c/navigation-fragment-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/badf07ac9ffa983c76d0f4786679406c/navigation-fragment-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0bfbb431e6fe2685afaed6167151a503/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0bfbb431e6fe2685afaed6167151a503/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/8dc62d19c0cd42284d845c685fc836b3/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/8dc62d19c0cd42284d845c685fc836b3/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/439048ee23c06c5808a46a2695e50027/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/439048ee23c06c5808a46a2695e50027/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d63f4b9a950a0d7a3c4dab8690d990ff/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d63f4b9a950a0d7a3c4dab8690d990ff/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/c64063823258b9034d9100e6f3b372d4/navigation-runtime-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/c64063823258b9034d9100e6f3b372d4/navigation-runtime-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0b1a6b3e85d1dbdd79f5975e28a1ecf1/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0b1a6b3e85d1dbdd79f5975e28a1ecf1/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e899124e91ec24e7fc7b2a384389e33a/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e899124e91ec24e7fc7b2a384389e33a/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/15ce4f0c746571daf60dc6bd1b12e3db/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/15ce4f0c746571daf60dc6bd1b12e3db/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d4861ac5a45f822839c46c7423d42a13/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/d4861ac5a45f822839c46c7423d42a13/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/dd1eaae04717cd1fb6cb7bc489b110b0/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/dd1eaae04717cd1fb6cb7bc489b110b0/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/6092c56e5d4888d1faf9972c880f3a94/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/6092c56e5d4888d1faf9972c880f3a94/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/cfc513006bf4f5dba2ccd55afb379b8a/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/cfc513006bf4f5dba2ccd55afb379b8a/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/100e9fc0dfff4e4fd9cc862029130074/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/100e9fc0dfff4e4fd9cc862029130074/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/278b34dfd38e59e2e2ffcb6de35f795d/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/278b34dfd38e59e2e2ffcb6de35f795d/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/73fd3ca52e65141d1655382c5108bc84/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/73fd3ca52e65141d1655382c5108bc84/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/7f72c51983b63b04e8951144e50964d7/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/7f72c51983b63b04e8951144e50964d7/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/674b034328dd3a6830d8f08e4b19e325/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/674b034328dd3a6830d8f08e4b19e325/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/7b71357888ab7cbf305ac78d8ea7df73/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/7b71357888ab7cbf305ac78d8ea7df73/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b991a3cce2011ebb36bae87bfb89e5bf/navigation-common-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b991a3cce2011ebb36bae87bfb89e5bf/navigation-common-2.3.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5ce2a1801183ae3c51a0380333e2f01c/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/5ce2a1801183ae3c51a0380333e2f01c/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/70c10858d5449d9d677a52aa80682851/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/70c10858d5449d9d677a52aa80682851/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e114f1782a0c40b37f7accaa79009c39/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e114f1782a0c40b37f7accaa79009c39/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/25afbe4ce093e073f300522c3b42c271/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/25afbe4ce093e073f300522c3b42c271/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f92e3556620d8c16087d0f84bb4de0b1/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f92e3556620d8c16087d0f84bb4de0b1/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/deb80b43e85f17db4a1666946eb7f63d/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/deb80b43e85f17db4a1666946eb7f63d/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/9f3cf962e2a64171289a4c7b106ab672/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/9f3cf962e2a64171289a4c7b106ab672/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/2422435c12f1df768306aa8d74f2205f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/2422435c12f1df768306aa8d74f2205f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/224254c2c2633f0f72dec6e04a917dde/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/224254c2c2633f0f72dec6e04a917dde/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f723555cbf7f57de1a64857d36e2c116/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f723555cbf7f57de1a64857d36e2c116/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b0a721715288fb83af43f1cd497d903a/lifecycle-livedata-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b0a721715288fb83af43f1cd497d903a/lifecycle-livedata-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/445e3473f941947f8acbc159d4d4c700/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/445e3473f941947f8acbc159d4d4c700/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/edf7843545fb89840dedcf33478cc1b6/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/edf7843545fb89840dedcf33478cc1b6/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/91add632627b1a9dab415f4f69fa55f0/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/91add632627b1a9dab415f4f69fa55f0/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e477c6b39185c200228aff3afb0a0f1a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/e477c6b39185c200228aff3afb0a0f1a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b86af2440db641aab18d42ed803b6e97/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/b86af2440db641aab18d42ed803b6e97/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/75296f0f296d474a218b4983151e5b17/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/75296f0f296d474a218b4983151e5b17/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/1b91ba55f9ddb2985caf3435c6f0ed64/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/1b91ba55f9ddb2985caf3435c6f0ed64/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/feb626262030cac8bf1032cad9f1fbd6/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/feb626262030cac8bf1032cad9f1fbd6/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+		ADDED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/annabel/Desktop/google-maps-example/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/annabel/.gradle/caches/transforms-2/files-2.1/fcbdfa1a56506a0482c6caea7a40069b/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+meta-data#com.google.android.gms.version
+ADDED from [com.google.maps.android:android-maps-utils:0.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f5b7212cebe063b58153936f75d8ff7d/jetified-android-maps-utils-0.5/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/439048ee23c06c5808a46a2695e50027/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/annabel/.gradle/caches/transforms-2/files-2.1/439048ee23c06c5808a46a2695e50027/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f5b7212cebe063b58153936f75d8ff7d/jetified-android-maps-utils-0.5/AndroidManifest.xml:10:13-66
+	android:name
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] /Users/annabel/.gradle/caches/transforms-2/files-2.1/f5b7212cebe063b58153936f75d8ff7d/jetified-android-maps-utils-0.5/AndroidManifest.xml:9:13-58
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0bfbb431e6fe2685afaed6167151a503/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0bfbb431e6fe2685afaed6167151a503/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0bfbb431e6fe2685afaed6167151a503/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/annabel/.gradle/caches/transforms-2/files-2.1/0bfbb431e6fe2685afaed6167151a503/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
