@@ -1,10 +1,10 @@
 # **13: Google Maps**
 
-In today's session we are going to implement **Google Maps** into our **Travelling** application.
+In today's session, we will implement **Google Maps** into our **Travelling** application.
 
 ## Code Example
 
-Lets take a look at the code example. Open the `google-maps-example` in **Android Studio**. Make sure you have the following dependency in your `build.gradle (Module)`:
+Let us take a look at the code example. Open the `google-maps-example` in **Android Studio**. Make sure you have the following dependency in your `build.gradle (Module)`:
 
 ```
 implementation 'com.google.android.gms:play-services-maps:18.0.2'
@@ -24,7 +24,7 @@ if (rootProject.file("local.properties").exists()) {
 resValue "string", "google_maps_key", (secretProperties["GOOGLE_MAPS_KEY"] ?: "")
 ```
 
-This is used to access various credentials from `local.properties` that you do not want to expose publicly, i.e., API keys.
+It is used to access various credentials from `local.properties` that you do not want to expose publicly, i.e., API keys.
 
 In `local.properties`, add the following:
 
@@ -32,7 +32,17 @@ In `local.properties`, add the following:
 GOOGLE_MAPS_KEY=<API KEY>
 ```
 
-The `API KEY` is located in course channel on **Microsoft Teams**, under the **Files** tab > `goggle-maps-key.txt`.
+The `API KEY` is located in the course channel on **Microsoft Teams**, under the **Files** tab > `goggle-maps-key.txt`.
+
+Now, we must tell `AndroidManifest.xml` about this API key. In `AndroidManifest.xml`, add the following:
+
+```xml
+<meta-data
+    android:name="com.google.android.geo.API_KEY"
+    android:value="@string/google_maps_key" />
+```
+
+It is declared above the `activity` element.
 
 ### Model
 
@@ -56,13 +66,13 @@ data class Location(
 )
 ```
 
-In `Country.kt`, add the following argument to the class constructor
+In `Country.kt`, add the following argument to the class constructor:
 
 ```kt
 val attractions: @RawValue List<Attraction>, // Serialize List of Attraction
 ```
 
-If you refer back to your **GitHub Gist**, this should resemble the **JSON** structure/shape.
+If you refer to your **GitHub Gist**, this should resemble the **JSON** structure/shape.
 
 ### Fragment & Layout
 
@@ -117,7 +127,7 @@ In `marker_info_window.xml`, add the following:
 </layout>
 ```
 
-You will notice that we have not created `marker_info_window_rectangle.xml` in the `drawable` package. Lets create that.
+You will notice that we have not created `marker_info_window_rectangle.xml` in the `drawable` package. Let us create that.
 
 In the `drawable` package, create a new file called `marker_info_window_rectangle.xml` and add the following:
 
@@ -134,7 +144,7 @@ In the `drawable` package, create a new file called `marker_info_window_rectangl
 </shape>
 ```
 
-This will style each marker's info window. More about this soon.
+It will style each marker's info window. More about this soon.
 
 In the `ui` package, create a new package called `map`. In this directory create two new files called `MapFragment.kt` and `AttractionInfoWindow.kt`.
 
@@ -259,3 +269,34 @@ class MapFragment : Fragment(), OnMapReadyCallback {
     }
 }
 ```
+
+### Passing the List of Attraction from HomeFragment to MapFragment
+
+Now, you may change this in your **Project** assessment, though, the logic is exactly the same. Add the following `fragment` in `mobile_navigation.xml`:
+
+```xml
+<fragment
+    android:id="@+id/navigation_map"
+    android:name="op.mobile.app.dev.graysono.travelling.ui.map.MapFragment"
+    android:label="Map"
+    tools:layout="@layout/fragment_map">
+    <argument
+        android:name="attractions"
+        app:argType="op.mobile.app.dev.graysono.travelling.model.Attraction[]" />
+</fragment>
+```
+
+Here we pass only the List of `Attraction` rather than the `Country` object.
+
+In `HomeFragment.kt`, refactor the `onItemClick()`:
+
+```kt
+override fun onItemClick(position: Int) {
+    val item = binding.homeViewModel!!.response.value!![position]
+    val action =
+        HomeFragmentDirections.actionHomeFragmentToMapFragment(item.attractions.toTypedArray())
+    findNavController().navigate(action)
+}
+```
+
+Test your code on an emulator or connected device. Now implement this into your **Travelling** application. Also, you can work on the light/dark mode **Google Maps** functionality.
