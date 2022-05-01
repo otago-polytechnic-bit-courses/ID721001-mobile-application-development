@@ -4,7 +4,7 @@ In today's session, we will implement **Google Maps** into our **Travelling** ap
 
 ## Code Example
 
-Let us take a look at the code example. Open the `google-maps-example` in **Android Studio**. Make sure you have the following dependency in your `build.gradle (Module)`:
+Let us take a look at the code example. Open the `google-maps-example` located in the `code-resources` directory in **Android Studio**. Make sure you have the following dependency in your `build.gradle (Module)`:
 
 ```
 implementation 'com.google.android.gms:play-services-maps:18.0.2'
