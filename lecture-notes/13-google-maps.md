@@ -8,7 +8,6 @@ Let us take a look at the code example. Open the `google-maps-example` located i
 
 ```
 implementation 'com.google.android.gms:play-services-maps:18.0.2'
-implementation 'com.google.code.gson:gson:2.8.6'
 implementation 'com.google.maps.android:android-maps-utils:0.5'
 ```
 
