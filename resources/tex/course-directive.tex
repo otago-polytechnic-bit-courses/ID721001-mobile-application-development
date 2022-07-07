@@ -8,45 +8,46 @@
 \usepackage{wrapfig}
 \usepackage{enumerate}
 \usepackage{hyperref}
-\usepackage[margin = 2.25cm]{geometry}
+\usepackage[margin = 1.5cm]{geometry}
 \usepackage[table]{xcolor}
-\usepackage[super]{nth}
 \hypersetup{
   colorlinks = true,
   urlcolor = blue
-} 
-\setlength\parindent{0pt} 
+}
+\setlength\parindent{0pt}
 
 \begin{document}
 
 \begin{figure}
-	\includegraphics[width=50mm]{../../resources/img/logo.png}
+	\includegraphics[width=50mm]{../img/logo.png}
 \end{figure}
 
-\title{Course Directive\\ID721001: Mobile Application Development\\Semester One, 2022}
+\title{Course Directive\\ID721001: Mobile Application Development\\Semester Two, 2022}
 \date{}
 \maketitle
 
 \section*{Course Information}
 \begin{tabular}{ll}
-	Credits:      & 15 Credits                                              \\
-	Prerequisite: & IN/D607001: Introductory Application Development Concepts \\
-	Timetable:    & Tuesday 8 AM D105b \& Thursday 8 AM D105b
+	Level:        & 7 \\
+	Credits:      & 15                                              \\
+	Prerequisite: & ID607001: Introductory Application Development Concepts \\
+	Timetable:    & Tuesday 8 AM D105b \& Wednesday 8 AM D201\\
+	Tutorials:          & Monday \& Thursday 8.30 PM - 10.00 PM
 \end{tabular}
 
 \section*{Teaching Staff}
 \begin{tabular}{ll}
-	Name:            & Grayson Orr                             \\
-	Position:        & Kaiako \& Second/Third-Year Coordinator \\
-	Office Location: & D318                                    \\
+	Name:            & Grayson Orr                           \\
+	Position:        & Lecturer \& Second/Third-Year Coordinator \\
+	Office Location: & D318                                 \\
 	Email Address    & grayson.orr@op.ac.nz                    \\
 \end{tabular}
 
 \section*{Course Dates}
 \begin{tabular}{ll}
-	Term 1:             & Monday 21 February - Thursday 14 April \\
-	Mid Semester Break: & Monday 18 April - Friday 29 April      \\
-	Term 2:             & Monday 02 May - Thursday 23 June       \\
+	Term 1:             &  Monday 18 July - Friday 30 September \\
+	Mid Semester Break: &  Monday 3 October - Friday 14 October     \\
+	Term 2:             &  Monday 17 October - Friday 18 November      \\
 \end{tabular}
 
 \section*{Public Holidays \& Anniversary Days}
@@ -61,52 +62,46 @@ At the successful completion of this course, learners will be able to:
 	\item Implement \& publish complete, non-trivial, industry-standard mobile applications following sound architectural \& code-quality standards.
 	\item Identify relevant use cases for a mobile computing scenario \& incorporate them into an effective user experience design.
 	\item Follow industry standard software engineering practice in the design of mobile applications.
-\end{enumerate}
+\end{enumerate} 
 
 \section*{Assessments}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|c|c|c|c|}
 	\hline
 	\textbf{Assessment} & \textbf{Weight} & \textbf{Due Date}    & \textbf{Learning Outcomes} \\ \hline
-	Project             & 65\%            & 10-06-2022 (Friday)  & 1, 2, 3                    \\ \hline
-	Practicals          & 15\%            & 08-03-2022 (Tuesday) & 1, 2, 3                    \\ \hline
-	Presentation        & 20\%            & 21-06-2022 (Tuesday) & 2, 3                       \\ \hline
-\end{tabular} 
+	Project: Travelling Application             & 60\%            & 28-10-2022 (Friday at 4.59 PM)  & 1, 2, 3                    \\ \hline
+	Practical: Problem-Solving          & 20\%            & 26-08-2022 (Friday at 4.59 PM) & 1, 2, 3                    \\ \hline
+	Presentation: Advanced Android Topic        & 20\%            & 16-11-2022 (Wednesday at 4.59 PM) & 2, 3                       \\ \hline
+\end{tabular}
 
 \section*{Provisional Schedule}
-
-\begin{itemize}
-	\item \textbf{Assessment Work} is optional attendance
-	\item Course \& teaching surveys will be emailed to you in \textbf{Week 12}
-\end{itemize}
-
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|c|c|c|c|}
 	\hline
-	\textbf{Week}           & \textbf{Date}     & \multicolumn{2}{c|}{\textbf{Session}}                                             \\ \hline
-	\small 1/Tahi           & \small 21-02-2022 & \multicolumn{2}{c|}{Kotlin}               \\ \hline
-	\small 2/Rua            & \small 28-02-2022 & \multicolumn{2}{c|}{Practicals Assessment Work}                                   \\ \hline
-	\small 3/Toru           & \small 07-03-2022 & \small Android Overview                           &  \small Fragment               \\ \hline
-	\small 4/Whā            & \small 14-03-2022 & \small ViewModel                                  & \small LiveData               \\ \hline
-	\small 5/Rima           & \small 21-03-2022 &  \small DataBinding                                &  \small Retrofit               \\ \hline
-	\small 6/Ono            & \small 28-03-2022 & \small RecyclerView                               &  \small Firebase Auth          \\ \hline
-	\small 7/Whitu          & \small 04-04-2022 & \small Room Database                              &  \small Espresso               \\ \hline
-	\small 8/Waru           & \small 11-04-2022 & \small DataStore                                  & \small Google Maps \\ \hline
-	\rowcolor{yellow} \multicolumn{4}{|c|}{\footnotesize Mid Term Break}                                                            \\ \hline
-	\small 9/Iwa            & \small 02-05-2022 &  \small KDoc \& Dokka                              & \small Google Play Store      \\ \hline
-	\small 10/Tekau         & \small 09-05-2022 & \multicolumn{2}{c|}{\small Project Assessment Work}                                      \\ \hline
-	\small 11/Tekau mā tahi & \small 16-05-2022 & \multicolumn{2}{c|}{\small Project Assessment Work}                                      \\ \hline
-	\small 12/Tekau mā rua  & \small 23-05-2022 & \multicolumn{2}{c|}{\small Project Assessment Work}                                      \\ \hline
-	\small 13/Tekau mā toru & \small 30-05-2022 & \multicolumn{2}{c|}{\small Project Assessment Work}                                      \\ \hline
-	\small 14/Tekau mā whā  & \small 06-06-2022 & \multicolumn{2}{c|}{\small Project Assessment Work}                                      \\ \hline
-	\small 15/Tekau mā rima & \small 13-06-2022 & \multicolumn{2}{c|}{\small Presentation Assessment Work}                                 \\ \hline
-	\small 16/Tekau mā ono  & \small 20-06-2022 & \multicolumn{2}{c|}{\small Presentation Assessment Work}                                 \\ \hline
+	\textbf{Week}                  & \textbf{Date Starting}            & \multicolumn{2}{c|}{\textbf{Topics}}                                                                                             \\ \hline
+	\footnotesize 1/Tahi           & \footnotesize 18-07-2022 & \multicolumn{2}{c|}{\footnotesize Introduction to Kotlin}    \\ \hline
+	\footnotesize 2/Rua            & \footnotesize 25-07-2022 & \multicolumn{2}{c|}{\footnotesize Practical Work}                   \\ \hline
+	\footnotesize 3/Toru           & \footnotesize 01-08-2022 & \multicolumn{2}{c|}{\footnotesize Android Overview \& Fragment} \\ \hline
+	\footnotesize 4/Whā            & \footnotesize 08-08-2022 & \multicolumn{2}{c|}{\footnotesize ViewModel \& LiveData}                               \\ \hline
+	\footnotesize 5/Rima           & \footnotesize 15-08-2022 & \multicolumn{2}{c|}{\footnotesize DataBinding \& Firebase Auth}                                                \\ \hline
+	\footnotesize 6/Ono            & \footnotesize 22-08-2022 &  \multicolumn{2}{c|}{\footnotesize Retrofit \& RecyclerView}                            \\ \hline
+	\footnotesize 7/Whitu          & \footnotesize 29-08-2022 & \multicolumn{2}{c|}{\footnotesize Room Database}                                                   \\ \hline
+	\footnotesize 8/Waru           & \footnotesize 05-09-2022 & \multicolumn{2}{c|}{\footnotesize DataStore \& Google Maps}                                                   \\ \hline
+	\footnotesize 9/Iwa            & \footnotesize 12-09-2022 & \multicolumn{2}{c|}{\footnotesize KDocs \& Dokka Store}                                                                 \\ \hline
+	\footnotesize 10/Tekau         & \footnotesize 19-09-2022 & \multicolumn{2}{c|}{\footnotesize Google Play}                                                                 \\ \hline
+	\footnotesize 11/Tekau mā tahi & \footnotesize 26-09-2022 & \multicolumn{2}{c|}{\footnotesize Project Work}                                                                 \\ \hline
+	\rowcolor{yellow} \multicolumn{4}{|c|}{\footnotesize Mid Term Break}                                                                                                                         \\ \hline
+	\footnotesize 12/Tekau mā rua  & \footnotesize 17-10-2022 & \multicolumn{2}{c|}{\footnotesize Project Work}                                                                 \\ \hline
+	\footnotesize 13/Tekau mā toru & \footnotesize 24-10-2022 & \multicolumn{2}{c|}{\footnotesize Project Work}                                                     \\ \hline
+	\footnotesize 14/Tekau mā whā  & \footnotesize 31-10-2022 & \multicolumn{2}{c|}{\footnotesize Project Code Defence} \\ \hline 
+	\footnotesize 15/Tekau mā rima & \footnotesize 07-11-2022 & \multicolumn{2}{c|}{\footnotesize Presentation}                                                       \\ \hline
+	\footnotesize 16/Tekau mā ono  & \footnotesize 14-11-2022 & \multicolumn{2}{c|}{\footnotesize Presentation}                                                         \\ \hline
 \end{tabular}
 
 \section*{Resources}
 
 \subsection*{Software}
-This paper will be taught using \textbf{Android Studio}. An installer for \textbf{Android Studio} are available. See \href{https://developer.android.com/studio/}{https://developer.android.com/studio}. Refer any problems with downloads or installers to Rob Broadley in D205a.
+This paper will be taught using \textbf{Android Studio}. An installer for \textbf{Android Studio} is available\\ - \href{https://developer.android.com/studio}{https://developer.android.com/studio}. Refer any problems with downloads or installers to \textbf{Rob Broadley} in D205a.
 
 \subsection*{Readings}
 No textbook is required for this course. URLs to useful resources will be provided in the lecture notes.
@@ -114,19 +109,16 @@ No textbook is required for this course. URLs to useful resources will be provid
 \section*{Course Requirements \& Expectations}
 
 \subsection*{Learning Hours}
-This course requires \textbf{150 hours} of learning. This time includes \textbf{10 hours} of meeting time, \& \textbf{140 hours} of self-directed reading, preparation \& completion of assessments.
-
-\subsection*{Learning \& Teaching Methods}
-From \textbf{Week Three} onwards, the lectured course material will be pre-recorded \& available to you via \textbf{Microsoft Teams}. You are \textbf{required} to view the recording prior to attending the class. Class time will consist of discussions \& application development work.  
+This course requires \textbf{150 hours} of learning. This time includes \textbf{64 hours} of timetabled class time, \& \textbf{86 hours} of self-directed reading, preparation \& completion of assessments.
 
 \subsection*{Criteria for Passing}
-To pass this paper, you must achieve a cumulative pass mark of \textbf{50\%} over all assessments. There are no reassessments or resits.
+To pass this paper, you must achieve a cumulative pass mark of \textbf{50\%} over all assessments. There are no reassessments or resits. 
 
 \subsection*{Attendance}
 \begin{itemize}
 	\item Learners are expected to attend all classes, including lectures \& labs.
 	\item If you cannot attend for a few days for any reason, contact the course.
-\end{itemize}
+\end{itemize} 
 
 \subsection*{Communication}
 \textbf{Microsoft Outlook/Teams} are the official communication channels for this course. It is your responsibility to regularly check \textbf{Microsoft Outlook/Teams} \& \href{https://github.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development}{GitHub} for important course material, including changes to class scheduling or assessment details. Not checking will not be accepted as an excuse.
@@ -150,7 +142,7 @@ All assessments are to be submitted by the time, date, \& method given when the 
 Extensions are only available for unusual circumstances. These must be applied for, \& approved, before the submission date.
 
 \subsection*{Impairment}
-In case of sickness contact the teaching staff or \textbf{Head of Information Technology (Michael Holtz)} as soon as possible, preferably before the assessment is due. The policy regarding the granting of a mark that considers impaired performance requires a medical certificate \& a medical practitioner's signature on a form. You may refer to the guide on impaired performance on the student handbook.
+In case of sickness contact the teaching staff or \textbf{Head of Information Technology (Michael Holtz)} as soon as possible, preferably before the assessment is due. The policy regarding the granting of a mark that considers impaired performance requires a medical certificate \& a medical practitioner’s signature on a form. You may refer to the guide on impaired performance on the student handbook. 
 
 \subsection*{Appeals}
 If you are concerned about any aspect of your assessment, approach the teaching staff in the first instance. We support an open-door policy \& aim to resolve issues promptly. Further support is available from the \textbf{Head of Information Technology (Michael Holtz)} \& \textbf{Second/Third-Year Coordinator (Grayson Orr)}. \textbf{Otago Polytechnic | Te Kura Matatini ki Otago} has a formal process for academic appeals if necessary.
