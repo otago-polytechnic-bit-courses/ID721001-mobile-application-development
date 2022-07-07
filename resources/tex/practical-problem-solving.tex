@@ -1,0 +1,469 @@
+% Author: Grayson Orr
+% Course: IN721: Mobile Application Development
+
+\documentclass{article}
+\author{}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage[margin = 2.25cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{fancyhdr}
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue
+}
+\setlength\parindent{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{College of Engineering, Construction \& Living Sciences\\Bachelor of Information Technology}
+\lfoot{Practical: Problem-Solving\\Version 2, Semester two, 2022}
+\rfoot{\thepage}
+
+\begin{document}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=50mm]{../../resources/img/logo.png}
+\end{figure}
+
+\title{College of Engineering, Construction \& Living Sciences\\Bachelor of Information Technology\\ID721001: Mobile Application Development\\Level 7, Credits 15\\\textbf{Practical: Problem-Solving}}
+\date{}
+\maketitle
+
+\section*{Assessment Overview}
+In this \textbf{individual} assessment, you will solve 20 coding problems using \textbf{Kotlin} \& \textbf{Kotlin command-line compiler}.
+
+\section*{Learning Outcomes}
+At the successful completion of this course, learners will be able to:
+\begin{enumerate}
+  \item Implement \& publish complete, non-trivial, industry-standard mobile applications following sound architectural \& code-quality standards.
+  \item Identify relevant use cases for a mobile computing scenario \& incorporate them into an effective user experience design.
+  \item Follow industry standard software engineering practice in the design of mobile applications.
+\end{enumerate}
+
+\section*{Assessments}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	\textbf{Assessment} & \textbf{Weight} & \textbf{Due Date}    & \textbf{Learning Outcomes} \\ \hline
+	Project: Travelling Application             & 60\%            & 28-10-2022 (Friday at 4.59 PM)  & 1, 2, 3                    \\ \hline
+	Practical: Problem-Solving          & 20\%            & 26-08-2022 (Friday at 4.59 PM) & 1, 2, 3                    \\ \hline
+	Presentation: Advanced Android Topic        & 20\%            & 16-11-2022 (Wednesday at 4.59 PM) & 2, 3                       \\ \hline
+\end{tabular}
+
+\section*{Conditions of Assessment}
+You will complete this assessment during your learner managed time, however, there will be availability during the weekly meetings to discuss the requirements \& your progress of this assessment. This assessment will need to be completed by \textbf{Tuesday, 03 March 2022} at \textbf{5 PM}.
+
+\section*{Pass Criteria}
+This assessment is criterion-referenced (CRA) with a cumulative pass mark of \textbf{50\%} over all assessments in \textbf{ID721001: Mobile Application Development}.
+
+\section*{Authenticity}
+All parts of your submitted assessment \textbf{must} be completely your work. If you use code snippets from \textbf{GitHub}, \textbf{StackOverflow} or other online resources, you \textbf{must} reference it appropriately using \textbf{APA 7th edition}. Provide your references in the \textbf{README.md} file in your repository. Failure to do this will result in a mark of \textbf{zero} for this assessment.
+
+\section*{Policy on Submissions, Extensions, Resubmissions \& Resits}
+The school's process concerning submissions, extensions, resubmissions \& resits complies with \textbf{Otago Polytechnic} policies. Learners can view policies on the \textbf{Otago Polytechnic} website located at \href{https://www.op.ac.nz/about-us/governance-and-management/policies}{https://www.op.ac.nz/about-us/governance-and-management/policies}.
+
+\section*{Submission}
+You \textbf{must} submit all project files via \textbf{GitHub Classroom}. Here is the URL to the repository you will use for your submission – \href{https://classroom.github.com/a/rWCfXF\_l}{https://classroom.github.com/a/rWCfXF\_l}.  Create a \textbf{.gitignore} \& add the ignored files in this resource - \href{https://raw.githubusercontent.com/github/gitignore/main/Java.gitignore}{https://raw.githubusercontent.com/github/gitignore/main/Java.gitignore}. The latest project files in the \textbf{master} or \textbf{main} branch will marked. Please test before you submit. Partial marks \textbf{will not} be given for incomplete functionality. Late submissions will incur a \textbf{10\% penalty per day}, rolling over at \textbf{5:00 PM}.
+
+\section*{Extensions}
+Familiarise yourself with the assessment due date. If you need an extension, contact the course lecturer before the due date. If you require more than a week's extension, a medical certificate or support letter from your manager may be needed.
+
+\section*{Resubmissions}
+Learners may be requested to resubmit an assessment following a rework of part/s of the original assessment. Resubmissions are to be completed within a negotiable short time frame \& usually \textbf{must} be completed within the timing of the course to which the assessment relates. Resubmissions will be available to learners who have made a genuine attempt at the first assessment opportunity \& achieved a \textbf{D grade (40-49\%)}. The maximum grade awarded for resubmission will be \textbf{C-}.
+
+\section*{Resits}
+Resits \& reassessments \textbf{are not} applicable in \textbf{ID721001: Mobile Application Development}.
+
+\section*{Instructions - Learning Outcomes 2, 3}
+Create a file for each problem.
+
+\subsection*{Problem 1 (0.5\%):}
+Calculate the average of the given \textbf{double array} \& display the expected output.
+
+\begin{verbatim}
+  fun main() {
+      val nums = doubleArrayOf(45.3, 67.5, -45.6, 20.34, -33.0, 45.6)
+
+      // Write your solution here
+
+      // Expected output:
+      // Average: 16.69 
+  }
+\end{verbatim}
+
+\subsection*{Problem 2 (0.5\%):}
+Write a function called \textbf{fizzBuzz} which accepts an \textbf{Int} parameter called \textbf{num}. If \textbf{num} is a multiple of three, return \textbf{Fizz}, if \textbf{num} is a multiple of five, return \textbf{Buzz} \& if \textbf{num} is a multiple of three \& five, return \textbf{FizzBuzz}. Call the \textbf{fizzBuzz} function in the \textbf{main} function to display the expected output.
+
+\begin{verbatim}
+  // Write your fizzBuzz function here
+  
+  fun main() {
+      for (i in 1..15 step 2) {
+        // Write your solution here
+      }
+
+      // Expected output:
+      // 1
+      // Fizz
+      // Buzz
+      // 7
+      // Fizz
+      // 11
+      // 13
+      // FizzBuzz
+  }
+\end{verbatim}
+
+\subsection*{Problem 3 (0.5\%):} You have been given two \textbf{mutable lists} containing the lecturer's favourite programming languages. Use the following hints to display the expected output:
+\begin{itemize}
+  \item Add a specified element to the end of a list.
+  \item Add all elements of a specified collection to the end of a list.
+  \item If present, remove a specified element from a collection.
+  \item Capitalise the element in the 3rd index.
+\end{itemize}
+
+\begin{verbatim}
+  fun main() {
+      val progLangsOne: MutableList<String> = mutableListOf("C#", "JavaScript", "Kotlin", "OCaml")
+      val progLangsTwo: MutableList<String> = mutableListOf("C++", "Go", "Swift", "TypeScript")
+    
+      // Write your solution here
+    
+      // Expected output:
+      // [C#, JavaScript, Kotlin, OCAML, Prolog, C++, Swift]
+  }
+\end{verbatim}
+
+\subsection*{Problem 4 (0.5\%):} You have been given a \textbf{mutable map} containing three soft drinks \& their prices. Use the following hints and \textbf{Kotlin} aggregate operations to display the expected output:
+\begin{itemize}
+  \item Change the price of Coca-Cola to 4.50.
+  \item Calculate the total price of all soft drinks.
+\end{itemize}
+
+\begin{verbatim}
+  fun main() {
+      val softDrinks: MutableMap<String, Double> 
+          = mutableMapOf("Coca-Cola" to 2.00, "Fanta" to 0.90, "Sprite" to 1.10)
+
+      // Write your solution here
+			
+      // Expected output:
+      // Total price: $6.50
+  }
+\end{verbatim}
+
+\subsection*{Problem 5 (0.5\%):} You have been given two \textbf{mutable sets} containing two lecturer's course codes. Use the following hints to display the expected output:
+\begin{itemize}
+  \item Return a set containing all elements that are contained by both collections.
+  \item Return a set containing all distinct elements from both collections.
+\end{itemize}
+
+\begin{verbatim}
+fun main() {
+    val courseCodesOne: MutableSet<String> = mutableSetOf("IN607", "IN721", "IN728", "IN732")
+    val courseCodesTwo: MutableSet<String> = mutableSetOf("IN512", "IN607", "IN728", "IN732")
+    
+    // Write your solution here
+    
+    // Expected output:
+    // [IN607, IN728, IN732]
+    // [IN607, IN721, IN728, IN732, IN512] 
+}
+\end{verbatim}
+
+\subsection*{Problem 6 (0.5\%):}
+You have been given a 5x5 grid or a \textbf{2D array} of zeros. Use the appropriate construct(s)/range(s) to access the items in the grid, i.e., zeros \& replace them with Xs.
+
+\begin{verbatim}
+  fun main() {
+      var seating = arrayOf<Array<Any>>()
+      for (i in 0..4) {
+          var seat = arrayOf<Any>()
+          for (j in 0..4) {
+              seat += 0
+          }
+          seating += seat
+      }
+
+      // Write your solution here
+
+      for (seat in seating) {
+          for (value in seat) {
+              print("$value ")
+          }
+          println()
+      }
+
+      // Expected output:
+      // 0 0 0 0 X 
+      // 0 0 0 0 0 
+      // X X X 0 X 
+      // 0 0 0 0 0 
+      // 0 0 0 0 X
+  }
+\end{verbatim}
+
+\subsection*{Problem 7 (0.5\%):}
+In the expected output below, the staircase is of size three. Its base \& height are both equal to \textbf{numOfSteps}. Also, it is drawn using the hash symbol. Write the logic in the \textbf{generateSteps} function in order to display the expected output.
+
+\begin{verbatim}
+  fun generateSteps(numOfSteps: Int): MutableList<String> {
+      val stepSeq: MutableList<String> = mutableListOf()
+      
+      // Write your solution here
+      
+      return stepSeq  
+  }
+
+  fun main() {
+      for (step in generateSteps(4)) {
+          // Expected output:
+          println(step) // #  
+                        // ## 
+                        // ###
+                        // ####
+      }
+  }
+\end{verbatim}
+
+\subsection*{Problem 8 (0.5\%):}
+You have been given a function called \textbf{defangAddress} which accepts a \textbf{String} parameter called \textbf{address}. This function returns a defanged version of \textbf{address}. A defanged address replaces every period \textbf{"."} with \textbf{"[.]"}. Write the logic in the \textbf{defangAddress} function in order to display the expected output.
+
+\begin{verbatim}
+  fun defangAddress(address: String): String {
+      var defangedAddr = ""
+      
+      // Write your solution here
+      
+      return defangedAddr
+  }
+
+  fun main() {
+      // Expected output:
+      println(defangAddress("255.100.50.0")) // 255[.]100[.]50[.]0
+  }
+\end{verbatim}
+
+\subsection*{Problem 9 (0.5\%):}
+You have been given an incomplete function called \textbf{isPerfectNumber} which accepts an \textbf{Int} parameter called \textbf{num}. If \textbf{num} is a perfect number, return \textbf{true}, otherwise return \textbf{false}. A perfect num is a positive integer that is equal to the sum of its positive divisors excluding the number itself.
+
+\begin{verbatim}
+  // Example 1
+  Input: num = 6
+  Output: true
+
+  // Example 2
+  Input: num = 2
+  Output: false
+\end{verbatim}
+
+\begin{verbatim}
+  fun isPerfectNumber(num: Int): Boolean {
+      // Write your solution here
+  }
+
+  fun main() {
+      // Expected output:
+      println(isPerfectNumber(5)) // false
+      println(isPerfectNumber(6)) // true
+  }
+\end{verbatim}
+
+\subsection*{Problem 10 (0.5\%):}
+You have been given an incomplete function called \textbf{removeDuplicates} which accepts an \textbf{IntArray} parameter called \textbf{nums}. Given a sorted \textbf{integer array,} remove the duplicates such that each element occurs only once \& return the new length of the \textbf{array}.
+
+\begin{verbatim}
+  fun removeDuplicates(nums: IntArray): Int {
+      // Write your solution here  
+  }
+
+  fun main() {
+      // Expected output:
+      println(removeDuplicates(intArrayOf(0, 0, 1, 1, 2, 2, 3, 3, 4))) // 5
+  }
+\end{verbatim}
+
+\subsection*{Problem 11 (1\%):}
+Write two classes called \textbf{SoftwareDeveloper} \& \textbf{Manager} which inherit from the given \textbf{Employee} class. The \textbf{SoftwareDeveloper} class has one additional class property called \textbf{favProgLang} of type \textbf{String}. The \textbf{Manager} class also has one additional class property called \textbf{employees} of type \textbf{MutableList$<$Employee$>$} \& three functions which add, remove \& display all managed employees. \\
+
+Use the three \textbf{SoftwareDeveloper} objects \& \textbf{Manager} object in the \textbf{main} function to display the expected output.
+
+\begin{verbatim}
+  open class Employee(var id: Int, val firstName: String, val lastName: String, val salary: Int) {
+      override fun toString() = "${firstName} ${lastName}"
+  }
+
+  // Write your SoftwareDeveloper class here
+
+  // Write your Manager class here
+
+  fun main() {
+      val sftDevOne = SoftwareDeveloper(1, "Bert", "Watts", 100000, "Cobol")
+      val sftDevTwo = SoftwareDeveloper(2, "Sara", "Cain", 75000, "Perl")
+      val sftDevThree = SoftwareDeveloper(3, "Samantha", "Baker", 75000, "PHP")
+      val manager = Manager(4, "Owen", "James", 150000, mutableListOf(sftDevOne, sftDevTwo))
+
+      // Write your solution here
+
+      // Expected output:
+      // Sara Cain
+      // Samantha Baker
+  }
+\end{verbatim}
+
+\subsection*{Problem 12 (1\%):}
+You have been given a class called \textbf{Stack} of type \textbf{String}. Use the \textbf{Stack} object in the \textbf{main} function to display the expected output.
+
+\begin{verbatim}
+  class Stack<String>() {
+      private val els = mutableListOf<String>()
+      fun push(el: String) = els.add(el)
+      fun peek(): String = els.last()
+      fun pop(): String = els.removeAt(els.size - 1)
+      fun isEmpty() = els.isEmpty()
+      fun size() = els.size
+      override fun toString() = "Stack[${els.joinToString()}]"
+  }
+
+  fun main() {
+      val stack: Stack<String> = Stack()
+      stack.push("Django")
+      stack.push("Laravel")
+      stack.push("Ruby on Rails")
+      stack.push("Spring")
+
+      // Write your solution here
+
+      // Expected output:
+      // Stack[Django, Laravel, Ruby on Rails]
+      // Ruby on Rails is at the top of the stack
+      // There are 3 item(s) in the stack
+  }
+\end{verbatim}
+
+\subsection*{Problem 13 (1\%):}
+You have been given a class called \textbf{Stack} of type \textbf{String}. Use the \textbf{Stack} object in the \textbf{main} function \& the \textbf{readLine} function to reverse the user's input.
+
+\begin{verbatim}
+  class Stack<String>() {
+      private val els = mutableListOf<String>()
+      fun push(el: String) = els.add(el)
+      fun peek(): String = els.last()
+      fun pop(): String = els.removeAt(els.size - 1)
+      fun isEmpty() = els.isEmpty()
+      fun size() = els.size
+      override fun toString() = "Stack[${els.joinToString()}]"
+  }
+
+  fun main() {
+      val stack: Stack<String> = Stack()
+
+      // Write your solution here
+
+      // Expected output:
+      // Enter some text: John Doe
+      // eoD nhoJ
+  }
+\end{verbatim}
+
+\subsection*{Problem 14 (1\%):}
+You have been given a class called \textbf{Stack} of type \textbf{Int}. Use the \textbf{Stack} object in the \textbf{main} function \& the \textbf{readLine} function to convert the user's input into binary.
+
+\begin{verbatim}
+  class Stack<Int>() {
+      private val els = mutableListOf<Int>()
+      fun push(el: Int) = els.add(el)
+      fun peek(): Int = els.last()
+      fun pop(): Int = els.removeAt(els.size - 1)
+      fun isEmpty() = els.isEmpty()
+      fun size() = els.size
+      override fun toString() = "Stack[${els.joinToString()}]"
+  }
+
+  fun main() {
+      val stack: Stack<Int> = Stack()
+
+      // Write your solution here
+
+      // Expected output:
+      // Enter a number: 50
+      // 110010
+  }
+\end{verbatim}
+
+\subsection*{Problem 15 (1\%):}
+You have been given a class called \textbf{Stack} of type \textbf{Char} \& an incomplete function called \textbf{isBalanced} which accepts a \textbf{String} parameter called \textbf{sequence}. Given a \textbf{sequence} containing only parentheses, curly brackets \& square brackets, determine if \textbf{sequence} is valid.
+
+\begin{verbatim}
+  class Stack<Char>() {
+      private val els = mutableListOf<Char>()
+      fun push(el: Char) = els.add(el)
+      fun peek(): Char = els.last()
+      fun pop(): Char = els.removeAt(els.size - 1)
+      fun isEmpty() = els.isEmpty()
+      fun size() = els.size
+      override fun toString() = "Stack[${els.joinToString()}]"
+  }
+
+  fun isBalanced(sequence: String): Boolean {
+      val stack: Stack<Char> = Stack()
+      val map = mapOf(
+          '(' to ')', ')' to '(',
+          '[' to ']', ']' to '[',
+          '{' to '}', '}' to '{'
+      )
+      
+      // Write your solution here
+  }
+
+  fun main() {
+      // Expected output:
+      println(isBalanced("{([])}")) // true
+      println(isBalanced("{([")) // false
+  }
+\end{verbatim}
+
+\textbf{sequence} is valid if:
+\begin{itemize}
+  \item Open bracket must be closed by the same bracket type.
+  \item Open bracket must be closed in the correct order.
+\end{itemize}
+
+\begin{verbatim}
+  // Example 1
+  Input: sequence = "()"
+  Output: true
+  // Example 2
+  Input: sequence = "()[]{}"
+  Output: true
+  // Example 3
+  Input: sequence = "{]"
+  Output: false
+  // Example 4
+  Input: sequence = "{[}]"
+  Output: false
+\end{verbatim}
+
+\subsection*{Problem 16 (1\%):}
+In this problem, you are going to build a \textbf{Rock, Paper, Scissors} game. \\
+
+Create a function which simulates the \textbf{Rock, Paper, Scissors} game. The function takes the input of both players (rock, paper or scissors), first parameter from the first player, second from the second player. The function returns the result as such:
+
+\begin{itemize}
+  \item First player wins
+  \item Second player wins
+  \item Draw
+\end{itemize}
+
+\begin{verbatim}
+  // Examples
+  rockPaperScissor("paper", "rock") => "First player wins"
+  rockPaperScissor("rock", "paper") => "Second player wins"
+  rockPaperScissor("paper", "paper") => "Draw"
+\end{verbatim}
+
+\end{document}
