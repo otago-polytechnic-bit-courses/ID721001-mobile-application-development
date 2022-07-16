@@ -1,5 +1,5 @@
 % Author: Grayson Orr
-% Course: IN721: Mobile Application Development
+% Course: ID721: Mobile Application Development
 
 \documentclass{article}
 \author{}
@@ -19,7 +19,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{College of Engineering, Construction \& Living Sciences\\Bachelor of Information Technology}
-\lfoot{Practical: Problem-Solving\\Version 2, Semester two, 2022}
+\lfoot{Practical: Problem-Solving\\Version 2, Semester Two, 2022}
 \rfoot{\thepage}
 
 \begin{document}
@@ -50,12 +50,12 @@ At the successful completion of this course, learners will be able to:
 	\hline
 	\textbf{Assessment} & \textbf{Weight} & \textbf{Due Date}    & \textbf{Learning Outcomes} \\ \hline
 	Project: Travelling Application             & 60\%            & 28-10-2022 (Friday at 4.59 PM)  & 1, 2, 3                    \\ \hline
-	Practical: Problem-Solving          & 20\%            & 26-08-2022 (Friday at 4.59 PM) & 1, 2, 3                    \\ \hline
-	Presentation: Advanced Android Topic        & 20\%            & 16-11-2022 (Wednesday at 4.59 PM) & 2, 3                       \\ \hline
+	Practical: Problem-Solving          & 20\%            & 26-08-2022 (Friday at 4.59 PM) & 3                    \\ \hline
+	Presentation: Advanced Android Topic        & 20\%            & 16-11-2022 (Wednesday at 4.59 PM) & 3                       \\ \hline
 \end{tabular}
 
 \section*{Conditions of Assessment}
-You will complete this assessment during your learner managed time, however, there will be availability during the weekly meetings to discuss the requirements \& your progress of this assessment. This assessment will need to be completed by \textbf{Tuesday, 03 March 2022} at \textbf{5 PM}.
+You will complete this assessment during your learner managed time, however, there will be availability during the weekly meetings to discuss the requirements \& your progress of this assessment. This assessment will need to be completed by \textbf{Friday, 26 August 2022} at \textbf{4.59 PM}.
 
 \section*{Pass Criteria}
 This assessment is criterion-referenced (CRA) with a cumulative pass mark of \textbf{50\%} over all assessments in \textbf{ID721001: Mobile Application Development}.
@@ -78,7 +78,7 @@ Learners may be requested to resubmit an assessment following a rework of part/s
 \section*{Resits}
 Resits \& reassessments \textbf{are not} applicable in \textbf{ID721001: Mobile Application Development}.
 
-\section*{Instructions - Learning Outcomes 2, 3}
+\section*{Instructions - Learning Outcomes 3}
 Create a file for each problem.
 
 \subsection*{Problem 1 (0.5\%):}
@@ -95,7 +95,7 @@ Calculate the average of the given \textbf{double array} \& display the expected
   }
 \end{verbatim}
 
-\subsection*{Problem 2 (0.5\%):}
+\subsection*{Problem 2 (1\%):}
 Write a function called \textbf{fizzBuzz} which accepts an \textbf{Int} parameter called \textbf{num}. If \textbf{num} is a multiple of three, return \textbf{Fizz}, if \textbf{num} is a multiple of five, return \textbf{Buzz} \& if \textbf{num} is a multiple of three \& five, return \textbf{FizzBuzz}. Call the \textbf{fizzBuzz} function in the \textbf{main} function to display the expected output.
 
 \begin{verbatim}
@@ -128,19 +128,20 @@ Write a function called \textbf{fizzBuzz} which accepts an \textbf{Int} paramete
 
 \begin{verbatim}
   fun main() {
-      val progLangsOne: MutableList<String> = mutableListOf("C#", "JavaScript", "Kotlin", "OCaml")
+      val progLangsOne: MutableList<String> = mutableListOf("C#", "Java", "Kotlin", "Rust")
       val progLangsTwo: MutableList<String> = mutableListOf("C++", "Go", "Swift", "TypeScript")
     
       // Write your solution here
     
       // Expected output:
-      // [C#, JavaScript, Kotlin, OCAML, Prolog, C++, Swift]
+      // [C#, Java, Kotlin, RUST, Prolog, C++, Swift]
   }
 \end{verbatim}
 
 \subsection*{Problem 4 (0.5\%):} You have been given a \textbf{mutable map} containing three soft drinks \& their prices. Use the following hints and \textbf{Kotlin} aggregate operations to display the expected output:
 \begin{itemize}
-  \item Change the price of Coca-Cola to 4.50.
+  \item Change the price of Coca-Cola to 5.50.
+  \item Change the price of Spite to 0.10.
   \item Calculate the total price of all soft drinks.
 \end{itemize}
 
@@ -164,18 +165,18 @@ Write a function called \textbf{fizzBuzz} which accepts an \textbf{Int} paramete
 
 \begin{verbatim}
 fun main() {
-    val courseCodesOne: MutableSet<String> = mutableSetOf("IN607", "IN721", "IN728", "IN732")
-    val courseCodesTwo: MutableSet<String> = mutableSetOf("IN512", "IN607", "IN728", "IN732")
+    val courseCodesOne: MutableSet<String> = mutableSetOf("ID607", "ID721", "ID728", "ID732")
+    val courseCodesTwo: MutableSet<String> = mutableSetOf("ID512", "ID607", "ID728", "ID732")
     
     // Write your solution here
     
     // Expected output:
-    // [IN607, IN728, IN732]
-    // [IN607, IN721, IN728, IN732, IN512] 
+    // [ID607, ID728, ID732]
+    // [ID607, ID721, ID728, ID732, ID512] 
 }
 \end{verbatim}
 
-\subsection*{Problem 6 (0.5\%):}
+\subsection*{Problem 6 (2\%):}
 You have been given a 5x5 grid or a \textbf{2D array} of zeros. Use the appropriate construct(s)/range(s) to access the items in the grid, i.e., zeros \& replace them with Xs.
 
 \begin{verbatim}
@@ -207,7 +208,7 @@ You have been given a 5x5 grid or a \textbf{2D array} of zeros. Use the appropri
   }
 \end{verbatim}
 
-\subsection*{Problem 7 (0.5\%):}
+\subsection*{Problem 7 (1\%):}
 In the expected output below, the staircase is of size three. Its base \& height are both equal to \textbf{numOfSteps}. Also, it is drawn using the hash symbol. Write the logic in the \textbf{generateSteps} function in order to display the expected output.
 
 \begin{verbatim}
@@ -248,7 +249,7 @@ You have been given a function called \textbf{defangAddress} which accepts a \te
   }
 \end{verbatim}
 
-\subsection*{Problem 9 (0.5\%):}
+\subsection*{Problem 9 (1\%):}
 You have been given an incomplete function called \textbf{isPerfectNumber} which accepts an \textbf{Int} parameter called \textbf{num}. If \textbf{num} is a perfect number, return \textbf{true}, otherwise return \textbf{false}. A perfect num is a positive integer that is equal to the sum of its positive divisors excluding the number itself.
 
 \begin{verbatim}
@@ -287,7 +288,7 @@ You have been given an incomplete function called \textbf{removeDuplicates} whic
   }
 \end{verbatim}
 
-\subsection*{Problem 11 (1\%):}
+\subsection*{Problem 11 (2\%):}
 Write two classes called \textbf{SoftwareDeveloper} \& \textbf{Manager} which inherit from the given \textbf{Employee} class. The \textbf{SoftwareDeveloper} class has one additional class property called \textbf{favProgLang} of type \textbf{String}. The \textbf{Manager} class also has one additional class property called \textbf{employees} of type \textbf{MutableList$<$Employee$>$} \& three functions which add, remove \& display all managed employees. \\
 
 Use the three \textbf{SoftwareDeveloper} objects \& \textbf{Manager} object in the \textbf{main} function to display the expected output.
@@ -331,7 +332,7 @@ You have been given a class called \textbf{Stack} of type \textbf{String}. Use t
 
   fun main() {
       val stack: Stack<String> = Stack()
-      stack.push("Django")
+      stack.push("Express")
       stack.push("Laravel")
       stack.push("Ruby on Rails")
       stack.push("Spring")
@@ -339,7 +340,7 @@ You have been given a class called \textbf{Stack} of type \textbf{String}. Use t
       // Write your solution here
 
       // Expected output:
-      // Stack[Django, Laravel, Ruby on Rails]
+      // Stack[Express, Laravel, Ruby on Rails]
       // Ruby on Rails is at the top of the stack
       // There are 3 item(s) in the stack
   }
@@ -437,20 +438,21 @@ You have been given a class called \textbf{Stack} of type \textbf{Char} \& an in
   // Example 1
   Input: sequence = "()"
   Output: true
+  
   // Example 2
   Input: sequence = "()[]{}"
   Output: true
+  
   // Example 3
   Input: sequence = "{]"
   Output: false
+
   // Example 4
   Input: sequence = "{[}]"
   Output: false
 \end{verbatim}
 
-\subsection*{Problem 16 (1\%):}
-In this problem, you are going to build a \textbf{Rock, Paper, Scissors} game. \\
-
+\subsection*{Problem 16 (2\%):}
 Create a function which simulates the \textbf{Rock, Paper, Scissors} game. The function takes the input of both players (rock, paper or scissors), first parameter from the first player, second from the second player. The function returns the result as such:
 
 \begin{itemize}
@@ -464,6 +466,91 @@ Create a function which simulates the \textbf{Rock, Paper, Scissors} game. The f
   rockPaperScissor("paper", "rock") => "First player wins"
   rockPaperScissor("rock", "paper") => "Second player wins"
   rockPaperScissor("paper", "paper") => "Draw"
+\end{verbatim}
+
+\subsection*{Problem 17 (1\%):}
+You have been given a function called \textbf{isHappy} which accepts an \textbf{Int} parameter called \textbf{num}. Return \textbf{true} if \textbf{num} is a happy number \& \textbf{false} if not.\\
+
+A happy number is a number defined by the following:
+\begin{itemize}
+  \item Starting with any positive integer, replace the number 
+  \item Replace \textbf{num} by the sum of the squares of its digits.
+  \item Repeat the process until \textbf{num} equals 1.
+  \item If \textbf{num} equals 1, then it is happy.
+\end{itemize}
+
+\begin{verbatim}
+  fun isHappy(n: Int): Boolean {
+      // Write your solution here
+  }
+
+  fun main() {
+      // Expected output:
+      println(isHappy(19)) // true
+      println(isHappy(2)) // false
+  }
+\end{verbatim}
+
+\begin{verbatim}
+  // Example 1
+  Input: num = 19
+  Output: true
+  Breakdown:
+  1 to the power of 2 + 9 to the power of 2 = 82
+  8 to the power of 2 + 2 to the power of 2 = 68
+  6 to the power of 2 + 8 to the power of 2 = 100
+  1 to the power of 2 + 0 to the power of 2 + 0 to the power of 2 = 1
+  
+  // Example 2
+  Input: num = 2
+  Output: false
+\end{verbatim}
+
+\subsection*{Problem 18 (1\%):}
+You have been given a function called \textbf{largestOddNumber} which accepts an \textbf{Int} parameter called \textbf{num}. Return the largest-valued odd integer or \textbf{-1} if no odd integer exists.
+
+\begin{verbatim}
+  fun largestOddNumber(num: Int): Int {
+      // Write your solution here   
+  }
+
+  fun main() {
+      // Expected output:
+      println(largestOddNumber(19)) // 9
+      println(largestOddNumber(35427)) // 35427
+      println(largestOddNumber(1245)) // -1
+  }
+\end{verbatim}
+
+\subsection*{Problem 19 (1\%):}
+You have been given a function called \textbf{thirdLargest} which accepts an \textbf{String} parameter called \textbf{str}. Return the third largest numerical digit that appears in \textbf{str} or \textbf{-1} if it does not exist.
+
+Given an alphanumeric string s, 
+\begin{verbatim}
+  fun thirdLargest(str: String): Int {
+      // Write your solution here
+  }
+
+  fun main() {
+      // Expected output:
+      // println(thirdLargest("dfa12321afd")) // 3
+      // println(thirdLargest("abc1111")) // -1
+  }
+\end{verbatim}
+
+\subsection*{Problem 20 (1\%):}
+You have been given a function called \textbf{uniqueSum} which accepts an \textbf{Array<Int>} parameter called \textbf{nums}. Return the sum of all the unique elements of \textbf{nums}.
+
+\begin{verbatim}
+  fun uniqueSum(nums: Array<Int>): Int {
+      // Write your solution here 
+  }
+
+  fun main() {
+      // Expected output:
+      // println(uniqueSum([1, 2, 3, 2])) // 4
+      // println(uniqueSum([1, 1, 1, 1, 1])) // 0
+  }
 \end{verbatim}
 
 \end{document}
