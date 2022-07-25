@@ -1,4 +1,4 @@
-# **13: Google Maps**
+# **12: Google Maps**
 
 In today's session, we will implement **Google Maps** into our **Travelling** application.
 
@@ -6,14 +6,14 @@ In today's session, we will implement **Google Maps** into our **Travelling** ap
 
 Let us take a look at the code example. Open the `google-maps-example` located in the `code-resources` directory in **Android Studio**. Make sure you have the following dependencies in your `build.gradle (Module)`:
 
-```
+```xml
 implementation 'com.google.android.gms:play-services-maps:18.0.2'
 implementation 'com.google.maps.android:android-maps-utils:0.5'
 ```
 
 Also, in the `android` block, add the following under `testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"`:
 
-```
+```xml
 def secretProperties = new Properties()
 if (rootProject.file("local.properties").exists()) {
     rootProject.file("local.properties")?.withInputStream {
@@ -27,7 +27,7 @@ It is used to access various credentials from `local.properties` that you do not
 
 In `local.properties`, add the following:
 
-```
+```xml
 GOOGLE_MAPS_KEY=<API KEY>
 ```
 

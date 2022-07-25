@@ -394,7 +394,7 @@ The login UI should look like the following:
 
 Every application needs a start destination. In our case, it will be `LoginFragment`, but you could also start with a splash screen. You also need to consider that you will be navigating to and from different screens. How do you do this? You need to create a new resource directory called **navigation**. To do this, right-click on **res > New > Android Resource Directory**. You will be presented with a popup window. You are only concerned with the **Resource type** field. Set this field to **navigation**, then click the **OK** button. In the **navigation** directory, create a new **Navigation Resource File** called `mobile_navigation.xml`. You will be prompt to install the following dependencies:
 
-```md
+```xml
 implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
 implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
 ```
@@ -470,4 +470,4 @@ You should have something that looks like this:
 
 ## Formative Assessment
 
-In today's formative assessment, you will research and complete the given `data.json` file in the `assessment` directory. Feel free to add more countries, but make sure you follow the same data shape. However, I have found six countries is more than enough.
+In today's formative assessment, you will research and complete the given `data.json` file in the `assessments` directory. Feel free to add more countries, but make sure you follow the same data shape. However, I have found six countries is more than enough.

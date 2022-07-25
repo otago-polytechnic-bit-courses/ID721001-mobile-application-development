@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "continent": "Oceania",
+    "name": "Australia",
+    "langCode": "en",
+    "flagImg": "https://flagpedia.net/data/flags/h80/au.png",
+    "attractions": [
+      {
+        "name": "Blue Mountain National Park",
+        "location": {
+          "latitude": -33.6175635,
+          "longitude": 150.4559073
+        }
+      },
+      {
+        "name": "Daintree National Park",
+        "location": {
+          "latitude": -16.3014378,
+          "longitude": 145.2480206
+        }
+      },
+      {
+        "name": "Uluru-Kata Tjuta National Park",
+        "location": {
+          "latitude": -25.3437797,
+          "longitude": 131.0346514
+        }
+      },
+      {
+        "name": "Australia Zoo",
+        "location": {
+          "latitude": -26.8357181,
+          "longitude": 152.963113
+        }
+      },
+      {
+        "name": "Great Barrier Reef Marine Park",
+        "location": {
+          "latitude": -19.2589635,
+          "longitude": 146.8169483
+        }
+      }
+    ],
+    "phrases": [
+      "What's the John Dory?",
+      "No worries, mate, she'll be right",
+      "Have a Captain Cook",
+      "A few stubbies short of a six-pack",
+      "Dog's breakfast"
+    ]
+  },
+  {
+    "id": 2,
+    "continent": "South America",
+    "name": "Argentina",
+    "langCode": "es",
+    "flagImg": "https://flagpedia.net/data/flags/h80/ar.png",
+    "attractions": []
+  },
+  {
+    "id": 3,
+    "continent": "Europe",
+    "name": "Belgium",
+    "langCode": "nl",
+    "flagImg": "https://flagpedia.net/data/flags/h80/be.png",
+    "attractions": [],
+    "phrases": []
+  },
+  {
+    "id": 4,
+    "continent": "Asia",
+    "name": "China",
+    "langCode": "zh",
+    "flagImg": "https://flagpedia.net/data/flags/h80/cn.png",
+    "attractions": [],
+    "phrases": []
+  },
+  {
+    "id": 5,
+    "continent": "North America",
+    "name": "Mexico",
+    "langCode": "es",
+    "flagImg": "https://flagpedia.net/data/flags/h80/mx.png",
+    "attractions": [],
+    "phrases": []
+  },
+  {
+    "id": 6,
+    "continent": "Oceania",
+    "name": "New Zealand",
+    "langCode": "en",
+    "flagImg": "https://flagpedia.net/data/flags/h80/nz.png",
+    "attractions": [],
+    "phrases": []
+  },
+  {
+    "id": 7,
+    "continent": "Africa",
+    "name": "South Africa",
+    "langCode": "af",
+    "flagImg": "https://flagpedia.net/data/flags/h80/za.png",
+    "attractions": [],
+    "phrases": []
+  },
+  {
+    "id": 8,
+    "continent": "Europe",
+    "name": "United Kingdom",
+    "langCode": "en",
+    "flagImg": "https://flagpedia.net/data/flags/h80/gb.png",
+    "attractions": [],
+    "phrases": []
+  }
+]

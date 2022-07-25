@@ -1,4 +1,4 @@
-# **03: Fragments**
+# **03: Fragment**
 
 ## Overview
 
@@ -10,7 +10,7 @@ A `Fragment` is a reusable portion of your application's UI. A **fragment** defi
 
 Here is an example. Consider an application that responds to various screen sizes, i.e., a mobile and tablet device. The application should display a static `NavigationDrawer` & a list in a `GridLayout` on a tablet device. The application should display a `BottomNavigationView` & a list in a `LinearLayout` on a mobile device. Managing all the variations in the activity can be tedious. Separating navigation elements from the content can be much more manageable. The **activity** is responsible for displaying the correct UI navigation & the **fragment** is responsible for displaying the list in a layout.
 
-<img src="../resources/img/04-fragments/fragment-large-small-screen.png" width="750" height="450" />
+<img src="../resources/img/03-fragments/fragment-large-small-screen.png" width="750" height="450" />
 
 While your **activity** is in the `onStart` lifecycle state or higher, **fragments** can be added, replaced or removed from an **activity**.
 
@@ -175,12 +175,9 @@ In this **in-class activity**, you will extend your **Travelling** application's
 Create the following screens using **Fragments**:
 
 - Splash
-- Login
 - Register
-- Home
-- Translator and text to speech
-- Quiz
-- Settings
+
+**Note:** Now, you should have four **Fragments**.
 
 ### Creating the UI
 
@@ -216,7 +213,7 @@ Here we define an action, essentially saying that we want to navigate from the l
 
 In your `build.gradle (Project: Travelling)`, add the following above the `plugins` block:
 
-```md
+```xml
 buildscript {
     repositories {
         google()
@@ -229,7 +226,7 @@ buildscript {
 
 `build.gradle (Project: Travelling)` should now look something like this:
 
-```md
+```xml
 buildscript {
     repositories {
         google()
@@ -256,7 +253,7 @@ id 'androidx.navigation.safeargs' // Like above, without this, you can not navig
 
 `build.gradle (Module: Travelling.app)` should now look something like this:
 
-```md
+```xml
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'

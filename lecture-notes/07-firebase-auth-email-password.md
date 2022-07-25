@@ -1,4 +1,4 @@
-# **09: Firebase Auth - Email and Password**
+# **07: Firebase Auth - Email and Password**
 
 In this session, you are going to let your users authenticate with **Firebase** using an email and password.
 
@@ -34,7 +34,7 @@ Also, make sure you have `google()` in both `repositories` blocks.
 
 Sign into the **Firebase Console** using your **Google account**. Link to the **Firebase Console** - https://console.firebase.google.com
 
-<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-1.png" width=800 height=500 />
+<img src="../resources/img/07-firebase-auth-email-password/create-project.png" width=800 height=500 />
 
 **Steps:**
 
@@ -45,7 +45,7 @@ Sign into the **Firebase Console** using your **Google account**. Link to the **
 
 You will presented with the following window:
 
-<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-2.png" width=800 height=500 />
+<img src="../resources/img/07-firebase-auth-email-password/project-overview-authentication.png" width=800 height=500 />
 
 Click **Authentication** in the left-hand side panel, then click **Get Started**.
 
@@ -58,7 +58,7 @@ Enable the following:
 
 1. Got back to **Project Overview** and click the **Android** icon.
 
-<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-4.png" width=800 height=500 />
+<img src="../resources/img/07-firebase-auth-email-password/authentication-provider.png" width=800 height=500 />
 
 2. Register your application. Please make sure you provide an **App nickname**. You do not need to provide a **Debug signing certificate SHA-1**.
 3. Download the configuration file and put it in your application's `app` directory.
