@@ -52,19 +52,17 @@ Click **Authentication** in the left-hand side panel, then click **Get Started**
 Enable the following:
 - **Username/Password**. Ignore **Passwordless** option and click **Save**.
 
-<img src="../resources/img/13-firebase-auth/13-firebase-auth-3.png" width=800 height=500 />
+<img src="../resources/img/07-firebase-auth-email-password/authentication-provider.png" width=800 height=500 />
 
 ### Add Firebase to your Android Application
 
 1. Got back to **Project Overview** and click the **Android** icon.
 
-<img src="../resources/img/07-firebase-auth-email-password/authentication-provider.png" width=800 height=500 />
+<img src="../resources/img/07-firebase-auth-email-password/add-firebase.png" width=800 height=500 />
 
 2. Register your application. Please make sure you provide an **App nickname**. You do not need to provide a **Debug signing certificate SHA-1**.
 3. Download the configuration file and put it in your application's `app` directory.
 4. You should have added all required dependencies to use **Firebase Authentication** so you can skip this.
-
-<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/13-firebase-auth/13-firebase-auth-5.png" width=800 height=500 />
 
 ## RegisterFragment XML Layout
 
@@ -166,6 +164,7 @@ class RegisterFragment: Fragment() {
         // Get a new instance of Firebase authentication
         auth = FirebaseAuth.getInstance()
 
+        // Get the Views from fragment_register by their ids
         val btnRegister: Button = view.findViewById(R.id.btn_register)
         val etEmailAddress: EditText = view.findViewById(R.id.et_email_address)
         val etPassword: EditText = view.findViewById(R.id.et_password)

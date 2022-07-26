@@ -196,7 +196,3 @@ class HomeFragment : Fragment() {
     }
 }
 ```
-
-## Formative Assessment
-
-In the `resources` directory, you have been provided an incomplete application called **quiz-example**. Carefully read the code and comments. Integrate this into your **Travelling** application.
