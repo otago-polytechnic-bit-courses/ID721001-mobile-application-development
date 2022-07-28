@@ -231,6 +231,8 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
+**Note:** If `findViewById` is underlined, you have forgot to import `Toolbar`. To do this, right-click on `Toolbar` **> Show Context Actions > Import**. You will be using most of the modern **APIs** in this course...**AndroidX** is one of those. Choose the `Toolbar (androidx.appcompat.widget)` option.
+
 In both `themes.xml`, add the following style:
 
 ```xml
@@ -239,6 +241,8 @@ In both `themes.xml`, add the following style:
     <item name="windowNoTitle">true</item>
 </style>
 ```
+
+**Note:** Make sure this goes outside of the existing `style`. For example, this should go under line 15.
 
 This `style` will remove the application's default action bar.
 
@@ -311,6 +315,8 @@ class LoginFragment : Fragment() {
     }
 }
 ```
+
+**Note:** Remember if you see red, you need to import the required **APIs**.
 
 Also, you will notice a layout file called `fragment_login`. You are yet to create this file. **Fragment** layout files are stored alongside **activity** layout files, i.e., `activity_main.xml`. The only difference is that they are prefixed with **fragment** instead of **activity**. To create a new **fragment** layout file, right-click on **res > layout > New > Layout Resource File**. You will be presented with a popup window. You only need to give it a **File name** of `fragment_login`. Do not worry about the rest of the fields, i.e., **Root element**, **Source set**, **Directory name** and **Available qualifiers**. Once you have named it, click the **OK** button.
 
