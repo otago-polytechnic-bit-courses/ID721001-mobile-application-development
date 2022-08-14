@@ -523,7 +523,7 @@ You have been given a function called \textbf{largestOddNumber} which accepts an
 \end{verbatim}
 
 \subsection*{Problem 19 (1\%):}
-You have been given a function called \textbf{thirdLargest} which accepts an \textbf{String} parameter called \textbf{str}. Return the third largest numerical digit that appears in \textbf{str} or \textbf{-1} if it does not exist.
+You have been given a function called \textbf{thirdLargest} which accepts an \textbf{String} parameter called \textbf{str}. Return the third largest \textbf{unique} numerical digit that appears in \textbf{str} or \textbf{-1} if it does not exist.
 
 Given an alphanumeric string s, 
 \begin{verbatim}
@@ -533,8 +533,8 @@ Given an alphanumeric string s,
 
   fun main() {
       // Expected output:
-      // println(thirdLargest("dfa12321afd")) // 3
-      // println(thirdLargest("abc1111")) // -1
+      // println(thirdLargest("dfa12321afd")) // 1 => 1, 2, 3 (unique numerical digits). 1 is the third largest
+      // println(thirdLargest("abc1111")) // -1. 1 is the largest number
   }
 \end{verbatim}
 
@@ -548,7 +548,7 @@ You have been given a function called \textbf{uniqueSum} which accepts an \textb
 
   fun main() {
       // Expected output:
-      // println(uniqueSum(arrayOf<Int>(1, 2, 3, 2)) // 4
+      // println(uniqueSum(arrayOf<Int>(1, 2, 3, 2)) // 6 => 1 + 2 + 3 (unique elements)
       // println(uniqueSum(arrayOf<Int>(1, 1, 1, 1, 1)) // 1
   }
 \end{verbatim}
