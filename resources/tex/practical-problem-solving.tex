@@ -516,8 +516,10 @@ You have been given a function called \textbf{largestOddNumber} which accepts an
 
   fun main() {
       // Expected output:
-      println(largestOddNumber(19)) // 9
+      println(largestOddNumber(19)) // 19
       println(largestOddNumber(35427)) // 35427
+      println(largestOddNumber(41)) // 1 => largest odd number. 4 is an even number
+      println(largestOddNumber(275)) // 75 => largest odd number. 2 is an even number
       println(largestOddNumber(42)) // -1
   }
 \end{verbatim}
@@ -533,7 +535,8 @@ Given an alphanumeric string s,
 
   fun main() {
       // Expected output:
-      // println(thirdLargest("dfa12321afd")) // 1 => 1, 2, 3 (unique numerical digits). 1 is the third largest
+      // println(thirdLargest("dfa12321afd")) // 1 => 1, 2, 3 (unique numerical digits). 
+                                              // 1 is the third largest
       // println(thirdLargest("abc1111")) // -1. 1 is the largest number
   }
 \end{verbatim}
