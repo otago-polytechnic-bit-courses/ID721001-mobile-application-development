@@ -75,7 +75,7 @@ class HomeFragment : Fragment() {
 
         viewModel.count.observe(viewLifecycleOwner) { // Observe any changes to count in HomeViewModel
             tvOutput.text = it.toString() // Update tvOutput when there is a change in value
-        })
+        }
 
         btnPlusOne.setOnClickListener {
             viewModel.plusOne()
