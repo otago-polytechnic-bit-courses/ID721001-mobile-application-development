@@ -19,7 +19,7 @@ So far, you have looked at how to bind `ViewModel` data to a layout. The followi
 
         <variable
             name="country"
-            type="op.mobile.app.dev.api.model.Country" />
+            type="<Path to Country data class>" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -190,6 +190,7 @@ class HomeFragment : Fragment() {
         val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         binding.apply {
             lifecycleOwner = viewLifecycleOwner
+            homeViewModel = viewModel
             rvJobs.adapter = ServiceAdapter()
             return root
         }
