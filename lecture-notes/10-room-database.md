@@ -14,12 +14,6 @@ Lets look at the following diagram & discuss how they work together:
 - SQLite database - on device storage. **Room's** persistence library creates & maintains this database for you.
 - DAO - maps **SQL** queries to method calls.
 
-## Code Example
-
-Download the `login-room-database.zip` found [here](https://github.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/blob/master/code-resources/login-room-databaseo.zip), then open the `login-room-database` in **Android Studio**.
-
-Lets take a look at what is happening...
-
 ### build.gradle
 
 Go to **Gradle Scripts > build.gradle (Module: Login.app)**. You should see the following in the **dependencies** block:
