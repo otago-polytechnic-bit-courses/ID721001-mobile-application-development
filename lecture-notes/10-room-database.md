@@ -4,7 +4,7 @@
 
 Lets look at the following diagram & discuss how they work together:
 
-<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/12-room-database/12-architecture-components.png" width="500" height="350" />
+<img src="https://raw.githubusercontent.com/otago-polytechnic-bit-courses/IN721-mobile-application-development/master/resources/img/10-room-database/architecture-components.png" width="500" height="350" />
 
 - LiveData - a data holder class that can be observed. Always holds the latest version of data & notifies its observers when the data has changed.
 - ViewModel - acts as the bridge between the **Repository** & the **UI controller**. The **UI controller** no longer needs to worry about the origin of the data.
