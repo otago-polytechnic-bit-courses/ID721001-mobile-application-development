@@ -180,6 +180,8 @@ class HomeViewModel : ViewModel() {
 
 Note how `service_status` binding adapter is being used. 
 
+Replace the existing **XML** code with the following:
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
