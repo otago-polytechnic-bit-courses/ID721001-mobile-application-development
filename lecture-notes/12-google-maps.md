@@ -287,7 +287,22 @@ Now, you may change this in your **Project** assessment, though, the logic is ex
 
 Here we pass only the List of `Attraction` rather than the `Country` object.
 
-In `HomeFragment.kt`, refactor the `onItemClick()`:
+Create a new file called `IOnClickListener`. This interface will allow you to click on an item **RecyclerView**, i.e., a country that will navigate you to the **Google Map**. 
+
+```kotlin
+interface IOnClickListener {
+    fun onItemClick(position: Int)
+}
+```
+
+In `HomeFragment.kt`, refactor the class definition to look like this:
+
+```kotlin
+class HomeFragment : Fragment(), IOnClickListener {
+    ...
+```
+
+Because you implementing the `IOnClickListener` interface, you need to implement its members, i.e., `onItemClick`. For example:
 
 ```kt
 override fun onItemClick(position: Int) {
