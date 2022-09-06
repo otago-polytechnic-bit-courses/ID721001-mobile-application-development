@@ -31,7 +31,7 @@ In `local.properties`, add the following:
 GOOGLE_MAPS_KEY=<API KEY>
 ```
 
-The `API KEY` is located in the course channel on **Microsoft Teams**, under the **Files** tab > `goggle-maps-key.txt`.
+The `API KEY` is located in the course channel on **Microsoft Teams**, under the **Files** tab > `google-maps-key.txt`.
 
 Now, we must tell `AndroidManifest.xml` about this API key. In `AndroidManifest.xml`, add the following:
 
