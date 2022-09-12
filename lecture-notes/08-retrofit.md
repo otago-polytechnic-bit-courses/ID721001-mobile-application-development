@@ -52,7 +52,7 @@ To make a request to an **API**, you need declare the internet permission in `An
 
 ### Country
 
-You can not directly use the contents in `data.json`, rather you need to represent the contents in programtic way or in a way that **Kotlin** understands. Look at the contents in `data.json`...each country object (the thing wrap in curly braces) has an `id` property, `name` property and much more. You will need to add the other properties to this data class. Think about the data types you will use to represent the contents. **Note:** The name of the arguments, i.e., `id` and `name` must match the name of the properties in `data.json`.
+You can not directly use the contents in `data.json`, rather you need to represent the contents in programtic way or in a way that **Kotlin** understands. Look at the contents in `data.json`...each country object (the thing wrapped in curly braces) has an `id` property, `name` property and much more. You will need to add the other properties to this data class. Think about the data types you will use to represent the contents. **Note:** The name of the arguments, i.e., `id` and `name` must match the name of the properties in `data.json`.
  
 ```kotlin
 data class Country(val id: String, val name: String)
