@@ -14,7 +14,10 @@ You will use **Preferences DataStore**.
 
 Lets take a look at the code example. Make sure you have the following dependency in your `build.gradle (Module)`:
 
-`implementation 'androidx.datastore:datastore-preferences:1.0.0-alpha02'`
+```bash
+implementation "androidx.datastore:datastore-preferences:1.0.0-alpha02"
+implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+```
 
 ## UIMode
 
