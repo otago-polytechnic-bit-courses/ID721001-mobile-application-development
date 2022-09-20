@@ -45,6 +45,12 @@ It is declared above the `activity` element.
 
 ### Model
 
+In the `build.gradle` file, add the following to the `plugins` block:
+
+```bash
+id 'kotlin-parcelize'
+```
+
 In the `model` directory, create a new file called `Attraction.kt`. In this file, add the following:
 
 ```kt
