@@ -261,6 +261,8 @@ class ServiceAdapter(private val listener: IOnClickListener) :
 
 We have created an `inner class` call `ServiceViewHolder`. You already have this as a separate file. You no longer needs, so delete it as it will cause conflicts. This `inner class` enables you to provide `onClick` functionaility for the **RecyclerView**. 
 
+**Note:** In the `HomeFragment.kt`, it will ask you to provide an argument for the new `ServiceAdapter` object. Pass `this@HomeFragment` as the argument.
+
 In `MapFragment.kt`, add the following:
 
 ```kt
