@@ -319,4 +319,6 @@ override fun onItemClick(position: Int) {
 }
 ```
 
+**Note:** Make sure you create an action to navigate from the home screen to the map screen in `mobile_navigation.xml`.
+
 Test your code on an emulator or connected device. Now implement this into your **Travelling** application. Also, you can work on the light/dark mode **Google Maps** functionality.
