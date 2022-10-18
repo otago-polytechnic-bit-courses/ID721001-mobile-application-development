@@ -153,7 +153,7 @@ fun bindListData(recyclerView: RecyclerView, data: List<Country>?) {
 ...
 
 <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rv_jobs"
+    android:id="@+id/rv_countries"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginStart="16dp"
@@ -184,14 +184,14 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding: FragmentHomeBinding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_home_jobs, container, false
+            inflater, R.layout.fragment_home, container, false
         )
 
         val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         binding.apply {
             lifecycleOwner = viewLifecycleOwner
             homeViewModel = viewModel
-            rvJobs.adapter = ServiceAdapter()
+            rvCountries.adapter = ServiceAdapter()
             return root
         }
     }
