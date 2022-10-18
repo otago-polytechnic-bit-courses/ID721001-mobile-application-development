@@ -145,7 +145,7 @@ fun bindListData(recyclerView: RecyclerView, data: List<Country>?) {
 
 ### HomeFragment Layout
 
-- Declare a `RecyclerView` with a `LinearLayoutManager`. This is used for displaying items vertically or horizontally. 
+- Declare a `RecyclerView` with a `GridLayoutManager`. This is used for displaying items vertically or horizontally. 
 - Set `list_data` attribute to `LiveData<List<Country>>`.
 - Set the item's layout to `recycler_view_item.xml`.
 
