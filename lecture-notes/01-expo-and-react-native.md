@@ -6,12 +6,11 @@
 
 ## Getting Started
 
-
 ### App.jsx
 
 ```js
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
@@ -25,9 +24,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
 ```
@@ -42,7 +41,8 @@ You should see the following:
 
 <img src="../resources/img/01/phone-1.png" width="250" height="444" />
 
-**Tasks:** 
+**Tasks:**
+
 - Convert `App` into an arrow function.
 - Change the `backgroundColor`.
 - Change the `Text` component's `color`. **Note:** Use the `style` prop.
@@ -75,7 +75,7 @@ export default ImageViewer;
 Update the `App.jsx` to the following:
 
 ```jsx
-// The rest of the code remains the same
+// ...
 
 import ImageViewer from "./components/ImageViewer";
 
@@ -94,14 +94,14 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  // The rest of the code remains the same
+  // ...
   imageContainer: {
     flex: 1,
     paddingTop: 50,
   },
 });
 
-// The rest of the code remains the same
+// ...
 ```
 
 You should see the following:
@@ -145,10 +145,7 @@ const Button = (props) => {
 
   return (
     <View style={styles.buttonContainer}>
-      <Pressable
-        style={styles.button}
-        onPress={() => alert("Pikachu")}
-      >
+      <Pressable style={styles.button} onPress={() => alert("Pikachu")}>
         <Text style={styles.buttonLabel}>{props.label}</Text>
       </Pressable>
     </View>
@@ -187,11 +184,11 @@ export default Button;
 Update the `App.jsx` to the following:
 
 ```jsx
-// The rest of the code remains the same
+// ...
 
 import ImageViewer from "./components/ImageViewer";
 
-// The rest of the code remains the same
+// ...
 
 const App = () => {
   return (
@@ -209,15 +206,15 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  // The rest of the code remains the same
+  // ...
 
   footerContainer: {
     flex: 1 / 3,
-    alignItems: 'center',
+    alignItems: "center",
   },
 });
 
-// The rest of the code remains the same
+// ...
 ```
 
 You should see the following:
@@ -235,7 +232,7 @@ npx expo install expo-image-picker
 ```
 
 ```jsx
-// The rest of the code remains the same
+// ...
 
 const Button = (props) => {
   if (props.theme === "primary") {
@@ -250,24 +247,24 @@ const Button = (props) => {
           style={[styles.button, { backgroundColor: "#fff" }]}
           onPress={props.onPress}
         >
-          {/* The rest of the code remains the same */}
+          {/* ... */}
         </Pressable>
       </View>
     );
   }
 
-  /* The rest of the code remains the same */
+  /* ... */
 };
 
-// The rest of the code remains the same
+// ...
 ```
 
 ```jsx
-// The rest of the code remains the same
+// ...
 
-import { launchImageLibraryAsync } from 'expo-image-picker';
+import { launchImageLibraryAsync } from "expo-image-picker";
 
-// The rest of the code remains the same
+// ...
 
 const App = () => {
   const pickImageAsync = async () => {
@@ -279,15 +276,19 @@ const App = () => {
     if (!result.canceled) {
       console.log(result);
     } else {
-      alert('You did not select any Pokémon image.');
+      alert("You did not select any Pokémon image.");
     }
   };
 
   return (
     <View style={styles.container}>
-      {/* The rest of the code remains the same */}
+      {/* ... */}
       <View style={styles.footerContainer}>
-        <Button theme="primary" label="Choose a Pokémon" onPress={pickImageAsync} />
+        <Button
+          theme="primary"
+          label="Choose a Pokémon"
+          onPress={pickImageAsync}
+        />
         <Button label="Use this Pokémon" />
       </View>
       <StatusBar style="auto" />
@@ -295,7 +296,7 @@ const App = () => {
   );
 };
 
-// The rest of the code remains the same
+// ...
 ```
 
 You should see the following:
@@ -310,7 +311,95 @@ You should see the following:
 
 <img src="../resources/img/01/phone-8.png" width="250" height="444" />
 
-### Modal
-
 ### Take a Screenshot
 
+```bash
+npx expo install react-native-view-shot expo-media-library
+```
+
+```jsx
+// ...
+
+const Button = (props) => {
+  // ...
+
+  return (
+    <View style={styles.buttonContainer}>
+      <Pressable
+        style={styles.button}
+        onPress={props.onPress}
+      >
+        <Text style={styles.buttonLabel}>{props.label}</Text>
+      </Pressable>
+    </View>
+  );
+};
+
+// ...
+```
+
+```jsx
+// ...
+
+import { useRef } from "react";
+import { saveToLibraryAsync, usePermissions } from "expo-media-library";
+import { captureRef } from "react-native-view-shot";
+
+// ...
+
+const App = () => {
+  // ...
+  const [status, requestPermission] = usePermissions();
+
+  const imageRef = useRef();
+
+  if (status === null) requestPermission();
+
+  // ...
+
+  const onSaveImageAsync = async () => {
+    try {
+      const localUri = await captureRef(imageRef, {
+        height: 440,
+        quality: 1,
+      });
+
+      await saveToLibraryAsync(localUri);
+      if (localUri) {
+        alert("Saved!");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.imageContainer}>
+        <View ref={imageRef} collapsable={false}>
+          <ImageViewer
+            placeholderImgSrc={placeholderImg}
+            selectedImage={selectedImage}
+          />
+        </View>
+      </View>
+      <View style={styles.footerContainer}>
+        <Button
+          theme="primary"
+          label="Choose a Pokémon"
+          onPress={pickImageAsync}
+        />
+        <Button label="Use this Pokémon" onPress={onSaveImageAsync} />
+      </View>
+      <StatusBar style="auto" />
+    </View>
+  );
+};
+
+// ...
+```
+
+
+<img src="../resources/img/01/phone-9.png" width="250" height="444" />
+
+<img src="../resources/img/01/phone-10.png" width="250" height="444" />
