@@ -53,7 +53,7 @@ In the `assets` directory, create a new directory called `imgs`. You have been g
 
 In the root directory, create a new directory called `components`. In the `components` directory, create a new file called `ImageViewer.jsx`. Add the following code:
 
-```jsx
+<code>
 import { StyleSheet, Image } from "react-native";
 
 const ImageViewer = (props) => (
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
 });
 
 export default ImageViewer;
-```
+</code>
 
 Update the `App.jsx` to the following:
 
@@ -78,17 +78,17 @@ Update the `App.jsx` to the following:
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 
-==import ImageViewer from "./components/ImageViewer";==
+import ImageViewer from "./components/ImageViewer";
 
 // Choose one of the Pokémon images
-==const placeholderImg = require("./assets/imgs/pikachu.png");==
+const placeholderImg = require("./assets/imgs/pikachu.png");
 
 const App = () => {
   return (
     <View style={styles.container}>
-      ==<View style={styles.imageContainer}>
+      <View style={styles.imageContainer}>
         <ImageViewer placeholderImgSrc={placeholderImg} />
-      </View>==
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -243,6 +243,145 @@ What happens when you click on the Choose a Pokémon or Use this Pokémon button
 <img src="../resources/img/01/phone-4.png" width="250" height="444" />
 
 ### Image Picker
+
+```bash
+npx expo install expo-image-picker
+```
+
+```jsx
+import { StyleSheet, View, Pressable, Text } from "react-native";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+
+const Button = (props) => {
+  if (props.theme === "primary") {
+    return (
+      <View
+        style={[
+          styles.buttonContainer,
+          { borderWidth: 4, borderColor: "#ffd33d", borderRadius: 18 },
+        ]}
+      >
+        <Pressable
+          style={[styles.button, { backgroundColor: "#fff" }]}
+          onPress={props.onPress}
+        >
+          <FontAwesome
+            name="picture-o"
+            size={18}
+            color="#25292e"
+            style={styles.buttonIcon}
+          />
+          <Text style={[styles.buttonLabel, { color: "#25292e" }]}>
+            {props.label}
+          </Text>
+        </Pressable>
+      </View>
+    );
+  }
+
+  return (
+    <View style={styles.buttonContainer}>
+      <Pressable
+        style={styles.button}
+        onPress={() => alert("Pikachu")}
+      >
+        <Text style={styles.buttonLabel}>{props.label}</Text>
+      </Pressable>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  buttonContainer: {
+    width: 320,
+    height: 68,
+    marginHorizontal: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 3,
+  },
+  button: {
+    borderRadius: 10,
+    width: "100%",
+    height: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+  },
+  buttonIcon: {
+    paddingRight: 8,
+  },
+  buttonLabel: {
+    color: "#fff",
+    fontSize: 16,
+  },
+});
+
+export default Button;
+```
+
+```jsx
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View } from "react-native";
+import { launchImageLibraryAsync } from 'expo-image-picker';
+
+import Button from "./components/Button";
+import ImageViewer from "./components/ImageViewer";
+
+const placeholderImg = require("./assets/imgs/pikachu.png");
+
+const App = () => {
+  const pickImageAsync = async () => {
+    const result = await launchImageLibraryAsync({
+      allowsEditing: true,
+      quality: 1,
+    });
+
+    if (!result.canceled) {
+      console.log(result);
+    } else {
+      alert('You did not select any Pokémon image.');
+    }
+  };
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.imageContainer}>
+        <ImageViewer placeholderImgSrc={placeholderImg} />
+      </View>
+      <View style={styles.footerContainer}>
+        <Button theme="primary" label="Choose a Pokémon" onPress={pickImageAsync} />
+        <Button label="Use this Pokémon" />
+      </View>
+      <StatusBar style="auto" />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#25292e",
+    alignItems: "center",
+  },
+  imageContainer: {
+    flex: 1,
+    paddingTop: 50,
+  },
+  footerContainer: {
+    flex: 1 / 3,
+    alignItems: 'center',
+  },
+});
+
+export default App;
+```
+
+You should see the following:
+
+<img src="../resources/img/01/phone-5.png" width="250" height="444" />
+
+<img src="../resources/img/01/phone-6.png" width="250" height="444" />
 
 ### Modal
 
