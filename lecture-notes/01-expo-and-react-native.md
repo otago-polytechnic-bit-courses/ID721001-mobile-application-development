@@ -110,7 +110,7 @@ export default App;
 
 You should see the following:
 
-![](../resources/img/01/phone-1 - Copy.png)
+![](../resources/img/01/phone-1.png)
 
 
 ### Button.jsx
