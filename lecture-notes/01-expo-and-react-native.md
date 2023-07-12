@@ -6,6 +6,12 @@
 
 ## Getting Started
 
+### Create a new project
+
+```bash
+npx create-expo-app 01-playground
+```
+
 ### App.jsx
 
 ```js
@@ -186,7 +192,7 @@ Update the `App.jsx` to the following:
 ```jsx
 // ...
 
-import ImageViewer from "./components/ImageViewer";
+import Button from "./components/Button";
 
 // ...
 
