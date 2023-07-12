@@ -110,8 +110,7 @@ export default App;
 
 You should see the following:
 
-![](../resources/img/01/phone-1.png)
-
+<img src="../resources/img/01/phone-1.png" width="250" height="444" />
 
 ### Button.jsx
 
