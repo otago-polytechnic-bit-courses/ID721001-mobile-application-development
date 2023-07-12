@@ -78,16 +78,17 @@ Update the `App.jsx` to the following:
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 
-import ImageViewer from "./components/ImageViewer";
+==import ImageViewer from "./components/ImageViewer";==
 
-const placeholderImg = require("./assets/imgs/pikachu.png");
+// Choose one of the Pokémon images
+==const placeholderImg = require("./assets/imgs/pikachu.png");==
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.imageContainer}>
+      ==<View style={styles.imageContainer}>
         <ImageViewer placeholderImgSrc={placeholderImg} />
-      </View>
+      </View>==
       <StatusBar style="auto" />
     </View>
   );
@@ -240,3 +241,10 @@ You should see the following:
 What happens when you click on the Choose a Pokémon or Use this Pokémon buttons?
 
 <img src="../resources/img/01/phone-4.png" width="250" height="444" />
+
+### Image Picker
+
+### Modal
+
+### Take a Screenshot
+
