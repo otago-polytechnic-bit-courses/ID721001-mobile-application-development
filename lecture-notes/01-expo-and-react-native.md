@@ -40,7 +40,7 @@ npm run android
 
 You should see the following:
 
-![](../resources/img/01/phone-1.png)
+<img src="../resources/img/01/phone-1.png" width="250" height="444" />
 
 **Tasks:** 
 - Convert `App` into an arrow function.
@@ -110,7 +110,7 @@ export default App;
 
 You should see the following:
 
-<img src="../resources/img/01/phone-1.png" width="250" height="444" />
+<img src="../resources/img/01/phone-2.png" width="250" height="444" />
 
 ### Button.jsx
 
@@ -235,15 +235,8 @@ export default App;
 
 You should see the following:
 
-![](../resources/img/01/phone-2.png)
+<img src="../resources/img/01/phone-3.png" width="250" height="444" />
 
 What happens when you click on the Choose a Pokémon or Use this Pokémon buttons?
 
-![](../resources/img/01/phone-2.png)
-
-
-
-
-
-
-
+<img src="../resources/img/01/phone-4.png" width="250" height="444" />
