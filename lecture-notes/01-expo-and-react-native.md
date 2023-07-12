@@ -53,7 +53,7 @@ In the `assets` directory, create a new directory called `imgs`. You have been g
 
 In the root directory, create a new directory called `components`. In the `components` directory, create a new file called `ImageViewer.jsx`. Add the following code:
 
-<code>
+```jsx
 import { StyleSheet, Image } from "react-native";
 
 const ImageViewer = (props) => (
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
 });
 
 export default ImageViewer;
-</code>
+```
 
 Update the `App.jsx` to the following:
 
