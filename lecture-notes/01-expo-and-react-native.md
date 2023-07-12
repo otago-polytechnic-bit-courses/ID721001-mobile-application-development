@@ -41,7 +41,7 @@ You should see the following:
 
 <img src="../resources/img/01/phone-1.png" width="250" height="444" />
 
-**Tasks:**
+**Research Tasks:**
 
 - Convert `App` into an arrow function.
 - Change the `backgroundColor`.
@@ -305,7 +305,7 @@ You should see the following:
 
 <img src="../resources/img/01/phone-6.png" width="250" height="444" />
 
-**Task:**
+**Research Task:**
 
 <img src="../resources/img/01/phone-7.png" width="250" height="444" />
 
@@ -325,10 +325,7 @@ const Button = (props) => {
 
   return (
     <View style={styles.buttonContainer}>
-      <Pressable
-        style={styles.button}
-        onPress={props.onPress}
-      >
+      <Pressable style={styles.button} onPress={props.onPress}>
         <Text style={styles.buttonLabel}>{props.label}</Text>
       </Pressable>
     </View>
@@ -399,7 +396,72 @@ const App = () => {
 // ...
 ```
 
-
 <img src="../resources/img/01/phone-9.png" width="250" height="444" />
 
 <img src="../resources/img/01/phone-10.png" width="250" height="444" />
+
+**Research Task:**
+
+<img src="../resources/img/01/web-1.png" width="250" height="444" />
+
+## Web Browser
+
+```bash
+npm install dom-to-image
+```
+
+```jsx
+import { toJpeg } from "dom-to-image";
+```
+
+```jsx
+import { StyleSheet, View, Platform } from "react-native";
+```
+
+```jsx
+const onSaveImageAsync = async () => {
+  if (Platform.OS !== "web") {
+    try {
+      const localUri = await captureRef(imageRef, {
+        height: 440,
+        quality: 1,
+      });
+      await saveToLibraryAsync(localUri);
+      if (localUri) {
+        alert("Saved!");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  } else {
+    try {
+      const dataUrl = await toJpeg(imageRef.current, {
+        quality: 0.95,
+        width: 320,
+        height: 440,
+      });
+
+      const link = document.createElement("a");
+      link.download = "some-img.jpeg";
+      link.href = dataUrl;
+      link.click();
+    } catch (e) {
+      console.log(e);
+    }
+  }
+};
+```
+
+<img src="../resources/img/01/web-2.png" width="250" height="444" />
+
+## Splash Screen
+
+```npm
+npx expo install expo-splash-screen
+```
+
+**Research Task:**
+
+## App Icon
+
+**Research Task:**
