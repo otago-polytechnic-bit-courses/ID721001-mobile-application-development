@@ -75,8 +75,7 @@ export default ImageViewer;
 Update the `App.jsx` to the following:
 
 ```jsx
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+// The rest of the code remains the same
 
 import ImageViewer from "./components/ImageViewer";
 
@@ -95,18 +94,14 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#25292e",
-    alignItems: "center",
-  },
+  // The rest of the code remains the same
   imageContainer: {
     flex: 1,
     paddingTop: 50,
   },
 });
 
-export default App;
+// The rest of the code remains the same
 ```
 
 You should see the following:
@@ -192,13 +187,11 @@ export default Button;
 Update the `App.jsx` to the following:
 
 ```jsx
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+// The rest of the code remains the same
 
-import Button from "./components/Button";
 import ImageViewer from "./components/ImageViewer";
 
-const placeholderImg = require("./assets/imgs/pikachu.png");
+// The rest of the code remains the same
 
 const App = () => {
   return (
@@ -216,22 +209,15 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#25292e",
-    alignItems: "center",
-  },
-  imageContainer: {
-    flex: 1,
-    paddingTop: 50,
-  },
+  // The rest of the code remains the same
+
   footerContainer: {
     flex: 1 / 3,
     alignItems: 'center',
   },
 });
 
-export default App;
+// The rest of the code remains the same
 ```
 
 You should see the following:
@@ -249,8 +235,7 @@ npx expo install expo-image-picker
 ```
 
 ```jsx
-import { StyleSheet, View, Pressable, Text } from "react-native";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
+// The rest of the code remains the same
 
 const Button = (props) => {
   if (props.theme === "primary") {
@@ -265,70 +250,24 @@ const Button = (props) => {
           style={[styles.button, { backgroundColor: "#fff" }]}
           onPress={props.onPress}
         >
-          <FontAwesome
-            name="picture-o"
-            size={18}
-            color="#25292e"
-            style={styles.buttonIcon}
-          />
-          <Text style={[styles.buttonLabel, { color: "#25292e" }]}>
-            {props.label}
-          </Text>
+          {/* The rest of the code remains the same */}
         </Pressable>
       </View>
     );
   }
 
-  return (
-    <View style={styles.buttonContainer}>
-      <Pressable
-        style={styles.button}
-        onPress={() => alert("Pikachu")}
-      >
-        <Text style={styles.buttonLabel}>{props.label}</Text>
-      </Pressable>
-    </View>
-  );
+  /* The rest of the code remains the same */
 };
 
-const styles = StyleSheet.create({
-  buttonContainer: {
-    width: 320,
-    height: 68,
-    marginHorizontal: 20,
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 3,
-  },
-  button: {
-    borderRadius: 10,
-    width: "100%",
-    height: "100%",
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "row",
-  },
-  buttonIcon: {
-    paddingRight: 8,
-  },
-  buttonLabel: {
-    color: "#fff",
-    fontSize: 16,
-  },
-});
-
-export default Button;
+// The rest of the code remains the same
 ```
 
 ```jsx
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+// The rest of the code remains the same
+
 import { launchImageLibraryAsync } from 'expo-image-picker';
 
-import Button from "./components/Button";
-import ImageViewer from "./components/ImageViewer";
-
-const placeholderImg = require("./assets/imgs/pikachu.png");
+// The rest of the code remains the same
 
 const App = () => {
   const pickImageAsync = async () => {
@@ -346,9 +285,7 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.imageContainer}>
-        <ImageViewer placeholderImgSrc={placeholderImg} />
-      </View>
+      {/* The rest of the code remains the same */}
       <View style={styles.footerContainer}>
         <Button theme="primary" label="Choose a Pokémon" onPress={pickImageAsync} />
         <Button label="Use this Pokémon" />
@@ -358,23 +295,7 @@ const App = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#25292e",
-    alignItems: "center",
-  },
-  imageContainer: {
-    flex: 1,
-    paddingTop: 50,
-  },
-  footerContainer: {
-    flex: 1 / 3,
-    alignItems: 'center',
-  },
-});
-
-export default App;
+// The rest of the code remains the same
 ```
 
 You should see the following:
@@ -382,6 +303,12 @@ You should see the following:
 <img src="../resources/img/01/phone-5.png" width="250" height="444" />
 
 <img src="../resources/img/01/phone-6.png" width="250" height="444" />
+
+**Task:**
+
+<img src="../resources/img/01/phone-7.png" width="250" height="444" />
+
+<img src="../resources/img/01/phone-8.png" width="250" height="444" />
 
 ### Modal
 
