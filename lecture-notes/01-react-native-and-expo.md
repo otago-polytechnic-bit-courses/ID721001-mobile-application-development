@@ -1,5 +1,27 @@
 # 01: React Native and Expo
 
+## Environment Variables
+
+![](../resources/img/01/env-1.PNG)
+
+## Emulator
+
+![](../resources/img/01/android-studio-1.PNG)
+
+![](../resources/img/01/android-studio-2.PNG)
+
+![](../resources/img/01/android-studio-3.PNG)
+
+![](../resources/img/01/android-studio-4.PNG)
+
+![](../resources/img/01/android-studio-5.PNG)
+
+![](../resources/img/01/android-studio-6.PNG)
+
+![](../resources/img/01/android-studio-7.PNG)
+
+![](../resources/img/01/android-studio-8.PNG)
+
 ## React Native
 
 **React Native** is a library for building native mobile applications using **JavaScript** and **React**. It allows developers to create mobile applications for **iOS** and **Android** platforms using a single codebase. **React Native** utilises native components to render the user interface, resulting in highly performant and responsive applications. It combines the power of **React**, a popular **JavaScript** library for building user interfaces, with native platform capabilities. With **React Native**, developers can write code once and deploy it on multiple platforms, saving time and effort in mobile application development.
@@ -551,9 +573,10 @@ Add the following to the `onSaveImageAsync` function:
 
 ```jsx
 const onSaveImageAsync = async () => {
-  if (Platform.OS !== "web") { // Check if the application is running in a web browser
+  if (Platform.OS !== "web") {
+    // Check if the application is running in a web browser
     try {
-      const localUri = await captureRef(imageRef, { 
+      const localUri = await captureRef(imageRef, {
         height: 440,
         quality: 1,
       });
@@ -564,9 +587,11 @@ const onSaveImageAsync = async () => {
     } catch (err) {
       console.log(err);
     }
-  } else { // If the application is running in a web browser
+  } else {
+    // If the application is running in a web browser
     try {
-      const dataUrl = await toJpeg(imageRef.current, { // Take a screenshot of the image
+      const dataUrl = await toJpeg(imageRef.current, {
+        // Take a screenshot of the image
         quality: 0.95,
         width: 320,
         height: 440,
@@ -574,7 +599,7 @@ const onSaveImageAsync = async () => {
 
       const link = document.createElement("a");
       link.download = "some-img.jpeg"; // Set the name of the downloaded file
-      link.href = dataUrl; 
+      link.href = dataUrl;
       link.click();
     } catch (err) {
       console.log(err);
