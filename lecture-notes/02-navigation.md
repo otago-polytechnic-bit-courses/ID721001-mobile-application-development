@@ -3,16 +3,22 @@
 ## Getting Started
 
 ```bash
+npx create-expo-app 02-playground
+```
+
+```bash
 npm install @react-navigation/native
 ```
 
 ```bash
-npx expo install react-native-screens react-native-safe-area-context
+npm install react-native-screens react-native-safe-area-context
 ```
 
 ```bash
 npx pod-install ios
 ```
+
+## Stack Navigation
 
 ```bash
 npm install @react-navigation/native-stack
@@ -94,7 +100,9 @@ const App = () => {
 //...
 ```
 
-### Moving Between Screens
+## Moving Between Screens
+
+### HomeScreen.jsx
 
 ```jsx
 import { Button, View, Text } from "react-native";
@@ -113,6 +121,8 @@ const HomeScreen = (props) => {
 
 //...
 ```
+
+### DetailsScreen.jsx
 
 ```jsx
 import { Button, View, Text } from "react-native";
@@ -133,7 +143,9 @@ const DetailsScreen = (props) => {
 
 <img src="../resources/img/02/phone-2.png" width="250" height="444" />
 
-### Passing Parameters to Routes
+## Passing Parameters to Routes
+
+### HomeScreen.jsx
 
 ```jsx
 //...
@@ -157,6 +169,8 @@ const HomeScreen = (props) => {
 
 //...
 ```
+
+### DetailsScreen.jsx
 
 ```jsx
 //...
@@ -183,7 +197,9 @@ const DetailsScreen = (props) => {
 - Easy task
 - Hard task
 
-### Configuring the Header Bar
+## Configuring the Header Bar
+
+### App.jsx
 
 ```jsx
 //...
@@ -218,9 +234,13 @@ const App = () => {
 
 ## Bottom Tab Navigation
 
+### Getting Started
+
 ```bash
 npm install @react-navigation/bottom-tabs
 ```
+
+### App.jsx
 
 ```jsx
 //...
@@ -302,10 +322,61 @@ const App = () => {
 
 ## Drawer Navigation
 
+### Getting Started
+
 ```bash
 npm install @react-navigation/drawer
 ```
 
 ```bash
-npm install react-native-gesture-handler react-native-reanimated
+npm install react-native-gesture-handler react-native-reanimated@2.14.4
 ```
+
+```js
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ["babel-preset-expo"],
+    plugins: ["react-native-reanimated/plugin"],
+  };
+};
+```
+
+### App.jsx
+
+```jsx
+//...
+
+import { createDrawerNavigator } from "@react-navigation/drawer";
+
+//...
+
+const Drawer = createDrawerNavigator();
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Drawer.Navigator>
+        <Drawer.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ title: "My Home" }}
+        />
+        <Tab.Screen
+          name="Details"
+          component={DetailsScreen}
+          options={{ title: "My Details" }}
+        />
+      </Drawer.Navigator>
+    </NavigationContainer>
+  );
+};
+
+//...
+```
+
+<img src="../resources/img/02/phone-7.png" width="250" height="444" />
+
+<img src="../resources/img/02/phone-8.png" width="250" height="444" />
+
+**Research Task:**

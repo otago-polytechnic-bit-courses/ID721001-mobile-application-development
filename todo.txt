@@ -1,0 +1,14 @@
+Async storage and SQLite
+Camera
+List
+Gesture handler
+Firebase storage and authentication
+Local authentication
+Localization
+Location
+Lottie
+Push notifications
+Text to speech
+Splash screen
+Video
+WebView

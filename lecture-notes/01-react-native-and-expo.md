@@ -1,16 +1,16 @@
-# 01: Expo and React Native
-
-## Expo
+# 01: React Native and Expo 
 
 ## React Native
 
-## Getting Started
+## Expo
 
-### Create a new project
+## Getting Started
 
 ```bash
 npx create-expo-app 01-playground
 ```
+
+## File Structure
 
 ### App.jsx
 
@@ -234,7 +234,7 @@ What happens when you click on the Choose a Pokémon or Use this Pokémon button
 ### Image Picker
 
 ```bash
-npx expo install expo-image-picker
+npm install expo-image-picker
 ```
 
 ```jsx
@@ -320,7 +320,7 @@ You should see the following:
 ### Take a Screenshot
 
 ```bash
-npx expo install react-native-view-shot expo-media-library
+npm install react-native-view-shot expo-media-library
 ```
 
 ```jsx
@@ -371,8 +371,8 @@ const App = () => {
       if (localUri) {
         alert("Saved!");
       }
-    } catch (e) {
-      console.log(e);
+    } catch (err) {
+      console.log(err);
     }
   };
 
@@ -436,8 +436,8 @@ const onSaveImageAsync = async () => {
       if (localUri) {
         alert("Saved!");
       }
-    } catch (e) {
-      console.log(e);
+    } catch (err) {
+      console.log(err);
     }
   } else {
     try {
@@ -451,8 +451,8 @@ const onSaveImageAsync = async () => {
       link.download = "some-img.jpeg";
       link.href = dataUrl;
       link.click();
-    } catch (e) {
-      console.log(e);
+    } catch (err) {
+      console.log(err);
     }
   }
 };
@@ -463,7 +463,7 @@ const onSaveImageAsync = async () => {
 ## Splash Screen
 
 ```npm
-npx expo install expo-splash-screen
+npm install expo-splash-screen
 ```
 
 **Research Task:**
