@@ -6,6 +6,8 @@
 
 ## Emulator
 
+An **emulator** is a software that mimics the hardware and software of a mobile device. It allows developers to test their applications without having to use a physical device. It is useful for testing applications on different devices.
+
 ![](../resources/img/01/android-studio-1.PNG)
 
 ![](../resources/img/01/android-studio-2.PNG)
@@ -30,13 +32,15 @@
 
 **Expo** is a framework and a platform for building, deploying, and managing **React Native** applications. It provides a set of tools and services that simplify the development and testing of **React Native** applications. **Expo** allows developers to build **React Native** applications without having to install and configure **Android Studio** or **Xcode**. It also provides a set of tools for managing the entire development process, including building, testing, and deploying applications.
 
-## Getting Started
+### Getting Started
+
+Create a new project using the following command:
 
 ```bash
 npx create-expo-app 01-playground
 ```
 
-## File Structure
+### File Structure
 
 ```bash
 01-playground
@@ -176,6 +180,12 @@ Reload your application. You should see the following:
 
 ### Button.jsx
 
+To use **vector icons**, install the following dependency:
+
+```bash
+npm install @expo/vector-icons
+```
+
 In the `components` directory, create a new file called `Button.jsx`. Add the following code:
 
 ```jsx
@@ -298,11 +308,11 @@ What happens when you click on the **Choose a Pokémon** or **Use this Pokémon*
 
 ## Image Picker
 
-We will use the **expo-image-picker** library to allow the user to select an image from their device's image library.
+We will use the **expo-image-picker** dependency to allow the user to select an image from their device's image library.
 
 ### Getting Started
 
-To get started, install the **expo-image-picker** library:
+To get started, install the following dependency:
 
 ```bash
 npm install expo-image-picker
@@ -429,11 +439,11 @@ Once you have refactored the code, you should see the following when you select 
 
 ## Take a Screenshot
 
-We will use the **react-native-view-shot** library to take a screenshot of the image that is displayed on the screen.
+We will use the **react-native-view-shot** dependency to take a screenshot of the image that is displayed on the screen.
 
 ### Getting Started
 
-To get started, install the **react-native-view-shot** and **expo-media-library** libraries:
+To get started, install the following dependencies:
 
 ```bash
 npm install react-native-view-shot expo-media-library
@@ -551,7 +561,7 @@ We will look at how to download the image when the user clicks on the **Use this
 
 ### Getting Started
 
-To get started, install the **dom-to-image** library:
+To get started, install the following dependency:
 
 ```bash
 npm install dom-to-image
@@ -613,6 +623,10 @@ Reload your application. You should see the following when you click on the **Us
 ![](../resources/img/01/web-2.PNG)
 
 ## Splash Screen
+
+### Getting Started
+
+To get started, install the following dependency:
 
 ```npm
 npm install expo-splash-screen
