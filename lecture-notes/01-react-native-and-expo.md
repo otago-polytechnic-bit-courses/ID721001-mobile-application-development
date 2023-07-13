@@ -397,7 +397,7 @@ const ImageViewer = (props) => {
 
 - `props.selectedImg` is a string that contains the URI of the selected image. If the user has not selected an image, it is `null`.
 
-How do we get the URI of the selected image? Look at the `result` object that is logged to the console when you select an image.
+**How do we get the URI of the selected image?** Look at the `result` object that is logged to the console when you select an image.
 
 Once you have refactored the code, you should see the following when you select an image:
 
@@ -521,7 +521,7 @@ With **React Native**, you can run your application in a web browser. Using onli
 
 Once you have implemented this feature, you should see the following when you run your application in a web browser:
 
-<img src="../resources/img/01/web-1.png" width="250" height="444" />
+<img src="../resources/img/01/web-1.PNG" width="250" height="444" />
 
 ## Web Browser
 
@@ -585,7 +585,7 @@ const onSaveImageAsync = async () => {
 
 Reload your application. You should see the following when you click on the **Use this Pokémon** button:
 
-<img src="../resources/img/01/web-2.png" width="250" height="444" />
+<img src="../resources/img/01/web-2.PNG" width="250" height="444" />
 
 ## Splash Screen
 
