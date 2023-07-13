@@ -1,8 +1,12 @@
-# 01: React Native and Expo 
+# 01: React Native and Expo
 
 ## React Native
 
+**React Native** is a library for building native mobile applications using **JavaScript** and **React**. It allows developers to create mobile applications for **iOS** and **Android** platforms using a single codebase. **React Native** utilises native components to render the user interface, resulting in highly performant and responsive applications. It combines the power of **React**, a popular **JavaScript** library for building user interfaces, with native platform capabilities. With **React Native**, developers can write code once and deploy it on multiple platforms, saving time and effort in mobile application development.
+
 ## Expo
+
+**Expo** is a framework and a platform for building, deploying, and managing **React Native** applications. It provides a set of tools and services that simplify the development and testing of **React Native** applications. **Expo** allows developers to build **React Native** applications without having to install and configure **Android Studio** or **Xcode**. It also provides a set of tools for managing the entire development process, including building, testing, and deploying applications.
 
 ## Getting Started
 
@@ -12,7 +16,32 @@ npx create-expo-app 01-playground
 
 ## File Structure
 
-### App.jsx
+```bash
+01-playground
+├── App.js
+├── app.json
+├── assets
+│   ├── adaptive-icon.png
+│   ├── favicon.png
+│   ├── icon.png
+│   └── splash.png
+├── babel.config.js
+├── package.json
+├── package-lock.json
+└── node_modules
+```
+
+- `App.js` is the entry point of the application.
+- `app.json` contains the configuration for the application.
+- `assets` contains the images and icons used in the application.
+- `babel.config.js` contains the configuration for **Babel**, a **JavaScript** compiler.
+- `package.json` contains the dependencies and scripts for the application.
+- `package-lock.json` contains the exact versions of the dependencies.
+- `node_modules` contains the dependencies.
+
+### App.js
+
+In `App.js`, you should see the following code:
 
 ```js
 import { StatusBar } from "expo-status-bar";
@@ -37,6 +66,10 @@ const styles = StyleSheet.create({
 });
 ```
 
+- `View` is a container that supports layout with **flexbox**, **style**, **some touch handling**, and **accessibility controls**.
+- `Text` is a component for displaying text.
+- `StatusBar` is a component for controlling the status bar.
+
 Run the following command:
 
 ```bash
@@ -49,6 +82,7 @@ You should see the following:
 
 **Research Tasks:**
 
+- Rename `App.js` to `App.jsx`.
 - Convert `App` into an arrow function.
 - Change the `backgroundColor`.
 - Change the `Text` component's `color`. **Note:** Use the `style` prop.
@@ -78,7 +112,11 @@ const styles = StyleSheet.create({
 export default ImageViewer;
 ```
 
-Update the `App.jsx` to the following:
+- `Image` is a component for displaying images.
+
+### App.jsx
+
+Refactor `App.jsx` to the following:
 
 ```jsx
 // ...
@@ -110,7 +148,7 @@ const styles = StyleSheet.create({
 // ...
 ```
 
-You should see the following:
+Reload your application. You should see the following:
 
 <img src="../resources/img/01/phone-2.png" width="250" height="444" />
 
@@ -187,7 +225,12 @@ const styles = StyleSheet.create({
 export default Button;
 ```
 
-Update the `App.jsx` to the following:
+- `Pressable` is a component that detects various stages of press interactions on any of its child components.
+- `FontAwesome` is a component that renders **FontAwesome** icons.
+
+### App.jsx
+
+Refactor `App.jsx` to the following:
 
 ```jsx
 // ...
@@ -223,19 +266,29 @@ const styles = StyleSheet.create({
 // ...
 ```
 
-You should see the following:
+Reload your application. You should see the following:
 
 <img src="../resources/img/01/phone-3.png" width="250" height="444" />
 
-What happens when you click on the Choose a Pokémon or Use this Pokémon buttons?
+What happens when you click on the **Choose a Pokémon** or **Use this Pokémon** buttons?
 
 <img src="../resources/img/01/phone-4.png" width="250" height="444" />
 
-### Image Picker
+## Image Picker
+
+We will use the **expo-image-picker** library to allow the user to select an image from their device's image library.
+
+### Getting Started
+
+To get started, install the **expo-image-picker** library:
 
 ```bash
 npm install expo-image-picker
 ```
+
+### Button.jsx
+
+Refactor the `Button.jsx` to the following:
 
 ```jsx
 // ...
@@ -264,6 +317,12 @@ const Button = (props) => {
 
 // ...
 ```
+
+- `props.onPress` is a function that is passed in as a prop. It is called when the button is pressed.
+
+### App.jsx
+
+Refactor `App.jsx` to the following:
 
 ```jsx
 // ...
@@ -305,7 +364,11 @@ const App = () => {
 // ...
 ```
 
-You should see the following:
+- `launchImageLibraryAsync` is a function that launches the device's image library. It returns a promise that resolves to an object containing information about the selected image.
+- `pickImageAsync` is an asynchronous function that calls `launchImageLibraryAsync` and logs `result` to the console if the user selects an image. Otherwise, it alerts the user that they did not select an image. We will refactor this function later to display the selected image.
+- `onPress={pickImageAsync}` is a prop that is passed to the **Choose a Pokémon** button. It calls the `pickImageAsync` function when the button is pressed.
+
+Reload your application. You should see the following when you click on the **Choose a Pokémon** button:
 
 <img src="../resources/img/01/phone-5.png" width="250" height="444" />
 
@@ -313,15 +376,50 @@ You should see the following:
 
 **Research Task:**
 
+Refactor the code so that when the user selects an image, it is displayed on the screen.
+
+To get started, you will need to refactor `ImageViewer.jsx` to the following:
+
+```jsx
+// ...
+
+const ImageViewer = (props) => {
+  const imgSrc =
+    props.selectedImg !== null
+      ? { uri: props.selectedImg }
+      : props.placeholderImgSrc;
+
+  return <Image source={imgSrc} style={styles.image} />;
+};
+
+// ...
+```
+
+- `props.selectedImg` is a string that contains the URI of the selected image. If the user has not selected an image, it is `null`.
+
+How do we get the URI of the selected image? Look at the `result` object that is logged to the console when you select an image.
+
+Once you have refactored the code, you should see the following when you select an image:
+
 <img src="../resources/img/01/phone-7.png" width="250" height="444" />
 
 <img src="../resources/img/01/phone-8.png" width="250" height="444" />
 
-### Take a Screenshot
+## Take a Screenshot
+
+We will use the **react-native-view-shot** library to take a screenshot of the image that is displayed on the screen.
+
+### Getting Started
+
+To get started, install the **react-native-view-shot** and **expo-media-library** libraries:
 
 ```bash
 npm install react-native-view-shot expo-media-library
 ```
+
+### Button.jsx
+
+Refactor the `Button.jsx` to the following:
 
 ```jsx
 // ...
@@ -341,11 +439,17 @@ const Button = (props) => {
 // ...
 ```
 
+- `props.onPress` is a function that is passed in as a prop. It is called when the button is pressed.
+
+### App.jsx
+
+Refactor `App.jsx` to the following:
+
 ```jsx
 // ...
 
-import { useRef } from "react";
 import { saveToLibraryAsync, usePermissions } from "expo-media-library";
+import { useRef } from "react";
 import { captureRef } from "react-native-view-shot";
 
 // ...
@@ -356,7 +460,7 @@ const App = () => {
 
   const imageRef = useRef();
 
-  if (status === null) requestPermission();
+  if (status === null) requestPermission(); // Request permission to access the media library
 
   // ...
 
@@ -368,9 +472,8 @@ const App = () => {
       });
 
       await saveToLibraryAsync(localUri);
-      if (localUri) {
-        alert("Saved!");
-      }
+
+      if (localUri) alert("Saved!");
     } catch (err) {
       console.log(err);
     }
@@ -382,7 +485,7 @@ const App = () => {
         <View ref={imageRef} collapsable={false}>
           <ImageViewer
             placeholderImgSrc={placeholderImg}
-            selectedImage={selectedImage}
+            selectedImg={selectedImg}
           />
         </View>
       </View>
@@ -402,33 +505,55 @@ const App = () => {
 // ...
 ```
 
+- `usePermissions` is a hook that requests permission to access the device's media library. It returns an array containing the status of the permission request and a function that requests permission.
+- `imageRef` is a reference to the `View` that contains the image.
+- `onSaveImageAsync` is an asynchronous function that takes a screenshot of the image and saves it to the device's media library. It also displays an alert if the image is saved successfully.
+
+Reload your application. You should see the following:
+
 <img src="../resources/img/01/phone-9.png" width="250" height="444" />
 
 <img src="../resources/img/01/phone-10.png" width="250" height="444" />
 
 **Research Task:**
 
+With **React Native**, you can run your application in a web browser. Using online resources, research and implement this feature.
+
+Once you have implemented this feature, you should see the following when you run your application in a web browser:
+
 <img src="../resources/img/01/web-1.png" width="250" height="444" />
 
 ## Web Browser
+
+We will look at how to download the image when the user clicks on the **Use this Pokémon** button when the application is running in a web browser.
+
+### Getting Started
+
+To get started, install the **dom-to-image** library:
 
 ```bash
 npm install dom-to-image
 ```
 
-```jsx
-import { toJpeg } from "dom-to-image";
-```
+### App.jsx
+
+In `App.jsx`, import the following:
 
 ```jsx
 import { StyleSheet, View, Platform } from "react-native";
+import { toJpeg } from "dom-to-image";
 ```
+
+- `Platform` is a module that provides information about the platform that the application is running on.
+- `toJpeg` is a function that takes a screenshot of the image and returns a data URL.
+
+Add the following to the `onSaveImageAsync` function:
 
 ```jsx
 const onSaveImageAsync = async () => {
-  if (Platform.OS !== "web") {
+  if (Platform.OS !== "web") { // Check if the application is running in a web browser
     try {
-      const localUri = await captureRef(imageRef, {
+      const localUri = await captureRef(imageRef, { 
         height: 440,
         quality: 1,
       });
@@ -439,17 +564,17 @@ const onSaveImageAsync = async () => {
     } catch (err) {
       console.log(err);
     }
-  } else {
+  } else { // If the application is running in a web browser
     try {
-      const dataUrl = await toJpeg(imageRef.current, {
+      const dataUrl = await toJpeg(imageRef.current, { // Take a screenshot of the image
         quality: 0.95,
         width: 320,
         height: 440,
       });
 
       const link = document.createElement("a");
-      link.download = "some-img.jpeg";
-      link.href = dataUrl;
+      link.download = "some-img.jpeg"; // Set the name of the downloaded file
+      link.href = dataUrl; 
       link.click();
     } catch (err) {
       console.log(err);
@@ -457,6 +582,8 @@ const onSaveImageAsync = async () => {
   }
 };
 ```
+
+Reload your application. You should see the following when you click on the **Use this Pokémon** button:
 
 <img src="../resources/img/01/web-2.png" width="250" height="444" />
 

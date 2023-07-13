@@ -80,11 +80,11 @@ export default DetailsScreen;
 ```
 
 ```jsx
-//...
+// ...
 
 import DetailsScreen from "./screens/DetailsScreen";
 
-//...
+// ...
 
 const App = () => {
   return (
@@ -97,7 +97,7 @@ const App = () => {
   );
 };
 
-//...
+// ...
 ```
 
 ## Moving Between Screens
@@ -119,7 +119,7 @@ const HomeScreen = (props) => {
   );
 };
 
-//...
+// ...
 ```
 
 ### DetailsScreen.jsx
@@ -136,7 +136,7 @@ const DetailsScreen = (props) => {
   );
 };
 
-//...
+// ...
 ```
 
 <img src="../resources/img/02/phone-1.png" width="250" height="444" />
@@ -148,7 +148,7 @@ const DetailsScreen = (props) => {
 ### HomeScreen.jsx
 
 ```jsx
-//...
+// ...
 
 const HomeScreen = (props) => {
   return (
@@ -167,13 +167,13 @@ const HomeScreen = (props) => {
   );
 };
 
-//...
+// ...
 ```
 
 ### DetailsScreen.jsx
 
 ```jsx
-//...
+// ...
 
 const DetailsScreen = (props) => {
   const { first_name, last_name } = props.route.params;
@@ -187,7 +187,7 @@ const DetailsScreen = (props) => {
   );
 };
 
-//...
+// ...
 ```
 
 <img src="../resources/img/02/phone-3.png" width="250" height="444" />
@@ -202,7 +202,7 @@ const DetailsScreen = (props) => {
 ### App.jsx
 
 ```jsx
-//...
+// ...
 
 const App = () => {
   return (
@@ -225,7 +225,7 @@ const App = () => {
   );
 };
 
-//...
+// ...
 ```
 
 <img src="../resources/img/02/phone-4.png" width="250" height="444" />
@@ -243,11 +243,11 @@ npm install @react-navigation/bottom-tabs
 ### App.jsx
 
 ```jsx
-//...
+// ...
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-//...
+// ...
 
 const Tab = createBottomTabNavigator();
 
@@ -270,7 +270,7 @@ const App = () => {
   );
 };
 
-//...
+// ...
 ```
 
 <img src="../resources/img/02/phone-5.png" width="250" height="444" />
@@ -280,11 +280,11 @@ npm install react-native-vector-icons/MaterialCommunityIcons
 ```
 
 ```jsx
-//...
+// ...
 
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
-//...
+// ...
 
 const App = () => {
   return (
@@ -311,7 +311,7 @@ const App = () => {
   );
 };
 
-//...
+// ...
 ```
 
 <img src="../resources/img/02/phone-6.png" width="250" height="444" />
@@ -345,11 +345,11 @@ module.exports = function (api) {
 ### App.jsx
 
 ```jsx
-//...
+// ...
 
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-//...
+// ...
 
 const Drawer = createDrawerNavigator();
 
@@ -372,7 +372,7 @@ const App = () => {
   );
 };
 
-//...
+// ...
 ```
 
 <img src="../resources/img/02/phone-7.png" width="250" height="444" />
