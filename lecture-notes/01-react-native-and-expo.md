@@ -585,7 +585,7 @@ const onSaveImageAsync = async () => {
 
 Reload your application. You should see the following when you click on the **Use this Pokémon** button:
 
-<img src="../resources/img/01/web-2.PNG" width="750" height="500" />
+![](../resources/img/01/web-1.PNG)
 
 ## Splash Screen
 
