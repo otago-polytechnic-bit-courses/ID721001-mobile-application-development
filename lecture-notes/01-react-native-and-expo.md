@@ -521,7 +521,7 @@ With **React Native**, you can run your application in a web browser. Using onli
 
 Once you have implemented this feature, you should see the following when you run your application in a web browser:
 
-<img src="../resources/img/01/web-1.PNG" width="250" height="444" />
+![](../resources/img/01/web-1.PNG)
 
 ## Web Browser
 
@@ -585,7 +585,7 @@ const onSaveImageAsync = async () => {
 
 Reload your application. You should see the following when you click on the **Use this Pokémon** button:
 
-![](../resources/img/01/web-1.PNG)
+![](../resources/img/01/web-2.PNG)
 
 ## Splash Screen
 
