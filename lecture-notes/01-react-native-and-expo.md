@@ -2,13 +2,17 @@
 
 ## Environment Variables
 
-On the lab computers, the `ANDROID_HOME` **environment variable** may not be set. To set the `ANDROID_HOME` environment variable, follow the steps below:
+On the lab computers, the `ANDROID_HOME` **environment variable** may not be set. To set the `ANDROID_HOME` **environment variable**, follow the steps below:
 
 ![](../resources/img/01/env-1.PNG)
 
 ## Emulator
 
 An **emulator** is a software that mimics the hardware and software of a mobile device. It allows developers to test their applications without having to use a physical device. It is useful for testing applications on different devices.
+
+You will need to download and install an **emulator** to run **React Native** applications on your computer. You can use **Android Studio** or **Xcode** to install an **emulator**. **Android Studio** is an integrated development environment for building **Android** applications. **Xcode** is an integrated development environment for building **iOS** applications. **Android Studio** is available for **Windows**, **macOS**, and **Linux**. **Xcode** is only available for **macOS**.
+
+On the lab computers, **Android Studio** is already installed. To create an **emulator** using **Android Studio**, follow the steps below:
 
 ![](../resources/img/01/android-studio-1.PNG)
 
