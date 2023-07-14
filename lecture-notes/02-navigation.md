@@ -256,6 +256,8 @@ We may want to change the title of the header bar. To do this, we need to use th
 
 ### App.jsx
 
+Refactor `App.jsx` to the following:
+
 ```jsx
 // ...
 
@@ -295,11 +297,17 @@ There are other types of navigators that we can use. One of these is the bottom 
 
 ### Getting Started
 
+To use **bottom tab navigation**, install the following dependency:
+
 ```bash
 npm install @react-navigation/bottom-tabs
 ```
 
 ### App.jsx
+
+**Note:** All **stack navigator** code has been commented out.
+
+Refactor `App.jsx` to the following:
 
 ```jsx
 // ...
@@ -332,11 +340,23 @@ const App = () => {
 // ...
 ```
 
+- `createBottomTabNavigator` - This is a function that creates a bottom tab navigator.
+
+Reload your application. You should see the following:
+
 <img src="../resources/img/02/phone-5.png" width="250" height="444" />
+
+### Adding Icons
+
+We can add icons to the bottom tab navigator. To do this, we need to install the **react-native-vector-icons** package.
 
 ```bash
 npm install react-native-vector-icons/MaterialCommunityIcons
 ```
+
+### App.jsx
+
+Refactor `App.jsx` to the following:
 
 ```jsx
 // ...
@@ -373,23 +393,37 @@ const App = () => {
 // ...
 ```
 
+- `tabBarLabel` - This is the label that is displayed on the tab bar.
+- `tabBarIcon` - This is the icon that is displayed on the tab bar.
+
+Reload your application. You should see the following:
+
 <img src="../resources/img/02/phone-6.png" width="250" height="444" />
 
 **Research Task:**
+
+Add an icon to the `Details` tab.
 
 **Resource:** <https://reactnavigation.org/docs/bottom-tab-navigator>
 
 ## Drawer Navigation
 
+Another type of navigator is the drawer navigator. This is a navigator that displays a drawer on the left side of the screen. This is useful for applications that have a large number of screens.
+
 ### Getting Started
 
-```bash
-npm install @react-navigation/drawer
-```
+To use **drawer navigation**, install the following dependencies:
 
 ```bash
-npm install react-native-gesture-handler react-native-reanimated@2.14.4
+npm install @react-navigation/drawer react-native-gesture-handler react-native-reanimated@2.14.4
 ```
+
+- `react-native-gesture-handler` - This is a library that provides native-driven gesture management APIs for building best possible touch-based experiences in React Native.
+- `react-native-reanimated` - This is a library that provides a more comprehensive, low level abstraction for the Animated library API to be built on top of and hence allow for much greater flexibility especially when it comes to gesture based interactions.
+
+### babel.config.js
+
+Refactor `babel.config.js` to the following:
 
 ```js
 module.exports = function (api) {
@@ -402,6 +436,10 @@ module.exports = function (api) {
 ```
 
 ### App.jsx
+
+**Note:** All **bottom tab navigator** code has been commented out.
+
+Refactor `App.jsx` to the following:
 
 ```jsx
 // ...
@@ -433,6 +471,10 @@ const App = () => {
 
 // ...
 ```
+
+- `createDrawerNavigator` - This is a function that creates a drawer navigator.
+
+Reload your application. You should see the following:
 
 <img src="../resources/img/02/phone-7.png" width="250" height="444" />
 
