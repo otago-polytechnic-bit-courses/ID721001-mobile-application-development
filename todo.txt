@@ -5,10 +5,12 @@ Gesture handler
 Firebase storage and authentication
 Local authentication
 Localization
-Location
+Location and maps
 Lottie
 Push notifications
 Text to speech
 Splash screen
 Video
 WebView
+Jest
+Publishing

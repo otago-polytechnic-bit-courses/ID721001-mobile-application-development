@@ -247,9 +247,6 @@ Reload your application. You should see the following:
 
 **Research Tasks:**
 
-- Easy task
-- Hard task
-
 ## Configuring the Header Bar
 
 We may want to change the title of the header bar. To do this, we need to use the `options` prop in the `Stack.Screen` component.

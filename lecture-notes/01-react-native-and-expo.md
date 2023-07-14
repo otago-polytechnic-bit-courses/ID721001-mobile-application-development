@@ -621,19 +621,3 @@ const onSaveImageAsync = async () => {
 Reload your application. You should see the following when you click on the **Use this Pokémon** button:
 
 ![](../resources/img/01/web-2.PNG)
-
-## Splash Screen
-
-### Getting Started
-
-To get started, install the following dependency:
-
-```npm
-npm install expo-splash-screen
-```
-
-**Research Task:**
-
-## App Icon
-
-**Research Task:**
