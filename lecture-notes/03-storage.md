@@ -2,19 +2,27 @@
 
 ## Getting Started
 
+Create a new project using the following command:
+
 ```bash
 npx create-expo-app 03-playground
 ```
 
 ## Async Storage
 
+**Async storage** is a simple, unencrypted, asynchronous, persistent, key-value storage system that is global to the application.
+
 ### Getting Started
+
+To get started, install the following dependency:
 
 ```bash
 npm install @react-native-async-storage/async-storage
 ```
 
 ### App.jsx
+
+Use the knowledge and skills gained from the previous lecture to implement **stack navigation**.
 
 ```jsx
 import { NavigationContainer } from "@react-navigation/native";

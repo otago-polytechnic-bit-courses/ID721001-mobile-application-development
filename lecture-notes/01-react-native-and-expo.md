@@ -2,6 +2,8 @@
 
 ## Environment Variables
 
+On the lab computers, the `ANDROID_HOME` **environment variable** may not be set. To set the `ANDROID_HOME` environment variable, follow the steps below:
+
 ![](../resources/img/01/env-1.PNG)
 
 ## Emulator
@@ -32,7 +34,7 @@ An **emulator** is a software that mimics the hardware and software of a mobile 
 
 **Expo** is a framework and a platform for building, deploying, and managing **React Native** applications. It provides a set of tools and services that simplify the development and testing of **React Native** applications. **Expo** allows developers to build **React Native** applications without having to install and configure **Android Studio** or **Xcode**. It also provides a set of tools for managing the entire development process, including building, testing, and deploying applications.
 
-### Getting Started
+## Getting Started
 
 Create a new project using the following command:
 

@@ -1,16 +1,18 @@
 # 02: Navigation
 
-## React Navigation
-
-**React Navigation** is a library that allows you to navigate between screens in your React Native apps.
-
-### Getting Started
+## Getting Started
 
 Create a new project using the following command:
 
 ```bash
 npx create-expo-app 02-playground
 ```
+
+## React Navigation
+
+**React Navigation** is a library that allows you to navigate between screens in your React Native apps.
+
+### Getting Started
 
 Install the following dependencies:
 
