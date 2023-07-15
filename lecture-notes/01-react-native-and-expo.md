@@ -121,7 +121,7 @@ You should see the following:
 
 ### ImageViewer.jsx
 
-In the `assets` directory, create a new directory called `imgs`. You have been given five Pokémon images. Put these images into the `imgs` directory.
+In the `assets` directory, create a new directory called `imgs`. You have been given a directory of Pokémon images called `pokemon-imgs`. Copy the contents of the `pokemon-imgs` directory into the `imgs` directory.
 
 In the root directory, create a new directory called `components`. In the `components` directory, create a new file called `ImageViewer.jsx`. Add the following code:
 
@@ -314,7 +314,7 @@ What happens when you click on the **Choose a Pokémon** or **Use this Pokémon*
 
 ## Image Picker
 
-We will use the **expo-image-picker** dependency to allow the user to select an image from their device's image library.
+We will use the `expo-image-picker` dependency to allow the user to select an image from their device's image library.
 
 ### Getting Started
 
@@ -445,7 +445,7 @@ Once you have refactored the code, you should see the following when you select 
 
 ## Take a Screenshot
 
-We will use the **react-native-view-shot** dependency to take a screenshot of the image that is displayed on the screen.
+We will use the `react-native-view-shot` dependency to take a screenshot of the image that is displayed on the screen.
 
 ### Getting Started
 

@@ -1,4 +1,4 @@
-# 03: Storage
+# 03: Async Storage
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ npm install @react-native-async-storage/async-storage
 
 ### App.jsx
 
-Use the knowledge and skills gained from the previous lecture to implement **stack navigation**.
+Use the knowledge and skills gained from the `02-navigation` lecture to implement **stack navigation**.
 
 ```jsx
 import { NavigationContainer } from "@react-navigation/native";
@@ -48,6 +48,8 @@ export default App;
 ```
 
 ### HomeScreen.jsx
+
+In the root directory, create a new directory called `screens`. In the `screens` directory, create a new file called `HomeScreen.jsx`. Add the following code:
 
 ```jsx
 import { Button, View, Text, TextInput } from "react-native";
@@ -106,9 +108,15 @@ const HomeScreen = (props) => {
 export default HomeScreen;
 ```
 
+Reload your application. You should see the following: 
+
+<img src="../resources/img/03/phone-1.png" width="250" height="444" />
+
 <img src="../resources/img/03/phone-2.png" width="250" height="444" />
 
 ### DetailsScreen.jsx
+
+In the `screens` directory, create a new file called `DetailsScreen.jsx`. Add the following code:
 
 ```jsx
 import { Button, View, Text } from "react-native";
@@ -151,10 +159,8 @@ const DetailsScreen = (props) => {
 export default DetailsScreen;
 ```
 
+Reload your application. You should see the following: 
+
 <img src="../resources/img/03/phone-3.png" width="250" height="444" />
 
 **Research Tasks:**
-
--
--
--

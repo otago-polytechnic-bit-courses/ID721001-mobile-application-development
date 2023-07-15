@@ -1,0 +1,223 @@
+# 04: List Views and ScrollView
+
+## Getting Started
+
+Create a new project using the following command:
+
+```bash
+npx create-expo-app 04-playground
+```
+
+## List
+
+A **list** is a collection of items that are displayed vertically. We are going to look at different ways to create a list in **React Native**.
+
+## FlatList
+
+### App.jsx
+
+Use the knowledge and skills gained from the `02-navigation` lecture to implement **stack navigation**.
+
+```jsx
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+import HomeScreen from "./screens/HomeScreen";
+import DetailsScreen from "./screens/DetailsScreen";
+
+const Stack = createNativeStackNavigator();
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
+```
+
+### nbaTeams.js
+
+In the root directory, create a new directory called `data`. In the `data` directory, create a new file called `nbaTeams.js`. In the `nbaTeams.js` file, add the following code:
+
+```js
+const nbaTeams = [
+  { key: "Atlanta Hawks" },
+  { key: "Boston Celtics" },
+  { key: "Brooklyn Nets" },
+  { key: "Charlotte Hornets" },
+  { key: "Chicago Bulls" },
+  { key: "Cleveland Cavaliers" },
+  { key: "Dallas Mavericks" },
+  { key: "Denver Nuggets" },
+  { key: "Detroit Pistons" },
+  { key: "Golden State Warriors" },
+  { key: "Houston Rockets" },
+  { key: "Indiana Pacers" },
+  { key: "LA Clippers" },
+  { key: "Los Angeles Lakers" },
+  { key: "Memphis Grizzlies" },
+  { key: "Miami Heat" },
+  { key: "Milwaukee Bucks" },
+  { key: "Minnesota Timberwolves" },
+  { key: "New Orleans Pelicans" },
+  { key: "New York Knicks" },
+  { key: "Oklahoma City Thunder" },
+  { key: "Orlando Magic" },
+  { key: "Philadelphia 76ers" },
+  { key: "Phoenix Suns" },
+  { key: "Portland Trail Blazers" },
+  { key: "Sacramento Kings" },
+  { key: "San Antonio Spurs" },
+  { key: "Toronto Raptors" },
+  { key: "Utah Jazz" },
+  { key: "Washington Wizards" },
+];
+
+export default nbaTeams;
+```
+
+### HomeScreen.jsx
+
+In the root directory, create a new directory called `screens`. In the `screens` directory, create a new file called `HomeScreen.jsx`. Add the following code:
+
+```jsx
+import { FlatList, StyleSheet, Text, View } from "react-native";
+import nbaTeams from "../data/nba-teams";
+
+const HomeScreen = () => {
+  return (
+    <View style={styles.container}>
+      <FlatList
+        data={nbaTeams}
+        renderItem={({ item }) => <Text style={styles.item}>{item.key}</Text>}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
+  },
+});
+
+export default HomeScreen;
+```
+
+Reload your application. You should see the following:
+
+<img src="../resources/img/04/phone-1.png" width="250" height="444" />
+
+## SectionList
+
+### nbaTeams.js
+
+Refactor `nbaTeams.js` to the following:
+
+```js
+const nbaTeams = [
+  { key: "Atlanta Hawks", division: "Southeast" },
+  { key: "Boston Celtics", division: "Atlantic" },
+  { key: "Brooklyn Nets", division: "Atlantic" },
+  { key: "Charlotte Hornets", division: "Southeast" },
+  { key: "Chicago Bulls", division: "Central" },
+  { key: "Cleveland Cavaliers", division: "Central" },
+  { key: "Dallas Mavericks", division: "Southwest" },
+  { key: "Denver Nuggets", division: "Northwest" },
+  { key: "Detroit Pistons", division: "Central" },
+  { key: "Golden State Warriors", division: "Pacific" },
+  { key: "Houston Rockets", division: "Southwest" },
+  { key: "Indiana Pacers", division: "Central" },
+  { key: "LA Clippers", division: "Pacific" },
+  { key: "Los Angeles Lakers", division: "Pacific" },
+  { key: "Memphis Grizzlies", division: "Southwest" },
+  { key: "Miami Heat", division: "Southeast" },
+  { key: "Milwaukee Bucks", division: "Central" },
+  { key: "Minnesota Timberwolves", division: "Northwest" },
+  { key: "New Orleans Pelicans", division: "Southwest" },
+  { key: "New York Knicks", division: "Atlantic" },
+  { key: "Oklahoma City Thunder", division: "Northwest" },
+  { key: "Orlando Magic", division: "Southeast" },
+  { key: "Philadelphia 76ers", division: "Atlantic" },
+  { key: "Phoenix Suns", division: "Pacific" },
+  { key: "Portland Trail Blazers", division: "Northwest" },
+  { key: "Sacramento Kings", division: "Pacific" },
+  { key: "San Antonio Spurs", division: "Southwest" },
+  { key: "Toronto Raptors", division: "Atlantic" },
+  { key: "Utah Jazz", division: "Northwest" },
+  { key: "Washington Wizards", division: "Southeast" },
+];
+
+export default nbaTeams;
+```
+
+### HomeScreen.jsx
+
+Refactor `HomeScreen.jsx` to the following:
+
+```jsx
+import { SectionList, StyleSheet, Text, View } from "react-native";
+import nbaTeams from "../data/nba-teams";
+
+const HomeScreen = () => {
+  const getTeamsByDivision = (division) =>
+    nbaTeams.filter((team) => team.division === division);
+
+  const sections = [
+    { title: "Atlantic", data: getTeamsByDivision("Atlantic") },
+    { title: "Central", data: getTeamsByDivision("Central") },
+    { title: "Northwest", data: getTeamsByDivision("Northwest") },
+    { title: "Pacific", data: getTeamsByDivision("Pacific") },
+    { title: "Southeast", data: getTeamsByDivision("Southeast") },
+    { title: "Southwest", data: getTeamsByDivision("Southwest") },
+  ];
+
+  return (
+    <View style={styles.container}>
+      <SectionList
+        sections={sections}
+        renderItem={({ item }) => <Text style={styles.item}>{item.key}</Text>}
+        renderSectionHeader={({ section }) => (
+          <Text style={styles.sectionHeader}>{section.title}</Text>
+        )}
+        keyExtractor={(item) => item.key}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  sectionHeader: {
+    padding: 10,
+    fontSize: 18,
+    fontWeight: "bold",
+    backgroundColor: "lightgray",
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
+  },
+});
+
+export default HomeScreen;
+```
+
+Reload your application. You should see the following:
+
+<img src="../resources/img/04/phone-2.png" width="250" height="444" />
+
+## FlashList
