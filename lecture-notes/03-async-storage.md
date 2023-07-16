@@ -164,3 +164,19 @@ Reload your application. You should see the following:
 <img src="../resources/img/03/phone-3.png" width="250" height="444" />
 
 **Research Tasks:**
+
+![](../resources/img/03/research-task-1.png)
+
+![](../resources/img/03/research-task-2.png)
+
+![](../resources/img/03/research-task-3.png)
+
+![](../resources/img/03/research-task-4.png)
+
+![](../resources/img/03/research-task-5.png)
+
+![](../resources/img/03/research-task-6.png)
+
+![](../resources/img/03/research-task-7.png)
+
+![](../resources/img/03/research-task-8.png)

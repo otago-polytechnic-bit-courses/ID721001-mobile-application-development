@@ -1,4 +1,4 @@
-# 04: List Views and ScrollView
+# 04: ScrollView and Lists 
 
 ## Getting Started
 
@@ -8,11 +8,13 @@ Create a new project using the following command:
 npx create-expo-app 04-playground
 ```
 
-## List
+## ScrollView
 
-A **list** is a collection of items that are displayed vertically. We are going to look at different ways to create a list in **React Native**.
+A **scroll view** is a component that provides a scrollable view of its content. It is used to display a large amount of content that does not fit within the device's screen and allows the user to scroll through the content by swiping up or down.
 
 ## FlatList
+
+A **flat list** is a component that provides an efficient way to display lists of data. It is similar to a **scroll view** but is optimised to only display its content that is currently visible on the device's screen rather than rendering all of its content at once.
 
 ### App.jsx
 
@@ -173,6 +175,14 @@ const HomeScreen = () => {
   const getTeamsByDivision = (division) =>
     nbaTeams.filter((team) => team.division === division);
 
+  const renderItem = ({ item }) => (
+    <Text style={styles.item}>{item.key}</Text>
+  );
+
+  const renderSectionHeader = ({ section }) => (
+    <Text style={styles.sectionHeader}>{section.title}</Text>
+  );
+
   const sections = [
     { title: "Atlantic", data: getTeamsByDivision("Atlantic") },
     { title: "Central", data: getTeamsByDivision("Central") },
@@ -186,10 +196,8 @@ const HomeScreen = () => {
     <View style={styles.container}>
       <SectionList
         sections={sections}
-        renderItem={({ item }) => <Text style={styles.item}>{item.key}</Text>}
-        renderSectionHeader={({ section }) => (
-          <Text style={styles.sectionHeader}>{section.title}</Text>
-        )}
+        renderItem={renderItem}
+        renderSectionHeader={renderSectionHeader}
         keyExtractor={(item) => item.key}
       />
     </View>
@@ -220,4 +228,4 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/04/phone-2.png" width="250" height="444" />
 
-## FlashList
+
