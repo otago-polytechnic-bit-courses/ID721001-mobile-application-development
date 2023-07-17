@@ -479,7 +479,9 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/02/phone-8.png" width="250" height="444" />
 
-**Research Task:**
+**Research Tasks:**
+
+- Create a button on the `HomeScreen` that navigates to another screen called `NASAScreen`. The `NASAScreen`screen will display **Astronomy Picture of the Day** data via the **NASA API**. **Resource:** <https://api.nasa.gov>
 
 <img src="../resources/img/02/research-task-1.png" width="250" height="444" />
 
