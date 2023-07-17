@@ -286,9 +286,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/02/phone-4.png" width="250" height="444" />
-
-<img src="../resources/img/02/phone-5.png" width="250" height="444" />
+<img src="../resources/img/02/phone-4.png" width="250" height="444" /> <img src="../resources/img/02/phone-5.png" width="250" height="444" />
 
 ## Bottom Tab Navigation
 
@@ -476,8 +474,6 @@ const App = () => {
 Reload your application. You should see the following:
 
 <img src="../resources/img/02/phone-7.png" width="250" height="444" /> <img src="../resources/img/02/phone-8.png" width="250" height="444" />
-
-
 
 **Research Tasks:**
 

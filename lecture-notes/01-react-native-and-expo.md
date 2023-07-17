@@ -408,9 +408,7 @@ const App = () => {
 
 Reload your application. You should see the following when you click on the **Choose a Pokémon** button:
 
-<img src="../resources/img/01/phone-5.png" width="250" height="444" />
-
-<img src="../resources/img/01/phone-6.png" width="250" height="444" />
+<img src="../resources/img/01/phone-5.png" width="250" height="444" /> <img src="../resources/img/01/phone-6.png" width="250" height="444" />
 
 **Research Task:**
 
@@ -439,9 +437,7 @@ const ImageViewer = (props) => {
 
 Once you have refactored the code, you should see the following when you select an image:
 
-<img src="../resources/img/01/phone-7.png" width="250" height="444" />
-
-<img src="../resources/img/01/phone-8.png" width="250" height="444" />
+<img src="../resources/img/01/phone-7.png" width="250" height="444" /> <img src="../resources/img/01/phone-8.png" width="250" height="444" />
 
 ## Take a Screenshot
 
@@ -549,9 +545,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/01/phone-9.png" width="250" height="444" />
-
-<img src="../resources/img/01/phone-10.png" width="250" height="444" />
+<img src="../resources/img/01/phone-9.png" width="250" height="444" /> <img src="../resources/img/01/phone-10.png" width="250" height="444" />
 
 **Research Task:**
 
