@@ -184,9 +184,7 @@ const DetailsScreen = (props) => {
 
 Reload your application. You should see the following: 
 
-<img src="../resources/img/02/phone-1.png" width="250" height="444" />
-
-<img src="../resources/img/02/phone-2.png" width="250" height="444" />
+<img src="../resources/img/02/phone-1.png" width="250" height="444" /> <img src="../resources/img/02/phone-2.png" width="250" height="444" />
 
 ## Passing Parameters to Routes
 
