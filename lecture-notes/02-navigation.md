@@ -480,3 +480,14 @@ Reload your application. You should see the following:
 <img src="../resources/img/02/phone-8.png" width="250" height="444" />
 
 **Research Task:**
+
+<img src="../resources/img/02/research-task-1.png" width="250" height="444" />
+
+<img src="../resources/img/02/research-task-2.png" width="250" height="444" />
+
+<img src="../resources/img/02/research-task-3.png" width="250" height="444" />
+
+<img src="../resources/img/02/research-task-4.png" width="250" height="444" />
+
+<img src="../resources/img/02/research-task-5.png" width="250" height="444" />
+
