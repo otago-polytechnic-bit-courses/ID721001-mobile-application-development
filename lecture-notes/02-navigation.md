@@ -481,7 +481,7 @@ Reload your application. You should see the following:
 
 2. Create a button on the `HomeScreen` that navigates to another screen called `TodoScreen`. The `TodoScreen` screen will display todo data via the **JSON Placeholder API**. **Resource:** <https://jsonplaceholder.typicode.com>
 
-<img src="../resources/img/02/research-task-3.png" width="250" height="444" /> <img src="../resources/img/02/research-task-5.png" width="250" height="444" />
+<img src="../resources/img/02/research-task-3.png" width="250" height="444" /> <img src="../resources/img/02/research-task-4.png" width="250" height="444" />
 
 3. When you navigate to both screens, create a component that displays the text `Loading...`. When the data is fetched, display the data.
 
