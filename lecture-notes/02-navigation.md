@@ -471,7 +471,7 @@ const App = () => {
 
 Reload your application using the command:
 
-bash```
+```bash
 npx expo start --clear
 ```
 
