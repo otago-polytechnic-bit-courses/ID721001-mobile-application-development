@@ -234,4 +234,14 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/04/research-task-1.png" width="250" height="444" /> <img src="../resources/img/04/research-task-2.png" width="250" height="444" />
 
-2. 
+2.
+
+<img src="../resources/img/04/research-task-3.png" width="250" height="444" /> <img src="../resources/img/04/research-task-4.png" width="250" height="444" />
+
+3.
+
+<img src="../resources/img/04/research-task-5.png" width="250" height="444" /> <img src="../resources/img/04/research-task-6.png" width="250" height="444" />
+
+4.
+
+<img src="../resources/img/04/research-task-7.png" width="250" height="444" /> <img src="../resources/img/04/research-task-8.png" width="250" height="444" />
