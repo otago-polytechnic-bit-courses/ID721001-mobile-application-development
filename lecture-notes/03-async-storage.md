@@ -175,6 +175,8 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/03/research-task-1.png" width="250" height="444" /> <img src="../resources/img/03/research-task-2.png" width="250" height="444" />
 
+**Resource:** <https://docs.expo.dev/versions/latest/sdk/picker>
+
 2. The category `Picker` component should have the following categories:
 
 <img src="../resources/img/03/research-task-3.png" width="250" height="444" /> 
