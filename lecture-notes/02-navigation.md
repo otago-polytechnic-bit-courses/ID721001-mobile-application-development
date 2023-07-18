@@ -346,7 +346,7 @@ Reload your application. You should see the following:
 We can add icons to the bottom tab navigator. To do this, we need to install the `react-native-vector-icons` package.
 
 ```bash
-npm install react-native-vector-icons/MaterialCommunityIcons
+npm install react-native-vector-icons
 ```
 
 ### App.jsx
