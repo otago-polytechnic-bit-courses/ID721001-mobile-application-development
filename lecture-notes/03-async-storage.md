@@ -193,7 +193,7 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/03/research-task-6.png" width="250" height="444" />
 
-6. Create a component that displays `Loading...` text. When the data is being fetched, display the text.
+6. Create a component that displays `Loading...` text. While the data is being fetched, display the text.
 
 <img src="../resources/img/03/research-task-7.png" width="250" height="444" />
 
