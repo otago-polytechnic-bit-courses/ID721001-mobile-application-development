@@ -475,11 +475,17 @@ Reload your application. You should see the following:
 
 **Research Tasks:**
 
-1. Create a button on the `HomeScreen` that navigates to another screen called `NASAScreen`. The `NASAScreen`screen will display **Astronomy Picture of the Day** data via the **NASA API**. **Resource:** <https://api.nasa.gov>
+1. Create a button on the `HomeScreen` that navigates to another screen called `NASAScreen`. The `NASAScreen`screen will display **Astronomy Picture of the Day** data via the **NASA API**. The data includes:
+
+- Copyright
+- URL
+- Explanation
+
+**Resource:** <https://api.nasa.gov>
 
 <img src="../resources/img/02/research-task-1.png" width="250" height="444" /> <img src="../resources/img/02/research-task-2.png" width="250" height="444" />
 
-2. Create a button on the `HomeScreen` that navigates to another screen called `TodoScreen`. The `TodoScreen` screen will display todo data via the **JSON Placeholder API**. **Resource:** <https://jsonplaceholder.typicode.com>
+2. Create a button on the `HomeScreen` that navigates to another screen called `TodoScreen`. The `TodoScreen` screen will display a random todo between 1 and 10 via the **JSON Placeholder API**. **Resource:** <https://jsonplaceholder.typicode.com>
 
 <img src="../resources/img/02/research-task-3.png" width="250" height="444" /> <img src="../resources/img/02/research-task-4.png" width="250" height="444" />
 

@@ -52,21 +52,26 @@ export default App;
 In the root directory, create a new directory called `screens`. In the `screens` directory, create a new file called `HomeScreen.jsx`. Add the following code:
 
 ```jsx
-import { Button, View, Text, TextInput } from "react-native";
 import { useState } from "react";
+import { Button, View, Text, TextInput } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const HomeScreen = (props) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
+  // These two functions set the state of firstName and lastName
   const onChangeFirstName = (inputText) => setFirstName(inputText);
   const onChangeLastName = (inputText) => setLastName(inputText);
 
   const storePersonData = async () => {
     try {
       const data = { firstName, lastName };
+
+      // Store the data in AsyncStorage
       await AsyncStorage.setItem("person_data", JSON.stringify(data));
+
+      // Reset the state of firstName and lastName
       setFirstName("");
       setLastName("");
     } catch (err) {
@@ -84,7 +89,7 @@ const HomeScreen = (props) => {
           borderWidth: 1,
           marginBottom: 10,
         }}
-        onChangeText={onChangeFirstName}
+        onChangeText={onChangeFirstName} 
         value={firstName}
         placeholder="First Name"
       />
@@ -110,30 +115,31 @@ export default HomeScreen;
 
 Reload your application. You should see the following: 
 
-<img src="../resources/img/03/phone-1.png" width="250" height="444" />
-
-<img src="../resources/img/03/phone-2.png" width="250" height="444" />
+<img src="../resources/img/03/phone-1.png" width="250" height="444" /> <img src="../resources/img/03/phone-2.png" width="250" height="444" />
 
 ### DetailsScreen.jsx
 
 In the `screens` directory, create a new file called `DetailsScreen.jsx`. Add the following code:
 
 ```jsx
-import { Button, View, Text } from "react-native";
 import { useEffect, useState } from "react";
+import { Button, View, Text } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const DetailsScreen = (props) => {
   const [data, setData] = useState(null);
 
+  // Call getData() function when the component mounts
   useEffect(() => {
     getData();
   }, []);
 
+  // Retrieve the person data from AsyncStorage
   const getData = async () => {
     try {
       const value = await AsyncStorage.getItem("person_data");
-      if (value !== null) {
+      // If the person data exists
+      if (value !== null) { 
         const parsedData = JSON.parse(value);
         setData(parsedData);
       }

@@ -377,7 +377,9 @@ const App = () => {
     });
 
     if (!result.canceled) {
-      console.log(result);
+      // You can view the result object in the 
+      // debugger. Press J to open the debugger
+      console.log(result); 
     } else {
       alert("You did not select any Pokémon image.");
     }
