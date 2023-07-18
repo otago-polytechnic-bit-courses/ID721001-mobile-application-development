@@ -193,7 +193,11 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/03/research-task-6.png" width="250" height="444" />
 
-6. On the `QuizDetailsScreen`, retrieve the data from `AsyncStorage` and perform an API call to the following endpoint: `https://opentdb.com/api.php?amount=1&category={REPLACE WITH CATEGORY VALUE IN ASYNC STORAGE}&difficulty={REPLACE WITH THE DIFFICULTY VALUE IN ASYNC STORAGE}&type={REPLACE THE TYPE VALUE IN ASYNC STORAGE}`. Display the following data on the screen: 
+6. Create a component that displays `Loading...` text. When the data is being fetched, display the text.
+
+<img src="../resources/img/03/research-task-7.png" width="250" height="444" />
+
+7. On the `QuizDetailsScreen`, retrieve the data from `AsyncStorage` and perform an API call to the following endpoint: `https://opentdb.com/api.php?amount=1&category={REPLACE WITH CATEGORY VALUE IN ASYNC STORAGE}&difficulty={REPLACE WITH THE DIFFICULTY VALUE IN ASYNC STORAGE}&type={REPLACE THE TYPE VALUE IN ASYNC STORAGE}`. Display the following data on the screen: 
 
 - Category
 - Difficulty
@@ -201,4 +205,4 @@ Reload your application. You should see the following:
 - Question
 - Correct Answer
 
-<img src="../resources/img/03/research-task-7.png" width="250" height="444" /> <img src="../resources/img/03/research-task-8.png" width="250" height="444" />
+ <img src="../resources/img/03/research-task-8.png" width="250" height="444" />
