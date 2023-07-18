@@ -485,3 +485,4 @@ Reload your application. You should see the following:
 
 3. When you navigate to both screens, create a component that displays the text `Loading...`. When the data is fetched, display the data.
 
+4. Extend the functionality by adding a large `ActivityIndicator` below the text `Loading...`. **Resource:** <https://reactnative.dev/docs/activityindicator>
