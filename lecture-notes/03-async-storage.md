@@ -187,10 +187,16 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/03/research-task-5.png" width="250" height="444" /> 
 
-5. When the user clicks on the `Create Quiz` button, the data will be stored in AsyncStorage. 
+5. When the user clicks on the `Create Quiz` button, the data will be stored in `AsyncStorage`. 
 
 <img src="../resources/img/03/research-task-6.png" width="250" height="444" />
 
-1. On the `QuizDetailsScreen`, retrieve the data from AsyncStorage and perform an API call to the following endpoint: `https://opentdb.com/api.php?amount=1&category={THE CATEGORY VALUE IN ASYNC STORAGE}&difficulty={THE DIFFICULTY VALUE IN ASYNC STORAGE}&type={THE TYPE VALUE IN ASYNC STORAGE}`.
+6. On the `QuizDetailsScreen`, retrieve the data from `AsyncStorage` and perform an API call to the following endpoint: `https://opentdb.com/api.php?amount=1&category={REPLACE WITH CATEGORY VALUE IN ASYNC STORAGE}&difficulty={REPLACE WITH THE DIFFICULTY VALUE IN ASYNC STORAGE}&type={REPLACE THE TYPE VALUE IN ASYNC STORAGE}`. Display the following data on the screen: 
+
+- Category
+- Difficulty
+- Type
+- Question
+- Correct Answer
 
 <img src="../resources/img/03/research-task-7.png" width="250" height="444" /> <img src="../resources/img/03/research-task-8.png" width="250" height="444" />
