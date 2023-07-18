@@ -495,6 +495,6 @@ You should see the following:
 
 <img src="../resources/img/02/research-task-3.png" width="250" height="444" /> <img src="../resources/img/02/research-task-4.png" width="250" height="444" />
 
-3. When you navigate to both screens, create a component that displays `Loading...` text. When the data is fetched, display the data.
+3. When you navigate to both screens, create a component that displays `Loading...` text. While the data is being fetched, display the text.
 
 4. Extend the loading functionality by adding a large `ActivityIndicator` below the `Loading...` text. **Resource:** <https://reactnative.dev/docs/activityindicator>
