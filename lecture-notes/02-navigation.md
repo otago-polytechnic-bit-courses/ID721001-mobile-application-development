@@ -454,7 +454,7 @@ const App = () => {
           component={HomeScreen}
           options={{ title: "My Home" }}
         />
-        <Tab.Screen
+        <Drawer.Screen
           name="Details"
           component={DetailsScreen}
           options={{ title: "My Details" }}
@@ -469,7 +469,13 @@ const App = () => {
 
 - `createDrawerNavigator` - This is a function that creates a drawer navigator.
 
-Reload your application. You should see the following:
+Reload your application using the command:
+
+bash```
+npx expo start --clear
+```
+
+You should see the following:
 
 <img src="../resources/img/02/phone-7.png" width="250" height="444" /> <img src="../resources/img/02/phone-8.png" width="250" height="444" />
 
