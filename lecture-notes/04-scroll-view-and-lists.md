@@ -12,6 +12,8 @@ npx create-expo-app 04-playground
 
 A **scroll view** is a component that provides a scrollable view of its content. It is used to display a large amount of content that does not fit within the device's screen and allows the user to scroll through the content by swiping up or down.
 
+Here is an example of a **scroll view** - <https://reactnative.dev/docs/scrollview>
+
 ## FlatList
 
 A **flat list** is a component that provides an efficient way to display lists of data. It is similar to a **scroll view** but is optimised to only display its content that is currently visible on the device's screen rather than rendering all of its content at once.
