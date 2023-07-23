@@ -169,7 +169,7 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/03/phone-3.png" width="250" height="444" />
 
-**Research Tasks:**
+## Research Tasks
 
 1. Create a button that navigates to a screen called `QuizFormScreen`. On the `QuizFormScreen`, add three `Picker` components for category, difficulty and type. 
 

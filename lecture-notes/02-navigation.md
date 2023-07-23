@@ -245,7 +245,7 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/02/phone-3.png" width="250" height="444" />
 
-**Research Tasks:**
+## Research Tasks
 
 ## Configuring the Header Bar
 
@@ -395,7 +395,7 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/02/phone-6.png" width="250" height="444" />
 
-**Research Task:**
+## Research Task
 
 Add an icon to the `Details` tab.
 
@@ -479,7 +479,7 @@ You should see the following:
 
 <img src="../resources/img/02/phone-7.png" width="250" height="444" /> <img src="../resources/img/02/phone-8.png" width="250" height="444" />
 
-**Research Tasks:**
+## Research Tasks
 
 1. Create a button on the `HomeScreen` that navigates to another screen called `NASAScreen`. The `NASAScreen`screen will display **Astronomy Picture of the Day** data via the **NASA API**. The data includes:
 

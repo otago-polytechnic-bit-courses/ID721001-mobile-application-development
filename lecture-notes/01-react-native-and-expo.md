@@ -112,7 +112,7 @@ You should see the following:
 
 <img src="../resources/img/01/phone-1.png" width="250" height="444" />
 
-**Research Tasks:**
+## Research Tasks
 
 - Rename `App.js` to `App.jsx`.
 - Convert `App` into an arrow function.
@@ -412,7 +412,7 @@ Reload your application. You should see the following when you click on the **Ch
 
 <img src="../resources/img/01/phone-5.png" width="250" height="444" /> <img src="../resources/img/01/phone-6.png" width="250" height="444" />
 
-**Research Task:**
+## Research Task
 
 Refactor the code so that when the user selects an image, it is displayed on the screen.
 
@@ -549,7 +549,7 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/01/phone-9.png" width="250" height="444" /> <img src="../resources/img/01/phone-10.png" width="250" height="444" />
 
-**Research Task:**
+## Research Task
 
 With **React Native**, you can run your application in a web browser. Using online resources, research and implement this feature.
 
