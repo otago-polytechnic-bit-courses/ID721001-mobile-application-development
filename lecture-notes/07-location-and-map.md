@@ -1,4 +1,4 @@
-# 07: Location, Map and Localisation
+# 07: Location and Map
 
 ## Getting Started
 
@@ -12,5 +12,4 @@ npx create-expo-app 07-playground
 
 ## Map
 
-## Localisation
 
