@@ -74,7 +74,9 @@ import { Text, View } from "react-native";
 const App = () => {
   return (
     <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-lg text-pink-500 font-bold">Open up App.js to start working on your app!</Text>
+      <Text className="text-lg text-pink-500 font-bold">
+        Open up App.js to start working on your app!
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -98,19 +100,23 @@ In the `assets` directory, you should see two icon files:
 
 Navigate to <https://icon.kitchen>. This is a free online tool that allows you to generate icons for your application.
 
-You can 
+You have a variety of options to choose from and preview how your icon will look like on different devices.
 
 ![](../resources/img/05/web-1.png)
 
+Here is example of an icon using clip art:
+
 ![](../resources/img/05/web-2.png)
 
-Rename the `AppIcon~ios-marketing.png` file to `icon.png`. Create a copy of the `icon.png` file and rename it to `adaptive-icon.png`.
+Once you are happy with your icon, click on the **Download** button. This will download a zip file containing the icon files. Unzip the file and go to the `ios` directory. Rename the `AppIcon~ios-marketing.png` file to `icon.png`. Create a copy of the `icon.png` file and rename it to `adaptive-icon.png`. Copy both files to the `assets` directory.
+
+Reload your application. You should see the following on the **Expo Go** home screen:
 
 ![](../resources/img/05/phone-2.png)
 
 ## Splash Screen
 
-
+A splash screen is a screen that appears when an application is loading. It is usually used to display the application logo.
 
 ### Getting Started
 
@@ -126,9 +132,10 @@ In the `App.jsx` file, add the following code:
 
 ```jsx
 // ...
-import { useCallback, useEffect, useState } from 'react';
-import { hideAsync, preventAutoHideAsync } from 'expo-splash-screen';
+import { useCallback, useEffect, useState } from "react";
+import { hideAsync, preventAutoHideAsync } from "expo-splash-screen";
 
+// Keep the splash screen visible while we fetch resources
 preventAutoHideAsync();
 
 const App = () => {
@@ -137,18 +144,22 @@ const App = () => {
   useEffect(() => {
     const prepare = async () => {
       try {
-        await new Promise(resolve => setTimeout(resolve, 5000));
+        // Artificially delay for 5 seconds to simulate a slow loading
+        await new Promise((resolve) => setTimeout(resolve, 5000));
+
+        // Other things may include fetching data, loading fonts, etc
       } catch (err) {
         console.log(err);
-      } finally {
+      } finally { // Note: finally is always executed
         setIsReady(true);
       }
-    }
+    };
     prepare();
   }, []);
 
   const onLayoutRootView = useCallback(async () => {
     if (isReady) {
+      // When the root view is loaded, hide the splash screen
       await hideAsync();
     }
   }, [isReady]);
@@ -158,7 +169,10 @@ const App = () => {
   }
 
   return (
-    <View className="flex-1 items-center justify-center bg-white" onLayout={onLayoutRootView}>
+    <View
+      className="flex-1 items-center justify-center bg-white"
+      onLayout={onLayoutRootView}
+    >
       {/* ... */}
     </View>
   );
@@ -173,6 +187,8 @@ Reload your application. You should see the following:
 
 ### app.json
 
+In the `app.json` file, you should see the following:
+
 ```json
 "splash": {
   "image": "./assets/splash.png",
@@ -180,6 +196,8 @@ Reload your application. You should see the following:
   "backgroundColor": "#ffffff"
 },
 ```
+
+Rename the `splash.png` file to `icon.png`. Update the `app.json` file to the following:
 
 ```json
 "splash": {
@@ -193,6 +211,8 @@ Reload your application. You should see the following:
 
 ![](../resources/img/05/phone-4.png)
 
+You will notice that the splash screen's background colour is not the same as the `icon.png` file's background colour. To fix this, update the `app.json` file to the following:
+
 ```json
 "splash": {
   "image": "./assets/icon.png",
@@ -205,18 +225,14 @@ Reload your application. You should see the following:
 
 ![](../resources/img/05/phone-5.png)
 
-
-
-
-
 ## Research Tasks
 
-1. 
+1. Using **Tailwind CSS**, style the `HomeScreen.jsx` file. It should look like the following:
 
 ![](../resources/img/05/research-task-1.png)
 
-2. <https://docs.expo.dev/ui-programming/react-native-styling-buttons>
+2. Use the following resource to style the `Button` components on the `HomeScreen` - <https://docs.expo.dev/ui-programming/react-native-styling-buttons>
 
-3. 
+3. Use the following resource to create a toast - <https://docs.expo.dev/ui-programming/react-native-toast>
 
-4. 
+**Note:** You should have the necessary knowledge to start the **Project 1: Cookbook Application** assessment.
