@@ -96,11 +96,21 @@ In the `assets` directory, you should see two icon files:
 
 ### Getting Started
 
-Navigate to <https://icon.kitchen>. 
+Navigate to <https://icon.kitchen>. This is a free online tool that allows you to generate icons for your application.
+
+You can 
+
+![](../resources/img/05/web-1.png)
+
+![](../resources/img/05/web-2.png)
 
 Rename the `AppIcon~ios-marketing.png` file to `icon.png`. Create a copy of the `icon.png` file and rename it to `adaptive-icon.png`.
 
+![](../resources/img/05/phone-2.png)
+
 ## Splash Screen
+
+
 
 ### Getting Started
 
@@ -157,6 +167,10 @@ const App = () => {
 // ...
 ```
 
+Reload your application. You should see the following:
+
+![](../resources/img/05/phone-3.png)
+
 ### app.json
 
 ```json
@@ -175,6 +189,10 @@ const App = () => {
 },
 ```
 
+Reload your application. You should see the following:
+
+![](../resources/img/05/phone-4.png)
+
 ```json
 "splash": {
   "image": "./assets/icon.png",
@@ -182,6 +200,10 @@ const App = () => {
   "backgroundColor": "#000000"
 },
 ```
+
+Reload your application. You should see the following:
+
+![](../resources/img/05/phone-5.png)
 
 
 
