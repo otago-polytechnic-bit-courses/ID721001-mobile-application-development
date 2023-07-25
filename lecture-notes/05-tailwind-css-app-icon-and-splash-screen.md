@@ -87,7 +87,7 @@ export default App;
 
 Reload your application. You should see the following:
 
-![](../resources/img/05/phone-1.png)
+<img src="../resources/img/05/phone-1.png" width="250" height="444" />
 
 ## App Icon
 
@@ -112,7 +112,7 @@ Once you are happy with your icon, click on the **Download** button. This will d
 
 Reload your application. You should see the following on the **Expo Go** home screen:
 
-![](../resources/img/05/phone-2.png)
+<img src="../resources/img/05/phone-2.png" width="250" height="444" />
 
 ## Splash Screen
 
@@ -183,7 +183,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-![](../resources/img/05/phone-3.png)
+<img src="../resources/img/05/phone-3.png" width="250" height="444" />
 
 ### app.json
 
@@ -209,7 +209,7 @@ Rename the `splash.png` file to `icon.png`. Update the `app.json` file to the fo
 
 Reload your application. You should see the following:
 
-![](../resources/img/05/phone-4.png)
+<img src="../resources/img/05/phone-4.png" width="250" height="444" />
 
 You will notice that the splash screen's background colour is not the same as the `icon.png` file's background colour. To fix this, update the `app.json` file to the following:
 
@@ -223,13 +223,13 @@ You will notice that the splash screen's background colour is not the same as th
 
 Reload your application. You should see the following:
 
-![](../resources/img/05/phone-5.png)
+<img src="../resources/img/05/phone-5.png" width="250" height="444" />
 
 ## Research Tasks
 
 1. Using **Tailwind CSS**, style the `HomeScreen.jsx` file. It should look like the following:
 
-![](../resources/img/05/research-task-1.png)
+<img src="../resources/img/05/research-task-1.png" width="250" height="444" />
 
 2. Use the following resource to style the `Button` components on the `HomeScreen` - <https://docs.expo.dev/ui-programming/react-native-styling-buttons>
 
