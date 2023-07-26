@@ -12,45 +12,55 @@ npx create-expo-app 07-playground
 
 ### Getting Started
 
+```bash
+npm install expo-location
+```
+
 ### App.jsx
 
 In the `App.jsx` file, add the following code:
 
 ```js
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { getCurrentPositionAsync, requestForegroundPermissionsAsync, LocationAccuracy } from 'expo-location';
+import {
+  getCurrentPositionAsync,
+  requestForegroundPermissionsAsync,
+  LocationAccuracy,
+} from "expo-location";
 
 const App = () => {
   const [location, setLocation] = useState(null);
-  const [errorMsg, setErrorMsg] = useState(null);
+  const [errMsg, setErrMsg] = useState(null);
 
   useEffect(() => {
     const getLocation = async () => {
       try {
         // Request permission to access location. This will prompt the user for permission
         let { status } = await requestForegroundPermissionsAsync();
-        if (status !== 'granted') {
-          setErrorMsg('Permission to access location was denied');
+        if (status !== "granted") {
+          setErrMsg("Permission to access location was denied");
           return;
         }
 
         // Get the current location with high accuracy
-        let location = await getCurrentPositionAsync({ accuracy: LocationAccuracy.High });
+        let location = await getCurrentPositionAsync({
+          accuracy: LocationAccuracy.High,
+        });
         setLocation(location);
-      } catch (error) {
-        setErrorMsg('Error while fetching location');
-        console.error(error);
+      } catch (err) {
+        setErrMsg("Error while fetching location");
+        console.log(err);
       }
     };
 
     getLocation();
   }, []);
 
-  let text = 'Waiting..';
-  if (errorMsg) {
-    text = errorMsg;
+  let text = "Loading...";
+  if (errMsg) {
+    text = errMsg;
   } else if (location) {
     text = JSON.stringify(location);
   }
@@ -91,4 +101,113 @@ Reload your application. You should see the following:
 
 ## Map
 
+### Getting Started
 
+```bash
+npm install react-native-maps
+```
+
+### App.jsx
+
+```js
+import MapView from "react-native-maps";
+import { StyleSheet, View } from "react-native";
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <MapView style={styles.map} />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  map: {
+    width: "100%",
+    height: "100%",
+  },
+});
+
+export default App;
+```
+
+Reload your application. You should see the following:
+
+<img src="../resources/img/07/phone-4.png" width="250" height="444" />
+
+```js
+// ...
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <MapView
+        initialRegion={{
+          latitude: 37.78825,
+          longitude: -122.4324,
+          latitudeDelta: 0.0922, // Zoom level for latitude
+          longitudeDelta: 0.0421, // Zoom level for longitude
+        }}
+        style={styles.map}
+      />
+    </View>
+  );
+};
+
+// ...
+```
+
+Reload your application. You should see the following:
+
+<img src="../resources/img/07/phone-5.png" width="250" height="444" />
+
+```js
+// ...
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <MapView
+        initialRegion={{
+          latitude: 37.78825,
+          longitude: -122.4324,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}
+        style={styles.map}
+      >
+        <Marker
+          coordinate={{ latitude: 37.78825, longitude: -122.4324 }}
+          title="Some Title"
+          description="Some Description"
+        />
+      </MapView>
+    </View>
+  );
+};
+
+// ...
+```
+
+Reload your application. You should see the following:
+
+<img src="../resources/img/07/phone-6.png" width="250" height="444" /> <img src="../resources/img/07/phone-7.png" width="250" height="444" />
+
+## Research Tasks
+
+1. The following URL contains information about tech companies in California - <https://gist.githubusercontent.com/Grayson-Orr/d72b53e4d5b094305b8303c9330908f0/raw>. Fetch the data and display the location, name and city of each company on the map. Also, change the zoom levels to 0.5, and `initialRegion` prop's `latitude` and `longitude` to the 10th company's location.
+
+<img src="../resources/img/07/research-1.png" width="250" height="444" /> 
+
+2. Change the marker's colour to yellow.
+
+<img src="../resources/img/07/research-2.png" width="250" height="444" /> 
+
+3. Display the user's location on the map. Set the marker's colour to blue. Also, set the `title` to "You are here".
+
+<img src="../resources/img/07/research-3.png" width="250" height="444" /> 
+
+4. Test the functionality above on a physical device.
