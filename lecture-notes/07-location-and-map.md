@@ -10,11 +10,17 @@ npx create-expo-app 07-playground
 
 ## Location
 
+We can use implement location services in our application to get the user's current location. This can be useful for applications that require the user's location, e.g., weather, maps, etc.
+
 ### Getting Started
+
+To get started, install the following dependency:
 
 ```bash
 npm install expo-location
 ```
+
+- `expo-location` - provides access to the device's location
 
 ### App.jsx
 
@@ -100,6 +106,8 @@ Reload your application. You should see the following:
 <img src="../resources/img/07/phone-3.png" width="250" height="444" />
 
 ## Map
+
+We can use implement maps in our application to display locations. Example of applications that use maps are **Google Maps**, **Uber**, etc.
 
 ### Getting Started
 
