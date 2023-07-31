@@ -1,4 +1,4 @@
-# 08: Camera and Video
+# 08: Camera, Audio and Video
 
 ## Getting Started
 
