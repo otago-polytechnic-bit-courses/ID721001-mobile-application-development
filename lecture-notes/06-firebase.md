@@ -40,7 +40,7 @@ npm install dotenv expo-constants firebase
 
 ![](../resources/img/06/web-5.png)
 
-6. You will see five circle icons - iOS, Android, Web, Unity, and Flutter. Select the "Web" icon. Note: That is the third icon.
+6. You will see five circle icons - iOS, Android, Web, Unity, and Flutter. Select the "Web" icon. **Note:** That is the third icon.
 
 ![](../resources/img/06/web-6.png)
 
@@ -48,7 +48,7 @@ npm install dotenv expo-constants firebase
 
 ![](../resources/img/06/web-7.png)
 
-8. In the root directory, create a new directory called `config`. In the `config` directory, create a new file called `firebase.js`. Copy the code from the "Firebase SDK snippet" and paste it into the `firebase.js` file. Note: You will modify this code later. Click on "Continue to console".
+8. In the root directory, create a new directory called `config`. In the `config` directory, create a new file called `firebase.js`. Copy the code from the "Firebase SDK snippet" and paste it into the `firebase.js` file. **Note:** You will modify this code later. Click on "Continue to console".
 
 ![](../resources/img/06/web-8.png)
 
@@ -355,6 +355,6 @@ Press J to open the debugger. Add another product. You should see the following:
 
 1. Display the products in a `FlatList` component. If no products are available, display a message that says "No products available".
 
-2. Add a "Delete" button to each product. When the "Delete" button is pressed, delete the product from the **Firestore database**. Note: Use the `deleteDoc` function.
+2. Add a "Delete" button to each product. When the "Delete" button is pressed, delete the product from the **Firestore database**. **Note:** Use the `deleteDoc` function.
 
-3. Add a "Update" button to each product. When the "Update" button is pressed, navigate to the `UpdateProductScreen`. The `UpdateProductScreen` should display the product's name and price. When the "Update" button is pressed, update the product in the **Firestore database**. Note: Use the `updateDoc` function.
+3. Add a "Update" button to each product. When the "Update" button is pressed, navigate to the `UpdateProductScreen`. The `UpdateProductScreen` should display the product's name and price. When the "Update" button is pressed, update the product in the **Firestore database**. **Note:** Use the `updateDoc` function.
