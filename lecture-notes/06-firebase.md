@@ -351,6 +351,8 @@ Press J to open the debugger. Add another product. You should see the following:
 
 ![](../resources/img/06/web-18.png)
 
+**Note:** This code will be useful for the **research tasks**.
+
 ## Research Tasks
 
 1. Display the products in a `FlatList` component. If no products are available, display a message that says "No products available".
