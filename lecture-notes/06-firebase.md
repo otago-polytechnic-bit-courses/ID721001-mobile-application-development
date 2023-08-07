@@ -65,10 +65,10 @@ npm install dotenv expo-constants firebase
 ![](../resources/img/06/web-11.png)
 
 12. Select a location and click on "Enable".
-![](../resources/img/06/web-12.png)
+    ![](../resources/img/06/web-12.png)
 
 13. Wait for Firestore Database to provision.
-![](../resources/img/06/web-13.png)
+    ![](../resources/img/06/web-13.png)
 
 14. You should see the following:
 
@@ -96,6 +96,8 @@ Click on "Publish".
 
 ![](../resources/img/06/web-16.png)
 
+## Environment Variables
+
 In the root directory, create a new file called `.env`. Add the following environment variables:
 
 ```bash
@@ -109,10 +111,12 @@ APP_ID=<your-app-id>
 
 Remember to replace the placeholder values with your own. Also, create a `.example.env` file. This file should contain the same environment variables as the `.env` file, but with the placeholder values as shown above. This file will be used as a reference for other developers.
 
-In the root directory, rename the `app.json` file to `app.config.js`. Add the following code:
+## App Setup
+
+In the root directory, rename the `app.json` file to `app.config.js`. In the `app.config.js` file, replace the code with the following:
 
 ```js
-import "dotenv/config";
+import "dotenv/config"; // Loads environment variables from a .env file into process.env
 
 export default {
   expo: {
@@ -141,6 +145,7 @@ export default {
       favicon: "./assets/favicon.png",
     },
     extra: {
+      // Environment variables
       apiKey: process.env.API_KEY,
       authDomain: process.env.AUTH_DOMAIN,
       projectId: process.env.PROJECT_ID,
@@ -152,7 +157,9 @@ export default {
 };
 ```
 
-In the root directory, create a new directory called `config`. In the `config` directory, create a new file called `firebase.js`. Add the following code:
+### config/firebase.js
+
+In the `firebase.js` file, replace the code with the following:
 
 ```js
 import Constants from "expo-constants";
@@ -166,10 +173,120 @@ const firebaseConfig = {
   storageBucket: Constants.expoConfig.extra.storageBucket,
   messagingSenderId: Constants.expoConfig.extra.messagingSenderId,
   appId: Constants.expoConfig.extra.appId,
-  databaseURL: Constants.expoConfig.extra.databaseURL,
 };
 
-initializeApp(firebaseConfig);
+initializeApp(firebaseConfig); // Initialize Firebase
 
-export const database = getFirestore();
+const database = getFirestore();
+
+export database; // Get a Firestore instance
 ```
+
+### App.jsx
+
+In the `App.jsx` file, replace the code with the following:
+
+```jsx
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+import HomeScreen from "./screens/HomeScreen";
+import AddProductScreen from "./screens/AddProductScreen";
+
+const Stack = createNativeStackNavigator();
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="AddProduct" component={AddProductScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
+```
+
+You will create the `HomeScreen` and `AddProductScreen` screens soon.
+
+### HomeScreen.jsx
+
+In the root directory, create a new directory called `screens`. In the `screens` directory, create a new file called `HomeScreen.jsx`. Add the following code:
+
+```jsx
+import { Button, View, Text } from "react-native";
+
+const HomeScreen = (props) => {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Home Screen</Text>
+      <Button
+        title="Add Product"
+        onPress={() => props.navigation.navigate("AddProduct")}
+      />
+    </View>
+  );
+};
+
+export default HomeScreen;
+```
+
+Reload your application. You should see the following:
+
+<img src="../resources/img/06/phone-1.png" width="250" height="444" />
+
+### AddProductScreen.jsx
+
+In the `screens` directory, create a new file called `AddProductScreen.jsx`. Add the following code:
+
+```jsx
+import { Button, View, Text, TextInput } from "react-native";
+import { useState } from 'react';
+import { collection, addDoc } from "firebase/firestore"; 
+
+import { database } from "../config/firebase"; // Get a Firestore instance
+
+const AddProductScreen = (props) => {
+  const [newProduct, setNewProduct] = useState({
+    name: "",
+    price: 0,
+    createdAt: new Date(),
+  });
+
+  const onPress = async () => {
+    await addDoc(collection(database, "products"), newProduct);
+    props.navigation.navigate("Home");
+  };
+
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Add Product Screen</Text>
+      <TextInput
+        style={{
+          width: 200,
+          height: 40,
+          borderColor: "gray",
+          borderWidth: 1,
+          marginBottom: 10,
+        }}
+        onChangeText={(text) => setNewProduct({ ...newProduct, name: text })}
+        placeholder="Name"
+      />
+      <TextInput
+        style={{ width: 200, height: 40, borderColor: "gray", borderWidth: 1 }}
+        onChangeText={(text) => setNewProduct({ ...newProduct, price: text })}
+        placeholder="Price"
+      />
+      <Button title="Add Product" onPress={onPress} />
+    </View>
+  );
+};
+
+export default AddProductScreen;
+```
+
+Reload your application. You should see the following:
+
+<img src="../resources/img/06/phone-2.png" width="250" height="444" /> <img src="../resources/img/06/phone-2.png" width="250" height="444" />
