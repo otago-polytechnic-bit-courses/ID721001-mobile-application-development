@@ -291,7 +291,7 @@ export default AddProductScreen;
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/06/phone-2.png" width="250" height="444" /> <img src="../resources/img/06/phone-2.png" width="250" height="444" />
+<img src="../resources/img/06/phone-2.png" width="250" height="444" /> <img src="../resources/img/06/phone-3.png" width="250" height="444" />
 
 Press the "Add Product" button. 
 
