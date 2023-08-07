@@ -60,7 +60,7 @@ module.exports = {
 In the `babel.config.js` file, add the following code:
 
 ```js
-plugins: [/* ... */, "nativewind/babel"],
+plugins: ["nativewind/babel"],
 ```
 
 ### App.jsx
