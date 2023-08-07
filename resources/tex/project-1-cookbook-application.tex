@@ -94,6 +94,40 @@ You will need to submit a mobile application and documentation that meet the fol
 	\item Usable on a variety of mobile devices, i.e., devices with different screen sizes.
 	\item Free of bugs that significantly effect the usability.
 	\item 
+	\item Food data needs to be fetched using \textbf{Axios} from a \textbf{GitHub Gist}. You have been provided an example file called \textbf{food-data.json}.
+	\item Display \textbf{bottom tab navigation} with the following screens:
+	\begin{itemize}
+    \item Daily specials
+    \begin{itemize}
+      \item This screen will display six random recipes from the \textbf{food-data.json} file. 
+      \item Display the random recipes in a \textbf{FlatList}.
+      \item Each recipe item in the \textbf{FlatList} needs to display the recipe's name and image. Truncate the recipe's name if it is too long.
+      \item When a recipe item is pressed, display the recipe's name, image, cuisine, ingredients and instructions in a \textbf{ScrollView}. 
+      \item A heart icon needs to be displayed in the top right corner of the screen. When the heart icon is pressed, the recipe is added to the \textbf{Favourites} screen. Persist the favourite recipes using \textbf{AsyncStorage}.
+      \item A plus icon needs to be display next to the heart icon. When the plus icon is pressed, the recipe's ingredients are added to the \textbf{Shopping list} screen. Persist the shopping list using \textbf{AsyncStorage}.
+    \end{itemize}
+    \item Recipes
+    \begin{itemize}
+      \item This screen will display all cuisines from the \textbf{food-data.json} file.
+      \item When a cuisine item is pressed, display all recipes for that cuisine in a \textbf{FlatList}.
+      \item Each recipe item in the \textbf{FlatList} needs to display the recipe's name, description and image. Truncate the recipe's name and description if it is too long.
+      \item When a recipe item is pressed, display the recipe's name, image, cuisine, ingredients and instructions in a \textbf{ScrollView}. 
+      \item A heart icon needs to be displayed in the top right corner of the screen. When the heart icon is pressed, the recipe is added to the \textbf{Favourites} screen. Persist the favourite recipes using \textbf{AsyncStorage}.
+      \item A plus icon needs to be display next to the heart icon. When the plus icon is pressed, the recipe's ingredients are added to the \textbf{Shopping list} screen. Persist the shopping list using \textbf{AsyncStorage}.
+    \end{itemize}
+    \item Favourites
+    \begin{itemize}
+      \item This screen will display all recipes that have been added to the \textbf{Favourites} screen.
+      \item Display the favourite recipes stored in \textbf{AsyncStorage} in a \textbf{FlatList}. 
+      \item Ability to delete a favourite recipe from the \textbf{FlatList}.
+    \end{itemize}
+    \item Shopping list
+    \begin{itemize}
+      \item This screen will display all ingredients from the recipes that have been added to the \textbf{Shopping list} screen.
+    \end{itemize}
+    \item Appropriate image used for the splash screen and app icon.
+    \item Visually attractive UI with a coherent graphical theme and style.
+  \end{itemize}
 \end{itemize}
 
 \subsection*{Code Elegance - Learning Outcomes 1, 3 (40\%)}
