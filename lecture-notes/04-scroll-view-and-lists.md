@@ -238,7 +238,7 @@ Reload your application. You should see the following:
 
 <img src="../resources/img/04/research-task-1.png" width="250" height="444" /> 
 
-3. When you click on a team, navigate to a new screen called `TeamDetails`. This screen should display the team logo and the team name. 
+3. When you click on a team, navigate to a new screen called `TeamDetails`. This screen should display the team logo and the team name. **Note:** Use the `TouchableOpacity` component to make the team name clickable.
 
 <img src="../resources/img/04/research-task-2.png" width="250" height="444" />
 
