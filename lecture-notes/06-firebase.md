@@ -16,7 +16,7 @@ npm install dotenv expo-constants firebase
 
 - `dotenv` - loads environment variables from a `.env` file into `process.env`
 - `expo-constants` - provides system information, i.e., device name, operating system, etc.
-- `firebase` - provides access to Firebase services, i.e., Firestore, Authentication, etc.
+- `firebase` - provides access to Firebase services, i.e., Firestore database, Authentication, etc.
 
 ## Firebase Setup
 
@@ -67,7 +67,7 @@ npm install dotenv expo-constants firebase
 12. Select a location and click on "Enable".
     ![](../resources/img/06/web-12.png)
 
-13. Wait for Firestore database to provision.
+13. Wait for **Firestore database** to provision.
     ![](../resources/img/06/web-13.png)
 
 14. You should see the following:
