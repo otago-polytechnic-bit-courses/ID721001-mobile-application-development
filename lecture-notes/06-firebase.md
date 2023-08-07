@@ -67,7 +67,7 @@ npm install dotenv expo-constants firebase
 12. Select a location and click on "Enable".
     ![](../resources/img/06/web-12.png)
 
-13. Wait for Firestore Database to provision.
+13. Wait for Firestore database to provision.
     ![](../resources/img/06/web-13.png)
 
 14. You should see the following:
@@ -243,8 +243,8 @@ In the `screens` directory, create a new file called `AddProductScreen.jsx`. Add
 
 ```jsx
 import { Button, View, Text, TextInput } from "react-native";
-import { useState } from 'react';
-import { collection, addDoc } from "firebase/firestore"; 
+import { useState } from "react";
+import { collection, addDoc } from "firebase/firestore";
 
 import { database } from "../config/firebase"; // Get a Firestore instance
 
@@ -256,12 +256,13 @@ const AddProductScreen = (props) => {
   });
 
   const onPress = async () => {
+    // Add a new product to the Firestore database
     await addDoc(collection(database, "products"), newProduct);
     props.navigation.navigate("Home");
   };
 
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+<View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Add Product Screen</Text>
       <TextInput
         style={{
@@ -271,12 +272,13 @@ const AddProductScreen = (props) => {
           borderWidth: 1,
           marginBottom: 10,
         }}
-        onChangeText={(text) => setNewProduct({ ...newProduct, name: text })}
+        onChangeText={(name) => setNewProduct({ ...newProduct, name })}
         placeholder="Name"
       />
       <TextInput
+        keyboardType="numeric"
         style={{ width: 200, height: 40, borderColor: "gray", borderWidth: 1 }}
-        onChangeText={(text) => setNewProduct({ ...newProduct, price: text })}
+        onChangeText={(price) => setNewProduct({ ...newProduct, price: parseInt(price) })}
         placeholder="Price"
       />
       <Button title="Add Product" onPress={onPress} />
@@ -290,3 +292,69 @@ export default AddProductScreen;
 Reload your application. You should see the following:
 
 <img src="../resources/img/06/phone-2.png" width="250" height="444" /> <img src="../resources/img/06/phone-2.png" width="250" height="444" />
+
+Press the "Add Product" button. 
+
+How do you know that the product was added to **Firestore database**? You can check **Firestore database** in the **Firebase console**:
+
+![](../resources/img/06/web-17.png)
+
+Alternatively, you can add the following code to the `AddProductScreen.jsx` file:
+
+```jsx
+// ...
+import { useEffect, useState } from "react";
+import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
+
+import { database } from "../config/firebase";
+
+const HomeScreen = (props) => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const q = query(
+          collection(database, "products"),
+          orderBy("createdAt", "desc")
+        );
+
+        const unsubscribe = onSnapshot(q, (querySnapshot) => {
+          const productArr = [];
+          querySnapshot.forEach((doc) => {
+            productArr.push({
+              id: doc.id,
+              ...doc.data(),
+            });
+          });
+          setProducts(productArr);
+        });
+        
+        console.log(products);
+
+        return () => unsubscribe(); // Detach listener
+      }
+      catch (err) {
+        console.log(err);
+      }
+    }
+    fetchProducts();
+  }, []);
+
+  // ...
+};
+
+// ...
+```
+
+Press J to open the debugger. Add another product. You should see the following:
+
+![](../resources/img/06/web-18.png)
+
+## Research Tasks
+
+1. Display the products in a `FlatList` component. If no products are available, display a message that says "No products available".
+
+2. Add a "Delete" button to each product. When the "Delete" button is pressed, delete the product from the **Firestore database**. Note: Use the `deleteDoc` function.
+
+3. Add a "Update" button to each product. When the "Update" button is pressed, navigate to the `UpdateProductScreen`. The `UpdateProductScreen` should display the product's name and price. When the "Update" button is pressed, update the product in the **Firestore database**. Note: Use the `updateDoc` function.
