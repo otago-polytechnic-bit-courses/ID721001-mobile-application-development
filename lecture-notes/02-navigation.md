@@ -184,7 +184,7 @@ const DetailsScreen = (props) => {
 
 Reload your application. You should see the following: 
 
-<img src="../resources (ignore)/img/02/phone-1.png" width="250" height="444" /> <img src="../resources (ignore)/img/02/phone-2.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-1.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/02/phone-2.png" width="250" height="444" />
 
 ## Passing Parameters to Routes
 
@@ -243,7 +243,7 @@ const DetailsScreen = (props) => {
 
 Reload your application. You should see the following:
 
-<img src="../resources (ignore)/img/02/phone-3.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-3.png" width="250" height="444" />
 
 ## Research Tasks
 
@@ -284,7 +284,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources (ignore)/img/02/phone-4.png" width="250" height="444" /> <img src="../resources (ignore)/img/02/phone-5.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-4.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/02/phone-5.png" width="250" height="444" />
 
 ## Bottom Tab Navigation
 
@@ -339,7 +339,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources (ignore)/img/02/phone-5.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-5.png" width="250" height="444" />
 
 ### Adding Icons
 
@@ -393,7 +393,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources (ignore)/img/02/phone-6.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-6.png" width="250" height="444" />
 
 ## Research Task
 
@@ -477,7 +477,7 @@ npx expo start --clear
 
 You should see the following:
 
-<img src="../resources (ignore)/img/02/phone-7.png" width="250" height="444" /> <img src="../resources (ignore)/img/02/phone-8.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-7.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/02/phone-8.png" width="250" height="444" />
 
 ## Research Tasks
 
@@ -489,11 +489,11 @@ You should see the following:
 
 **Resource:** <https://api.nasa.gov>
 
-<img src="../resources (ignore)/img/02/research-task-1.png" width="250" height="444" /> <img src="../resources (ignore)/img/02/research-task-2.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/research-task-1.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/02/research-task-2.png" width="250" height="444" />
 
 2. Create a button on the `HomeScreen` that navigates to another screen called `TodoScreen`. The `TodoScreen` screen will display a random todo between 1 and 10 via the **JSON Placeholder API**. **Resource:** <https://jsonplaceholder.typicode.com>
 
-<img src="../resources (ignore)/img/02/research-task-3.png" width="250" height="444" /> <img src="../resources (ignore)/img/02/research-task-4.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/research-task-3.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/02/research-task-4.png" width="250" height="444" />
 
 3. When you navigate to both screens, create a component that displays `Loading...` text. While the data is being fetched, display the text.
 

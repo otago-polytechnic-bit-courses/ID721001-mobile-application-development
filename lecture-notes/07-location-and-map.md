@@ -95,15 +95,15 @@ Reload your application. You should see the following:
 
 1. The user will be prompted to allow the application to access their location
 
-<img src="../resources (ignore)/img/07/phone-1.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/07/phone-1.png" width="250" height="444" />
 
 2. If the user allows the application to access their location, their information will be displayed on the screen
 
-<img src="../resources (ignore)/img/07/phone-2.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/07/phone-2.png" width="250" height="444" />
 
 3. If the user denies the application to access their location, an error message will be displayed on the screen
 
-<img src="../resources (ignore)/img/07/phone-3.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/07/phone-3.png" width="250" height="444" />
 
 ## Map
 
@@ -144,7 +144,7 @@ export default App;
 
 Reload your application. You should see the following:
 
-<img src="../resources (ignore)/img/07/phone-4.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/07/phone-4.png" width="250" height="444" />
 
 ```js
 // ...
@@ -170,7 +170,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources (ignore)/img/07/phone-5.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/07/phone-5.png" width="250" height="444" />
 
 ```js
 // ...
@@ -202,20 +202,20 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources (ignore)/img/07/phone-6.png" width="250" height="444" /> <img src="../resources (ignore)/img/07/phone-7.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/07/phone-6.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/07/phone-7.png" width="250" height="444" />
 
 ## Research Tasks
 
 1. The following URL contains information about tech companies in California - <https://gist.githubusercontent.com/Grayson-Orr/d72b53e4d5b094305b8303c9330908f0/raw>. Fetch the data and display the location, name and city of each company on the map. Also, change the zoom levels to 0.5, and `initialRegion` prop's `latitude` and `longitude` to the 10th company's location.
 
-<img src="../resources (ignore)/img/07/research-task-1.png" width="250" height="444" /> 
+<img src="../resources%20(ignore)/img/07/research-task-1.png" width="250" height="444" /> 
 
 2. Change the marker's colour to yellow.
 
-<img src="../resources (ignore)/img/07/research-task-2.png" width="250" height="444" /> 
+<img src="../resources%20(ignore)/img/07/research-task-2.png" width="250" height="444" /> 
 
 3. Display the user's location on the map. Set the marker's colour to blue. Also, set the `title` to "You are here".
 
-<img src="../resources (ignore)/img/07/research-task-3.png" width="250" height="444" /> 
+<img src="../resources%20(ignore)/img/07/research-task-3.png" width="250" height="444" /> 
 
 4. Test the functionality above on a physical device.

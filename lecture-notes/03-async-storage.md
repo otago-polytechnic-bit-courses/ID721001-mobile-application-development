@@ -115,7 +115,7 @@ export default HomeScreen;
 
 Reload your application. You should see the following: 
 
-<img src="../resources (ignore)/img/03/phone-1.png" width="250" height="444" /> <img src="../resources (ignore)/img/03/phone-2.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/03/phone-1.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/03/phone-2.png" width="250" height="444" />
 
 ### DetailsScreen.jsx
 
@@ -167,35 +167,35 @@ export default DetailsScreen;
 
 Reload your application. You should see the following: 
 
-<img src="../resources (ignore)/img/03/phone-3.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/03/phone-3.png" width="250" height="444" />
 
 ## Research Tasks
 
 1. Create a button that navigates to a screen called `QuizFormScreen`. On the `QuizFormScreen`, add three `Picker` components for category, difficulty and type. 
 
-<img src="../resources (ignore)/img/03/research-task-1.png" width="250" height="444" /> <img src="../resources (ignore)/img/03/research-task-2.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/03/research-task-1.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/03/research-task-2.png" width="250" height="444" />
 
 **Resource:** <https://docs.expo.dev/versions/latest/sdk/picker>
 
 2. The category `Picker` component should have the following categories:
 
-<img src="../resources (ignore)/img/03/research-task-3.png" width="250" height="444" /> 
+<img src="../resources%20(ignore)/img/03/research-task-3.png" width="250" height="444" /> 
 
 3. The difficulty `Picker` component should have the following difficulties:
 
-<img src="../resources (ignore)/img/03/research-task-4.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/03/research-task-4.png" width="250" height="444" />
 
 4. The type `Picker` component should have the following types:
 
-<img src="../resources (ignore)/img/03/research-task-5.png" width="250" height="444" /> 
+<img src="../resources%20(ignore)/img/03/research-task-5.png" width="250" height="444" /> 
 
 5. When the user clicks on the `Create Quiz` button, the data will be stored in `AsyncStorage`. 
 
-<img src="../resources (ignore)/img/03/research-task-6.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/03/research-task-6.png" width="250" height="444" />
 
 6. Create a component that displays `Loading...` text. While the data is being fetched, display the text.
 
-<img src="../resources (ignore)/img/03/research-task-7.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/03/research-task-7.png" width="250" height="444" />
 
 7. On the `QuizDetailsScreen`, retrieve the data from `AsyncStorage` and perform an API call to the following endpoint: `https://opentdb.com/api.php?amount=1&category={REPLACE WITH CATEGORY VALUE IN ASYNC STORAGE}&difficulty={REPLACE WITH THE DIFFICULTY VALUE IN ASYNC STORAGE}&type={REPLACE THE TYPE VALUE IN ASYNC STORAGE}`. Display the following data on the screen: 
 
@@ -205,4 +205,4 @@ Reload your application. You should see the following:
 - Question
 - Correct Answer
 
- <img src="../resources (ignore)/img/03/research-task-8.png" width="250" height="444" />
+ <img src="../resources%20(ignore)/img/03/research-task-8.png" width="250" height="444" />
