@@ -139,19 +139,19 @@ Reload your application. You should see the following:
 
 1. The user will be prompted to allow the application to access their media and photos
 
-<img src="../resources/img/08/phone-1.png" width="250" height="444" />
+<img src="../resources (ignore)/img/08/phone-1.png" width="250" height="444" />
 
 2. The user will be prompted to allow the application to take pictures and record video
 
-<img src="../resources/img/08/phone-2.png" width="250" height="444" />
+<img src="../resources (ignore)/img/08/phone-2.png" width="250" height="444" />
 
 3. Once the user allows permissions, they can take a picture
 
-<img src="../resources/img/08/phone-3.png" width="250" height="444" />
+<img src="../resources (ignore)/img/08/phone-3.png" width="250" height="444" />
 
 4. The user can then save the picture to their device or retake the picture
 
-<img src="../resources/img/08/phone-4.png" width="250" height="444" />
+<img src="../resources (ignore)/img/08/phone-4.png" width="250" height="444" />
 
 ## Audio
 

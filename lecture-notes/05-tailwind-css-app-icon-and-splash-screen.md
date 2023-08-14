@@ -87,7 +87,7 @@ export default App;
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/05/phone-1.png" width="250" height="444" />
+<img src="../resources (ignore)/img/05/phone-1.png" width="250" height="444" />
 
 ## App Icon
 
@@ -102,17 +102,17 @@ Navigate to <https://icon.kitchen>. This is a free online tool that allows you t
 
 You have a variety of options to choose from and preview how your icon will look like on different devices.
 
-![](../resources/img/05/web-1.png)
+![](../resources (ignore)/img/05/web-1.png)
 
 Here is example of an icon using clip art:
 
-![](../resources/img/05/web-2.png)
+![](../resources (ignore)/img/05/web-2.png)
 
 Once you are happy with your icon, click on the **Download** button. This will download a zip file containing the icon files. Unzip the file and go to the `ios` directory. Rename the `AppIcon~ios-marketing.png` file to `icon.png`. Create a copy of the `icon.png` file and rename it to `adaptive-icon.png`. Copy both files to the `assets` directory.
 
 Reload your application. You should see the following on the **Expo Go** home screen:
 
-<img src="../resources/img/05/phone-2.png" width="250" height="444" />
+<img src="../resources (ignore)/img/05/phone-2.png" width="250" height="444" />
 
 ## Splash Screen
 
@@ -183,7 +183,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/05/phone-3.png" width="250" height="444" />
+<img src="../resources (ignore)/img/05/phone-3.png" width="250" height="444" />
 
 ### app.json
 
@@ -209,7 +209,7 @@ Rename the `splash.png` file to `icon.png`. Update the `app.json` file to the fo
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/05/phone-4.png" width="250" height="444" />
+<img src="../resources (ignore)/img/05/phone-4.png" width="250" height="444" />
 
 You will notice that the splash screen's background colour is not the same as the `icon.png` file's background colour. To fix this, update the `app.json` file to the following:
 
@@ -223,13 +223,13 @@ You will notice that the splash screen's background colour is not the same as th
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/05/phone-5.png" width="250" height="444" />
+<img src="../resources (ignore)/img/05/phone-5.png" width="250" height="444" />
 
 ## Research Tasks
 
 1. Using **Tailwind CSS**, style the `HomeScreen.jsx` file. It should look like the following:
 
-<img src="../resources/img/05/research-task-1.png" width="250" height="444" />
+<img src="../resources (ignore)/img/05/research-task-1.png" width="250" height="444" />
 
 2. Use the following resource to style the `Button` components on the `HomeScreen` - <https://docs.expo.dev/ui-programming/react-native-styling-buttons>
 

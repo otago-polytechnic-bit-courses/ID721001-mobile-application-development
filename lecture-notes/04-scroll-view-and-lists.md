@@ -120,7 +120,7 @@ export default HomeScreen;
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/04/phone-1.png" width="250" height="444" />
+<img src="../resources (ignore)/img/04/phone-1.png" width="250" height="444" />
 
 ## SectionList
 
@@ -228,7 +228,7 @@ export default HomeScreen;
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/04/phone-2.png" width="250" height="444" />
+<img src="../resources (ignore)/img/04/phone-2.png" width="250" height="444" />
 
 ## Research Tasks
 
@@ -236,24 +236,24 @@ Reload your application. You should see the following:
 
 2. Add an `Image` component to the `renderItem` function. This should display the team logo. You can find the images in the given `nba-teams-imgs` directory. **Note:** You will need to update the `nbaTeams` array to include the path to the team logo.
 
-<img src="../resources/img/04/research-task-1.png" width="250" height="444" /> 
+<img src="../resources (ignore)/img/04/research-task-1.png" width="250" height="444" /> 
 
 3. When you click on a team, navigate to a new screen called `TeamDetails`. This screen should display the team logo and the team name. **Note:** Use the `TouchableOpacity` component to make the team name clickable.
 
-<img src="../resources/img/04/research-task-2.png" width="250" height="444" />
+<img src="../resources (ignore)/img/04/research-task-2.png" width="250" height="444" />
 
 4. Create a new screen called `TopStories`. This screen should display the title of the first 30 top stories via the [Hacker News API](https://github.com/HackerNews/API).
 
-<img src="../resources/img/04/research-task-3.png" width="250" height="444" /> 
+<img src="../resources (ignore)/img/04/research-task-3.png" width="250" height="444" /> 
 
 5. Truncate the title of each story. **Note:** Look into the `numberOfLines` and `ellipsizeMode` props.
 
-<img src="../resources/img/04/research-task-4.png" width="250" height="444" />
+<img src="../resources (ignore)/img/04/research-task-4.png" width="250" height="444" />
 
 6. Create a **bottom tab navigation** that allows the user to navigate between the `TopStories` and `AskStories` screens. **Note:** The `AskStories` screen should display the title of the first 30 ask stories via the [Hacker News API](https://github.com/HackerNews/API).
 
-<img src="../resources/img/04/research-task-5.png" width="250" height="444" /> <img src="../resources/img/04/research-task-6.png" width="250" height="444" />
+<img src="../resources (ignore)/img/04/research-task-5.png" width="250" height="444" /> <img src="../resources (ignore)/img/04/research-task-6.png" width="250" height="444" />
 
 7. Create functionality that allows the user to search for a story using this resource - <https://aboutreact.com/react-native-search-bar-filter-on-listview>
 
-<img src="../resources/img/04/research-task-7.png" width="250" height="444" /> <img src="../resources/img/04/research-task-8.png" width="250" height="444" />
+<img src="../resources (ignore)/img/04/research-task-7.png" width="250" height="444" /> <img src="../resources (ignore)/img/04/research-task-8.png" width="250" height="444" />
