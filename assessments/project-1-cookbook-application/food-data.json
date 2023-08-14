@@ -3,7 +3,7 @@
     {
       "name": "Pasta Carbonara",
       "cuisine": "Italian",
-      "image": "pasta_carbonara.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/pasta_carbonara.jpg",
       "ingredients": [
         "200g spaghetti",
         "100g pancetta",
@@ -16,7 +16,7 @@
     {
       "name": "Margherita Pizza",
       "cuisine": "Italian",
-      "image": "margherita_pizza.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/margherita_pizza.jpg",
       "ingredients": [
         "Pizza dough",
         "Tomato sauce",
@@ -29,7 +29,7 @@
     {
       "name": "Chicken Alfredo",
       "cuisine": "Italian",
-      "image": "chicken_alfredo.png",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/chicken_alfredo.png",
       "ingredients": [
         "300g fettuccine pasta",
         "2 chicken breasts",
@@ -43,7 +43,7 @@
     {
       "name": "Sushi Rolls",
       "cuisine": "Japanese",
-      "image": "sushi_rolls.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/sushi_rolls.jpg",
       "ingredients": [
         "Nori seaweed sheets",
         "Sushi rice",
@@ -57,7 +57,7 @@
     {
       "name": "Teriyaki Chicken",
       "cuisine": "Japanese",
-      "image": "teriyaki_chicken.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/teriyaki_chicken.jpg",
       "ingredients": [
         "Chicken thighs",
         "Soy sauce",
@@ -71,7 +71,7 @@
     {
       "name": "Miso Soup",
       "cuisine": "Japanese",
-      "image": "miso_soup.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/miso_soup.jpg",
       "ingredients": [
         "2 cups dashi stock",
         "3 tbsp miso paste",
@@ -84,7 +84,7 @@
     {
       "name": "Chicken Tikka Masala",
       "cuisine": "Indian",
-      "image": "chicken_tikka_masala.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/chicken_tikka_masala.jpg",
       "ingredients": [
         "Chicken thighs",
         "Yogurt",
@@ -100,7 +100,7 @@
     {
       "name": "Naan Bread",
       "cuisine": "Indian",
-      "image": "naan_bread.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/naan_bread.jpg",
       "ingredients": [
         "Flour",
         "Yogurt",
@@ -114,7 +114,7 @@
     {
       "name": "Chana Masala",
       "cuisine": "Indian",
-      "image": "chana_masala.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/chana_masala.jpg",
       "ingredients": [
         "Chickpeas",
         "Tomatoes",
@@ -131,7 +131,7 @@
     {
       "name": "Chicken Noodle Soup",
       "cuisine": "American",
-      "image": "chicken_noodle_soup.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/chicken_noodle_soup.jpg",
       "ingredients": [
         "Chicken thighs",
         "Carrots",
@@ -149,7 +149,7 @@
     {
       "name": "Hamburger",
       "cuisine": "American",
-      "image": "hamburger.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/hamburger.jpg",
       "ingredients": [
         "Ground beef",
         "Burger buns",
@@ -165,7 +165,7 @@
     {
       "name": "Mac and Cheese",
       "cuisine": "American",
-      "image": "mac_and_cheese.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/mac_and_cheese.jpg",
       "ingredients": [
         "Macaroni pasta",
         "Cheddar cheese",
@@ -179,7 +179,7 @@
     {
       "name": "Coq au Vin",
       "cuisine": "French",
-      "image": "coq_au_vin.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/coq_au_vin.jpg",
       "ingredients": [
         "1 whole chicken, cut into pieces",
         "Bacon",
@@ -197,7 +197,7 @@
     {
       "name": "Croissant",
       "cuisine": "French",
-      "image": "croissant.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/croissant.jpg",
       "ingredients": [
         "2 1/4 cups all-purpose flour",
         "1/4 cup sugar",
@@ -212,7 +212,7 @@
     {
       "name": "Ratatouille",
       "cuisine": "French",
-      "image": "ratatouille.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/master/assessments/project-1-cookbook-application/images/ratatouille.jpg",
       "ingredients": [
         "Eggplant",
         "Zucchini",
