@@ -65,10 +65,12 @@ npm install dotenv expo-constants firebase
 ![](../resources%20(ignore)/img/06/web-11.png)
 
 12. Select a location and click on "Enable".
-    ![](../resources%20(ignore)/img/06/web-12.png)
+
+![](../resources%20(ignore)/img/06/web-12.png)
 
 13. Wait for **Firestore database** to provision.
-    ![](../resources%20(ignore)/img/06/web-13.png)
+
+![](../resources%20(ignore)/img/06/web-13.png)
 
 14. You should see the following:
 
@@ -246,7 +248,7 @@ import { Button, View, Text, TextInput } from "react-native";
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 
-import { database } from "../config/firebase"; // Get a Firestore instance
+import database from "../config/firebase"; // Get a Firestore instance
 
 const AddProductScreen = (props) => {
   const [newProduct, setNewProduct] = useState({
