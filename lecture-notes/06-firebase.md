@@ -22,63 +22,63 @@ npm install dotenv expo-constants firebase
 
 1. Go to [https://firebase.google.com/](https://firebase.google.com/) and click on "Create a project".
 
-![](../resources%20(ignore)/img/06/web-1.png)
+![](<../resources%20(ignore)/img/06/web-1.png>)
 
 2. Name your project, check the box to accept the terms, and click on "Continue".
 
-![](../resources%20(ignore)/img/06/web-2.png)
+![](<../resources%20(ignore)/img/06/web-2.png>)
 
 3. Disable Google Analytics and click on "Create project".
 
-![](../resources%20(ignore)/img/06/web-3.png)
+![](<../resources%20(ignore)/img/06/web-3.png>)
 
 4. Wait for the project to provision.
 
-![](../resources%20(ignore)/img/06/web-4.png)
+![](<../resources%20(ignore)/img/06/web-4.png>)
 
 5. Click on "Continue".
 
-![](../resources%20(ignore)/img/06/web-5.png)
+![](<../resources%20(ignore)/img/06/web-5.png>)
 
 6. You will see five circle icons - iOS, Android, Web, Unity, and Flutter. Select the "Web" icon. **Note:** That is the third icon.
 
-![](../resources%20(ignore)/img/06/web-6.png)
+![](<../resources%20(ignore)/img/06/web-6.png>)
 
 7. Name your app and click on "Register app".
 
-![](../resources%20(ignore)/img/06/web-7.png)
+![](<../resources%20(ignore)/img/06/web-7.png>)
 
 8. In the root directory, create a new directory called `config`. In the `config` directory, create a new file called `firebase.js`. Copy the code from the "Firebase SDK snippet" and paste it into the `firebase.js` file. **Note:** You will modify this code later. Click on "Continue to console".
 
-![](../resources%20(ignore)/img/06/web-8.png)
+![](<../resources%20(ignore)/img/06/web-8.png>)
 
 9. Click on "Firestore Database".
 
-![](../resources%20(ignore)/img/06/web-9.png)
+![](<../resources%20(ignore)/img/06/web-9.png>)
 
 10. Click on "Create database".
 
-![](../resources%20(ignore)/img/06/web-10.png)
+![](<../resources%20(ignore)/img/06/web-10.png>)
 
 11. Select either "Start in test mode" or "Start in production mode". Click on "Next".
 
-![](../resources%20(ignore)/img/06/web-11.png)
+![](<../resources%20(ignore)/img/06/web-11.png>)
 
 12. Select a location and click on "Enable".
 
-![](../resources%20(ignore)/img/06/web-12.png)
+![](<../resources%20(ignore)/img/06/web-12.png>)
 
 13. Wait for **Firestore database** to provision.
 
-![](../resources%20(ignore)/img/06/web-13.png)
+![](<../resources%20(ignore)/img/06/web-13.png>)
 
 14. You should see the following:
 
-![](../resources%20(ignore)/img/06/web-14.png)
+![](<../resources%20(ignore)/img/06/web-14.png>)
 
 15. If you selected "Start in production mode", you will see the following:
 
-![](../resources%20(ignore)/img/06/web-15.png)
+![](<../resources%20(ignore)/img/06/web-15.png>)
 
 16. Change the rules to the following:
 
@@ -96,7 +96,7 @@ service cloud.firestore {
 
 Click on "Publish".
 
-![](../resources%20(ignore)/img/06/web-16.png)
+![](<../resources%20(ignore)/img/06/web-16.png>)
 
 ## Environment Variables
 
@@ -264,7 +264,7 @@ const AddProductScreen = (props) => {
   };
 
   return (
-<View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Add Product Screen</Text>
       <TextInput
         style={{
@@ -280,7 +280,9 @@ const AddProductScreen = (props) => {
       <TextInput
         keyboardType="numeric"
         style={{ width: 200, height: 40, borderColor: "gray", borderWidth: 1 }}
-        onChangeText={(price) => setNewProduct({ ...newProduct, price: parseInt(price) })}
+        onChangeText={(price) =>
+          setNewProduct({ ...newProduct, price: parseInt(price) })
+        }
         placeholder="Price"
       />
       <Button title="Add Product" onPress={onPress} />
@@ -295,11 +297,11 @@ Reload your application. You should see the following:
 
 <img src="../resources%20(ignore)/img/06/phone-2.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/06/phone-3.png" width="250" height="444" />
 
-Press the "Add Product" button. 
+Press the "Add Product" button.
 
 How do you know that the product was added to **Firestore database**? You can check **Firestore database** in the **Firebase console**:
 
-![](../resources%20(ignore)/img/06/web-17.png)
+![](<../resources%20(ignore)/img/06/web-17.png>)
 
 Alternatively, you can add the following code to the `AddProductScreen.jsx` file:
 
@@ -331,15 +333,14 @@ const HomeScreen = (props) => {
           });
           setProducts(productArr);
         });
-        
+
         console.log(products);
 
         return () => unsubscribe(); // Detach listener
-      }
-      catch (err) {
+      } catch (err) {
         console.log(err);
       }
-    }
+    };
     fetchProducts();
   }, []);
 
@@ -351,7 +352,7 @@ const HomeScreen = (props) => {
 
 Press J to open the debugger. Add another product. You should see the following:
 
-![](../resources%20(ignore)/img/06/web-18.png)
+![](<../resources%20(ignore)/img/06/web-18.png>)
 
 **Note:** This code will be useful for the **research tasks**.
 
