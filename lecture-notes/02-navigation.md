@@ -86,7 +86,7 @@ export default App;
 ```
 
 - `NavigationContainer` - This is a component that manages the navigation tree and contains the navigation state. This component must wrap all navigators.
-- `createNativeStackNavigator` - This is a function that creates a stack navigator. This function returns a component that renders the navigation tree. 
+- `createNativeStackNavigator` - This is a function that creates a stack navigator. This function returns a component that renders the navigation tree.
 - `Stack.Navigator` - This is a component that renders the navigation tree. This component must be a child of the `NavigationContainer` component.
 - `Stack.Screen` - This is a component that renders a screen. This component must be a child of the `Stack.Navigator` component. This has two props:
   - `name` - This is a string that is used to identify the screen.
@@ -160,7 +160,7 @@ const HomeScreen = (props) => {
 ```
 
 - `props.navigation.navigate` - This is a function that navigates to a screen. This function takes a string as an argument. The string is the name of the screen and must match the name of the screen in the `Stack.Screen` component.
-  
+
 ### DetailsScreen.jsx
 
 Refactor `DetailsScreen.jsx` to the following:
@@ -182,7 +182,7 @@ const DetailsScreen = (props) => {
 
 - `props.navigation.goBack` - This is a function that navigates to the previous screen.
 
-Reload your application. You should see the following: 
+Reload your application. You should see the following:
 
 <img src="../resources%20(ignore)/img/02/phone-1.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/02/phone-2.png" width="250" height="444" />
 

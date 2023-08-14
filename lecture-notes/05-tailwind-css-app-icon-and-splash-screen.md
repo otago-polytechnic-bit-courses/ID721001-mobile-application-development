@@ -102,11 +102,11 @@ Navigate to <https://icon.kitchen>. This is a free online tool that allows you t
 
 You have a variety of options to choose from and preview how your icon will look like on different devices.
 
-![](../resources%20(ignore)/img/05/web-1.png)
+![](<../resources%20(ignore)/img/05/web-1.png>)
 
 Here is example of an icon using clip art:
 
-![](../resources%20(ignore)/img/05/web-2.png)
+![](<../resources%20(ignore)/img/05/web-2.png>)
 
 Once you are happy with your icon, click on the **Download** button. This will download a zip file containing the icon files. Unzip the file and go to the `ios` directory. Rename the `AppIcon~ios-marketing.png` file to `icon.png`. Create a copy of the `icon.png` file and rename it to `adaptive-icon.png`. Copy both files to the `assets` directory.
 
@@ -150,7 +150,8 @@ const App = () => {
         // Other things may include fetching data, loading fonts, etc
       } catch (err) {
         console.log(err);
-      } finally { // Note: finally is always executed
+      } finally {
+        // Note: finally is always executed
         setIsReady(true);
       }
     };

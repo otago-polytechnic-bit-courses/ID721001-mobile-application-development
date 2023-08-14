@@ -14,7 +14,6 @@ npx create-expo-app 08-playground
 
 To get started, install the following dependencies:
 
-
 ```bash
 npm install expo-constants expo-camera expo-media-library
 ```
@@ -22,7 +21,6 @@ npm install expo-constants expo-camera expo-media-library
 - `expo-constants` - provides system information, i.e., device name, operating system, etc.
 - `expo-camera` - provides access to the device's camera
 - `expo-media-library` - provides access to the device's media library
-
 
 ### Button.jsx
 
