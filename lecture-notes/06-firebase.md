@@ -181,7 +181,7 @@ initializeApp(firebaseConfig); // Initialize Firebase
 
 const database = getFirestore();
 
-export database; // Get a Firestore instance
+export default database; // Get a Firestore instance
 ```
 
 ### App.jsx
