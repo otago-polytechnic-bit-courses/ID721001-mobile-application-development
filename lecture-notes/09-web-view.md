@@ -10,6 +10,8 @@ npx create-expo-app 09-playground
 
 ## WebView
 
+A `WebView` enables you to display web content in your application. It is similar to an `iframe` in **HTML**.
+
 ### Getting Started
 
 To get started, install the following dependency:

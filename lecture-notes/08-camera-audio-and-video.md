@@ -10,6 +10,8 @@ npx create-expo-app 08-playground
 
 ## Camera
 
+Camera enables you to take pictures and record video.
+
 ### Getting Started
 
 To get started, install the following dependencies:
@@ -21,7 +23,7 @@ npm install expo-constants expo-camera expo-media-library @expo/vector-icons
 - `expo-constants` - provides system information, i.e., device name, operating system, etc.
 - `expo-camera` - provides access to the device's camera
 - `expo-media-library` - provides access to the device's media library
-- `@expo/vector-icons`
+- `@expo/vector-icons` - provides access to icons
 
 ### Button.jsx
 
@@ -185,6 +187,8 @@ Reload your application. You should see the following:
 
 ## Audio
 
+Audio enables you to play internal and external audio, i.e., audio from your device or from the web. Audio can be in the form of a sound or music.
+
 ### Getting Started
 
 To get started, install the following dependency:
@@ -192,6 +196,8 @@ To get started, install the following dependency:
 ```bash
 npm install expo-av
 ```
+
+- `expo-av` - provides a unified API for media playback
 
 ### App.jsx
 
@@ -210,16 +216,17 @@ const App = () => {
   useEffect(() => {
     return sound
       ? () => {
-        sound.unloadAsync();
+        sound.unloadAsync(); // Unload the sound
       }
-      : undefined;
+      : undefined; // Do nothing
   }, [sound]);
 
   const playASound = async () => {
+    // Load the sound from the assets directory
     const { sound } = await Audio.Sound.createAsync(require("./assets/sounds/music.mp3")
     );
     setSound(sound);
-    await sound.playAsync();
+    await sound.playAsync(); // Play the sound
   }
 
   // ...
@@ -252,9 +259,13 @@ const App = () => {
 
 Reload your application. You should see the following:
 
+1. Clicking the "Play a Sound" button will play a sound
+
 <img src="../resources%20(ignore)/img/08/phone-5.png" width="250" height="444" />
 
 ## Video
+
+Video enables you to play internal and external videos, i.e., videos from your device or from the web.
 
 ### App.jsx
 
@@ -270,23 +281,23 @@ const App = () => {
   return (
     <View style={styles.container}>
       <Video
-        ref={video}
+        ref={video} // Reference to the video
         style={styles.video}
         source={{
           uri: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
         }}
-        useNativeControls
-        resizeMode={ResizeMode.CONTAIN}
-        isLooping
-        onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+        useNativeControls // Use the native controls, i.e., play, pause, etc.
+        resizeMode={ResizeMode.CONTAIN} // Resize the video to fit the screen
+        isLooping // Loop the video
+        onPlaybackStatusUpdate={(status) => setStatus(() => status)} // Update the status of the video, i.e., isPlaying, isBuffering, etc.
       />
       <View style={styles.buttons}>
         <Button
           title={status.isPlaying ? "Pause" : "Play"}
           onPress={() =>
             status.isPlaying
-              ? video.current.pauseAsync()
-              : video.current.playAsync()
+              ? video.current.pauseAsync() // Pause the video
+              : video.current.playAsync() // Play the video
           }
         />
       </View>
@@ -317,12 +328,16 @@ export default App;
 
 Reload your application. You should see the following:
 
-1.
+1. Clicking the "Play" button will play the video
 
 <img src="../resources%20(ignore)/img/08/phone-6.png" width="250" height="444" />
 
-2.
+2. Clicking the "Pause" button will pause the video
 
 <img src="../resources%20(ignore)/img/08/phone-7.png" width="250" height="444" />
 
 ## Research Tasks
+
+1. 
+
+cbce3d2e02c7b066c29a9dbb6fcd9e52
