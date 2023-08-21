@@ -21,12 +21,12 @@ npm install expo-speech
 ### App.jsx
 
 ```jsx
-import { View, StyleSheet, Button } from 'react-native';
-import { speak } from 'expo-speech';
+import { View, StyleSheet, Button } from "react-native";
+import { speak } from "expo-speech";
 
 const App = () => {
   const speakText = () => {
-    const thingToSay = 'Hello, World!';
+    const thingToSay = "Hello, World!";
     speak(thingToSay);
   };
 
@@ -35,12 +35,12 @@ const App = () => {
       <Button title="Press to hear some words" onPress={speakText} />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
 });
 
