@@ -4,7 +4,7 @@
 
 On the lab computers, the `ANDROID_HOME` **environment variable** may not be set. To set the `ANDROID_HOME` **environment variable**, follow the steps below:
 
-![](../resources/img/01/env-1.PNG)
+![](<../resources%20(ignore)/img/01/env-1.PNG>)
 
 ## Emulator
 
@@ -14,21 +14,21 @@ You will need to download and install an **emulator** to run **React Native** ap
 
 On the lab computers, **Android Studio** is already installed. To create an **emulator** using **Android Studio**, follow the steps below:
 
-![](../resources/img/01/android-studio-1.PNG)
+![](<../resources%20(ignore)/img/01/android-studio-1.PNG>)
 
-![](../resources/img/01/android-studio-2.PNG)
+![](<../resources%20(ignore)/img/01/android-studio-2.PNG>)
 
-![](../resources/img/01/android-studio-3.PNG)
+![](<../resources%20(ignore)/img/01/android-studio-3.PNG>)
 
-![](../resources/img/01/android-studio-4.PNG)
+![](<../resources%20(ignore)/img/01/android-studio-4.PNG>)
 
-![](../resources/img/01/android-studio-5.PNG)
+![](<../resources%20(ignore)/img/01/android-studio-5.PNG>)
 
-![](../resources/img/01/android-studio-6.PNG)
+![](<../resources%20(ignore)/img/01/android-studio-6.PNG>)
 
-![](../resources/img/01/android-studio-7.PNG)
+![](<../resources%20(ignore)/img/01/android-studio-7.PNG>)
 
-![](../resources/img/01/android-studio-8.PNG)
+![](<../resources%20(ignore)/img/01/android-studio-8.PNG>)
 
 ## React Native
 
@@ -110,7 +110,7 @@ npm run android
 
 You should see the following:
 
-<img src="../resources/img/01/phone-1.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/01/phone-1.png" width="250" height="444" />
 
 ## Research Tasks
 
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/01/phone-2.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/01/phone-2.png" width="250" height="444" />
 
 ### Button.jsx
 
@@ -306,11 +306,11 @@ const styles = StyleSheet.create({
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/01/phone-3.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/01/phone-3.png" width="250" height="444" />
 
 What happens when you click on the **Choose a Pokémon** or **Use this Pokémon** buttons?
 
-<img src="../resources/img/01/phone-4.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/01/phone-4.png" width="250" height="444" />
 
 ## Image Picker
 
@@ -377,9 +377,9 @@ const App = () => {
     });
 
     if (!result.canceled) {
-      // You can view the result object in the 
+      // You can view the result object in the
       // debugger. Press J to open the debugger
-      console.log(result); 
+      console.log(result);
     } else {
       alert("You did not select any Pokémon image.");
     }
@@ -410,7 +410,7 @@ const App = () => {
 
 Reload your application. You should see the following when you click on the **Choose a Pokémon** button:
 
-<img src="../resources/img/01/phone-5.png" width="250" height="444" /> <img src="../resources/img/01/phone-6.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/01/phone-5.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/01/phone-6.png" width="250" height="444" />
 
 ## Research Task
 
@@ -439,7 +439,7 @@ const ImageViewer = (props) => {
 
 Once you have refactored the code, you should see the following when you select an image:
 
-<img src="../resources/img/01/phone-7.png" width="250" height="444" /> <img src="../resources/img/01/phone-8.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/01/phone-7.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/01/phone-8.png" width="250" height="444" />
 
 ## Take a Screenshot
 
@@ -547,7 +547,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources/img/01/phone-9.png" width="250" height="444" /> <img src="../resources/img/01/phone-10.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/01/phone-9.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/01/phone-10.png" width="250" height="444" />
 
 ## Research Task
 
@@ -555,7 +555,7 @@ With **React Native**, you can run your application in a web browser. Using onli
 
 Once you have implemented this feature, you should see the following when you run your application in a web browser:
 
-![](../resources/img/01/web-1.PNG)
+![](<../resources%20(ignore)/img/01/web-1.PNG>)
 
 ## Web Browser
 
@@ -622,4 +622,4 @@ const onSaveImageAsync = async () => {
 
 Reload your application. You should see the following when you click on the **Use this Pokémon** button:
 
-![](../resources/img/01/web-2.PNG)
+![](<../resources%20(ignore)/img/01/web-2.PNG>)
