@@ -52,6 +52,6 @@ Reload your application. You should see the following:
 
 ## Research Tasks
 
-1. What is the difference between a `WebView` and an `iframe`? What are the advantages and disadvantages of each? When would you use one over the other? Write your answers in `09-research.md`.
+1. What is the difference between a `WebView` and an `iframe`? What are the advantages and disadvantages of each? When would you use one over the other? Write your answers in the `09-research.md` file.
 
 2. Display ten random YouTube video links in a `FlatList`. When the user clicks on a link, the video should play in a `WebView`. 
