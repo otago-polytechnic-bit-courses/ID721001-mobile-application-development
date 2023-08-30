@@ -50,3 +50,9 @@ export default App;
 Reload your application. You should see the following:
 
 ## Research Tasks
+
+1. Using the **Musixmatch** API, display the name of a song in a `Text` component. When the user clicks on the `Button` component, the lyrics should be read aloud using the `speak` function. 
+
+Here is an example endpoint - <https://api.musixmatch.com/ws/1.1/track.get?commontrack_id=5920049&apikey=<ADD YOUR API KEY HERE>.
+
+You can find a **Musixmatch** API key on the **Microsoft Teams** course channel under `Files` > `api-keys` > `musixmatch-api-key.txt`.
