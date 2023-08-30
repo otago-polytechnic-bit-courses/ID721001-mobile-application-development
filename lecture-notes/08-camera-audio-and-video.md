@@ -113,8 +113,6 @@ const App = () => {
     }
   };
 
-  if (!hasCameraPermission) return <Text>No access to camera</Text>;
-
   return (
     <View style={styles.container}>
       {!image ? (
@@ -338,6 +336,10 @@ Reload your application. You should see the following:
 
 ## Research Tasks
 
-1. 
+1. Display "No access to camera" in a `Text` component if the user has not given the application permission to access the camera.
 
-cbce3d2e02c7b066c29a9dbb6fcd9e52
+2. In this task, you will integrate the functionality learned in `01-react-native-and-expo` with the camera code snippets above. When the user takes a photo, the user should be able to access the photo from their device's media library and display it appropriately. 
+
+3. Download five different sounds from [Zapsplat](https://www.zapsplat.com/) and add them to your project. When the user clicks the "Play a Sound" button, a random sound should be played.
+
+4. Download five different videos from [Pexels](https://www.pexels.com/videos/) and add them to your project. When the user clicks the "Play a Video" button, a random video should be played.
