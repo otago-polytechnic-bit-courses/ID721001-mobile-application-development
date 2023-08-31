@@ -481,7 +481,7 @@ You should see the following:
 
 ## Research Tasks
 
-1. Create a button on the `HomeScreen` that navigates to another screen called `NASAScreen`. The `NASAScreen`screen will display **Astronomy Picture of the Day** data via the **NASA API**. The data includes:
+1. Create a button on the `HomeScreen` that navigates to another screen called `NASAScreen`. The `NASAScreen` screen will display **Astronomy Picture of the Day** data via the **NASA API**. The data includes:
 
 - Copyright
 - URL
