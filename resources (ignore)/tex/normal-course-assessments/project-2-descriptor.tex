@@ -99,40 +99,38 @@ You will need to submit a mobile application and documentation that meet the fol
 	\end{itemize}
 	\item Ability to download the mobile application from \textbf{Google Play Store} or \textbf{Apple App Store} on to a variety of mobile devices.
 	\item Country data needs to be fetched using \textbf{Axios} from a \textbf{GitHub Gist}. You have been provided an example file called \textbf{country-data.json}. \textbf{Note:} This file is incomplete. You will need to add more information to the file. 
-	\item Display a list of countries in a \textbf{FlatList}. Each item needs to have the country's name and flag.
-	\item Text translation support. If a country is multilingual (use of more than one language), choose one language. For example, Canada's main languages are English and French. You would choose either English or French.
+	\item Display a list of countries in a \textbf{FlatList}. Each item needs to have the country's name and flag. When you select a country, it will navigate to the country's screen containing the following:
+	\begin{itemize}
+		\item Text translation support. If a country is multilingual (use of more than one language), choose one language. For example, Canada's main languages are English and French. You would choose either English or French.
 		\begin{itemize}
 			\item Use \textbf{Axios} and the \textbf{Yandex Translate API} to translate text from one language to another. To use the \textbf{Yandex Translate API}, you will need an \textbf{API key}. A key will be privately given to you on \textbf{Microsoft Teams}.
 			\item Display some feedback while the text is being translated.
 			\item Handle incorrectly formatted input fields. For example, an \textbf{TextInput} is blank or empty.
 		\end{itemize}
-	\item Text to speech support.
+		\item Text to speech support.
+			\begin{itemize}
+				\item Handle incorrectly formatted input fields. For example, an \textbf{TextInput} is blank or empty, or the country is not supported.
+			\end{itemize}
+		\item Selection of two well-known phrases. For example, "No worries, mate, she'll be right" is well-known phrase in Australia. 
+		\item \textbf{Google Map} displaying top-rated tourist attractions.
 		\begin{itemize}
-			\item Handle incorrectly formatted input fields. For example, an \textbf{TextInput} is blank or empty, or the country is not supported.
+			\item Display two tourist attractions per continent.
+			\item Each data object will represent a marker.
+			\item The marker's information window needs to display the attraction's name and city/town.
 		\end{itemize}
-	\item Selection of two well-known phrases. For example, "No worries, mate, she'll be right" is well-known phrase in Australia.
-	\item \textbf{Switch} which toggles between light and dark mode. Persist the user's preference using \textbf{AsyncStorage}.
-	\item \textbf{Google Map} displaying top-rated tourist attractions.
-	      \begin{itemize}
-		      \item Display two tourist attractions per continent.
-		      \item Each data object will represent a marker.
-		      \item The marker's information window needs to display the attraction's name and city/town.
-		      \item If dark mode, set the map's style to a dark theme. If not, set the map's style to light theme.
-				\begin{itemize}
-					\item \textbf{Resource:} \small\href{https://mapstyle.withgoogle.com}{https://mapstyle.withgoogle.com}
-				\end{itemize}
-	      \end{itemize}
-	\item Display an image gallery of top-rated tourist attractions.
-	\item An interactive quiz for each country.
-	\begin{itemize}
-		\item Quiz topics may include animals, culture, food, drink, geography and sport.
-		\item Each quiz needs to have five questions.
-		\item Questions are multi-choice and need to have four answers.
-		\item Each question needs to have an image.
-		\item Display appropriate feedback in a \textbf{TextInput} when a question is answered correctly or incorrectly. If an answer is incorrect, display
-		 the correct answer.
-		\item At the end the quiz, display the score in a \textbf{TextInput} and store the score in \textbf{Firestore} on \textbf{Firebase}.
-	\end{itemize}  
+  		\item Display an image gallery of top-rated tourist attractions. Maximum of four images per attraction.
+  		\item A \textbf{WebView} containing the country's Wikipedia page.
+  		\item An interactive quiz for each country.
+		  \begin{itemize}
+			  \item Quiz topics may include animals, culture, food, drink, geography and sport.
+			  \item Each quiz needs to have five questions.
+			  \item Questions are multi-choice and need to have four answers.
+			  \item Each question needs to have an image.
+			  \item Display appropriate feedback in a \textbf{TextInput} when a question is answered correctly or incorrectly. If an answer is incorrect, display
+			   the correct answer.
+			  \item At the end the quiz, display the score in a \textbf{TextInput} and store the score in \textbf{Firestore} on \textbf{Firebase}.
+		  \end{itemize}  
+	\end{itemize}
 	\item Appropriate image used for the splash screen and app icon.
 	\item Visually attractive UI with a coherent graphical theme and style.
 	\item Ten \textbf{end-to-end tests} that verify functionality correctness.
@@ -147,7 +145,7 @@ You will need to submit a mobile application and documentation that meet the fol
   \item Efficient algorithmic approach.
   \item Sufficient modularity.
   \item Each \textbf{component} file \textbf{must} have a \textbf{JSDoc} header comment located immediately before the \textbf{import} statements.
-\item In-line comments where required. It should be for code that needs further explanation.
+	\item In-line comments where required. It should be for code that needs further explanation.
   \item Code is formatted.
 \item No dead or unused code. 
 \end{itemize}
