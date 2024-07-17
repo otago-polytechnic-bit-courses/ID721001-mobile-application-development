@@ -1,11 +1,11 @@
-# 05: Tailwind CSS, App Icon and Splash Screen
+# 04: Tailwind CSS, App Icon and Splash Screen
 
 ## Getting Started
 
 Create a new project using the following command:
 
 ```bash
-npx create-expo-app 05-playground
+npx create-expo-app 04-playground
 ```
 
 ## Tailwind CSS

@@ -1,11 +1,11 @@
-# 04: ScrollView and Lists
+# 03: ScrollView and Lists
 
 ## Getting Started
 
 Create a new project using the following command:
 
 ```bash
-npx create-expo-app 04-playground
+npx create-expo-app 03-playground
 ```
 
 ## ScrollView
