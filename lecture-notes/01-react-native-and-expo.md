@@ -43,7 +43,7 @@ On the lab computers, **Android Studio** is already installed. To create an **em
 Create a new project using the following command:
 
 ```bash
-npx create-expo-app 01-playground
+npx create-expo-app 01-playground --template blank
 ```
 
 ### File Structure
