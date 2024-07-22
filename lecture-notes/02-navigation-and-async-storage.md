@@ -5,7 +5,7 @@
 Create a new project using the following command:
 
 ```bash
-npx create-expo-app 02-playground
+npx create-expo-app 02-playground --template blank
 ```
 
 ## React Navigation
