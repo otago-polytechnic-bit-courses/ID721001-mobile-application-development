@@ -512,7 +512,7 @@ You should see the following:
 Create a new project using the following command:
 
 ```bash
-npx create-expo-app 03-playground
+npx create-expo-app 03-playground --template blank
 ```
 
 ## Async Storage
