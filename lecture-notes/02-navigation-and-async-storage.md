@@ -339,7 +339,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources%20(ignore)/img/02/phone-56.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-6.png" width="250" height="444" />
 
 ### Adding Icons
 
@@ -391,9 +391,7 @@ const App = () => {
 - `tabBarLabel` - This is the label that is displayed on the tab bar.
 - `tabBarIcon` - This is the icon that is displayed on the tab bar.
 
-Reload your application. You should see the following:
-
-<img src="../resources%20(ignore)/img/02/phone-7.png" width="250" height="444" />
+Reload your application.
 
 ## Research Task
 
@@ -433,6 +431,12 @@ module.exports = function (api) {
 ### App.jsx
 
 **Note:** All **bottom tab navigator** code has been commented out.
+
+You may need to update some dependencies. Run the following command:
+
+```
+npx expo install --check
+```
 
 Refactor `App.jsx` to the following:
 
