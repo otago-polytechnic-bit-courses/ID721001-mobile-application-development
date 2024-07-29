@@ -481,7 +481,7 @@ npx expo start --clear
 
 You should see the following:
 
-<img src="../resources%20(ignore)/img/02/phone-8.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/02/phone-9.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-8.png" width="250" height="444" /> 
 
 ## Research Tasks
 
