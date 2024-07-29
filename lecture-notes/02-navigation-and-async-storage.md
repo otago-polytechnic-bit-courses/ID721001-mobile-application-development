@@ -339,7 +339,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources%20(ignore)/img/02/phone-5.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-56.png" width="250" height="444" />
 
 ### Adding Icons
 
@@ -393,7 +393,7 @@ const App = () => {
 
 Reload your application. You should see the following:
 
-<img src="../resources%20(ignore)/img/02/phone-6.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-7.png" width="250" height="444" />
 
 ## Research Task
 
@@ -477,7 +477,7 @@ npx expo start --clear
 
 You should see the following:
 
-<img src="../resources%20(ignore)/img/02/phone-7.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/02/phone-8.png" width="250" height="444" />
+<img src="../resources%20(ignore)/img/02/phone-8.png" width="250" height="444" /> <img src="../resources%20(ignore)/img/02/phone-9.png" width="250" height="444" />
 
 ## Research Tasks
 
