@@ -1,5 +1,9 @@
 # 01: React Native and Expo
 
+## GitHub 
+
+https://classroom.github.com/a/Nh2sKWnc
+
 ## Environment Variables
 
 On the lab computers, the `ANDROID_HOME` **environment variable** may not be set. To set the `ANDROID_HOME` **environment variable**, follow the steps below:
