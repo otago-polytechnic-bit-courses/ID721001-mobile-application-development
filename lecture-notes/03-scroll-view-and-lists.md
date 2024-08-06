@@ -91,7 +91,7 @@ In the root directory, create a new directory called `screens`. In the `screens`
 
 ```jsx
 import { FlatList, StyleSheet, Text, View } from "react-native";
-import nbaTeams from "../data/nba-teams";
+import nbaTeams from "../data/nbaTeams";
 
 const HomeScreen = () => {
   return (
