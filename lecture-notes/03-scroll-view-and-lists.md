@@ -171,7 +171,7 @@ Refactor `HomeScreen.jsx` to the following:
 
 ```jsx
 import { SectionList, StyleSheet, Text, View } from "react-native";
-import nbaTeams from "../data/nba-teams";
+import nbaTeams from "../data/nbaTeams";
 
 const HomeScreen = () => {
   const getTeamsByDivision = (division) =>
