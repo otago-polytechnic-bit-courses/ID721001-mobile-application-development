@@ -149,8 +149,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-
-export default App;
 ```
 
 - `View` is a container that supports layout with **flexbox**, **style**, **some touch handling**, and **accessibility controls**.
