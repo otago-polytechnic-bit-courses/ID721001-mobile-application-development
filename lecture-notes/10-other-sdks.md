@@ -1,4 +1,4 @@
-# 10: Independent Learning
+# 10: Other SDKs
 
 In this lecture, you will select three of the following **Expo SDKs** to learn about and implement.
 
