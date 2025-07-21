@@ -416,7 +416,7 @@ npm install @react-navigation/drawer react-native-gesture-handler react-native-r
 
 ### babel.config.js
 
-Refactor `babel.config.js` to the following:
+Create a new file called `babel.config.js` and add the following:
 
 ```js
 module.exports = function (api) {
