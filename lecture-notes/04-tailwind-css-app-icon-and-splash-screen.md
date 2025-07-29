@@ -14,54 +14,7 @@ npx create-expo-app 05-playground --template blank
 
 ### Getting Started
 
-To get started, install the following dependencies:
-
-```bash
-npm install nativewind
-npm install -D tailwindcss@3.3.2
-```
-
-Run the following command to create a `tailwind.config.js` file.
-
-```bash
-npx tailwindcss init
-```
-
-### tailwind.config.js
-
-In the `tailwind.config.js` file, you should see the following code:
-
-```js
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
-
-Add the following code to the `tailwind.config.js` file:
-
-```js
-module.exports = {
-  content: [
-    "./App.{js,jsx,ts,tsx}",
-    "./components/**/*.{js,jsx,ts,tsx}",
-    "./screens/**/*.{js,jsx,ts,tsx}",
-  ],
-  // ...
-};
-```
-
-### babel.config.js
-
-In the `babel.config.js` file, add the following code:
-
-```js
-plugins: ["nativewind/babel"],
-```
+Complete steps 1–6 in the setup guide here: <https://www.nativewind.dev/docs/getting-started/installation>
 
 ### App.jsx
 
