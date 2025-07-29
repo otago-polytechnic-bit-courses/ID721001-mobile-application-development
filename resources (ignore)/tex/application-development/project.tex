@@ -70,7 +70,7 @@ You \textbf{must} submit all application files via \textbf{GitHub Classroom}. He
 Create a branch called \textbf{project}. The latest application files in the \textbf{project} branch will be used to mark against the marking rubric. Please test before you submit. Partial marks \textbf{will not} be given for incomplete functionality. Late submissions will incur a \textbf{10\% penalty per day}, rolling over at \textbf{12.00 AM}.
 
 \section*{Authenticity}
-All parts of your submitted assessment \textbf{must} be completely your work. The use of \textbf{AI tools} is not permitted in this assessment. You need to demonstrate to the course lecturer that you can meet the learning outcomes for this assessment. You \textbf{must} complete the academic declaration form and put this in the root of your repository. Failure to do this may result in a mark of \textbf{zero} for this assessment.
+All parts of your submitted assessment \textbf{must} be completely your work. The use of \textbf{AI tools} is not permitted in this assessment. You need to demonstrate to the course lecturer that you can meet the learning outcomes for this assessment. You \textbf{must} complete the \href{Academic Integrity Declaration}{https://moodle.op.ac.nz/mod/page/view.php?id=1178172} form and put this in the root of your repository. Failure to do this may result in a mark of \textbf{zero} for this assessment.
 
 \section*{Policy on Submissions, Extensions, Resubmissions and Resits}
 The school's process concerning submissions, extensions, resubmissions and resits complies with \textbf{Otago Polytechnic} policies. Learners can view policies on the \textbf{Otago Polytechnic} website located at \href{https://www.op.ac.nz/about-us/governance-and-management/policies}{https://www.op.ac.nz/about-us/governance-and-management/policies}. 
@@ -85,39 +85,117 @@ Resits and reassessments are not applicable in \textbf{ID721001: Mobile Applicat
 
 \section*{Instructions}
 
-\subsection*{Functionality - Learning Outcomes 1, 2 and 3 (15\%)}
+\subsection*{Functionality - Learning Outcomes 1, 2 (20\%)}
 \begin{itemize}
-	 \item
+	 \item Cookbook application v1 with the following functionality:
+   \begin{itemize}
+    \item Data is fetched from a local \textbf{JSON} file.
+    \item App icon and splash screen.
+    \item Styled using \textbf{Tailwind CSS}.
+
+    \item \textbf{Recipe Details Screen Features}:
+    \begin{itemize}
+      \item Display the recipe's name, cuisine, image, ingredients, difficulty, prep time, cook time, servings, tags, nutrition, average rating and reviews.
+      \item Display a heart icon in the top-right corner. Tapping it adds or removes the recipe and saves the changes.
+      \item Display a plus icon next to the heart icon. Tapping it adds or removes the recipe's ingredients and saves the changes, ensuring no duplicate ingredients are stored.
+    \end{itemize}
+
+    \item \textbf{Daily Specials Screen Features}:
+    \begin{itemize}
+      \item Display a list of five randomly selected recipes with difficulty level Easy or Medium.
+      \item Each item should show the recipe's name, cuisine, image and average rating.
+      \item Tapping an item should navigate to the \textbf{Recipe Details Screen}.
+    \end{itemize}
+
+    \item \textbf{All Recipes Screen Features}:
+    \begin{itemize}
+      \item Display a list of all recipes.
+      \item Each item should show the recipe's name, image, difficulty level, total time and average rating.
+      \item Tapping an item should navigate to the \textbf{Recipe Details Screen}.
+    \end{itemize}
+
+    \item \textbf{Favourites Screen Features}:
+    \begin{itemize}
+      \item Display a list of saved favourite recipes.
+      \item Each item should show the recipe's name, image and average rating.
+      \item Tapping an item should navigate to the \textbf{Recipe Details Screen}.
+    \end{itemize}
+
+    \item \textbf{Ingredients Screen Features}:
+    \begin{itemize}
+      \item Display a list of saved ingredients grouped by category.
+      \item Each item should display the ingredient name, quantity and category.
+      \item Display a trash icon. Tapping it removes the ingredient and saves the changes.
+    \end{itemize}
+  \end{itemize}
+
+  \item Cookbook application v2 with the following functionality:
+  \begin{itemize}
+    \item Select any four \textbf{Medium Features} from the list below:
+    \begin{itemize}
+      \item Filter recipes by cuisine, tags, difficulty level and ingredient categories.
+      \item Search recipes by name, ingredient name or tag.
+      \item Sort recipes by prep time, cook time, total time, difficulty level or average rating.
+      \item Dark mode support with a theme toggle.
+      \item Delete all saved favourite recipes or ingredients.
+      \item Display recipes by times cooked or last cooked.
+      \item Display a list of the last five recipes viewed.
+    \end{itemize}
+
+    \item Select any three \textbf{Hard Features} from the list below:
+    \begin{itemize}
+      \item Save and edit notes on recipes.
+      \item Add ratings and write reviews for recipes.
+      \item View combined ratings and user reviews.
+      \item Manage user profiles with preferences and dietary needs.
+      \item Add new recipes.
+      \item Update and delete existing recipes.
+      \item Meal planner to schedule recipes by day.
+    \end{itemize}
+
+    \item Choose two features of your choice. These features should be different from the ones listed above.
+  \end{itemize}
 \end{itemize}
 
-\subsection*{Testing - Learning Outcome 1 (10\%)}
+\subsection*{Code Quality and Best Practices - Learning Outcomes 1, 3 (40%)}
 \begin{itemize}
-	 \item
+\item Write clean, readable, and maintainable code.
+\item Use modular, reusable components and avoid code duplication.
+\item Keep code simple and easy to understand.
+\item Ensure the app is responsive across different screen sizes and orientations.
+\item Optimise performance by managing resources efficiently.
 \end{itemize}
 
-\subsection*{Code Quality and Best Practices - Learning Outcome 1 (60\%)}
+\subsection*{Version Control - Learning Outcome 3 (5\%)}
 \begin{itemize}
-    \item  
+  \item Regular commits are made throughout development, demonstrating meaningful progress.
+  \item Commit messages are clear and descriptive.
+  \item The repository shows a clean and logical commit history that reflects the development process of the application.
+\end{itemize} 
+
+\subsection*{Testing - Learning Outcome 3 (10\%)}
+\begin{itemize}
+  \item Test the application with three different users for each version (six users total), observing how they navigate and use features.
+  \item Collect written feedback on usability issues, confusing UI and bugs.
+  \item Write a brief report summarising the user testing, including:
+  \begin{itemize}
+    \item Tester information (anonymised).
+    \item Tasks performed.
+    \item Positive feedback received.
+    \item Areas for improvement identified.
+    \item Bugs or errors found.
+    \item Suggestions on how feedback could be used to improve the app (no requirement to implement).
+  \end{itemize}
 \end{itemize}
 
-\subsection*{Project Management - Learning Outcome 1 (5\%)}
+\subsection*{Reflection - Learning Outcomes 1, 3 (5\%)}
 \begin{itemize}
-	\item 	
-\end{itemize} 
-
-\subsection*{Version Control - Learning Outcome 1 (5\%)}
-\begin{itemize}
-	\item 	
-\end{itemize} 
-
-\subsection*{Reflection - Learning Outcome 1 (5\%)}
-\begin{itemize}
-	\item 	
-\end{itemize} 
-
-\subsection*{Additional Information}
-\begin{itemize}
-    \item  
-\end{itemize} 
+  \item Write a short reflection (300-500 words) on your development process and learning throughout the project, including:
+  \begin{itemize}
+    \item Challenges you faced and how you overcame them.
+    \item What you would do differently in future projects.
+    \item New skills, tools or practices you learned during the project.
+  \end{itemize}
+\end{itemize}
 
 \end{document}
