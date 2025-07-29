@@ -21,6 +21,8 @@ Complete steps 1–6 in the setup guide here: <https://www.nativewind.dev/docs/g
 In the `App.jsx` file, add the following code:
 
 ```jsx
+import "./global.css"
+
 import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
 
