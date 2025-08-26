@@ -1,0 +1,1019 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Pasta Carbonara",
+      "cuisine": "Italian",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/pasta_carbonara.jpg",
+      "ingredients": [
+        {
+          "name": "all-purpose flour",
+          "quantity": "2 1/4 cups",
+          "category": "Baking"
+        },
+        {
+          "name": "sugar",
+          "quantity": "1/4 cup",
+          "category": "Baking"
+        },
+        {
+          "name": "active dry yeast",
+          "quantity": "1 packet",
+          "category": "Baking"
+        },
+        {
+          "name": "warm milk",
+          "quantity": "1/2 cup",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "salt",
+          "quantity": "1/2 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "unsalted butter",
+          "quantity": "1/2 cup",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "egg",
+          "quantity": "1 (for wash)",
+          "category": "Dairy & Eggs"
+        }
+      ],
+      "instructions": "Dissolve yeast and sugar in warm milk. Mix in flour and salt. Roll out dough and place butter in the center. Fold dough to encase butter. Roll and fold dough several times. Chill dough. Roll out, cut triangles, and roll into croissants. Brush with egg wash. Bake until golden.",
+      "difficulty": "Hard",
+      "prepTime": 120,
+      "cookTime": 20,
+      "servings": 8,
+      "tags": ["pastry", "French", "breakfast", "buttery"],
+      "nutrition": {
+        "calories": 280,
+        "protein": "6g",
+        "carbs": "32g",
+        "fat": "15g"
+      },
+      "averageRating": 4.1,
+      "reviews": [
+        {
+          "rating": 4,
+          "review": "Challenging but rewarding. Flaky and buttery!",
+          "user": "PastryChef"
+        },
+        {
+          "rating": 4,
+          "review": "Takes time but worth every minute.",
+          "user": "PatientBaker"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Ratatouille",
+      "cuisine": "French",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/ratatouille.jpg",
+      "ingredients": [
+        {
+          "name": "eggplant",
+          "quantity": "1 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "zucchini",
+          "quantity": "2 medium",
+          "category": "Vegetables"
+        },
+        {
+          "name": "red bell pepper",
+          "quantity": "1",
+          "category": "Vegetables"
+        },
+        {
+          "name": "onion",
+          "quantity": "1 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "tomatoes",
+          "quantity": "3 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "garlic",
+          "quantity": "4 cloves",
+          "category": "Vegetables"
+        },
+        {
+          "name": "thyme",
+          "quantity": "1 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "olive oil",
+          "quantity": "3 tbsp",
+          "category": "Oils & Vinegars"
+        }
+      ],
+      "instructions": "Sauté onion and garlic. Add diced eggplant, zucchini, and bell pepper. Stir in tomatoes and thyme. Simmer until vegetables are tender. Serve warm as a side dish or over pasta.",
+      "difficulty": "Medium",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "tags": ["vegetarian", "French", "healthy", "Mediterranean"],
+      "nutrition": {
+        "calories": 120,
+        "protein": "3g",
+        "carbs": "18g",
+        "fat": "5g"
+      },
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "rating": 4,
+          "review": "Healthy and flavorful. Great way to use summer vegetables.",
+          "user": "HealthyChef"
+        },
+        {
+          "rating": 5,
+          "review": "Beautiful colors and amazing taste. Very satisfying!",
+          "user": "VegetableLover"
+        }
+      ]
+    }
+  ]
+} [
+        {
+          "name": "spaghetti",
+          "quantity": "200g",
+          "category": "Pasta & Grains"
+        },
+        {
+          "name": "pancetta",
+          "quantity": "100g",
+          "category": "Meat"
+        },
+        {
+          "name": "eggs",
+          "quantity": "2",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "Pecorino cheese",
+          "quantity": "50g",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "to taste",
+          "category": "Spices & Herbs"
+        }
+      ],
+      "instructions": "Cook the spaghetti. While pasta is cooking, fry pancetta until crispy. Whisk eggs and cheese. Mix cooked pasta, pancetta, and egg mixture. Add black pepper and serve.",
+      "difficulty": "Medium",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 2,
+      "tags": ["pasta", "Italian", "quick", "comfort food"],
+      "nutrition": {
+        "calories": 580,
+        "protein": "28g",
+        "carbs": "45g",
+        "fat": "32g"
+      },
+      "averageRating": 4.6,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Absolutely delicious! Perfect carbonara recipe.",
+          "user": "FoodLover123"
+        },
+        {
+          "rating": 4,
+          "review": "Great recipe, easy to follow. Will make again.",
+          "user": "CookingMom"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Margherita Pizza",
+      "cuisine": "Italian",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/margherita_pizza.jpg",
+      "ingredients": [
+        {
+          "name": "pizza dough",
+          "quantity": "1 ball",
+          "category": "Pasta & Grains"
+        },
+        {
+          "name": "tomato sauce",
+          "quantity": "1/2 cup",
+          "category": "Sauces & Condiments"
+        },
+        {
+          "name": "fresh mozzarella cheese",
+          "quantity": "150g",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "fresh basil leaves",
+          "quantity": "8-10 leaves",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "olive oil",
+          "quantity": "2 tbsp",
+          "category": "Oils & Vinegars"
+        }
+      ],
+      "instructions": "Roll out pizza dough, spread tomato sauce, add mozzarella cheese, and top with basil leaves. Drizzle with olive oil. Bake until cheese is melted and bubbly.",
+      "difficulty": "Easy",
+      "prepTime": 15,
+      "cookTime": 12,
+      "servings": 4,
+      "tags": ["pizza", "Italian", "vegetarian", "classic"],
+      "nutrition": {
+        "calories": 320,
+        "protein": "15g",
+        "carbs": "38g",
+        "fat": "12g"
+      },
+      "averageRating": 4.8,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Perfect pizza! Just like in Italy.",
+          "user": "PizzaExpert"
+        },
+        {
+          "rating": 5,
+          "review": "Simple and delicious. My family loves it!",
+          "user": "HomeCook"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Chicken Alfredo",
+      "cuisine": "Italian",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/chicken_alfredo.png",
+      "ingredients": [
+        {
+          "name": "fettuccine pasta",
+          "quantity": "300g",
+          "category": "Pasta & Grains"
+        },
+        {
+          "name": "chicken breasts",
+          "quantity": "2",
+          "category": "Meat"
+        },
+        {
+          "name": "heavy cream",
+          "quantity": "1 cup",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "Parmesan cheese",
+          "quantity": "100g",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "garlic",
+          "quantity": "3 cloves",
+          "category": "Vegetables"
+        },
+        {
+          "name": "butter",
+          "quantity": "2 tbsp",
+          "category": "Dairy & Eggs"
+        }
+      ],
+      "instructions": "Cook fettuccine pasta. Cook chicken and garlic in butter. Add heavy cream and Parmesan cheese to make the Alfredo sauce. Toss with cooked pasta and serve.",
+      "difficulty": "Medium",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 3,
+      "tags": ["pasta", "chicken", "creamy", "comfort food"],
+      "nutrition": {
+        "calories": 720,
+        "protein": "42g",
+        "carbs": "48g",
+        "fat": "38g"
+      },
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "rating": 4,
+          "review": "Rich and creamy, very satisfying meal.",
+          "user": "ComfortFoodFan"
+        },
+        {
+          "rating": 5,
+          "review": "Restaurant quality at home!",
+          "user": "ChefWannabe"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sushi Rolls",
+      "cuisine": "Japanese",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/sushi_rolls.jpg",
+      "ingredients": [
+        {
+          "name": "nori seaweed sheets",
+          "quantity": "4 sheets",
+          "category": "Seafood"
+        },
+        {
+          "name": "sushi rice",
+          "quantity": "2 cups",
+          "category": "Pasta & Grains"
+        },
+        {
+          "name": "fresh salmon",
+          "quantity": "200g",
+          "category": "Seafood"
+        },
+        {
+          "name": "cucumber",
+          "quantity": "1",
+          "category": "Vegetables"
+        },
+        {
+          "name": "avocado",
+          "quantity": "1",
+          "category": "Vegetables"
+        },
+        {
+          "name": "soy sauce",
+          "quantity": "for serving",
+          "category": "Sauces & Condiments"
+        }
+      ],
+      "instructions": "Lay out nori seaweed, spread sushi rice, add fish, cucumber, and avocado. Roll tightly and slice into bite-sized pieces. Serve with soy sauce and wasabi.",
+      "difficulty": "Hard",
+      "prepTime": 30,
+      "cookTime": 0,
+      "servings": 4,
+      "tags": ["sushi", "Japanese", "raw fish", "healthy"],
+      "nutrition": {
+        "calories": 280,
+        "protein": "18g",
+        "carbs": "35g",
+        "fat": "8g"
+      },
+      "averageRating": 4.2,
+      "reviews": [
+        {
+          "rating": 4,
+          "review": "Takes practice but worth it!",
+          "user": "SushiLover"
+        },
+        {
+          "rating": 4,
+          "review": "Fresh and delicious, challenging to make.",
+          "user": "HomeSushi"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Teriyaki Chicken",
+      "cuisine": "Japanese",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/teriyaki_chicken.jpg",
+      "ingredients": [
+        {
+          "name": "chicken thighs",
+          "quantity": "6",
+          "category": "Meat"
+        },
+        {
+          "name": "soy sauce",
+          "quantity": "1/3 cup",
+          "category": "Sauces & Condiments"
+        },
+        {
+          "name": "mirin",
+          "quantity": "2 tbsp",
+          "category": "Sauces & Condiments"
+        },
+        {
+          "name": "brown sugar",
+          "quantity": "2 tbsp",
+          "category": "Baking"
+        },
+        {
+          "name": "sesame seeds",
+          "quantity": "1 tbsp",
+          "category": "Nuts & Seeds"
+        },
+        {
+          "name": "green onions",
+          "quantity": "2",
+          "category": "Vegetables"
+        }
+      ],
+      "instructions": "Marinate chicken in soy sauce, mirin, and brown sugar. Grill or pan-fry until cooked. Sprinkle with sesame seeds and green onions. Serve with rice.",
+      "difficulty": "Easy",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "tags": ["chicken", "Japanese", "grilled", "sweet"],
+      "nutrition": {
+        "calories": 340,
+        "protein": "32g",
+        "carbs": "12g",
+        "fat": "18g"
+      },
+      "averageRating": 4.7,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Perfect balance of sweet and savory!",
+          "user": "TeriyakiFan"
+        },
+        {
+          "rating": 4,
+          "review": "Easy to make and very flavorful.",
+          "user": "QuickDinner"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Miso Soup",
+      "cuisine": "Japanese",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/miso_soup.jpg",
+      "ingredients": [
+        {
+          "name": "dashi stock",
+          "quantity": "2 cups",
+          "category": "Sauces & Condiments"
+        },
+        {
+          "name": "miso paste",
+          "quantity": "3 tbsp",
+          "category": "Sauces & Condiments"
+        },
+        {
+          "name": "tofu",
+          "quantity": "100g",
+          "category": "Protein"
+        },
+        {
+          "name": "seaweed",
+          "quantity": "2 tbsp dried",
+          "category": "Seafood"
+        },
+        {
+          "name": "green onions",
+          "quantity": "2",
+          "category": "Vegetables"
+        }
+      ],
+      "instructions": "Heat dashi stock. Dissolve miso paste in a small amount of stock. Add dissolved miso paste back to the pot. Add cubed tofu and seaweed. Simmer without boiling. Serve with chopped green onions.",
+      "difficulty": "Easy",
+      "prepTime": 5,
+      "cookTime": 10,
+      "servings": 2,
+      "tags": ["soup", "Japanese", "vegetarian", "light"],
+      "nutrition": {
+        "calories": 80,
+        "protein": "6g",
+        "carbs": "8g",
+        "fat": "3g"
+      },
+      "averageRating": 4.3,
+      "reviews": [
+        {
+          "rating": 4,
+          "review": "Authentic and warming. Perfect starter.",
+          "user": "SoupLover"
+        },
+        {
+          "rating": 4,
+          "review": "Simple and healthy. Great with sushi.",
+          "user": "HealthyEater"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Chicken Tikka Masala",
+      "cuisine": "Indian",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/chicken_tikka_masala.jpg",
+      "ingredients": [
+        {
+          "name": "chicken thighs",
+          "quantity": "600g",
+          "category": "Meat"
+        },
+        {
+          "name": "yogurt",
+          "quantity": "1/2 cup",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "garam masala",
+          "quantity": "2 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "tomato sauce",
+          "quantity": "1 cup",
+          "category": "Sauces & Condiments"
+        },
+        {
+          "name": "heavy cream",
+          "quantity": "1/2 cup",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "garlic",
+          "quantity": "4 cloves",
+          "category": "Vegetables"
+        },
+        {
+          "name": "ginger",
+          "quantity": "1 inch piece",
+          "category": "Vegetables"
+        },
+        {
+          "name": "cilantro",
+          "quantity": "1/4 cup",
+          "category": "Spices & Herbs"
+        }
+      ],
+      "instructions": "Marinate chicken in yogurt and garam masala. Grill or pan-fry until cooked. In a separate pan, cook garlic and ginger. Add tomato sauce and cream. Add cooked chicken and simmer. Garnish with cilantro and serve with rice.",
+      "difficulty": "Medium",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "tags": ["chicken", "Indian", "spicy", "curry"],
+      "nutrition": {
+        "calories": 420,
+        "protein": "35g",
+        "carbs": "15g",
+        "fat": "25g"
+      },
+      "averageRating": 4.9,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Best tikka masala I've ever made at home!",
+          "user": "CurryMaster"
+        },
+        {
+          "rating": 5,
+          "review": "Restaurant quality! Family favorite now.",
+          "user": "IndianFoodLove"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Naan Bread",
+      "cuisine": "Indian",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/naan_bread.jpg",
+      "ingredients": [
+        {
+          "name": "all-purpose flour",
+          "quantity": "2 cups",
+          "category": "Baking"
+        },
+        {
+          "name": "yogurt",
+          "quantity": "1/2 cup",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "baking powder",
+          "quantity": "1 tsp",
+          "category": "Baking"
+        },
+        {
+          "name": "salt",
+          "quantity": "1/2 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "sugar",
+          "quantity": "1 tsp",
+          "category": "Baking"
+        },
+        {
+          "name": "vegetable oil",
+          "quantity": "2 tbsp",
+          "category": "Oils & Vinegars"
+        }
+      ],
+      "instructions": "Mix flour, yogurt, baking powder, salt, sugar, and oil. Knead dough and let rest. Roll out dough and cook in a pan until golden brown.",
+      "difficulty": "Medium",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 6,
+      "tags": ["bread", "Indian", "side dish", "vegetarian"],
+      "nutrition": {
+        "calories": 180,
+        "protein": "5g",
+        "carbs": "32g",
+        "fat": "4g"
+      },
+      "averageRating": 4.5,
+      "reviews": [
+        {
+          "rating": 4,
+          "review": "Fluffy and delicious. Great with curry!",
+          "user": "BreadMaker"
+        },
+        {
+          "rating": 5,
+          "review": "Perfect texture, easy to follow recipe.",
+          "user": "HomeBaker"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Chana Masala",
+      "cuisine": "Indian",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/chana_masala.jpg",
+      "ingredients": [
+        {
+          "name": "chickpeas",
+          "quantity": "2 cups cooked",
+          "category": "Protein"
+        },
+        {
+          "name": "tomatoes",
+          "quantity": "2 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "onion",
+          "quantity": "1 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "garlic",
+          "quantity": "4 cloves",
+          "category": "Vegetables"
+        },
+        {
+          "name": "ginger",
+          "quantity": "1 inch piece",
+          "category": "Vegetables"
+        },
+        {
+          "name": "garam masala",
+          "quantity": "1 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "cumin",
+          "quantity": "1 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "turmeric",
+          "quantity": "1/2 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "cilantro",
+          "quantity": "1/4 cup",
+          "category": "Spices & Herbs"
+        }
+      ],
+      "instructions": "Cook onion, garlic, and ginger. Add tomatoes, chickpeas, and spices. Simmer until chickpeas are soft. Garnish with cilantro and serve with rice.",
+      "difficulty": "Easy",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "tags": ["vegetarian", "Indian", "spicy", "protein-rich"],
+      "nutrition": {
+        "calories": 220,
+        "protein": "12g",
+        "carbs": "35g",
+        "fat": "5g"
+      },
+      "averageRating": 4.6,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Amazing vegetarian dish! So flavorful.",
+          "user": "VeggieLover"
+        },
+        {
+          "rating": 4,
+          "review": "Hearty and satisfying. Perfect spice level.",
+          "user": "SpiceFan"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Chicken Noodle Soup",
+      "cuisine": "American",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/chicken_noodle_soup.jpg",
+      "ingredients": [
+        {
+          "name": "chicken thighs",
+          "quantity": "4",
+          "category": "Meat"
+        },
+        {
+          "name": "carrots",
+          "quantity": "3 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "celery",
+          "quantity": "3 stalks",
+          "category": "Vegetables"
+        },
+        {
+          "name": "onion",
+          "quantity": "1 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "garlic",
+          "quantity": "3 cloves",
+          "category": "Vegetables"
+        },
+        {
+          "name": "chicken broth",
+          "quantity": "6 cups",
+          "category": "Sauces & Condiments"
+        },
+        {
+          "name": "egg noodles",
+          "quantity": "2 cups",
+          "category": "Pasta & Grains"
+        },
+        {
+          "name": "bay leaf",
+          "quantity": "2",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "thyme",
+          "quantity": "1 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "parsley",
+          "quantity": "2 tbsp",
+          "category": "Spices & Herbs"
+        }
+      ],
+      "instructions": "Cook chicken thighs. Cook carrots, celery, onion, and garlic. Add chicken broth, egg noodles, bay leaf, and thyme. Simmer until noodles are tender. Garnish with parsley.",
+      "difficulty": "Easy",
+      "prepTime": 15,
+      "cookTime": 45,
+      "servings": 6,
+      "tags": ["soup", "chicken", "comfort food", "healthy"],
+      "nutrition": {
+        "calories": 280,
+        "protein": "25g",
+        "carbs": "22g",
+        "fat": "10g"
+      },
+      "averageRating": 4.8,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Ultimate comfort food! Perfect when sick.",
+          "user": "ComfortSeeker"
+        },
+        {
+          "rating": 5,
+          "review": "Just like mom used to make. So warming!",
+          "user": "Nostalgic"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Hamburger",
+      "cuisine": "American",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/hamburger.jpg",
+      "ingredients": [
+        {
+          "name": "ground beef",
+          "quantity": "500g",
+          "category": "Meat"
+        },
+        {
+          "name": "burger buns",
+          "quantity": "4",
+          "category": "Baking"
+        },
+        {
+          "name": "lettuce",
+          "quantity": "4 leaves",
+          "category": "Vegetables"
+        },
+        {
+          "name": "tomato",
+          "quantity": "1 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "onion",
+          "quantity": "1 medium",
+          "category": "Vegetables"
+        },
+        {
+          "name": "cheese slices",
+          "quantity": "4",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "ketchup",
+          "quantity": "to taste",
+          "category": "Sauces & Condiments"
+        },
+        {
+          "name": "mustard",
+          "quantity": "to taste",
+          "category": "Sauces & Condiments"
+        }
+      ],
+      "instructions": "Form ground beef into patties. Cook patties on a grill or in a pan. Assemble burger with lettuce, tomato, onion, cheese, ketchup, and mustard.",
+      "difficulty": "Easy",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "tags": ["burger", "American", "grilled", "classic"],
+      "nutrition": {
+        "calories": 520,
+        "protein": "28g",
+        "carbs": "35g",
+        "fat": "30g"
+      },
+      "averageRating": 4.5,
+      "reviews": [
+        {
+          "rating": 4,
+          "review": "Classic American burger. Kids love it!",
+          "user": "FamilyCook"
+        },
+        {
+          "rating": 5,
+          "review": "Juicy and delicious. Perfect for BBQ.",
+          "user": "GrillMaster"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Mac and Cheese",
+      "cuisine": "American",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/mac_and_cheese.jpg",
+      "ingredients": [
+        {
+          "name": "macaroni pasta",
+          "quantity": "300g",
+          "category": "Pasta & Grains"
+        },
+        {
+          "name": "cheddar cheese",
+          "quantity": "200g",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "milk",
+          "quantity": "1 cup",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "all-purpose flour",
+          "quantity": "2 tbsp",
+          "category": "Baking"
+        },
+        {
+          "name": "butter",
+          "quantity": "2 tbsp",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "breadcrumbs",
+          "quantity": "1/2 cup",
+          "category": "Baking"
+        }
+      ],
+      "instructions": "Cook macaroni pasta. Make a roux with butter and flour. Add milk and cheese to make a cheese sauce. Mix cooked pasta with cheese sauce. Top with breadcrumbs and bake until golden brown.",
+      "difficulty": "Medium",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "tags": ["pasta", "cheese", "comfort food", "baked"],
+      "nutrition": {
+        "calories": 450,
+        "protein": "18g",
+        "carbs": "52g",
+        "fat": "20g"
+      },
+      "averageRating": 4.7,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Creamy and cheesy perfection!",
+          "user": "CheeseAddict"
+        },
+        {
+          "rating": 4,
+          "review": "Great comfort food. Kids finished their plates!",
+          "user": "BusyMom"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Coq au Vin",
+      "cuisine": "French",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/coq_au_vin.jpg",
+      "ingredients": [
+        {
+          "name": "whole chicken",
+          "quantity": "1 (cut into pieces)",
+          "category": "Meat"
+        },
+        {
+          "name": "bacon",
+          "quantity": "100g",
+          "category": "Meat"
+        },
+        {
+          "name": "pearl onions",
+          "quantity": "200g",
+          "category": "Vegetables"
+        },
+        {
+          "name": "carrots",
+          "quantity": "2 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "red wine",
+          "quantity": "2 cups",
+          "category": "Alcohol"
+        },
+        {
+          "name": "chicken broth",
+          "quantity": "1 cup",
+          "category": "Sauces & Condiments"
+        },
+        {
+          "name": "mushrooms",
+          "quantity": "200g",
+          "category": "Vegetables"
+        },
+        {
+          "name": "garlic",
+          "quantity": "3 cloves",
+          "category": "Vegetables"
+        },
+        {
+          "name": "thyme",
+          "quantity": "2 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "all-purpose flour",
+          "quantity": "2 tbsp",
+          "category": "Baking"
+        }
+      ],
+      "instructions": "Sear chicken and bacon. Remove from pot and sauté onions, carrots, and mushrooms. Add garlic and flour. Pour in red wine and chicken broth. Add chicken and thyme. Simmer until chicken is tender.",
+      "difficulty": "Hard",
+      "prepTime": 30,
+      "cookTime": 90,
+      "servings": 4,
+      "tags": ["chicken", "French", "wine", "elegant"],
+      "nutrition": {
+        "calories": 480,
+        "protein": "42g",
+        "carbs": "18g",
+        "fat": "24g"
+      },
+      "averageRating": 4.9,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Sophisticated and delicious. Worth the effort!",
+          "user": "FrenchChef"
+        },
+        {
+          "rating": 5,
+          "review": "Restaurant quality dish. Impressive for guests.",
+          "user": "EntertainingPro"
+        }
+      ]
+    }
+]
