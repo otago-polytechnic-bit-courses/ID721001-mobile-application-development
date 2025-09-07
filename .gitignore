@@ -34,3 +34,5 @@ local.properties
 *.out
 *.synctex.gz
 *.xdv
+
+.DS_Store
