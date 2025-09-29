@@ -2,9 +2,9 @@
   "recipes": [
     {
       "id": 1,
-      "name": "Pasta Carbonara",
+      "name": "Croissant",
       "cuisine": "Italian",
-      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/pasta_carbonara.jpg",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/croissant.jpg",
       "ingredients": [
         {
           "name": "all-purpose flour",
@@ -65,133 +65,6 @@
           "rating": 4,
           "review": "Takes time but worth every minute.",
           "user": "PatientBaker"
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "name": "Ratatouille",
-      "cuisine": "French",
-      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/ratatouille.jpg",
-      "ingredients": [
-        {
-          "name": "eggplant",
-          "quantity": "1 large",
-          "category": "Vegetables"
-        },
-        {
-          "name": "zucchini",
-          "quantity": "2 medium",
-          "category": "Vegetables"
-        },
-        {
-          "name": "red bell pepper",
-          "quantity": "1",
-          "category": "Vegetables"
-        },
-        {
-          "name": "onion",
-          "quantity": "1 large",
-          "category": "Vegetables"
-        },
-        {
-          "name": "tomatoes",
-          "quantity": "3 large",
-          "category": "Vegetables"
-        },
-        {
-          "name": "garlic",
-          "quantity": "4 cloves",
-          "category": "Vegetables"
-        },
-        {
-          "name": "thyme",
-          "quantity": "1 tsp",
-          "category": "Spices & Herbs"
-        },
-        {
-          "name": "olive oil",
-          "quantity": "3 tbsp",
-          "category": "Oils & Vinegars"
-        }
-      ],
-      "instructions": "Sauté onion and garlic. Add diced eggplant, zucchini, and bell pepper. Stir in tomatoes and thyme. Simmer until vegetables are tender. Serve warm as a side dish or over pasta.",
-      "difficulty": "Medium",
-      "prepTime": 20,
-      "cookTime": 40,
-      "servings": 6,
-      "tags": ["vegetarian", "French", "healthy", "Mediterranean"],
-      "nutrition": {
-        "calories": 120,
-        "protein": "3g",
-        "carbs": "18g",
-        "fat": "5g"
-      },
-      "averageRating": 4.4,
-      "reviews": [
-        {
-          "rating": 4,
-          "review": "Healthy and flavorful. Great way to use summer vegetables.",
-          "user": "HealthyChef"
-        },
-        {
-          "rating": 5,
-          "review": "Beautiful colors and amazing taste. Very satisfying!",
-          "user": "VegetableLover"
-        }
-      ]
-    }
-  ]
-} [
-        {
-          "name": "spaghetti",
-          "quantity": "200g",
-          "category": "Pasta & Grains"
-        },
-        {
-          "name": "pancetta",
-          "quantity": "100g",
-          "category": "Meat"
-        },
-        {
-          "name": "eggs",
-          "quantity": "2",
-          "category": "Dairy & Eggs"
-        },
-        {
-          "name": "Pecorino cheese",
-          "quantity": "50g",
-          "category": "Dairy & Eggs"
-        },
-        {
-          "name": "black pepper",
-          "quantity": "to taste",
-          "category": "Spices & Herbs"
-        }
-      ],
-      "instructions": "Cook the spaghetti. While pasta is cooking, fry pancetta until crispy. Whisk eggs and cheese. Mix cooked pasta, pancetta, and egg mixture. Add black pepper and serve.",
-      "difficulty": "Medium",
-      "prepTime": 10,
-      "cookTime": 15,
-      "servings": 2,
-      "tags": ["pasta", "Italian", "quick", "comfort food"],
-      "nutrition": {
-        "calories": 580,
-        "protein": "28g",
-        "carbs": "45g",
-        "fat": "32g"
-      },
-      "averageRating": 4.6,
-      "reviews": [
-        {
-          "rating": 5,
-          "review": "Absolutely delicious! Perfect carbonara recipe.",
-          "user": "FoodLover123"
-        },
-        {
-          "rating": 4,
-          "review": "Great recipe, easy to follow. Will make again.",
-          "user": "CookingMom"
         }
       ]
     },
@@ -1015,5 +888,137 @@
           "user": "EntertainingPro"
         }
       ]
+    },
+    {
+      "id": 14,
+      "name": "Pasta Carbonara",
+      "cuisine": "French",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/pasta_carbonara.jpg",
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "quantity": "200g",
+          "category": "Pasta & Grains"
+        },
+        {
+          "name": "pancetta",
+          "quantity": "100g",
+          "category": "Meat"
+        },
+        {
+          "name": "eggs",
+          "quantity": "2",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "Pecorino cheese",
+          "quantity": "50g",
+          "category": "Dairy & Eggs"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "to taste",
+          "category": "Spices & Herbs"
+        }
+      ],
+      "instructions": "Cook the spaghetti. While pasta is cooking, fry pancetta until crispy. Whisk eggs and cheese. Mix cooked pasta, pancetta, and egg mixture. Add black pepper and serve.",
+      "difficulty": "Medium",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 2,
+      "tags": ["pasta", "Italian", "quick", "comfort food"],
+      "nutrition": {
+        "calories": 580,
+        "protein": "28g",
+        "carbs": "45g",
+        "fat": "32g"
+      },
+      "averageRating": 4.6,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Absolutely delicious! Perfect carbonara recipe.",
+          "user": "FoodLover123"
+        },
+        {
+          "rating": 4,
+          "review": "Great recipe, easy to follow. Will make again.",
+          "user": "CookingMom"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Ratatouille",
+      "cuisine": "French",
+      "image": "https://raw.githubusercontent.com/otago-polytechnic-bit-courses/ID721001-mobile-application-development/s2-24/assessments/images/ratatouille.jpg",
+      "ingredients": [
+        {
+          "name": "eggplant",
+          "quantity": "1 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "zucchini",
+          "quantity": "2 medium",
+          "category": "Vegetables"
+        },
+        {
+          "name": "red bell pepper",
+          "quantity": "1",
+          "category": "Vegetables"
+        },
+        {
+          "name": "onion",
+          "quantity": "1 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "tomatoes",
+          "quantity": "3 large",
+          "category": "Vegetables"
+        },
+        {
+          "name": "garlic",
+          "quantity": "4 cloves",
+          "category": "Vegetables"
+        },
+        {
+          "name": "thyme",
+          "quantity": "1 tsp",
+          "category": "Spices & Herbs"
+        },
+        {
+          "name": "olive oil",
+          "quantity": "3 tbsp",
+          "category": "Oils & Vinegars"
+        }
+      ],
+      "instructions": "Sauté onion and garlic. Add diced eggplant, zucchini, and bell pepper. Stir in tomatoes and thyme. Simmer until vegetables are tender. Serve warm as a side dish or over pasta.",
+      "difficulty": "Medium",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "tags": ["vegetarian", "French", "healthy", "Mediterranean"],
+      "nutrition": {
+        "calories": 120,
+        "protein": "3g",
+        "carbs": "18g",
+        "fat": "5g"
+      },
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "rating": 4,
+          "review": "Healthy and flavorful. Great way to use summer vegetables.",
+          "user": "HealthyChef"
+        },
+        {
+          "rating": 5,
+          "review": "Beautiful colors and amazing taste. Very satisfying!",
+          "user": "VegetableLover"
+        }
+      ]
     }
-]
+  ]
+}
