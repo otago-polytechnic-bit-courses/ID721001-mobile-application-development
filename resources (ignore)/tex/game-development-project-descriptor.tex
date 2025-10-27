@@ -11,13 +11,13 @@
 \usepackage{wrapfig}
 \usepackage{enumerate}
 \usepackage{hyperref}
-\usepackage[margin = 2.25cm]{geometry}
+\usepackage[margin=1.75cm]{geometry}
 \usepackage[table]{xcolor}
-\usepackage{soul}
 \usepackage{fancyhdr}
+\usepackage{pdflscape}
 \hypersetup{
- colorlinks = true,
- urlcolor = blue
+  colorlinks = true,
+  urlcolor = blue 
 } 
 \setlength\parindent{0pt}
 \pagestyle{fancy}
@@ -140,5 +140,146 @@ Resits and reassessments are not applicable in \textbf{ID721001: Mobile Applicat
   \item Make sure the video is clear and easy to follow.
   \item Submit a link to the presentation in your repository's \textbf{README.md} file.
 \end{itemize}
+
+\newgeometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\begin{landscape}
+
+\section*{Marking Rubric}
+
+\subsection*{Functionality - Learning Outcomes 1, 2 (20\%)}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{5cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Criteria} & \textbf{Excellent (A)} & \textbf{Good (B)} & \textbf{Satisfactory (C)} & \textbf{Not Yet Achieved (D)} \\ \hline
+
+\textbf{Game v1 - Basic Gestures (8\%)} & 
+Game fully functional with user interaction through basic gestures (tap, swipe, drag, pinch, etc.). Gestures are responsive, smooth and intuitive. Game mechanics are well-implemented and polished. Core gameplay is engaging and complete. & 
+Game functional with basic gesture interaction. Gestures mostly responsive with minor issues. Game mechanics implemented with some polish. Core gameplay present. & 
+Basic game present with gesture interaction partially implemented. Some responsiveness issues. Game mechanics basic. Core gameplay incomplete or limited. & 
+Game non-functional or gestures severely limited/broken. Poor responsiveness. Game mechanics missing or broken. No complete gameplay. \\ \hline
+
+\textbf{Game v2 - Ten Features (8\%)} & 
+Ten distinct features fully implemented and functional. Features are creative, well-integrated and significantly enhance gameplay. Features work together cohesively. Clear progression from v1 or standalone excellence. & 
+8-10 features implemented with minor issues. Features mostly integrated and add value to gameplay. Good progression or standalone quality. & 
+6-8 features present with functionality gaps. Basic integration. Some features add limited value. & 
+Fewer than 6 features or non-functional. Poor integration. Features don't enhance gameplay or are incomplete. \\ \hline
+
+\textbf{APK Creation (4\%)} & 
+Both v1 and v2 APKs successfully created, installable and fully functional on Android devices. Professional build configuration. Games run smoothly with no crashes. & 
+Both APKs created with minor issues. Mostly functional after installation. Minor performance issues or occasional bugs. & 
+Both APKs created but with functionality or installation issues. Games run but with significant bugs or crashes. & 
+APKs missing, won't install, only one version created, or games crash immediately. \\ \hline
+
+\end{tabular}
+
+\subsection*{Code Quality and Best Practices - Learning Outcomes 1, 3 (35\%)}
+
+\begin{tabular}{|p{5cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Criteria} & \textbf{Excellent (A)} & \textbf{Good (B)} & \textbf{Satisfactory (C)} & \textbf{Not Yet Achieved (D)} \\ \hline
+
+\textbf{Code Readability and Maintainability (9\%)} & 
+Code is exceptionally clean and readable with consistent formatting. Meaningful variable, function and class names. Well-organised file and script structure. Comprehensive comments where needed. Follows C\# and Unity conventions. & 
+Code is clean and readable with good naming conventions. Organised structure with some helpful comments. Minor inconsistencies. Mostly follows conventions. & 
+Code is mostly readable. Some unclear naming or inconsistent formatting. Basic organisation present. Limited comments. & 
+Code is difficult to read with poor naming conventions. Inconsistent or chaotic structure. No comments. Doesn't follow conventions. \\ \hline
+
+\textbf{Modularity and Reusability (9\%)} & 
+Excellent use of modular, reusable scripts and components. Classes and functions are well-abstracted and single-purpose. No code duplication. DRY principles followed throughout. Proper use of Unity component system. & 
+Good modular structure with reusable components. Minimal code duplication. Most code follows DRY principles. Adequate use of Unity components. & 
+Some modular components present. Some code duplication exists. Partial adherence to DRY principles. Basic Unity component usage. & 
+Little modularity. Significant code duplication. Poor component abstraction. Improper Unity component usage. \\ \hline
+
+\textbf{Code Simplicity and Clarity (8\%)} & 
+Code is simple, elegant and easy to understand. Complex logic is well-explained. Appropriate use of Unity features and C\# without over-engineering. Clear separation of concerns. & 
+Code is generally simple and clear. Most logic is easy to follow with minor complex sections. Reasonable use of Unity features. & 
+Code works but contains unnecessarily complex sections. Some logic is difficult to follow. Basic Unity feature usage. & 
+Code is overly complex or convoluted. Difficult to understand the implementation. Misuse of Unity features. \\ \hline
+
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Criteria} & \textbf{Excellent (A)} & \textbf{Good (B)} & \textbf{Satisfactory (C)} & \textbf{Not Yet Achieved (D)} \\ \hline
+
+\textbf{Responsive Design (5\%)} & 
+Games are fully responsive across different screen sizes and orientations. UI scales and adapts seamlessly. Excellent handling of aspect ratios. Touch inputs work correctly on all screen sizes. & 
+Games mostly responsive with minor issues on some screen sizes or orientations. UI scales adequately. Touch inputs mostly work. & 
+Basic responsive design present. Some screens adapt but with layout or scaling issues. Touch inputs work on most devices. & 
+Poor or no responsive design. UI breaks on different screen sizes or orientations. Touch inputs fail on some devices. \\ \hline
+
+\textbf{Performance and Resource Management (4\%)} & 
+Excellent resource management. Efficient use of GameObjects and components. Proper memory management and object pooling. Optimised physics and rendering. Smooth frame rates (60 FPS) with no stuttering. & 
+Good resource management. Mostly efficient implementations. Adequate optimization. Minor frame rate drops. Good overall performance. & 
+Basic resource management. Some inefficient implementations. Performance acceptable but not optimised. Noticeable frame drops. & 
+Poor resource management. Inefficient use of resources. Performance issues present. Frequent frame drops, stuttering or crashes. Memory leaks. \\ \hline
+
+\end{tabular}
+
+\subsection*{Version Control - Learning Outcome 3 (5\%)}
+
+\begin{tabular}{|p{5cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Criteria} & \textbf{Excellent (A)} & \textbf{Good (B)} & \textbf{Satisfactory (C)} & \textbf{Not Yet Achieved (D)} \\ \hline
+
+\textbf{Commit History and Messages (5\%)} & 
+Regular, meaningful commits throughout development. Clear, descriptive commit messages. Logical progression showing development process. Clean commit history in project branch. Proper .gitignore usage. & 
+Regular commits with mostly clear messages. Commit history shows good development progression with minor gaps. Good .gitignore usage. & 
+Commits present but irregular or clustered. Some commit messages unclear. Basic development history visible. Basic .gitignore present. & 
+Few commits or poor timing. Unclear messages (e.g., "update", "fix"). No clear development progression. No or improper .gitignore. \\ \hline
+
+\end{tabular}
+
+\subsection*{Testing - Learning Outcome 3 (10\%)}
+
+\begin{tabular}{|p{5cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Criteria} & \textbf{Excellent (A)} & \textbf{Good (B)} & \textbf{Satisfactory (C)} & \textbf{Not Yet Achieved (D)} \\ \hline
+
+\textbf{User Testing Process (4\%)} & 
+Six users tested (three per version). Well-structured testing sessions with clear tasks relevant to mobile game interaction. Comprehensive written feedback collected covering usability, UI, controls and bugs. Professional documentation. & 
+5-6 users tested. Testing sessions conducted with mostly clear tasks. Good written feedback collected covering most areas including mobile-specific issues. & 
+3-4 users tested. Basic testing conducted. Some written feedback collected but incomplete or lacking mobile gaming focus. & 
+Fewer than 3 users tested or testing poorly documented. Minimal or no written feedback. No focus on mobile gaming aspects. \\ \hline
+
+\textbf{Testing Report Quality (6\%)} & 
+Comprehensive report with all required sections. Tester information anonymised. Tasks clearly documented. Thorough analysis of positive feedback, improvement areas and bugs. Excellent suggestions for improvements with clear rationale specific to mobile gaming. & 
+Good report covering all required sections. Most elements well-documented. Adequate analysis of feedback and bugs. Good improvement suggestions relevant to mobile games. & 
+Report present covering most sections. Basic documentation of testing. Some analysis present. Limited improvement suggestions. & 
+Report missing, incomplete or significantly lacking detail. Poor documentation. No analysis or improvement suggestions. \\ \hline
+
+\end{tabular}
+
+\subsection*{Reflection - Learning Outcomes 1, 3 (5\%)}
+
+\begin{tabular}{|p{5cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Criteria} & \textbf{Excellent (A)} & \textbf{Good (B)} & \textbf{Satisfactory (C)} & \textbf{Not Yet Achieved (D)} \\ \hline
+
+\textbf{Reflection Quality (5\%)} & 
+Thoughtful reflection (300-500 words) covering all required points. Clear articulation of challenges, solutions and learning. Demonstrates deep understanding and self-awareness about mobile game development process. & 
+Good reflection covering all required points. Adequate discussion of challenges and learning with some depth. Within word count. & 
+Reflection present covering most points. Brief or superficial discussion. May be slightly outside word count. & 
+Reflection missing, incomplete or significantly outside word count. Lacks depth or doesn't cover required points. \\ \hline
+
+\end{tabular}
+
+\subsection*{Presentation - Learning Outcome 2 (5\%)}
+
+\begin{tabular}{|p{5cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Criteria} & \textbf{Excellent (A)} & \textbf{Good (B)} & \textbf{Satisfactory (C)} & \textbf{Not Yet Achieved (D)} \\ \hline
+
+\textbf{Video Demonstration (5\%)} & 
+Clear 5-10 minute recording demonstrating all v1 and v2 features. Well-paced, professional presentation. Easy to follow with good audio/visual quality. Shows games running on device or emulator. Clearly demonstrates gesture interactions. Link submitted correctly. & 
+Good recording within time limit. Most features demonstrated. Generally clear with minor audio/visual issues. Shows gameplay. Link submitted. & 
+Recording present but may be too short/long. Some features demonstrated. Quality acceptable but could be clearer. & 
+Recording missing, significantly outside time limit, unclear, or doesn't demonstrate key features. Poor quality. Link missing. \\ \hline
+
+\end{tabular}
+
+\restoregeometry
+\end{landscape}
 
 \end{document}
