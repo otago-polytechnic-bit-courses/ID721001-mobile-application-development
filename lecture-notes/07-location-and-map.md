@@ -10,7 +10,7 @@ npx create-expo-app 07-playground --template blank
 
 ## Location
 
-We can use implement location services in our application to get the user's current location. This can be useful for applications that require the user's location, e.g., weather, maps, etc.
+We can implement location services in our application to get the user's current location. This can be useful for applications that require the user's location, e.g., weather, maps, etc.
 
 ### Getting Started
 
@@ -107,7 +107,7 @@ Reload your application. You should see the following:
 
 ## Map
 
-We can use implement maps in our application to display locations. Example of applications that use maps are **Google Maps**, **Uber**, etc.
+We can implement maps in our application to display locations. Examples of applications that use maps are **Google Maps**, **Uber**, etc.
 
 ### Getting Started
 

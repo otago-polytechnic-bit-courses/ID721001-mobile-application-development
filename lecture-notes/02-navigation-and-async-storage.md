@@ -24,7 +24,7 @@ npm install @react-navigation/native react-native-screens react-native-safe-area
 - `react-native-screens` - Native navigation primitives
 - `react-native-safe-area-context` - Safe area context. This is the area that is not covered by the **status bar** on **iOS** and the **navigation bar** on **Android**.
 
-If you using a **Mac** and developing for **iOS**, you need to install the following dependency:
+If you are using a **Mac** and developing for **iOS**, you need to install the following dependency:
 
 ```bash
 npx pod-install ios
@@ -215,7 +215,7 @@ const HomeScreen = (props) => {
 // ...
 ```
 
-You will notice that `props.navigation.navigate` takes an object as a second argument. This object contains the data, i.e., `first_name` and `last_name that we want to pass to the `DetailsScreen` component.
+You will notice that `props.navigation.navigate` takes an object as a second argument. This object contains the data, i.e., `first_name` and `last_name` that we want to pass to the `DetailsScreen` component.
 
 ### DetailsScreen.jsx
 
