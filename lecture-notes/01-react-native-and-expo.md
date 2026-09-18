@@ -10,7 +10,7 @@ By default, **GitHub Classroom** creates an empty repository. Firstly, you must 
 
 ### Create a README
 
-Click the **Add file** button, then the **Create new file** button. Name your file `README.md` (Markdown), then click on the **Commit new file** button. You should see a new file in your repository called `README.md` and the `main` branch.
+Click the **Add file** button, then the **Create new file** button. Name your file `README.md` (Markdown), then click on the **Commit new file** button. You should see a new file in your repository called `README.md` on the `main` branch.
 
 > **Resource:** <https://guides.github.com/features/mastering-markdown/>
 

@@ -59,7 +59,7 @@ You have a variety of options to choose from and preview how your icon will look
 
 ![](<../resources%20(ignore)/img/05/web-1.png>)
 
-Here is example of an icon using clip art:
+Here is an example of an icon using clip art:
 
 ![](<../resources%20(ignore)/img/05/web-2.png>)
 
